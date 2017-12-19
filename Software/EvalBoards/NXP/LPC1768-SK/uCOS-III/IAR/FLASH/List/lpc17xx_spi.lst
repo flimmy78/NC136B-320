@@ -1,0 +1,1138 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       14/Dec/2017  10:39:30
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_spi.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_spi.c" -lCN
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\lpc17xx_spi.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\lpc17xx_spi.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_spi.c
+      1          /**********************************************************************
+      2          * $Id$		lpc17xx_spi.c				2010-05-21
+      3          *//**
+      4          * @file		lpc17xx_spi.c
+      5          * @brief	Contains all functions support for SPI firmware library on LPC17xx
+      6          * @version	2.0
+      7          * @date		21. May. 2010
+      8          * @author	NXP MCU SW Application Team
+      9          *
+     10          * Copyright(C) 2010, NXP Semiconductor
+     11          * All rights reserved.
+     12          *
+     13          ***********************************************************************
+     14          * Software that is described herein is for illustrative purposes only
+     15          * which provides customers with programming information regarding the
+     16          * products. This software is supplied "AS IS" without any warranties.
+     17          * NXP Semiconductors assumes no responsibility or liability for the
+     18          * use of the software, conveys no license or title under any patent,
+     19          * copyright, or mask work right to the product. NXP Semiconductors
+     20          * reserves the right to make changes in the software without
+     21          * notification. NXP Semiconductors also make no representation or
+     22          * warranty that such application will be suitable for the specified
+     23          * use without further testing or modification.
+     24          * Permission to use, copy, modify, and distribute this software and its
+     25          * documentation is hereby granted, under NXP Semiconductors'
+     26          * relevant copyright in the software, without fee, provided that it
+     27          * is used in conjunction with NXP Semiconductors microcontrollers.  This
+     28          * copyright, permission, and disclaimer notice must appear in all copies of
+     29          * this code.
+     30          **********************************************************************/
+     31          
+     32          /* Peripheral group ----------------------------------------------------------- */
+     33          /** @addtogroup SPI
+     34           * @{
+     35           */
+     36          
+     37          /* Includes ------------------------------------------------------------------- */
+     38          #include "lpc17xx_spi.h"
+     39          #include "lpc17xx_clkpwr.h"
+     40          
+     41          /* If this source file built with example, the LPC17xx FW library configuration
+     42           * file in each example directory ("lpc17xx_libcfg.h") must be included,
+     43           * otherwise the default FW library configuration file must be included instead
+     44           */
+     45          #ifdef __BUILD_WITH_EXAMPLE__
+     46          #include "lpc17xx_libcfg.h"
+     47          #else
+     48          #include "lpc17xx_libcfg_default.h"
+     49          #endif /* __BUILD_WITH_EXAMPLE__ */
+     50          
+     51          #ifdef _SPI
+     52          
+     53          
+     54          /* Public Functions ----------------------------------------------------------- */
+     55          /** @addtogroup SPI_Public_Functions
+     56           * @{
+     57           */
+     58          
+     59          /*********************************************************************//**
+     60           * @brief 		Setup clock rate for SPI device
+     61           * @param[in] 	SPIx	SPI peripheral definition, should be LPC_SPI
+     62           * @param[in]	target_clock : clock of SPI (Hz)
+     63           * @return 		None
+     64           ***********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     65          void SPI_SetClock (LPC_SPI_TypeDef *SPIx, uint32_t target_clock)
+     66          {
+   \                     SPI_SetClock: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+     67          	uint32_t spi_pclk;
+     68          	uint32_t prescale, temp;
+     69          
+     70          	CHECK_PARAM(PARAM_SPIx(SPIx));
+   \   00000008   0x.... 0x....      LDR.W    R0,??DataTable11  ;; 0x40020000
+   \   0000000C   0x4284             CMP      R4,R0
+   \   0000000E   0xD004             BEQ.N    ??SPI_SetClock_0
+   \   00000010   0x2146             MOVS     R1,#+70
+   \   00000012   0x.... 0x....      LDR.W    R0,??DataTable11_1
+   \   00000016   0x.... 0x....      BL       check_failed
+     71          
+     72          	if (SPIx == LPC_SPI){
+   \                     ??SPI_SetClock_0: (+1)
+   \   0000001A   0x.... 0x....      LDR.W    R0,??DataTable11  ;; 0x40020000
+   \   0000001E   0x4284             CMP      R4,R0
+   \   00000020   0xD106             BNE.N    ??SPI_SetClock_1
+     73          		spi_pclk =  CLKPWR_GetPCLK (CLKPWR_PCLKSEL_SPI);
+   \   00000022   0x2010             MOVS     R0,#+16
+   \   00000024   0x.... 0x....      BL       CLKPWR_GetPCLK
+   \   00000028   0x0006             MOVS     R6,R0
+     74          	} else {
+     75          		return;
+     76          	}
+     77          
+     78          	prescale = 8;
+   \   0000002A   0x2008             MOVS     R0,#+8
+   \   0000002C   0x0007             MOVS     R7,R0
+   \   0000002E   0xE000             B.N      ??SPI_SetClock_2
+   \                     ??SPI_SetClock_1: (+1)
+   \   00000030   0xE009             B.N      ??SPI_SetClock_3
+     79          	// Find closest clock to target clock
+     80          	while (1){
+     81          		temp = target_clock * prescale;
+   \                     ??SPI_SetClock_2: (+1)
+   \   00000032   0xFB07 0xF005      MUL      R0,R7,R5
+   \   00000036   0x4680             MOV      R8,R0
+     82          		if (temp >= spi_pclk){
+   \   00000038   0x45B0             CMP      R8,R6
+   \   0000003A   0xD202             BCS.N    ??SPI_SetClock_4
+     83          			break;
+     84          		}
+     85          		prescale += 2;
+   \                     ??SPI_SetClock_5: (+1)
+   \   0000003C   0x1CBF             ADDS     R7,R7,#+2
+     86          		if(prescale >= 254){
+   \   0000003E   0x2FFE             CMP      R7,#+254
+   \   00000040   0xD3F7             BCC.N    ??SPI_SetClock_2
+     87          			break;
+     88          		}
+     89          	}
+     90          
+     91          	// Write to register
+     92          	SPIx->SPCCR = SPI_SPCCR_COUNTER(prescale);
+   \                     ??SPI_SetClock_4: (+1)
+   \   00000042   0xB2F8             UXTB     R0,R7            ;; ZeroExt  R0,R7,#+24,#+24
+   \   00000044   0x60E0             STR      R0,[R4, #+12]
+     93          }
+   \                     ??SPI_SetClock_3: (+1)
+   \   00000046   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+     94          
+     95          
+     96          /*********************************************************************//**
+     97           * @brief		De-initializes the SPIx peripheral registers to their
+     98          *                  default reset values.
+     99           * @param[in]	SPIx	SPI peripheral selected, should be LPC_SPI
+    100           * @return 		None
+    101           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    102          void SPI_DeInit(LPC_SPI_TypeDef *SPIx)
+    103          {
+   \                     SPI_DeInit: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    104          	CHECK_PARAM(PARAM_SPIx(SPIx));
+   \   00000004   0x....             LDR.N    R0,??DataTable11  ;; 0x40020000
+   \   00000006   0x4284             CMP      R4,R0
+   \   00000008   0xD003             BEQ.N    ??SPI_DeInit_0
+   \   0000000A   0x2168             MOVS     R1,#+104
+   \   0000000C   0x....             LDR.N    R0,??DataTable11_1
+   \   0000000E   0x.... 0x....      BL       check_failed
+    105          
+    106          	if (SPIx == LPC_SPI){
+   \                     ??SPI_DeInit_0: (+1)
+   \   00000012   0x....             LDR.N    R0,??DataTable11  ;; 0x40020000
+   \   00000014   0x4284             CMP      R4,R0
+   \   00000016   0xD104             BNE.N    ??SPI_DeInit_1
+    107          		/* Set up clock and power for SPI module */
+    108          		CLKPWR_ConfigPPWR (CLKPWR_PCONP_PCSPI, DISABLE);
+   \   00000018   0x2100             MOVS     R1,#+0
+   \   0000001A   0xF44F 0x7080      MOV      R0,#+256
+   \   0000001E   0x.... 0x....      BL       CLKPWR_ConfigPPWR
+    109          	}
+    110          }
+   \                     ??SPI_DeInit_1: (+1)
+   \   00000022   0xBD10             POP      {R4,PC}          ;; return
+    111          
+    112          /*********************************************************************//**
+    113           * @brief		Get data bit size per transfer
+    114           * @param[in]	SPIx	SPI peripheral selected, should be LPC_SPI
+    115           * @return 		number of bit per transfer, could be 8-16
+    116           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    117          uint8_t SPI_GetDataSize (LPC_SPI_TypeDef *SPIx)
+    118          {
+   \                     SPI_GetDataSize: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    119          	CHECK_PARAM(PARAM_SPIx(SPIx));
+   \   00000004   0x....             LDR.N    R0,??DataTable11  ;; 0x40020000
+   \   00000006   0x4284             CMP      R4,R0
+   \   00000008   0xD003             BEQ.N    ??SPI_GetDataSize_0
+   \   0000000A   0x2177             MOVS     R1,#+119
+   \   0000000C   0x....             LDR.N    R0,??DataTable11_1
+   \   0000000E   0x.... 0x....      BL       check_failed
+    120          	return ((SPIx->SPCR)>>8 & 0xF);
+   \                     ??SPI_GetDataSize_0: (+1)
+   \   00000012   0x6820             LDR      R0,[R4, #+0]
+   \   00000014   0x0A00             LSRS     R0,R0,#+8
+   \   00000016   0xF010 0x000F      ANDS     R0,R0,#0xF
+   \   0000001A   0xBD10             POP      {R4,PC}          ;; return
+    121          }
+    122          
+    123          /********************************************************************//**
+    124           * @brief		Initializes the SPIx peripheral according to the specified
+    125          *               parameters in the UART_ConfigStruct.
+    126           * @param[in]	SPIx	SPI peripheral selected, should be LPC_SPI
+    127           * @param[in]	SPI_ConfigStruct Pointer to a SPI_CFG_Type structure
+    128          *                    that contains the configuration information for the
+    129          *                    specified SPI peripheral.
+    130           * @return 		None
+    131           *********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    132          void SPI_Init(LPC_SPI_TypeDef *SPIx, SPI_CFG_Type *SPI_ConfigStruct)
+    133          {
+   \                     SPI_Init: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    134          	uint32_t tmp;
+    135          
+    136          	CHECK_PARAM(PARAM_SPIx(SPIx));
+   \   00000006   0x....             LDR.N    R0,??DataTable11  ;; 0x40020000
+   \   00000008   0x4284             CMP      R4,R0
+   \   0000000A   0xD003             BEQ.N    ??SPI_Init_0
+   \   0000000C   0x2188             MOVS     R1,#+136
+   \   0000000E   0x....             LDR.N    R0,??DataTable11_1
+   \   00000010   0x.... 0x....      BL       check_failed
+    137          
+    138          	if(SPIx == LPC_SPI){
+   \                     ??SPI_Init_0: (+1)
+   \   00000014   0x....             LDR.N    R0,??DataTable11  ;; 0x40020000
+   \   00000016   0x4284             CMP      R4,R0
+   \   00000018   0xD11C             BNE.N    ??SPI_Init_1
+    139          		/* Set up clock and power for UART module */
+    140          		CLKPWR_ConfigPPWR (CLKPWR_PCONP_PCSPI, ENABLE);
+   \   0000001A   0x2101             MOVS     R1,#+1
+   \   0000001C   0xF44F 0x7080      MOV      R0,#+256
+   \   00000020   0x.... 0x....      BL       CLKPWR_ConfigPPWR
+    141          	} else {
+    142          		return;
+    143          	}
+    144          
+    145          	// Configure SPI, interrupt is disable as default
+    146          	tmp = ((SPI_ConfigStruct->CPHA) | (SPI_ConfigStruct->CPOL) \
+    147          		| (SPI_ConfigStruct->DataOrder) | (SPI_ConfigStruct->Databit) \
+    148          		| (SPI_ConfigStruct->Mode) | SPI_SPCR_BIT_EN) & SPI_SPCR_BITMASK;
+   \   00000024   0x6868             LDR      R0,[R5, #+4]
+   \   00000026   0x68A9             LDR      R1,[R5, #+8]
+   \   00000028   0x4308             ORRS     R0,R1,R0
+   \   0000002A   0x6929             LDR      R1,[R5, #+16]
+   \   0000002C   0x4308             ORRS     R0,R1,R0
+   \   0000002E   0x6829             LDR      R1,[R5, #+0]
+   \   00000030   0x4308             ORRS     R0,R1,R0
+   \   00000032   0x68E9             LDR      R1,[R5, #+12]
+   \   00000034   0x4308             ORRS     R0,R1,R0
+   \   00000036   0xF640 0x71FC      MOVW     R1,#+4092
+   \   0000003A   0x4008             ANDS     R0,R1,R0
+   \   0000003C   0xF050 0x0004      ORRS     R0,R0,#0x4
+   \   00000040   0x0006             MOVS     R6,R0
+    149          	// write back to SPI control register
+    150          	SPIx->SPCR = tmp;
+   \   00000042   0x6026             STR      R6,[R4, #+0]
+    151          
+    152          	// Set clock rate for SPI peripheral
+    153          	SPI_SetClock(SPIx, SPI_ConfigStruct->ClockRate);
+   \   00000044   0x6969             LDR      R1,[R5, #+20]
+   \   00000046   0x0020             MOVS     R0,R4
+   \   00000048   0x.... 0x....      BL       SPI_SetClock
+    154          
+    155          	// If interrupt flag is set, Write '1' to Clear interrupt flag
+    156          	if (SPIx->SPINT & SPI_SPINT_INTFLAG){
+   \   0000004C   0x69E0             LDR      R0,[R4, #+28]
+   \   0000004E   0x07C0             LSLS     R0,R0,#+31
+   \   00000050   0xD401             BMI.N    ??SPI_Init_2
+   \   00000052   0xE002             B.N      ??SPI_Init_3
+   \                     ??SPI_Init_1: (+1)
+   \   00000054   0xE001             B.N      ??SPI_Init_4
+    157          		SPIx->SPINT = SPI_SPINT_INTFLAG;
+   \                     ??SPI_Init_2: (+1)
+   \   00000056   0x2001             MOVS     R0,#+1
+   \   00000058   0x61E0             STR      R0,[R4, #+28]
+    158          	}
+    159          }
+   \                     ??SPI_Init_3: (+1)
+   \                     ??SPI_Init_4: (+1)
+   \   0000005A   0xBD70             POP      {R4-R6,PC}       ;; return
+    160          
+    161          
+    162          
+    163          /*****************************************************************************//**
+    164          * @brief		Fills each SPI_InitStruct member with its default value:
+    165          * 				- CPHA = SPI_CPHA_FIRST
+    166          * 				- CPOL = SPI_CPOL_HI
+    167          * 				- ClockRate = 1000000
+    168          * 				- DataOrder = SPI_DATA_MSB_FIRST
+    169          * 				- Databit = SPI_DATABIT_8
+    170          * 				- Mode = SPI_MASTER_MODE
+    171          * @param[in]	SPI_InitStruct Pointer to a SPI_CFG_Type structure
+    172          *                    which will be initialized.
+    173          * @return		None
+    174          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    175          void SPI_ConfigStructInit(SPI_CFG_Type *SPI_InitStruct)
+    176          {
+    177          	SPI_InitStruct->CPHA = SPI_CPHA_FIRST;
+   \                     SPI_ConfigStructInit: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0x6041             STR      R1,[R0, #+4]
+    178          	SPI_InitStruct->CPOL = SPI_CPOL_HI;
+   \   00000004   0x2100             MOVS     R1,#+0
+   \   00000006   0x6081             STR      R1,[R0, #+8]
+    179          	SPI_InitStruct->ClockRate = 1000000;
+   \   00000008   0x....             LDR.N    R1,??DataTable11_2  ;; 0xf4240
+   \   0000000A   0x6141             STR      R1,[R0, #+20]
+    180          	SPI_InitStruct->DataOrder = SPI_DATA_MSB_FIRST;
+   \   0000000C   0x2100             MOVS     R1,#+0
+   \   0000000E   0x6101             STR      R1,[R0, #+16]
+    181          	SPI_InitStruct->Databit = SPI_DATABIT_8;
+   \   00000010   0xF44F 0x6100      MOV      R1,#+2048
+   \   00000014   0x6001             STR      R1,[R0, #+0]
+    182          	SPI_InitStruct->Mode = SPI_MASTER_MODE;
+   \   00000016   0x2120             MOVS     R1,#+32
+   \   00000018   0x60C1             STR      R1,[R0, #+12]
+    183          }
+   \   0000001A   0x4770             BX       LR               ;; return
+    184          
+    185          /*********************************************************************//**
+    186           * @brief		Transmit a single data through SPIx peripheral
+    187           * @param[in]	SPIx	SPI peripheral selected, should be LPC_SPI
+    188           * @param[in]	Data	Data to transmit (must be 16 or 8-bit long,
+    189           * 						this depend on SPI data bit number configured)
+    190           * @return 		none
+    191           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    192          void SPI_SendData(LPC_SPI_TypeDef* SPIx, uint16_t Data)
+    193          {
+   \                     SPI_SendData: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    194          	CHECK_PARAM(PARAM_SPIx(SPIx));
+   \   00000006   0x....             LDR.N    R0,??DataTable11  ;; 0x40020000
+   \   00000008   0x4284             CMP      R4,R0
+   \   0000000A   0xD003             BEQ.N    ??SPI_SendData_0
+   \   0000000C   0x21C2             MOVS     R1,#+194
+   \   0000000E   0x....             LDR.N    R0,??DataTable11_1
+   \   00000010   0x.... 0x....      BL       check_failed
+    195          
+    196          	SPIx->SPDR = Data & SPI_SPDR_BITMASK;
+   \                     ??SPI_SendData_0: (+1)
+   \   00000014   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000016   0x60A5             STR      R5,[R4, #+8]
+    197          }
+   \   00000018   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    198          
+    199          
+    200          
+    201          /*********************************************************************//**
+    202           * @brief		Receive a single data from SPIx peripheral
+    203           * @param[in]	SPIx	SPI peripheral selected, should be LPC_SPI
+    204           * @return 		Data received (16-bit long)
+    205           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    206          uint16_t SPI_ReceiveData(LPC_SPI_TypeDef* SPIx)
+    207          {
+   \                     SPI_ReceiveData: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    208          	CHECK_PARAM(PARAM_SPIx(SPIx));
+   \   00000004   0x....             LDR.N    R0,??DataTable11  ;; 0x40020000
+   \   00000006   0x4284             CMP      R4,R0
+   \   00000008   0xD003             BEQ.N    ??SPI_ReceiveData_0
+   \   0000000A   0x21D0             MOVS     R1,#+208
+   \   0000000C   0x....             LDR.N    R0,??DataTable11_1
+   \   0000000E   0x.... 0x....      BL       check_failed
+    209          
+    210          	return ((uint16_t) (SPIx->SPDR & SPI_SPDR_BITMASK));
+   \                     ??SPI_ReceiveData_0: (+1)
+   \   00000012   0x68A0             LDR      R0,[R4, #+8]
+   \   00000014   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   00000016   0xBD10             POP      {R4,PC}          ;; return
+    211          }
+    212          
+    213          /*********************************************************************//**
+    214           * @brief 		SPI 	Read write data function
+    215           * @param[in]	SPIx 	Pointer to SPI peripheral, should be LPC_SPI
+    216           * @param[in]	dataCfg	Pointer to a SPI_DATA_SETUP_Type structure that
+    217           * 						contains specified information about transmit
+    218           * 						data configuration.
+    219           * @param[in]	xfType	Transfer type, should be:
+    220           * 						- SPI_TRANSFER_POLLING: Polling mode
+    221           * 						- SPI_TRANSFER_INTERRUPT: Interrupt mode
+    222           * @return 		Actual Data length has been transferred in polling mode.
+    223           * 				In interrupt mode, always return (0)
+    224           * 				Return (-1) if error.
+    225           * Note: This function can be used in both master and slave mode.
+    226           ***********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    227          int32_t SPI_ReadWrite (LPC_SPI_TypeDef *SPIx, SPI_DATA_SETUP_Type *dataCfg, \
+    228          						SPI_TRANSFER_Type xfType)
+    229          {
+   \                     SPI_ReadWrite: (+1)
+   \   00000000   0xE92D 0x4FF4      PUSH     {R2,R4-R11,LR}
+   \   00000004   0xB082             SUB      SP,SP,#+8
+   \   00000006   0x0004             MOVS     R4,R0
+   \   00000008   0x000D             MOVS     R5,R1
+    230          	uint8_t *rdata8;
+    231              uint8_t *wdata8;
+    232          	uint16_t *rdata16;
+    233              uint16_t *wdata16;
+    234              uint32_t stat;
+    235              uint32_t temp;
+    236              uint8_t dataword;
+    237          
+    238          	//read for empty buffer
+    239          	temp = SPIx->SPDR;
+   \   0000000A   0x68A0             LDR      R0,[R4, #+8]
+   \   0000000C   0x4680             MOV      R8,R0
+    240          	//dummy to clear status
+    241          	temp = SPIx->SPSR;
+   \   0000000E   0x6860             LDR      R0,[R4, #+4]
+   \   00000010   0x4680             MOV      R8,R0
+    242          	dataCfg->counter = 0;
+   \   00000012   0x2000             MOVS     R0,#+0
+   \   00000014   0x60E8             STR      R0,[R5, #+12]
+    243          	dataCfg->status = 0;
+   \   00000016   0x2000             MOVS     R0,#+0
+   \   00000018   0x6128             STR      R0,[R5, #+16]
+    244          
+    245          	if(SPI_GetDataSize (SPIx) == 8)
+   \   0000001A   0x0020             MOVS     R0,R4
+   \   0000001C   0x.... 0x....      BL       SPI_GetDataSize
+   \   00000020   0x2808             CMP      R0,#+8
+   \   00000022   0xD102             BNE.N    ??SPI_ReadWrite_0
+    246          		dataword = 0;
+   \   00000024   0x2000             MOVS     R0,#+0
+   \   00000026   0x4681             MOV      R9,R0
+   \   00000028   0xE001             B.N      ??SPI_ReadWrite_1
+    247          	else dataword = 1;
+   \                     ??SPI_ReadWrite_0: (+1)
+   \   0000002A   0x2001             MOVS     R0,#+1
+   \   0000002C   0x4681             MOV      R9,R0
+    248          	if (xfType == SPI_TRANSFER_POLLING){
+   \                     ??SPI_ReadWrite_1: (+1)
+   \   0000002E   0xF89D 0x0008      LDRB     R0,[SP, #+8]
+   \   00000032   0x2800             CMP      R0,#+0
+   \   00000034   0xD16D             BNE.N    ??SPI_ReadWrite_2
+    249          
+    250          		if (dataword == 0){
+   \   00000036   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   0000003A   0xF1B9 0x0F00      CMP      R9,#+0
+   \   0000003E   0xD104             BNE.N    ??SPI_ReadWrite_3
+    251          			rdata8 = (uint8_t *)dataCfg->rx_data;
+   \   00000040   0x6868             LDR      R0,[R5, #+4]
+   \   00000042   0x0006             MOVS     R6,R0
+    252          			wdata8 = (uint8_t *)dataCfg->tx_data;
+   \   00000044   0x6828             LDR      R0,[R5, #+0]
+   \   00000046   0x4682             MOV      R10,R0
+   \   00000048   0xE003             B.N      ??SPI_ReadWrite_4
+    253          		} else {
+    254          			rdata16 = (uint16_t *)dataCfg->rx_data;
+   \                     ??SPI_ReadWrite_3: (+1)
+   \   0000004A   0x6868             LDR      R0,[R5, #+4]
+   \   0000004C   0x0007             MOVS     R7,R0
+    255          			wdata16 = (uint16_t *)dataCfg->tx_data;
+   \   0000004E   0x6828             LDR      R0,[R5, #+0]
+   \   00000050   0x4683             MOV      R11,R0
+    256          		}
+    257          
+    258          		while(dataCfg->counter < dataCfg->length)
+   \                     ??SPI_ReadWrite_4: (+1)
+   \   00000052   0x68E8             LDR      R0,[R5, #+12]
+   \   00000054   0x68A9             LDR      R1,[R5, #+8]
+   \   00000056   0x4288             CMP      R0,R1
+   \   00000058   0xD255             BCS.N    ??SPI_ReadWrite_5
+    259          		{
+    260          			// Write data to buffer
+    261          			if(dataCfg->tx_data == NULL){
+   \   0000005A   0x6828             LDR      R0,[R5, #+0]
+   \   0000005C   0x2800             CMP      R0,#+0
+   \   0000005E   0xD10F             BNE.N    ??SPI_ReadWrite_6
+    262          				if (dataword == 0){
+   \   00000060   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   00000064   0xF1B9 0x0F00      CMP      R9,#+0
+   \   00000068   0xD104             BNE.N    ??SPI_ReadWrite_7
+    263          					SPI_SendData(SPIx, 0xFF);
+   \   0000006A   0x21FF             MOVS     R1,#+255
+   \   0000006C   0x0020             MOVS     R0,R4
+   \   0000006E   0x.... 0x....      BL       SPI_SendData
+   \   00000072   0xE01A             B.N      ??SPI_ReadWrite_8
+    264          				} else {
+    265          					SPI_SendData(SPIx, 0xFFFF);
+   \                     ??SPI_ReadWrite_7: (+1)
+   \   00000074   0xF64F 0x71FF      MOVW     R1,#+65535
+   \   00000078   0x0020             MOVS     R0,R4
+   \   0000007A   0x.... 0x....      BL       SPI_SendData
+   \   0000007E   0xE014             B.N      ??SPI_ReadWrite_8
+    266          				}
+    267          			} else {
+    268          				if (dataword == 0){
+   \                     ??SPI_ReadWrite_6: (+1)
+   \   00000080   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   00000084   0xF1B9 0x0F00      CMP      R9,#+0
+   \   00000088   0xD108             BNE.N    ??SPI_ReadWrite_9
+    269          					SPI_SendData(SPIx, *wdata8);
+   \   0000008A   0xF89A 0x1000      LDRB     R1,[R10, #+0]
+   \   0000008E   0xB289             UXTH     R1,R1            ;; ZeroExt  R1,R1,#+16,#+16
+   \   00000090   0x0020             MOVS     R0,R4
+   \   00000092   0x.... 0x....      BL       SPI_SendData
+    270          					wdata8++;
+   \   00000096   0xF11A 0x0A01      ADDS     R10,R10,#+1
+   \   0000009A   0xE006             B.N      ??SPI_ReadWrite_8
+    271          				} else {
+    272          					SPI_SendData(SPIx, *wdata16);
+   \                     ??SPI_ReadWrite_9: (+1)
+   \   0000009C   0xF8BB 0x1000      LDRH     R1,[R11, #+0]
+   \   000000A0   0x0020             MOVS     R0,R4
+   \   000000A2   0x.... 0x....      BL       SPI_SendData
+    273          					wdata16++;
+   \   000000A6   0xF11B 0x0B02      ADDS     R11,R11,#+2
+    274          				}
+    275          			}
+    276          			// Wait for transfer complete
+    277          			while (!((stat = SPIx->SPSR) & SPI_SPSR_SPIF));
+   \                     ??SPI_ReadWrite_8: (+1)
+   \   000000AA   0x6860             LDR      R0,[R4, #+4]
+   \   000000AC   0x9000             STR      R0,[SP, #+0]
+   \   000000AE   0x0600             LSLS     R0,R0,#+24
+   \   000000B0   0xD5FB             BPL.N    ??SPI_ReadWrite_8
+    278          			// Check for error
+    279          			if (stat & (SPI_SPSR_ABRT | SPI_SPSR_MODF | SPI_SPSR_ROVR | SPI_SPSR_WCOL)){
+   \   000000B2   0x9800             LDR      R0,[SP, #+0]
+   \   000000B4   0xF010 0x0F78      TST      R0,#0x78
+   \   000000B8   0xD005             BEQ.N    ??SPI_ReadWrite_10
+    280          				// save status
+    281          				dataCfg->status = stat | SPI_STAT_ERROR;
+   \   000000BA   0x9800             LDR      R0,[SP, #+0]
+   \   000000BC   0xF450 0x7000      ORRS     R0,R0,#0x200
+   \   000000C0   0x6128             STR      R0,[R5, #+16]
+    282          				return (dataCfg->counter);
+   \   000000C2   0x68E8             LDR      R0,[R5, #+12]
+   \   000000C4   0xE05B             B.N      ??SPI_ReadWrite_11
+    283          			}
+    284          			// Read data from SPI dat
+    285          			temp = (uint32_t) SPI_ReceiveData(SPIx);
+   \                     ??SPI_ReadWrite_10: (+1)
+   \   000000C6   0x0020             MOVS     R0,R4
+   \   000000C8   0x.... 0x....      BL       SPI_ReceiveData
+   \   000000CC   0x4680             MOV      R8,R0
+    286          
+    287          			// Store data to destination
+    288          			if (dataCfg->rx_data != NULL)
+   \   000000CE   0x6868             LDR      R0,[R5, #+4]
+   \   000000D0   0x2800             CMP      R0,#+0
+   \   000000D2   0xD00B             BEQ.N    ??SPI_ReadWrite_12
+    289          			{
+    290          				if (dataword == 0){
+   \   000000D4   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   000000D8   0xF1B9 0x0F00      CMP      R9,#+0
+   \   000000DC   0xD103             BNE.N    ??SPI_ReadWrite_13
+    291          					*(rdata8) = (uint8_t) temp;
+   \   000000DE   0xF886 0x8000      STRB     R8,[R6, #+0]
+    292          					rdata8++;
+   \   000000E2   0x1C76             ADDS     R6,R6,#+1
+   \   000000E4   0xE002             B.N      ??SPI_ReadWrite_12
+    293          				} else {
+    294          					*(rdata16) = (uint16_t) temp;
+   \                     ??SPI_ReadWrite_13: (+1)
+   \   000000E6   0xF8A7 0x8000      STRH     R8,[R7, #+0]
+    295          					rdata16++;
+   \   000000EA   0x1CBF             ADDS     R7,R7,#+2
+    296          				}
+    297          			}
+    298          			// Increase counter
+    299          			if (dataword == 0){
+   \                     ??SPI_ReadWrite_12: (+1)
+   \   000000EC   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   000000F0   0xF1B9 0x0F00      CMP      R9,#+0
+   \   000000F4   0xD103             BNE.N    ??SPI_ReadWrite_14
+    300          				dataCfg->counter++;
+   \   000000F6   0x68E8             LDR      R0,[R5, #+12]
+   \   000000F8   0x1C40             ADDS     R0,R0,#+1
+   \   000000FA   0x60E8             STR      R0,[R5, #+12]
+   \   000000FC   0xE7A9             B.N      ??SPI_ReadWrite_4
+    301          			} else {
+    302          				dataCfg->counter += 2;
+   \                     ??SPI_ReadWrite_14: (+1)
+   \   000000FE   0x68E8             LDR      R0,[R5, #+12]
+   \   00000100   0x1C80             ADDS     R0,R0,#+2
+   \   00000102   0x60E8             STR      R0,[R5, #+12]
+   \   00000104   0xE7A5             B.N      ??SPI_ReadWrite_4
+    303          			}
+    304          		}
+    305          
+    306          		// Return length of actual data transferred
+    307          		// save status
+    308          		dataCfg->status = stat | SPI_STAT_DONE;
+   \                     ??SPI_ReadWrite_5: (+1)
+   \   00000106   0x9800             LDR      R0,[SP, #+0]
+   \   00000108   0xF450 0x7080      ORRS     R0,R0,#0x100
+   \   0000010C   0x6128             STR      R0,[R5, #+16]
+    309          		return (dataCfg->counter);
+   \   0000010E   0x68E8             LDR      R0,[R5, #+12]
+   \   00000110   0xE035             B.N      ??SPI_ReadWrite_11
+    310          	}
+    311          	// Interrupt mode
+    312          	else {
+    313          
+    314          		// Check if interrupt flag is already set
+    315          		if(SPIx->SPINT & SPI_SPINT_INTFLAG){
+   \                     ??SPI_ReadWrite_2: (+1)
+   \   00000112   0x69E0             LDR      R0,[R4, #+28]
+   \   00000114   0x07C0             LSLS     R0,R0,#+31
+   \   00000116   0xD501             BPL.N    ??SPI_ReadWrite_15
+    316          			SPIx->SPINT = SPI_SPINT_INTFLAG;
+   \   00000118   0x2001             MOVS     R0,#+1
+   \   0000011A   0x61E0             STR      R0,[R4, #+28]
+    317          		}
+    318          		if (dataCfg->counter < dataCfg->length){
+   \                     ??SPI_ReadWrite_15: (+1)
+   \   0000011C   0x68E8             LDR      R0,[R5, #+12]
+   \   0000011E   0x68A9             LDR      R1,[R5, #+8]
+   \   00000120   0x4288             CMP      R0,R1
+   \   00000122   0xD228             BCS.N    ??SPI_ReadWrite_16
+    319          			// Write data to buffer
+    320          			if(dataCfg->tx_data == NULL){
+   \   00000124   0x6828             LDR      R0,[R5, #+0]
+   \   00000126   0x2800             CMP      R0,#+0
+   \   00000128   0xD10F             BNE.N    ??SPI_ReadWrite_17
+    321          				if (dataword == 0){
+   \   0000012A   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   0000012E   0xF1B9 0x0F00      CMP      R9,#+0
+   \   00000132   0xD104             BNE.N    ??SPI_ReadWrite_18
+    322          					SPI_SendData(SPIx, 0xFF);
+   \   00000134   0x21FF             MOVS     R1,#+255
+   \   00000136   0x0020             MOVS     R0,R4
+   \   00000138   0x.... 0x....      BL       SPI_SendData
+   \   0000013C   0xE016             B.N      ??SPI_ReadWrite_19
+    323          				} else {
+    324          					SPI_SendData(SPIx, 0xFFFF);
+   \                     ??SPI_ReadWrite_18: (+1)
+   \   0000013E   0xF64F 0x71FF      MOVW     R1,#+65535
+   \   00000142   0x0020             MOVS     R0,R4
+   \   00000144   0x.... 0x....      BL       SPI_SendData
+   \   00000148   0xE010             B.N      ??SPI_ReadWrite_19
+    325          				}
+    326          			} else {
+    327          				if (dataword == 0){
+   \                     ??SPI_ReadWrite_17: (+1)
+   \   0000014A   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   0000014E   0xF1B9 0x0F00      CMP      R9,#+0
+   \   00000152   0xD106             BNE.N    ??SPI_ReadWrite_20
+    328          					SPI_SendData(SPIx, (*(uint8_t *)dataCfg->tx_data));
+   \   00000154   0x6828             LDR      R0,[R5, #+0]
+   \   00000156   0x7801             LDRB     R1,[R0, #+0]
+   \   00000158   0xB289             UXTH     R1,R1            ;; ZeroExt  R1,R1,#+16,#+16
+   \   0000015A   0x0020             MOVS     R0,R4
+   \   0000015C   0x.... 0x....      BL       SPI_SendData
+   \   00000160   0xE004             B.N      ??SPI_ReadWrite_19
+    329          				} else {
+    330          					SPI_SendData(SPIx, (*(uint16_t *)dataCfg->tx_data));
+   \                     ??SPI_ReadWrite_20: (+1)
+   \   00000162   0x6828             LDR      R0,[R5, #+0]
+   \   00000164   0x8801             LDRH     R1,[R0, #+0]
+   \   00000166   0x0020             MOVS     R0,R4
+   \   00000168   0x.... 0x....      BL       SPI_SendData
+    331          				}
+    332          			}
+    333          			SPI_IntCmd(SPIx, ENABLE);
+   \                     ??SPI_ReadWrite_19: (+1)
+   \   0000016C   0x2101             MOVS     R1,#+1
+   \   0000016E   0x0020             MOVS     R0,R4
+   \   00000170   0x.... 0x....      BL       SPI_IntCmd
+   \   00000174   0xE002             B.N      ??SPI_ReadWrite_21
+    334          		} else {
+    335          			// Save status
+    336          			dataCfg->status = SPI_STAT_DONE;
+   \                     ??SPI_ReadWrite_16: (+1)
+   \   00000176   0xF44F 0x7080      MOV      R0,#+256
+   \   0000017A   0x6128             STR      R0,[R5, #+16]
+    337          		}
+    338          		return (0);
+   \                     ??SPI_ReadWrite_21: (+1)
+   \   0000017C   0x2000             MOVS     R0,#+0
+   \                     ??SPI_ReadWrite_11: (+1)
+   \   0000017E   0xE8BD 0x8FFE      POP      {R1-R11,PC}      ;; return
+    339          	}
+    340          }
+    341          
+    342          
+    343          /********************************************************************//**
+    344           * @brief 		Enable or disable SPIx interrupt.
+    345           * @param[in]	SPIx	SPI peripheral selected, should be LPC_SPI
+    346           * @param[in]	NewState New state of specified UART interrupt type,
+    347           * 				should be:
+    348           * 				- ENALBE: Enable this SPI interrupt.
+    349          * 				- DISALBE: Disable this SPI interrupt.
+    350           * @return 		None
+    351           *********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    352          void SPI_IntCmd(LPC_SPI_TypeDef *SPIx, FunctionalState NewState)
+    353          {
+   \                     SPI_IntCmd: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    354          	CHECK_PARAM(PARAM_SPIx(SPIx));
+   \   00000006   0x....             LDR.N    R0,??DataTable11  ;; 0x40020000
+   \   00000008   0x4284             CMP      R4,R0
+   \   0000000A   0xD004             BEQ.N    ??SPI_IntCmd_0
+   \   0000000C   0xF44F 0x71B1      MOV      R1,#+354
+   \   00000010   0x....             LDR.N    R0,??DataTable11_1
+   \   00000012   0x.... 0x....      BL       check_failed
+    355          	CHECK_PARAM(PARAM_FUNCTIONALSTATE(NewState));
+   \                     ??SPI_IntCmd_0: (+1)
+   \   00000016   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000018   0x2D00             CMP      R5,#+0
+   \   0000001A   0xD007             BEQ.N    ??SPI_IntCmd_1
+   \   0000001C   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000001E   0x2D01             CMP      R5,#+1
+   \   00000020   0xD004             BEQ.N    ??SPI_IntCmd_1
+   \   00000022   0xF240 0x1163      MOVW     R1,#+355
+   \   00000026   0x....             LDR.N    R0,??DataTable11_1
+   \   00000028   0x.... 0x....      BL       check_failed
+    356          
+    357          	if (NewState == ENABLE)
+   \                     ??SPI_IntCmd_1: (+1)
+   \   0000002C   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000002E   0x2D01             CMP      R5,#+1
+   \   00000030   0xD104             BNE.N    ??SPI_IntCmd_2
+    358          	{
+    359          		SPIx->SPCR |= SPI_SPCR_SPIE;
+   \   00000032   0x6820             LDR      R0,[R4, #+0]
+   \   00000034   0xF050 0x0080      ORRS     R0,R0,#0x80
+   \   00000038   0x6020             STR      R0,[R4, #+0]
+   \   0000003A   0xE004             B.N      ??SPI_IntCmd_3
+    360          	}
+    361          	else
+    362          	{
+    363          		SPIx->SPCR &= (~SPI_SPCR_SPIE) & SPI_SPCR_BITMASK;
+   \                     ??SPI_IntCmd_2: (+1)
+   \   0000003C   0x6820             LDR      R0,[R4, #+0]
+   \   0000003E   0xF640 0x717C      MOVW     R1,#+3964
+   \   00000042   0x4008             ANDS     R0,R1,R0
+   \   00000044   0x6020             STR      R0,[R4, #+0]
+    364          	}
+    365          }
+   \                     ??SPI_IntCmd_3: (+1)
+   \   00000046   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    366          
+    367          
+    368          /********************************************************************//**
+    369           * @brief 		Checks whether the SPI interrupt flag is set or not.
+    370           * @param[in]	SPIx	SPI peripheral selected, should be LPC_SPI
+    371           * @return 		The new state of SPI Interrupt Flag (SET or RESET)
+    372           *********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    373          IntStatus SPI_GetIntStatus (LPC_SPI_TypeDef *SPIx)
+    374          {
+   \                     SPI_GetIntStatus: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    375          	CHECK_PARAM(PARAM_SPIx(SPIx));
+   \   00000004   0x....             LDR.N    R0,??DataTable11  ;; 0x40020000
+   \   00000006   0x4284             CMP      R4,R0
+   \   00000008   0xD004             BEQ.N    ??SPI_GetIntStatus_0
+   \   0000000A   0xF240 0x1177      MOVW     R1,#+375
+   \   0000000E   0x....             LDR.N    R0,??DataTable11_1
+   \   00000010   0x.... 0x....      BL       check_failed
+    376          
+    377          	return ((SPIx->SPINT & SPI_SPINT_INTFLAG) ? SET : RESET);
+   \                     ??SPI_GetIntStatus_0: (+1)
+   \   00000014   0x69E0             LDR      R0,[R4, #+28]
+   \   00000016   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \   0000001A   0xBD10             POP      {R4,PC}          ;; return
+    378          }
+    379          
+    380          /********************************************************************//**
+    381           * @brief 		Clear SPI interrupt flag.
+    382           * @param[in]	SPIx	SPI peripheral selected, should be LPC_SPI
+    383           * @return 		None
+    384           *********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    385          void SPI_ClearIntPending(LPC_SPI_TypeDef *SPIx)
+    386          {
+   \                     SPI_ClearIntPending: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    387          	CHECK_PARAM(PARAM_SPIx(SPIx));
+   \   00000004   0x....             LDR.N    R0,??DataTable11  ;; 0x40020000
+   \   00000006   0x4284             CMP      R4,R0
+   \   00000008   0xD004             BEQ.N    ??SPI_ClearIntPending_0
+   \   0000000A   0xF240 0x1183      MOVW     R1,#+387
+   \   0000000E   0x....             LDR.N    R0,??DataTable11_1
+   \   00000010   0x.... 0x....      BL       check_failed
+    388          
+    389          	SPIx->SPINT = SPI_SPINT_INTFLAG;
+   \                     ??SPI_ClearIntPending_0: (+1)
+   \   00000014   0x2001             MOVS     R0,#+1
+   \   00000016   0x61E0             STR      R0,[R4, #+28]
+    390          }
+   \   00000018   0xBD10             POP      {R4,PC}          ;; return
+    391          
+    392          /********************************************************************//**
+    393           * @brief 		Get current value of SPI Status register in SPIx peripheral.
+    394           * @param[in]	SPIx	SPI peripheral selected, should be LPC_SPI
+    395           * @return		Current value of SPI Status register in SPI peripheral.
+    396           * Note:	The return value of this function must be used with
+    397           * 			SPI_CheckStatus() to determine current flag status
+    398           * 			corresponding to each SPI status type. Because some flags in
+    399           * 			SPI Status register will be cleared after reading, the next reading
+    400           * 			SPI Status register could not be correct. So this function used to
+    401           * 			read SPI status register in one time only, then the return value
+    402           * 			used to check all flags.
+    403           *********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    404          uint32_t SPI_GetStatus(LPC_SPI_TypeDef* SPIx)
+    405          {
+   \                     SPI_GetStatus: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    406          	CHECK_PARAM(PARAM_SPIx(SPIx));
+   \   00000004   0x....             LDR.N    R0,??DataTable11  ;; 0x40020000
+   \   00000006   0x4284             CMP      R4,R0
+   \   00000008   0xD004             BEQ.N    ??SPI_GetStatus_0
+   \   0000000A   0xF44F 0x71CB      MOV      R1,#+406
+   \   0000000E   0x....             LDR.N    R0,??DataTable11_1
+   \   00000010   0x.... 0x....      BL       check_failed
+    407          
+    408          	return (SPIx->SPSR & SPI_SPSR_BITMASK);
+   \                     ??SPI_GetStatus_0: (+1)
+   \   00000014   0x6860             LDR      R0,[R4, #+4]
+   \   00000016   0xF010 0x00F8      ANDS     R0,R0,#0xF8
+   \   0000001A   0xBD10             POP      {R4,PC}          ;; return
+    409          }
+    410          
+    411          /********************************************************************//**
+    412           * @brief 		Checks whether the specified SPI Status flag is set or not
+    413           * 				via inputSPIStatus parameter.
+    414           * @param[in]	inputSPIStatus Value to check status of each flag type.
+    415           * 				This value is the return value from SPI_GetStatus().
+    416           * @param[in]	SPIStatus	Specifies the SPI status flag to check,
+    417           * 				should be one of the following:
+    418          				- SPI_STAT_ABRT: Slave abort.
+    419          				- SPI_STAT_MODF: Mode fault.
+    420          				- SPI_STAT_ROVR: Read overrun.
+    421          				- SPI_STAT_WCOL: Write collision.
+    422          				- SPI_STAT_SPIF: SPI transfer complete.
+    423           * @return 		The new state of SPIStatus (SET or RESET)
+    424           *********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    425          FlagStatus SPI_CheckStatus (uint32_t inputSPIStatus,  uint8_t SPIStatus)
+    426          {
+   \                     SPI_CheckStatus: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    427          	CHECK_PARAM(PARAM_SPI_STAT(SPIStatus));
+   \   00000006   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000008   0x2D08             CMP      R5,#+8
+   \   0000000A   0xD010             BEQ.N    ??SPI_CheckStatus_0
+   \   0000000C   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000000E   0x2D10             CMP      R5,#+16
+   \   00000010   0xD00D             BEQ.N    ??SPI_CheckStatus_0
+   \   00000012   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000014   0x2D20             CMP      R5,#+32
+   \   00000016   0xD00A             BEQ.N    ??SPI_CheckStatus_0
+   \   00000018   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000001A   0x2D40             CMP      R5,#+64
+   \   0000001C   0xD007             BEQ.N    ??SPI_CheckStatus_0
+   \   0000001E   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000020   0x2D80             CMP      R5,#+128
+   \   00000022   0xD004             BEQ.N    ??SPI_CheckStatus_0
+   \   00000024   0xF240 0x11AB      MOVW     R1,#+427
+   \   00000028   0x....             LDR.N    R0,??DataTable11_1
+   \   0000002A   0x.... 0x....      BL       check_failed
+    428          
+    429          	return ((inputSPIStatus & SPIStatus) ? SET : RESET);
+   \                     ??SPI_CheckStatus_0: (+1)
+   \   0000002E   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000030   0x422C             TST      R4,R5
+   \   00000032   0xD001             BEQ.N    ??SPI_CheckStatus_1
+   \   00000034   0x2001             MOVS     R0,#+1
+   \   00000036   0xE000             B.N      ??SPI_CheckStatus_2
+   \                     ??SPI_CheckStatus_1: (+1)
+   \   00000038   0x2000             MOVS     R0,#+0
+   \                     ??SPI_CheckStatus_2: (+1)
+   \   0000003A   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000003C   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    430          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11:
+   \   00000000   0x40020000         DC32     0x40020000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_1:
+   \   00000000   0x........         DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_2:
+   \   00000000   0x000F4240         DC32     0xf4240
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \   00000000   0x46 0x3A          DC8 46H, 3AH, 5CH, 69H, 61H, 72H, 5CH, 4EH
+   \              0x5C 0x69    
+   \              0x61 0x72    
+   \              0x5C 0x4E    
+   \   00000008   0x43 0x31          DC8 43H, 31H, 33H, 36H, 42H, 2DH, 33H, 32H
+   \              0x33 0x36    
+   \              0x42 0x2D    
+   \              0x33 0x32    
+   \   00000010   0x30 0x20          DC8 30H, 20H, 49H, 43H, 0BFH, 0A8H, 0C4H, 0A3H
+   \              0x49 0x43    
+   \              0xBF 0xA8    
+   \              0xC4 0xA3    
+   \   00000018   0xBF 0xE9          DC8 0BFH, 0E9H, 5CH, 53H, 6FH, 66H, 74H, 77H
+   \              0x5C 0x53    
+   \              0x6F 0x66    
+   \              0x74 0x77    
+   \   00000020   0x61 0x72          DC8 61H, 72H, 65H, 5CH, 43H, 53H, 42H, 5CH
+   \              0x65 0x5C    
+   \              0x43 0x53    
+   \              0x42 0x5C    
+   \   00000028   0x73 0x6F          DC8 73H, 6FH, 75H, 72H, 63H, 65H, 5CH, 6CH
+   \              0x75 0x72    
+   \              0x63 0x65    
+   \              0x5C 0x6C    
+   \   00000030   0x70 0x63          DC8 70H, 63H, 31H, 37H, 78H, 78H, 5FH, 73H
+   \              0x31 0x37    
+   \              0x78 0x78    
+   \              0x5F 0x73    
+   \   00000038   0x70 0x69          DC8 70H, 69H, 2EH, 63H, 0
+   \              0x2E 0x63    
+   \              0x00         
+   \   0000003D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+    431          
+    432          
+    433          /**
+    434           * @}
+    435           */
+    436          
+    437          #endif /* _SPI */
+    438          
+    439          /**
+    440           * @}
+    441           */
+    442          
+    443          /* --------------------------------- End Of File ------------------------------ */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   SPI_CheckStatus
+        16   -> check_failed
+       8   SPI_ClearIntPending
+         8   -> check_failed
+       0   SPI_ConfigStructInit
+       8   SPI_DeInit
+         8   -> CLKPWR_ConfigPPWR
+         8   -> check_failed
+       8   SPI_GetDataSize
+         8   -> check_failed
+       8   SPI_GetIntStatus
+         8   -> check_failed
+       8   SPI_GetStatus
+         8   -> check_failed
+      16   SPI_Init
+        16   -> CLKPWR_ConfigPPWR
+        16   -> SPI_SetClock
+        16   -> check_failed
+      16   SPI_IntCmd
+        16   -> check_failed
+      48   SPI_ReadWrite
+        48   -> SPI_GetDataSize
+        48   -> SPI_IntCmd
+        48   -> SPI_ReceiveData
+        48   -> SPI_SendData
+       8   SPI_ReceiveData
+         8   -> check_failed
+      16   SPI_SendData
+        16   -> check_failed
+      24   SPI_SetClock
+        24   -> CLKPWR_GetPCLK
+        24   -> check_failed
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_2
+      64  ?_0
+      62  SPI_CheckStatus
+      26  SPI_ClearIntPending
+      28  SPI_ConfigStructInit
+      36  SPI_DeInit
+      28  SPI_GetDataSize
+      28  SPI_GetIntStatus
+      28  SPI_GetStatus
+      92  SPI_Init
+      72  SPI_IntCmd
+     386  SPI_ReadWrite
+      24  SPI_ReceiveData
+      26  SPI_SendData
+      74  SPI_SetClock
+
+ 
+  64 bytes in section .rodata
+ 922 bytes in section .text
+ 
+ 922 bytes of CODE  memory
+  64 bytes of CONST memory
+
+Errors: none
+Warnings: none

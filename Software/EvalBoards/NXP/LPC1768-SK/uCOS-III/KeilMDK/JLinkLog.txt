@@ -1,0 +1,40 @@
+
+T1BB0 010:878 SEGGER J-Link V4.50j Log File (0001ms, 0062ms total)
+T1BB0 010:878 DLL Compiled: Jun 26 2012 09:19:07 (0001ms, 0062ms total)
+T1BB0 010:878 Logging started @ 2012-10-15 11:43 (0002ms, 0063ms total)
+T1BB0 010:880 JLINK_SetWarnOutHandler(...) (0000ms, 0063ms total)
+T1BB0 010:880 JLINK_OpenEx(...)
+Firmware: J-Link ARM-Pro V1.x compiled Jul 20 2012 18:54:50
+Hardware: V1.10
+S/N: 171100164
+Feature(s): RDI, FlashBP, FlashDL, JFlash, GDB  returns O.K. (0021ms, 0084ms total)
+T1BB0 010:901 JLINK_SetErrorOutHandler(...) (0000ms, 0084ms total)
+T1BB0 010:902 JLINK_ExecCommand("Device = LPC1768", ...)
+                JLINK_ExecCommand("map ram 0x10000000 - 0x10007FFF", ...)  returns 0x00 (0000ms, 0000ms total)
+                JLINK_AddMirrorAreaEx(Addr = 0x00000000, Size = 0x00000000) (0000ms, 0000ms total)
+              Device "LPC1768" selected (512 KB flash, 32 KB RAM).  returns 0x00 (0001ms, 0085ms total)
+T1BB0 010:903 JLINK_ExecCommand("ProjectFile = "C:\Micrium\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\KeilMDK\JLinkSettings.ini"", ...)  returns 0x00 (0031ms, 0116ms total)
+T1BB0 010:934 JLINK_ExecCommand("DisableConnectionTimeout", ...)  returns 0x00 (0000ms, 0116ms total)
+T1BB0 010:934 JLINK_TIF_Select(JLINKARM_TIF_SWD)  returns 0x00 (0000ms, 0116ms total)
+T1BB0 010:934 JLINK_SetSpeed(2000) (0001ms, 0117ms total)
+T1BB0 010:935 JLINK_GetHardwareVersion()  returns 0x2AF8 (0000ms, 0117ms total)
+T1BB0 010:935 JLINK_GetDLLVersion()  returns 45010 (0000ms, 0117ms total)
+T1BB0 010:935 JLINK_GetFirmwareString(...) (0000ms, 0117ms total)
+T1BB0 010:935 JLINK_GetDLLVersion()  returns 45010 (0000ms, 0117ms total)
+T1BB0 010:935 JLINK_GetCompileDateTime() (0000ms, 0117ms total)
+T1BB0 010:935 JLINK_GetFirmwareString(...) (0000ms, 0117ms total)
+T1BB0 010:935 JLINK_GetHardwareVersion()  returns 0x2AF8 (0000ms, 0117ms total)
+T1BB0 010:935 JLINK_SetResetType(JLINKARM_RESET_TYPE_NORMAL)  returns ??? (0000ms, 0117ms total)
+T1BB0 010:935 JLINK_Reset() >0x108 TIF>Found SWD-DP with ID 0x2BA01477 >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF>
+ >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF>TPIU fitted.ETM fitted. >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF>FPUnit: 6 code (BP) slots and 2 literal slots >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF>
+ >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x28 TIF> >0x0D TIF> >0x21 TIF> >0x0D TIF> >0x21 TIF>Found Cortex-M3 r2p0, Little endian. -- CPU is running -- CPU_WriteMem(4 bytes @ 0xE000EDF0) -- CPU is running -- CPU_WriteMem(4 bytes @ 0xE000EDFC) >0x35 TIF> -- CPU is running -- CPU_WriteMem(4 bytes @ 0xE000ED0C) -- CPU is running -- CPU_ReadMem(4 bytes @ 0xE000EDF0) -- CPU is running
+ -- CPU_ReadMem(4 bytes @ 0xE000EDF0) -- CPU is running -- CPU_WriteMem(4 bytes @ 0xE000EDF0) -- CPU is running -- CPU_WriteMem(4 bytes @ 0xE000EDFC) -- CPU is running -- CPU_ReadMem(4 bytes @ 0xE000EDF0) -- CPU_WriteMem(4 bytes @ 0xE000EDFC) -- CPU_WriteMem(4 bytes @ 0xE000EDFC) -- CPU_WriteMem(4 bytes @ 0xE000EDFC) -- CPU_WriteMem(4 bytes @ 0xE000EDFC) -- CPU_WriteMem(4 bytes @ 0xE000EDFC) -- CPU_WriteMem(4 bytes @ 0xE0001050) -- CPU_WriteMem(4 bytes @ 0xE0001054) -- CPU_WriteMem(4 bytes @ 0xE0001058)
+ -- CPU_WriteMem(4 bytes @ 0xE000EDFC) -- CPU_WriteMem(4 bytes @ 0xE0001058) -- CPU_ReadMem(4 bytes @ 0x00000004) -- CPU_ReadMem(4 bytes @ 0xE0002000) -- CPU_ReadMem(4 bytes @ 0xE0002008) -- CPU_ReadMem(4 bytes @ 0xE000200C) -- CPU_ReadMem(4 bytes @ 0xE0002010) -- CPU_ReadMem(4 bytes @ 0xE0002014) -- CPU_ReadMem(4 bytes @ 0xE0002018) -- CPU_ReadMem(4 bytes @ 0xE000201C) -- CPU_WriteMem(4 bytes @ 0xE0002000) -- CPU_WriteMem(4 bytes @ 0xE0002008) -- CPU_WriteMem(4 bytes @ 0xE000200C)
+ -- CPU_WriteMem(4 bytes @ 0xE0002010) -- CPU_WriteMem(4 bytes @ 0xE0002014) -- CPU_WriteMem(4 bytes @ 0xE0002018) -- CPU_WriteMem(4 bytes @ 0xE000201C)
+                JLINK_ReadMemHW(0x400FC040, 0x0004 Bytes, ...) -- CPU_ReadMem(4 bytes @ 0x400FC040) -- Data:  01 00 00 00  returns 0x00 (0001ms, 0001ms total)
+               -- MA0 is in flash -- Unmirror addr 0x0000020C -- CPU_WriteMem(4 bytes @ 0xE0002000) -- CPU_WriteMem(4 bytes @ 0xE0002008) -- CPU_WriteMem(4 bytes @ 0xE000200C) -- CPU_WriteMem(4 bytes @ 0xE0002010) -- CPU_WriteMem(4 bytes @ 0xE0002014) -- CPU_WriteMem(4 bytes @ 0xE0002018) -- CPU_WriteMem(4 bytes @ 0xE000201C) -- CPU_WriteMem(4 bytes @ 0xE0002000) (0325ms, 0442ms total)
+T1BB0 011:260 JLINK_GetId() >0x0D TIF> >0x21 TIF>  returns 0x2BA01477 (0002ms, 0444ms total)
+T1BB0 011:265 JLINK_GetFirmwareString(...) (0000ms, 0444ms total)
+T1BB0 016:938 JLINK_Close() -- Invalidate MA0 status (0025ms, 0469ms total)
+T1BB0 016:963 JLINK_Close() (0000ms, 0469ms total)
+T1BB0 016:963 JLINK_Close() (0001ms, 0470ms total)

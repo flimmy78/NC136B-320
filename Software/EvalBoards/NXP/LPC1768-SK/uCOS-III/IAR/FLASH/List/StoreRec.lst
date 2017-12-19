@@ -1,0 +1,701 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       16/May/2017  06:41:05
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Application\Library\DataDeal\StoreRec.c
+#    Command line =  
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Application\Library\DataDeal\StoreRec.c
+#        -lCN
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List
+#        --diag_suppress Pe174 -o
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\StoreRec.lst
+#    Object file  =  
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\StoreRec.o
+#
+###############################################################################
+
+F:\iar\Micrium_LPC1768-SK_uCOS-III\Application\Library\DataDeal\StoreRec.c
+      1          //////#include  	"config.h"   
+      2          //////#include	"string.h"
+      3          //////#include	"Globe.h"
+      4          //////#include	"HardDrive.h"
+      5          //////#include	"CpuDrive.h"
+      6          //////#include	"FramStore.h"
+      7          //////#include	"Tax2.h"
+      8          //////#include	"DipMath.h"
+      9          //////#include	"SysDeal.h"
+     10          //////#include	"DieselSpeed.h"
+     11          ////
+     12          //#include    <includes.h>
+     13          //#include    "tmp.h"
+     14          ////
+     15          //
+     16          //#define		STORE_REC_TIME	60
+     17          //
+     18          //
+     19          //uint8	GetStoreTime(void)
+     20          //{
+     21          //	stcSysRunPara 	sSysRunPara;
+     22          //
+     23          //	if(GetSysRunPara((stcSysRunPara * )&sSysRunPara))
+     24          //	{
+     25          //		if(sSysRunPara.StoreTime)
+     26          //		{
+     27          //			//printfcom0("\r\n sSysRunPara.StoreTime %d",sSysRunPara.StoreTime);
+     28          //			return	sSysRunPara.StoreTime;
+     29          //		}	
+     30          //	}
+     31          //
+     32          //	//printfcom0("\r\n STORE_REC_TIME %d",sSysRunPara.StoreTime);
+     33          //	return	STORE_REC_TIME;
+     34          //}
+     35          //
+     36          //
+     37          //
+     38          //
+     39          ////
+     40          ////uint32			l_StoreDivide = 1;
+     41          ////
+     42          /////*
+     43          ////uint32			l_StoreCnt;				//流水号				
+     44          ////uint8			l_RecTypCod;       		//记录类型          	1   数据类型（开机、上班卡、下班卡、数据记录）
+     45          ////uint8			l_DriverUnitNum[2];  	//司机单位编号      	2   //用来唯一确定司机
+     46          ////uint32			l_MstLocoPower;        	//主机车功率          	2   外接设备测量
+     47          ////uint32			l_SlvLocoPower;        	//从机车功率          	2   外接设备测量
+     48          ////uint16 			l_MstDip;           	//主机油量          	2   主油尺油量(主从机级联时为主机油量,否则为本机车油量)
+     49          ////uint16 			l_SlvDip;           	//从机油量          	2   主油尺油量(主从机级联时为从机油量,否则此油量值为空)
+     50          ////uint16			l_MstDip1Prs;        	//压强            		2   主机油尺1压强值
+     51          ////uint16			l_MstDip2Prs;        	//压强            		2   主机油尺2压强值
+     52          ////uint16			l_SlvDip1Prs;       	//压强            		2   从机油尺1压强值
+     53          ////uint16 			l_SlvDip2Prs;       	//压强            		2   从机油尺2压强值
+     54          ////uint16			l_MstDensity;			//密度					2	主机燃油密度
+     55          ////uint16			l_SlvDensity;			//密度					2	从机燃油密度
+     56          ////uint32			l_GpsLongitude;			//经度					4	地理经度
+     57          ////uint32			l_GpsLatitude;			//纬度					4	地理纬度
+     58          ////uint16			l_GpsHeight;			//高度					4	地理高度
+     59          ////uint16			l_MstEngRotSpd;			//主机柴油机转速		2	主机柴油机转速
+     60          ////uint16			l_SlvEngRotSpd;			//从机柴油机转速		2	从机柴油机转速
+     61          ////uint16 			l_JcRealType;			//机车型号				2   外部设置的机车型号
+     62          ////uint16 			l_JcRealNo;				//机车编号				2   外部设置的机车编号
+     63          ////uint8			l_ErrorCode;			//故障代码				1   0~255
+     64          ////uint8 			l_DipValChgState;  		//油量变化状态   		1   油量变化情况分：两油尺增加/减小、变化平稳、轻微波动、剧烈波动
+     65          ////uint8			l_MstDipTemp;			//温度					1	主机温度
+     66          ////uint8			l_OilBoxModel;			//油箱模型代码			1	从机温度		
+     67          ////
+     68          ////
+     69          //////-------------------------------------------------------------------------------
+     70          //////函数名称:        void  ReadyStoreData(void)
+     71          //////函数功能:        准备存储用的数据
+     72          //////入口参数:        无
+     73          //////出口参数:         
+     74          //////函数调用:			
+     75          //////-------------------------------------------------------------------------------
+     76          ////void  ReadyStoreData(void)
+     77          ////{
+     78          ////	l_StoreCnt 			= g_CurFlshRecNum;
+     79          ////	l_MstDip1Prs		= GetDip1Prs();
+     80          ////	l_MstDip2Prs		= GetDip2Prs();	
+     81          ////	l_MstDipTemp		= GetDipTmp();
+     82          ////	l_DipValChgState	= GetPrsChgState();
+     83          ////	l_MstDip			= g_DipVal;
+     84          ////	l_ErrorCode			= GetStoreErrTypCod();
+     85          ////	l_RecTypCod			= GetStoreEvtTypCod();
+     86          ////	l_MstEngRotSpd		= GetDieselSpeed();	
+     87          ////	l_OilBoxModel		= GetOilBoxCod();	
+     88          ////}
+     89          ////*/
+     90          ////
+     91          ////stcLogZone		l_sLogZone;
+     92          ////
+     93          //////-------------------------------------------------------------------------------------------------
+     94          //////函数名称:             void  StoreLog(void) 	
+     95          //////函数功能:             存日志文件
+     96          //////入口参数:             无
+     97          //////出口参数:             无
+     98          //////--------------------------------------------------------------------------------------------------
+     99          ////void  StoreLog(void) 	
+    100          ////{
+    101          ////	static	stcFlshRec		sFlshRec;										//Flsh记录
+    102          ////	static	stcDeviceInfo	sDeviceInfo;
+    103          ////	
+    104          ////	uint16			CrcCheck;		
+    105          ////	uint16			DriveNum = 0xffff;		
+    106          ////	
+    107          ////	ReadCurFlshRec((stcFlshRec *)&sFlshRec);
+    108          ////	
+    109          ////	ReadHostInfo((stcDeviceInfo *)&sDeviceInfo);
+    110          ////	
+    111          ////	CrcCheck = GetCrc16Check((uint8 *)&sDeviceInfo,sizeof(stcDeviceInfo) - 2);
+    112          ////
+    113          ////	if(CrcCheck != sDeviceInfo.CrcCheck)
+    114          ////	{
+    115          ////		DriveNum = sDeviceInfo.DeviceNum;
+    116          ////		
+    117          ////		////printfcom0("\r\n机车出厂信息设置错误或没有设置！");
+    118          ////	}
+    119          ////	
+    120          ////	ReadLogZone((stcLogZone *)&l_sLogZone);
+    121          ////	
+    122          ////	CrcCheck = GetCrc16Check((uint8 *)&l_sLogZone,sizeof(stcLogZone) - 2);
+    123          ////	
+    124          ////	if(CrcCheck != l_sLogZone.CrcCheck)
+    125          ////	{
+    126          ////		l_sLogZone.Times = 0;
+    127          ////		
+    128          ////		//printfcom0("\r\n日志文件错误！");
+    129          ////	}
+    130          ////
+    131          ////	l_sLogZone.sLog[l_sLogZone.Times].StoreCnt 		= sFlshRec.StoreCnt;
+    132          ////	l_sLogZone.sLog[l_sLogZone.Times].ErrorCode		= sFlshRec.ErrorCode;
+    133          ////	l_sLogZone.sLog[l_sLogZone.Times].RecTypCod	 	= sFlshRec.RecTypCod;
+    134          ////	l_sLogZone.sLog[l_sLogZone.Times].LocoTyp[0]	= sFlshRec.LocoTyp;
+    135          ////	l_sLogZone.sLog[l_sLogZone.Times].LocoTyp[1]	= sFlshRec.E_LocoTyp;
+    136          ////	l_sLogZone.sLog[l_sLogZone.Times].LocoNum[0]	= sFlshRec.LocoNum[0];
+    137          ////	l_sLogZone.sLog[l_sLogZone.Times].LocoNum[1]	= sFlshRec.LocoNum[1];	
+    138          ////	l_sLogZone.sLog[l_sLogZone.Times].DriveNum		= DriveNum;
+    139          ////	
+    140          ////	l_sLogZone.Times++;
+    141          ////	
+    142          ////	CrcCheck = GetCrc16Check((uint8 *)&l_sLogZone,sizeof(stcLogZone) - 2);
+    143          ////	l_sLogZone.CrcCheck = CrcCheck;
+    144          ////	
+    145          ////	StoreLogZone((stcLogZone *)&l_sLogZone);
+    146          ////}
+    147          ////
+    148          //////-------------------------------------------------------------------------------
+    149          //////函数名称:        uint32  GetRecNumAddr(uint32 FlshRecNum)
+    150          //////函数功能:        取记录流水号地址
+    151          //////入口参数:        记录流水号
+    152          //////出口参数:        记录流水号在FLASH中的地址
+    153          //////函数调用:			
+    154          //////-------------------------------------------------------------------------------
+    155          //uint32  GetRecNumAddr(uint32 FlshRecNum)
+    156          //{
+    157          //    //return  (uint32)(FLSH_PROTECT_SIZE + ((FlshRecNum * sizeof(stcFlshRec)) % (FLSH_MAX_SIZE - FLSH_PROTECT_SIZE)));  //溢出问题					
+    158          //    return  (uint32)(((FlshRecNum * sizeof(stcFlshRec)) % FLSH_MAX_SIZE));  //溢出问题					
+    159          //}
+    160          ////
+    161          ////#define     FREQ_DOWN_STATE     1
+    162          ////#define     FREQ_WAVE_STATE     2
+    163          ////#define     FREQ_LAG_WAVE_STATE 3
+    164          ////#define     FREQ_UP_STATE       4           		//频率变化状态
+    165          ////#define     FREQ_STOP_STATE     5
+    166          //////-------------------------------------------------------------------------------
+    167          //////函数名称:        uint32  MathStoreDivede()
+    168          //////函数功能:        取记录流水号地址
+    169          //////入口参数:        记录流水号
+    170          //////出口参数:        记录流水号在FLASH中的地址
+    171          //////函数调用:			
+    172          //////-------------------------------------------------------------------------------
+    173          ////void	MathStoreDivide(void)
+    174          ////{
+    175          ////	static	uint32	Time = 0 ;
+    176          ////	static	uint8	LstDipValChgState = FREQ_WAVE_STATE;
+    177          ////	static	uint32	Timer = 0;
+    178          ////	uint8	DipValChgState = FREQ_WAVE_STATE;
+    179          ////	
+    180          ////	if(GetSysTime() - Timer > 100)
+    181          ////	{
+    182          ////		Timer = GetSysTime();
+    183          ////		
+    184          ////		DipValChgState = GetPrsChgState();
+    185          ////		
+    186          ////		/*
+    187          ////		if( DipValChgState == FREQ_UP_STATE)
+    188          ////		{
+    189          ////			l_StoreDivide = 12;
+    190          ////			Time = 0;
+    191          ////		}
+    192          ////		
+    193          ////		if((DipValChgState == FREQ_STOP_STATE) && ((LstDipValChgState == FREQ_WAVE_STATE) || (LstDipValChgState == FREQ_LAG_WAVE_STATE)))
+    194          ////		{
+    195          ////			l_StoreDivide = 12;
+    196          ////			Time = 0;
+    197          ////		}
+    198          ////
+    199          ////		if(((DipValChgState == FREQ_WAVE_STATE) || (DipValChgState == FREQ_LAG_WAVE_STATE)) && (LstDipValChgState == FREQ_STOP_STATE))
+    200          ////		{
+    201          ////			l_StoreDivide = 12;
+    202          ////			Time = 0;
+    203          ////		}			
+    204          ////		*/
+    205          ////		if(l_StoreDivide == 12)
+    206          ////		{
+    207          ////			Time++;
+    208          ////			
+    209          ////			if( Time > 60)
+    210          ////			{
+    211          ////				l_StoreDivide = 1;
+    212          ////			}
+    213          ////		}
+    214          ////		
+    215          ////		LstDipValChgState = DipValChgState;
+    216          ////	}
+    217          ////}
+    218          ////
+    219          //////-------------------------------------------------------------------------------
+    220          //////函数名称:        uint32  GetStoreDivede()
+    221          //////函数功能:        取记录流水号地址
+    222          //////入口参数:        记录流水号
+    223          //////出口参数:        记录流水号在FLASH中的地址
+    224          //////函数调用:			
+    225          //////-------------------------------------------------------------------------------
+    226          ////uint32  GetStoreDivide()
+    227          ////{
+    228          ////    return  l_StoreDivide;  //溢出问题					
+    229          ////}
+    230          ////    
+    231          ////uint8	l_FlshStoreErrEvtFlg = RIGHT_DATA;
+    232          ////#define		FLSH_WRT_ERR_EVT	32
+    233          ////
+    234          ////extern	uint8	ReadFlshRec(stcFlshRec * sFlshRec,uint32	FlshRecNum);
+    235          ////extern	uint8	JudgeLstFlsh(void);
+    236          ////
+    237          ////extern	uint16	GetReviseHight(void);
+    238          ////
+    239          //
+    240          //#define		START_EVT		31	
+    241          //uint8	 GetRecTyp(void)
+    242          //{
+    243          //	static uint8	times = 0;
+    244          //	
+    245          //	if(times == 0)	 
+    246          //	{
+    247          //		times++;	
+    248          //		return	START_EVT;
+    249          //	}
+    250          //
+    251          //	return	RIGHT_DATA;
+    252          //}
+    253          //
+    254          //uint32	GetMyMstLocoPower(void)
+    255          //{
+    256          //	return	GetPosEnergy();
+    257          //}
+    258          //
+    259          //extern	StrDipCommData	l_sDip1CommData,l_sDip2CommData;
+    260          //
+    261          //#define		SOFT_VER	11
+    262          //////-------------------------------------------------------------------------------
+    263          //////函数名称:        void  StoreData(void)
+    264          //////函数功能:        存储数据
+    265          //////入口参数:        无
+    266          //////出口参数:         
+    267          //////函数调用:			
+    268          //////-------------------------------------------------------------------------------
+    269          //void  StoreData(void)
+    270          //{	
+    271          //	uint32				FlshAddr;										//Flash存储地址
+    272          //	stcFlshRec		    sFlshRec={0};									//Flsh记录
+    273          //	stcTime				sTime;											//系统时间
+    274          //	stcFixInfo 		    sFixInfo;		
+    275          //	uint16				u16tmp;
+    276          //    uint32              u32tmp;
+    277          //
+    278          //	g_CurFlshRecNum 	    = GetCurFlshRecNum();
+    279          //	sFlshRec.StoreCnt	    = g_CurFlshRecNum;						 
+    280          //
+    281          //    sFlshRec.GpsLatitude    = GetNegEnergy();                   //正电量
+    282          //    sFlshRec.GpsLongitude   = GetPosEnergy();                   //负电量
+    283          //    
+    284          //    sFlshRec.MstEngRotSpd   = GetVol();                         //电压
+    285          ////	
+    286          ////	memcpy((uint8 *)&sFlshRec.GpsLongitude,(uint8 *)&l_sDip1CommData.LPressure,sizeof(sFlshRec.GpsLongitude));
+    287          ////	memcpy((uint8 *)&sFlshRec.GpsLatitude,(uint8 *)&l_sDip2CommData.LPressure,sizeof(sFlshRec.GpsLatitude));
+    288          //
+    289          //	memcpy((uint8 *)&sFlshRec.SlvDriverNum[0],(uint8 *)&l_sDip1CommData.Pressure,sizeof(l_sDip1CommData.Pressure));
+    290          //	memcpy((uint8 *)&sFlshRec.RoadNum,(uint8 *)&l_sDip2CommData.Pressure,sizeof(l_sDip2CommData.Pressure));
+    291          //
+    292          //	memcpy((uint8 *)&sFlshRec.Weight[0],(uint8 *)&l_sDip1CommData.CalcDensity,sizeof(l_sDip1CommData.CalcDensity));
+    293          //	memcpy((uint8 *)&sFlshRec.PlanLen[0],(uint8 *)&l_sDip2CommData.CalcDensity,sizeof(l_sDip2CommData.CalcDensity));
+    294          //
+    295          //	memcpy((uint8 *)&sFlshRec.MstDriverNum[0],(uint8 *)&l_sDip1CommData.HightDiff,sizeof(l_sDip1CommData.HightDiff));
+    296          //	memcpy((uint8 *)&sFlshRec.E_MstDriverNum,(uint8 *)&l_sDip2CommData.HightDiff,sizeof(l_sDip2CommData.HightDiff));
+    297          //	
+    298          //	sFlshRec.RecTypCod	= GetRecTyp();
+    299          //
+    300          //	sFlshRec.Myspeed1	= GetMySpeed1();
+    301          //	sFlshRec.Myspeed2	= GetMySpeed2();
+    302          //
+    303          //	sFlshRec.MstDip		= g_DipVal;
+    304          //	
+    305          //	sFlshRec.MyKileMeter= GetMyKileMeter();
+    306          //
+    307          //	//sFlshRec.MyMstLocoPower= GetMyMstLocoPower(); GetPosEnergy()
+    308          //    sFlshRec.MyMstLocoPower= GetPosEnergy();
+    309          //    sFlshRec.MyPower    = GetPow();
+    310          //    
+    311          //	sFlshRec.Myhig1		= GetDip1Hig();
+    312          //	sFlshRec.Myhig2		= GetDip2Hig();	
+    313          //
+    314          //	ReadTime((stcTime *)&sTime);
+    315          //	sFlshRec.MyYear		= sTime.Year;			
+    316          //	sFlshRec.MyMonth	= sTime.Month;			
+    317          //	sFlshRec.MyData		= sTime.Date;			
+    318          //	sFlshRec.MyHour		= sTime.Hour;			
+    319          //	sFlshRec.MyMinute	= sTime.Min;			
+    320          //	sFlshRec.MySecond	= sTime.Sec;
+    321          //
+    322          //	sFlshRec.MstDensity = GetDensityVal();
+    323          //	
+    324          //	u16tmp = GetReviseHight();
+    325          //	memcpy(sFlshRec.PlanLen,(uint8 *)&u16tmp,sizeof(sFlshRec.PlanLen))	;
+    326          //
+    327          //	sFlshRec.MyAddspeed	= 0;
+    328          //
+    329          //	sFlshRec.MyDip		= (uint16)g_DipVal;
+    330          //
+    331          //	sFlshRec.MyEngRotSpd= GetMyEngRotSpd();
+    332          //
+    333          //	ReadFixInfo((stcFixInfo *)&sFixInfo);
+    334          //	sFlshRec.JcRealType	= sFixInfo.LocoTyp + sFixInfo.E_LocoTyp*256 ;
+    335          //	memcpy((uint8 *)&sFlshRec.JcRealNo,(uint8 *)&sFixInfo.LocoNum,sizeof(sFlshRec.JcRealNo));
+    336          //
+    337          //	sFlshRec.ErrNum		= GetHostErrNum();
+    338          //	sFlshRec.ErrorCode	= GetErrorCode();
+    339          //
+    340          //	sFlshRec.MyLocoWorkState = GetMyLocoWorkState();
+    341          //
+    342          //	sFlshRec.OilBoxModel= GetOilBoxCod();
+    343          //
+    344          //	sFlshRec.SoftVes 	= SOFT_VER;
+    345          //
+    346          //	sFlshRec.MyDip1Tmp = GetMyDip1Tmp();	  		    //油尺1温度
+    347          //	sFlshRec.MyDip2Tmp = GetMyDip2Tmp();				//油尺2温度
+    348          //		
+    349          //	sFlshRec.MyDip1Err = GetMyDip1Err();
+    350          //	sFlshRec.MyDip2Err = GetMyDip2Err();
+    351          //		
+    352          //	sFlshRec.MyDip1Den = GetMyDip1Den();
+    353          //	sFlshRec.MyDip2Den = GetMyDip2Den();
+    354          //
+    355          //	sFlshRec.CrcCheck = GetCrc16Check((uint8 *)&sFlshRec,sizeof(sFlshRec) - 2);
+    356          //
+    357          //    FlshAddr = GetRecNumAddr( g_CurFlshRecNum );
+    358          //	if(!WriteFlsh(FlshAddr, (uint16 *)&sFlshRec, sizeof(sFlshRec)))
+    359          //	{}
+    360          //	ReadFlshRec((stcFlshRec *)&sFlshRec,g_CurFlshRecNum);
+    361          //	printfcom0("\r\n stcFlshRec.StoreCnt %d",sFlshRec.StoreCnt);
+    362          //
+    363          //	g_CurFlshRecNum++;
+    364          //	
+    365          //	StoreCurFlshRecNum( g_CurFlshRecNum );              //把流水号存入铁电
+    366          //}
+    367          //
+    368          ////#define	STORE_REC_ONE_SEC	1
+    369          //////-------------------------------------------------------------------------------
+    370          //////函数名称:        void  StoreDataPro(void)
+    371          //////函数功能:        存储数据
+    372          //////入口参数:        无
+    373          //////出口参数:         
+    374          //////函数调用:			
+    375          //////-------------------------------------------------------------------------------
+    376          //void  StoreDataPro(void)
+    377          //{
+    378          //	static	uint32	Time = 0;	
+    379          //	
+    380          //	if(
+    381          //			#ifndef	STORE_REC_ONE_SEC	
+    382          //	(GetSysTime() - Time > (100 * GetStoreTime() )) &&  
+    383          //			#endif	    
+    384          //	(GetSysTime() > 30*100) && (GetSysTime() - Time > 200)
+    385          //	  )	
+    386          //	{
+    387          //		StoreData();
+    388          //		
+    389          //		Time = GetSysTime();
+    390          //	}
+    391          //}
+    392          ////
+    393          ////
+    394          //////-------------------------------------------------------------------------------
+    395          //////函数名称:        	uint8	GetFlshStoreErrEvtFlg(void)
+    396          //////函数功能:       	存储流水任务
+    397          //////入口参数:        	无
+    398          //////出口参数:      	无
+    399          //////-------------------------------------------------------------------------------
+    400          ////uint8	JudgeLstFlsh(void)
+    401          ////{
+    402          ////	static	uint32	Times = 0;
+    403          ////	stcFlshRec		LstsFlshRec;
+    404          ////	uint16			CrcCheck;
+    405          ////	uint8			Flg;
+    406          ////
+    407          ////	Times++;
+    408          ////	
+    409          ////	Flg = TRUE;
+    410          ////	
+    411          ////	if(g_CurFlshRecNum)
+    412          ////	{
+    413          ////		if(ReadFlshRec((stcFlshRec *)&LstsFlshRec,g_CurFlshRecNum - 1))
+    414          ////		{	
+    415          ////			CrcCheck = GetCrc16Check((uint8 *)&LstsFlshRec,sizeof(stcFlshRec) - 2);
+    416          ////
+    417          ////			if((CrcCheck != LstsFlshRec.CrcCheck))
+    418          ////			{
+    419          ////				l_FlshStoreErrEvtFlg = FLSH_WRT_ERR_EVT;
+    420          ////
+    421          ////				if((Times == 1) ) 
+    422          ////				{
+    423          ////					Flg = FALSE;
+    424          ////				}
+    425          ////			}
+    426          ////		}
+    427          ////	}	
+    428          ////	
+    429          ////	return	Flg;
+    430          ////}
+    431          ////
+    432          //////-------------------------------------------------------------------------------
+    433          //////函数名称:        	uint8	GetFlshStoreErrEvtFlg(void)
+    434          //////函数功能:       	存储流水任务
+    435          //////入口参数:        	无
+    436          //////出口参数:      	无
+    437          //////-------------------------------------------------------------------------------
+    438          ////uint8	GetFlshStoreErrEvtFlg(void)
+    439          ////{
+    440          ////	return	l_FlshStoreErrEvtFlg;
+    441          ////}
+    442          ////
+    443          ////
+    444          //////-------------------------------------------------------------------------------
+    445          //////函数名称:        	void	StoreRecTask(void)
+    446          //////函数功能:       	存记录任务
+    447          //////入口参数:        	无
+    448          //////出口参数:      	无
+    449          //////-------------------------------------------------------------------------------
+    450          //void	StoreRecTask(void)
+    451          //{
+    452          //	StoreDataPro();							//存数据进程
+    453          //}
+    454          ////
+    455          ////#define		FLSH_WRT_ERR_EVT	32
+    456          //////-------------------------------------------------------------------------------
+    457          //////函数名称:        	stcFlshRec	ReadFlshRec(uint32	FlshRecNum)
+    458          //////函数功能:       	读指定流水号的FLSH记录
+    459          //////入口参数:        	无
+    460          //////出口参数:      	指定流水号的Flsh记录
+    461          //////-------------------------------------------------------------------------------
+    462          //uint8	ReadFlshRec(stcFlshRec * sFlshRec,uint32	FlshRecNum)
+    463          //{
+    464          //	uint32		FlshAddr;
+    465          //	//uint16		CrcCheck;
+    466          //	
+    467          //	FlshAddr = GetRecNumAddr( FlshRecNum );						
+    468          //	
+    469          //	if(ReadFlsh(FlshAddr,(uint16 *)sFlshRec,sizeof(stcFlshRec)))
+    470          //	{
+    471          //	/*
+    472          //		CrcCheck = GetCrc16Check((uint8 *)sFlshRec,sizeof(stcFlshRec) - 2);
+    473          //		
+    474          //		if(CrcCheck != sFlshRec->CrcCheck)
+    475          //		{
+    476          //			if(sFlshRec->RecTypCod == RIGHT_DATA)
+    477          //			{
+    478          //				sFlshRec->RecTypCod = FLSH_WRT_ERR_EVT;
+    479          //			}
+    480          //			
+    481          //			CrcCheck = GetCrc16Check((uint8 *)sFlshRec,sizeof(stcFlshRec) - 2);
+    482          //
+    483          //			sFlshRec->CrcCheck = CrcCheck;
+    484          //		}
+    485          //	*/	
+    486          //		return 1;
+    487          //	}
+    488          //	
+    489          //	return	0;
+    490          //}
+    491          ////
+    492          //////-------------------------------------------------------------------------------------------------
+    493          //////函数名称:             void  ShowFlshRec(stcFlshRec sDip) 
+    494          //////函数功能:             将记录转变为比较容易读的格式
+    495          //////入口参数:             无
+    496          //////出口参数:             无
+    497          //////说明:                 
+    498          //////--------------------------------------------------------------------------------------------------
+    499          ////void  ShowFlshRec(stcFlshRec sDip) 
+    500          ////{
+    501          ////	uint8       Second,Minute,Data,Mouth,Hour;
+    502          ////	uint16      RelSpeed;
+    503          ////	uint32      Time;
+    504          ////	uint16		CrcCheck;				
+    505          ////	
+    506          ////	int16 		MstDip1Prs;
+    507          ////	int16 		MstDip2Prs;	
+    508          ////	int8 		DipValChgState;
+    509          ////	int16 		MstDip;
+    510          ////	int16 		SlvDip;
+    511          ////	int8 		ErrorCode;
+    512          ////	int8 		RecTypCod;
+    513          ////
+    514          ////	MstDip1Prs  	= sDip.MstDip1Prs;
+    515          ////	MstDip2Prs		= sDip.MstDip2Prs;	
+    516          ////	DipValChgState	= sDip.DipValChgState;
+    517          ////	MstDip			= sDip.MstDip;
+    518          ////	SlvDip			= sDip.SlvDip;
+    519          ////	ErrorCode		= sDip.ErrorCode;
+    520          ////	RecTypCod		= sDip.RecTypCod;
+    521          ////		
+    522          ////	CrcCheck = GetCrc16Check((uint8 *)&sDip,sizeof(stcFlshRec) - 2);
+    523          ////	
+    524          ////	if(CrcCheck != sDip.CrcCheck)
+    525          ////	{
+    526          ////		//printfcom0("\r\n记录校验错误！");   
+    527          ////	}
+    528          ////		
+    529          ////    RelSpeed= (uint16)sDip.RelSpeed[0] + (sDip.RelSpeed[1] &(1))*256;
+    530          ////    
+    531          ////	memcpy((uint8 *)&Time,sDip.Time,sizeof(Time));
+    532          ////
+    533          ////    Second 	= Time  & (0xff >> 2);
+    534          ////    Minute 	= (Time >> 6 ) & (0xff >> 2);
+    535          ////    Hour   	= (Time >> 12) & (0xff >> 3);
+    536          ////    Data   	= (Time >> 17) & (0xff >> 3);
+    537          ////    Mouth  	= (Time >> 22) & (0xff >> 4);
+    538          ////    
+    539          ////   // //printfcom0("\r\n%u-%u %u:%u:%u,",Mouth,Data,Hour,Minute,Second);
+    540          ////    //printfcom0("\r\n%u-%u %u:%u:%u,",sDip.MyMonth,sDip.MyData,sDip.MyHour,sDip.MyMinute,sDip.MySecond);   
+    541          ////    //printfcom0("%u,",RelSpeed);      
+    542          ////  	//printfcom0("%u,%u,%u,%u,%u,%u,%u",MstDip1Prs,MstDip2Prs,MstDip,SlvDip,DipValChgState,ErrorCode,RecTypCod);
+    543          ////
+    544          ////}
+    545          ////
+    546          //////-------------------------------------------------------------------------------------------------
+    547          //////函数名称:             void  PrintfAllFlshRec(void) 
+    548          //////函数功能:             打印记录
+    549          //////入口参数:             无
+    550          //////出口参数:             无
+    551          //////说明:                 
+    552          //////--------------------------------------------------------------------------------------------------
+    553          ////void  PrintfAllFlshRec(void) 
+    554          ////{
+    555          ////	uint32	i;
+    556          ////	uint32	StartFlshRecNum;		
+    557          ////	uint32	FlshMaxNum;		
+    558          ////	stcFlshRec	sFlshRec;		
+    559          ////	
+    560          ////	FlshMaxNum		= FLSH_MAX_SIZE/sizeof(stcFlshRec);
+    561          ////	
+    562          ////	if(g_CurFlshRecNum > FlshMaxNum)
+    563          ////	{
+    564          ////		StartFlshRecNum = g_CurFlshRecNum - FlshMaxNum ;
+    565          ////	}
+    566          ////	else
+    567          ////	{
+    568          ////		StartFlshRecNum = 1;
+    569          ////	}
+    570          ////	
+    571          ////	//printfcom0("\r\n流水号,油尺1,油尺2,油量,显示油量,速度,日期,公里标,故障代码,变化状态\r\n");
+    572          ////	//printfcom0("\r\nStartFlshRecNum:%u,g_CurFlshRecNum:%u\r\n",StartFlshRecNum,g_CurFlshRecNum);
+    573          ////	for(i = g_CurFlshRecNum;i >= StartFlshRecNum;i--)			//流水号从最初到最发送记录号
+    574          ////	{
+    575          ////		//SysFastHoldTast();
+    576          ////			
+    577          ////		ReadFlshRec((stcFlshRec *)&sFlshRec,i);		
+    578          ////		
+    579          ////		ShowFlshRec(sFlshRec);									//将记录打印出来
+    580          ////	}
+    581          ////}
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

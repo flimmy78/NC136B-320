@@ -1,0 +1,504 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       14/Dec/2017  10:49:32
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC卡模块\Application\Library\Global\FIFO.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC卡模块\Application\Library\Global\FIFO.c" -lCN
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\FIFO.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\FIFO.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC卡模块\Application\Library\Global\FIFO.c
+      1          #include 	<includes.h>
+      2          #include	"FIFO.h"
+      3          
+      4          //------------------------------------------------------------------------
+      5          // 名    称：   InitFIFO(stcFIFO *FIFO,uint8 *Buf,uint16 Size)
+      6          // 功    能：   初始化FIFO缓冲区
+      7          // 入口参数：	FIFO:要初始化的FIFO缓冲区结构,Buf:缓冲区地址,SIZE:缓冲区大小
+      8          // 出口参数：
+      9          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     10          void   InitFIFO(stcFIFO *FIFO,uint8 *Buf,uint16 Size)
+     11          {
+     12              FIFO->pWrite = 0;
+   \                     InitFIFO: (+1)
+   \   00000000   0x2300             MOVS     R3,#+0
+   \   00000002   0x8003             STRH     R3,[R0, #+0]
+     13              FIFO->pRead  = 0;
+   \   00000004   0x2300             MOVS     R3,#+0
+   \   00000006   0x8043             STRH     R3,[R0, #+2]
+     14              FIFO->Size   = Size;
+   \   00000008   0x8082             STRH     R2,[R0, #+4]
+     15              FIFO->BufAddr= Buf;
+   \   0000000A   0x6081             STR      R1,[R0, #+8]
+     16          }
+   \   0000000C   0x4770             BX       LR               ;; return
+     17          
+     18          //------------------------------------------------------------------------
+     19          // 名    称：   void   ClearFIFO(stcFIFO *FIFO)
+     20          // 功    能：   初始化FIFO缓冲区
+     21          // 入口参数：	FIFO:要初始化的FIFO缓冲区结构,Buf:缓冲区地址,SIZE:缓冲区大小
+     22          // 出口参数：
+     23          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     24          void   ClearFIFO(stcFIFO *FIFO)
+     25          {
+     26              FIFO->pWrite = 0;
+   \                     ClearFIFO: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0x8001             STRH     R1,[R0, #+0]
+     27              FIFO->pRead  = 0;	
+   \   00000004   0x2100             MOVS     R1,#+0
+   \   00000006   0x8041             STRH     R1,[R0, #+2]
+     28          }
+   \   00000008   0x4770             BX       LR               ;; return
+     29          
+     30          //------------------------------------------------------------------------
+     31          // 名    称：   uint16  GetNoReadSizeFIFO(stcFIFO *FIFO)
+     32          // 功    能：   求FIFO缓冲区中未读空间大小
+     33          // 入口参数：	FIFO:的FIFO缓冲区结构
+     34          // 出口参数：	缓冲区未读数据大小
+     35          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     36          uint16  GetNoReadSizeFIFO(stcFIFO *FIFO)
+     37          {
+   \                     GetNoReadSizeFIFO: (+1)
+   \   00000000   0x0001             MOVS     R1,R0
+     38              uint16  pWrite = FIFO->pWrite;
+   \   00000002   0x8808             LDRH     R0,[R1, #+0]
+     39              uint16  pRead  = FIFO->pRead;
+   \   00000004   0x884A             LDRH     R2,[R1, #+2]
+     40              uint16  pBufSize = FIFO->Size;
+   \   00000006   0x888B             LDRH     R3,[R1, #+4]
+     41          
+     42              return (pWrite + pBufSize - pRead) % pBufSize;
+   \   00000008   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   0000000A   0xB29B             UXTH     R3,R3            ;; ZeroExt  R3,R3,#+16,#+16
+   \   0000000C   0x1818             ADDS     R0,R3,R0
+   \   0000000E   0xB292             UXTH     R2,R2            ;; ZeroExt  R2,R2,#+16,#+16
+   \   00000010   0x1A80             SUBS     R0,R0,R2
+   \   00000012   0xB29B             UXTH     R3,R3            ;; ZeroExt  R3,R3,#+16,#+16
+   \   00000014   0xFB90 0xF2F3      SDIV     R2,R0,R3
+   \   00000018   0xFB03 0x0012      MLS      R0,R3,R2,R0
+   \   0000001C   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   0000001E   0x4770             BX       LR               ;; return
+     43          }
+     44          
+     45          //------------------------------------------------------------------------
+     46          // 名    称：   uint16  GetNoWriteSizeFIFO(stcFIFO *FIFO)
+     47          // 功    能：   求FIFO缓冲区中未写空间大小
+     48          // 入口参数：	FIFO:的FIFO缓冲区结构
+     49          // 出口参数：	缓冲区未写数据大小
+     50          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     51          uint16  GetNoWriteSizeFIFO(stcFIFO *FIFO)
+     52          {
+   \                     GetNoWriteSizeFIFO: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+     53              uint16  pBufSize = FIFO->Size;
+   \   00000004   0x88A5             LDRH     R5,[R4, #+4]
+     54              return  pBufSize - GetNoReadSizeFIFO(FIFO);
+   \   00000006   0x0020             MOVS     R0,R4
+   \   00000008   0x.... 0x....      BL       GetNoReadSizeFIFO
+   \   0000000C   0x1A28             SUBS     R0,R5,R0
+   \   0000000E   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   00000010   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+     55          }
+     56          
+     57          //------------------------------------------------------------------------
+     58          // 名    称：   uint8   WriteFIFO(stcFIFO *FIFO,uint8 *DatBuf,uint16 DatLen)
+     59          // 功    能：   写FIFO缓冲区
+     60          // 入口参数：	FIFO:的FIFO缓冲区结构,DatBuf:写入数据,DatLen:数据长度
+     61          // 出口参数：	写FIFO缓冲区成功返回1,错误返回0
+     62          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     63          uint8   WriteFIFO(stcFIFO *FIFO,uint8 *DatBuf,uint16 DatLen)
+     64          {
+   \                     WriteFIFO: (+1)
+   \   00000000   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+   \   00000008   0x0016             MOVS     R6,R2
+     65              uint16  i,j;
+     66              uint16  NoWriteSize;
+     67              uint16  pWrite = FIFO->pWrite;
+   \   0000000A   0xF8B4 0x9000      LDRH     R9,[R4, #+0]
+     68              uint16  pBufSize = FIFO->Size;
+   \   0000000E   0xF8B4 0xA004      LDRH     R10,[R4, #+4]
+     69              uint8   *FIFOBuf = FIFO->BufAddr;
+   \   00000012   0xF8D4 0xB008      LDR      R11,[R4, #+8]
+     70          
+     71              NoWriteSize =  GetNoWriteSizeFIFO(FIFO);   		//确认缓冲区还没有未写空间大小
+   \   00000016   0x0020             MOVS     R0,R4
+   \   00000018   0x.... 0x....      BL       GetNoWriteSizeFIFO
+   \   0000001C   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+     72          	
+     73          //	
+     74              if(DatLen >= NoWriteSize)
+   \   00000020   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \   00000024   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   00000026   0x4286             CMP      R6,R0
+   \   00000028   0xD301             BCC.N    ??WriteFIFO_0
+     75              {
+     76                  return  FALSE;                     	 		//数据比缓冲区剩余空间大,返回写错误
+   \   0000002A   0x2000             MOVS     R0,#+0
+   \   0000002C   0xE026             B.N      ??WriteFIFO_1
+     77              }
+     78          
+     79              for(i = 0; i < DatLen; i++)             		//将数据写入缓冲区
+   \                     ??WriteFIFO_0: (+1)
+   \   0000002E   0x2000             MOVS     R0,#+0
+   \   00000030   0x0007             MOVS     R7,R0
+   \                     ??WriteFIFO_2: (+1)
+   \   00000032   0xB2BF             UXTH     R7,R7            ;; ZeroExt  R7,R7,#+16,#+16
+   \   00000034   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   00000036   0x42B7             CMP      R7,R6
+   \   00000038   0xD213             BCS.N    ??WriteFIFO_3
+     80              {
+     81                  j =(pWrite + i) % pBufSize;         		//计算写地址
+   \   0000003A   0xFA1F 0xF989      UXTH     R9,R9            ;; ZeroExt  R9,R9,#+16,#+16
+   \   0000003E   0xB2BF             UXTH     R7,R7            ;; ZeroExt  R7,R7,#+16,#+16
+   \   00000040   0xEB17 0x0009      ADDS     R0,R7,R9
+   \   00000044   0xFA1F 0xFA8A      UXTH     R10,R10          ;; ZeroExt  R10,R10,#+16,#+16
+   \   00000048   0xFB90 0xF1FA      SDIV     R1,R0,R10
+   \   0000004C   0xFB0A 0x0011      MLS      R0,R10,R1,R0
+   \   00000050   0x4680             MOV      R8,R0
+     82          
+     83                  FIFOBuf[j] =  DatBuf[i];            		//写数据
+   \   00000052   0xB2BF             UXTH     R7,R7            ;; ZeroExt  R7,R7,#+16,#+16
+   \   00000054   0x5D78             LDRB     R0,[R7, R5]
+   \   00000056   0xFA1F 0xF888      UXTH     R8,R8            ;; ZeroExt  R8,R8,#+16,#+16
+   \   0000005A   0xF808 0x000B      STRB     R0,[R8, R11]
+     84              }
+   \   0000005E   0x1C7F             ADDS     R7,R7,#+1
+   \   00000060   0xE7E7             B.N      ??WriteFIFO_2
+     85          
+     86              FIFO->pWrite = (pWrite + DatLen ) % pBufSize; 	//写指针++
+   \                     ??WriteFIFO_3: (+1)
+   \   00000062   0xFA1F 0xF989      UXTH     R9,R9            ;; ZeroExt  R9,R9,#+16,#+16
+   \   00000066   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   00000068   0xEB16 0x0009      ADDS     R0,R6,R9
+   \   0000006C   0xFA1F 0xFA8A      UXTH     R10,R10          ;; ZeroExt  R10,R10,#+16,#+16
+   \   00000070   0xFB90 0xF1FA      SDIV     R1,R0,R10
+   \   00000074   0xFB0A 0x0011      MLS      R0,R10,R1,R0
+   \   00000078   0x8020             STRH     R0,[R4, #+0]
+     87          
+     88              return  TRUE;
+   \   0000007A   0x2001             MOVS     R0,#+1
+   \                     ??WriteFIFO_1: (+1)
+   \   0000007C   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}   ;; return
+     89          }
+     90          
+     91          //------------------------------------------------------------------------
+     92          // 名    称：   uint8   ReadFIFO(stcFIFO *FIFO,uint8 *DatBuf,uint16 DatLen)
+     93          // 功    能：   读FIFO缓冲区
+     94          // 入口参数：	FIFO:的FIFO缓冲区结构,DatBuf:读数据缓冲位置,DatLen:要读数据长度数据长度
+     95          // 出口参数：	读FIFO缓冲区成功1,返回为0
+     96          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     97          uint8   ReadFIFO(stcFIFO *FIFO,uint8 *DatBuf,uint16 DatLen)
+     98          {
+   \                     ReadFIFO: (+1)
+   \   00000000   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+   \   00000008   0x0016             MOVS     R6,R2
+     99              uint16  i,j;
+    100              uint16  NoReadSize;
+    101              uint16  pRead = FIFO->pRead;
+   \   0000000A   0xF8B4 0x9002      LDRH     R9,[R4, #+2]
+    102              uint16  pBufSize = FIFO->Size;
+   \   0000000E   0xF8B4 0xA004      LDRH     R10,[R4, #+4]
+    103              uint8   *FIFOBuf = FIFO->BufAddr;
+   \   00000012   0xF8D4 0xB008      LDR      R11,[R4, #+8]
+    104          
+    105              NoReadSize = GetNoReadSizeFIFO(FIFO);      	//求未读空间大小
+   \   00000016   0x0020             MOVS     R0,R4
+   \   00000018   0x.... 0x....      BL       GetNoReadSizeFIFO
+   \   0000001C   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    106          
+    107          //	printfcom0("\r\n NoReadSize %d",NoReadSize);
+    108              if(DatLen > NoReadSize )                 	//读空间小于要读数据,返回读取错误
+   \   00000020   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \   00000024   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   00000026   0x42B0             CMP      R0,R6
+   \   00000028   0xD201             BCS.N    ??ReadFIFO_0
+    109              {
+    110                  return FALSE;
+   \   0000002A   0x2000             MOVS     R0,#+0
+   \   0000002C   0xE026             B.N      ??ReadFIFO_1
+    111              }
+    112          
+    113              for(i = 0; i < DatLen; i++)
+   \                     ??ReadFIFO_0: (+1)
+   \   0000002E   0x2000             MOVS     R0,#+0
+   \   00000030   0x0007             MOVS     R7,R0
+   \                     ??ReadFIFO_2: (+1)
+   \   00000032   0xB2BF             UXTH     R7,R7            ;; ZeroExt  R7,R7,#+16,#+16
+   \   00000034   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   00000036   0x42B7             CMP      R7,R6
+   \   00000038   0xD213             BCS.N    ??ReadFIFO_3
+    114              {
+    115                  j = (pRead + i) % pBufSize;         	//计算读地址
+   \   0000003A   0xFA1F 0xF989      UXTH     R9,R9            ;; ZeroExt  R9,R9,#+16,#+16
+   \   0000003E   0xB2BF             UXTH     R7,R7            ;; ZeroExt  R7,R7,#+16,#+16
+   \   00000040   0xEB17 0x0009      ADDS     R0,R7,R9
+   \   00000044   0xFA1F 0xFA8A      UXTH     R10,R10          ;; ZeroExt  R10,R10,#+16,#+16
+   \   00000048   0xFB90 0xF1FA      SDIV     R1,R0,R10
+   \   0000004C   0xFB0A 0x0011      MLS      R0,R10,R1,R0
+   \   00000050   0x4680             MOV      R8,R0
+    116          
+    117                  DatBuf[i] = FIFOBuf[j];             	//读取数据
+   \   00000052   0xFA1F 0xF888      UXTH     R8,R8            ;; ZeroExt  R8,R8,#+16,#+16
+   \   00000056   0xF818 0x000B      LDRB     R0,[R8, R11]
+   \   0000005A   0xB2BF             UXTH     R7,R7            ;; ZeroExt  R7,R7,#+16,#+16
+   \   0000005C   0x5578             STRB     R0,[R7, R5]
+    118              }
+   \   0000005E   0x1C7F             ADDS     R7,R7,#+1
+   \   00000060   0xE7E7             B.N      ??ReadFIFO_2
+    119          
+    120              FIFO->pRead = (pRead + DatLen) % pBufSize;  //读指针++
+   \                     ??ReadFIFO_3: (+1)
+   \   00000062   0xFA1F 0xF989      UXTH     R9,R9            ;; ZeroExt  R9,R9,#+16,#+16
+   \   00000066   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   00000068   0xEB16 0x0009      ADDS     R0,R6,R9
+   \   0000006C   0xFA1F 0xFA8A      UXTH     R10,R10          ;; ZeroExt  R10,R10,#+16,#+16
+   \   00000070   0xFB90 0xF1FA      SDIV     R1,R0,R10
+   \   00000074   0xFB0A 0x0011      MLS      R0,R10,R1,R0
+   \   00000078   0x8060             STRH     R0,[R4, #+2]
+    121          
+    122              return  TRUE;
+   \   0000007A   0x2001             MOVS     R0,#+1
+   \                     ??ReadFIFO_1: (+1)
+   \   0000007C   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}   ;; return
+    123          }
+    124          
+    125          
+    126          //------------------------------------------------------------------------
+    127          // 名    称：   uint8   ReadFIFO(stcFIFO *FIFO,uint8 *DatBuf,uint16 DatLen)
+    128          // 功    能：   读FIFO缓冲区
+    129          // 入口参数：	FIFO:的FIFO缓冲区结构,DatBuf:读数据缓冲位置,DatLen:要读数据长度数据长度
+    130          // 出口参数：	读FIFO缓冲区成功1,返回为0
+    131          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    132          uint8   OnlyReadFIFO(stcFIFO *FIFO,uint8 *DatBuf,uint16 DatLen)
+    133          {
+   \                     OnlyReadFIFO: (+1)
+   \   00000000   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+   \   00000008   0x0016             MOVS     R6,R2
+    134              uint16  i,j;
+    135              uint16  NoReadSize;
+    136              uint16  pRead = FIFO->pRead;
+   \   0000000A   0xF8B4 0x9002      LDRH     R9,[R4, #+2]
+    137              uint16  pBufSize = FIFO->Size;
+   \   0000000E   0xF8B4 0xA004      LDRH     R10,[R4, #+4]
+    138              uint8   *FIFOBuf = FIFO->BufAddr;
+   \   00000012   0xF8D4 0xB008      LDR      R11,[R4, #+8]
+    139          
+    140              NoReadSize = GetNoReadSizeFIFO(FIFO);      	//求未读空间大小
+   \   00000016   0x0020             MOVS     R0,R4
+   \   00000018   0x.... 0x....      BL       GetNoReadSizeFIFO
+   \   0000001C   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    141          
+    142              if(DatLen > NoReadSize )                 	//读空间小于要读数据,返回读取错误
+   \   00000020   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \   00000024   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   00000026   0x42B0             CMP      R0,R6
+   \   00000028   0xD201             BCS.N    ??OnlyReadFIFO_0
+    143              {
+    144                  return FALSE;
+   \   0000002A   0x2000             MOVS     R0,#+0
+   \   0000002C   0xE023             B.N      ??OnlyReadFIFO_1
+    145              }
+    146          
+    147              for(i = 0; i < DatLen; i++)
+   \                     ??OnlyReadFIFO_0: (+1)
+   \   0000002E   0x2000             MOVS     R0,#+0
+   \   00000030   0x0007             MOVS     R7,R0
+   \                     ??OnlyReadFIFO_2: (+1)
+   \   00000032   0xB2BF             UXTH     R7,R7            ;; ZeroExt  R7,R7,#+16,#+16
+   \   00000034   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   00000036   0x42B7             CMP      R7,R6
+   \   00000038   0xD213             BCS.N    ??OnlyReadFIFO_3
+    148              {
+    149                  j = (pRead + i) % pBufSize;         	//计算读地址
+   \   0000003A   0xFA1F 0xF989      UXTH     R9,R9            ;; ZeroExt  R9,R9,#+16,#+16
+   \   0000003E   0xB2BF             UXTH     R7,R7            ;; ZeroExt  R7,R7,#+16,#+16
+   \   00000040   0xEB17 0x0009      ADDS     R0,R7,R9
+   \   00000044   0xFA1F 0xFA8A      UXTH     R10,R10          ;; ZeroExt  R10,R10,#+16,#+16
+   \   00000048   0xFB90 0xF1FA      SDIV     R1,R0,R10
+   \   0000004C   0xFB0A 0x0011      MLS      R0,R10,R1,R0
+   \   00000050   0x4680             MOV      R8,R0
+    150          
+    151                  DatBuf[i] = FIFOBuf[j];             	//读取数据
+   \   00000052   0xFA1F 0xF888      UXTH     R8,R8            ;; ZeroExt  R8,R8,#+16,#+16
+   \   00000056   0xF818 0x000B      LDRB     R0,[R8, R11]
+   \   0000005A   0xB2BF             UXTH     R7,R7            ;; ZeroExt  R7,R7,#+16,#+16
+   \   0000005C   0x5578             STRB     R0,[R7, R5]
+    152              }
+   \   0000005E   0x1C7F             ADDS     R7,R7,#+1
+   \   00000060   0xE7E7             B.N      ??OnlyReadFIFO_2
+    153          
+    154          	FIFO->pRead = (pRead ) % pBufSize;  //读指针++
+   \                     ??OnlyReadFIFO_3: (+1)
+   \   00000062   0xFA1F 0xF989      UXTH     R9,R9            ;; ZeroExt  R9,R9,#+16,#+16
+   \   00000066   0xFA1F 0xFA8A      UXTH     R10,R10          ;; ZeroExt  R10,R10,#+16,#+16
+   \   0000006A   0xFB99 0xF0FA      SDIV     R0,R9,R10
+   \   0000006E   0xFB0A 0x9010      MLS      R0,R10,R0,R9
+   \   00000072   0x8060             STRH     R0,[R4, #+2]
+    155          
+    156              return  TRUE;
+   \   00000074   0x2001             MOVS     R0,#+1
+   \                     ??OnlyReadFIFO_1: (+1)
+   \   00000076   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}   ;; return
+    157          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   ClearFIFO
+       0   GetNoReadSizeFIFO
+      16   GetNoWriteSizeFIFO
+        16   -> GetNoReadSizeFIFO
+       0   InitFIFO
+      40   OnlyReadFIFO
+        40   -> GetNoReadSizeFIFO
+      40   ReadFIFO
+        40   -> GetNoReadSizeFIFO
+      40   WriteFIFO
+        40   -> GetNoWriteSizeFIFO
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      10  ClearFIFO
+      32  GetNoReadSizeFIFO
+      18  GetNoWriteSizeFIFO
+      14  InitFIFO
+     122  OnlyReadFIFO
+     128  ReadFIFO
+     128  WriteFIFO
+
+ 
+ 452 bytes in section .text
+ 
+ 452 bytes of CODE memory
+
+Errors: none
+Warnings: none

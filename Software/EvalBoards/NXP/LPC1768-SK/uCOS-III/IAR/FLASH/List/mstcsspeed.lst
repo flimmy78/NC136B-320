@@ -1,0 +1,480 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       14/Dec/2017  10:49:33
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC卡模块\Application\Library\SpeedTest\mstcsspeed.C
+#    Command line =  
+#        "F:\iar\NC136B-320
+#        IC卡模块\Application\Library\SpeedTest\mstcsspeed.C" -lCN
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\mstcsspeed.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\mstcsspeed.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC卡模块\Application\Library\SpeedTest\mstcsspeed.C
+      1          #include <includes.h>
+      2          #include <FRAM.h>
+      3          #include <osal.h>
+      4          #include <bsp_os.h>
+      5          
+      6          //每圈脉冲常量
+      7          #define		PPR		200
+      8          //pi = 3.14 * 100
+      9          #define		PI		314
+     10          //轮对直径 1.1m * 10
+     11          //#define		DIM		11
+     12          #define		DIM		10.5
+     13          //里程常数 PPR *10*100*1000  
+     14          #define		PI_DIM_MUL		(10*100)
+     15          
+     16          #if (UCOS_EN == DEF_ENABLED ) && ( OS_VERSION > 30000U )
+     17          extern  OS_SEM           time2_over_Sem;               // 信号量
+     18          #endif
+     19          
+
+   \                                 In section .bss, align 4
+     20          uint32	mPluseSumCntcs = 0;
+   \                     mPluseSumCntcs:
+   \   00000000                      DS8 4
+     21          //-------------------------------------------------------------------------------
+     22          //函数名称:         GetFrqCnt()
+     23          //函数功能:         取频率值
+     24          //入口参数:         无		 
+     25          //出口参数:         
+     26          //-------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     27          uint32  GetFrq3SumCnt(void)
+     28          {
+     29          	return	mPluseSumCntcs;
+   \                     GetFrq3SumCnt: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable2
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+     30          }
+     31          
+
+   \                                 In section .bss, align 4
+     32          uint32	m_TimecsSum = 0;
+   \                     m_TimecsSum:
+   \   00000000                      DS8 4
+
+   \                                 In section .bss, align 4
+     33          uint32	m_AddPlusecs = 0;
+   \                     m_AddPlusecs:
+   \   00000000                      DS8 4
+
+   \                                 In section .bss, align 4
+     34          uint32	m_PlusecsChgFlg = 0;
+   \                     m_PlusecsChgFlg:
+   \   00000000                      DS8 4
+
+   \                                 In section .bss, align 4
+     35          stcSpeedPluse	m_sSpeedcsPluse;
+   \                     m_sSpeedcsPluse:
+   \   00000000                      DS8 8
+     36          
+     37          
+     38          #define	MATH_PLUSE_TIME	 (2*1000*1000)
+     39          #define	MATH_PLUSE_NUM 	 100
+     40          
+     41          #define		CAP00	126
+     42          #define		CAP10	118
+     43          #define		CAP20	4
+     44          
+
+   \                                 In section .text, align 2, keep-with-next
+     45          void TIMER2_IRQHandler(void)
+     46          {        
+   \                     TIMER2_IRQHandler: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     47              uint8  tmp = 0;
+   \   00000002   0x2400             MOVS     R4,#+0
+     48          
+     49          	if (TIM_GetIntCaptureStatus(LPC_TIM2,TIM_MR0_INT))
+   \   00000004   0x2100             MOVS     R1,#+0
+   \   00000006   0x....             LDR.N    R0,??DataTable2_1  ;; 0x40090000
+   \   00000008   0x.... 0x....      BL       TIM_GetIntCaptureStatus
+   \   0000000C   0x2800             CMP      R0,#+0
+   \   0000000E   0xD03F             BEQ.N    ??TIMER2_IRQHandler_0
+     50          	{
+     51          		TIM_ClearIntCapturePending(LPC_TIM2,TIM_MR0_INT);
+   \   00000010   0x2100             MOVS     R1,#+0
+   \   00000012   0x....             LDR.N    R0,??DataTable2_1  ;; 0x40090000
+   \   00000014   0x.... 0x....      BL       TIM_ClearIntCapturePending
+     52          
+     53                  nop();
+   \   00000018   0x.... 0x....      BL       `nop`
+     54             
+     55                  tmp = GPIO_ReadIoVal(CAP20);  
+   \   0000001C   0x2004             MOVS     R0,#+4
+   \   0000001E   0x.... 0x....      BL       GPIO_ReadIoVal
+   \   00000022   0x0004             MOVS     R4,R0
+     56                  
+     57                  if(tmp == 1)
+   \   00000024   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000026   0x2C01             CMP      R4,#+1
+   \   00000028   0xD032             BEQ.N    ??TIMER2_IRQHandler_1
+     58                      return;
+     59                  
+     60          		m_TimecsSum += TIM_GetCaptureValue(LPC_TIM2,TIM_COUNTER_INCAP0);
+   \                     ??TIMER2_IRQHandler_2: (+1)
+   \   0000002A   0x2100             MOVS     R1,#+0
+   \   0000002C   0x....             LDR.N    R0,??DataTable2_1  ;; 0x40090000
+   \   0000002E   0x.... 0x....      BL       TIM_GetCaptureValue
+   \   00000032   0x....             LDR.N    R1,??DataTable2_2
+   \   00000034   0x6809             LDR      R1,[R1, #+0]
+   \   00000036   0x1840             ADDS     R0,R0,R1
+   \   00000038   0x....             LDR.N    R1,??DataTable2_2
+   \   0000003A   0x6008             STR      R0,[R1, #+0]
+     61          		TIM_ResetCounter(LPC_TIM2);
+   \   0000003C   0x....             LDR.N    R0,??DataTable2_1  ;; 0x40090000
+   \   0000003E   0x.... 0x....      BL       TIM_ResetCounter
+     62          
+     63          		m_AddPlusecs++;
+   \   00000042   0x....             LDR.N    R0,??DataTable2_3
+   \   00000044   0x6800             LDR      R0,[R0, #+0]
+   \   00000046   0x1C40             ADDS     R0,R0,#+1
+   \   00000048   0x....             LDR.N    R1,??DataTable2_3
+   \   0000004A   0x6008             STR      R0,[R1, #+0]
+     64          		mPluseSumCntcs++;
+   \   0000004C   0x....             LDR.N    R0,??DataTable2
+   \   0000004E   0x6800             LDR      R0,[R0, #+0]
+   \   00000050   0x1C40             ADDS     R0,R0,#+1
+   \   00000052   0x....             LDR.N    R1,??DataTable2
+   \   00000054   0x6008             STR      R0,[R1, #+0]
+     65          
+     66          		if(m_AddPlusecs == MATH_PLUSE_NUM || m_TimecsSum > MATH_PLUSE_TIME) 		//500个脉冲或1秒时间到
+   \   00000056   0x....             LDR.N    R0,??DataTable2_3
+   \   00000058   0x6800             LDR      R0,[R0, #+0]
+   \   0000005A   0x2864             CMP      R0,#+100
+   \   0000005C   0xD004             BEQ.N    ??TIMER2_IRQHandler_3
+   \   0000005E   0x....             LDR.N    R0,??DataTable2_2
+   \   00000060   0x6800             LDR      R0,[R0, #+0]
+   \   00000062   0x....             LDR.N    R1,??DataTable2_4  ;; 0x1e8481
+   \   00000064   0x4288             CMP      R0,R1
+   \   00000066   0xD313             BCC.N    ??TIMER2_IRQHandler_0
+     67          		{
+     68          			m_sSpeedcsPluse.TimeCnt 	= 	m_TimecsSum;
+   \                     ??TIMER2_IRQHandler_3: (+1)
+   \   00000068   0x....             LDR.N    R0,??DataTable2_2
+   \   0000006A   0x6800             LDR      R0,[R0, #+0]
+   \   0000006C   0x....             LDR.N    R1,??DataTable2_5
+   \   0000006E   0x6048             STR      R0,[R1, #+4]
+     69          			m_sSpeedcsPluse.PluseCnt	=   m_AddPlusecs;
+   \   00000070   0x....             LDR.N    R0,??DataTable2_3
+   \   00000072   0x6800             LDR      R0,[R0, #+0]
+   \   00000074   0x....             LDR.N    R1,??DataTable2_5
+   \   00000076   0x6008             STR      R0,[R1, #+0]
+     70          				
+     71          			m_AddPlusecs = 0;
+   \   00000078   0x2000             MOVS     R0,#+0
+   \   0000007A   0x....             LDR.N    R1,??DataTable2_3
+   \   0000007C   0x6008             STR      R0,[R1, #+0]
+     72          			m_TimecsSum = 0;
+   \   0000007E   0x2000             MOVS     R0,#+0
+   \   00000080   0x....             LDR.N    R1,??DataTable2_2
+   \   00000082   0x6008             STR      R0,[R1, #+0]
+     73          			m_PlusecsChgFlg = 1;
+   \   00000084   0x2001             MOVS     R0,#+1
+   \   00000086   0x....             LDR.N    R1,??DataTable2_6
+   \   00000088   0x6008             STR      R0,[R1, #+0]
+     74                      
+     75                      #if (OS_VERSION > 30000U)
+     76                          BSP_OS_SemPost(&time2_over_Sem);                        	// 发送信号量
+   \   0000008A   0x....             LDR.N    R0,??DataTable2_7
+   \   0000008C   0x.... 0x....      BL       BSP_OS_SemPost
+     77                      #endif
+     78          		}
+     79          	}
+     80          }
+   \                     ??TIMER2_IRQHandler_0: (+1)
+   \                     ??TIMER2_IRQHandler_1: (+1)
+   \   00000090   0xBD10             POP      {R4,PC}          ;; return
+     81          
+     82          
+
+   \                                 In section .bss, align 2
+     83          uint16  l_speedcs = 0;
+   \                     l_speedcs:
+   \   00000000                      DS8 2
+
+   \                                 In section .text, align 2, keep-with-next
+     84          uint16	GetMyEngRotSpd(void)
+     85          {
+     86          	return	l_speedcs;
+   \                     GetMyEngRotSpd: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable2_8
+   \   00000002   0x8800             LDRH     R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+     87          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x........         DC32     mPluseSumCntcs
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0x40090000         DC32     0x40090000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \   00000000   0x........         DC32     m_TimecsSum
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \   00000000   0x........         DC32     m_AddPlusecs
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_4:
+   \   00000000   0x001E8481         DC32     0x1e8481
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_5:
+   \   00000000   0x........         DC32     m_sSpeedcsPluse
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_6:
+   \   00000000   0x........         DC32     m_PlusecsChgFlg
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_7:
+   \   00000000   0x........         DC32     time2_over_Sem
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_8:
+   \   00000000   0x........         DC32     l_speedcs
+     88          
+     89          //void GetSpeedPlusecs(stcSpeedPluse * sSpeedPluse)
+     90          //{
+     91          //	static	uint32	Time;
+     92          //	
+     93          //	sSpeedPluse->PluseCnt = m_sSpeedcsPluse.PluseCnt;
+     94          //	sSpeedPluse->TimeCnt  = m_sSpeedcsPluse.TimeCnt;
+     95          //
+     96          //	if(m_PlusecsChgFlg == 1)							//脉冲累加处理,
+     97          //	{
+     98          //		m_PlusecsChgFlg = 0;
+     99          ////		Time = GetSysTime();
+    100          //	}
+    101          //		
+    102          ////	if(GetSysTime() - Time > 250)					//超过2秒没更新，清零    ---  最后的刷新时间2秒
+    103          //	{	
+    104          ////		printfcom0("\r\n outtime");
+    105          //		sSpeedPluse->PluseCnt = 0;
+    106          //		sSpeedPluse->TimeCnt = 0;
+    107          //	}	
+    108          //}
+    109          //
+    110          ////计算公式：V = （PI * DIM * n * 3600）/ (( DPR *1000*10*100 )*(t/12000000);
+    111          ////------------------------------------------------------------------------------
+    112          ////功    能：    计算总里程，分段里程，自定义里程
+    113          ////入口参数：    
+    114          ////出口参数：    
+    115          ////------------------------------------------------------------------------------
+    116          //void  CalcSpeedcs( void )
+    117          //{
+    118          ////	uint32	PluseCnt = 0;
+    119          ////	uint32	TimeCnt;
+    120          ////	uint32	DistInSec;
+    121          ////	uint16	speed;
+    122          ////	uint32	cstime     = 0;
+    123          ////	uint32	avg;
+    124          ////
+    125          ////    
+    126          ////    PluseCnt = m_sSpeedcsPluse.PluseCnt;
+    127          ////	cstime	 = m_sSpeedcsPluse.TimeCnt;
+    128          //    	
+    129          //
+    130          //    
+    131          //    
+    132          ////	if(sSpeedPluse.TimeCnt)
+    133          ////	{
+    134          ////		if(times < 3)
+    135          ////		{		
+    136          ////			PluseCnt 		= sSpeedPluse.PluseCnt;
+    137          ////			cstime	 		= sSpeedPluse.TimeCnt;
+    138          ////		}
+    139          ////		else
+    140          ////		{
+    141          ////			avg =  PluseCnt/3;
+    142          ////			PluseCnt = PluseCnt - avg + sSpeedPluse.PluseCnt;
+    143          ////			avg =  cstime/3;
+    144          ////			cstime   = cstime - sSpeedPluse.PluseCnt;
+    145          ////		}
+    146          ////
+    147          //#if (OS_VERSION > 30000U)
+    148          //    CPU_BOOLEAN err;   
+    149          //    static  uint8 times = 0;
+    150          //
+    151          //    err = BSP_OS_SemWait(&time2_over_Sem,10);                        	// 发送信号量
+    152          //    if(!err)
+    153          //    {
+    154          //            // 发送信号量,速度慢，需要3秒测试一次，测量才准确
+    155          //        if(times++ > 5)
+    156          //            l_speedcs = 0;  
+    157          //    }
+    158          //    
+    159          //    if(err){
+    160          //        times = 0;
+    161          //#endif    
+    162          //        if( cstime >1000    && 
+    163          //        m_PlusecsChgFlg      )                   //产生新脉冲
+    164          //    //	if(cstime >1000)
+    165          //        {
+    166          //            m_PlusecsChgFlg = 0;            
+    167          //            l_speedcs = ((PluseCnt * 60 * 1000) / (cstime/1000));
+    168          //        }
+    169          //    }
+    170          //}
+    171          
+    172          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   GetFrq3SumCnt
+       0   GetMyEngRotSpd
+       8   TIMER2_IRQHandler
+         8   -> BSP_OS_SemPost
+         8   -> GPIO_ReadIoVal
+         8   -> TIM_ClearIntCapturePending
+         8   -> TIM_GetCaptureValue
+         8   -> TIM_GetIntCaptureStatus
+         8   -> TIM_ResetCounter
+         8   -> nop
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       4  ??DataTable2_6
+       4  ??DataTable2_7
+       4  ??DataTable2_8
+       6  GetFrq3SumCnt
+       6  GetMyEngRotSpd
+     146  TIMER2_IRQHandler
+       2  l_speedcs
+       4  mPluseSumCntcs
+       4  m_AddPlusecs
+       4  m_PlusecsChgFlg
+       4  m_TimecsSum
+       8  m_sSpeedcsPluse
+
+ 
+  26 bytes in section .bss
+ 194 bytes in section .text
+ 
+ 194 bytes of CODE memory
+  26 bytes of DATA memory
+
+Errors: none
+Warnings: none

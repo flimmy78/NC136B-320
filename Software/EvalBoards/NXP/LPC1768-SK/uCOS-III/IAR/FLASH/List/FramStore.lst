@@ -1,0 +1,1659 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       16/May/2017  06:42:34
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Application\Library\DataDeal\FramStore.c
+#    Command line =  
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Application\Library\DataDeal\FramStore.c
+#        -lCN
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List
+#        --diag_suppress Pe174 -o
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\FramStore.lst
+#    Object file  =  
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\FramStore.o
+#
+###############################################################################
+
+F:\iar\Micrium_LPC1768-SK_uCOS-III\Application\Library\DataDeal\FramStore.c
+      1          //////#include 	"config.h"   
+      2          //////#include 	"string.h"   
+      3          //////#include	"Globe.h"
+      4          //////#include	"CpuDrive.h"
+      5          //////#include	"HardDrive.h"
+      6          ////
+      7          //#include <includes.h>
+      8          //#include "FRAM.h"
+      9          ///*
+     10          //#define		CUR_FLSH_REC_NUM				0		//CPU当前记录流水号铁电存贮首地址 
+     11          //#define		LST_RED_FLSH_REC_NUM			12		//CPU运行状态铁电存贮首地址
+     12          //#define		OIL_REVISE_HIGHT_ADDR			24		//油尺修正高度
+     13          //#define		OIL_DENSITY_ADDR				32		//油尺密度
+     14          //#define		ADD_DIP_VAL_ADDR				72		//增加油量值
+     15          //#define		SELECT_MODEL_ADDR				90		//油箱模型选择地址
+     16          //#define		HOST_DEVICE_INFO_ADDR			100		//主机出厂信息铁电存贮地址
+     17          //#define		FIX_INFO_ADDR					150		//设备初装车铁电存贮首地址
+     18          //#define		CUR_REC_ADDR					200		//最新记录地址
+     19          //#define		DEBUG_INFO_ADDR					350		//调试地址
+     20          //#define		LOG_INFO_ADDR					500		//日志存贮首地址
+     21          ////#define		LOG_INFO_ADDR					600		//日志存贮首地址
+     22          //
+     23          //#define		OIL_BOX_MODEL_ADDR				2000	//油箱模型地址	
+     24          //
+     25          //#define		FRAM_ERR_EVT					33
+     26          //*/
+     27          //
+     28          //uint8		l_FramWriteErrEvtFlg 	= RIGHT_DATA;
+     29          //uint8		l_FramReadErrEvtFlg 	= RIGHT_DATA;
+     30          //////------------------------------------------------------------------------
+     31          //////  名  称 ：	uint8 StoreCurFlashRecNum(uint32  RecNum)
+     32          //////  功  能 ：	存能耗统计装置记录流水号
+     33          ////// 入口参数：	当前记录流水号
+     34          ////// 出口参数：	存成功,返回TRUE,否则,返回FALSE
+     35          //////------------------------------------------------------------------------
+     36          //uint8 StoreCurFlshRecNum(uint32  RecNum)
+     37          //{
+     38          //	uint16  Crc16Check;
+     39          //	uint8	Buf[6];
+     40          //	uint8	Flg;
+     41          //	
+     42          //	Flg = TRUE;
+     43          //	
+     44          //	memcpy(Buf,(uint8 *)&RecNum,sizeof(RecNum));
+     45          //
+     46          //	Crc16Check = GetCrc16Check(Buf,sizeof(Buf) - 2);						//取校验
+     47          //	
+     48          //	memcpy(&Buf[sizeof(RecNum)],(uint8 *)&Crc16Check,sizeof(Crc16Check));
+     49          //
+     50          //	if(!WriteFM24CL64(CUR_FLSH_REC_NUM, Buf, sizeof(Buf)))					//存信息
+     51          //	{
+     52          //		printfcom0("\r\nWrite StoreCurFlshRecNum Error!");
+     53          //		l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+     54          //		Flg = 	FALSE;
+     55          //	}
+     56          //	
+     57          //	if(!WriteFM24CL64(CUR_FLSH_REC_NUM + sizeof(Buf), Buf, sizeof(Buf)))	//存信息备件
+     58          //	{
+     59          //		printfcom0("\r\nWrite StoreCurFlshRecNumBak Error!");
+     60          //		l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+     61          //		Flg = FALSE;
+     62          //	}	
+     63          //	
+     64          //	return	Flg;
+     65          //}
+     66          ////
+     67          //////------------------------------------------------------------------------
+     68          //////  名  称 ：	uint8 	ReadCurFlshRecNum(void)
+     69          //////  功  能 ：	读当前记录装置记录流水号
+     70          ////// 入口参数：	无
+     71          ////// 出口参数：	当前流水号
+     72          //////------------------------------------------------------------------------
+     73          //uint32 ReadCurFlshRecNum(void)
+     74          //{
+     75          //	uint16	CrcCheck;
+     76          //	uint8	Buf[6];
+     77          //	uint32	FlshRecNum = 0;
+     78          //
+     79          //	if(!ReadFM24CL64(CUR_FLSH_REC_NUM, Buf, sizeof(Buf)))
+     80          //	{
+     81          //		printfcom0("\r\n a读当前流水号错误! ");
+     82          //	}
+     83          //	else
+     84          //	{
+     85          //		memcpy((uint8 *)&CrcCheck,&Buf[sizeof(FlshRecNum)],sizeof(CrcCheck));
+     86          //		
+     87          //		if(CrcCheck == GetCrc16Check(Buf,sizeof(FlshRecNum)))
+     88          //		{
+     89          //			memcpy((uint8 *)&FlshRecNum,Buf,sizeof(FlshRecNum));
+     90          //
+     91          //			return	FlshRecNum;
+     92          //		}
+     93          //		else
+     94          //		{
+     95          //			printfcom0("\r\n 读当前流水号校验错误！");
+     96          //		}
+     97          //	}
+     98          //
+     99          //	if(!ReadFM24CL64(CUR_FLSH_REC_NUM + sizeof(Buf), Buf, sizeof(Buf)))
+    100          //	{
+    101          //		printfcom0("\r\n读当前流水号备份错误!");
+    102          //	}
+    103          //	else
+    104          //	{
+    105          //		memcpy((uint8 *)&CrcCheck,&Buf[sizeof(FlshRecNum)],sizeof(CrcCheck));
+    106          //		
+    107          //		if(CrcCheck == GetCrc16Check(Buf,sizeof(FlshRecNum)))
+    108          //		{
+    109          //			memcpy((uint8 *)&FlshRecNum,Buf,sizeof(FlshRecNum));
+    110          //			
+    111          //			return	FlshRecNum;
+    112          //		}
+    113          //		else
+    114          //		{
+    115          //			printfcom0("\r\n当前流水号备份校验错误！");
+    116          //		}		
+    117          //	}
+    118          // 	
+    119          // 	return	FlshRecNum;
+    120          //}
+    121          ////
+    122          //////------------------------------------------------------------------------
+    123          //////  名  称 ：	uint8 StoreCurFlashTimes(uint32  Times)
+    124          //////  功  能 ：	存能耗统计装置记录流水号
+    125          ////// 入口参数：	当前记录流水号
+    126          ////// 出口参数：	存成功,返回TRUE,否则,返回FALSE
+    127          //////------------------------------------------------------------------------
+    128          ////uint8 StoreDenChangeTimes(uint32  Times)
+    129          ////{
+    130          //////	//uint16  Crc16Check;
+    131          //////	//uint8	Buf[4];
+    132          //////	uint8	Flg;
+    133          //////	
+    134          //////	Flg = TRUE;
+    135          //////	
+    136          //////	//memcpy(Buf,(uint8 *)&Times,sizeof(Times));
+    137          //////
+    138          //////	//Crc16Check = GetCrc16Check(Buf,sizeof(Buf) - 2);						//取校验
+    139          //////	
+    140          //////	//memcpy(&Buf[sizeof(Times)],(uint8 *)&Crc16Check,sizeof(Crc16Check));
+    141          //////
+    142          //////	if(!WriteFM24CL64(OIL_DEN_CHAGE_TIMES_ADDR, (uint8 *)&Times, sizeof(Times)))	//存信息
+    143          //////	{
+    144          //////		printfcom0("\r\n	Write OIL_DEN_CHAGE_TIMES_ADDR Error!");
+    145          //////		l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+    146          //////		Flg = 	FALSE;
+    147          //////	}
+    148          //////	
+    149          //////	return	Flg;
+    150          ////}
+    151          ////
+    152          //////------------------------------------------------------------------------
+    153          //////  名  称 ：	uint8 	ReadCurFlshTimes(void)
+    154          //////  功  能 ：	读当前记录装置记录流水号
+    155          ////// 入口参数：	无
+    156          ////// 出口参数：	当前流水号
+    157          //////------------------------------------------------------------------------
+    158          ////uint32 ReadDenChangeTimes(void)
+    159          ////{
+    160          //////	//uint16	CrcCheck;
+    161          //////	//uint8	Buf[6];
+    162          //////	uint32	Times = 0;
+    163          //////
+    164          //////	l_FramReadErrEvtFlg = RIGHT_DATA;
+    165          //////
+    166          //////	if(!ReadFM24CL64(OIL_DEN_CHAGE_TIMES_ADDR, (uint8 *)&Times, sizeof(Times)))
+    167          //////	{
+    168          //////		printfcom0("\r\n OIL_DEN_CHAGE_TIMES_ADDR错误!");
+    169          //////	}
+    170          //////
+    171          ////// 	return	Times;
+    172          ////}
+    173          ////
+    174          //uint8	l_ReadDataFlg = NO_ERROR;
+    175          ////
+    176          //////------------------------------------------------------------------------
+    177          //////  名  称 ：	uint8 StoreLstRedFlshRecNumBck(uint32  RecNum)
+    178          //////  功  能 ：	存能耗统计装置最后1次读卡结束流水号
+    179          ////// 入口参数：	当前记录流水号
+    180          ////// 出口参数：	存成功,返回TRUE,否则,返回FALSE
+    181          //////------------------------------------------------------------------------
+    182          //uint8 StoreLstRedFlshRecNum(uint32  RecNum)
+    183          //{
+    184          //	uint16  Crc16Check;
+    185          //	uint8	Buf[6];
+    186          //	uint8	Flg;
+    187          //
+    188          //	Flg = TRUE;
+    189          //	
+    190          //	l_ReadDataFlg = ERROR;
+    191          //	
+    192          //	memcpy(Buf,(uint8 *)&RecNum,sizeof(RecNum));
+    193          //
+    194          //	Crc16Check = GetCrc16Check(Buf,sizeof(Buf) - 2);		
+    195          //	
+    196          //	memcpy(&Buf[sizeof(RecNum)],(uint8 *)&Crc16Check,sizeof(Crc16Check));
+    197          //
+    198          //	if(!WriteFM24CL64(LST_RED_FLSH_REC_NUM, Buf, sizeof(Buf)))					//存信息
+    199          //	{
+    200          //		printfcom0("\r\nWrite StoreCurFlshRecNum Error!");
+    201          //		l_FramWriteErrEvtFlg = FRAM_ERR_EVT;		
+    202          //		Flg = FALSE;
+    203          //	}
+    204          //	
+    205          //	if(!WriteFM24CL64(LST_RED_FLSH_REC_NUM + sizeof(Buf), Buf, sizeof(Buf)))	//存信息备件
+    206          //	{
+    207          //		printfcom0("\r\nWrite StoreCurFlshRecNumBak Error!");
+    208          //		l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+    209          //		Flg = FALSE;
+    210          //	}	
+    211          //	
+    212          //	return	Flg;
+    213          //}
+    214          //uint8 StoreLstRedFlshRecNum_gprs(uint32  RecNum)
+    215          //{
+    216          //	uint16  Crc16Check;
+    217          //	uint8	Buf[6];
+    218          //	uint8	Flg;
+    219          //
+    220          //	Flg = TRUE;
+    221          //	
+    222          //	l_ReadDataFlg = ERROR;
+    223          //	
+    224          //	memcpy(Buf,(uint8 *)&RecNum,sizeof(RecNum));
+    225          //
+    226          //	Crc16Check = GetCrc16Check(Buf,sizeof(Buf) - 2);		
+    227          //	
+    228          //	memcpy(&Buf[sizeof(RecNum)],(uint8 *)&Crc16Check,sizeof(Crc16Check));
+    229          //
+    230          //	if(!WriteFM24CL64(LST_RED_FLSH_REC_NUM_GPRS, Buf, sizeof(Buf)))					//存信息
+    231          //	{
+    232          //		printfcom0("\r\nWrite StoreCurFlshRecNum Error!");
+    233          //		l_FramWriteErrEvtFlg = FRAM_ERR_EVT;		
+    234          //		Flg = FALSE;
+    235          //	}
+    236          //	
+    237          //	if(!WriteFM24CL64(LST_RED_FLSH_REC_NUM_GPRS + sizeof(Buf), Buf, sizeof(Buf)))	//存信息备件
+    238          //	{
+    239          //		printfcom0("\r\nWrite StoreCurFlshRecNumBak Error!");
+    240          //		l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+    241          //		Flg = FALSE;
+    242          //	}	
+    243          //	
+    244          //	return	Flg;
+    245          //}
+    246          //
+    247          ////
+    248          //uint8	GetReadDataFlg(void)
+    249          //{
+    250          //	return	l_ReadDataFlg;
+    251          //}
+    252          ////
+    253          //void	SetReadDataFlgTrue(void)
+    254          //{
+    255          //	l_ReadDataFlg = NO_ERROR;
+    256          //}
+    257          ////
+    258          //////------------------------------------------------------------------------
+    259          //////  名  称 ：	uint32 ReadLstRedFlshRecNum(void)
+    260          //////  功  能 ：	读存能耗统计装置上次写记录流水号
+    261          ////// 入口参数：	无
+    262          ////// 出口参数：	最后写卡的记录流水号
+    263          //////------------------------------------------------------------------------
+    264          //uint32 ReadLstRedFlshRecNum(void)
+    265          //{
+    266          //	uint16	CrcCheck;
+    267          //	uint8	Buf[6];
+    268          //	uint32	FlshRecNum = 0;
+    269          //
+    270          //	if(!ReadFM24CL64(LST_RED_FLSH_REC_NUM, Buf, sizeof(Buf)))
+    271          //	{
+    272          //		printfcom0("\r\n读最后一次写卡流水号错误!");
+    273          //	}
+    274          //	else
+    275          //	{
+    276          //		memcpy((uint8 *)&CrcCheck,&Buf[sizeof(FlshRecNum)],sizeof(CrcCheck));
+    277          //		
+    278          //		if(CrcCheck == GetCrc16Check(Buf,sizeof(FlshRecNum)))
+    279          //		{
+    280          //			memcpy((uint8 *)&FlshRecNum,Buf,sizeof(FlshRecNum));
+    281          //	
+    282          //			return	FlshRecNum;
+    283          //		}
+    284          //		else
+    285          //		{
+    286          //			printfcom0("\r\n最后一次写卡流水号校验错误！");
+    287          //		}			
+    288          //	}
+    289          //
+    290          //	if(!ReadFM24CL64(LST_RED_FLSH_REC_NUM + sizeof(Buf),Buf, sizeof(Buf)))
+    291          //	{
+    292          //		printfcom0("\r\n读最后一次写卡流水号错误!");
+    293          //	}
+    294          //	else
+    295          //	{
+    296          //		memcpy((uint8 *)&CrcCheck,&Buf[sizeof(FlshRecNum)],sizeof(CrcCheck));
+    297          //		
+    298          //		if(CrcCheck == GetCrc16Check(Buf,sizeof(FlshRecNum)))
+    299          //		{
+    300          //			memcpy((uint8 *)&FlshRecNum,Buf,sizeof(FlshRecNum));
+    301          //			
+    302          //			return	FlshRecNum;
+    303          //		}
+    304          //		else
+    305          //		{
+    306          //			printfcom0("\r\n最后一次写卡流水号校验错误！");
+    307          //		}			
+    308          //	}
+    309          // 	
+    310          // 	return	FlshRecNum;
+    311          //}
+    312          //
+    313          //////------------------------------------------------------------------------
+    314          //////  名  称 ：	uint32 ReadLstRedFlshRecNum(void)
+    315          //////  功  能 ：	读存能耗统计装置上次写记录流水号
+    316          ////// 入口参数：	无
+    317          ////// 出口参数：	最后写卡的记录流水号
+    318          //////------------------------------------------------------------------------
+    319          //uint32 ReadLstRedFlshRecNum_gprs(void)
+    320          //{
+    321          //	uint16	CrcCheck;
+    322          //	uint8	Buf[6];
+    323          //	uint32	FlshRecNum = 0;
+    324          //
+    325          //	if(!ReadFM24CL64(LST_RED_FLSH_REC_NUM_GPRS, Buf, sizeof(Buf)))
+    326          //	{
+    327          //		printfcom0("\r\n读最后一次写卡流水号错误!");
+    328          //	}
+    329          //	else
+    330          //	{
+    331          //		memcpy((uint8 *)&CrcCheck,&Buf[sizeof(FlshRecNum)],sizeof(CrcCheck));
+    332          //		
+    333          //		if(CrcCheck == GetCrc16Check(Buf,sizeof(FlshRecNum)))
+    334          //		{
+    335          //			memcpy((uint8 *)&FlshRecNum,Buf,sizeof(FlshRecNum));
+    336          //	
+    337          //			return	FlshRecNum;
+    338          //		}
+    339          //		else
+    340          //		{
+    341          //			printfcom0("\r\n最后一次写卡流水号校验错误！");
+    342          //		}			
+    343          //	}
+    344          //
+    345          //	if(!ReadFM24CL64(LST_RED_FLSH_REC_NUM_GPRS + sizeof(Buf),Buf, sizeof(Buf)))
+    346          //	{
+    347          //		printfcom0("\r\n读最后一次写卡流水号错误!");
+    348          //	}
+    349          //	else
+    350          //	{
+    351          //		memcpy((uint8 *)&CrcCheck,&Buf[sizeof(FlshRecNum)],sizeof(CrcCheck));
+    352          //		
+    353          //		if(CrcCheck == GetCrc16Check(Buf,sizeof(FlshRecNum)))
+    354          //		{
+    355          //			memcpy((uint8 *)&FlshRecNum,Buf,sizeof(FlshRecNum));
+    356          //			
+    357          //			return	FlshRecNum;
+    358          //		}
+    359          //		else
+    360          //		{
+    361          //			printfcom0("\r\n最后一次写卡流水号校验错误！");
+    362          //		}			
+    363          //	}
+    364          // 	
+    365          // 	return	FlshRecNum;
+    366          //}
+    367          ////
+    368          ////extern	uint32 ReadLstRedFlshRecNum_Flsh(void);
+    369          ////
+    370          //////------------------------------------------------------------------------
+    371          //////  名  称 ：	uint8 	ReadCurFlshRecNum(void)
+    372          //////  功  能 ：	读当前记录装置记录流水号
+    373          ////// 入口参数：	无
+    374          ////// 出口参数：	当前流水号
+    375          //////------------------------------------------------------------------------
+    376          //uint32 GetLstFlshRecNum(void)
+    377          //{
+    378          //	uint32		FlshRecNum = 0;
+    379          ////	stcFlshRec 	sFlshRec;
+    380          //	
+    381          //	if( ReadLstRedFlshRecNum() )
+    382          //	{
+    383          //		FlshRecNum = ReadLstRedFlshRecNum();
+    384          //	}
+    385          //	else
+    386          //	{
+    387          ////		if(ReadLstRedFlshRecNum_Flsh())
+    388          //		{
+    389          ////			FlshRecNum = ReadLstRedFlshRecNum_Flsh();
+    390          //		}
+    391          //	}
+    392          //	
+    393          //	return	FlshRecNum;
+    394          //}
+    395          //
+    396          //////------------------------------------------------------------------------
+    397          //////  名  称 ：	uint8 	ReadCurFlshRecNum(void)
+    398          //////  功  能 ：	读当前记录装置记录流水号
+    399          ////// 入口参数：	无
+    400          ////// 出口参数：	当前流水号
+    401          //////------------------------------------------------------------------------
+    402          //uint32 GetLstFlshRecNum_gprs(void)
+    403          //{
+    404          //	uint32		FlshRecNum = 0;
+    405          ////	stcFlshRec 	sFlshRec;
+    406          //	
+    407          //	if( ReadLstRedFlshRecNum_gprs() )
+    408          //	{
+    409          //		FlshRecNum = ReadLstRedFlshRecNum_gprs();
+    410          //	}
+    411          //	else
+    412          //	{
+    413          ////		if(ReadLstRedFlshRecNum_Flsh())
+    414          //		{
+    415          ////			FlshRecNum = ReadLstRedFlshRecNum_Flsh();
+    416          //		}
+    417          //	}
+    418          //	
+    419          //	return	FlshRecNum;
+    420          //}
+    421          //
+    422          //void	StoreSysRunPara(stcSysRunPara  sSysRunPara)
+    423          //{
+    424          //	WriteFM24CL64(SYS_RUN_PARA_ADDR,(uint8 *)&sSysRunPara, sizeof(stcSysRunPara));	
+    425          //}
+    426          //
+    427          //uint8	GetSysRunPara(stcSysRunPara * sSysRunPara)
+    428          //{
+    429          //	uint16	CrcCheck;
+    430          //  	if(!ReadFM24CL64(SYS_RUN_PARA_ADDR,(uint8 *)sSysRunPara, sizeof(stcSysRunPara)))
+    431          //	{
+    432          //		printfcom0("\r\nsSysRunPara错误!");
+    433          //		return	0;
+    434          //	}
+    435          //	else
+    436          //	{
+    437          //		CrcCheck = GetCrc16Check((uint8 *)sSysRunPara,sizeof(stcSysRunPara) - 2);
+    438          //		if((CrcCheck == sSysRunPara->CrcCheck ) && (CrcCheck != 0) )
+    439          //		{
+    440          ////			printfcom0("\r\n 参数读取成功！");
+    441          //			return 1;	
+    442          //		}
+    443          //
+    444          //		//printfcom0("\r\n CrcCheck Err ,%d,%d",CrcCheck,sSysRunPara->CrcCheck );
+    445          //	}
+    446          //	return	0;
+    447          //}
+    448          ////
+    449          ////
+    450          ////void	ClearFlshRec(void)
+    451          ////{
+    452          ////	uint32	RecNum = 0;
+    453          ////	
+    454          ////	printfcom0("\r\n ClearFlshRec!");
+    455          ////	
+    456          ////	RecNum = 1;
+    457          ////	
+    458          ////	StoreCurFlshRecNum(RecNum);
+    459          ////	StoreLstRedFlshRecNum(RecNum);
+    460          ////	ReCalPara(1);												//油尺参数重新计算
+    461          ////}
+    462          ////
+    463          //////------------------------------------------------------------------------
+    464          //////  名  称 ：uint32 StoreOilBoxModel(stcModel sModel)
+    465          //////  功  能 ：存油箱模型
+    466          ////// 入口参数：无
+    467          ////// 出口参数：当前流水号
+    468          //////------------------------------------------------------------------------
+    469          //
+    470          //uint8	StoreOilBoxModel(uint32 add,uint8	*buf,uint32	bufsize)
+    471          //{
+    472          //	WriteFM24CL64(OIL_BOX_MODEL_ADDR+add,buf,bufsize);
+    473          //	return 1;	
+    474          //}
+    475          ////uint8	StoreOilBoxModel(stcModelCard * sModelCard)
+    476          ////{
+    477          ////	uint16	CrcCheck;
+    478          ////	uint8	Flg;
+    479          ////	
+    480          ////	Flg = TRUE;
+    481          ////	
+    482          ////	CrcCheck = GetCrc16Check((uint8 *)sModelCard,sizeof(stcModelCard) - 2);
+    483          ////
+    484          ////	if(CrcCheck == sModelCard->CrcCheck)
+    485          ////	{
+    486          ////		if(! WriteFM24CL64(OIL_BOX_MODEL_ADDR,(uint8 *)sModelCard, sizeof(stcModelCard)))
+    487          ////		{
+    488          ////			l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+    489          ////			Flg = FALSE;
+    490          ////		}
+    491          ////	}	
+    492          ////	else
+    493          ////	{
+    494          ////		printfcom0("\r\nCrcCheck == sModelCard->CrcCheck ERR!");
+    495          ////		Flg = FALSE;
+    496          ////	}
+    497          ////
+    498          ////	return	Flg;
+    499          ////}
+    500          ////
+    501          //////------------------------------------------------------------------------
+    502          //////  名  称 ：uint32 ReadOilBoxModel(stcModel sModel)
+    503          //////  功  能 ：存油箱模型
+    504          ////// 入口参数：无
+    505          ////// 出口参数：当前流水号
+    506          //////------------------------------------------------------------------------
+    507          //uint8	ReadOilBoxModel(stcModelCard * sModelCard)
+    508          //{
+    509          //	uint16	CrcCheck;
+    510          //	uint16	Flg;
+    511          //	//uint8	Buf[sizeof(stcModelCard)] = {0};
+    512          //
+    513          //	Flg = FALSE;
+    514          //
+    515          //	printfcom0("\r\n ReadOilBoxModel!");
+    516          //	if( ReadFM24CL64(OIL_BOX_MODEL_ADDR,(uint8 *)sModelCard, sizeof(stcModelCard)))
+    517          //	{
+    518          //		printfcom0("\r\n ReadOilBoxModel!22");
+    519          //		CrcCheck = GetCrc16Check((uint8 *)sModelCard,sizeof(stcModelCard) - 2);
+    520          //		
+    521          //		if((CrcCheck == sModelCard->CrcCheck))
+    522          //		{
+    523          //			if(CrcCheck)
+    524          //			{
+    525          //				Flg = TRUE;
+    526          //			}
+    527          ////			else if( memcmp( (uint8 *)sModelCard,Buf,sizeof(Buf)))
+    528          ////			{
+    529          ////				Flg = TRUE;
+    530          ////			}
+    531          //		}
+    532          //	}
+    533          //		printfcom0("\r\n ReadOilBoxModel!12");
+    534          //	return	Flg;
+    535          //}
+    536          //
+    537          //uint8	GetOilBoxModelsModel(stcModel * sModel)
+    538          //{
+    539          //	  uint32	i;
+    540          //	  uint32	ModelNumAdd;
+    541          //	  uint32	ModelAdd;
+    542          //	  uint8		ModelNum;
+    543          //	  uint16	CrcCheck;
+    544          //	  uint8		OilBoxTypCod;
+    545          //
+    546          //	  OilBoxTypCod	= GetOilBoxCod(); 
+    547          //
+    548          //	  for(i = 0; i < 18;i++)
+    549          //	  {
+    550          //	      ModelNumAdd =  OIL_BOX_MODEL_ADDR + sizeof(stcModel)*i + sizeof(stcModPot)*50 + 2 + 2;
+    551          //
+    552          //		  ReadFM24CL64(ModelNumAdd,(uint8 *)&ModelNum, sizeof(ModelNum));
+    553          //
+    554          ////		  printfcom0("\r\n 11 OilBoxTypCod == ModelNum %d ,i = %d",ModelNum,i);
+    555          //
+    556          //		  if(OilBoxTypCod == ModelNum)
+    557          //		  {
+    558          ////		  	  printfcom0("\r\n 2OilBoxTypCod == ModelNum %d,i = %d",ModelNum,i);
+    559          //			  
+    560          //			  ModelAdd = OIL_BOX_MODEL_ADDR + sizeof(stcModel)*i;		  		
+    561          //		      ReadFM24CL64(ModelAdd,(uint8 *)sModel,sizeof(stcModel));
+    562          ////			  printfcom0("\r\n ModelAdd == ModelNum %d,i = %d",ModelAdd);
+    563          ////			  for(i = 0;i < sModel->PotNum;i++)
+    564          ////			  {
+    565          ////			  	printfcom0("\r\n  gaodu %d,youliang %d",sModel->sModPot[i].HigVal,sModel->sModPot[i].DipVal);
+    566          ////			  }
+    567          //
+    568          //			  CrcCheck = GetCrc16Check((uint8 *)sModel,sizeof(stcModel) - 2);
+    569          //
+    570          //			  if(CrcCheck == sModel->CrcCheck)
+    571          //			  {
+    572          //			  	 //printfcom0("\r\n 3PotNum %d",sModel->PotNum);	
+    573          //			  	 return  1;
+    574          //			  }
+    575          //		  }
+    576          //	  }
+    577          //
+    578          //	  return  0;
+    579          //}
+    580          //
+    581          //uint8	GetOilBoxModelsModelSemple(stcModelSemple * sModelSemple)
+    582          //{
+    583          //	  uint32	i;
+    584          //	  uint32	ModelNumAdd;
+    585          //	  uint32	ModelAdd;
+    586          //	  uint8		ModelNum;
+    587          //	  uint16	CrcCheck;
+    588          //	  uint8		OilBoxTypCod;
+    589          //
+    590          //	  OilBoxTypCod	= GetOilBoxCod(); 
+    591          //
+    592          //	  for(i = 0; i < 46;i++)
+    593          //	  {
+    594          //		  ModelNumAdd =  OIL_BOX_MODEL_ADDR + sizeof(stcModel)*18 
+    595          //		  				+ sizeof(stcModelSemple)*i + sizeof(stcModPot)*10 + 2 + 2;
+    596          //
+    597          //		  ReadFM24CL64(ModelNumAdd,(uint8 *)&ModelNum, sizeof(ModelNum));
+    598          //
+    599          //		  //printfcom0("\r\n 22 OilBoxTypCod == ModelNum %d, %d",ModelNum,OilBoxTypCod);
+    600          //
+    601          //		  if(OilBoxTypCod == ModelNum)
+    602          //		  {
+    603          //			  ModelAdd = OIL_BOX_MODEL_ADDR + sizeof(stcModel)*18  
+    604          //			  			+ sizeof(stcModelSemple)*i ;
+    605          //		
+    606          //		      ReadFM24CL64(ModelAdd,(uint8 *)sModelSemple,sizeof(stcModelSemple));
+    607          //
+    608          //			  CrcCheck = GetCrc16Check((uint8 *)sModelSemple,sizeof(stcModelSemple) - 2);
+    609          //
+    610          ////			  printfcom0("\r\n 22 CrcCheck == CrcCheck %d, %d",CrcCheck,sModelSemple->CrcCheck);
+    611          //			  if(CrcCheck == sModelSemple->CrcCheck)
+    612          //			  {
+    613          //			  	 return  1;
+    614          //			  }
+    615          //		  }
+    616          //	  }
+    617          //
+    618          //	  return  0;
+    619          //}
+    620          //
+    621          ////
+    622          //////------------------------------------------------------------------------
+    623          //////  名  称 ：uint32 uint8	StoreDensity(stcModel sModel)
+    624          //////  功  能 ：存油箱模型
+    625          ////// 入口参数：无
+    626          ////// 出口参数：当前流水号
+    627          //////------------------------------------------------------------------------
+    628          //uint8	StoreDensity(stcDensity * sDensity)
+    629          //{
+    630          //	uint16	CrcCheck;
+    631          //	uint8	Flg;
+    632          //	
+    633          //	Flg = TRUE;
+    634          //	
+    635          //	CrcCheck = GetCrc16Check((uint8 *)sDensity,sizeof(stcDensity) - 2);
+    636          //
+    637          //	if(CrcCheck == sDensity->CrcCheck)
+    638          //	{
+    639          //		if(! WriteFM24CL64(OIL_DENSITY_ADDR,(uint8 *)sDensity, sizeof(stcDensity)))
+    640          //		{
+    641          //			l_FramWriteErrEvtFlg = FRAM_ERR_EVT;		
+    642          //			Flg = FALSE;
+    643          //		}
+    644          //		
+    645          ////		if(! WriteFM24CL64(OIL_DENSITY_ADDR + sizeof(stcDensity),(uint8 *)sDensity, sizeof(stcDensity)))
+    646          ////		{
+    647          ////			l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+    648          ////			Flg = FALSE;
+    649          ////		}		
+    650          //	}	
+    651          //	else
+    652          //	{
+    653          ////		#pragma diag_suppress 870, 223
+    654          ////		printfcom0("\r\n 设置燃油密度的校验和错误！");
+    655          //		Flg = FALSE;
+    656          //	}
+    657          //
+    658          //	return	Flg;
+    659          //}
+    660          //
+    661          //
+    662          //////------------------------------------------------------------------------
+    663          //
+    664          //////------------------------------------------------------------------------
+    665          //uint32	ReadCalcPara(void)
+    666          //{
+    667          //    uint32  calcpara1;
+    668          //    uint32  calcpara2;
+    669          //    
+    670          //	if( ReadFM24CL64(CALC_PARA_ADDR,(uint8 *)&calcpara1, sizeof(calcpara1)))
+    671          //	{
+    672          //        
+    673          //	}
+    674          //	if( ReadFM24CL64(CALC_PARA_ADDR+sizeof(calcpara1),(uint8 *)&calcpara2, sizeof(calcpara2)))
+    675          //	{
+    676          //        
+    677          //	}
+    678          //    
+    679          //    if(calcpara2 == calcpara1)
+    680          //    {
+    681          //        if(calcpara1 > 8000 && calcpara1 < 12000)
+    682          //            return calcpara1;
+    683          //    }
+    684          //    
+    685          //	return	10000;
+    686          //}
+    687          //
+    688          //uint8	StoreCalcPara(uint32    calcpara)
+    689          //{
+    690          //    uint8       Flg = TRUE;
+    691          //    uint32      storecalcpara;
+    692          //    uint32      readcalcpara;  
+    693          //    
+    694          //    if(calcpara < 8000 || calcpara > 12000)
+    695          //        return FALSE;
+    696          //    
+    697          //    readcalcpara = ReadCalcPara();
+    698          //    
+    699          //    storecalcpara = (readcalcpara * calcpara) / 10000;
+    700          //    
+    701          //    if(! WriteFM24CL64(CALC_PARA_ADDR,(uint8 *)&storecalcpara, sizeof(storecalcpara)))
+    702          //    {
+    703          //        l_FramWriteErrEvtFlg = FRAM_ERR_EVT;		
+    704          //        Flg = FALSE;
+    705          //    }
+    706          //    
+    707          //    if(! WriteFM24CL64(CALC_PARA_ADDR + sizeof(calcpara),(uint8 *)&storecalcpara, sizeof(storecalcpara)))
+    708          //    {
+    709          //        l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+    710          //        Flg = FALSE;
+    711          //    }		
+    712          //
+    713          //	return	Flg;
+    714          //}
+    715          //
+    716          //
+    717          ////
+    718          //////------------------------------------------------------------------------
+    719          //////  名  称 ：uint8	ReadDensity(stcDensity * sDensity)
+    720          //////  功  能 ：读燃油密度错误
+    721          ////// 入口参数：燃油密度指针
+    722          ////// 出口参数：操作成功：返回1；否则，返回0
+    723          //////------------------------------------------------------------------------
+    724          //uint8	ReadDensity(stcDensity * sDensity)
+    725          //{
+    726          //	uint16	CrcCheck;
+    727          //	uint16	Flg;
+    728          //
+    729          //	Flg = FALSE;
+    730          //
+    731          //	if( ReadFM24CL64(OIL_DENSITY_ADDR,(uint8 *)sDensity, sizeof(stcDensity)))
+    732          //	{
+    733          //		CrcCheck = GetCrc16Check((uint8 *)sDensity,sizeof(stcDensity) - 2);
+    734          //		
+    735          //		if((CrcCheck == sDensity->CrcCheck))
+    736          //		{		
+    737          //			if(CrcCheck )
+    738          //			{
+    739          //				Flg = TRUE;
+    740          //				return	Flg;
+    741          //			}
+    742          //			else if(sDensity->Density)
+    743          //			{
+    744          //				Flg = TRUE;
+    745          //				return	Flg;
+    746          //			}
+    747          //			else
+    748          //			{
+    749          //				printfcom0("\r\n读燃油密度校验错误！");
+    750          //			}
+    751          //		}
+    752          //		else
+    753          //		{
+    754          //			printfcom0("\r\n读燃油密度校验错误！");
+    755          //		}
+    756          //	}
+    757          //	else
+    758          //	{
+    759          //		printfcom0("\r\n读燃油箱密度错误！");
+    760          //	}
+    761          ////	
+    762          ////	if( ReadFM24CL64(OIL_DENSITY_ADDR + sizeof(stcDensity),(uint8 *)sDensity, sizeof(stcDensity)))
+    763          ////	{
+    764          ////		CrcCheck = GetCrc16Check((uint8 *)sDensity,sizeof(sDensity) - 2);
+    765          ////		
+    766          ////		if((CrcCheck == sDensity->CrcCheck))
+    767          ////		{
+    768          ////			if(CrcCheck)
+    769          ////			{
+    770          ////				Flg = TRUE;
+    771          ////				return	Flg;
+    772          ////			}
+    773          ////			else if(sDensity->Density)
+    774          ////			{
+    775          ////				Flg = TRUE;
+    776          ////				return	Flg;
+    777          ////			}
+    778          ////			else
+    779          ////			{
+    780          ////				printfcom0("\r\n读燃油密度校验错误！");
+    781          ////			}
+    782          ////		}
+    783          ////		else
+    784          ////		{
+    785          ////			printfcom0("\r\n读燃油密度校验错误！");
+    786          ////		}
+    787          ////	}
+    788          ////	else
+    789          ////	{
+    790          ////		printfcom0("\r\n读燃油箱密度错误！");
+    791          ////	}
+    792          //		
+    793          //	return	Flg;
+    794          //}
+    795          ////
+    796          //////------------------------------------------------------------------------
+    797          //////  名  称 ：uint8	StoreReviseHight(stcReviseHight sReviseHight)
+    798          //////  功  能 ：存油箱修正高度
+    799          ////// 入口参数：修正高度变量指针
+    800          ////// 出口参数：成功，返回1；否则，返回0
+    801          //////------------------------------------------------------------------------
+    802          //uint8	StoreReviseHight(stcReviseHight * sReviseHight)
+    803          //{
+    804          //	uint16	CrcCheck;
+    805          //	uint8	Flg;
+    806          //	
+    807          //	Flg = TRUE;
+    808          //	
+    809          //	CrcCheck = GetCrc16Check((uint8 *)sReviseHight,sizeof(stcReviseHight) - 2);
+    810          //
+    811          //	if(CrcCheck == sReviseHight->CrcCheck)
+    812          //	{
+    813          //		if(! WriteFM24CL64(OIL_REVISE_HIGHT_ADDR,(uint8 *)sReviseHight, sizeof(stcReviseHight)))
+    814          //		{
+    815          //			l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+    816          //			Flg = FALSE;
+    817          //		}
+    818          //		
+    819          //		if(! WriteFM24CL64(OIL_REVISE_HIGHT_ADDR + sizeof(stcReviseHight),(uint8 *)sReviseHight, sizeof(stcReviseHight)))
+    820          //		{
+    821          //			l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+    822          //			Flg = FALSE;
+    823          //		}		
+    824          //	}	
+    825          //	else
+    826          //	{
+    827          //		printfcom0("\r\n存修正高度校验和错误！");
+    828          //		Flg = FALSE;
+    829          //	}
+    830          //
+    831          //	return	Flg;
+    832          //}
+    833          ////
+    834          //////------------------------------------------------------------------------
+    835          //////  名  称 ：uint8	ReadReviseHight(stcReviseHight * sReviseHight)
+    836          //////  功  能 ：读修正高度值
+    837          ////// 入口参数：修正高度结构体指针
+    838          ////// 出口参数：成功：返回1，否则，返回0
+    839          //////------------------------------------------------------------------------
+    840          //uint8	ReadReviseHight(stcReviseHight * sReviseHight)
+    841          //{
+    842          //	uint16	CrcCheck;
+    843          //	uint8	Flg;
+    844          //	uint8	Buf[sizeof(stcReviseHight)] = {0};	
+    845          //
+    846          //	Flg = FALSE;
+    847          //
+    848          //	if( ReadFM24CL64(OIL_REVISE_HIGHT_ADDR,(uint8 *)sReviseHight, sizeof(stcReviseHight)))
+    849          //	{
+    850          //		CrcCheck = GetCrc16Check((uint8 *)sReviseHight,sizeof(stcReviseHight) - 2);
+    851          //		
+    852          //		if((CrcCheck == sReviseHight->CrcCheck))
+    853          //		{
+    854          //			if(CrcCheck)
+    855          //			{
+    856          //				Flg = TRUE;
+    857          //				return	Flg;
+    858          //			}
+    859          //			else if( memcmp( (uint8 *)sReviseHight,Buf,sizeof(Buf)))
+    860          //			{
+    861          //				Flg = TRUE;
+    862          //				return	Flg;
+    863          //			}
+    864          //			else
+    865          //			{
+    866          //				Flg = TRUE;
+    867          //
+    868          //				printfcom0("\r\n读修正高度检验和 %d",CrcCheck);
+    869          //				return	Flg;
+    870          //			}
+    871          //		}
+    872          //		else
+    873          //		{
+    874          //			printfcom0("\r\n读修正高度检验和错误！");
+    875          //		}
+    876          //	}
+    877          //	else
+    878          //	{
+    879          //		printfcom0("\r\n读取修正高度错误！");
+    880          //	}
+    881          //	
+    882          //	if( ReadFM24CL64(OIL_REVISE_HIGHT_ADDR + sizeof(stcReviseHight),
+    883          //									(uint8 *)sReviseHight, sizeof(stcReviseHight)))
+    884          //	{
+    885          //		CrcCheck = GetCrc16Check((uint8 *)sReviseHight,sizeof(stcReviseHight) - 2);
+    886          //		
+    887          //		if((CrcCheck == sReviseHight->CrcCheck))
+    888          //		{
+    889          //			if(CrcCheck)
+    890          //			{
+    891          //				Flg = TRUE;
+    892          //				return	Flg;
+    893          //			}
+    894          //			else if( memcmp( (uint8 *)sReviseHight,Buf,sizeof(Buf)))
+    895          //			{
+    896          //				Flg = TRUE;
+    897          //				return	Flg;
+    898          //			}
+    899          //			else
+    900          //			{
+    901          //				Flg = TRUE;
+    902          //
+    903          //				printfcom0("\r\n读修正高度检验和 %d",CrcCheck);
+    904          //				return	Flg;			
+    905          //			}					
+    906          //		}
+    907          //		else
+    908          //		{
+    909          //			printfcom0("\r\n读修正高度检验和错误！");
+    910          //		}		
+    911          //	}
+    912          //	else
+    913          //	{
+    914          //		printfcom0("\r\n读取修正高度错误！");
+    915          //	}	
+    916          //	return	Flg;
+    917          //}
+    918          ////
+    919          //////------------------------------------------------------------------------
+    920          //////  名  称 ：uint8	StoreReviseHight(stcReviseHight sReviseHight)
+    921          //////  功  能 ：存油箱修正高度
+    922          ////// 入口参数：修正高度变量指针
+    923          ////// 出口参数：成功，返回1；否则，返回0
+    924          //////------------------------------------------------------------------------
+    925          //uint8	StoreAddDipVal(stcAddDipVal * sAddDipVal)
+    926          //{
+    927          //	uint16	CrcCheck;
+    928          //	uint8	Flg;
+    929          //	
+    930          //	Flg = TRUE;
+    931          //	
+    932          //	CrcCheck = GetCrc16Check((uint8 *)sAddDipVal,sizeof(stcAddDipVal) - 2);
+    933          //
+    934          //	if(CrcCheck == sAddDipVal->CrcCheck)
+    935          //	{
+    936          //		if(! WriteFM24CL64(ADD_DIP_VAL_ADDR,(uint8 *)sAddDipVal, sizeof(stcReviseHight)))
+    937          //		{
+    938          //			l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+    939          //			Flg = FALSE;
+    940          //		}
+    941          //		
+    942          //		if(! WriteFM24CL64(ADD_DIP_VAL_ADDR + sizeof(stcAddDipVal),(uint8 *)sAddDipVal, sizeof(stcAddDipVal)))
+    943          //		{
+    944          //			l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+    945          //			Flg = FALSE;
+    946          //		}		
+    947          //	}	
+    948          //	else
+    949          //	{
+    950          //		printfcom0("\r\n存油量加校验和错误！");
+    951          //		Flg = FALSE;
+    952          //	}
+    953          //
+    954          //	return	Flg;
+    955          //}
+    956          //////------------------------------------------------------------------------
+    957          //////  名  称 ：uint8	ReadReviseHight(stcReviseHight * sReviseHight)
+    958          //////  功  能 ：读修正高度值
+    959          ////// 入口参数：修正高度结构体指针
+    960          ////// 出口参数：成功：返回1，否则，返回0
+    961          //////------------------------------------------------------------------------
+    962          //uint8	ReadAddDipVal(stcAddDipVal * sAddDipVal)
+    963          //{
+    964          //	uint16	CrcCheck;
+    965          //	uint8	Flg;
+    966          //	uint8	Buf[sizeof(stcAddDipVal)] = {0};	
+    967          //
+    968          //	Flg = FALSE;
+    969          //
+    970          //	if( ReadFM24CL64(ADD_DIP_VAL_ADDR,(uint8 *)sAddDipVal, sizeof(stcAddDipVal)))
+    971          //	{
+    972          //		CrcCheck = GetCrc16Check((uint8 *)sAddDipVal,sizeof(stcAddDipVal) - 2);
+    973          //		
+    974          //		if((CrcCheck == sAddDipVal->CrcCheck))
+    975          //		{
+    976          //			if(CrcCheck)
+    977          //			{
+    978          //				Flg = TRUE;
+    979          //				return	Flg;
+    980          //			}
+    981          //			else if( memcmp( (uint8 *)sAddDipVal,Buf,sizeof(Buf)))
+    982          //			{
+    983          //				Flg = TRUE;
+    984          //				return	Flg;
+    985          //			}
+    986          //			else
+    987          //			{
+    988          //				Flg = TRUE;
+    989          //
+    990          //				printfcom0("\r\n读增加油量检验和 %d",CrcCheck);
+    991          //				return	Flg;
+    992          //			}
+    993          //		}
+    994          //		else
+    995          //		{
+    996          //			printfcom0("\r\n读读增加油量检验和错误！");
+    997          //		}
+    998          //	}
+    999          //	else
+   1000          //	{
+   1001          //		printfcom0("\r\n读读增加油量错误！");
+   1002          //	}
+   1003          //	
+   1004          //	if( ReadFM24CL64(ADD_DIP_VAL_ADDR + sizeof(stcAddDipVal),
+   1005          //									(uint8 *)sAddDipVal, sizeof(stcAddDipVal)))
+   1006          //	{
+   1007          //		CrcCheck = GetCrc16Check((uint8 *)sAddDipVal,sizeof(stcAddDipVal) - 2);
+   1008          //		
+   1009          //		if((CrcCheck == sAddDipVal->CrcCheck))
+   1010          //		{
+   1011          //			if(CrcCheck)
+   1012          //			{
+   1013          //				Flg = TRUE;
+   1014          //				return	Flg;
+   1015          //			}
+   1016          //			else if( memcmp( (uint8 *)sAddDipVal,Buf,sizeof(Buf)))
+   1017          //			{
+   1018          //				Flg = TRUE;
+   1019          //				return	Flg;
+   1020          //			}
+   1021          //			else
+   1022          //			{
+   1023          //				Flg = TRUE;
+   1024          //
+   1025          //				printfcom0("\r\n读增加油量检验和 %d",CrcCheck);
+   1026          //				return	Flg;			
+   1027          //			}					
+   1028          //		}
+   1029          //		else
+   1030          //		{
+   1031          //			printfcom0("\r\n读增加油量检验和检验和错误！");
+   1032          //		}		
+   1033          //	}
+   1034          //	else
+   1035          //	{
+   1036          //		printfcom0("\r\n读增加油量检验和错误！");
+   1037          //	}	
+   1038          //	
+   1039          //	return	Flg;
+   1040          //}
+   1041          ////
+   1042          //////------------------------------------------------------------------------
+   1043          //////  名  称 ：uint8	StoreSelectModel(uint8	ModelNum)
+   1044          //////  功  能 ：存油箱模型选择
+   1045          ////// 入口参数：无
+   1046          ////// 出口参数：无
+   1047          //////------------------------------------------------------------------------
+   1048          //uint8	StoreSelectModel(uint8	ModelNum)
+   1049          //{
+   1050          //	uint16	CrcCheck;
+   1051          //	uint8	Buf[4];
+   1052          //	uint8	Flg;
+   1053          //	
+   1054          //	Flg = TRUE;
+   1055          //	
+   1056          //	Buf[0] = ModelNum;
+   1057          //	Buf[1] = ModelNum;
+   1058          //	
+   1059          //	CrcCheck = GetCrc16Check(Buf,2);
+   1060          //
+   1061          //	memcpy(&Buf[2],(uint8	*)&CrcCheck,2);
+   1062          //	
+   1063          //	if(! WriteFM24CL64(SELECT_MODEL_ADDR,Buf, sizeof(Buf)))
+   1064          //	{
+   1065          //		l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+   1066          //		Flg = FALSE;
+   1067          //	}
+   1068          //	
+   1069          //	if(! WriteFM24CL64(SELECT_MODEL_ADDR + sizeof(Buf),Buf, sizeof(Buf)))
+   1070          //	{
+   1071          //		l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+   1072          //		Flg = FALSE;
+   1073          //	}		
+   1074          //
+   1075          //
+   1076          //	return	Flg;
+   1077          //}
+   1078          ////
+   1079          //////------------------------------------------------------------------------
+   1080          //////  名  称 ：uint8	ReadSelectModel(uint8	ModelNum)
+   1081          //////  功  能 ：存油箱模型选择
+   1082          ////// 入口参数：无
+   1083          ////// 出口参数：无
+   1084          //////------------------------------------------------------------------------
+   1085          //uint8	ReadSelectModel(uint8	*ModelNum)
+   1086          //{
+   1087          //	uint16	CrcCheck;
+   1088          //	uint16	CrcCheckTmp;
+   1089          //	uint8	Buf[4];
+   1090          //	uint8	Flg;
+   1091          //	
+   1092          //	Flg = FALSE;
+   1093          //	
+   1094          //	if( ReadFM24CL64(SELECT_MODEL_ADDR,Buf, sizeof(Buf)))
+   1095          //	{	
+   1096          //		CrcCheckTmp = GetCrc16Check(Buf,2);
+   1097          //		memcpy((uint8 *)&CrcCheck,&Buf[2],2); 
+   1098          //		
+   1099          //		if((CrcCheckTmp == CrcCheck) && (Buf[0] == Buf[1]))	
+   1100          //		{
+   1101          //			*ModelNum = Buf[0];
+   1102          //			
+   1103          //			if(Buf[0])					//不为零
+   1104          //			{
+   1105          //				Flg = TRUE;
+   1106          //				
+   1107          //				return	Flg;
+   1108          //			}
+   1109          //		}
+   1110          //	}
+   1111          //
+   1112          //	if( ReadFM24CL64(SELECT_MODEL_ADDR + sizeof(Buf),Buf, sizeof(Buf)))
+   1113          //	{	
+   1114          //		CrcCheckTmp = GetCrc16Check(Buf,2);
+   1115          //		memcpy((uint8 *)&CrcCheck,&Buf[2],2); 
+   1116          //		
+   1117          //		if((CrcCheckTmp == CrcCheck) && (Buf[0] == Buf[1]))	
+   1118          //		{
+   1119          //			*ModelNum = Buf[0];
+   1120          //			
+   1121          //			if(Buf[0])					//不为零
+   1122          //			{
+   1123          //				Flg = TRUE;
+   1124          //				
+   1125          //				return	Flg;
+   1126          //			}
+   1127          //		}
+   1128          //	}
+   1129          //	
+   1130          //	return	Flg;
+   1131          //}
+   1132          ////
+   1133          //////------------------------------------------------------------------------
+   1134          //////  名  称 ：uint8 StoreHostStation(stcHostStation  sHostSta)
+   1135          //////  功  能 ：存能耗统计装置出厂信息
+   1136          ////// 入口参数：无
+   1137          ////// 出口参数：存成功,返回TRUE,否则,返回FALSE
+   1138          //////------------------------------------------------------------------------
+   1139          //uint8 StoreHostInfo(stcDeviceInfo * sDevice)
+   1140          //{
+   1141          //	if(!WriteFM24CL64(HOST_DEVICE_INFO_ADDR, (uint8 *)sDevice, sizeof(stcDeviceInfo)))
+   1142          //	{
+   1143          //		//printfcom0("\r\n存出厂信息错误!");
+   1144          //		l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+   1145          //		return	FALSE;
+   1146          //	}
+   1147          //	return	TRUE;
+   1148          //}
+   1149          ////
+   1150          //////------------------------------------------------------------------------
+   1151          //////  名  称 ：	uint8	ReadHostInfo(stcDeviceInfo * sDeviceInfo)
+   1152          //////  功  能 ：	读记录装置出厂信息
+   1153          ////// 入口参数：	无
+   1154          ////// 出口参数：	存成功,返回TRUE,否则,返回FALSE
+   1155          //////------------------------------------------------------------------------
+   1156          //uint8	ReadHostInfo(stcDeviceInfo * sDeviceInfo)
+   1157          //{
+   1158          //	uint16	CrcCheck;
+   1159          //	uint8	Flg;
+   1160          //	uint8 	Buf[sizeof(stcDeviceInfo)];
+   1161          //	
+   1162          //	Flg = FALSE;
+   1163          //	
+   1164          //	if( ReadFM24CL64(HOST_DEVICE_INFO_ADDR, (uint8 *)sDeviceInfo, sizeof(stcDeviceInfo)))
+   1165          //	{		
+   1166          //		//PrintfDebug("\r\nReadFM24CL64(HOST_DEVICE_INFO_ADDR, (uint8 *)sDeviceInfo, sizeof(stcDeviceInfo))");
+   1167          //
+   1168          //		CrcCheck = GetCrc16Check((uint8 *)sDeviceInfo,sizeof(stcDeviceInfo) - 2);
+   1169          //		
+   1170          //		//PrintfDebug("\r\nCrcCheck %d,sDeviceInfo->CrcCheck %d",CrcCheck,sDeviceInfo->CrcCheck);
+   1171          //
+   1172          //		if((CrcCheck == sDeviceInfo->CrcCheck))
+   1173          //		{
+   1174          //			if(CrcCheck)
+   1175          //			{
+   1176          //				Flg = TRUE;
+   1177          //			}
+   1178          //			else if( memcmp( (uint8 *)sDeviceInfo,Buf,sizeof(Buf)))
+   1179          //			{
+   1180          //				Flg = TRUE;
+   1181          //			}
+   1182          //			else
+   1183          //			{
+   1184          //				//printfcom0("\r\n读出厂信息校验错误!");
+   1185          //			}				
+   1186          //		}		
+   1187          //		else
+   1188          //		{
+   1189          //			//printfcom0("\r\n读出厂信息校验错误!");
+   1190          //		}	
+   1191          //	}
+   1192          //	else
+   1193          //	{
+   1194          //		//printfcom0("\r\n读出厂信息错误!");
+   1195          //	}
+   1196          //	
+   1197          //	return	Flg;
+   1198          //}
+   1199          ////
+   1200          //////------------------------------------------------------------------------
+   1201          //////  名  称 ：uint8 StoreFixInfo(stcHostStation  sHostSta)
+   1202          //////  功  能 ：存能耗统计装置初装车信息
+   1203          ////// 入口参数：无
+   1204          ////// 出口参数：存成功,返回TRUE,否则,返回FALSE
+   1205          //////------------------------------------------------------------------------
+   1206          //uint8 StoreFixInfo(stcFixInfo * sFix)
+   1207          //{
+   1208          //	if(!WriteFM24CL64(FIX_INFO_ADDR, (uint8 *)sFix, sizeof(stcFixInfo)))
+   1209          //	{
+   1210          //		printfcom0("\r\nWrite StoreFixInfo Error!");
+   1211          //		l_FramWriteErrEvtFlg = FRAM_ERR_EVT;
+   1212          //		return	FALSE;
+   1213          //	}
+   1214          //	 
+   1215          //	return	TRUE;
+   1216          //}
+   1217          ////
+   1218          //////------------------------------------------------------------------------
+   1219          //////  名  称 ：uint8 StoreHostStation(stcHostStation  sHostSta)
+   1220          //////  功  能 ：存能耗统计装置初装车信息
+   1221          ////// 入口参数：无
+   1222          ////// 出口参数：存成功,返回TRUE,否则,返回FALSE
+   1223          //////------------------------------------------------------------------------
+   1224          //uint8 ReadFixInfo(stcFixInfo * sFix)
+   1225          //{
+   1226          //	uint16	CrcCheck;
+   1227          //	uint8	Flg;
+   1228          //	uint8 	Buf[sizeof(stcFixInfo)] = {0};	
+   1229          //	
+   1230          //	Flg = FALSE;
+   1231          //	 
+   1232          //	if( ReadFM24CL64(FIX_INFO_ADDR, (uint8 *)sFix, sizeof(stcFixInfo)))
+   1233          //	{		
+   1234          //		CrcCheck = GetCrc16Check((uint8 *)sFix,sizeof(stcFixInfo) - 2);
+   1235          //		
+   1236          //		if(CrcCheck == (sFix->CrcCheck))
+   1237          //		{
+   1238          //			if(CrcCheck)
+   1239          //			{
+   1240          //				Flg = TRUE;
+   1241          //			}
+   1242          //			else if( memcmp( (uint8 *)sFix,Buf,sizeof(Buf)))
+   1243          //			{
+   1244          //				Flg = TRUE;
+   1245          //			}
+   1246          //		}	
+   1247          //		else
+   1248          //		{
+   1249          //			printfcom0("\r\n读装车信息检验错误!");
+   1250          //		}			
+   1251          //	}
+   1252          //	else
+   1253          //	{
+   1254          //		printfcom0("\r\n读装车信息错误!");
+   1255          //	}
+   1256          //	
+   1257          //	return	Flg;
+   1258          //}
+   1259          ////
+   1260          ////uint8	GetFramWriteErrEvtFlg(void)
+   1261          ////{
+   1262          ////	return	l_FramWriteErrEvtFlg;
+   1263          ////}
+   1264          ////
+   1265          ////uint8	GetFramReadErrEvtFlg(void)
+   1266          ////{
+   1267          ////	return	l_FramReadErrEvtFlg;
+   1268          ////}
+   1269          ////
+   1270          ////
+   1271          ////
+   1272          //////-------------------------------------------------------------------------------
+   1273          //////函数名称:        	uint8	JudgeFramEvt(void)
+   1274          //////函数功能:       	判断Flsh事件
+   1275          //////入口参数:        	无
+   1276          //////出口参数:      	无
+   1277          //////-------------------------------------------------------------------------------
+   1278          //uint8	JudgeFramEvt(void)
+   1279          //{
+   1280          ////	uint8	EvtType;
+   1281          ////	
+   1282          ////	if((GetFramWriteErrEvtFlg() == RIGHT_DATA) && (GetFramReadErrEvtFlg() == RIGHT_DATA) )
+   1283          ////	{
+   1284          ////		EvtType = RIGHT_DATA;
+   1285          ////	}
+   1286          ////	else if(GetFramWriteErrEvtFlg() == RIGHT_DATA)
+   1287          ////	{
+   1288          ////		EvtType = GetFramReadErrEvtFlg();
+   1289          ////	}
+   1290          ////	else
+   1291          ////	{
+   1292          ////		EvtType = GetFramWriteErrEvtFlg();
+   1293          ////	}
+   1294          ////	
+   1295          ////	return	EvtType;
+   1296          //	return 1;
+   1297          //}
+   1298          ////
+   1299          //#define		FRAM_WRITE_TEST		0xaa55
+   1300          //uint8		mFramWordTestErrFlg;
+   1301          //////-------------------------------------------------------------------------------
+   1302          //////函数名称:        	uint8	JudgeFramWordEvt(void)
+   1303          //////函数功能:       	判断Flsh事件
+   1304          //////入口参数:        	无
+   1305          //////出口参数:      	无
+   1306          //////-------------------------------------------------------------------------------
+   1307          //void	TestFramOneWord(void)
+   1308          //{
+   1309          //	uint16	Temp16;
+   1310          //	uint16	TestTmp = FRAM_WRITE_TEST;
+   1311          //	uint16	ReadTmp;
+   1312          //
+   1313          //	ReadFM24CL64(FRAM_END_ADDR - 2, (uint8 *)&Temp16, sizeof(Temp16));  	//取数暂存
+   1314          //	
+   1315          //	WriteFM24CL64(FRAM_END_ADDR - 2, (uint8 *)&TestTmp, sizeof(TestTmp));	//写入数年
+   1316          //	
+   1317          //	ReadFM24CL64(FRAM_END_ADDR - 2, (uint8 *)&ReadTmp, sizeof(ReadTmp));  	//取数暂存
+   1318          //	
+   1319          //	WriteFM24CL64(FRAM_END_ADDR - 2, (uint8 *)&Temp16, sizeof(Temp16));		//写入数年
+   1320          //	
+   1321          //	if(ReadTmp == TestTmp)						
+   1322          //	{
+   1323          //		mFramWordTestErrFlg = NO_ERROR;
+   1324          //	}
+   1325          //	else
+   1326          //	{
+   1327          //		mFramWordTestErrFlg = ERROR;
+   1328          //	}
+   1329          //}
+   1330          ////
+   1331          ////-------------------------------------------------------------------------------
+   1332          ////函数名称:        	uint8	GetFramWordTestErrFlg(void)
+   1333          ////函数功能:       	判断Flsh事件
+   1334          ////入口参数:        	无
+   1335          ////出口参数:      	无
+   1336          ////-------------------------------------------------------------------------------
+   1337          //uint8	GetFramWordTestErrFlg(void)
+   1338          //{
+   1339          //	return	mFramWordTestErrFlg;	
+   1340          //}
+   1341          //
+   1342          //
+   1343          //#define		FRAM_WORD_ERR	37
+   1344          //////-------------------------------------------------------------------------------
+   1345          //////函数名称:        	uint8	JudgeFramWordEvt(void)
+   1346          //////函数功能:       	判断Flsh事件
+   1347          //////入口参数:        	无
+   1348          //////出口参数:      	无
+   1349          //////-------------------------------------------------------------------------------
+   1350          //uint8	JudgeFramWordEvt(void)
+   1351          //{
+   1352          //	
+   1353          //	if(GetSysTime() % 60*100 ==1  || GetSysTime() < 60*100)
+   1354          //	{
+   1355          //		TestFramOneWord();
+   1356          //	}
+   1357          //
+   1358          //	if(GetFramWordTestErrFlg() == ERROR)
+   1359          //	{
+   1360          //		return	FRAM_WORD_ERR;
+   1361          //	}
+   1362          //
+   1363          //	return	RIGHT_DATA;
+   1364          //
+   1365          //}
+   1366          //
+   1367          //////------------------------------------------------------------------------
+   1368          //////  名  称 ：	uint8 StoreCurFlshRec(uint32  RecNum)
+   1369          //////  功  能 ：	存能耗统计装置记录流水号
+   1370          ////// 入口参数：	当前记录流水号
+   1371          ////// 出口参数：	存成功,返回TRUE,否则,返回FALSE
+   1372          //////------------------------------------------------------------------------
+   1373          ////uint8 StoreCurFlshRec(stcFlshRec * sFlshRec)
+   1374          ////{
+   1375          ////	uint8	Flg;
+   1376          ////	
+   1377          ////	Flg = TRUE;
+   1378          ////
+   1379          ////	if(!WriteFM24CL64(CUR_REC_ADDR, (uint8 *)sFlshRec, sizeof(stcFlshRec)))	//存信息
+   1380          ////	{
+   1381          ////		Flg = 	FALSE;
+   1382          ////		
+   1383          ////		printfcom0("\r\n最新数据记录错误!");
+   1384          ////	}
+   1385          ////	
+   1386          ////	return	Flg;
+   1387          ////}
+   1388          ////
+   1389          //////------------------------------------------------------------------------
+   1390          //////  名  称 ：uint8 ReadCurFlshRec(stcFlshRec * sFlshRec)
+   1391          //////  功  能 ：读存能耗统计装置记录流水号
+   1392          ////// 入口参数：无
+   1393          ////// 出口参数：当前流水号
+   1394          //////------------------------------------------------------------------------
+   1395          ////uint8 ReadCurFlshRec(stcFlshRec * sFlshRec)
+   1396          ////{
+   1397          ////	uint8	Flg;
+   1398          ////	uint16	CrcCheck;
+   1399          ////
+   1400          ////	
+   1401          ////	Flg = TRUE;
+   1402          ////
+   1403          ////	if(!ReadFM24CL64(CUR_REC_ADDR, (uint8 *)sFlshRec, sizeof(stcFlshRec)))
+   1404          ////	{
+   1405          ////		Flg = 	FALSE;
+   1406          ////		
+   1407          ////		printfcom0("\r\nRead ReadCurFlshRec Error!");
+   1408          ////	}
+   1409          ////	else
+   1410          ////	{
+   1411          ////		CrcCheck = GetCrc16Check((uint8 *)sFlshRec,sizeof(stcFlshRec) - 2);
+   1412          ////		
+   1413          ////		if(CrcCheck != (sFlshRec->CrcCheck) || CrcCheck == 0 )
+   1414          ////		{
+   1415          ////			//sFlshRec = 0;
+   1416          ////			Flg = 	FALSE;
+   1417          ////			printfcom0("\r\n最后一次存的FLASE的CRC错误！");
+   1418          ////		}	
+   1419          ////	}
+   1420          ////	
+   1421          //// 	return	Flg;
+   1422          ////}
+   1423          ////
+   1424          //////------------------------------------------------------------------------
+   1425          //////  名  称 ：	uint8 StoreCurFlshRec(uint32  RecNum)
+   1426          //////  功  能 ：	存能耗统计装置记录流水号
+   1427          ////// 入口参数：	当前记录流水号
+   1428          ////// 出口参数：	存成功,返回TRUE,否则,返回FALSE
+   1429          //////------------------------------------------------------------------------
+   1430          ////uint8 StoreLogZone(stcLogZone * sLogZone)
+   1431          ////{
+   1432          ////
+   1433          ////	uint8	Flg;
+   1434          /////*	
+   1435          ////	Flg = TRUE;
+   1436          ////
+   1437          ////	if(!WriteFM24CL64(LOG_INFO_ADDR, (uint8 *)sLogZone, sizeof(stcLogZone)))	//存信息
+   1438          ////	{
+   1439          ////		Flg = 	FALSE;
+   1440          ////		
+   1441          ////		printfcom0("\r\nStoreLogZone Error!");
+   1442          ////	}
+   1443          ////*/	
+   1444          ////	return	Flg;
+   1445          ////
+   1446          ////}
+   1447          ////
+   1448          //////------------------------------------------------------------------------
+   1449          //////  名  称 ：	uint8 StoreCurFlshRec(uint32  RecNum)
+   1450          //////  功  能 ：	存能耗统计装置记录流水号
+   1451          ////// 入口参数：	当前记录流水号
+   1452          ////// 出口参数：	存成功,返回TRUE,否则,返回FALSE
+   1453          //////------------------------------------------------------------------------
+   1454          ////uint8 ReadLogZone(stcLogZone * sLogZone)
+   1455          ////{
+   1456          ////	uint8	Flg;
+   1457          ////	
+   1458          ////	Flg = TRUE;
+   1459          ////
+   1460          ////	if(!ReadFM24CL64(LOG_INFO_ADDR, (uint8 *)sLogZone, sizeof(stcLogZone)))
+   1461          ////	{
+   1462          ////		Flg = 	FALSE;
+   1463          ////		
+   1464          ////		printfcom0("\r\nReadLogZone Error!");
+   1465          ////	}
+   1466          ////	
+   1467          //// 	return	Flg;
+   1468          ////}
+   1469          ////
+   1470          //////------------------------------------------------------------------------
+   1471          //////  名  称 ：uint8	ReadDebugCardInfo(stcDebugCard *sDebugCard)
+   1472          //////  功  能 ：读出铁电调试信息
+   1473          ////// 入口参数：无
+   1474          ////// 出口参数：当前流水号
+   1475          //////------------------------------------------------------------------------
+   1476          ////uint8	StoreDebugCardInfo(stcDebugCard *sDebugCard)
+   1477          ////{
+   1478          ////	uint8	Flg = 	TRUE;
+   1479          ////
+   1480          ////	if(!WriteFM24CL64(DEBUG_INFO_ADDR, (uint8 *)sDebugCard, sizeof(stcDebugCard)))
+   1481          ////	{
+   1482          ////		Flg = 	FALSE;
+   1483          ////		
+   1484          ////		printfcom0("\r\nGetDebugCardInfo");
+   1485          ////	}	
+   1486          ////	
+   1487          ////	return	Flg;
+   1488          ////}
+   1489          ////
+   1490          //////------------------------------------------------------------------------
+   1491          //////  名  称 ：uint8	ReadDebugCardInfo(stcDebugCard *sDebugCard)
+   1492          //////  功  能 ：读出铁电调试信息
+   1493          ////// 入口参数：无
+   1494          ////// 出口参数：当前流水号
+   1495          //////------------------------------------------------------------------------
+   1496          ////uint8	ReadDebugCardInfo(stcDebugCard *sDebugCard)
+   1497          ////{
+   1498          ////	uint8	Flg = 	TRUE;
+   1499          ////	uint16	CrcCheck;
+   1500          ////
+   1501          ////	if(!ReadFM24CL64(DEBUG_INFO_ADDR, (uint8 *)sDebugCard, sizeof(stcDebugCard)))
+   1502          ////	{
+   1503          ////		Flg = 	FALSE;
+   1504          ////		
+   1505          ////		printfcom0("\r\nGetDebugCardInfo ERR!");
+   1506          ////	}	
+   1507          ////	else
+   1508          ////	{
+   1509          ////		CrcCheck = GetCrc16Check((uint8 *)sDebugCard,sizeof(stcDebugCard) - 2);
+   1510          ////		
+   1511          ////		if(CrcCheck != sDebugCard->CrcCheck)
+   1512          ////		{
+   1513          ////			Flg = 	FALSE;
+   1514          ////		
+   1515          ////			printfcom0("\r\n读调试卡信息校验失败！");		
+   1516          ////		}
+   1517          ////	}
+   1518          ////	
+   1519          ////	return	Flg;
+   1520          ////}
+   1521          ////
+   1522          ////
+   1523          ////extern	uint32 ReadCurFlshRecNum_Flsh(void);
+   1524          ////
+   1525          //////------------------------------------------------------------------------
+   1526          //////  名  称 ：	uint8 	ReadCurFlshRecNum(void)
+   1527          //////  功  能 ：	读当前记录装置记录流水号
+   1528          ////// 入口参数：	无
+   1529          ////// 出口参数：	当前流水号
+   1530          //////------------------------------------------------------------------------
+   1531          //uint32 GetCurFlshRecNum(void)
+   1532          //{
+   1533          //	uint32		CurFlshRecNum = 0;
+   1534          //	 
+   1535          //	CurFlshRecNum = ReadCurFlshRecNum();
+   1536          //
+   1537          //	return 	CurFlshRecNum;
+   1538          //}
+   1539          ////
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

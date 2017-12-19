@@ -1,0 +1,649 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       16/May/2017  06:32:51
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Application\Library\Driver\IIC.c
+#    Command line =  
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Application\Library\Driver\IIC.c
+#        -lCN
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List
+#        --diag_suppress Pe174 -o
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\IIC.lst
+#    Object file  =  
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\IIC.o
+#
+###############################################################################
+
+F:\iar\Micrium_LPC1768-SK_uCOS-III\Application\Library\Driver\IIC.c
+      1          //#include    "config.h"   
+      2          #include <includes.h>
+      3          
+      4          #define     SCL     206		//P0.15
+      5          #define     SDA     207		//P0.18
+      6          
+      7          //------------------------------------------------------------------------
+      8          //  名  称 ：void void InitI2CIO(void)
+      9          //  功  能 ：设置 SDA SCL 为普通IO口 进行模拟总线操作
+     10          // 入口参数：无
+     11          // 出口参数：无
+     12          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     13          void InitI2CIO(void)
+     14          {
+     15          //    SETFUN_P00_15X( GPIO,SCL );         //将I2C端口设为GPIO口
+     16          //    SETFUN_P00_15X( GPIO,SDA ); 
+     17          }
+   \                     InitI2CIO: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+     18          
+
+   \                                 In section .text, align 2, keep-with-next
+     19          void	InitFramIO(void)
+     20          {
+   \                     InitFramIO: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     21          	GPIO_PinselConfig(SCL,0);
+   \   00000002   0x2100             MOVS     R1,#+0
+   \   00000004   0x20CE             MOVS     R0,#+206
+   \   00000006   0x.... 0x....      BL       GPIO_PinselConfig
+     22          	GPIO_PinselConfig(SCL,0);
+   \   0000000A   0x2100             MOVS     R1,#+0
+   \   0000000C   0x20CE             MOVS     R0,#+206
+   \   0000000E   0x.... 0x....      BL       GPIO_PinselConfig
+     23          	GPIO_PinselConfig(SDA,0);
+   \   00000012   0x2100             MOVS     R1,#+0
+   \   00000014   0x20CF             MOVS     R0,#+207
+   \   00000016   0x.... 0x....      BL       GPIO_PinselConfig
+     24          	GPIO_PinselConfig(SDA,0);
+   \   0000001A   0x2100             MOVS     R1,#+0
+   \   0000001C   0x20CF             MOVS     R0,#+207
+   \   0000001E   0x.... 0x....      BL       GPIO_PinselConfig
+     25          }
+   \   00000022   0xBD01             POP      {R0,PC}          ;; return
+     26          
+     27          //------------------------------------------------------------------------
+     28          //  名  称 ：void WriteSCL( uint8 temp )
+     29          //  功  能 ：设置 SCL
+     30          // 入口参数：无
+     31          // 出口参数：无
+     32          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     33          void WriteSCL(uint8 temp)
+     34          {	
+   \                     WriteSCL: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+     35          	if(temp)		
+   \   00000004   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD004             BEQ.N    ??WriteSCL_0
+     36          	{
+     37          		GPIO_SetOrClearValue(SCL,1);
+   \   0000000A   0x2101             MOVS     R1,#+1
+   \   0000000C   0x20CE             MOVS     R0,#+206
+   \   0000000E   0x.... 0x....      BL       GPIO_SetOrClearValue
+   \   00000012   0xE003             B.N      ??WriteSCL_1
+     38          	}
+     39          	else
+     40          	{
+     41          		GPIO_SetOrClearValue(SCL,0);		
+   \                     ??WriteSCL_0: (+1)
+   \   00000014   0x2100             MOVS     R1,#+0
+   \   00000016   0x20CE             MOVS     R0,#+206
+   \   00000018   0x.... 0x....      BL       GPIO_SetOrClearValue
+     42          	}	
+     43          	nop();	
+   \                     ??WriteSCL_1: (+1)
+   \   0000001C   0x.... 0x....      BL       `nop`
+     44          	  
+     45          //    IO0DIR_OUT(SCL);    
+     46          //    IO0PIN_W(temp,SCL);
+     47          }
+   \   00000020   0xBD10             POP      {R4,PC}          ;; return
+     48          
+     49          //------------------------------------------------------------------------
+     50          //  名  称 ：uint8 ReadSCL(void)
+     51          //  功  能 ：读取 SCL 的值
+     52          // 入口参数：无
+     53          // 出口参数：无
+     54          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     55          uint8 ReadSCL(void)
+     56          {
+   \                     ReadSCL: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     57              uint8 temp;
+     58          //    
+     59          //    IO0DIR_IN(SCL);    
+     60          //    temp = IO0PIN_R(SCL);
+     61          //    
+     62          
+     63          	temp = 	GPIO_ReadIoVal(SCL);
+   \   00000002   0x20CE             MOVS     R0,#+206
+   \   00000004   0x.... 0x....      BL       GPIO_ReadIoVal
+   \   00000008   0x0004             MOVS     R4,R0
+     64          	nop();
+   \   0000000A   0x.... 0x....      BL       `nop`
+     65          
+     66              return temp;
+   \   0000000E   0x0020             MOVS     R0,R4
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0xBD10             POP      {R4,PC}          ;; return
+     67          }
+     68          
+     69          //------------------------------------------------------------------------
+     70          //  名  称 ：void WriteSDA( uint8 temp )
+     71          //  功  能 ：设置 SDA
+     72          // 入口参数：无
+     73          // 出口参数：无
+     74          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     75          void WriteSDA(uint8 temp)
+     76          {
+   \                     WriteSDA: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+     77          //    IO0DIR_OUT(SDA);    
+     78          //    IO0PIN_W(temp,SDA);
+     79          
+     80          	if(temp)		
+   \   00000004   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD004             BEQ.N    ??WriteSDA_0
+     81          	{
+     82          		GPIO_SetOrClearValue(SDA,1);
+   \   0000000A   0x2101             MOVS     R1,#+1
+   \   0000000C   0x20CF             MOVS     R0,#+207
+   \   0000000E   0x.... 0x....      BL       GPIO_SetOrClearValue
+   \   00000012   0xE003             B.N      ??WriteSDA_1
+     83          	}
+     84          	else
+     85          	{
+     86          		GPIO_SetOrClearValue(SDA,0);		
+   \                     ??WriteSDA_0: (+1)
+   \   00000014   0x2100             MOVS     R1,#+0
+   \   00000016   0x20CF             MOVS     R0,#+207
+   \   00000018   0x.... 0x....      BL       GPIO_SetOrClearValue
+     87          	}	
+     88          	nop();	
+   \                     ??WriteSDA_1: (+1)
+   \   0000001C   0x.... 0x....      BL       `nop`
+     89          }
+   \   00000020   0xBD10             POP      {R4,PC}          ;; return
+     90          
+     91          //------------------------------------------------------------------------
+     92          //  名  称 ：uint8 ReadSDA(void)
+     93          //  功  能 ：读取 SDA 的值
+     94          // 入口参数：无
+     95          // 出口参数：无
+     96          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     97          uint8 ReadSDA(void)
+     98          {
+   \                     ReadSDA: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     99              uint8 temp;
+    100              
+    101          //    IO0DIR_IN(SDA);    
+    102          //    temp = IO0PIN_R(SDA);
+    103          
+    104          	temp = 	GPIO_ReadIoVal(SDA);
+   \   00000002   0x20CF             MOVS     R0,#+207
+   \   00000004   0x.... 0x....      BL       GPIO_ReadIoVal
+   \   00000008   0x0004             MOVS     R4,R0
+    105          	nop();
+   \   0000000A   0x.... 0x....      BL       `nop`
+    106          
+    107              return temp;
+   \   0000000E   0x0020             MOVS     R0,R4
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0xBD10             POP      {R4,PC}          ;; return
+    108          }
+    109          
+    110          //------------------------------------------------------------
+    111          //函数名称:         StartI2C()
+    112          //功    能:         I2C总线开始条件
+    113          //入口参数:         无
+    114          //出口参数:         无
+    115          //说明：            I2C总线的开始条件：
+    116          //                  SCL高电平时SDA的下降沿
+    117          //------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    118          void StartI2C(void)
+    119          {
+   \                     StartI2C: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    120              WriteSCL(0);                                // SCL=0;
+   \   00000002   0x2000             MOVS     R0,#+0
+   \   00000004   0x.... 0x....      BL       WriteSCL
+    121              
+    122              WriteSDA(1);                                //SDA=1;
+   \   00000008   0x2001             MOVS     R0,#+1
+   \   0000000A   0x.... 0x....      BL       WriteSDA
+    123              WriteSCL(1);                                //SCL=1;
+   \   0000000E   0x2001             MOVS     R0,#+1
+   \   00000010   0x.... 0x....      BL       WriteSCL
+    124              WriteSDA(0);                                //SDA=0;
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x.... 0x....      BL       WriteSDA
+    125              WriteSCL(0);                                // SCL=0;
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0x.... 0x....      BL       WriteSCL
+    126          }
+   \   00000020   0xBD01             POP      {R0,PC}          ;; return
+    127          
+    128          //---------------------------------------------------------------
+    129          //函数名称:         StopI2C()
+    130          //功    能:         I2C总线结束条件
+    131          //入口参数:         无
+    132          //出口参数:         无
+    133          //说明：            I2C总线结束条件：SCL为高电平时SDA的上升沿
+    134          //--------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    135          void StopI2C(void)
+    136          {
+   \                     StopI2C: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    137              WriteSCL(0);                                // SCL=0;
+   \   00000002   0x2000             MOVS     R0,#+0
+   \   00000004   0x.... 0x....      BL       WriteSCL
+    138              
+    139              WriteSDA(0);                                //SDA=0;
+   \   00000008   0x2000             MOVS     R0,#+0
+   \   0000000A   0x.... 0x....      BL       WriteSDA
+    140              WriteSCL(1);                                //SCL=1;
+   \   0000000E   0x2001             MOVS     R0,#+1
+   \   00000010   0x.... 0x....      BL       WriteSCL
+    141              WriteSDA(1);                                //SDA=1;
+   \   00000014   0x2001             MOVS     R0,#+1
+   \   00000016   0x.... 0x....      BL       WriteSDA
+    142              WriteSCL(0);                                //SCL=0;
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0x.... 0x....      BL       WriteSCL
+    143          }
+   \   00000020   0xBD01             POP      {R0,PC}          ;; return
+    144          
+    145          //-------------------------------------------------------------------------------
+    146          //函数名称:         MasterAckI2C()
+    147          //功    能:         主机接收应答，在接收到1字节数据后，返回应答，告诉从机接收完成
+    148          //入口参数:         无
+    149          //出口参数:         无
+    150          //说明：            I2C总线应答：读完一个字节后将SDA线拉低，即应答0
+    151          //---------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    152          void MasterAckI2C(void)
+    153          {
+   \                     MasterAckI2C: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    154              WriteSCL(0);                                // SCL=0;
+   \   00000002   0x2000             MOVS     R0,#+0
+   \   00000004   0x.... 0x....      BL       WriteSCL
+    155          
+    156              WriteSDA(0);                                //SDA=0;
+   \   00000008   0x2000             MOVS     R0,#+0
+   \   0000000A   0x.... 0x....      BL       WriteSDA
+    157              WriteSCL(1);                                //SCL=1;
+   \   0000000E   0x2001             MOVS     R0,#+1
+   \   00000010   0x.... 0x....      BL       WriteSCL
+    158              WriteSCL(0);                                  //SCL=0;
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x.... 0x....      BL       WriteSCL
+    159              WriteSDA(0);                                //SDA=0;
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0x.... 0x....      BL       WriteSDA
+    160          }
+   \   00000020   0xBD01             POP      {R0,PC}          ;; return
+    161          
+    162          //-----------------------------------------------------------------------------------
+    163          //函数名称:         MasterNoAckI2C()
+    164          //功    能:         主机接收应答，告诉通信从机接收完成
+    165          //入口参数:         无
+    166          //出口参数:         无
+    167          //说明：            I2C总线应答：
+    168          //                  读完所要求的字节数据后将SDA线拉高，为结束IIC总线操作做准备
+    169          //-------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    170          void MasterNoAckI2C(void)
+    171          {
+   \                     MasterNoAckI2C: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    172              WriteSCL(0);                                    // SCL=0;
+   \   00000002   0x2000             MOVS     R0,#+0
+   \   00000004   0x.... 0x....      BL       WriteSCL
+    173              
+    174              WriteSDA(1);                                    //SDA=1;
+   \   00000008   0x2001             MOVS     R0,#+1
+   \   0000000A   0x.... 0x....      BL       WriteSDA
+    175              WriteSCL(1);                                    //SCL=1;
+   \   0000000E   0x2001             MOVS     R0,#+1
+   \   00000010   0x.... 0x....      BL       WriteSCL
+    176              WriteSCL(0);                                    //SCL=0;
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x.... 0x....      BL       WriteSCL
+    177              WriteSDA(0);                                    //SDA=0;
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0x.... 0x....      BL       WriteSDA
+    178          }
+   \   00000020   0xBD01             POP      {R0,PC}          ;; return
+    179          
+    180          //------------------------------------------------------------------------------------
+    181          //函数名称:         CheckSlaveAckI2C()
+    182          //功    能:         读I2C从机应答
+    183          //入口参数:         无
+    184          //出口参数:         ackflag
+    185          //                  如果从机产生应答，则返回0，
+    186          //                  从机没有产生应答,否则返回1
+    187          //说明：            检查I2C器件(从机)应答情况,应答返回1,否则为零
+    188          //these waw a bug befor 2008/05/17.
+    189          //------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    190          uint8 CheckSlaveAckI2C(void)
+    191          {
+   \                     CheckSlaveAckI2C: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    192              uint8 ackflag;                                  //清除应答标志;
+    193              
+    194              ackflag = ReadSDA();
+   \   00000002   0x.... 0x....      BL       ReadSDA
+   \   00000006   0x0004             MOVS     R4,R0
+    195              WriteSCL(1);                                    //SCL=1;
+   \   00000008   0x2001             MOVS     R0,#+1
+   \   0000000A   0x.... 0x....      BL       WriteSCL
+    196              WriteSCL(0);                                    //SCL=0;
+   \   0000000E   0x2000             MOVS     R0,#+0
+   \   00000010   0x.... 0x....      BL       WriteSCL
+    197              
+    198              return ackflag;
+   \   00000014   0x0020             MOVS     R0,R4
+   \   00000016   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000018   0xBD10             POP      {R4,PC}          ;; return
+    199          }
+    200          
+    201          //------------------------------------------------------------------------------------
+    202          //函数名称:         WriteByteWithI2C()
+    203          //功    能:         主机对I2C总线写1操作
+    204          //入口参数:         Data:要写出的数据
+    205          //出口参数:         无
+    206          //说明：            写一字节数据Data
+    207          //------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    208          void WriteByteWithI2C(uint8 Data)  
+    209          {
+   \                     WriteByteWithI2C: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    210              uint8 i;
+    211              for(i=0;i<8;i++)
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x0005             MOVS     R5,R0
+   \                     ??WriteByteWithI2C_0: (+1)
+   \   00000008   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000000A   0x2D08             CMP      R5,#+8
+   \   0000000C   0xDA17             BGE.N    ??WriteByteWithI2C_1
+    212              {
+    213                  if(Data & 0x80)                             //传输位从高位到低位,先传最高位 
+   \   0000000E   0x0620             LSLS     R0,R4,#+24
+   \   00000010   0xD506             BPL.N    ??WriteByteWithI2C_2
+    214                  {
+    215                      WriteSDA(1);                            //SDA=1;
+   \   00000012   0x2001             MOVS     R0,#+1
+   \   00000014   0x.... 0x....      BL       WriteSDA
+    216                      WriteSCL(1);                            //SCL=1;
+   \   00000018   0x2001             MOVS     R0,#+1
+   \   0000001A   0x.... 0x....      BL       WriteSCL
+   \   0000001E   0xE005             B.N      ??WriteByteWithI2C_3
+    217                  }
+    218                  else
+    219                  {  
+    220                      WriteSDA(0);                            //SDA=0;
+   \                     ??WriteByteWithI2C_2: (+1)
+   \   00000020   0x2000             MOVS     R0,#+0
+   \   00000022   0x.... 0x....      BL       WriteSDA
+    221                      WriteSCL(1);                            //SCL=1;
+   \   00000026   0x2001             MOVS     R0,#+1
+   \   00000028   0x.... 0x....      BL       WriteSCL
+    222                  }   
+    223                  WriteSCL(0);                                //SCL=0;
+   \                     ??WriteByteWithI2C_3: (+1)
+   \   0000002C   0x2000             MOVS     R0,#+0
+   \   0000002E   0x.... 0x....      BL       WriteSCL
+    224                  WriteSDA(0);                                //SDA=0;
+   \   00000032   0x2000             MOVS     R0,#+0
+   \   00000034   0x.... 0x....      BL       WriteSDA
+    225                  Data <<= 1;                                 //数据左移             
+   \   00000038   0x0064             LSLS     R4,R4,#+1
+    226              }
+   \   0000003A   0x1C6D             ADDS     R5,R5,#+1
+   \   0000003C   0xE7E4             B.N      ??WriteByteWithI2C_0
+    227          }
+   \                     ??WriteByteWithI2C_1: (+1)
+   \   0000003E   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    228          
+    229          //-------------------------------------------------------------------------------------------------------
+    230          //函数名称:         ReadByteWithI2C()
+    231          //功    能:         主机对I2C总线写1操作
+    232          //入口参数:         无
+    233          //出口参数:         无
+    234          //说明：            读一字节数据：返回值即读的数据
+    235          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    236          uint8 ReadByteWithI2C(void)            
+    237          {
+   \                     ReadByteWithI2C: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+    238              uint8 readdata=0;                           // Read_Data为读入的数据，0
+   \   00000002   0x2400             MOVS     R4,#+0
+    239              uint8 j;
+    240              
+    241              for (j=0;j<8;j++)
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x0005             MOVS     R5,R0
+   \                     ??ReadByteWithI2C_0: (+1)
+   \   00000008   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000000A   0x2D08             CMP      R5,#+8
+   \   0000000C   0xDA0E             BGE.N    ??ReadByteWithI2C_1
+    242              {
+    243                  readdata <<=1;
+   \   0000000E   0x0064             LSLS     R4,R4,#+1
+    244                                                          //数据读出，若是0则移位；若是1则与0x01或
+    245                  if(ReadSDA())
+   \   00000010   0x.... 0x....      BL       ReadSDA
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD001             BEQ.N    ??ReadByteWithI2C_2
+    246                  {
+    247                      readdata =(readdata | 0x01);               
+   \   00000018   0xF054 0x0401      ORRS     R4,R4,#0x1
+    248                  }
+    249                  WriteSCL(1);                              //SCL=1;
+   \                     ??ReadByteWithI2C_2: (+1)
+   \   0000001C   0x2001             MOVS     R0,#+1
+   \   0000001E   0x.... 0x....      BL       WriteSCL
+    250                  WriteSCL(0);                              //SCL=0;
+   \   00000022   0x2000             MOVS     R0,#+0
+   \   00000024   0x.... 0x....      BL       WriteSCL
+    251              }
+   \   00000028   0x1C6D             ADDS     R5,R5,#+1
+   \   0000002A   0xE7ED             B.N      ??ReadByteWithI2C_0
+    252              
+    253              return   readdata ;                         //返回读出的字节
+   \                     ??ReadByteWithI2C_1: (+1)
+   \   0000002C   0x0020             MOVS     R0,R4
+   \   0000002E   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000030   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    254          }
+    255          
+    256          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   CheckSlaveAckI2C
+         8   -> ReadSDA
+         8   -> WriteSCL
+       8   InitFramIO
+         8   -> GPIO_PinselConfig
+       0   InitI2CIO
+       8   MasterAckI2C
+         8   -> WriteSCL
+         8   -> WriteSDA
+       8   MasterNoAckI2C
+         8   -> WriteSCL
+         8   -> WriteSDA
+      16   ReadByteWithI2C
+        16   -> ReadSDA
+        16   -> WriteSCL
+       8   ReadSCL
+         8   -> GPIO_ReadIoVal
+         8   -> nop
+       8   ReadSDA
+         8   -> GPIO_ReadIoVal
+         8   -> nop
+       8   StartI2C
+         8   -> WriteSCL
+         8   -> WriteSDA
+       8   StopI2C
+         8   -> WriteSCL
+         8   -> WriteSDA
+      16   WriteByteWithI2C
+        16   -> WriteSCL
+        16   -> WriteSDA
+       8   WriteSCL
+         8   -> GPIO_SetOrClearValue
+         8   -> nop
+       8   WriteSDA
+         8   -> GPIO_SetOrClearValue
+         8   -> nop
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      26  CheckSlaveAckI2C
+      36  InitFramIO
+       2  InitI2CIO
+      34  MasterAckI2C
+      34  MasterNoAckI2C
+      50  ReadByteWithI2C
+      20  ReadSCL
+      20  ReadSDA
+      34  StartI2C
+      34  StopI2C
+      64  WriteByteWithI2C
+      34  WriteSCL
+      34  WriteSDA
+
+ 
+ 422 bytes in section .text
+ 
+ 422 bytes of CODE memory
+
+Errors: none
+Warnings: 1

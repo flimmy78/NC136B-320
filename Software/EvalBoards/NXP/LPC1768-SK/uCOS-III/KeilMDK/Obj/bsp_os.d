@@ -1,0 +1,17 @@
+.\obj\bsp_os.o: ..\..\BSP\OS\uCOS-III\bsp_os.c
+.\obj\bsp_os.o: ..\..\BSP\bsp.h
+.\obj\bsp_os.o: ..\..\..\..\..\uC-CPU\ARM-Cortex-M3\RealView\cpu.h
+.\obj\bsp_os.o: ..\..\..\..\..\uC-CPU\cpu_def.h
+.\obj\bsp_os.o: ..\..\uCOS-III\cpu_cfg.h
+.\obj\bsp_os.o: ..\..\..\..\..\uC-LIB\lib_def.h
+.\obj\bsp_os.o: ..\..\BSP\OS\uCOS-III\bsp_os.h
+.\obj\bsp_os.o: ..\..\..\..\..\uCOS-III\Source\os.h
+.\obj\bsp_os.o: ..\..\uCOS-III\os_cfg.h
+.\obj\bsp_os.o: ..\..\..\..\..\uC-CPU\cpu_core.h
+.\obj\bsp_os.o: ..\..\..\..\..\uC-LIB\lib_mem.h
+.\obj\bsp_os.o: ..\..\..\..\..\uC-CPU\cpu_core.h
+.\obj\bsp_os.o: ..\..\uCOS-III\KeilMDK\app_cfg.h
+.\obj\bsp_os.o: ..\..\..\..\..\uC-LIB\lib_str.h
+.\obj\bsp_os.o: ..\..\..\..\..\uC-LIB\lib_ascii.h
+.\obj\bsp_os.o: ..\..\..\..\..\uCOS-III\Source\os_type.h
+.\obj\bsp_os.o: ..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\RealView\os_cpu.h

@@ -1,0 +1,766 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       14/Dec/2017  10:39:30
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_iap.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_iap.c" -lCN
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\lpc17xx_iap.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\lpc17xx_iap.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_iap.c
+      1          /**********************************************************************
+      2          * $Id$		lpc17xx_iap.c			2012-04-18
+      3          *//**
+      4          * @file		lpc17xx_iap.c
+      5           * @brief	Contains all functions support for IAP on lpc17xx
+      6          * @version	1.0
+      7          * @date		18. April. 2012
+      8          * @author	NXP MCU SW Application Team
+      9          * 
+     10          * Copyright(C) 2011, NXP Semiconductor
+     11          * All rights reserved.
+     12          *
+     13          ***********************************************************************
+     14          * Software that is described herein is for illustrative purposes only
+     15          * which provides customers with programming information regarding the
+     16          * products. This software is supplied "AS IS" without any warranties.
+     17          * NXP Semiconductors assumes no responsibility or liability for the
+     18          * use of the software, conveys no license or title under any patent,
+     19          * copyright, or mask work right to the product. NXP Semiconductors
+     20          * reserves the right to make changes in the software without
+     21          * notification. NXP Semiconductors also make no representation or
+     22          * warranty that such application will be suitable for the specified
+     23          * use without further testing or modification.
+     24          * Permission to use, copy, modify, and distribute this software and its
+     25          * documentation is hereby granted, under NXP Semiconductors'
+     26          * relevant copyright in the software, without fee, provided that it
+     27          * is used in conjunction with NXP Semiconductors microcontrollers.  This
+     28          * copyright, permission, and disclaimer notice must appear in all copies of
+     29          * this code.
+     30          **********************************************************************/
+     31          #include "lpc17xx_iap.h"
+     32          #include "system_lpc17xx.h"
+     33          
+     34          //  IAP Command
+     35          typedef void (*IAP)(uint32_t *cmd,uint32_t *result);
+
+   \                                 In section .data, align 4
+     36          IAP iap_entry = (IAP) IAP_LOCATION;
+   \                     iap_entry:
+   \   00000000   0x1FFF1FF1         DC32 1FFF1FF1H
+     37          #define IAP_Call 	iap_entry
+     38          
+     39          /** @addtogroup IAP_Public_Functions IAP Public Function
+     40           * @ingroup IAP
+     41           * @{
+     42           */
+     43           
+     44          
+     45          /*********************************************************************//**
+     46           * @brief		Get Sector Number
+     47           *
+     48           * @param[in] adr	           Sector Address
+     49           *
+     50           * @return 	Sector Number.
+     51           *
+     52           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     53           uint32_t GetSecNum (uint32_t adr)
+     54          {
+   \                     GetSecNum: (+1)
+   \   00000000   0x0001             MOVS     R1,R0
+     55              uint32_t n;
+     56          
+     57              n = adr >> 12;                               //  4kB Sector
+   \   00000002   0x0B0A             LSRS     R2,R1,#+12
+   \   00000004   0x0010             MOVS     R0,R2
+     58              if (n >= 0x10) {
+   \   00000006   0x2810             CMP      R0,#+16
+   \   00000008   0xD301             BCC.N    ??GetSecNum_0
+     59                n = 0x0E + (n >> 3);                       // 32kB Sector
+   \   0000000A   0x08C0             LSRS     R0,R0,#+3
+   \   0000000C   0x300E             ADDS     R0,R0,#+14
+     60              } 
+     61          
+     62              return (n);                                  // Sector Number
+   \                     ??GetSecNum_0: (+1)
+   \   0000000E   0x4770             BX       LR               ;; return
+     63          }
+     64          
+     65          /*********************************************************************//**
+     66           * @brief		Prepare sector(s) for write operation
+     67           *
+     68           * @param[in] start_sec	          The number of start sector
+     69           * @param[in] end_sec	          The number of end sector
+     70           *
+     71           * @return 	CMD_SUCCESS/BUSY/INVALID_SECTOR.
+     72           *
+     73           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     74          IAP_STATUS_CODE PrepareSector(uint32_t start_sec, uint32_t end_sec)
+     75          {
+   \                     PrepareSector: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB08B             SUB      SP,SP,#+44
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+     76              IAP_COMMAND_Type command;
+     77              command.cmd    = IAP_PREPARE;                    // Prepare Sector for Write
+   \   00000008   0x2032             MOVS     R0,#+50
+   \   0000000A   0x9000             STR      R0,[SP, #+0]
+     78              command.param[0] = start_sec;                    // Start Sector
+   \   0000000C   0x9401             STR      R4,[SP, #+4]
+     79              command.param[1] = end_sec;                      // End Sector
+   \   0000000E   0x9502             STR      R5,[SP, #+8]
+     80              IAP_Call (&command.cmd, &command.status);        // Call IAP Command
+   \   00000010   0xA905             ADD      R1,SP,#+20
+   \   00000012   0x4668             MOV      R0,SP
+   \   00000014   0x....             LDR.N    R2,??DataTable8
+   \   00000016   0x6812             LDR      R2,[R2, #+0]
+   \   00000018   0x4790             BLX      R2
+     81              return (IAP_STATUS_CODE)command.status;
+   \   0000001A   0x9805             LDR      R0,[SP, #+20]
+   \   0000001C   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000001E   0xB00B             ADD      SP,SP,#+44
+   \   00000020   0xBD30             POP      {R4,R5,PC}       ;; return
+     82          }
+     83          
+     84          /*********************************************************************//**
+     85           * @brief		 Copy RAM to Flash
+     86           *
+     87           * @param[in] dest	          destination buffer (in Flash memory).
+     88           * @param[in] source	   source buffer (in RAM).
+     89           * @param[in] size	          the write size.
+     90           *
+     91           * @return 	CMD_SUCCESS.
+     92           *                  SRC_ADDR_ERROR/DST_ADDR_ERROR
+     93           *                  SRC_ADDR_NOT_MAPPED/DST_ADDR_NOT_MAPPED
+     94           *                  COUNT_ERROR/SECTOR_NOT_PREPARED_FOR_WRITE_OPERATION
+     95           *                  BUSY
+     96           *
+     97           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     98          IAP_STATUS_CODE CopyRAM2Flash(uint8_t * dest, uint8_t* source, IAP_WRITE_SIZE size)
+     99          {
+   \                     CopyRAM2Flash: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0xB08A             SUB      SP,SP,#+40
+   \   00000006   0x0004             MOVS     R4,R0
+   \   00000008   0x000D             MOVS     R5,R1
+   \   0000000A   0x0016             MOVS     R6,R2
+    100              uint32_t sec;
+    101              IAP_STATUS_CODE status;
+    102              IAP_COMMAND_Type command;
+    103          
+    104          	// Prepare sectors
+    105              sec = GetSecNum((uint32_t)dest);
+   \   0000000C   0x0020             MOVS     R0,R4
+   \   0000000E   0x.... 0x....      BL       GetSecNum
+   \   00000012   0x0007             MOVS     R7,R0
+    106             	status = PrepareSector(sec, sec);
+   \   00000014   0x0039             MOVS     R1,R7
+   \   00000016   0x0038             MOVS     R0,R7
+   \   00000018   0x.... 0x....      BL       PrepareSector
+   \   0000001C   0x4680             MOV      R8,R0
+    107          	if(status != CMD_SUCCESS)
+   \   0000001E   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   00000022   0xF1B8 0x0F00      CMP      R8,#+0
+   \   00000026   0xD002             BEQ.N    ??CopyRAM2Flash_0
+    108                  return status;
+   \   00000028   0x4640             MOV      R0,R8
+   \   0000002A   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000002C   0xE013             B.N      ??CopyRAM2Flash_1
+    109             
+    110          	// write
+    111          	command.cmd    = IAP_COPY_RAM2FLASH;             // Copy RAM to Flash
+   \                     ??CopyRAM2Flash_0: (+1)
+   \   0000002E   0x2033             MOVS     R0,#+51
+   \   00000030   0x9000             STR      R0,[SP, #+0]
+    112              command.param[0] = (uint32_t)dest;                 // Destination Flash Address
+   \   00000032   0x9401             STR      R4,[SP, #+4]
+    113              command.param[1] = (uint32_t)source;               // Source RAM Address
+   \   00000034   0x9502             STR      R5,[SP, #+8]
+    114              command.param[2] =  size;                          // Number of bytes
+   \   00000036   0xB236             SXTH     R6,R6            ;; SignExt  R6,R6,#+16,#+16
+   \   00000038   0x9603             STR      R6,[SP, #+12]
+    115              command.param[3] =  SystemCoreClock / 1000;         // CCLK in kHz
+   \   0000003A   0x....             LDR.N    R0,??DataTable8_1
+   \   0000003C   0x6800             LDR      R0,[R0, #+0]
+   \   0000003E   0xF44F 0x717A      MOV      R1,#+1000
+   \   00000042   0xFBB0 0xF0F1      UDIV     R0,R0,R1
+   \   00000046   0x9004             STR      R0,[SP, #+16]
+    116              IAP_Call (&command.cmd, &command.status);              // Call IAP Command
+   \   00000048   0xA905             ADD      R1,SP,#+20
+   \   0000004A   0x4668             MOV      R0,SP
+   \   0000004C   0x....             LDR.N    R2,??DataTable8
+   \   0000004E   0x6812             LDR      R2,[R2, #+0]
+   \   00000050   0x4790             BLX      R2
+    117          	  
+    118              return (IAP_STATUS_CODE)command.status;             // Finished without Errors	  
+   \   00000052   0x9805             LDR      R0,[SP, #+20]
+   \   00000054   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \                     ??CopyRAM2Flash_1: (+1)
+   \   00000056   0xB00A             ADD      SP,SP,#+40
+   \   00000058   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    119          }
+    120          
+    121          /*********************************************************************//**
+    122           * @brief		 Erase sector(s)
+    123           *
+    124           * @param[in] start_sec	   The number of start sector
+    125           * @param[in] end_sec	   The number of end sector
+    126           *
+    127           * @return 	CMD_SUCCESS.
+    128           *                  INVALID_SECTOR
+    129           *                  SECTOR_NOT_PREPARED_FOR_WRITE_OPERATION
+    130           *                  BUSY
+    131           *
+    132           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    133          IAP_STATUS_CODE EraseSector(uint32_t start_sec, uint32_t end_sec)
+    134          {
+   \                     EraseSector: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0xB08A             SUB      SP,SP,#+40
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+    135              IAP_COMMAND_Type command;
+    136              IAP_STATUS_CODE status;
+    137          
+    138          	// Prepare sectors
+    139             	status = PrepareSector(start_sec, end_sec);
+   \   00000008   0x0029             MOVS     R1,R5
+   \   0000000A   0x0020             MOVS     R0,R4
+   \   0000000C   0x.... 0x....      BL       PrepareSector
+   \   00000010   0x0006             MOVS     R6,R0
+    140          	if(status != CMD_SUCCESS)
+   \   00000012   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000014   0x2E00             CMP      R6,#+0
+   \   00000016   0xD002             BEQ.N    ??EraseSector_0
+    141                  return status;
+   \   00000018   0x0030             MOVS     R0,R6
+   \   0000001A   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000001C   0xE011             B.N      ??EraseSector_1
+    142          
+    143          	// Erase sectors
+    144              command.cmd    = IAP_ERASE;                    // Prepare Sector for Write
+   \                     ??EraseSector_0: (+1)
+   \   0000001E   0x2034             MOVS     R0,#+52
+   \   00000020   0x9000             STR      R0,[SP, #+0]
+    145              command.param[0] = start_sec;                  // Start Sector
+   \   00000022   0x9401             STR      R4,[SP, #+4]
+    146              command.param[1] = end_sec;                    // End Sector
+   \   00000024   0x9502             STR      R5,[SP, #+8]
+    147              command.param[2] =  SystemCoreClock / 1000;         // CCLK in kHz
+   \   00000026   0x....             LDR.N    R0,??DataTable8_1
+   \   00000028   0x6800             LDR      R0,[R0, #+0]
+   \   0000002A   0xF44F 0x717A      MOV      R1,#+1000
+   \   0000002E   0xFBB0 0xF0F1      UDIV     R0,R0,R1
+   \   00000032   0x9003             STR      R0,[SP, #+12]
+    148              IAP_Call (&command.cmd, &command.status);      // Call IAP Command
+   \   00000034   0xA905             ADD      R1,SP,#+20
+   \   00000036   0x4668             MOV      R0,SP
+   \   00000038   0x....             LDR.N    R2,??DataTable8
+   \   0000003A   0x6812             LDR      R2,[R2, #+0]
+   \   0000003C   0x4790             BLX      R2
+    149              return (IAP_STATUS_CODE)command.status;  
+   \   0000003E   0x9805             LDR      R0,[SP, #+20]
+   \   00000040   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \                     ??EraseSector_1: (+1)
+   \   00000042   0xB00A             ADD      SP,SP,#+40
+   \   00000044   0xBD70             POP      {R4-R6,PC}       ;; return
+    150          }
+    151          
+    152          /*********************************************************************//**
+    153           * @brief		  Blank check sector(s)
+    154           *
+    155           * @param[in] start_sec	   The number of start sector
+    156           * @param[in] end_sec	   The number of end sector
+    157           * @param[out] first_nblank_loc  The offset of the first non-blank word
+    158            * @param[out] first_nblank_val  The value of the first non-blank word
+    159           *
+    160           * @return 	CMD_SUCCESS.
+    161           *                  INVALID_SECTOR
+    162           *                  SECTOR_NOT_BLANK
+    163           *                  BUSY
+    164           *
+    165           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    166          IAP_STATUS_CODE BlankCheckSector(uint32_t start_sec, uint32_t end_sec,
+    167                                           uint32_t *first_nblank_loc, 
+    168          								 uint32_t *first_nblank_val)
+    169          {
+   \                     BlankCheckSector: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB08B             SUB      SP,SP,#+44
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+   \   00000008   0x0016             MOVS     R6,R2
+   \   0000000A   0x001F             MOVS     R7,R3
+    170              IAP_COMMAND_Type command;
+    171          	
+    172              command.cmd    = IAP_BLANK_CHECK;                // Prepare Sector for Write
+   \   0000000C   0x2035             MOVS     R0,#+53
+   \   0000000E   0x9000             STR      R0,[SP, #+0]
+    173              command.param[0] = start_sec;                    // Start Sector
+   \   00000010   0x9401             STR      R4,[SP, #+4]
+    174              command.param[1] = end_sec;                      // End Sector
+   \   00000012   0x9502             STR      R5,[SP, #+8]
+    175              IAP_Call (&command.cmd, &command.status);        // Call IAP Command
+   \   00000014   0xA905             ADD      R1,SP,#+20
+   \   00000016   0x4668             MOV      R0,SP
+   \   00000018   0x....             LDR.N    R2,??DataTable8
+   \   0000001A   0x6812             LDR      R2,[R2, #+0]
+   \   0000001C   0x4790             BLX      R2
+    176          
+    177          	if(command.status == SECTOR_NOT_BLANK)
+   \   0000001E   0x9805             LDR      R0,[SP, #+20]
+   \   00000020   0x2808             CMP      R0,#+8
+   \   00000022   0xD107             BNE.N    ??BlankCheckSector_0
+    178          	{
+    179          	  // Update out value
+    180          	  if(first_nblank_loc != NULL)
+   \   00000024   0x2E00             CMP      R6,#+0
+   \   00000026   0xD001             BEQ.N    ??BlankCheckSector_1
+    181          	      *first_nblank_loc =  command.result[0];
+   \   00000028   0x9806             LDR      R0,[SP, #+24]
+   \   0000002A   0x6030             STR      R0,[R6, #+0]
+    182          	  if(first_nblank_val != NULL)
+   \                     ??BlankCheckSector_1: (+1)
+   \   0000002C   0x2F00             CMP      R7,#+0
+   \   0000002E   0xD001             BEQ.N    ??BlankCheckSector_0
+    183          	      *first_nblank_val =  command.result[1];
+   \   00000030   0x9807             LDR      R0,[SP, #+28]
+   \   00000032   0x6038             STR      R0,[R7, #+0]
+    184              }
+    185          
+    186              return (IAP_STATUS_CODE)command.status;
+   \                     ??BlankCheckSector_0: (+1)
+   \   00000034   0x9805             LDR      R0,[SP, #+20]
+   \   00000036   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000038   0xB00B             ADD      SP,SP,#+44
+   \   0000003A   0xBDF0             POP      {R4-R7,PC}       ;; return
+    187          }
+    188          
+    189          /*********************************************************************//**
+    190           * @brief		   Read part identification number
+    191           *
+    192           * @param[out] partID  Part ID
+    193           *
+    194           * @return 	CMD_SUCCESS
+    195           *
+    196           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    197          IAP_STATUS_CODE ReadPartID(uint32_t *partID)
+    198          {
+   \                     ReadPartID: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB08A             SUB      SP,SP,#+40
+   \   00000004   0x0004             MOVS     R4,R0
+    199             IAP_COMMAND_Type command;
+    200             command.cmd = IAP_READ_PART_ID;
+   \   00000006   0x2036             MOVS     R0,#+54
+   \   00000008   0x9000             STR      R0,[SP, #+0]
+    201             IAP_Call (&command.cmd, &command.status);        // Call IAP Command
+   \   0000000A   0xA905             ADD      R1,SP,#+20
+   \   0000000C   0x4668             MOV      R0,SP
+   \   0000000E   0x....             LDR.N    R2,??DataTable8
+   \   00000010   0x6812             LDR      R2,[R2, #+0]
+   \   00000012   0x4790             BLX      R2
+    202          
+    203             if(command.status == CMD_SUCCESS)
+   \   00000014   0x9805             LDR      R0,[SP, #+20]
+   \   00000016   0x2800             CMP      R0,#+0
+   \   00000018   0xD103             BNE.N    ??ReadPartID_0
+    204             {
+    205                if(partID != NULL)
+   \   0000001A   0x2C00             CMP      R4,#+0
+   \   0000001C   0xD001             BEQ.N    ??ReadPartID_0
+    206          	     *partID = command.result[0];
+   \   0000001E   0x9806             LDR      R0,[SP, #+24]
+   \   00000020   0x6020             STR      R0,[R4, #+0]
+    207             }
+    208          
+    209             return (IAP_STATUS_CODE)command.status;
+   \                     ??ReadPartID_0: (+1)
+   \   00000022   0x9805             LDR      R0,[SP, #+20]
+   \   00000024   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000026   0xB00A             ADD      SP,SP,#+40
+   \   00000028   0xBD10             POP      {R4,PC}          ;; return
+    210          }
+    211          
+    212          /*********************************************************************//**
+    213           * @brief		   Read boot code version. The version is interpreted as <major>.<minor>.
+    214           *
+    215           * @param[out] major  The major
+    216           * @param[out] minor  The minor
+    217           *
+    218           * @return 	CMD_SUCCESS
+    219           *
+    220           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    221          IAP_STATUS_CODE ReadBootCodeVer(uint8_t *major, uint8_t* minor)
+    222          {
+   \                     ReadBootCodeVer: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB08B             SUB      SP,SP,#+44
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+    223             IAP_COMMAND_Type command;
+    224             command.cmd = IAP_READ_BOOT_VER;
+   \   00000008   0x2037             MOVS     R0,#+55
+   \   0000000A   0x9000             STR      R0,[SP, #+0]
+    225             IAP_Call (&command.cmd, &command.status);        // Call IAP Command
+   \   0000000C   0xA905             ADD      R1,SP,#+20
+   \   0000000E   0x4668             MOV      R0,SP
+   \   00000010   0x....             LDR.N    R2,??DataTable8
+   \   00000012   0x6812             LDR      R2,[R2, #+0]
+   \   00000014   0x4790             BLX      R2
+    226          
+    227             if(command.status == CMD_SUCCESS)
+   \   00000016   0x9805             LDR      R0,[SP, #+20]
+   \   00000018   0x2800             CMP      R0,#+0
+   \   0000001A   0xD108             BNE.N    ??ReadBootCodeVer_0
+    228             {
+    229                if(major != NULL)
+   \   0000001C   0x2C00             CMP      R4,#+0
+   \   0000001E   0xD002             BEQ.N    ??ReadBootCodeVer_1
+    230          	     *major = (command.result[0] >> 8) & 0xFF;
+   \   00000020   0x9806             LDR      R0,[SP, #+24]
+   \   00000022   0x0A00             LSRS     R0,R0,#+8
+   \   00000024   0x7020             STRB     R0,[R4, #+0]
+    231                if(minor != NULL)
+   \                     ??ReadBootCodeVer_1: (+1)
+   \   00000026   0x2D00             CMP      R5,#+0
+   \   00000028   0xD001             BEQ.N    ??ReadBootCodeVer_0
+    232          	     *minor = (command.result[0]) & 0xFF;
+   \   0000002A   0x9806             LDR      R0,[SP, #+24]
+   \   0000002C   0x7028             STRB     R0,[R5, #+0]
+    233             }
+    234          
+    235             return (IAP_STATUS_CODE)command.status;
+   \                     ??ReadBootCodeVer_0: (+1)
+   \   0000002E   0x9805             LDR      R0,[SP, #+20]
+   \   00000030   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000032   0xB00B             ADD      SP,SP,#+44
+   \   00000034   0xBD30             POP      {R4,R5,PC}       ;; return
+    236          }
+    237          
+    238          /*********************************************************************//**
+    239           * @brief		   Read Device serial number.
+    240           *
+    241           * @param[out] uid   Serial number.
+    242           *
+    243           * @return 	CMD_SUCCESS
+    244           *
+    245           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    246          IAP_STATUS_CODE ReadDeviceSerialNum(uint32_t *uid)
+    247          {
+   \                     ReadDeviceSerialNum: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB08A             SUB      SP,SP,#+40
+   \   00000004   0x0004             MOVS     R4,R0
+    248             IAP_COMMAND_Type command;
+    249             command.cmd = IAP_READ_SERIAL_NUMBER;
+   \   00000006   0x203A             MOVS     R0,#+58
+   \   00000008   0x9000             STR      R0,[SP, #+0]
+    250             IAP_Call (&command.cmd, &command.status);        // Call IAP Command
+   \   0000000A   0xA905             ADD      R1,SP,#+20
+   \   0000000C   0x4668             MOV      R0,SP
+   \   0000000E   0x....             LDR.N    R2,??DataTable8
+   \   00000010   0x6812             LDR      R2,[R2, #+0]
+   \   00000012   0x4790             BLX      R2
+    251          
+    252             if(command.status == CMD_SUCCESS)
+   \   00000014   0x9805             LDR      R0,[SP, #+20]
+   \   00000016   0x2800             CMP      R0,#+0
+   \   00000018   0xD10E             BNE.N    ??ReadDeviceSerialNum_0
+    253             {
+    254                if(uid != NULL)
+   \   0000001A   0x2C00             CMP      R4,#+0
+   \   0000001C   0xD00C             BEQ.N    ??ReadDeviceSerialNum_0
+    255          	  {
+    256          	    uint32_t i = 0;
+   \   0000001E   0x2000             MOVS     R0,#+0
+    257          		for(i = 0; i < 4; i++)
+   \   00000020   0x2100             MOVS     R1,#+0
+   \   00000022   0x0008             MOVS     R0,R1
+   \                     ??ReadDeviceSerialNum_1: (+1)
+   \   00000024   0x2804             CMP      R0,#+4
+   \   00000026   0xD207             BCS.N    ??ReadDeviceSerialNum_0
+    258          	       uid[i] =  command.result[i];
+   \   00000028   0x4669             MOV      R1,SP
+   \   0000002A   0xEB11 0x0180      ADDS     R1,R1,R0, LSL #+2
+   \   0000002E   0x6989             LDR      R1,[R1, #+24]
+   \   00000030   0xF844 0x1020      STR      R1,[R4, R0, LSL #+2]
+   \   00000034   0x1C40             ADDS     R0,R0,#+1
+   \   00000036   0xE7F5             B.N      ??ReadDeviceSerialNum_1
+    259          	  }
+    260             }
+    261          
+    262             return (IAP_STATUS_CODE)command.status;
+   \                     ??ReadDeviceSerialNum_0: (+1)
+   \   00000038   0x9805             LDR      R0,[SP, #+20]
+   \   0000003A   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000003C   0xB00A             ADD      SP,SP,#+40
+   \   0000003E   0xBD10             POP      {R4,PC}          ;; return
+    263          }
+    264          
+    265          /*********************************************************************//**
+    266           * @brief		   compare the memory contents at two locations.
+    267           *
+    268           * @param[in] addr1   The address of the 1st buffer (in RAM/Flash).
+    269           * @param[in] addr2   The address of the 2nd buffer (in RAM/Flash).
+    270           * @param[in] size      Number of bytes to be compared; should be a multiple of 4.
+    271           *
+    272           * @return 	CMD_SUCCESS
+    273           *                  COMPARE_ERROR
+    274           *                  COUNT_ERROR (Byte count is not a multiple of 4)
+    275           *                  ADDR_ERROR
+    276           *                  ADDR_NOT_MAPPED
+    277           *
+    278           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    279          IAP_STATUS_CODE Compare(uint8_t *addr1, uint8_t *addr2, uint32_t size)
+    280          {
+   \                     Compare: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0xB08A             SUB      SP,SP,#+40
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+   \   00000008   0x0016             MOVS     R6,R2
+    281             IAP_COMMAND_Type command;
+    282             command.cmd = IAP_COMPARE;
+   \   0000000A   0x2038             MOVS     R0,#+56
+   \   0000000C   0x9000             STR      R0,[SP, #+0]
+    283             command.param[0] = (uint32_t)addr1;
+   \   0000000E   0x9401             STR      R4,[SP, #+4]
+    284             command.param[1] = (uint32_t)addr2;
+   \   00000010   0x9502             STR      R5,[SP, #+8]
+    285             command.param[2] = size;
+   \   00000012   0x9603             STR      R6,[SP, #+12]
+    286             IAP_Call (&command.cmd, &command.status);        // Call IAP Command
+   \   00000014   0xA905             ADD      R1,SP,#+20
+   \   00000016   0x4668             MOV      R0,SP
+   \   00000018   0x....             LDR.N    R2,??DataTable8
+   \   0000001A   0x6812             LDR      R2,[R2, #+0]
+   \   0000001C   0x4790             BLX      R2
+    287          
+    288             return (IAP_STATUS_CODE)command.status;
+   \   0000001E   0x9805             LDR      R0,[SP, #+20]
+   \   00000020   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000022   0xB00A             ADD      SP,SP,#+40
+   \   00000024   0xBD70             POP      {R4-R6,PC}       ;; return
+    289          }
+    290          
+    291          /*********************************************************************//**
+    292           * @brief		   Re-invoke ISP.
+    293           *
+    294           * @param[in] None.
+    295           *
+    296           * @return 	None.
+    297           *
+    298           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    299          void InvokeISP(void)
+    300          {
+   \                     InvokeISP: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB08B             SUB      SP,SP,#+44
+    301             IAP_COMMAND_Type command;
+    302             command.cmd = IAP_REINVOKE_ISP;
+   \   00000004   0x2039             MOVS     R0,#+57
+   \   00000006   0x9000             STR      R0,[SP, #+0]
+    303             IAP_Call (&command.cmd, &command.status);        // Call IAP Command
+   \   00000008   0xA905             ADD      R1,SP,#+20
+   \   0000000A   0x4668             MOV      R0,SP
+   \   0000000C   0x....             LDR.N    R2,??DataTable8
+   \   0000000E   0x6812             LDR      R2,[R2, #+0]
+   \   00000010   0x4790             BLX      R2
+    304          }
+   \   00000012   0xB00B             ADD      SP,SP,#+44
+   \   00000014   0xBD00             POP      {PC}             ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8:
+   \   00000000   0x........         DC32     iap_entry
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_1:
+   \   00000000   0x........         DC32     SystemCoreClock
+    305          
+    306          /**
+    307           * @}
+    308           */
+    309           
+    310          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      64   BlankCheckSector
+        64   -- Indirect call
+      56   Compare
+        56   -- Indirect call
+      64   CopyRAM2Flash
+        64   -- Indirect call
+        64   -> GetSecNum
+        64   -> PrepareSector
+      56   EraseSector
+        56   -- Indirect call
+        56   -> PrepareSector
+       0   GetSecNum
+      48   InvokeISP
+        48   -- Indirect call
+      56   PrepareSector
+        56   -- Indirect call
+      56   ReadBootCodeVer
+        56   -- Indirect call
+      48   ReadDeviceSerialNum
+        48   -- Indirect call
+      48   ReadPartID
+        48   -- Indirect call
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable8
+       4  ??DataTable8_1
+      60  BlankCheckSector
+      38  Compare
+      92  CopyRAM2Flash
+      70  EraseSector
+      16  GetSecNum
+      22  InvokeISP
+      34  PrepareSector
+      54  ReadBootCodeVer
+      64  ReadDeviceSerialNum
+      42  ReadPartID
+       4  iap_entry
+
+ 
+   4 bytes in section .data
+ 500 bytes in section .text
+ 
+ 500 bytes of CODE memory
+   4 bytes of DATA memory
+
+Errors: none
+Warnings: none

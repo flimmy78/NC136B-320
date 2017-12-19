@@ -1,0 +1,395 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       14/Dec/2017  10:49:33
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC卡模块\Application\Library\SpeedTest\locoworksta.C
+#    Command line =  
+#        "F:\iar\NC136B-320
+#        IC卡模块\Application\Library\SpeedTest\locoworksta.C" -lCN
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\locoworksta.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\locoworksta.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC卡模块\Application\Library\SpeedTest\locoworksta.C
+      1          #include <includes.h>
+      2          
+      3          
+      4          
+      5          #define     LOCO_LW     20		//P0.15
+      6          #define     LOCO_QY     19		//P0.18
+      7          #define     LOCO_ZD     18		//P0.18
+      8          #define     LOCO_BK     17		//P0.18
+      9          
+     10          //------------------------------------------------------------------------
+     11          //  名  称 ：void void InitI2CIO(void)
+     12          //  功  能 ：设置 SDA SCL 为普通IO口 进行模拟总线操作
+     13          // 入口参数：无
+     14          // 出口参数：无
+     15          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     16          void	InitLocoStaIO(void)
+     17          {
+   \                     InitLocoStaIO: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     18          	GPIO_PinselConfig(LOCO_LW,0);
+   \   00000002   0x2100             MOVS     R1,#+0
+   \   00000004   0x2014             MOVS     R0,#+20
+   \   00000006   0x.... 0x....      BL       GPIO_PinselConfig
+     19          	GPIO_PinselConfig(LOCO_QY,0);
+   \   0000000A   0x2100             MOVS     R1,#+0
+   \   0000000C   0x2013             MOVS     R0,#+19
+   \   0000000E   0x.... 0x....      BL       GPIO_PinselConfig
+     20          	GPIO_PinselConfig(LOCO_ZD,0);
+   \   00000012   0x2100             MOVS     R1,#+0
+   \   00000014   0x2012             MOVS     R0,#+18
+   \   00000016   0x.... 0x....      BL       GPIO_PinselConfig
+     21          	GPIO_PinselConfig(LOCO_BK,0);
+   \   0000001A   0x2100             MOVS     R1,#+0
+   \   0000001C   0x2011             MOVS     R0,#+17
+   \   0000001E   0x.... 0x....      BL       GPIO_PinselConfig
+     22          }
+   \   00000022   0xBD01             POP      {R0,PC}          ;; return
+     23          
+     24          //------------------------------------------------------------------------
+     25          //  名  称 ：uint8 ReadSCL(void)
+     26          //  功  能 ：读取 SCL 的值
+     27          // 入口参数：无
+     28          // 出口参数：无
+     29          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     30          uint8 ReadLOCO_LW(void)
+     31          {
+   \                     ReadLOCO_LW: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     32              uint8 temp;
+     33          
+     34          	temp = 	GPIO_ReadIoVal(LOCO_LW);
+   \   00000002   0x2014             MOVS     R0,#+20
+   \   00000004   0x.... 0x....      BL       GPIO_ReadIoVal
+   \   00000008   0x0004             MOVS     R4,R0
+     35          	nop();
+   \   0000000A   0x.... 0x....      BL       `nop`
+     36          
+     37              return temp;
+   \   0000000E   0x0020             MOVS     R0,R4
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0xBD10             POP      {R4,PC}          ;; return
+     38          }
+     39          
+     40          //------------------------------------------------------------------------
+     41          //  名  称 ：uint8 ReadSCL(void)
+     42          //  功  能 ：读取 SCL 的值
+     43          // 入口参数：无
+     44          // 出口参数：无
+     45          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     46          uint8 ReadLOCO_QY(void)
+     47          {
+   \                     ReadLOCO_QY: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     48              uint8 temp;
+     49          
+     50          	temp = 	GPIO_ReadIoVal(LOCO_QY);
+   \   00000002   0x2013             MOVS     R0,#+19
+   \   00000004   0x.... 0x....      BL       GPIO_ReadIoVal
+   \   00000008   0x0004             MOVS     R4,R0
+     51          	nop();
+   \   0000000A   0x.... 0x....      BL       `nop`
+     52          
+     53              return temp;
+   \   0000000E   0x0020             MOVS     R0,R4
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0xBD10             POP      {R4,PC}          ;; return
+     54          }
+     55          
+     56          
+     57          //------------------------------------------------------------------------
+     58          //  名  称 ：uint8 ReadSCL(void)
+     59          //  功  能 ：读取 SCL 的值
+     60          // 入口参数：无
+     61          // 出口参数：无
+     62          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     63          uint8 ReadLOCO_ZD(void)
+     64          {
+   \                     ReadLOCO_ZD: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     65              uint8 temp;
+     66          
+     67          	temp = 	GPIO_ReadIoVal(LOCO_ZD);
+   \   00000002   0x2012             MOVS     R0,#+18
+   \   00000004   0x.... 0x....      BL       GPIO_ReadIoVal
+   \   00000008   0x0004             MOVS     R4,R0
+     68          	nop();
+   \   0000000A   0x.... 0x....      BL       `nop`
+     69          
+     70              return temp;
+   \   0000000E   0x0020             MOVS     R0,R4
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0xBD10             POP      {R4,PC}          ;; return
+     71          }
+     72          
+     73          
+     74          //------------------------------------------------------------------------
+     75          //  名  称 ：uint8 ReadSCL(void)
+     76          //  功  能 ：读取 SCL 的值
+     77          // 入口参数：无
+     78          // 出口参数：无
+     79          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     80          uint8 ReadLOCO_BK(void)
+     81          {
+   \                     ReadLOCO_BK: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     82              uint8 temp;
+     83          
+     84          	temp = 	GPIO_ReadIoVal(LOCO_BK);
+   \   00000002   0x2011             MOVS     R0,#+17
+   \   00000004   0x.... 0x....      BL       GPIO_ReadIoVal
+   \   00000008   0x0004             MOVS     R4,R0
+     85          	nop();
+   \   0000000A   0x.... 0x....      BL       `nop`
+     86          
+     87              return temp;
+   \   0000000E   0x0020             MOVS     R0,R4
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0xBD10             POP      {R4,PC}          ;; return
+     88          }
+     89          
+
+   \                                 In section .bss, align 1
+     90          uint8	l_locoworksta = 0;
+   \                     l_locoworksta:
+   \   00000000                      DS8 1
+     91          
+     92          
+
+   \                                 In section .text, align 2, keep-with-next
+     93          uint8	GetMyLocoWorkState(void)
+     94          {
+     95          	return l_locoworksta;
+   \                     GetMyLocoWorkState: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable0
+   \   00000002   0x7800             LDRB     R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+     96          }	
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \   00000000   0x........         DC32     l_locoworksta
+     97          
+     98          //
+     99          //void	CheckLocoStaTask(void)
+    100          //{
+    101          //	static	uint32	time;
+    102          //	uint8	lwtmp,qytmp,zdtmp,bktmp;
+    103          //
+    104          ////	if(GetSysTime() - time > 120)
+    105          //	{
+    106          ////		time  = GetSysTime();
+    107          //
+    108          //		lwtmp = ReadLOCO_LW();
+    109          //		qytmp = ReadLOCO_QY();
+    110          //		zdtmp = ReadLOCO_ZD();
+    111          //		bktmp = ReadLOCO_BK();
+    112          //
+    113          //		if(lwtmp == 0)
+    114          //		{
+    115          //			l_locoworksta |= 0x01<<0;
+    116          //			//printfcom0("\r\n lw");
+    117          //			//return;	
+    118          //		}
+    119          //		else
+    120          //		{
+    121          //			l_locoworksta &= ~(0x01<<0);	
+    122          //		}
+    123          //
+    124          //		if(qytmp == 0)
+    125          //		{
+    126          //			l_locoworksta |= 0x01<<4;
+    127          //			//printfcom0("\r\n qy");
+    128          //
+    129          //			//return;	
+    130          //		}
+    131          //		else
+    132          //		{
+    133          //			l_locoworksta &= ~(0x01<<4);
+    134          //		}
+    135          //
+    136          //		if(zdtmp == 0)
+    137          //		{
+    138          //			l_locoworksta |= 0x01<<3;
+    139          //			//printfcom0("\r\n zd");
+    140          //			//return;	
+    141          //		}
+    142          //		else
+    143          //		{
+    144          //			l_locoworksta &= ~(0x01<<3);
+    145          //		}
+    146          //
+    147          //		if(bktmp == 0)
+    148          //		{
+    149          //			l_locoworksta |= 0x01<<2;
+    150          //			//printfcom0("\r\n bk");
+    151          //
+    152          //			//return;	
+    153          //		}
+    154          //		else
+    155          //		{
+    156          //			l_locoworksta &= ~(0x01<<2);			
+    157          //		}
+    158          //
+    159          //		//l_locoworksta = 0;
+    160          //		return;
+    161          //	}
+    162          //}
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   GetMyLocoWorkState
+       8   InitLocoStaIO
+         8   -> GPIO_PinselConfig
+       8   ReadLOCO_BK
+         8   -> GPIO_ReadIoVal
+         8   -> nop
+       8   ReadLOCO_LW
+         8   -> GPIO_ReadIoVal
+         8   -> nop
+       8   ReadLOCO_QY
+         8   -> GPIO_ReadIoVal
+         8   -> nop
+       8   ReadLOCO_ZD
+         8   -> GPIO_ReadIoVal
+         8   -> nop
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+       6  GetMyLocoWorkState
+      36  InitLocoStaIO
+      20  ReadLOCO_BK
+      20  ReadLOCO_LW
+      20  ReadLOCO_QY
+      20  ReadLOCO_ZD
+       1  l_locoworksta
+
+ 
+   1 byte  in section .bss
+ 126 bytes in section .text
+ 
+ 126 bytes of CODE memory
+   1 byte  of DATA memory
+
+Errors: none
+Warnings: none

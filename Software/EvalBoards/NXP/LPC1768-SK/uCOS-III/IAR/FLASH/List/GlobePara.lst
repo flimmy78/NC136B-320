@@ -1,0 +1,196 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       14/Dec/2017  10:49:32
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC¿¨Ä£¿é\Application\Library\Global\GlobePara.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC¿¨Ä£¿é\Application\Library\Global\GlobePara.c"
+#        -lCN "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\GlobePara.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\GlobePara.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC¿¨Ä£¿é\Application\Library\Global\GlobePara.c
+      1          #include <includes.h>            
+      2          
+      3          
+
+   \                                 In section .bss, align 4
+      4          uint32				g_DipVal 	= 0;				//ÓÍ³ßÓÍÁ¿Öµ
+   \                     g_DipVal:
+   \   00000000                      DS8 4
+      5          
+
+   \                                 In section .bss, align 4
+      6          uint32				g_DipDisVal 	= 0;			//ÓÍ³ßÓÍÁ¿Öµ
+   \                     g_DipDisVal:
+   \   00000000                      DS8 4
+      7          
+
+   \                                 In section .bss, align 2
+      8          uint16				g_Dip1Frq = 0;					//Âö³å1ÆµÂÊ
+   \                     g_Dip1Frq:
+   \   00000000                      DS8 2
+      9          
+
+   \                                 In section .bss, align 2
+     10          uint16				g_Dip2Frq = 0;					//Âö³å2ÆµÂÊ
+   \                     g_Dip2Frq:
+   \   00000000                      DS8 2
+     11          
+
+   \                                 In section .bss, align 4
+     12          uint32				g_CurFlshRecNum = 0;			//µ±Ç°Á÷Ë®ºÅ
+   \                     g_CurFlshRecNum:
+   \   00000000                      DS8 4
+     13          
+
+   \                                 In section .bss, align 4
+     14          uint32				g_LshRedFlshRecNum = 0;			//Ð´¿¨½áÊøÁ÷Ë®ºÅ	¡®
+   \                     g_LshRedFlshRecNum:
+   \   00000000                      DS8 4
+     15          
+
+   \                                 In section .bss, align 4
+     16          uint32				g_LshRedFlshRecNum_gprs = 0;	//Ð´¿¨½áÊøÁ÷Ë®ºÅ
+   \                     g_LshRedFlshRecNum_gprs:
+   \   00000000                      DS8 4
+     17          
+
+   \                                 In section .bss, align 4
+     18          uint32				g_PullCardTime;					//²¦¿¨Ê±¼ä
+   \                     g_PullCardTime:
+   \   00000000                      DS8 4
+     19          
+
+   \                                 In section .bss, align 4
+     20          uint32				g_TestModelFlg = 0;				//²âÊÔÄ£Ê½Ê±¼ä
+   \                     g_TestModelFlg:
+   \   00000000                      DS8 4
+     21          
+     22          
+     23          
+     24          
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  g_CurFlshRecNum
+       2  g_Dip1Frq
+       2  g_Dip2Frq
+       4  g_DipDisVal
+       4  g_DipVal
+       4  g_LshRedFlshRecNum
+       4  g_LshRedFlshRecNum_gprs
+       4  g_PullCardTime
+       4  g_TestModelFlg
+
+ 
+ 32 bytes in section .bss
+ 
+ 32 bytes of DATA memory
+
+Errors: none
+Warnings: none

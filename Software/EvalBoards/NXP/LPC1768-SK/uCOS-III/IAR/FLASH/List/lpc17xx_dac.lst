@@ -1,0 +1,463 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       14/Dec/2017  10:39:30
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_dac.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_dac.c" -lCN
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\lpc17xx_dac.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\lpc17xx_dac.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_dac.c
+      1          /**********************************************************************
+      2          * $Id$		lpc17xx_dac.c				2010-05-21
+      3          *//**
+      4          * @file		lpc17xx_dac.c
+      5          * @brief	Contains all functions support for DAC firmware library on LPC17xx
+      6          * @version	2.0
+      7          * @date		21. May. 2010
+      8          * @author	NXP MCU SW Application Team
+      9          *
+     10          * Copyright(C) 2010, NXP Semiconductor
+     11          * All rights reserved.
+     12          *
+     13          ***********************************************************************
+     14          * Software that is described herein is for illustrative purposes only
+     15          * which provides customers with programming information regarding the
+     16          * products. This software is supplied "AS IS" without any warranties.
+     17          * NXP Semiconductors assumes no responsibility or liability for the
+     18          * use of the software, conveys no license or title under any patent,
+     19          * copyright, or mask work right to the product. NXP Semiconductors
+     20          * reserves the right to make changes in the software without
+     21          * notification. NXP Semiconductors also make no representation or
+     22          * warranty that such application will be suitable for the specified
+     23          * use without further testing or modification.
+     24          * Permission to use, copy, modify, and distribute this software and its
+     25          * documentation is hereby granted, under NXP Semiconductors'
+     26          * relevant copyright in the software, without fee, provided that it
+     27          * is used in conjunction with NXP Semiconductors microcontrollers.  This
+     28          * copyright, permission, and disclaimer notice must appear in all copies of
+     29          * this code.
+     30          **********************************************************************/
+     31          
+     32          /* Peripheral group ----------------------------------------------------------- */
+     33          /** @addtogroup DAC
+     34           * @{
+     35           */
+     36          
+     37          /* Includes ------------------------------------------------------------------- */
+     38          #include "lpc17xx_dac.h"
+     39          #include "lpc17xx_clkpwr.h"
+     40          
+     41          /* If this source file built with example, the LPC17xx FW library configuration
+     42           * file in each example directory ("lpc17xx_libcfg.h") must be included,
+     43           * otherwise the default FW library configuration file must be included instead
+     44           */
+     45          #ifdef __BUILD_WITH_EXAMPLE__
+     46          #include "lpc17xx_libcfg.h"
+     47          #else
+     48          #include "lpc17xx_libcfg_default.h"
+     49          #endif /* __BUILD_WITH_EXAMPLE__ */
+     50          
+     51          
+     52          #ifdef _DAC
+     53          
+     54          /* Public Functions ----------------------------------------------------------- */
+     55          /** @addtogroup DAC_Public_Functions
+     56           * @{
+     57           */
+     58          
+     59          /*********************************************************************//**
+     60           * @brief 		Initial ADC configuration
+     61           * 					- Maximum	current is 700 uA
+     62           * 					- Value to AOUT is 0
+     63           * @param[in] 	DACx pointer to LPC_DAC_TypeDef, should be: LPC_DAC
+     64           * @return 		None
+     65           ***********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     66          void DAC_Init(LPC_DAC_TypeDef *DACx)
+     67          {
+   \                     DAC_Init: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+     68          	CHECK_PARAM(PARAM_DACx(DACx));
+   \   00000004   0x....             LDR.N    R0,??DataTable4  ;; 0x4008c000
+   \   00000006   0x4284             CMP      R4,R0
+   \   00000008   0xD003             BEQ.N    ??DAC_Init_0
+   \   0000000A   0x2144             MOVS     R1,#+68
+   \   0000000C   0x....             LDR.N    R0,??DataTable4_1
+   \   0000000E   0x.... 0x....      BL       check_failed
+     69          	/* Set default clock divider for DAC */
+     70          	// CLKPWR_SetPCLKDiv (CLKPWR_PCLKSEL_DAC, CLKPWR_PCLKSEL_CCLK_DIV_4);
+     71          	//Set maximum current output
+     72          	DAC_SetBias(LPC_DAC,DAC_MAX_CURRENT_700uA);
+   \                     ??DAC_Init_0: (+1)
+   \   00000012   0x2100             MOVS     R1,#+0
+   \   00000014   0x....             LDR.N    R0,??DataTable4  ;; 0x4008c000
+   \   00000016   0x.... 0x....      BL       DAC_SetBias
+     73          }
+   \   0000001A   0xBD10             POP      {R4,PC}          ;; return
+     74          
+     75          /*********************************************************************//**
+     76           * @brief 		Update value to DAC
+     77           * @param[in] 	DACx pointer to LPC_DAC_TypeDef, should be: LPC_DAC
+     78           * @param[in] 	dac_value : value 10 bit to be converted to output
+     79           * @return 		None
+     80           ***********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     81          void DAC_UpdateValue (LPC_DAC_TypeDef *DACx,uint32_t dac_value)
+     82          {
+   \                     DAC_UpdateValue: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+     83          	uint32_t tmp;
+     84          	CHECK_PARAM(PARAM_DACx(DACx));
+   \   00000006   0x....             LDR.N    R0,??DataTable4  ;; 0x4008c000
+   \   00000008   0x4284             CMP      R4,R0
+   \   0000000A   0xD003             BEQ.N    ??DAC_UpdateValue_0
+   \   0000000C   0x2154             MOVS     R1,#+84
+   \   0000000E   0x....             LDR.N    R0,??DataTable4_1
+   \   00000010   0x.... 0x....      BL       check_failed
+     85          	tmp = DACx->DACR & DAC_BIAS_EN;
+   \                     ??DAC_UpdateValue_0: (+1)
+   \   00000014   0x6820             LDR      R0,[R4, #+0]
+   \   00000016   0xF410 0x3080      ANDS     R0,R0,#0x10000
+   \   0000001A   0x0006             MOVS     R6,R0
+     86          	tmp |= DAC_VALUE(dac_value);
+   \   0000001C   0x05A8             LSLS     R0,R5,#+22       ;; ZeroExtS R0,R5,#+22,#+22
+   \   0000001E   0x0D80             LSRS     R0,R0,#+22
+   \   00000020   0xEA56 0x1680      ORRS     R6,R6,R0, LSL #+6
+     87          	// Update value
+     88          	DACx->DACR = tmp;
+   \   00000024   0x6026             STR      R6,[R4, #+0]
+     89          }
+   \   00000026   0xBD70             POP      {R4-R6,PC}       ;; return
+     90          
+     91          /*********************************************************************//**
+     92           * @brief 		Set Maximum current for DAC
+     93           * @param[in] 	DACx pointer to LPC_DAC_TypeDef, should be: LPC_DAC
+     94           * @param[in] 	bias : 0 is 700 uA
+     95           * 					   1    350 uA
+     96           * @return 		None
+     97           ***********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     98          void DAC_SetBias (LPC_DAC_TypeDef *DACx,uint32_t bias)
+     99          {
+   \                     DAC_SetBias: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    100          	CHECK_PARAM(PARAM_DAC_CURRENT_OPT(bias));
+   \   00000006   0x2D00             CMP      R5,#+0
+   \   00000008   0xD005             BEQ.N    ??DAC_SetBias_0
+   \   0000000A   0x2D01             CMP      R5,#+1
+   \   0000000C   0xD003             BEQ.N    ??DAC_SetBias_0
+   \   0000000E   0x2164             MOVS     R1,#+100
+   \   00000010   0x....             LDR.N    R0,??DataTable4_1
+   \   00000012   0x.... 0x....      BL       check_failed
+    101          	DACx->DACR &=~DAC_BIAS_EN;
+   \                     ??DAC_SetBias_0: (+1)
+   \   00000016   0x6820             LDR      R0,[R4, #+0]
+   \   00000018   0xF430 0x3080      BICS     R0,R0,#0x10000
+   \   0000001C   0x6020             STR      R0,[R4, #+0]
+    102          	if (bias  == DAC_MAX_CURRENT_350uA)
+   \   0000001E   0x2D01             CMP      R5,#+1
+   \   00000020   0xD103             BNE.N    ??DAC_SetBias_1
+    103          	{
+    104          		DACx->DACR |= DAC_BIAS_EN;
+   \   00000022   0x6820             LDR      R0,[R4, #+0]
+   \   00000024   0xF450 0x3080      ORRS     R0,R0,#0x10000
+   \   00000028   0x6020             STR      R0,[R4, #+0]
+    105          	}
+    106          }
+   \                     ??DAC_SetBias_1: (+1)
+   \   0000002A   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    107          
+    108          /*********************************************************************//**
+    109           * @brief 		To enable the DMA operation and control DMA timer
+    110           * @param[in]	DACx pointer to LPC_DAC_TypeDef, should be: LPC_DAC
+    111           * @param[in] 	DAC_ConverterConfigStruct pointer to DAC_CONVERTER_CFG_Type
+    112           * 					- DBLBUF_ENA :  enable/disable DACR double buffering feature
+    113           * 					- CNT_ENA    :  enable/disable timer out counter
+    114           * 					- DMA_ENA    :	enable/disable DMA access
+    115           * @return 		None
+    116           ***********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    117          void DAC_ConfigDAConverterControl (LPC_DAC_TypeDef *DACx,DAC_CONVERTER_CFG_Type *DAC_ConverterConfigStruct)
+    118          {
+   \                     DAC_ConfigDAConverterControl: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    119          	CHECK_PARAM(PARAM_DACx(DACx));
+   \   00000006   0x....             LDR.N    R0,??DataTable4  ;; 0x4008c000
+   \   00000008   0x4284             CMP      R4,R0
+   \   0000000A   0xD003             BEQ.N    ??DAC_ConfigDAConverterControl_0
+   \   0000000C   0x2177             MOVS     R1,#+119
+   \   0000000E   0x....             LDR.N    R0,??DataTable4_1
+   \   00000010   0x.... 0x....      BL       check_failed
+    120          	DACx->DACCTRL &= ~DAC_DACCTRL_MASK;
+   \                     ??DAC_ConfigDAConverterControl_0: (+1)
+   \   00000014   0x6860             LDR      R0,[R4, #+4]
+   \   00000016   0x0900             LSRS     R0,R0,#+4
+   \   00000018   0x0100             LSLS     R0,R0,#+4
+   \   0000001A   0x6060             STR      R0,[R4, #+4]
+    121          	if (DAC_ConverterConfigStruct->DBLBUF_ENA)
+   \   0000001C   0x7828             LDRB     R0,[R5, #+0]
+   \   0000001E   0x2800             CMP      R0,#+0
+   \   00000020   0xD003             BEQ.N    ??DAC_ConfigDAConverterControl_1
+    122          		DACx->DACCTRL	|= DAC_DBLBUF_ENA;
+   \   00000022   0x6860             LDR      R0,[R4, #+4]
+   \   00000024   0xF050 0x0002      ORRS     R0,R0,#0x2
+   \   00000028   0x6060             STR      R0,[R4, #+4]
+    123          	if (DAC_ConverterConfigStruct->CNT_ENA)
+   \                     ??DAC_ConfigDAConverterControl_1: (+1)
+   \   0000002A   0x7868             LDRB     R0,[R5, #+1]
+   \   0000002C   0x2800             CMP      R0,#+0
+   \   0000002E   0xD003             BEQ.N    ??DAC_ConfigDAConverterControl_2
+    124          		DACx->DACCTRL	|= DAC_CNT_ENA;
+   \   00000030   0x6860             LDR      R0,[R4, #+4]
+   \   00000032   0xF050 0x0004      ORRS     R0,R0,#0x4
+   \   00000036   0x6060             STR      R0,[R4, #+4]
+    125          	if (DAC_ConverterConfigStruct->DMA_ENA)
+   \                     ??DAC_ConfigDAConverterControl_2: (+1)
+   \   00000038   0x78A8             LDRB     R0,[R5, #+2]
+   \   0000003A   0x2800             CMP      R0,#+0
+   \   0000003C   0xD003             BEQ.N    ??DAC_ConfigDAConverterControl_3
+    126          		DACx->DACCTRL	|= DAC_DMA_ENA;
+   \   0000003E   0x6860             LDR      R0,[R4, #+4]
+   \   00000040   0xF050 0x0008      ORRS     R0,R0,#0x8
+   \   00000044   0x6060             STR      R0,[R4, #+4]
+    127          }
+   \                     ??DAC_ConfigDAConverterControl_3: (+1)
+   \   00000046   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    128          
+    129          /*********************************************************************//**
+    130           * @brief 		Set reload value for interrupt/DMA counter
+    131           * @param[in] 	DACx pointer to LPC_DAC_TypeDef, should be: LPC_DAC
+    132           * @param[in] 	time_out time out to reload for interrupt/DMA counter
+    133           * @return 		None
+    134           ***********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    135          void DAC_SetDMATimeOut(LPC_DAC_TypeDef *DACx, uint32_t time_out)
+    136          {
+   \                     DAC_SetDMATimeOut: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    137          	CHECK_PARAM(PARAM_DACx(DACx));
+   \   00000006   0x....             LDR.N    R0,??DataTable4  ;; 0x4008c000
+   \   00000008   0x4284             CMP      R4,R0
+   \   0000000A   0xD003             BEQ.N    ??DAC_SetDMATimeOut_0
+   \   0000000C   0x2189             MOVS     R1,#+137
+   \   0000000E   0x....             LDR.N    R0,??DataTable4_1
+   \   00000010   0x.... 0x....      BL       check_failed
+    138          	DACx->DACCNTVAL = DAC_CCNT_VALUE(time_out);
+   \                     ??DAC_SetDMATimeOut_0: (+1)
+   \   00000014   0x8125             STRH     R5,[R4, #+8]
+    139          }
+   \   00000016   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   0x4008C000         DC32     0x4008c000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \   00000000   0x........         DC32     ?_0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \   00000000   0x46 0x3A          DC8 46H, 3AH, 5CH, 69H, 61H, 72H, 5CH, 4EH
+   \              0x5C 0x69    
+   \              0x61 0x72    
+   \              0x5C 0x4E    
+   \   00000008   0x43 0x31          DC8 43H, 31H, 33H, 36H, 42H, 2DH, 33H, 32H
+   \              0x33 0x36    
+   \              0x42 0x2D    
+   \              0x33 0x32    
+   \   00000010   0x30 0x20          DC8 30H, 20H, 49H, 43H, 0BFH, 0A8H, 0C4H, 0A3H
+   \              0x49 0x43    
+   \              0xBF 0xA8    
+   \              0xC4 0xA3    
+   \   00000018   0xBF 0xE9          DC8 0BFH, 0E9H, 5CH, 53H, 6FH, 66H, 74H, 77H
+   \              0x5C 0x53    
+   \              0x6F 0x66    
+   \              0x74 0x77    
+   \   00000020   0x61 0x72          DC8 61H, 72H, 65H, 5CH, 43H, 53H, 42H, 5CH
+   \              0x65 0x5C    
+   \              0x43 0x53    
+   \              0x42 0x5C    
+   \   00000028   0x73 0x6F          DC8 73H, 6FH, 75H, 72H, 63H, 65H, 5CH, 6CH
+   \              0x75 0x72    
+   \              0x63 0x65    
+   \              0x5C 0x6C    
+   \   00000030   0x70 0x63          DC8 70H, 63H, 31H, 37H, 78H, 78H, 5FH, 64H
+   \              0x31 0x37    
+   \              0x78 0x78    
+   \              0x5F 0x64    
+   \   00000038   0x61 0x63          DC8 61H, 63H, 2EH, 63H, 0
+   \              0x2E 0x63    
+   \              0x00         
+   \   0000003D   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+    140          
+    141          /**
+    142           * @}
+    143           */
+    144          
+    145          #endif /* _DAC */
+    146          
+    147          /**
+    148           * @}
+    149           */
+    150          
+    151          /* --------------------------------- End Of File ------------------------------ */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   DAC_ConfigDAConverterControl
+        16   -> check_failed
+       8   DAC_Init
+         8   -> DAC_SetBias
+         8   -> check_failed
+      16   DAC_SetBias
+        16   -> check_failed
+      16   DAC_SetDMATimeOut
+        16   -> check_failed
+      16   DAC_UpdateValue
+        16   -> check_failed
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+      64  ?_0
+      72  DAC_ConfigDAConverterControl
+      28  DAC_Init
+      44  DAC_SetBias
+      24  DAC_SetDMATimeOut
+      40  DAC_UpdateValue
+
+ 
+  64 bytes in section .rodata
+ 216 bytes in section .text
+ 
+ 216 bytes of CODE  memory
+  64 bytes of CONST memory
+
+Errors: none
+Warnings: none

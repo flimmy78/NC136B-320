@@ -1,0 +1,411 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       14/Dec/2017  10:39:32
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\uCOS-III\Source\os_prio.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\uCOS-III\Source\os_prio.c" -lCN
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\os_prio.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\os_prio.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\uCOS-III\Source\os_prio.c
+      1          /*
+      2          ************************************************************************************************************************
+      3          *                                                      uC/OS-III
+      4          *                                                 The Real-Time Kernel
+      5          *
+      6          *                                  (c) Copyright 2009-2016; Micrium, Inc.; Weston, FL
+      7          *                           All rights reserved.  Protected by international copyright laws.
+      8          *
+      9          *                                                 PRIORITY MANAGEMENT
+     10          *
+     11          * File    : OS_PRIO.C
+     12          * By      : JJL
+     13          * Version : V3.06.00
+     14          *
+     15          * LICENSING TERMS:
+     16          * ---------------
+     17          *           uC/OS-III is provided in source form for FREE short-term evaluation, for educational use or
+     18          *           for peaceful research.  If you plan or intend to use uC/OS-III in a commercial application/
+     19          *           product then, you need to contact Micrium to properly license uC/OS-III for its use in your
+     20          *           application/product.   We provide ALL the source code for your convenience and to help you
+     21          *           experience uC/OS-III.  The fact that the source is provided does NOT mean that you can use
+     22          *           it commercially without paying a licensing fee.
+     23          *
+     24          *           Knowledge of the source code may NOT be used to develop a similar product.
+     25          *
+     26          *           Please help us continue to provide the embedded community with the finest software available.
+     27          *           Your honesty is greatly appreciated.
+     28          *
+     29          *           You can find our product's user manual, API reference, release notes and
+     30          *           more information at https://doc.micrium.com.
+     31          *           You can contact us at www.micrium.com.
+     32          ************************************************************************************************************************
+     33          */
+     34          
+     35          #define  MICRIUM_SOURCE
+     36          #include "os.h"
+     37          
+     38          #ifdef VSC_INCLUDE_SOURCE_FILE_NAMES
+     39          const  CPU_CHAR  *os_prio__c = "$Id: $";
+     40          #endif
+     41          
+     42          
+
+   \                                 In section .bss, align 4
+     43          CPU_DATA   OSPrioTbl[OS_PRIO_TBL_SIZE];                         /* Declare the array local to this file to allow for  ...*/
+   \                     OSPrioTbl:
+   \   00000000                      DS8 8
+     44                                                                          /* ... optimization.  In other words, this allows the ...*/
+     45                                                                          /* ... table to be located in fast memory                */
+     46          
+     47          /*
+     48          ************************************************************************************************************************
+     49          *                                               INITIALIZE THE PRIORITY LIST
+     50          *
+     51          * Description: This function is called by uC/OS-III to initialize the list of ready priorities.
+     52          *
+     53          * Arguments  : none
+     54          *
+     55          * Returns    : none
+     56          *
+     57          * Note       : This function is INTERNAL to uC/OS-III and your application should not call it.
+     58          ************************************************************************************************************************
+     59          */
+     60          
+
+   \                                 In section .text, align 2, keep-with-next
+     61          void  OS_PrioInit (void)
+     62          {
+     63              CPU_DATA  i;
+     64          
+     65          
+     66                                                                          /* Clear the bitmap table ... no task is ready          */
+     67              for (i = 0u; i < OS_PRIO_TBL_SIZE; i++) {
+   \                     OS_PrioInit: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0x0008             MOVS     R0,R1
+   \                     ??OS_PrioInit_0: (+1)
+   \   00000004   0x2802             CMP      R0,#+2
+   \   00000006   0xD205             BCS.N    ??OS_PrioInit_1
+     68                   OSPrioTbl[i] = 0u;
+   \   00000008   0x2100             MOVS     R1,#+0
+   \   0000000A   0x....             LDR.N    R2,??DataTable3
+   \   0000000C   0xF842 0x1020      STR      R1,[R2, R0, LSL #+2]
+     69              }
+   \   00000010   0x1C40             ADDS     R0,R0,#+1
+   \   00000012   0xE7F7             B.N      ??OS_PrioInit_0
+     70          
+     71          #if (OS_CFG_TASK_IDLE_EN == DEF_DISABLED)
+     72              OS_PrioInsert ((OS_CFG_PRIO_MAX - 1u));                     /* Insert what would be the idle task                   */
+     73          #endif
+     74          }
+   \                     ??OS_PrioInit_1: (+1)
+   \   00000014   0x4770             BX       LR               ;; return
+     75          
+     76          /*
+     77          ************************************************************************************************************************
+     78          *                                           GET HIGHEST PRIORITY TASK WAITING
+     79          *
+     80          * Description: This function is called by other uC/OS-III services to determine the highest priority task
+     81          *              waiting on the event.
+     82          *
+     83          * Arguments  : none
+     84          *
+     85          * Returns    : The priority of the Highest Priority Task (HPT) waiting for the event
+     86          *
+     87          * Note(s)    : 1) This function is INTERNAL to uC/OS-III and your application MUST NOT call it.
+     88          ************************************************************************************************************************
+     89          */
+     90          
+
+   \                                 In section .text, align 2, keep-with-next
+     91          OS_PRIO  OS_PrioGetHighest (void)
+     92          {
+   \                     OS_PrioGetHighest: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+     93              CPU_DATA  *p_tbl;
+     94              OS_PRIO    prio;
+     95          
+     96          
+     97              prio  = 0u;
+   \   00000002   0x2000             MOVS     R0,#+0
+   \   00000004   0x0005             MOVS     R5,R0
+     98              p_tbl = &OSPrioTbl[0];
+   \   00000006   0x....             LDR.N    R0,??DataTable3
+   \   00000008   0x0004             MOVS     R4,R0
+     99          #if (OS_CFG_PRIO_MAX > DEF_INT_CPU_NBR_BITS)
+    100              while (*p_tbl == 0u) {                                      /* Search the bitmap table for the highest priority     */
+   \                     ??OS_PrioGetHighest_0: (+1)
+   \   0000000A   0x6820             LDR      R0,[R4, #+0]
+   \   0000000C   0x2800             CMP      R0,#+0
+   \   0000000E   0xD102             BNE.N    ??OS_PrioGetHighest_1
+    101                  prio += (OS_PRIO)DEF_INT_CPU_NBR_BITS;                  /* Compute the step of each CPU_DATA entry              */
+   \   00000010   0x3520             ADDS     R5,R5,#+32
+    102                  p_tbl++;
+   \   00000012   0x1D24             ADDS     R4,R4,#+4
+   \   00000014   0xE7F9             B.N      ??OS_PrioGetHighest_0
+    103              }
+    104          #endif
+    105              prio += (OS_PRIO)CPU_CntLeadZeros(*p_tbl);                  /* Find the position of the first bit set at the entry  */
+   \                     ??OS_PrioGetHighest_1: (+1)
+   \   00000016   0x6820             LDR      R0,[R4, #+0]
+   \   00000018   0x.... 0x....      BL       CPU_CntLeadZeros
+   \   0000001C   0x1940             ADDS     R0,R0,R5
+   \   0000001E   0x0005             MOVS     R5,R0
+    106          
+    107              return (prio);
+   \   00000020   0x0028             MOVS     R0,R5
+   \   00000022   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000024   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    108          }
+    109          
+    110          /*
+    111          ************************************************************************************************************************
+    112          *                                                  INSERT PRIORITY
+    113          *
+    114          * Description: This function is called to insert a priority in the priority table.
+    115          *
+    116          * Arguments  : prio     is the priority to insert
+    117          *
+    118          * Returns    : none
+    119          *
+    120          * Note(s)    : 1) This function is INTERNAL to uC/OS-III and your application MUST NOT call it.
+    121          ************************************************************************************************************************
+    122          */
+    123          
+
+   \                                 In section .text, align 2, keep-with-next
+    124          void  OS_PrioInsert (OS_PRIO  prio)
+    125          {
+   \                     OS_PrioInsert: (+1)
+   \   00000000   0xB430             PUSH     {R4,R5}
+    126              CPU_DATA  bit;
+    127              CPU_DATA  bit_nbr;
+    128              OS_PRIO   ix;
+    129          
+    130          #if (OS_CFG_PRIO_MAX > DEF_INT_CPU_NBR_BITS)
+    131              ix             = prio / (OS_PRIO)DEF_INT_CPU_NBR_BITS;
+   \   00000002   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000004   0x2420             MOVS     R4,#+32
+   \   00000006   0xFB90 0xF4F4      SDIV     R4,R0,R4
+   \   0000000A   0x0023             MOVS     R3,R4
+    132              bit_nbr        = (CPU_DATA)prio & (DEF_INT_CPU_NBR_BITS - 1u);
+   \   0000000C   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000000E   0xF010 0x041F      ANDS     R4,R0,#0x1F
+   \   00000012   0x0022             MOVS     R2,R4
+    133          #else
+    134              ix             = 0u;
+    135              bit_nbr        = prio;
+    136          #endif
+    137              bit            = 1u;
+   \   00000014   0x2401             MOVS     R4,#+1
+   \   00000016   0x0021             MOVS     R1,R4
+    138              bit          <<= (DEF_INT_CPU_NBR_BITS - 1u) - bit_nbr;
+   \   00000018   0xF1D2 0x041F      RSBS     R4,R2,#+31
+   \   0000001C   0x40A1             LSLS     R1,R1,R4
+    139              OSPrioTbl[ix] |= bit;
+   \   0000001E   0x....             LDR.N    R4,??DataTable3
+   \   00000020   0xB2DB             UXTB     R3,R3            ;; ZeroExt  R3,R3,#+24,#+24
+   \   00000022   0xF854 0x4023      LDR      R4,[R4, R3, LSL #+2]
+   \   00000026   0x430C             ORRS     R4,R1,R4
+   \   00000028   0x....             LDR.N    R5,??DataTable3
+   \   0000002A   0xB2DB             UXTB     R3,R3            ;; ZeroExt  R3,R3,#+24,#+24
+   \   0000002C   0xF845 0x4023      STR      R4,[R5, R3, LSL #+2]
+    140          }
+   \   00000030   0xBC30             POP      {R4,R5}
+   \   00000032   0x4770             BX       LR               ;; return
+    141          
+    142          /*
+    143          ************************************************************************************************************************
+    144          *                                                   REMOVE PRIORITY
+    145          *
+    146          * Description: This function is called to remove a priority in the priority table.
+    147          *
+    148          * Arguments  : prio     is the priority to remove
+    149          *
+    150          * Returns    : none
+    151          *
+    152          * Note(s)    : 1) This function is INTERNAL to uC/OS-III and your application MUST NOT call it.
+    153          ************************************************************************************************************************
+    154          */
+    155          
+
+   \                                 In section .text, align 2, keep-with-next
+    156          void  OS_PrioRemove (OS_PRIO  prio)
+    157          {
+   \                     OS_PrioRemove: (+1)
+   \   00000000   0xB430             PUSH     {R4,R5}
+    158              CPU_DATA  bit;
+    159              CPU_DATA  bit_nbr;
+    160              OS_PRIO   ix;
+    161          
+    162          #if (OS_CFG_PRIO_MAX > DEF_INT_CPU_NBR_BITS)
+    163              ix             = prio / (OS_PRIO)DEF_INT_CPU_NBR_BITS;
+   \   00000002   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000004   0x2420             MOVS     R4,#+32
+   \   00000006   0xFB90 0xF4F4      SDIV     R4,R0,R4
+   \   0000000A   0x0023             MOVS     R3,R4
+    164              bit_nbr        = (CPU_DATA)prio & (DEF_INT_CPU_NBR_BITS - 1u);
+   \   0000000C   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000000E   0xF010 0x041F      ANDS     R4,R0,#0x1F
+   \   00000012   0x0022             MOVS     R2,R4
+    165          #else
+    166              ix             = 0u;
+    167              bit_nbr        = prio;
+    168          #endif
+    169              bit            = 1u;
+   \   00000014   0x2401             MOVS     R4,#+1
+   \   00000016   0x0021             MOVS     R1,R4
+    170              bit          <<= (DEF_INT_CPU_NBR_BITS - 1u) - bit_nbr;
+   \   00000018   0xF1D2 0x041F      RSBS     R4,R2,#+31
+   \   0000001C   0x40A1             LSLS     R1,R1,R4
+    171              OSPrioTbl[ix] &= ~bit;
+   \   0000001E   0x....             LDR.N    R4,??DataTable3
+   \   00000020   0xB2DB             UXTB     R3,R3            ;; ZeroExt  R3,R3,#+24,#+24
+   \   00000022   0xF854 0x4023      LDR      R4,[R4, R3, LSL #+2]
+   \   00000026   0x438C             BICS     R4,R4,R1
+   \   00000028   0x....             LDR.N    R5,??DataTable3
+   \   0000002A   0xB2DB             UXTB     R3,R3            ;; ZeroExt  R3,R3,#+24,#+24
+   \   0000002C   0xF845 0x4023      STR      R4,[R5, R3, LSL #+2]
+    172          }
+   \   00000030   0xBC30             POP      {R4,R5}
+   \   00000032   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   0x........         DC32     OSPrioTbl
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   OS_PrioGetHighest
+        16   -> CPU_CntLeadZeros
+       0   OS_PrioInit
+       8   OS_PrioInsert
+       8   OS_PrioRemove
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       8  OSPrioTbl
+      38  OS_PrioGetHighest
+      22  OS_PrioInit
+      52  OS_PrioInsert
+      52  OS_PrioRemove
+
+ 
+   8 bytes in section .bss
+ 168 bytes in section .text
+ 
+ 168 bytes of CODE memory
+   8 bytes of DATA memory
+
+Errors: none
+Warnings: none

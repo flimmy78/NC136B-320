@@ -1,0 +1,769 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       18/Dec/2017  17:22:43
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Application\Library\CardOperations\OperateCard.c
+#    Command line =  
+#        "F:\iar\NC136B-320
+#        IC卡模块\Application\Library\CardOperations\OperateCard.c" -lCN
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\OperateCard.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\OperateCard.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC卡模块\Application\Library\CardOperations\OperateCard.c
+      1          #include    "includes.h"  
+      2          #include	"Card.h"
+      3          #include	"OperateCard.h"
+      4          #include	"CardDataTypeDef.h"
+      5          #include	"IdDataTypeDef.h"
+      6          #include 	<idDataTypeDef.h>
+      7          #include	"FRAM.h"
+      8          #include	"app_ctrl.h"
+      9          
+     10          //
+
+   \                                 In section .bss, align 2
+     11          uint16	l_CardType;
+   \                     l_CardType:
+   \   00000000                      DS8 2
+
+   \                                 In section .bss, align 1
+     12          uint8	l_FlgZoneErrEvent	= NO_OCCUR;
+   \                     l_FlgZoneErrEvent:
+   \   00000000                      DS8 1
+     13          
+     14          extern  stcSysCtrl  sCtrl;
+     15          
+     16          
+     17          
+     18          /***********************************************
+     19          * 描述： 任务控制块（TCB）
+     20          */
+
+   \                                 In section .bss, align 4
+     21          static  OS_TCB   AppTaskCardTCB;
+   \                     AppTaskCardTCB:
+   \   00000000                      DS8 160
+     22          
+     23          /***********************************************
+     24          * 描述： 任务堆栈（STACKS）
+     25          */
+
+   \                                 In section .bss, align 4
+     26          static  CPU_STK  AppTaskCardStk[ APP_TASK_CARD_STK_SIZE ];
+   \                     AppTaskCardStk:
+   \   00000000                      DS8 2048
+     27          void    AppTaskCard(void);  
+     28          
+     29          
+     30          /*******************************************************************************
+     31           * 名    称： App_TaskCardCreate
+     32           * 功    能： **任务创建
+     33           * 入口参数： 无
+     34           * 出口参数： 无
+     35           * 作　 　者： redmorningcn.
+     36           * 创建日期： 2017-06-01
+     37           * 修    改：
+     38           * 修改日期：
+     39           * 备    注： 任务创建函数需要在app.h文件中声明
+     40           *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     41          void  App_TaskCardCreate(void)
+     42          {
+   \                     App_TaskCardCreate: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB08B             SUB      SP,SP,#+44
+     43              OS_ERR  err;
+     44          
+     45              /***********************************************
+     46              * 描述： 任务创建
+     47              */
+     48              OSTaskCreate((OS_TCB     *)&AppTaskCardTCB,                     // 任务控制块  （当前文件中定义）
+     49                           (CPU_CHAR   *)"App Task Card",                     // 任务名称
+     50                           (OS_TASK_PTR ) AppTaskCard,                        // 任务函数指针（当前文件中定义）
+     51                           (void       *) 0,                                  // 任务函数参数
+     52                           (OS_PRIO     ) APP_TASK_CARD_PRIO,                 // 任务优先级，不同任务优先级可以相同，0 < 优先级 < OS_CFG_PRIO_MAX - 2（app_cfg.h中定义）
+     53                           (CPU_STK    *)&AppTaskCardStk[0],                  // 任务栈顶
+     54                           (CPU_STK_SIZE) APP_TASK_CARD_STK_SIZE / 10,        // 任务栈溢出报警值
+     55                           (CPU_STK_SIZE) APP_TASK_CARD_STK_SIZE,             // 任务栈大小（CPU数据宽度 * 8 * size = 4 * 8 * size(字节)）（app_cfg.h中定义）
+     56                           (OS_MSG_QTY  ) 0u,                                 // 可以发送给任务的最大消息队列数量
+     57                           (OS_TICK     ) 0u,                                 // 相同优先级任务的轮循时间（ms），0为默认
+     58                           (void       *) 0,                                  // 是一个指向它被用作一个TCB扩展用户提供的存储器位置
+     59                           (OS_OPT      )(OS_OPT_TASK_STK_CHK |               // 允许堆栈检查该任务
+     60                                          OS_OPT_TASK_STK_CLR),               // 创建任务时堆栈清零
+     61                           (OS_ERR     *)&err);                               // 指向错误代码的指针，用于创建结果处理
+   \   00000004   0xA809             ADD      R0,SP,#+36
+   \   00000006   0x9008             STR      R0,[SP, #+32]
+   \   00000008   0x2003             MOVS     R0,#+3
+   \   0000000A   0x9007             STR      R0,[SP, #+28]
+   \   0000000C   0x2000             MOVS     R0,#+0
+   \   0000000E   0x9006             STR      R0,[SP, #+24]
+   \   00000010   0x2000             MOVS     R0,#+0
+   \   00000012   0x9005             STR      R0,[SP, #+20]
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x9004             STR      R0,[SP, #+16]
+   \   00000018   0xF44F 0x7000      MOV      R0,#+512
+   \   0000001C   0x9003             STR      R0,[SP, #+12]
+   \   0000001E   0x2033             MOVS     R0,#+51
+   \   00000020   0x9002             STR      R0,[SP, #+8]
+   \   00000022   0x....             LDR.N    R0,??DataTable2
+   \   00000024   0x9001             STR      R0,[SP, #+4]
+   \   00000026   0x2036             MOVS     R0,#+54
+   \   00000028   0x9000             STR      R0,[SP, #+0]
+   \   0000002A   0x2300             MOVS     R3,#+0
+   \   0000002C   0x.... 0x....      ADR.W    R2,AppTaskCard
+   \   00000030   0x....             LDR.N    R1,??DataTable2_1
+   \   00000032   0x....             LDR.N    R0,??DataTable2_2
+   \   00000034   0x.... 0x....      BL       OSTaskCreate
+     62          
+     63          }
+   \   00000038   0xB00B             ADD      SP,SP,#+44
+   \   0000003A   0xBD00             POP      {PC}             ;; return
+     64          
+     65          
+
+   \                                 In section .text, align 2, keep-with-next
+     66          uint8	ReadCardFlg(void)
+     67          {	
+   \                     ReadCardFlg: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB083             SUB      SP,SP,#+12
+     68          	stcCardType		sCardType;
+     69              
+     70          	ReadCard(CARD_FLG_ADDR+sizeof(stcCardID),(uint8 *)&sCardType,sizeof(stcCardType));		
+   \   00000004   0x2208             MOVS     R2,#+8
+   \   00000006   0x4669             MOV      R1,SP
+   \   00000008   0x2020             MOVS     R0,#+32
+   \   0000000A   0x.... 0x....      BL       ReadCard
+     71          	
+     72          	if(     (sCardType.CardType[0] == sCardType.CardType[1]) 
+     73                 && 	(sCardType.CardType[1] == sCardType.CardType[2])
+     74                     &&	(sCardType.CrcCheck == 
+     75                           GetCrc16Check((uint8 *)&sCardType,sizeof(sCardType) -2))
+     76                         )
+   \   0000000E   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \   00000012   0xF8BD 0x1002      LDRH     R1,[SP, #+2]
+   \   00000016   0x4288             CMP      R0,R1
+   \   00000018   0xD117             BNE.N    ??ReadCardFlg_0
+   \   0000001A   0xF8BD 0x0002      LDRH     R0,[SP, #+2]
+   \   0000001E   0xF8BD 0x1004      LDRH     R1,[SP, #+4]
+   \   00000022   0x4288             CMP      R0,R1
+   \   00000024   0xD111             BNE.N    ??ReadCardFlg_0
+   \   00000026   0x2106             MOVS     R1,#+6
+   \   00000028   0x4668             MOV      R0,SP
+   \   0000002A   0x.... 0x....      BL       GetCrc16Check
+   \   0000002E   0xF8BD 0x1006      LDRH     R1,[SP, #+6]
+   \   00000032   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   00000034   0x4281             CMP      R1,R0
+   \   00000036   0xD108             BNE.N    ??ReadCardFlg_0
+     77          	{
+     78          		l_CardType 		= sCardType.CardType[0];			//IC卡 类型
+   \   00000038   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \   0000003C   0x....             LDR.N    R1,??DataTable2_3
+   \   0000003E   0x8008             STRH     R0,[R1, #+0]
+     79          		
+     80          		l_FlgZoneErrEvent = NO_OCCUR;								//IC卡 标识页错误事件
+   \   00000040   0x2000             MOVS     R0,#+0
+   \   00000042   0x....             LDR.N    R1,??DataTable2_4
+   \   00000044   0x7008             STRB     R0,[R1, #+0]
+     81          		
+     82          		//PrintfDebug("\r\n l_CardType %d",l_CardType);
+     83          		
+     84          		return 	1;
+   \   00000046   0x2001             MOVS     R0,#+1
+   \   00000048   0xE006             B.N      ??ReadCardFlg_1
+     85          	}
+     86          	else
+     87          	{
+     88          		l_FlgZoneErrEvent = OCCUR;
+   \                     ??ReadCardFlg_0: (+1)
+   \   0000004A   0x2001             MOVS     R0,#+1
+   \   0000004C   0x....             LDR.N    R1,??DataTable2_4
+   \   0000004E   0x7008             STRB     R0,[R1, #+0]
+     89          		l_CardType = 0x0000;
+   \   00000050   0x2000             MOVS     R0,#+0
+   \   00000052   0x....             LDR.N    R1,??DataTable2_3
+   \   00000054   0x8008             STRH     R0,[R1, #+0]
+     90          		
+     91          		return	0;
+   \   00000056   0x2000             MOVS     R0,#+0
+   \                     ??ReadCardFlg_1: (+1)
+   \   00000058   0xBD0E             POP      {R1-R3,PC}       ;; return
+     92          	}
+     93          }
+     94          
+     95          
+     96          extern	uint8	l_CardErrorFlg;
+     97          extern  OS_SEM	Bsp_Card_Sem; 
+
+   \                                 In section .bss, align 4
+     98          stcCardPara		sCardPara;
+   \                     sCardPara:
+   \   00000000                      DS8 180
+     99          
+    100          void InitCardIO( void );
+    101          extern  stcModelCard            m_sModelCard;
+    102          
+    103          /*******************************************************************************
+    104          * 名    称： app_task_card
+    105          * 功    能： 卡任务
+    106          * 入口参数： 无
+    107          * 出口参数： 无
+    108          * 作　 　者： redmorningcn.
+    109          * 创建日期： 2017-05-31
+    110          * 修    改：
+    111          * 修改日期：
+    112          * 备    注： 任务创建函数需要在app.h文件中声明
+    113          *******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    114          void    AppTaskCard(void)  
+    115          {
+   \                     AppTaskCard: (+1)
+   \   00000000   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+    116          	uint16		CrcCheck;
+    117          	//模型卡处理
+    118          	unsigned char   *p;
+    119          	uint32	writedsize = 0;	
+   \   00000004   0x2600             MOVS     R6,#+0
+    120          	uint32	readsize = 0;
+   \   00000006   0x2700             MOVS     R7,#+0
+    121              uint8   carderrflg = 0;
+   \   00000008   0xF05F 0x0800      MOVS     R8,#+0
+    122              
+    123              //初始化 card
+    124              InitCardIO();
+   \   0000000C   0x.... 0x....      BL       InitCardIO
+    125              
+    126              //任务体
+    127              while(1)
+    128              {
+    129                  //等待信号量,有IC卡插入，且卡类型正确
+    130                  BSP_OS_SemWait(&Bsp_Card_Sem,0);           
+   \                     ??AppTaskCard_0: (+1)
+   \   00000010   0x2100             MOVS     R1,#+0
+   \   00000012   0x....             LDR.N    R0,??DataTable2_5
+   \   00000014   0x.... 0x....      BL       BSP_OS_SemWait
+    131                  
+    132                  uint8  cardflg  = 0;
+   \   00000018   0xF05F 0x0900      MOVS     R9,#+0
+    133                  
+    134                  extern  uint8    InitCardPageInfo(void);
+    135          
+    136                  carderrflg = 1;     //先置卡错误，如后续正确，则会重新给值
+   \   0000001C   0x2001             MOVS     R0,#+1
+   \   0000001E   0x4680             MOV      R8,R0
+    137                  if(InitCardPageInfo())
+   \   00000020   0x.... 0x....      BL       InitCardPageInfo
+   \   00000024   0x2800             CMP      R0,#+0
+   \   00000026   0xD002             BEQ.N    ??AppTaskCard_1
+    138                  {
+    139                      cardflg = ReadCardFlg();
+   \   00000028   0x.... 0x....      BL       ReadCardFlg
+   \   0000002C   0x4681             MOV      R9,R0
+    140                  }
+    141                  //读IC卡标志页，取卡类型
+    142                  if( cardflg )								
+   \                     ??AppTaskCard_1: (+1)
+   \   0000002E   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   00000032   0xF1B9 0x0F00      CMP      R9,#+0
+   \   00000036   0xF000 0x809F      BEQ.W    ??AppTaskCard_2
+    143                  {
+    144          			sCtrl.sRunPara.CardType = l_CardType;		//卡类型幅值，全局变量
+   \   0000003A   0x....             LDR.N    R0,??DataTable2_3
+   \   0000003C   0x8800             LDRH     R0,[R0, #+0]
+   \   0000003E   0x....             LDR.N    R1,??DataTable2_6
+   \   00000040   0xF8C1 0x00B0      STR      R0,[R1, #+176]
+    145                      
+    146                      extern  uint8	ReadCardPara(stcCardPara * sCardPara);
+    147          
+    148          			if(ReadCardPara((stcCardPara *)	&sCardPara)){	// 卡标示参数区读取正确。
+   \   00000044   0x....             LDR.N    R0,??DataTable2_7
+   \   00000046   0x.... 0x....      BL       ReadCardPara
+   \   0000004A   0x2800             CMP      R0,#+0
+   \   0000004C   0xF000 0x8094      BEQ.W    ??AppTaskCard_2
+    149          				
+    150                          carderrflg = 0; 
+   \   00000050   0x2000             MOVS     R0,#+0
+   \   00000052   0x4680             MOV      R8,R0
+    151                          
+    152          	            switch( l_CardType )
+   \   00000054   0x....             LDR.N    R0,??DataTable2_3
+   \   00000056   0x8800             LDRH     R0,[R0, #+0]
+   \   00000058   0x2801             CMP      R0,#+1
+   \   0000005A   0xD010             BEQ.N    ??AppTaskCard_3
+   \   0000005C   0x2820             CMP      R0,#+32
+   \   0000005E   0xD012             BEQ.N    ??AppTaskCard_4
+   \   00000060   0x2840             CMP      R0,#+64
+   \   00000062   0xD025             BEQ.N    ??AppTaskCard_5
+   \   00000064   0xF5B0 0x7F00      CMP      R0,#+512
+   \   00000068   0xD03F             BEQ.N    ??AppTaskCard_6
+   \   0000006A   0xF5B0 0x6F80      CMP      R0,#+1024
+   \   0000006E   0xD050             BEQ.N    ??AppTaskCard_7
+   \   00000070   0xF5B0 0x5F80      CMP      R0,#+4096
+   \   00000074   0xD056             BEQ.N    ??AppTaskCard_8
+   \   00000076   0xF5B0 0x5F00      CMP      R0,#+8192
+   \   0000007A   0xD059             BEQ.N    ??AppTaskCard_9
+   \   0000007C   0xE07A             B.N      ??AppTaskCard_10
+    153          	            {
+    154                              //数据卡，取FLASH的数据
+    155                          case DATA_CARD:	
+    156                              DataCard(0);
+   \                     ??AppTaskCard_3: (+1)
+   \   0000007E   0x2000             MOVS     R0,#+0
+   \   00000080   0x.... 0x....      BL       DataCard
+    157                              
+    158                              break;									
+   \   00000084   0xE078             B.N      ??AppTaskCard_2
+    159                          case DENSITY_CARD:									//密度卡
+    160                              CrcCheck = GetCrc16Check((uint8 *)&sCardPara.sDensity,
+    161                                                       sizeof(sCardPara.sDensity) - 2);
+   \                     ??AppTaskCard_4: (+1)
+   \   00000086   0x2116             MOVS     R1,#+22
+   \   00000088   0x....             LDR.N    R0,??DataTable2_7
+   \   0000008A   0x.... 0x....      BL       GetCrc16Check
+   \   0000008E   0x0004             MOVS     R4,R0
+    162                              
+    163                              sCtrl.SOilPara.Density = 820;
+   \   00000090   0xF44F 0x704D      MOV      R0,#+820
+   \   00000094   0x....             LDR.N    R1,??DataTable2_6
+   \   00000096   0xF8A1 0x00A4      STRH     R0,[R1, #+164]
+    164                              if(CrcCheck == sCardPara.sDensity.CrcCheck)		//校验和相等		
+   \   0000009A   0x....             LDR.N    R0,??DataTable2_7
+   \   0000009C   0x8AC0             LDRH     R0,[R0, #+22]
+   \   0000009E   0xB2A4             UXTH     R4,R4            ;; ZeroExt  R4,R4,#+16,#+16
+   \   000000A0   0x4284             CMP      R4,R0
+   \   000000A2   0xD104             BNE.N    ??AppTaskCard_11
+    165                              {			
+    166                                  sCtrl.SOilPara.Density = sCardPara.sDensity.Density;	//密度幅值
+   \   000000A4   0x....             LDR.N    R0,??DataTable2_7
+   \   000000A6   0x6880             LDR      R0,[R0, #+8]
+   \   000000A8   0x....             LDR.N    R1,??DataTable2_6
+   \   000000AA   0xF8A1 0x00A4      STRH     R0,[R1, #+164]
+    167                              }
+    168                          	break;
+   \                     ??AppTaskCard_11: (+1)
+   \   000000AE   0xE063             B.N      ??AppTaskCard_2
+    169                      	case MODEL_CARD:									//模型卡
+    170          	                p = (uint8  *)&m_sModelCard;
+   \                     ??AppTaskCard_5: (+1)
+   \   000000B0   0x....             LDR.N    R0,??DataTable2_8
+   \   000000B2   0x0005             MOVS     R5,R0
+    171          	                writedsize = 0;
+   \   000000B4   0x2000             MOVS     R0,#+0
+   \   000000B6   0x0006             MOVS     R6,R0
+    172                              
+    173          	                while(writedsize < sizeof(stcModelCard))		//将数据读值m_sModelCard.
+   \                     ??AppTaskCard_12: (+1)
+   \   000000B8   0xF241 0x7044      MOVW     R0,#+5956
+   \   000000BC   0x4286             CMP      R6,R0
+   \   000000BE   0xD213             BCS.N    ??AppTaskCard_13
+    174          	                {
+    175          	                    readsize = (sizeof(stcModelCard)- writedsize)>256?
+    176          	                        256:(sizeof(stcModelCard)- writedsize);
+   \   000000C0   0xF241 0x7044      MOVW     R0,#+5956
+   \   000000C4   0x1B80             SUBS     R0,R0,R6
+   \   000000C6   0xF5B0 0x7F80      CMP      R0,#+256
+   \   000000CA   0xD902             BLS.N    ??AppTaskCard_14
+   \   000000CC   0xF44F 0x7780      MOV      R7,#+256
+   \   000000D0   0xE002             B.N      ??AppTaskCard_15
+   \                     ??AppTaskCard_14: (+1)
+   \   000000D2   0xF241 0x7044      MOVW     R0,#+5956
+   \   000000D6   0x1B87             SUBS     R7,R0,R6
+    177          	                        
+    178          	                        ReadCard(CARD_DATA_ADDR+writedsize,&p[writedsize],readsize);
+   \                     ??AppTaskCard_15: (+1)
+   \   000000D8   0x003A             MOVS     R2,R7
+   \   000000DA   0x1971             ADDS     R1,R6,R5
+   \   000000DC   0xF516 0x50A0      ADDS     R0,R6,#+5120
+   \   000000E0   0x.... 0x....      BL       ReadCard
+    179          	                        
+    180          	                        writedsize +=readsize;
+   \   000000E4   0x19BE             ADDS     R6,R7,R6
+   \   000000E6   0xE7E7             B.N      ??AppTaskCard_12
+    181          	                }
+    182                              
+    183                              break;				
+   \                     ??AppTaskCard_13: (+1)
+   \   000000E8   0xE046             B.N      ??AppTaskCard_2
+    184                              
+    185                          case HIGHT_CARD:												//高度调整卡				
+    186                              
+    187                              CrcCheck = GetCrc16Check((uint8 *)&sCardPara.sReviseHight,
+    188                                                       sizeof(sCardPara.sReviseHight) - 2);
+   \                     ??AppTaskCard_6: (+1)
+   \   000000EA   0x2102             MOVS     R1,#+2
+   \   000000EC   0x....             LDR.N    R0,??DataTable2_9
+   \   000000EE   0x.... 0x....      BL       GetCrc16Check
+   \   000000F2   0x0004             MOVS     R4,R0
+    189                              
+    190                              sCtrl.SOilPara.Hig  = 0;
+   \   000000F4   0x2000             MOVS     R0,#+0
+   \   000000F6   0x....             LDR.N    R1,??DataTable2_6
+   \   000000F8   0xF8A1 0x00A2      STRH     R0,[R1, #+162]
+    191                              if(CrcCheck == sCardPara.sReviseHight.CrcCheck)	//校验和相等		
+   \   000000FC   0x....             LDR.N    R0,??DataTable2_7
+   \   000000FE   0x8CC0             LDRH     R0,[R0, #+38]
+   \   00000100   0xB2A4             UXTH     R4,R4            ;; ZeroExt  R4,R4,#+16,#+16
+   \   00000102   0x4284             CMP      R4,R0
+   \   00000104   0xD104             BNE.N    ??AppTaskCard_16
+    192                              {
+    193                                  sCtrl.SOilPara.Hig = sCardPara.sReviseHight.ReviseHight;
+   \   00000106   0x....             LDR.N    R0,??DataTable2_7
+   \   00000108   0x8C80             LDRH     R0,[R0, #+36]
+   \   0000010A   0x....             LDR.N    R1,??DataTable2_6
+   \   0000010C   0xF8A1 0x00A2      STRH     R0,[R1, #+162]
+    194                              }
+    195                              break;															
+   \                     ??AppTaskCard_16: (+1)
+   \   00000110   0xE032             B.N      ??AppTaskCard_2
+    196                          case COPY_CARD:													//数据拷贝卡//还未写入内容
+    197                              DisplaySet(100,1,"COPY");						
+   \                     ??AppTaskCard_7: (+1)
+   \   00000112   0x....             LDR.N    R2,??DataTable2_10
+   \   00000114   0x2101             MOVS     R1,#+1
+   \   00000116   0x2064             MOVS     R0,#+100
+   \   00000118   0x.... 0x....      BL       DisplaySet
+    198                              DataCard(1);
+   \   0000011C   0x2001             MOVS     R0,#+1
+   \   0000011E   0x.... 0x....      BL       DataCard
+    199                              break;
+   \   00000122   0xE029             B.N      ??AppTaskCard_2
+    200                          case MODEL_SELECT_CARD:											//模型选择卡
+    201                              sCtrl.SOilPara.ModelNum = sCardPara.SetVal;
+   \                     ??AppTaskCard_8: (+1)
+   \   00000124   0x....             LDR.N    R0,??DataTable2_7
+   \   00000126   0x6980             LDR      R0,[R0, #+24]
+   \   00000128   0x....             LDR.N    R1,??DataTable2_6
+   \   0000012A   0xF881 0x00A0      STRB     R0,[R1, #+160]
+    202                              break;	
+   \   0000012E   0xE023             B.N      ??AppTaskCard_2
+    203                              
+    204                          case FIX_CARD:													//装车卡
+    205                              CrcCheck = GetCrc16Check((uint8 *)&sCardPara.sFixInfo,
+    206                                                       sizeof(sCardPara.sFixInfo) - 2);
+   \                     ??AppTaskCard_9: (+1)
+   \   00000130   0x211A             MOVS     R1,#+26
+   \   00000132   0x....             LDR.N    R0,??DataTable2_11
+   \   00000134   0x.... 0x....      BL       GetCrc16Check
+   \   00000138   0x0004             MOVS     R4,R0
+    207                              
+    208                              sCtrl.sProductInfo.sLocoId.Type = 1;
+   \   0000013A   0x2001             MOVS     R0,#+1
+   \   0000013C   0x....             LDR.N    R1,??DataTable2_6
+   \   0000013E   0x8388             STRH     R0,[R1, #+28]
+    209                              sCtrl.sProductInfo.sLocoId.Num  = 1000;
+   \   00000140   0xF44F 0x707A      MOV      R0,#+1000
+   \   00000144   0x....             LDR.N    R1,??DataTable2_6
+   \   00000146   0x83C8             STRH     R0,[R1, #+30]
+    210                              if(CrcCheck == sCardPara.sFixInfo.CrcCheck)		//校验和相等	
+   \   00000148   0x....             LDR.N    R0,??DataTable2_7
+   \   0000014A   0xF8B0 0x0042      LDRH     R0,[R0, #+66]
+   \   0000014E   0xB2A4             UXTH     R4,R4            ;; ZeroExt  R4,R4,#+16,#+16
+   \   00000150   0x4284             CMP      R4,R0
+   \   00000152   0xD10E             BNE.N    ??AppTaskCard_17
+    211                              {
+    212                                  sCtrl.sProductInfo.sLocoId.Num = BUILD_INT16U(sCardPara.sFixInfo.LocoNum[0],sCardPara.sFixInfo.LocoNum[1]);
+   \   00000154   0x....             LDR.N    R0,??DataTable2_7
+   \   00000156   0xF890 0x002A      LDRB     R0,[R0, #+42]
+   \   0000015A   0x....             LDR.N    R1,??DataTable2_7
+   \   0000015C   0xF891 0x102B      LDRB     R1,[R1, #+43]
+   \   00000160   0xEB10 0x2001      ADDS     R0,R0,R1, LSL #+8
+   \   00000164   0x....             LDR.N    R1,??DataTable2_6
+   \   00000166   0x83C8             STRH     R0,[R1, #+30]
+    213                                  sCtrl.sProductInfo.sLocoId.Type = sCardPara.sFixInfo.LocoTyp;
+   \   00000168   0x....             LDR.N    R0,??DataTable2_7
+   \   0000016A   0xF890 0x0028      LDRB     R0,[R0, #+40]
+   \   0000016E   0x....             LDR.N    R1,??DataTable2_6
+   \   00000170   0x8388             STRH     R0,[R1, #+28]
+    214          //                        sCtrl.sProductInfo.sLocoId.Num  = sCardPara.sFixInfo.LocoNum[0]+
+    215          //                                                          //sCardPara.sFixInfo.LocoNum[1]<<8;
+    216                                                                     
+    217                              }
+    218                              
+    219                              break;					
+   \                     ??AppTaskCard_17: (+1)
+   \   00000172   0xE001             B.N      ??AppTaskCard_2
+    220                              
+    221                          default:carderrflg = 1;;
+   \                     ??AppTaskCard_10: (+1)
+   \   00000174   0x2001             MOVS     R0,#+1
+   \   00000176   0x4680             MOV      R8,R0
+    222                          }
+    223                      }	
+    224                  }
+    225                  
+    226                  if(carderrflg == 1)     //卡类型错误，返回错误信息
+   \                     ??AppTaskCard_2: (+1)
+   \   00000178   0xFA5F 0xF888      UXTB     R8,R8            ;; ZeroExt  R8,R8,#+24,#+24
+   \   0000017C   0xF1B8 0x0F01      CMP      R8,#+1
+   \   00000180   0xD108             BNE.N    ??AppTaskCard_18
+    227                  {
+    228                      sCtrl.sRunPara.CardType = DATA_CARD_ERR;    //卡异常
+   \   00000182   0xF44F 0x4000      MOV      R0,#+32768
+   \   00000186   0x....             LDR.N    R1,??DataTable2_6
+   \   00000188   0xF8C1 0x00B0      STR      R0,[R1, #+176]
+    229                      sCtrl.sRunPara.CardErrData = 0x01;          //卡异常 
+   \   0000018C   0x2001             MOVS     R0,#+1
+   \   0000018E   0x....             LDR.N    R1,??DataTable2_6
+   \   00000190   0xF881 0x00B4      STRB     R0,[R1, #+180]
+    230                  }
+    231          
+    232          //        OS_ERR  os_err;
+    233          //        OSTimeDlyHMSM(0, 0, 0, 100,
+    234          //              OS_OPT_TIME_HMSM_STRICT, &os_err);
+    235                  
+    236                  OS_ERR err;
+    237          
+    238          		//IC卡处理完成，通知串口通讯处理
+    239          	    OSFlagPost( ( OS_FLAG_GRP  *)&sCtrl.Os.CommEvtFlagGrp,
+    240          	        ( OS_FLAGS      )COMM_EVT_FLAG_PLUG_CARD,
+    241          	        ( OS_OPT        )OS_OPT_POST_FLAG_SET,
+    242          	        ( OS_ERR       *)&err);
+   \                     ??AppTaskCard_18: (+1)
+   \   00000194   0x466B             MOV      R3,SP
+   \   00000196   0x2200             MOVS     R2,#+0
+   \   00000198   0x2140             MOVS     R1,#+64
+   \   0000019A   0x....             LDR.N    R0,??DataTable2_12
+   \   0000019C   0x.... 0x....      BL       OSFlagPost
+   \   000001A0   0xE736             B.N      ??AppTaskCard_0
+    243              }
+    244          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \   00000000   0x........         DC32     AppTaskCardStk
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \   00000000   0x........         DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_2:
+   \   00000000   0x........         DC32     AppTaskCardTCB
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_3:
+   \   00000000   0x........         DC32     l_CardType
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_4:
+   \   00000000   0x........         DC32     l_FlgZoneErrEvent
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_5:
+   \   00000000   0x........         DC32     Bsp_Card_Sem
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_6:
+   \   00000000   0x........         DC32     sCtrl
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_7:
+   \   00000000   0x........         DC32     sCardPara
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_8:
+   \   00000000   0x........         DC32     m_sModelCard
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_9:
+   \   00000000   0x........         DC32     sCardPara+0x24
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_10:
+   \   00000000   0x........         DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_11:
+   \   00000000   0x........         DC32     sCardPara+0x28
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_12:
+   \   00000000   0x........         DC32     sCtrl+0x249
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \   00000000   0x41 0x70          DC8 "App Task Card"
+   \              0x70 0x20    
+   \              0x54 0x61    
+   \              0x73 0x6B    
+   \              0x20 0x43    
+   \              0x61 0x72    
+   \              0x64 0x00    
+   \   0000000E   0x00 0x00          DC8 0, 0
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \   00000000   0x43 0x4F          DC8 "COPY"
+   \              0x50 0x59    
+   \              0x00         
+   \   00000005   0x00 0x00          DC8 0, 0, 0
+   \              0x00         
+    245           
+    246              
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   AppTaskCard
+        32   -> BSP_OS_SemWait
+        32   -> DataCard
+        32   -> DisplaySet
+        32   -> GetCrc16Check
+        32   -> InitCardIO
+        32   -> InitCardPageInfo
+        32   -> OSFlagPost
+        32   -> ReadCard
+        32   -> ReadCardFlg
+        32   -> ReadCardPara
+      48   App_TaskCardCreate
+        48   -> OSTaskCreate
+      16   ReadCardFlg
+        16   -> GetCrc16Check
+        16   -> ReadCard
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+       4  ??DataTable2_10
+       4  ??DataTable2_11
+       4  ??DataTable2_12
+       4  ??DataTable2_2
+       4  ??DataTable2_3
+       4  ??DataTable2_4
+       4  ??DataTable2_5
+       4  ??DataTable2_6
+       4  ??DataTable2_7
+       4  ??DataTable2_8
+       4  ??DataTable2_9
+      16  ?_0
+       8  ?_1
+     418  AppTaskCard
+    2048  AppTaskCardStk
+     160  AppTaskCardTCB
+      60  App_TaskCardCreate
+      90  ReadCardFlg
+       2  l_CardType
+       1  l_FlgZoneErrEvent
+     180  sCardPara
+
+ 
+ 2 391 bytes in section .bss
+    24 bytes in section .rodata
+   620 bytes in section .text
+ 
+   620 bytes of CODE  memory
+    24 bytes of CONST memory
+ 2 391 bytes of DATA  memory
+
+Errors: none
+Warnings: none

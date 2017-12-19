@@ -1,0 +1,182 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[JLinkDriver]
+CStepIntDis=_ 0
+TraceBufferSize=0x00010000
+TraceStallIfFIFOFull=0x00000000
+TracePortSize=0x00000004
+[DebugChecksum]
+Checksum=-1508902398
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=72000000
+ClockAutoDetect=0
+ClockWanted=2000000
+JtagSpeed=2000000
+Prescaler=36
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+[Interrupts]
+Enabled=1
+[MemConfig]
+Base=1
+Manual=0
+Ddf=1
+TypeViol=0
+Stop=1
+[Simulator]
+Freq=10000000
+MultiCoreRunAll=1
+[struct_types]
+Fmt0=MODBUS_CH-TxBufByteCtr	3	0
+Fmt1=StrCtrlOS-CommEvtFlag	1	0
+Fmt2=StrDevOtrConnCtrl-SlaveAddr	4	0
+Fmt3=StrDevOtrRecvCtrl-DestAddr	4	0
+Fmt4=StrDevOtrRecvCtrl-FramNum	3	0
+Fmt5=StrDevOtrRecvCtrl-Len	3	0
+Fmt6=StrDevOtrRecvCtrl-SourceAddr	4	0
+Fmt7=stcFlshRec-MyData	3	0
+Fmt8=stcFlshRec-MyHour	3	0
+Fmt9=stcFlshRec-MyMinute	3	0
+Fmt10=stcFlshRec-MyMonth	3	0
+Fmt11=stcFlshRec-MySecond	3	0
+Fmt12=stcFlshRec-MyYear	3	0
+Fmt13=stcFlshRec-RecTypCod	4	0
+Fmt14=stcFlshRec-StoreCnt	3	0
+Fmt15=stcTime-Date	3	0
+Fmt16=stcTime-Hour	3	0
+Fmt17=stcTime-Min	3	0
+Fmt18=stcTime-Month	3	0
+Fmt19=stcTime-Sec	3	0
+Fmt20=stcTime-Year	3	0
+[array_types]
+Fmt0=CPU_INT08U[256]	4	0
+Fmt1=unsigned char[250]	4	0
+[watch_formats]
+Fmt0={W}1:head	4	0
+Fmt1={W}1:tail	4	0
+[Trace1]
+Enabled=0
+ShowSource=1
+[Trace2]
+Enabled=0
+ShowSource=0
+[SWOTraceWindow]
+PcSampling=0
+InterruptLogs=0
+ForcedTimeStamps=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[PowerLog]
+Title_0=I0
+Symbol_0=0 4 0
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+LiveEnabled=0
+LiveFile=PowerLogLive.log
+[DataLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+[EventLog]
+Title_0=Ch3
+Symbol_0=0 4 1
+Title_1=Ch2
+Symbol_1=0 4 1
+Title_2=Ch1
+Symbol_2=0 4 1
+Title_3=Ch0
+Symbol_3=0 4 1
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[InterruptLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\..\..\uC-MB\Source\MBS_CORE.C}.1972.1" 0 0 1 "" 0 "" 0
+Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\..\..\uC-MB\Source\MB.C}.1044.1" 0 0 1 "" 0 "" 0
+Bp2=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\..\..\..\Application\Library\MastConTask\DipComOperate.c}.74.3" 0 0 1 "" 0 "" 0
+Bp3=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\..\..\..\Application\Library\Driver\MX25L1602Drv.c}.614.1" 0 0 1 "" 0 "" 0
+Bp4=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\..\..\..\Application\Library\CardOperations\OperateCard.c}.198.21" 0 0 1 "" 0 "" 0
+Bp5=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\..\..\..\Application\Library\CardOperations\DataCard.c}.351.5" 0 0 1 "" 0 "" 0
+Bp6=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\..\..\..\Application\Library\CardOperations\DataCard.c}.331.17" 0 0 1 "" 0 "" 0
+Bp7=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\..\..\..\Application\Library\CardOperations\DataCard.c}.259.13" 0 0 1 "" 0 "" 0
+Bp8=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\..\..\..\..\..\Application\Library\CardOperations\DataCard.c}.258.13" 0 0 1 "" 0 "" 0
+Count=9
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Aliases]
+A0=_ "F:\embedsoft\Micrium_LPC1768-SK_uCOS-III 17\Software\APP\Tasks\app_task_osal.c" ""
+A1=_ "F:\embedsoft\Micrium_LPC1768-SK_uCOS-III 17\Software\APP\Tasks\app_task_osal_disp.c" ""
+A2=_ "F:\embedsoft\Micrium_LPC1768-SK_uCOS-III 17\Software\APP\User\app_lib.c" ""
+A3=_ "F:\embedsoft\Micrium_LPC1768-SK_uCOS-III 17\Software\APP\xmain.c" ""
+A4=_ "F:\embedsoft\Micrium_LPC1768-SK_uCOS-III 17\Software\EvalBoards\NXP\LPC1768-SK\BSP\bsp.c" ""
+A5=_ "F:\embedsoft\Micrium_LPC1768-SK_uCOS-III 17\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\app.c" ""
+A6=_ "F:\embedsoft\Micrium_LPC1768-SK_uCOS-III 17\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\os_app_hooks.c" ""
+A7=_ "F:\embedsoft\Micrium_LPC1768-SK_uCOS-III 17\Software\uC-CPU\ARM-Cortex-M3\IAR\cpu_a.asm" ""
+A8=_ "F:\embedsoft\Micrium_LPC1768-SK_uCOS-III 17\Software\uC-CPU\cpu_core.c" ""
+A9=_ "F:\embedsoft\Micrium_LPC1768-SK_uCOS-III 17\Software\uC-CSP\MCU\NXP\LPC17xx\csp_gpio.c" ""
+A10=_ "F:\embedsoft\Micrium_LPC1768-SK_uCOS-III 17\Software\uC-LIB\lib_mem.c" ""
+A11=_ "F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\uC-CPU\ARM-Cortex-M3\IAR\cpu_a.asm" ""
+A12=_ "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00 归档\05 嵌入式程序归档\NC136B-300-000 统计装置\Micrium_LPC1768-SK_uCOS-III\Software\uC-CPU\ARM-Cortex-M3\IAR\cpu_c.c" ""
+A13=_ "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00 归档\05 嵌入式程序归档\NC136B-300-000 统计装置\Micrium_LPC1768-SK_uCOS-III\Software\uC-CSP\MCU\csp.c" ""
+Count=14
+SuppressDialog=0
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1
+[PowerProbe]
+Frequency=10000
+Probe0=I0
+ProbeSetup0=2 1 1 2 0 0

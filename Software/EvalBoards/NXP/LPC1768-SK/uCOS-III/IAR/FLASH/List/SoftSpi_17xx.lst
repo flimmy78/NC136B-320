@@ -1,0 +1,579 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       14/Dec/2017  10:49:34
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC卡模块\Application\Library\Driver\SoftSpi_17xx.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC卡模块\Application\Library\Driver\SoftSpi_17xx.c"
+#        -lCN "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\SoftSpi_17xx.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\SoftSpi_17xx.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC卡模块\Application\Library\Driver\SoftSpi_17xx.c
+      1          #include <includes.h>
+      2          
+      3          #define			SCK0					15    	//p1.20  
+      4          #define			MISO0					17			//p1.23  
+      5          #define			MOSI0					18			//p1.24 
+      6          #define   		SOFT_SPI_CS0			16			//p1.22
+      7          
+      8          //#define		Hard_SPI0   //硬SPI开关
+      9          
+
+   \                                 In section .text, align 2, keep-with-next
+     10          void	 NOP(void)  
+     11          {
+     12          	//FeedDog();
+     13          }
+   \                     `NOP`: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+     14          
+
+   \                                 In section .text, align 2, keep-with-next
+     15          void	nop(void)
+     16          {
+   \                     `nop`: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     17          	uint8 i;
+     18              i =20;
+   \   00000002   0x2014             MOVS     R0,#+20
+   \   00000004   0x0004             MOVS     R4,R0
+     19          	NOP();
+   \   00000006   0x.... 0x....      BL       `NOP`
+     20          	while(i--);
+   \                     ??nop_0: (+1)
+   \   0000000A   0x0020             MOVS     R0,R4
+   \   0000000C   0x1E44             SUBS     R4,R0,#+1
+   \   0000000E   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000010   0x2800             CMP      R0,#+0
+   \   00000012   0xD1FA             BNE.N    ??nop_0
+     21          }
+   \   00000014   0xBD10             POP      {R4,PC}          ;; return
+     22          
+
+   \                                 In section .text, align 2, keep-with-next
+     23          void	InitFlshIO(void)
+     24          {
+   \                     InitFlshIO: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     25          	GPIO_PinselConfig(SCK0,0);
+   \   00000002   0x2100             MOVS     R1,#+0
+   \   00000004   0x200F             MOVS     R0,#+15
+   \   00000006   0x.... 0x....      BL       GPIO_PinselConfig
+     26          	GPIO_PinselConfig(MOSI0,0);	
+   \   0000000A   0x2100             MOVS     R1,#+0
+   \   0000000C   0x2012             MOVS     R0,#+18
+   \   0000000E   0x.... 0x....      BL       GPIO_PinselConfig
+     27          	GPIO_PinselConfig(MISO0,0);	
+   \   00000012   0x2100             MOVS     R1,#+0
+   \   00000014   0x2011             MOVS     R0,#+17
+   \   00000016   0x.... 0x....      BL       GPIO_PinselConfig
+     28          }
+   \   0000001A   0xBD01             POP      {R0,PC}          ;; return
+     29          
+     30          //------------------------------------------------------------------------
+     31          //  名  称 ：void WriteSCK0( uint8 temp )
+     32          //  功  能 ：设置 SCK0
+     33          // 入口参数：无
+     34          // 出口参数：无
+     35          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     36          void WriteSCK0(uint8 temp)
+     37          {
+   \                     WriteSCK0: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+     38          	if(temp)		
+   \   00000004   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD004             BEQ.N    ??WriteSCK0_0
+     39          	{
+     40          		GPIO_SetOrClearValue(SCK0,1);
+   \   0000000A   0x2101             MOVS     R1,#+1
+   \   0000000C   0x200F             MOVS     R0,#+15
+   \   0000000E   0x.... 0x....      BL       GPIO_SetOrClearValue
+   \   00000012   0xE003             B.N      ??WriteSCK0_1
+     41          	}
+     42          	else
+     43          	{
+     44          		GPIO_SetOrClearValue(SCK0,0);		
+   \                     ??WriteSCK0_0: (+1)
+   \   00000014   0x2100             MOVS     R1,#+0
+   \   00000016   0x200F             MOVS     R0,#+15
+   \   00000018   0x.... 0x....      BL       GPIO_SetOrClearValue
+     45          	}	
+     46          	//nop();	
+     47          }
+   \                     ??WriteSCK0_1: (+1)
+   \   0000001C   0xBD10             POP      {R4,PC}          ;; return
+     48          
+     49          //------------------------------------------------------------------------
+     50          //  名  称 ：uint8 ReadSCK0(void)
+     51          //  功  能 ：读取 SCK0 的值
+     52          // 入口参数：无
+     53          // 出口参数：无
+     54          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     55          uint8 ReadSCK0(void)
+     56          {
+   \                     ReadSCK0: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     57          	uint8 temp;
+     58          	
+     59          	temp = 	GPIO_ReadIoVal(SCK0);
+   \   00000002   0x200F             MOVS     R0,#+15
+   \   00000004   0x.... 0x....      BL       GPIO_ReadIoVal
+   \   00000008   0x0004             MOVS     R4,R0
+     60          	//nop();
+     61          	return temp;
+   \   0000000A   0x0020             MOVS     R0,R4
+   \   0000000C   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000000E   0xBD10             POP      {R4,PC}          ;; return
+     62          }
+     63          
+     64          //------------------------------------------------------------------------
+     65          //  名  称 ：void WriteMOSI0( uint8 temp )
+     66          //  功  能 ：设置 MOSI0
+     67          // 入口参数：无
+     68          // 出口参数：无
+     69          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     70          void WriteMOSI0(uint8 temp)
+     71          {
+   \                     WriteMOSI0: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+     72          	
+     73          	if(temp)		
+   \   00000004   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD004             BEQ.N    ??WriteMOSI0_0
+     74          	{
+     75          		GPIO_SetOrClearValue(MOSI0,1);
+   \   0000000A   0x2101             MOVS     R1,#+1
+   \   0000000C   0x2012             MOVS     R0,#+18
+   \   0000000E   0x.... 0x....      BL       GPIO_SetOrClearValue
+   \   00000012   0xE003             B.N      ??WriteMOSI0_1
+     76          	}
+     77          	else
+     78          	{
+     79          		GPIO_SetOrClearValue(MOSI0,0);		
+   \                     ??WriteMOSI0_0: (+1)
+   \   00000014   0x2100             MOVS     R1,#+0
+   \   00000016   0x2012             MOVS     R0,#+18
+   \   00000018   0x.... 0x....      BL       GPIO_SetOrClearValue
+     80          	}	
+     81          	//nop();		
+     82          }
+   \                     ??WriteMOSI0_1: (+1)
+   \   0000001C   0xBD10             POP      {R4,PC}          ;; return
+     83          
+     84          //------------------------------------------------------------------------
+     85          //  名  称 ：uint8 ReadMOSI0(void)
+     86          //  功  能 ：读取 MOSI0 的值
+     87          // 入口参数：无
+     88          // 出口参数：无
+     89          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     90          uint8 ReadMOSI0(void)
+     91          {
+   \                     ReadMOSI0: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+     92          	uint8 temp;
+     93          
+     94          	temp = 	GPIO_ReadIoVal(MOSI0);
+   \   00000002   0x2012             MOVS     R0,#+18
+   \   00000004   0x.... 0x....      BL       GPIO_ReadIoVal
+   \   00000008   0x0004             MOVS     R4,R0
+     95          	//nop();
+     96          	return temp;
+   \   0000000A   0x0020             MOVS     R0,R4
+   \   0000000C   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000000E   0xBD10             POP      {R4,PC}          ;; return
+     97          }
+     98          
+     99          //------------------------------------------------------------------------
+    100          //  名  称 ：void WriteMOSI0( uint8 temp )
+    101          //  功  能 ：设置 MOSI0
+    102          // 入口参数：无
+    103          // 出口参数：无
+    104          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    105          void WriteMISO0(uint8 temp)
+    106          {
+   \                     WriteMISO0: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    107          	GPIO_PinselConfig(MISO0,0);
+   \   00000004   0x2100             MOVS     R1,#+0
+   \   00000006   0x2011             MOVS     R0,#+17
+   \   00000008   0x.... 0x....      BL       GPIO_PinselConfig
+    108          	
+    109          	if(temp)		
+   \   0000000C   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000000E   0x2C00             CMP      R4,#+0
+   \   00000010   0xD004             BEQ.N    ??WriteMISO0_0
+    110          	{
+    111          		GPIO_SetOrClearValue(MISO0,1);
+   \   00000012   0x2101             MOVS     R1,#+1
+   \   00000014   0x2011             MOVS     R0,#+17
+   \   00000016   0x.... 0x....      BL       GPIO_SetOrClearValue
+   \   0000001A   0xE003             B.N      ??WriteMISO0_1
+    112          	}
+    113          	else
+    114          	{
+    115          		GPIO_SetOrClearValue(MISO0,0);		
+   \                     ??WriteMISO0_0: (+1)
+   \   0000001C   0x2100             MOVS     R1,#+0
+   \   0000001E   0x2011             MOVS     R0,#+17
+   \   00000020   0x.... 0x....      BL       GPIO_SetOrClearValue
+    116          	}
+    117          		
+    118          	//nop();		
+    119          }
+   \                     ??WriteMISO0_1: (+1)
+   \   00000024   0xBD10             POP      {R4,PC}          ;; return
+    120          
+    121          //------------------------------------------------------------------------
+    122          //  名  称 ：uint8 ReadMOSI0(void)
+    123          //  功  能 ：读取 MOSI0 的值
+    124          // 入口参数：无
+    125          // 出口参数：无
+    126          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    127          uint8 ReadMISO0(void)
+    128          {
+   \                     ReadMISO0: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    129          	uint8 temp;
+    130          	
+    131          	temp = 	GPIO_ReadIoVal(MISO0);
+   \   00000002   0x2011             MOVS     R0,#+17
+   \   00000004   0x.... 0x....      BL       GPIO_ReadIoVal
+   \   00000008   0x0004             MOVS     R4,R0
+    132          
+    133          	nop();
+   \   0000000A   0x.... 0x....      BL       `nop`
+    134          	return temp;
+   \   0000000E   0x0020             MOVS     R0,R4
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0xBD10             POP      {R4,PC}          ;; return
+    135          }
+    136          
+    137          //------------------------------------------------------------------------
+    138          //  名  称 ：void WriteMOSI0( uint8 temp )
+    139          //  功  能 ：设置 MOSI0
+    140          // 入口参数：无
+    141          // 出口参数：无
+    142          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    143          void WriteSoftSpiCS0(uint8 temp)
+    144          {
+   \                     WriteSoftSpiCS0: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    145          	if(temp)		
+   \   00000004   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD004             BEQ.N    ??WriteSoftSpiCS0_0
+    146          	{
+    147          		GPIO_SetOrClearValue(SOFT_SPI_CS0,1);
+   \   0000000A   0x2101             MOVS     R1,#+1
+   \   0000000C   0x2010             MOVS     R0,#+16
+   \   0000000E   0x.... 0x....      BL       GPIO_SetOrClearValue
+   \   00000012   0xE003             B.N      ??WriteSoftSpiCS0_1
+    148          	}
+    149          	else
+    150          	{
+    151          		GPIO_SetOrClearValue(SOFT_SPI_CS0,0);		
+   \                     ??WriteSoftSpiCS0_0: (+1)
+   \   00000014   0x2100             MOVS     R1,#+0
+   \   00000016   0x2010             MOVS     R0,#+16
+   \   00000018   0x.... 0x....      BL       GPIO_SetOrClearValue
+    152          	}	
+    153          
+    154          	nop();		
+   \                     ??WriteSoftSpiCS0_1: (+1)
+   \   0000001C   0x.... 0x....      BL       `nop`
+    155          }
+   \   00000020   0xBD10             POP      {R4,PC}          ;; return
+    156          
+    157          //---------------------------------------------------------------------------------
+    158          //函数名称:             SentByte_SPI()
+    159          //功    能:             SPI发送一字节数据
+    160          //入口参数:             Data8
+    161          //出口参数:             无
+    162          //说    明:				以模拟SPI总线方式发送数据
+    163          //----------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    164          uint8 SendOrRecByte_SPI0(uint8 ch)
+    165          {
+   \                     SendOrRecByte_SPI0: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    166          	uint8 i,temp;   
+    167          	
+    168              for (i=0;i<8;i++)
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x0005             MOVS     R5,R0
+   \                     ??SendOrRecByte_SPI0_0: (+1)
+   \   00000008   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000000A   0x2D08             CMP      R5,#+8
+   \   0000000C   0xDA1F             BGE.N    ??SendOrRecByte_SPI0_1
+    169              {
+    170          	  temp=ch&0x80;
+   \   0000000E   0xF014 0x0080      ANDS     R0,R4,#0x80
+   \   00000012   0x0006             MOVS     R6,R0
+    171                ch=ch<<1;
+   \   00000014   0x0064             LSLS     R4,R4,#+1
+    172          
+    173                if(temp)
+   \   00000016   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000018   0x2E00             CMP      R6,#+0
+   \   0000001A   0xD009             BEQ.N    ??SendOrRecByte_SPI0_2
+    174                {
+    175                	WriteMOSI0( 1 );	
+   \   0000001C   0x2001             MOVS     R0,#+1
+   \   0000001E   0x.... 0x....      BL       WriteMOSI0
+    176          
+    177                	WriteSCK0 ( 0 );
+   \   00000022   0x2000             MOVS     R0,#+0
+   \   00000024   0x.... 0x....      BL       WriteSCK0
+    178          
+    179                	WriteSCK0 ( 1 );	        	
+   \   00000028   0x2001             MOVS     R0,#+1
+   \   0000002A   0x.... 0x....      BL       WriteSCK0
+   \   0000002E   0xE008             B.N      ??SendOrRecByte_SPI0_3
+    180                }
+    181                else
+    182                {
+    183                	WriteMOSI0( 0 );	
+   \                     ??SendOrRecByte_SPI0_2: (+1)
+   \   00000030   0x2000             MOVS     R0,#+0
+   \   00000032   0x.... 0x....      BL       WriteMOSI0
+    184          
+    185                  WriteSCK0 ( 0 );
+   \   00000036   0x2000             MOVS     R0,#+0
+   \   00000038   0x.... 0x....      BL       WriteSCK0
+    186                    
+    187                	WriteSCK0 ( 1 );
+   \   0000003C   0x2001             MOVS     R0,#+1
+   \   0000003E   0x.... 0x....      BL       WriteSCK0
+    188                }
+    189                
+    190                ch |= ReadMISO0();
+   \                     ??SendOrRecByte_SPI0_3: (+1)
+   \   00000042   0x.... 0x....      BL       ReadMISO0
+   \   00000046   0x4320             ORRS     R0,R0,R4
+   \   00000048   0x0004             MOVS     R4,R0
+    191              }
+   \   0000004A   0x1C6D             ADDS     R5,R5,#+1
+   \   0000004C   0xE7DC             B.N      ??SendOrRecByte_SPI0_0
+    192              
+    193              return	ch;
+   \                     ??SendOrRecByte_SPI0_1: (+1)
+   \   0000004E   0x0020             MOVS     R0,R4
+   \   00000050   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000052   0xBD70             POP      {R4-R6,PC}       ;; return
+    194          }
+    195          
+
+   \                                 In section .text, align 2, keep-with-next
+    196          void	SendByte_SPI0(uint8	ch)
+    197          {
+   \                     SendByte_SPI0: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    198          	SendOrRecByte_SPI0(ch);
+   \   00000004   0x0020             MOVS     R0,R4
+   \   00000006   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000008   0x.... 0x....      BL       SendOrRecByte_SPI0
+    199          }
+   \   0000000C   0xBD10             POP      {R4,PC}          ;; return
+    200          
+
+   \                                 In section .text, align 2, keep-with-next
+    201          uint8	RecByte_SPI0(void)
+    202          {
+   \                     RecByte_SPI0: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    203          	uint8	ch =0;
+   \   00000002   0x2400             MOVS     R4,#+0
+    204          	return	SendOrRecByte_SPI0(ch);
+   \   00000004   0x0020             MOVS     R0,R4
+   \   00000006   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000008   0x.... 0x....      BL       SendOrRecByte_SPI0
+   \   0000000C   0xBD10             POP      {R4,PC}          ;; return
+    205          }
+    206          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   InitFlshIO
+         8   -> GPIO_PinselConfig
+       0   NOP
+       8   ReadMISO0
+         8   -> GPIO_ReadIoVal
+         8   -> nop
+       8   ReadMOSI0
+         8   -> GPIO_ReadIoVal
+       8   ReadSCK0
+         8   -> GPIO_ReadIoVal
+       8   RecByte_SPI0
+         8   -> SendOrRecByte_SPI0
+       8   SendByte_SPI0
+         8   -> SendOrRecByte_SPI0
+      16   SendOrRecByte_SPI0
+        16   -> ReadMISO0
+        16   -> WriteMOSI0
+        16   -> WriteSCK0
+       8   WriteMISO0
+         8   -> GPIO_PinselConfig
+         8   -> GPIO_SetOrClearValue
+       8   WriteMOSI0
+         8   -> GPIO_SetOrClearValue
+       8   WriteSCK0
+         8   -> GPIO_SetOrClearValue
+       8   WriteSoftSpiCS0
+         8   -> GPIO_SetOrClearValue
+         8   -> nop
+       8   nop
+         8   -> NOP
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      28  InitFlshIO
+       2  NOP
+      20  ReadMISO0
+      16  ReadMOSI0
+      16  ReadSCK0
+      14  RecByte_SPI0
+      14  SendByte_SPI0
+      84  SendOrRecByte_SPI0
+      38  WriteMISO0
+      30  WriteMOSI0
+      30  WriteSCK0
+      34  WriteSoftSpiCS0
+      22  nop
+
+ 
+ 348 bytes in section .text
+ 
+ 348 bytes of CODE memory
+
+Errors: none
+Warnings: none

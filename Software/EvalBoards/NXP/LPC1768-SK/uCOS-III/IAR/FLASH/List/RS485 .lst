@@ -1,0 +1,546 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       16/May/2017  06:32:56
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Application\Library\SlaveConTask\RS485
+#        .c
+#    Command line =  
+#        "F:\iar\Micrium_LPC1768-SK_uCOS-III\Application\Library\SlaveConTask\RS485
+#        .c" -lCN
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List
+#        --diag_suppress Pe174 -o
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\
+#        -I
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\RS485
+#        .lst
+#    Object file  =  
+#        F:\iar\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\RS485
+#        .o
+#
+###############################################################################
+
+F:\iar\Micrium_LPC1768-SK_uCOS-III\Application\Library\SlaveConTask\RS485 .c
+      1          //#include <includes.h>
+      2          //#include	"Card.h"
+      3          //#include	"OperateCard.h"
+      4          
+      5          ////思维公司和南车公司通讯协议
+      6          //#define         FRAM_HERD0     		0x7c         	//报文头			
+      7          //#define     	HOST_ID      		0x11			//上位机地址	  		   
+      8          //#define   		DEVICE_ID0      	0x51			//本机地址0	
+      9          //#define         FRAM_END0     		0x7e         	//报文尾
+     10          //#define			HOST_CODE_FLG		0x0c	
+     11          //#define			DEVICE_CODE_FLG		0x8c
+     12          //#define			ID_NUM				0x01
+     13          ////#define			ID_NUM				0x02	
+     14          //#define			CODE_TYPE			0x01	
+     15          //#define			READ_REC_CODE		0x02
+     16          //#define			DATA_TYPE			0x01
+     17          
+     18          //#define			HDLC_CODE0			0x7d
+     19          //#define			HDLC_CODE1			0x5c
+     20          //#define			HDLC_CODE2			0x5e
+     21          //#define			HDLC_CODE3			0x5d
+     22          
+     23          
+     24          ////extern	uint8	g_MastSlaveFlg;
+     25          //			
+     26          ////----------------------------------------------------------------------------
+     27          //// 名    称：   
+     28          //// 功    能：   接
+     29          //// 入口参数：   无
+     30          //// 出口参数：   无
+     31          ////----------------------------------------------------------------------------
+     32          //uint8  RecData(uint8	*RecBuf,uint8 RecLen,uint8	*DataBuf,uint8	DataLen)
+     33          //{
+     34          //    uint16		i,j,k;
+     35          //    uint8		Tmp;
+     36          //    uint16		RecCRC16,Check16;
+     37          //    uint8		HostCode,CodeType;
+     38          //	
+     39          ////	uint8		DeviceID;
+     40          ////	uint8   	HostID;
+     41          //	uint16		RecDataLen;
+     42          //	uint16		ReCopyTime;
+     43          //	uint8		IDNum;
+     44          //	
+     45          ////	HostID = HOST_ID;
+     46          
+     47          ////	DeviceID = DEVICE_ID0;
+     48          //  
+     49          //  	ReCopyTime = 0;
+     50          //	for(j = 0;j < RecLen -1 - ReCopyTime ;j++ )											//去7d5c
+     51          //	{
+     52          //		if(	RecBuf[j] 	== HDLC_CODE0   					
+     53          //			&& 	((RecBuf[j+1]) == HDLC_CODE1)
+     54          //		   )
+     55          //		{
+     56          //			RecBuf[j] = FRAM_HERD0;														//7c
+     57          //			for(k = j+1;k < RecLen-1; k++)
+     58          //			{
+     59          //				Tmp	 = RecBuf[k+1];
+     60          //				
+     61          //				RecBuf[k] = Tmp;
+     62          //			}
+     63          //			ReCopyTime++;
+     64          //		}
+     65          //		
+     66          //		if(	RecBuf[j] 	== HDLC_CODE0   												//去7d5e
+     67          //			&& 	((RecBuf[j+1]) == HDLC_CODE2)
+     68          //			)
+     69          //		{
+     70          //			RecBuf[j] = FRAM_END0;														//7e
+     71          //			for(k = j+1;k < RecLen-1; k++)
+     72          //			{
+     73          //				Tmp	 = RecBuf[k+1];
+     74          //				
+     75          //				RecBuf[k] = Tmp;
+     76          //			}
+     77          //			ReCopyTime++;			
+     78          //		}
+     79          //		
+     80          //		if(	RecBuf[j] 	== HDLC_CODE0   												//去7d5d
+     81          //			&& 	((RecBuf[j+1]) == HDLC_CODE3)
+     82          //			)
+     83          //		{
+     84          //			RecBuf[j] = HDLC_CODE0;														//7d
+     85          //			for(k = j+1;k < RecLen; k++)
+     86          //			{
+     87          //				Tmp	 = RecBuf[k+1];
+     88          //				
+     89          //				RecBuf[k] = Tmp;
+     90          //			}
+     91          //			ReCopyTime++;
+     92          //		}					
+     93          //	}
+     94          //	
+     95          //    for(i = 0; i < RecLen - 10;i++)												       //循环遍历
+     96          //    {
+     97          //		if(		((RecBuf[i+0]) == FRAM_HERD0)  				//报头
+     98          //			&&	((RecBuf[i+1]) == HOST_ID) 
+     99          //			&&	((RecBuf[i+2]) == DEVICE_ID0)  	 
+    100          //		  )											
+    101          //		{		
+    102          //				
+    103          //			RecDataLen  = RecBuf[i+3];
+    104          //			RecDataLen  += RecBuf[i+4]*256;
+    105          //			
+    106          //			DataLen    =  RecDataLen;
+    107          //			HostCode   =  RecBuf[i+5];
+    108          //			IDNum	   =  RecBuf[i+6];
+    109          //			CodeType   =  RecBuf[i+8];
+    110          //						
+    111          //			if(		(	HostCode 	!= HOST_CODE_FLG) 
+    112          //				||	(   IDNum       != ID_NUM   )
+    113          //				||  (   CodeType    != CODE_TYPE   )
+    114          //				)
+    115          //			 {	
+    116          //			 	i = i + 8;															//地址不对或帧尾错误，跳过此帧
+    117          //			 	continue;
+    118          //			 }
+    119          //									
+    120          //			RecCRC16 = ((uint16)RecBuf[i+5+RecDataLen]) *256 + RecBuf[i+6+RecDataLen];	//校验	
+    121          //	
+    122          //			Check16 = GetCrc16Check(&RecBuf[i+5],DataLen);	
+    123          //						
+    124          //			if(		
+    125          //					RecCRC16  ==  Check16 		
+    126          //			  )
+    127          //			{
+    128          //				 memcpy(DataBuf,&RecBuf[i+5],DataLen);				//数据拷贝
+    129          //				 
+    130          //				 return	1;
+    131          //			}
+    132          //		}
+    133          //	}
+    134          //   	
+    135          //   	DataLen = 0;
+    136          //    return	0;
+    137          //}
+    138          
+    139          
+    140          //#define		OIL_DATA_LEN	16
+    141          //#define		ATHER_DATA_LEN	4
+    142          //void	Sendrs485(uint8	*DataBuf,uint32	DataLen,uint8	CheckNum)
+    143          //{
+    144          //	uint8	SndBuf[256] = {0};
+    145          //	uint8	SndBufTmp[256] = {0};
+    146          ////	uint8	SumCheck8;
+    147          //	uint16	Crc16;
+    148          //	uint16	AddHeadNum;
+    149          //	uint16	i;
+    150          ////	uint8	Tmp;
+    151          //	uint8	ByteStation;
+    152          ////	static	uint8 	FramNum =0;			//序号
+    153          //	uint8	DeviceID;
+    154          ////	static	uint8	Test = 0;
+    155          //	
+    156          //	DeviceID = DEVICE_ID0;
+    157          //		
+    158          //	ByteStation = 0;
+    159          //	SndBuf[ByteStation++] = FRAM_HERD0;
+    160          //	SndBuf[ByteStation++] = HOST_ID;
+    161          //	SndBuf[ByteStation++] = DeviceID;	 
+    162          //	SndBuf[ByteStation++] = DataLen+ATHER_DATA_LEN;	
+    163          //	SndBuf[ByteStation++] = 0;	
+    164          //	SndBuf[ByteStation++] = DEVICE_CODE_FLG;	
+    165          //	SndBuf[ByteStation++] = ID_NUM;
+    166          //	
+    167          //	memcpy(&SndBuf[ByteStation],DataBuf,DataLen);
+    168          //	
+    169          //	SndBuf[ByteStation+DataLen+0] = DATA_TYPE;
+    170          //	//SndBuf[ByteStation+DataLen+0] = Test++;			//数据备用起始位置
+    171          //	SndBuf[ByteStation+DataLen+1] = CheckNum;
+    172          //		
+    173          //	Crc16 = GetCrc16Check(&SndBuf[1+4],2+DataLen+2);//枕头（1）+帧长度前包字节（4）
+    174          //	
+    175          ////	SndBuf[ByteStation+DataLen+2] = Crc16;
+    176          ////	SndBuf[ByteStation+DataLen+3] = Crc16>>8;
+    177          //	SndBuf[ByteStation+DataLen+3] = Crc16;
+    178          //	SndBuf[ByteStation+DataLen+2] = Crc16>>8;
+    179          //	
+    180          ////////////////////////////////////////////////////////////
+    181          //	SndBufTmp[0] = SndBuf[0];						//准备数据发送
+    182          ////	SndBufTmp[1] = SndBuf[1];
+    183          ////	SndBufTmp[2] = SndBuf[2];						//准备数据发送
+    184          ////	SndBufTmp[3] = SndBuf[3];
+    185          ////	SndBufTmp[4] = SndBuf[4];
+    186          //		
+    187          //	
+    188          //	AddHeadNum = 0;
+    189          //	for(i = 1; i< ByteStation+DataLen+4;i++ )				//数据，补移位 FRAM_HERD0
+    190          //	{
+    191          //		if(SndBuf[i] == FRAM_HERD0)					//7c
+    192          //		{
+    193          //			SndBufTmp[i+AddHeadNum] = HDLC_CODE0;
+    194          //			AddHeadNum++;
+    195          //			SndBufTmp[i+AddHeadNum] = HDLC_CODE1;
+    196          //		}
+    197          //		else if(SndBuf[i] == FRAM_END0)				//7e
+    198          //		{
+    199          //			SndBufTmp[i+AddHeadNum] = HDLC_CODE0;
+    200          //			AddHeadNum++;
+    201          //			SndBufTmp[i+AddHeadNum] = HDLC_CODE2;
+    202          //		}
+    203          //		else if(SndBuf[i] == HDLC_CODE0)			//7d		
+    204          //		{
+    205          //			SndBufTmp[i+AddHeadNum] = HDLC_CODE0;
+    206          //			AddHeadNum++;
+    207          //			SndBufTmp[i+AddHeadNum] = HDLC_CODE3;
+    208          //		}	
+    209          //		else
+    210          //		{
+    211          //			SndBufTmp[i+AddHeadNum] = SndBuf[i];
+    212          //		}
+    213          //	}
+    214          
+    215          //	SndBufTmp[ByteStation + DataLen+4 + AddHeadNum] = FRAM_END0;
+    216          //			
+    217          //	SendCOM3(SndBufTmp,ByteStation+DataLen+4 +AddHeadNum + 1);  // 数据标号+1=数据长度		
+    218          //}
+    219          
+    220          
+    221          ////模拟数据发送
+    222          //void	MoldeSendrs485(void)
+    223          //{
+    224          //	uint8	SndBuf[100] = {0};
+    225          //	uint8	SndBufTmp[100] = {0};
+    226          ////	uint8	SumCheck8;
+    227          //	uint16	Crc16;
+    228          //	uint16	AddHeadNum;
+    229          //	uint16	i;
+    230          ////	uint8	Tmp;
+    231          //	uint8	ByteStation;
+    232          //	static	uint8 	FramNum =0;			//序号
+    233          ////	uint8	DeviceID;
+    234          ////	static	uint8	Test = 0;
+    235          //	
+    236          ////	DeviceID = DEVICE_ID0;
+    237          //	
+    238          //	ByteStation = 0;
+    239          //	SndBuf[ByteStation++] = FRAM_HERD0;
+    240          //	SndBuf[ByteStation++] = 0x11;
+    241          //	SndBuf[ByteStation++] = 0x51;	 
+    242          //	SndBuf[ByteStation++] = 0x06;	
+    243          //	SndBuf[ByteStation++] = 0;	
+    244          //	SndBuf[ByteStation++] = 0x0c;	
+    245          //	SndBuf[ByteStation++] = 0x01;
+    246          //	
+    247          //	SndBuf[ByteStation++] = FramNum++;
+    248          //	SndBuf[ByteStation++] = 0x01;
+    249          //	SndBuf[ByteStation++] = 0;
+    250          //	SndBuf[ByteStation++] = 0;
+    251          //	//memcpy(&SndBuf[ByteStation],DataBuf,DataLen);
+    252          //	
+    253          //	//SndBuf[ByteStation+DataLen+0] = DATA_TYPE;
+    254          //	//SndBuf[ByteStation+DataLen+0] = Test++;			//数据备用起始位置
+    255          //	//SndBuf[ByteStation+DataLen+1] = CheckNum;
+    256          //		
+    257          //	Crc16 = GetCrc16Check(&SndBuf[1+4],0x06);//枕头（1）+帧长度前包字节（4）
+    258          //	
+    259          ////	SndBuf[ByteStation+DataLen+2] = Crc16;
+    260          ////	SndBuf[ByteStation+DataLen+3] = Crc16>>8;
+    261          //	
+    262          //	SndBuf[ByteStation++] = Crc16>>8;
+    263          //	SndBuf[ByteStation++] = Crc16;
+    264          //	
+    265          ////////////////////////////////////////////////////////////
+    266          //	SndBufTmp[0] = SndBuf[0];						//准备数据发送
+    267          ////	SndBufTmp[1] = SndBuf[1];
+    268          ////	SndBufTmp[2] = SndBuf[2];						//准备数据发送
+    269          ////	SndBufTmp[3] = SndBuf[3];
+    270          ////	SndBufTmp[4] = SndBuf[4];
+    271          //		
+    272          //	
+    273          //	AddHeadNum = 0;
+    274          //	for(i = 1; i< ByteStation;i++ )				//数据，补移位 FRAM_HERD0
+    275          //	{
+    276          //		//SndBufTmp[i+AddHeadNum] = SndBuf[i];
+    277          //		
+    278          //		if(SndBuf[i] == FRAM_HERD0)					//7c
+    279          //		{
+    280          //			SndBufTmp[i+AddHeadNum] = HDLC_CODE0;
+    281          //			AddHeadNum++;
+    282          //			SndBufTmp[i+AddHeadNum] = HDLC_CODE1;
+    283          //			//AddHeadNum++;
+    284          //		}
+    285          //		else if(SndBuf[i] == FRAM_END0)				//7e
+    286          //		{
+    287          //			SndBufTmp[i+AddHeadNum] = HDLC_CODE0;
+    288          //			AddHeadNum++;
+    289          //			SndBufTmp[i+AddHeadNum] = HDLC_CODE2;
+    290          //			//AddHeadNum++;
+    291          //		}
+    292          //		else if(SndBuf[i] == HDLC_CODE0)			//7d		
+    293          //		{
+    294          //			SndBufTmp[i+AddHeadNum] = HDLC_CODE0;
+    295          //			AddHeadNum++;
+    296          //			SndBufTmp[i+AddHeadNum] = HDLC_CODE3;
+    297          //			//AddHeadNum++;
+    298          //		}	
+    299          //		else
+    300          //		{
+    301          //			SndBufTmp[i+AddHeadNum] = SndBuf[i];
+    302          //		}
+    303          //	}
+    304          
+    305          //	SndBufTmp[ByteStation +AddHeadNum] = FRAM_END0;
+    306          
+    307          //	
+    308          ////    WriteEN_TAX(1);	
+    309          ////    WriteEN_TAX(1);		
+    310          //	SendCOM3(SndBufTmp,ByteStation+AddHeadNum + 1);  // 数据标号+1=数据长度
+    311          ////	WriteEN_TAX(0);			
+    312          //}
+    313          
+    314          
+    315          //#define		BUF_LEN		256
+    316          
+    317          //uint8	g_NoRs485ComFlg = 0;
+    318          ////extern	uniRs485DataBuf g_uRs485Data;
+    319          ////----------------------------------------------------------------------------
+    320          //// 名    称：   void  RecTAX2Info(void)
+    321          //// 功    能：   接收TAX2信息。
+    322          //// 入口参数：   无
+    323          //// 出口参数：   无
+    324          ////----------------------------------------------------------------------------
+    325          //void  RecRs485(void)
+    326          //{
+    327          //	uint8		RecBuf[BUF_LEN] = {0};								//接收缓冲区
+    328          //	uint8		DataBuf[BUF_LEN/2] = {0};								//
+    329          ////	uint8		SendOilBuf[sizeof(stcFlshRec)];
+    330          //	static		uint32		Time = 0;
+    331          ////	uint32		i,j;
+    332          ////	static	  uint32	TestTmp = 0;
+    333          //	static	  uint8		LifeInfo = 0;
+    334          //	uint8		HostCodeFlg;		
+    335          ////	uint8		LifeInfo;
+    336          //	uint8		CodeType;	
+    337          //	uint8		IDNum;		
+    338          //	uint32		RecLen;		
+    339          //	uint32		DataLen;		   
+    340          //	uint32		FlshRec;
+    341          //			
+    342          //			
+    343          //	if( GetCom3FramRecEndFlg() == 1)								//有新的帧尾，进行数据处理
+    344          //	{
+    345          //		RecLen 	= ReadCOM3(RecBuf,sizeof(RecBuf));
+    346          //		
+    347          //		ClearCom3FramRecEndFlg();									//清标志，可重新取数
+    348          //		
+    349          //		if(!RecData(RecBuf,RecLen,DataBuf,DataLen))				//接受数据
+    350          //		{
+    351          //			//printfcom0("\r\n RS485数据接收失败!");
+    352          //		}
+    353          //		else
+    354          //		{
+    355          //			//printfcom0("\r\n RS485数据接收成功!");
+    356          
+    357          //			//////////////////////////////对数据解析
+    358          //			HostCodeFlg = DataBuf[0];
+    359          //			IDNum		= DataBuf[1];
+    360          //			LifeInfo 	= DataBuf[2];
+    361          //			CodeType 	= DataBuf[3];
+    362          
+    363          //			Time = GetSysTime();
+    364          //			
+    365          ////			//printfcom0("\r\n 数据 %x,%x,%x,%x",HostCodeFlg,IDNum,LifeInfo,CodeType);
+    366          //			
+    367          //			if( 	HostCodeFlg == HOST_CODE_FLG 
+    368          //				&&	IDNum		== ID_NUM
+    369          //				&&	CodeType	== CODE_TYPE
+    370          //			  )
+    371          //			{			
+    372          
+    373          //				FlshRec = g_CurFlshRecNum-1;				
+    374          
+    375          //				if(g_CurFlshRecNum)
+    376          //				{
+    377          //					ReadFlshRec((stcFlshRec *)RecBuf,FlshRec);
+    378          //				}
+    379          //				
+    380          //				Sendrs485(RecBuf,sizeof(stcFlshRec),LifeInfo);	//发送数据			
+    381          //				
+    382          //				g_NoRs485ComFlg = 0;							//置通讯标志	通讯成功 
+    383          //			}
+    384          //			else if( 	HostCodeFlg == HOST_CODE_FLG 
+    385          //			&&	IDNum		== ID_NUM
+    386          //			&&	CodeType	== READ_REC_CODE
+    387          //		 	 )
+    388          //			 {
+    389          //			 	 memcpy((uint8 *)&FlshRec,&DataBuf[4],sizeof(FlshRec));
+    390          //				 
+    391          //				if(g_CurFlshRecNum)
+    392          //				{
+    393          //					ReadFlshRec((stcFlshRec *)RecBuf,FlshRec);
+    394          //				}
+    395          //				
+    396          //				Sendrs485(RecBuf,sizeof(stcFlshRec),LifeInfo);	//发送数据			
+    397          //				
+    398          //				g_NoRs485ComFlg = 0;							//置通讯标志	通讯成功 
+    399          
+    400          //			 }
+    401          //		}
+    402          //	}
+    403          //	
+    404          //	if(GetSysTime() - Time > 600)								//600ms无通讯，退出
+    405          //	{
+    406          //		g_NoRs485ComFlg = 1;
+    407          //	}
+    408          //}
+    409          
+    410          ////串口1的485通信任务
+    411          //void	COM1RS485Task(void)
+    412          //{
+    413          //	static	uint32	 Time;
+    414          ////	RecRs485();
+    415          //	if(GetSysTime() - Time > 100)	
+    416          //	{
+    417          //		MoldeSendrs485();
+    418          //		Time = GetSysTime();
+    419          //	}
+    420          //}
+    421          
+    422          
+    423          
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

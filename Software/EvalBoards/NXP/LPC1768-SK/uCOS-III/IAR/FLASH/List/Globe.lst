@@ -1,0 +1,883 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.40.1.8447/W32 for ARM        21/Apr/2017  07:59:47
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Application\Library\Global\Globe.c
+#    Command line =  
+#        "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Application\Library\Global\Globe.c"
+#        -lCN "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A
+#        内燃机能耗系统\00 归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\"
+#        --diag_suppress Pe174 -o "V:\我的项目\04
+#        长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00 归档\05
+#        嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "D:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.2\arm\INC\c\DLib_Config_Normal.h" -I "V:\我的项目\04
+#        长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00 归档\05
+#        嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline
+#    List file    =  
+#        V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\Globe.lst
+#    Object file  =  
+#        V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00
+#        归档\05 嵌入式程序归档\NC136B-300-000
+#        统计装置\Micrium_LPC1768-SK_uCOS-III\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\Globe.o
+#
+###############################################################################
+
+V:\我的项目\04 长沙南车\2015年后项目\NC15-004-A 内燃机能耗系统\00 归档\05 嵌入式程序归档\NC136B-300-000 统计装置\Micrium_LPC1768-SK_uCOS-III\Application\Library\Global\Globe.c
+      1          #include <includes.h>
+      2          
+      3          extern 	void 	InputDebugState(void);
+      4          extern	void	PrinfDebugState(void);
+      5          
+      6          
+      7          //----------------------------------------------------------------------------
+      8          // 名    称：   void HardInit(void)
+      9          // 功    能:    硬件初始化
+     10          // 入口参数：	
+     11          // 出口参数：	
+     12          //----------------------------------------------------------------------------
+     13          void HardInit(void)
+     14          {
+     15          	//MCU
+     16          	InitTimer1();							//初始化定时器1系统时钟
+     17          	
+     18          	OpenCOM0Tax(28800);						//串口0初始化,波特率57600( 开关未开)
+     19          	
+     20          	OpenCOM1(9600);							//初始经串口1
+     21          	
+     22          #ifdef	HARD_VER_111122	
+     23          	mInitCH376Host();						//初始化USB
+     24          #endif
+     25          
+     26          	InitI2CIO();							//初始化I2C总线
+     27          
+     28          	InitAdc();								//初始比ADC
+     29          	
+     30          	InitPulse1T0();							//初始化频率测试
+     31          	//外部硬件
+     32          	InitDisplay();							//初始化显示
+     33          	
+     34          	InitICCard();							//初始化IC卡
+     35          	
+     36          	InitKey();								//初始化按键
+     37          	
+     38          	InitLed();								//初始化灯	
+     39          	
+     40          	InitDS3231();							//初始化时钟
+     41          		
+     42          	ResetFlash();							//复位Flsh
+     43          	
+     44          	InitFlshInfo();							//初始化Flsh
+     45          	
+     46          	ProtectFlash();							//Flash写保护
+     47          	
+     48          	ScanPowerAddr();						//扫描电量地址
+     49          }
+     50          
+     51          extern	uint8 GetLocoModInfo(uint32	LocoTyp,uint32 ModeNum,stcLocoModNum *sLocoModNum);
+     52          //----------------------------------------------------------------------------
+     53          // 名    称：   void PrinfSysInfo(void)
+     54          // 功    能:    系统初始化
+     55          // 入口参数：
+     56          // 出口参数：
+     57          //----------------------------------------------------------------------------
+     58          void	PrinfSysInfo(void)
+     59          {
+     60          	stcDeviceInfo		sDeviceInfo;
+     61          	stcReviseHight		sReviseHight;
+     62          	stcFixInfo  		sFix;
+     63          	stcDensity			sDensity;
+     64          	float				Density;
+     65          	int16				ReviseHight;
+     66          	uint8				OilBoxCod;
+     67          
+     68          	ReadHostInfo((stcDeviceInfo *)&sDeviceInfo);		//读出厂信息
+     69          	
+     70          	printfcom0("\r\n 能耗硬件版本号:	");
+     71          	SendCOM0(sDeviceInfo.HardwareVer,sizeof(sDeviceInfo.HardwareVer));
+     72          	printfcom0("\r\n 能耗软件版本号:	");
+     73          	SendCOM0(sDeviceInfo.SoftwareVer,sizeof(sDeviceInfo.SoftwareVer));
+     74          	
+     75          	printfcom0("\r\n ");
+     76          	OilBoxCod = GetOilBoxCod();
+     77          	printfcom0("\r\n 油箱模型号:	%d",OilBoxCod);
+     78          
+     79          	DisplaySet(150,1,"C_%u",OilBoxCod);	
+     80          
+     81            	if(ReadReviseHight((stcReviseHight *) &sReviseHight))
+     82            	{	
+     83            		ReviseHight = sReviseHight.ReviseHight / 10;
+     84            		printfcom0("\r\n 修正高度为:	%d",ReviseHight*10);
+     85            		DisplaySet(100,1,"%d.",ReviseHight*10);		
+     86          	}
+     87          		
+     88            	if( ReadDensity((stcDensity *) &sDensity))			//取密度
+     89          	{
+     90          		Density	=  ((float)sDensity.Density / 1000);
+     91          //  		printfcom0("\r\n 密度值:	%f",Density);
+     92            		DisplaySet(60,1,"%d.",(uint16)(1000*Density));		
+     93            	}
+     94            	
+     95           	ReadFixInfo((stcFixInfo *)&sFix);
+     96           	DisplaySet(100,1,"%d",sFix.LocoTyp);		
+     97           	//DisplaySet(100,1,"%d",(uint16)*sFix.LocoNum);		
+     98           	DisplaySet(100,1,"%d",sFix.LocoNum[0]+sFix.LocoNum[1]*256);		
+     99           
+    100            	printfcom0("\r\n ");
+    101          
+    102            	DisplaySet(60,1,"88888888");		
+    103           	DisplaySet(60,1,"        ");		
+    104          }
+    105          
+    106          //----------------------------------------------------------------------------
+    107          // 名    称：   void	GetDeviceInfoStr(uint8 *Buf)
+    108          // 功    能:    软件初始化
+    109          // 入口参数： 
+    110          // 出口参数：
+    111          //----------------------------------------------------------------------------
+    112          void	GetDeviceInfoStr(uint8 *Buf)
+    113          {
+    114          	stcDeviceInfo		sDeviceInfo;
+    115          	uint8	Tmp;
+    116          	uint32	strLen,AllStrLen = 0;
+    117          	
+    118          	ReCalPara(0);
+    119          	
+    120          	printfcom0("\r\n 装置信息如下!");
+    121          	strLen = sprintf((int8 *)&Buf[AllStrLen],"\r\n \r\n 装置信息如下：");
+    122          	
+    123          	printfcom0("\r\n 能耗硬件版本号:	");
+    124          	AllStrLen += strLen;
+    125          	strLen = sprintf((int8 *)&Buf[AllStrLen],"\r\n 设置的产品编号: %d",sDeviceInfo.DeviceNum);
+    126          	//printfcom0("\r\n strLen %d, AllStrLen = %d",strLen,AllStrLen);	
+    127          	
+    128          	AllStrLen += strLen;
+    129          	strLen = sprintf((int8 *)&Buf[AllStrLen],"\r\n 设置的产品硬件版本号: %s",sDeviceInfo.HardwareVer);
+    130          	//printfcom0("\r\n strLen %d, AllStrLen = %d",strLen,AllStrLen);		
+    131          	//printfcom0("\r\n 能耗软件版本号:	");
+    132          	
+    133          	AllStrLen += strLen;
+    134          	strLen = sprintf((int8 *)&Buf[AllStrLen],"\r\n 设置的产品软件版本号: %s",sDeviceInfo.SoftwareVer);
+    135          	printfcom0("\r\n strLen %d, AllStrLen = %d",strLen,AllStrLen);
+    136          //	strLen = sprintf((int8 *)&Buf[AllStrLen],"\r\n 设置的产品软件版本号: %d",Tmp);
+    137          	
+    138          #ifdef	HARD_VER_111122	
+    139          	Tmp = 1;
+    140          #endif		
+    141          	
+    142          #ifdef	HARD_VER_090426		
+    143          	if(Tmp == 0)
+    144          	{	
+    145          		printfcom0("\r\n 能耗软件版本号:	");
+    146          		AllStrLen += strLen;
+    147          		strLen = sprintf((int8 *)&Buf[AllStrLen],"\r\n 硬件版本: HV02");	
+    148          	}
+    149          	else
+    150          	{
+    151          		AllStrLen += strLen;
+    152          		strLen = sprintf((int8 *)&Buf[AllStrLen],"\r\n 硬件版本: HV03");			
+    153          	}	
+    154          #endif		
+    155          
+    156          #ifdef	HARD_VER_090214			
+    157          		AllStrLen += strLen;
+    158          		strLen = sprintf((int8 *)&Buf[AllStrLen],"\r\n 硬件版本: HV01");			
+    159          #endif		
+    160          
+    161          	AllStrLen += strLen;
+    162          	strLen = sprintf((int8 *)&Buf[AllStrLen],"\r\n 软件版本: SV12.03.12");		
+    163          }
+    164          
+    165          extern	void	TestFramOneWord(void);
+    166          extern	void	TestFlashID(void);
+    167          extern	uint32	GetLstFlshRecNum(void);
+    168          //----------------------------------------------------------------------------
+    169          // 名    称：   void SoftInit(void)
+    170          // 功    能:    软件初始化
+    171          // 入口参数： 
+    172          // 出口参数：
+    173          //----------------------------------------------------------------------------
+    174          void SoftInit(void)
+    175          {	
+    176          	g_CurFlshRecNum 	= GetCurFlshRecNum();
+    177          	
+    178          	g_LshRedFlshRecNum  = GetLstFlshRecNum();
+    179          	
+    180          	if(g_CurFlshRecNum < g_LshRedFlshRecNum)  //如果当前流水号小于已取流水号，则已取流水号冲新赋值
+    181          	{
+    182          		printfcom0("\r\n g_CurFlshRecNum < g_LshRedFlshRecNum");
+    183          		g_LshRedFlshRecNum = g_CurFlshRecNum;
+    184          	}
+    185          	
+    186          	InputDebugState();						//进入系统调式模式	
+    187          	
+    188          	InitErrDealSys();						//错误处理系统
+    189          	
+    190          	InitEvtDealSys();						//初始化事件系统
+    191          	
+    192          	OpenTax2();								//打开TAX2通信
+    193          	
+    194          	InitWatchDog();							//初始化dog
+    195          	
+    196          	TestFlashID();
+    197          
+    198          	TestFramOneWord();
+    199          	
+    200          	DelayX10ms(50);							//
+    201          }
+    202          
+    203          extern	void IniLocoModTab(void);
+    204          //----------------------------------------------------------------------------
+    205          // 名    称：   void SysInit(void)
+    206          // 功    能:    系统初始化
+    207          // 入口参数：
+    208          // 出口参数：
+    209          //----------------------------------------------------------------------------
+    210          void SysInit(void)
+    211          { 
+    212          	uint8	Tmp = 0;
+    213          	DisplaySet(100,1,"SV12");		
+    214          	DisplaySet(100,1,"10.02");
+    215          	
+    216          #ifdef	HARD_VER_111122	
+    217          	Tmp = 1;
+    218          #endif		
+    219          	
+    220          #ifdef	HARD_VER_090426		
+    221          	if(Tmp == 0)
+    222          	{	
+    223          		DisplaySet(100,1,"HV02");	
+    224          	}
+    225          	else
+    226          	{
+    227          		DisplaySet(100,1,"HV03");	
+    228          	}	
+    229          #endif		
+    230          #ifdef	HARD_VER_090214			
+    231          	DisplaySet(100,1,"HV01");		
+    232          #endif		
+    233          	//g_LshRedFlshRecNum 	= 0;
+    234          	
+    235          	printfcom0("\r\n 当前记录号：	%u",g_CurFlshRecNum);
+    236          	
+    237          	printfcom0("\r\n 读卡记录号：	%u",g_LshRedFlshRecNum);	
+    238          	
+    239          	printfcom0("\r\n ");
+    240          	
+    241          //	printfcom0("\r\n 运行模式：	%d  说明：1、为试验模式；0、为正常运行模式",g_TestModelFlg);	
+    242          		
+    243          	PrinfSysInfo();			
+    244          	
+    245          	PrinfDebugState();	
+    246          	
+    247          	IniLocoModTab();			//装置初始装置的模型编号
+    248          	
+    249          	DisplayTime();				//时间显示
+    250          
+    251          	DelayX10ms(50);			
+    252          	
+    253          	printfcom0("\r\n ");
+    254          }
+    255          
+    256          
+    257          //----------------------------------------------------------------------------
+    258          // 名    称：   void IncDisplay(void)
+    259          // 功    能:    系统初始化
+    260          // 入口参数：
+    261          // 出口参数：
+    262          //----------------------------------------------------------------------------
+    263          void IncDisplay(void)
+    264          { 
+    265          	static	uint32		Time = 0;
+    266          	static	uint32		Times = 0;
+    267          	static	int16		Prs1,Prs2;	
+    268          	static	uint8		i;
+    269          
+    270          	Time = GetSysTime();
+    271          
+    272          	for(i =0 ;i<8;)
+    273          	{
+    274          		
+    275          		COM0Task();
+    276          		
+    277          		//DelayX10ms(100);
+    278          		//COM1Task();
+    279          //		SysHoldTast();
+    280          			
+    281          		Prs1 = GetDip1Prs();
+    282          		Prs2 = GetDip2Prs();		
+    283          		
+    284          		//printfcom0("%4d.%4d",Prs1,Prs2);
+    285          		if(GetSysTime() - Time > 100)
+    286          		{		
+    287          			i++;
+    288          			Time = GetSysTime();
+    289          	
+    290          			if(i%2 == 0)
+    291          			{
+    292          				DisplaySet(100,1,"%4d.%4d.",Prs1,Prs2);
+    293          			}
+    294          			else
+    295          			{
+    296          				DisplaySet(100,1,"%4d.%4d",Prs1,Prs2);
+    297          			}
+    298          		}
+    299          	}
+    300          
+    301          	while(GetPlugFlg() == PLUG_IN_CARD)  //有东西插入
+    302          	{
+    303          		printfcom0("\r\n Plug Card!");
+    304          		
+    305          //		SysHoldTast();
+    306          
+    307          		if(Times < 1*60)		//1分钟通信
+    308          		{	
+    309          			COM0Task();
+    310          		}
+    311          		
+    312          		//DelayX10ms(50);
+    313          					
+    314          		Prs1 = GetDip1Prs();
+    315          		Prs2 = GetDip2Prs();
+    316          
+    317          		if(GetSysTime() - Time > 100)
+    318          		{		
+    319          			Time = GetSysTime();
+    320          
+    321          			Times++;
+    322          			
+    323          			if(Prs1<10000 && Prs2 < 10000)
+    324          			{
+    325          				printfcom0("%4d.%4d",Prs1,Prs2);
+    326          				
+    327          				if(Times%2 == 0)
+    328          				{
+    329          					DisplaySet(100,1,"%4d.%4d.",Prs1,Prs2);
+    330          				}
+    331          				else
+    332          				{
+    333          					DisplaySet(100,1,"%4d.%4d",Prs1,Prs2);
+    334          				}
+    335          			}
+    336          			else
+    337          			{
+    338          				printfcom0("%4d.%4d",Prs1,Prs2);
+    339          
+    340          				DisplaySet(100,1,"%d",Prs1);
+    341          				DisplaySet(100,1,"%d.",Prs2);
+    342          			}
+    343          		}
+    344          		
+    345          		if(Times > 2*60)		//2分钟退出
+    346          		{	
+    347          			DelayX10ms(200);
+    348          			return;
+    349          		}
+    350          	}	
+    351          	
+    352          	DelayX10ms(400);
+    353          	
+    354          	DisplaySet(150,1,"%d",g_CurFlshRecNum);
+    355          	DisplaySet(150,1,"%d.",g_LshRedFlshRecNum);
+    356          
+    357          }
+    358          
+    359          #define		START_EVT		31		
+    360          //----------------------------------------------------------------------------
+    361          // 名    称：   uint8 JudgeStartEvt(void)
+    362          // 功    能:    返回开机事件标识
+    363          // 入口参数： 
+    364          // 出口参数：
+    365          //----------------------------------------------------------------------------
+    366          uint8 	JudgeStartEvt(void)
+    367          {
+    368          	uint8	EvtType = RIGHT_DATA;
+    369          	static	uint32	Time = 0;
+    370          	
+    371          	EvtType = RIGHT_DATA;
+    372          	
+    373          	if( Time++ == 0 )
+    374          	{
+    375          		EvtType = START_EVT;	
+    376          	}
+    377          	
+    378          	return	EvtType;
+    379          }
+    380          
+    381          //----------------------------------------------------------------------------
+    382          // 名    称：   void PrinfDebugState(void)
+    383          // 功    能:    系统初始化
+    384          // 入口参数：
+    385          // 出口参数：
+    386          //----------------------------------------------------------------------------
+    387          void	PrinfDebugState(void)
+    388          {
+    389          	printfcom0("\r\n \r\n ");	
+    390          	printfcom0("\r\n 调试模型对应关系:");
+    391          	
+    392          	printfcom0("\r\n 装置运行：	<--->	* 设备信息设置和生产测试!");
+    393          	printfcom0("\r\n 时间显示：	<--->	* 显示时间!");
+    394          	printfcom0("\r\n 卡满：	   	<--->	* 将未读取的数据记录从串口读出!");
+    395          	printfcom0("\r\n 写卡完成：	<--->	* 串口零接收再从串口零发送出来!");
+    396          	printfcom0("\r\n 其它：	   	<--->	* IC卡调试，可做几种比较简单的卡!");
+    397          	printfcom0("\r\n TAXII： 	  <--->	* 进行接收TAXII测试!");
+    398          	printfcom0("\r\n 测量：	  	<--->	* 用IC卡取装置内所有的数据!");
+    399          	printfcom0("\r\n IC卡：	  	<--->	* 设备信息设置和生产测试!");
+    400          	
+    401          	printfcom0("\r\n \r\n ");	
+    402          }
+    403          
+    404          extern	void	 TestUsb(void);
+    405          extern	uint8	 ComModCard(stcCardFlg	* sCardFlg);
+    406          extern	uint8    WriteCardComModelTest(void);
+    407          extern	uint8    WritesSetDipCardTest(void);
+    408          extern	uint8    WritesTestCardTest(void);
+    409          extern	uint8    WriteExpandAddTest(void);
+    410          extern	uint8    WriteExpandSubTest(void);
+    411          extern	uint8    WriteDenDataCardTest(void);
+    412          
+    413          const char *MemorySizeInf[]  ={"512k","1M", "2M", "4M", "8M", "16M", "32M","64M"};	
+    414          
+    415          //----------------------------------------------------------------------------
+    416          // 名    称：  void InputDebugState(void)
+    417          // 功    能:   按下按键进入相应调试方式
+    418          // 入口参数：
+    419          // 出口参数：
+    420          //----------------------------------------------------------------------------
+    421          void InputDebugState(void)
+    422          {
+    423          	uint32 	EndTime;
+    424          	uint32	KeyFlag = 0;
+    425          	uint32	i,j;
+    426          	char*	pString[] = 
+    427          	{
+    428          		"* ",
+    429          		"* 测试串口输入油箱模型",
+    430          		"* 将未读取的数据记录从串口读出！",
+    431          		"* 进行接收TAXII测试！",
+    432          		"* IC卡调试，可做几种比较简单的卡！",
+    433          		"* 串口零接收再从串口零发送出来！",
+    434          		"* 串口设置参数！",
+    435          		"* 显示时间",
+    436          		"* 设备信息设置和生产测试！",
+    437          	};
+    438          
+    439          #ifdef	HARD_VER_090426
+    440          	while(KeyPressed())
+    441          	{
+    442          		KeyFlag = 1;
+    443          		for(i = 8 ; 0 < i;i--)
+    444          		{
+    445          			if(i>4)
+    446          			{
+    447          				j = 12 - i;
+    448          			}
+    449          			else
+    450          			{
+    451          				j = 4 - i;
+    452          			}
+    453          			
+    454          #ifdef	HARD_VER_111122
+    455          			LightLed(j);	
+    456          #else
+    457          			LightLed(i - 1);	
+    458          #endif
+    459          			printfcom0("\r\n LightLed(%u)",i);	
+    460          			EndTime = GetSysTime() + 1*100;	
+    461          			while(GetSysTime() < EndTime )
+    462          			{
+    463          				if(KeyLoosen())
+    464          				{
+    465          					KeyFlag = 2;
+    466          					printfcom0("\r\n * Input Debug State:");
+    467          					printfcom0(pString[i]);
+    468          		  			printfcom0("\r\n \r\n ");					
+    469          					break;
+    470          				}
+    471          			} 
+    472          #ifdef	HARD_VER_111122			
+    473          			UnLightLed(j);
+    474          #else			
+    475          			UnLightLed(i - 1);
+    476          #endif
+    477          			if(KeyFlag == 2)
+    478          			{
+    479          				break;
+    480          			}
+    481          		}
+    482          	}
+    483          	
+    484          	OffAllLed();
+    485          	
+    486          	if(!KeyFlag || KeyFlag != 2)								//没有按键
+    487          	{
+    488          		return;
+    489          	}
+    490          	
+    491          	switch(8 - i)
+    492          #endif
+    493          
+    494          #ifdef	HARD_VER_090214
+    495          	while(KeyPressed())
+    496          	{
+    497          		KeyFlag = 1;
+    498          		for(i = 0 ; 0 < 8;i++)
+    499          		{
+    500          			LightLed(i);		
+    501          			EndTime = GetSysTime() + 1*100;	
+    502          			while(GetSysTime() < EndTime )
+    503          			{
+    504          				if(KeyLoosen())
+    505          				{
+    506          					KeyFlag = 2;
+    507          					printfcom0("\r\n * Input Debug State:");
+    508          					printfcom0(pString[i]);
+    509          		  			printfcom0("\r\n \r\n ");					
+    510          					break;
+    511          				}
+    512          			} 
+    513          			UnLightLed(i);
+    514          			if(KeyFlag == 2)
+    515          			{
+    516          				break;
+    517          			}
+    518          		}
+    519          	}
+    520          	
+    521          	OffAllLed();
+    522          	
+    523          	if(!KeyFlag || KeyFlag != 2)									//没有按键
+    524          	{
+    525          		return;
+    526          	}
+    527          	
+    528          	switch( i )	
+    529          #endif
+    530          	
+    531          	{
+    532          		case 0:	
+    533          				FactoryTest();	break;								//生产测试	
+    534          
+    535          		case 1:	DisplayString("DIST");								//显示时间
+    536          				
+    537          				while(1)
+    538          				{	
+    539          					uint32	Time = 0;
+    540          					
+    541          					if(GetSysTime() - Time > 100)
+    542          					{
+    543          						PrintfTime();
+    544          						DisplayTime();
+    545          					}
+    546          					
+    547          //					SysHoldTast();
+    548          				}
+    549          				
+    550          				break;
+    551          //---------------------------------------------				
+    552          		case 2:		
+    553          				DisplayString("FOUT");	
+    554          				OpenCOM0(57600);									//打开串口0
+    555          				PrintfAllFlshRec();
+    556          				while(1);
+    557          				break;
+    558          //---------------------------------------------				
+    559          		case 3:
+    560          				DisplayString("CMOD");							
+    561          		
+    562          				DelayX10ms(100);
+    563          		
+    564          				//COM0GetModelCard();
+    565          						
+    566          				break;
+    567          //---------------------------------------------				
+    568          		case 4: 
+    569          				DisplayString("CSET");								//显示时间
+    570          		
+    571          				while(1)	
+    572          				{
+    573          					while(!PlugICCard())
+    574          					{;}		
+    575          					
+    576          						
+    577          					DisplayString("OILS");							//模型
+    578          					WriteCardOilModelTest();				
+    579          					printfcom0("\r\n WriteCardOilModelTest\r\n ");					
+    580          					DelayX10ms(200);	
+    581          					
+    582          					DisplayString("DATA");							//数据
+    583          					printfcom0("\r\n WriteCardDataCardTest\r\n ");					
+    584          					WriteCardDataCardTest();
+    585          					DelayX10ms(200);	
+    586          						
+    587          					//DisplayString("TIME");						//时间
+    588          					//printfcom0("\r\n WriteCardTimeCardTest\r\n ");					
+    589          					//WriteCardTimeCardTest();
+    590          					//DelayX10ms(200);
+    591          					
+    592          					DisplayString("DENS");							//密度
+    593          					printfcom0("\r\n WriteDensityCardTest\r\n ");					
+    594          					WriteDensityCardTest();
+    595          					DelayX10ms(200);	
+    596          
+    597          					DisplayString("DDNS");							//密度+数据
+    598          					printfcom0("\r\n WriteDensityCardTest\r\n ");					
+    599          					WriteDenDataCardTest();
+    600          					DelayX10ms(200);	
+    601          					
+    602          					DisplayString("DDHS");							//密度+数据+gao
+    603          					printfcom0("\r\n WriteDensityCardTest\r\n ");					
+    604          					WriteDenDataCardTest();
+    605          					DelayX10ms(200);	
+    606          								
+    607          					DisplayString("COPY");							//复制卡
+    608          					printfcom0("\r\n WriteCopyCardTest\r\n ");					
+    609          					WriteCopyCardTest();
+    610          					DelayX10ms(400);	
+    611          
+    612          					DisplayString("FRMC");							//复制卡
+    613          					WriteCopyFramTest();
+    614          					printfcom0("\r\n WriteCopyFramTest\r\n ");					
+    615          					DelayX10ms(200);	
+    616          					
+    617          					DisplayString("SETV");							//置数卡
+    618          					WritesSetDipCardTest();
+    619          					printfcom0("\r\n WritesSetDipCardTest\r\n ");					
+    620          					DelayX10ms(200);	
+    621          									
+    622          					DisplayString("TEST");							//置数卡
+    623          					WritesTestCardTest();
+    624          					printfcom0("\r\n WritesTestCardTest\r\n ");					
+    625          					DelayX10ms(200);	
+    626          									
+    627          					DisplayString("SETC");							//
+    628          					WriteCardComModelTest();
+    629          					printfcom0("\r\n WriteCardComModelTest\r\n ");					
+    630          					DelayX10ms(200);	
+    631          					
+    632          					DisplayString("TIMA");							//特殊模型卡 
+    633          					WriteExpandAddTest();
+    634          					printfcom0("\r\n WriteExpandAddTest\r\n ");					
+    635          					DelayX10ms(200);		
+    636          									
+    637          					DisplayString("TIMS");							//特殊模型卡
+    638          					WriteExpandSubTest();
+    639          					printfcom0("\r\n WriteCardComModelTest\r\n ");		
+    640          								
+    641          					DelayX10ms(200);						DisplayString("RIND");							//读索引
+    642          					printfcom0("\r\n ReadCardIndexTest\r\n ");					
+    643          					ReadCardIndexTest();
+    644          					DelayX10ms(500);										
+    645          				}	
+    646          		break;
+    647          //---------------------------------------------				
+    648          		case 5:
+    649          				DisplayString("C0-0.");							
+    650          				
+    651          				printfcom0("\r\n 串口零接收TAX箱信息，串口0以波特率28800转发TAX箱信息;\r\n ");					
+    652          				
+    653          				//COM0SendCardFlg();
+    654          				OpenTax2();											//打开TAX2通信
+    655          
+    656          				while(1)
+    657          				{						
+    658          					TestTAX2Info();				
+    659          				}
+    660          				break;
+    661          				/*
+    662          				DisplayString("FTOC");							
+    663          
+    664          				g_LshRedFlshRecNum 	= 0;
+    665          
+    666          				while(!PlugICCard())
+    667          				{;}		
+    668          				
+    669          				FramToCard();
+    670          				
+    671          				DisplayString("FTRA");							
+    672          
+    673          				while(1)
+    674          				{;}
+    675          				*/
+    676          		break;
+    677          //---------------------------------------------		
+    678          		case 6:
+    679          				
+    680          				
+    681          				DisplayString("C0-0");	
+    682          				OpenTax2();											//打开TAX2通信
+    683          
+    684          				while(1)
+    685          				{						
+    686          					COM0ToCOM0();
+    687          				}
+    688          		
+    689          				//DisplayString("TEST");							
+    690          				
+    691          				//g_TestModelFlg = 1;
+    692          				/**/
+    693          				//DisplayString("PARR");	
+    694          				
+    695          				//DataCardPartRead();
+    696          								
+    697          				DelayX10ms(200);
+    698          				break;
+    699          		break;
+    700          //---------------------------------------------	
+    701          		case 7:
+    702          				DisplayString("SMOD");							
+    703          
+    704          				printfcom0("\r\n 测试串口输入油箱模型");
+    705          				while(1)
+    706          				{
+    707          				//	COM0SetModel();
+    708          				}
+    709          				break;				
+    710          		break;
+    711          //---------------------------------------------	
+    712          				
+    713          		default:
+    714          		break;
+    715          	}
+    716          }
+    717          /**/
+
+Errors: 22
+Warnings: 63

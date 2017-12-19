@@ -1,0 +1,569 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       14/Dec/2017  10:39:32
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\uCOS-III\Source\os_pend_multi.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\uCOS-III\Source\os_pend_multi.c"
+#        -lCN "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\os_pend_multi.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\os_pend_multi.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\uCOS-III\Source\os_pend_multi.c
+      1          /*
+      2          ************************************************************************************************************************
+      3          *                                                      uC/OS-III
+      4          *                                                 The Real-Time Kernel
+      5          *
+      6          *                                  (c) Copyright 2009-2012; Micrium, Inc.; Weston, FL
+      7          *                           All rights reserved.  Protected by international copyright laws.
+      8          *
+      9          *                                               PEND ON MULTIPLE OBJECTS
+     10          *
+     11          * File    : OS_PEND_MULTI.C
+     12          * By      : JJL
+     13          * Version : V3.03.01
+     14          *
+     15          * LICENSING TERMS:
+     16          * ---------------
+     17          *           uC/OS-III is provided in source form for FREE short-term evaluation, for educational use or 
+     18          *           for peaceful research.  If you plan or intend to use uC/OS-III in a commercial application/
+     19          *           product then, you need to contact Micrium to properly license uC/OS-III for its use in your 
+     20          *           application/product.   We provide ALL the source code for your convenience and to help you 
+     21          *           experience uC/OS-III.  The fact that the source is provided does NOT mean that you can use 
+     22          *           it commercially without paying a licensing fee.
+     23          *
+     24          *           Knowledge of the source code may NOT be used to develop a similar product.
+     25          *
+     26          *           Please help us continue to provide the embedded community with the finest software available.
+     27          *           Your honesty is greatly appreciated.
+     28          *
+     29          *           You can contact us at www.micrium.com, or by phone at +1 (954) 217-2036.
+     30          ************************************************************************************************************************
+     31          */
+     32          
+     33          #define  MICRIUM_SOURCE
+     34          #include <os.h>
+     35          
+     36          #ifdef VSC_INCLUDE_SOURCE_FILE_NAMES
+     37          const  CPU_CHAR  *os_pend_multi__c = "$Id: $";
+     38          #endif
+     39          
+     40          
+     41          #if (((OS_CFG_Q_EN > 0u) || (OS_CFG_SEM_EN > 0u)) && (OS_CFG_PEND_MULTI_EN > 0u))
+     42          /*
+     43          ************************************************************************************************************************
+     44          *                                               PEND ON MULTIPLE OBJECTS
+     45          *
+     46          * Description: This function pends on multiple objects.  The objects pended on MUST be either semaphores or message
+     47          *              queues.  If multiple objects are ready at the start of the pend call, then all available objects that
+     48          *              are ready will be indicated to the caller.  If the task must pend on the multiple events then, as soon
+     49          *              as one of the object is either posted, aborted or deleted, the task will be readied.
+     50          *
+     51          *              This function only allows you to pend on semaphores and/or message queues.
+     52          *
+     53          * Arguments  : p_pend_data_tbl   is a pointer to an array of type OS_PEND_DATA which contains a list of all the
+     54          *                                objects we will be waiting on.  The caller must declare an array of OS_PEND_DATA
+     55          *                                and initialize the .PendObjPtr (see below) with a pointer to the object (semaphore or
+     56          *                                message queue) to pend on.
+     57          *
+     58          *                                    OS_PEND_DATA  MyPendArray[?];
+     59          *
+     60          *                                The OS_PEND_DATA field are as follows:
+     61          *
+     62          *                                    OS_PEND_DATA  *PrevPtr;      Used to link OS_PEND_DATA objects
+     63          *                                    OS_PEND_DATA  *NextPtr;      Used to link OS_PEND_DATA objects
+     64          *                                    OS_TCB        *TCBPtr;       Pointer to the TCB that is pending on multiple objects
+     65          *                                    OS_PEND_OBJ   *PendObjPtr;   USER supplied field which is a pointer to the
+     66          *                                                                 semaphore or message queue you want to pend on.  When
+     67          *                                                                 you call OSPendMulti() you MUST fill this field for
+     68          *                                                                 each of the objects you want to pend on.
+     69          *                                    OS_PEND_OBJ   *RdyObjPtr;    OSPendMulti() will return the object that was posted,
+     70          *                                                                 aborted or deleted in this field.
+     71          *                                    void          *RdyMsgPtr;    OSPendMulti() will fill in this field if the object
+     72          *                                                                 posted was a message queue.  This corresponds to the
+     73          *                                                                 message posted.
+     74          *                                    OS_MSG_SIZE    RdyMsgSize;   OSPendMulti() will fill in this field if the object
+     75          *                                                                 posted was a message queue.  This corresponds to the
+     76          *                                                                 size of the message posted.
+     77          *                                    CPU_TS         RdyTS;        OSPendMulti() will fill in this field if the object
+     78          *                                                                 was a message queue.  This corresponds to the time
+     79          *                                                                 stamp when the message was posted.  However, if the
+     80          *                                                                 object is a semaphore and the object is already ready
+     81          *                                                                 the this field will be set to (CPU_TS)0 because it's
+     82          *                                                                 not possible to know when the semaphore was posted.
+     83          *
+     84          *              tbl_size      is the size (in number of elements) of the OS_PEND_DATA array passed to this function.  In
+     85          *                            other words, if the called needs to pend on 4 separate objects (semaphores and/or queues)
+     86          *                            then you would pass 4 to this call.
+     87          *
+     88          *              timeout       is an optional timeout period (in clock ticks).  If non-zero, your task will wait any of
+     89          *                            the objects up to the amount of time specified by this argument. If you specify 0, however,
+     90          *                            your task will wait forever for the specified objects or, until an object is posted,
+     91          *                            aborted or deleted.
+     92          *
+     93          *              opt           determines whether the user wants to block if none of the objects are available.
+     94          *
+     95          *                                OS_OPT_PEND_BLOCKING
+     96          *                                OS_OPT_PEND_NON_BLOCKING
+     97          *
+     98          *              p_err         is a pointer to where an error message will be deposited.  Possible error messages are:
+     99          *
+    100          *                                OS_ERR_NONE              The call was successful and your task owns the resources or,
+    101          *                                                         the objects you are waiting for occurred. Check the .RdyObjPtr
+    102          *                                                         fields to know which objects have been posted.
+    103          *                                OS_ERR_OBJ_TYPE          If any of the .PendPtr is NOT a semaphore or a message queue
+    104          *                                OS_ERR_OPT_INVALID       If you specified an invalid option for 'opt'
+    105          *                                OS_ERR_PEND_ABORT        The wait on the events was aborted; check the .RdyObjPtr fields
+    106          *                                                         for which objects were aborted.
+    107          *                                OS_ERR_PEND_DEL          The wait on the events was aborted; check the .RdyObjPtr fields
+    108          *                                                         for which objects were aborted.
+    109          *                                OS_ERR_PEND_ISR          If you called this function from an ISR
+    110          *                                OS_ERR_PEND_LOCKED       If you called this function when the scheduler is locked.
+    111          *                                OS_ERR_PEND_WOULD_BLOCK  If the caller didn't want to block and no object ready
+    112          *                                OS_ERR_STATUS_INVALID    Invalid pend status
+    113          *                                OS_ERR_PTR_INVALID       If you passes a NULL pointer of 'p_pend_data_tbl'
+    114          *                                OS_ERR_TIMEOUT           The objects were not posted within the specified 'timeout'.
+    115          *
+    116          * Returns    : >  0          the number of objects returned as ready, aborted or deleted
+    117          *              == 0          if no events are returned as ready because of timeout or upon error.
+    118          ************************************************************************************************************************
+    119          */
+    120          /*$PAGE*/
+    121          OS_OBJ_QTY  OSPendMulti (OS_PEND_DATA  *p_pend_data_tbl,
+    122                                   OS_OBJ_QTY     tbl_size,
+    123                                   OS_TICK        timeout,
+    124                                   OS_OPT         opt,
+    125                                   OS_ERR        *p_err)
+    126          {
+    127              CPU_BOOLEAN   valid;
+    128              OS_OBJ_QTY    nbr_obj_rdy;
+    129              CPU_SR_ALLOC();
+    130          
+    131          
+    132          
+    133          #ifdef OS_SAFETY_CRITICAL
+    134              if (p_err == (OS_ERR *)0) {
+    135                  OS_SAFETY_CRITICAL_EXCEPTION();
+    136                  return ((OS_OBJ_QTY)0);
+    137              }
+    138          #endif
+    139          
+    140          #if OS_CFG_CALLED_FROM_ISR_CHK_EN > 0u
+    141              if (OSIntNestingCtr > (OS_NESTING_CTR)0) {              /* Can't pend from an ISR                                 */
+    142                 *p_err = OS_ERR_PEND_ISR;
+    143                  return ((OS_OBJ_QTY)0);
+    144              }
+    145          #endif
+    146          
+    147          #if OS_CFG_ARG_CHK_EN > 0u
+    148              if (p_pend_data_tbl == (OS_PEND_DATA *)0) {             /* Validate 'p_pend_data_tbl'                             */
+    149                 *p_err = OS_ERR_PTR_INVALID;
+    150                  return ((OS_OBJ_QTY)0);
+    151              }
+    152              if (tbl_size == (OS_OBJ_QTY)0) {                        /* Array size must be > 0                                 */
+    153                 *p_err = OS_ERR_PTR_INVALID;
+    154                  return ((OS_OBJ_QTY)0);
+    155              }
+    156              switch (opt) {
+    157                  case OS_OPT_PEND_BLOCKING:
+    158                  case OS_OPT_PEND_NON_BLOCKING:
+    159                       break;
+    160          
+    161                  default:
+    162                      *p_err = OS_ERR_OPT_INVALID;
+    163                       return ((OS_OBJ_QTY)0);
+    164              }
+    165          #endif
+    166          
+    167              valid = OS_PendMultiValidate(p_pend_data_tbl,           /* -------- Validate objects to be OS_SEM or OS_Q ------- */
+    168                                           tbl_size);
+    169              if (valid == DEF_FALSE) {
+    170                 *p_err = OS_ERR_OBJ_TYPE;                            /* Invalid, not OS_SEM or OS_Q                            */
+    171                  return ((OS_OBJ_QTY)0);
+    172              }
+    173          
+    174          /*$PAGE*/
+    175              CPU_CRITICAL_ENTER();
+    176              nbr_obj_rdy = OS_PendMultiGetRdy(p_pend_data_tbl,       /* --------- SEE IF OBJECT(s) HAVE BEEN POSTED ---------- */
+    177                                               tbl_size);
+    178              if (nbr_obj_rdy > (OS_OBJ_QTY)0) {
+    179                  CPU_CRITICAL_EXIT();
+    180                 *p_err = OS_ERR_NONE;
+    181                  return ((OS_OBJ_QTY)nbr_obj_rdy);
+    182              }
+    183          
+    184              if ((opt & OS_OPT_PEND_NON_BLOCKING) != (OS_OPT)0) {    /* Caller wants to block if not available?                */
+    185                  CPU_CRITICAL_EXIT();
+    186                 *p_err = OS_ERR_PEND_WOULD_BLOCK;                    /* No                                                     */
+    187                  return ((OS_OBJ_QTY)0);
+    188              } else {
+    189                  if (OSSchedLockNestingCtr > (OS_NESTING_CTR)0) {    /* Can't pend when the scheduler is locked                */
+    190                      CPU_CRITICAL_EXIT();
+    191                     *p_err = OS_ERR_SCHED_LOCKED;
+    192                      return ((OS_OBJ_QTY)0);
+    193                  }
+    194              }
+    195                                                                      /* Lock the scheduler/re-enable interrupts                */
+    196              OS_CRITICAL_ENTER_CPU_EXIT();
+    197                                                                      /* ------ NO OBJECT READY, PEND ON MULTIPLE OBJECTS ----- */
+    198              OS_PendMultiWait(p_pend_data_tbl,                       /* Suspend task until object posted or timeout occurs     */
+    199                               tbl_size,
+    200                               timeout);
+    201          
+    202              OS_CRITICAL_EXIT_NO_SCHED();
+    203          
+    204              OSSched();                                              /* Find next highest priority task ready                  */
+    205          
+    206              CPU_CRITICAL_ENTER();
+    207              switch (OSTCBCurPtr->PendStatus) {
+    208                  case OS_STATUS_PEND_OK:                             /* We got one of the objects posted to                    */
+    209                      *p_err = OS_ERR_NONE;
+    210                       break;
+    211          
+    212                  case OS_STATUS_PEND_ABORT:                          /* Indicate that the multi-pend was aborted               */
+    213                      *p_err = OS_ERR_PEND_ABORT;
+    214                       break;
+    215          
+    216                  case OS_STATUS_PEND_TIMEOUT:                        /* Indicate that we didn't get semaphore within timeout   */
+    217                      *p_err = OS_ERR_TIMEOUT;
+    218                       break;
+    219          
+    220                  case OS_STATUS_PEND_DEL:                            /* Indicate that an object pended on has been deleted     */
+    221                      *p_err = OS_ERR_OBJ_DEL;
+    222                      break;
+    223          
+    224                  default:
+    225                      *p_err = OS_ERR_STATUS_INVALID;
+    226                       break;
+    227              }
+    228          
+    229              OSTCBCurPtr->PendStatus = OS_STATUS_PEND_OK;
+    230              CPU_CRITICAL_EXIT();
+    231          
+    232              return ((OS_OBJ_QTY)1);
+    233          }
+    234          
+    235          /*$PAGE*/
+    236          /*
+    237          ************************************************************************************************************************
+    238          *                                              GET A LIST OF OBJECTS READY
+    239          *
+    240          * Description: This function is called by OSPendMulti() to obtain the list of object that are ready.
+    241          *
+    242          * Arguments  : p_pend_data_tbl   is a pointer to an array of OS_PEND_DATA
+    243          *              ---------------
+    244          *
+    245          *              tbl_size          is the size of the array
+    246          *
+    247          * Returns    :  > 0              the number of objects ready
+    248          *              == 0              if no object ready
+    249          *
+    250          * Note       : This function is INTERNAL to uC/OS-III and your application should not call it.
+    251          ************************************************************************************************************************
+    252          */
+    253          
+    254          OS_OBJ_QTY  OS_PendMultiGetRdy (OS_PEND_DATA  *p_pend_data_tbl,
+    255                                          OS_OBJ_QTY     tbl_size)
+    256          {
+    257              OS_OBJ_QTY   i;
+    258              OS_OBJ_QTY   nbr_obj_rdy;
+    259          #if OS_CFG_Q_EN > 0u
+    260              OS_ERR       err;
+    261              OS_MSG_SIZE  msg_size;
+    262              OS_Q        *p_q;
+    263              void        *p_void;
+    264              CPU_TS       ts;
+    265          #endif
+    266          #if OS_CFG_SEM_EN  > 0u
+    267              OS_SEM      *p_sem;
+    268          #endif
+    269          
+    270          
+    271          
+    272              nbr_obj_rdy = (OS_OBJ_QTY)0;
+    273              for (i = 0u; i < tbl_size; i++) {
+    274                  p_pend_data_tbl->RdyObjPtr  = (OS_PEND_OBJ  *)0;         /* Clear all fields                                  */
+    275                  p_pend_data_tbl->RdyMsgPtr  = (void         *)0;
+    276                  p_pend_data_tbl->RdyMsgSize = (OS_MSG_SIZE   )0;
+    277                  p_pend_data_tbl->RdyTS      = (CPU_TS        )0;
+    278                  p_pend_data_tbl->NextPtr    = (OS_PEND_DATA *)0;
+    279                  p_pend_data_tbl->PrevPtr    = (OS_PEND_DATA *)0;
+    280                  p_pend_data_tbl->TCBPtr     = (OS_TCB       *)0;
+    281          #if OS_CFG_Q_EN > 0u
+    282                  p_q = (OS_Q *)((void *)p_pend_data_tbl->PendObjPtr);     /* Assume we are pointing to a message queue object  */
+    283                  if (p_q->Type == OS_OBJ_TYPE_Q) {                        /* Is it a message queue?                            */
+    284                      p_void = OS_MsgQGet(&p_q->MsgQ,                      /* Yes, Any message waiting in the message queue?    */
+    285                                          &msg_size,
+    286                                          &ts,
+    287                                          &err);
+    288                      if (err == OS_ERR_NONE) {
+    289                          p_pend_data_tbl->RdyObjPtr  = p_pend_data_tbl->PendObjPtr;
+    290                          p_pend_data_tbl->RdyMsgPtr  = p_void;            /*      Yes, save the message received               */
+    291                          p_pend_data_tbl->RdyMsgSize = msg_size;
+    292                          p_pend_data_tbl->RdyTS      = ts;
+    293                          nbr_obj_rdy++;
+    294                      }
+    295                  }
+    296          #endif
+    297          
+    298          #if OS_CFG_SEM_EN > 0u
+    299                  p_sem = (OS_SEM *)((void *)p_pend_data_tbl->PendObjPtr); /* Assume we are pointing to a semaphore object      */
+    300                  if (p_sem->Type == OS_OBJ_TYPE_SEM) {                    /* Is it a semaphore?                                */
+    301                      if (p_sem->Ctr > 0u) {                               /* Yes, Semaphore has been signaled?                 */
+    302                          p_sem->Ctr--;                                    /*      Yes, caller may proceed                      */
+    303                          p_pend_data_tbl->RdyObjPtr  = p_pend_data_tbl->PendObjPtr;
+    304                          p_pend_data_tbl->RdyTS      = p_sem->TS;
+    305                          nbr_obj_rdy++;
+    306                      }
+    307                  }
+    308          #endif
+    309          
+    310                  p_pend_data_tbl++;
+    311              }
+    312              return (nbr_obj_rdy);
+    313          }
+    314          
+    315          /*$PAGE*/
+    316          /*
+    317          ************************************************************************************************************************
+    318          *                                 VERIFY THAT OBJECTS PENDED ON ARE EITHER SEMAPHORES or QUEUES
+    319          *
+    320          * Description: This function is called by OSPendMulti() to verify that we are multi-pending on either semaphores or
+    321          *              message queues.
+    322          *
+    323          * Arguments  : p_pend_data_tbl    is a pointer to an array of OS_PEND_DATA
+    324          *              ---------------
+    325          *
+    326          *              tbl_size           is the size of the array
+    327          *
+    328          * Returns    : TRUE               if all objects pended on are either semaphores of queues
+    329          *              FALSE              if at least one object is not a semaphore or queue.
+    330          *
+    331          * Note       : This function is INTERNAL to uC/OS-III and your application should not call it.
+    332          ************************************************************************************************************************
+    333          */
+    334          
+    335          CPU_BOOLEAN  OS_PendMultiValidate (OS_PEND_DATA  *p_pend_data_tbl,
+    336                                             OS_OBJ_QTY     tbl_size)
+    337          {
+    338              OS_OBJ_QTY  i;
+    339              OS_OBJ_QTY  ctr;
+    340          #if OS_CFG_SEM_EN  > 0u
+    341              OS_SEM      *p_sem;
+    342          #endif
+    343          #if OS_CFG_Q_EN > 0u
+    344              OS_Q        *p_q;
+    345          #endif
+    346          
+    347          
+    348              for (i = 0u; i < tbl_size; i++) {
+    349                  if (p_pend_data_tbl->PendObjPtr == (OS_PEND_OBJ *)0) {   /* All .PendObjPtr in the table MUST be non NULL     */
+    350                      return (DEF_FALSE);
+    351                  }
+    352          
+    353                  ctr = 0u;
+    354          #if OS_CFG_SEM_EN  > 0u
+    355                  p_sem = (OS_SEM *)((void *)p_pend_data_tbl->PendObjPtr); /* All objects to pend on must be of type OS_SEM ... */
+    356                  if (p_sem->Type == OS_OBJ_TYPE_SEM) {
+    357                      ctr++;
+    358                  }
+    359          #endif
+    360          
+    361          #if OS_CFG_Q_EN > 0u
+    362                  p_q = (OS_Q *)((void *)p_pend_data_tbl->PendObjPtr);     /* ... or of type OS_Q                               */
+    363                  if (p_q->Type == OS_OBJ_TYPE_Q) {
+    364                      ctr++;
+    365                  }
+    366          #endif
+    367          
+    368                  if (ctr == (OS_OBJ_QTY)0) {
+    369                      return (DEF_FALSE);                                  /* Found at least one invalid object type            */
+    370                  }
+    371                  p_pend_data_tbl++;
+    372              }
+    373              return (DEF_TRUE);
+    374          }
+    375          
+    376          /*$PAGE*/
+    377          /*
+    378          ************************************************************************************************************************
+    379          *                                 MAKE TASK WAIT FOR ANY OF MULTIPLE EVENTS TO OCCUR
+    380          *
+    381          * Description: This function is called by OSPendMulti() to suspend a task because any one of multiple objects that have
+    382          *              not been posted to.
+    383          *
+    384          * Arguments  : p_pend_data_tbl    is a pointer to an array of OS_PEND_DATA
+    385          *              ---------------
+    386          *
+    387          *              tbl_size           is the size of the array
+    388          *
+    389          *              timeout            is the timeout to wait in case none of the objects become ready
+    390          *
+    391          * Returns    : none
+    392          *
+    393          * Note       : This function is INTERNAL to uC/OS-III and your application should not call it.
+    394          ************************************************************************************************************************
+    395          */
+    396          
+    397          void  OS_PendMultiWait (OS_PEND_DATA  *p_pend_data_tbl,
+    398                                  OS_OBJ_QTY     tbl_size,
+    399                                  OS_TICK        timeout)
+    400          {
+    401              OS_OBJ_QTY      i;
+    402              OS_PEND_LIST   *p_pend_list;
+    403          
+    404          #if OS_CFG_Q_EN > 0u
+    405              OS_Q           *p_q;
+    406          #endif
+    407          
+    408          #if OS_CFG_SEM_EN > 0u
+    409              OS_SEM         *p_sem;
+    410          #endif
+    411          
+    412          
+    413          
+    414              OSTCBCurPtr->PendOn             = OS_TASK_PEND_ON_MULTI;   /* Resource not available, wait until it is            */
+    415              OSTCBCurPtr->PendStatus         = OS_STATUS_PEND_OK;
+    416              OSTCBCurPtr->PendDataTblEntries = tbl_size;
+    417              OSTCBCurPtr->PendDataTblPtr     = p_pend_data_tbl;
+    418          
+    419              OS_TaskBlock(OSTCBCurPtr,                                  /* Block the task waiting for object to be posted ...  */
+    420                           timeout);                                     /* ... but with a timeout if not                       */
+    421          
+    422              for (i = 0u; i < tbl_size; i++) {
+    423                  p_pend_data_tbl->TCBPtr = OSTCBCurPtr;                 /* Every entry points back to the TCB of the task      */
+    424          
+    425          #if OS_CFG_SEM_EN > 0u
+    426                  p_sem = (OS_SEM *)((void *)p_pend_data_tbl->PendObjPtr);
+    427                  if (p_sem->Type == OS_OBJ_TYPE_SEM) {
+    428                      p_pend_list = &p_sem->PendList;
+    429                      OS_PendListInsertPrio(p_pend_list,
+    430                                            p_pend_data_tbl);
+    431                  }
+    432          #endif
+    433          
+    434          #if OS_CFG_Q_EN > 0u
+    435                  p_q = (OS_Q *)((void *)p_pend_data_tbl->PendObjPtr);
+    436                  if (p_q->Type == OS_OBJ_TYPE_Q) {
+    437                      p_pend_list = &p_q->PendList;
+    438                      OS_PendListInsertPrio(p_pend_list,
+    439                                            p_pend_data_tbl);
+    440                  }
+    441          #endif
+    442          
+    443                  p_pend_data_tbl++;
+    444              }
+    445          }
+    446          
+    447          #endif
+
+
+ 
+
+ 
+
+
+Errors: none
+Warnings: none

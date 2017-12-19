@@ -1,0 +1,2144 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       14/Dec/2017  10:39:27
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\BSP\bsp.c
+#    Command line =  
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\BSP\bsp.c" -lCN
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\bsp.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\bsp.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\BSP\bsp.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                              uC/OS-III
+      4          *                                        The Real-Time Kernel
+      5          *
+      6          *                          (c) Copyright 2004-2012; Micrium, Inc.; Weston, FL
+      7          *
+      8          *               All rights reserved.  Protected by international copyright laws.
+      9          *
+     10          *               uC/OS-III is provided in source form for FREE evaluation, for educational
+     11          *               use or peaceful research.  If you plan on using uC/OS-III in a commercial
+     12          *               product you need to contact Micrium to properly license its use in your
+     13          *               product.  We provide ALL the source code for your convenience and to
+     14          *               help you experience uC/OS-III.  The fact that the source code is provided
+     15          *               does NOT mean that you can use it without paying a licensing fee.
+     16          *
+     17          *               Knowledge of the source code may NOT be used to develop a similar product.
+     18          *
+     19          *               Please help us continue to provide the Embedded community with the finest
+     20          *               software available.  Your honesty is greatly appreciated.
+     21          *********************************************************************************************************
+     22          */
+     23          
+     24          
+     25          /*
+     26          *********************************************************************************************************
+     27          *
+     28          *                                       BOARD SUPPORT PACKAGE (BSP)
+     29          *
+     30          *                                        IAR Development Kits
+     31          *                                               on the
+     32          *
+     33          *                                            NXP LPC1768
+     34          *                                      LPC1766-SK KICKSTART KIT
+     35          *
+     36          * Filename      :bsp.c
+     37          * Version       :V1.00
+     38          * Programmer(s) :FT
+     39          *                DC
+     40          *********************************************************************************************************
+     41          */
+     42          
+     43          
+     44          /*
+     45          *********************************************************************************************************
+     46          *                                             INCLUDE FILES
+     47          *********************************************************************************************************
+     48          */
+     49          
+     50          #define  BSP_MODULE
+     51          #include <bsp.h>
+     52          #include <csp.h>
+     53          #include <os_cpu.h>
+     54          
+     55          /*
+     56          *********************************************************************************************************
+     57          *                                             REGISTER & BIT DEFINES
+     58          *********************************************************************************************************
+     59          */
+     60          
+     61                                                                          /* - SYSTEM CONTROL AND STATUS REGISTER & BIT DEFINES  -*/
+     62          #define  BSP_REG_SCS                             (*(CPU_REG32 *)(0x400FC1A0))
+     63          #define  BSP_BIT_SCS_OSCRANGE                    DEF_BIT_04
+     64          #define  BSP_BIT_SCS_OSCEN                       DEF_BIT_05
+     65          #define  BSP_BIT_SCS_OSCSTAT                     DEF_BIT_06
+     66          
+     67                                                                          /* ------- CLOCK DIVIDERS REGISTER & BIT DEFINES ------ */
+     68          #define  BSP_REG_CCLKCFG                         (*(CPU_REG32 *)(0x400FC104))
+     69          #define  BSP_REG_CLKSRCSEL                       (*(CPU_REG32 *)(0x400FC10C))
+     70          #define  BSP_REG_PCLKSEL0                        (*(CPU_REG32 *)(0x400FC1A8))
+     71          #define  BSP_REG_PCLKSEL1                        (*(CPU_REG32 *)(0x400FC1AC))
+     72          
+     73                                                                          /* ------------ PLL REGISTER & BIT DEFINES ------------ */
+     74          #define  BSP_ADDR_PLL                            (CPU_INT32U )0x400FC080u
+     75          
+     76          #define  BSP_REG_PLLCTRL(pll_id)                 (*(CPU_REG32 *)(BSP_ADDR_PLL + (0x20u * (pll_id)) + 0x00u))
+     77          #define  BSP_REG_PLLCFG(pll_id)                  (*(CPU_REG32 *)(BSP_ADDR_PLL + (0x20u * (pll_id)) + 0x04u))
+     78          #define  BSP_REG_PLLSTAT(pll_id)                 (*(CPU_REG32 *)(BSP_ADDR_PLL + (0x20u * (pll_id)) + 0x08u))
+     79          #define  BSP_REG_PLLFEED(pll_id)                 (*(CPU_REG32 *)(BSP_ADDR_PLL + (0x20u * (pll_id)) + 0x0Cu))
+     80          
+     81          #define  BSP_MSK_PLLCFG0_MSEL                    0x00007FFFu
+     82          #define  BSP_MSK_PLLCFG0_NSEL                    0x00FF0000u
+     83          
+     84          #define  BSP_MSK_PLLCFG1_MSEL                    0x0000001Fu
+     85          #define  BSP_MSK_PLLCFG1_NSEL                    0x00000060u
+     86          
+     87          #define  BSP_BIT_PLLCTRL_PLLE                    DEF_BIT_00     /* PLL enable                                           */
+     88          #define  BSP_BIT_PLLCTRL_PLLC                    DEF_BIT_01     /* PLL connect                                          */
+     89          
+     90          #define  BSP_BIT_PLLSTAT_PLLE0_STAT              DEF_BIT_24     /* Read-back for the PLL enable bit                     */
+     91          #define  BSP_BIT_PLLSTAT_PLLC0_STAT              DEF_BIT_25     /* Read-back for the PLL connect bit                    */
+     92          #define  BSP_BIT_PLLSTAT_PLOCK0                  DEF_BIT_26     /* Refkect the PLL lock status                          */
+     93          
+     94          #define  BSP_BIT_PLLSTAT_PLLE1_STAT              DEF_BIT_08     /* Read-back for the PLL enable bit                     */
+     95          #define  BSP_BIT_PLLSTAT_PLLC1_STAT              DEF_BIT_09     /* Read-back for the PLL connect bit                    */
+     96          #define  BSP_BIT_PLLSTAT_PLOCK1                  DEF_BIT_10     /* Refkect the PLL lock status                          */
+     97          
+     98          #define  BSP_BIT_PLLFEED_VAL0                    0x000000AAu
+     99          #define  BSP_BIT_PLLFEED_VAL1                    0x00000055u
+    100          
+    101          #define  BSP_BIT_CLKSRCSEL_RC                    DEF_BIT_NONE
+    102          #define  BSP_BIT_CLKSRCSEL_MAIN                  DEF_BIT_00
+    103          #define  BSP_BIT_CLKSRCSEL_RTC                   DEF_BIT_01
+    104          
+    105                                                                          /* --- FLASH ACCELERATOR CFG REGISTER & BIT DEFINES --- */
+    106          #define  BSP_REG_FLASHCFG                        (*(CPU_REG32 *)(0x400FC000u))
+    107          
+    108          #define  BSP_MSK_FLASHCFG_CLK_1                  DEF_BIT_MASK(1u, 12u)
+    109          #define  BSP_MSK_FLASHCFG_CLK_2                  DEF_BIT_MASK(2u, 12u)
+    110          #define  BSP_MSK_FLASHCFG_CLK_3                  DEF_BIT_MASK(3u, 12u)
+    111          #define  BSP_MSK_FLASHCFG_CLK_4                  DEF_BIT_MASK(4u, 12u)
+    112          #define  BSP_MSK_FLASHCFG_CLK_5                  DEF_BIT_MASK(5u, 12u)
+    113          #define  BSP_MSK_FLASHCFG_CLK_6                  DEF_BIT_MASK(6u, 12u)
+    114          #define  BSP_MSK_FLASHCFG_RST_VAL                0x0000003Au
+    115          
+    116          /*
+    117          *********************************************************************************************************
+    118          *                                             GPIO DEFINES
+    119          *********************************************************************************************************
+    120          */
+    121                                                                         /* ----------------- GPIO PIN DEFINITION ------------- */
+    122          #define  BSP_GPIO0_BUT1                          DEF_BIT_23    /* P0.23 Push Button 1                                 */
+    123          #define  BSP_GPIO0_JOY_CENTER                    DEF_BIT_05    /* P0.5  Joystick Center  switch contact               */
+    124          #define  BSP_GPIO0_LED2                          DEF_BIT_04    /* P0.4  LED1                                          */
+    125          
+    126          //#define		Led_3	115							
+    127          //#define		Led_2	116							
+    128          //#define		Led_1	109							
+    129          //#define		Led_0	110							
+    130          //#define		Led_7	114
+    131          //#define		Led_6	117
+    132          //#define		Led_4	108
+    133          //#define		Led_5	104
+    134          
+    135          #define  BSP_GPIO1_LED1                          DEF_BIT_14    /* P1.25 LED1                                          */
+    136          #define  BSP_GPIO1_LED2                          DEF_BIT_10    /* P1.25 LED1                                          */
+    137          #define  BSP_GPIO1_LED3                          DEF_BIT_09    /* P1.25 LED1                                          */
+    138          #define  BSP_GPIO1_LED4                          DEF_BIT_08    /* P1.25 LED1                                          */
+    139          #define  BSP_GPIO1_LED5                          DEF_BIT_04    /* P1.25 LED1                                          */
+    140          #define  BSP_GPIO1_LED6                          DEF_BIT_17    /* P1.25 LED1                                          */
+    141          #define  BSP_GPIO1_LED7                          DEF_BIT_16    /* P1.25 LED1                                          */
+    142          #define  BSP_GPIO1_LED8                          DEF_BIT_15    /* P1.25 LED1                                          */
+    143          
+    144          #define  BSP_GPIO2_JOY_UP                        DEF_BIT_00    /* P2.0  Joystick Up      switch contact               */
+    145          #define  BSP_GPIO2_JOY_DOWN                      DEF_BIT_01    /* P2.1  Joystick Down    switch contact               */
+    146          #define  BSP_GPIO2_JOY_LEFT                      DEF_BIT_07    /* P2.7  Joystick Left    switch contact               */
+    147          #define  BSP_GPIO2_JOY_RIGHT                     DEF_BIT_08    /* P2.8  Joystick Right   switch contact               */
+    148          
+    149          #define  BSP_GPIO2_BUT2                          DEF_BIT_13    /* P2.13 Push Button 2                                 */
+    150          
+    151          #define  BSP_REG_DEMCR             (*(CPU_REG32 *)0xE000EDFC)
+    152          #define  BSP_REG_DWT_CR            (*(CPU_REG32 *)0xE0001000)
+    153          #define  BSP_REG_DWT_CYCCNT        (*(CPU_REG32 *)0xE0001004)
+    154          
+    155          
+    156          /*
+    157          *********************************************************************************************************
+    158          *                                             BSP CONSTANS VALUES
+    159          *********************************************************************************************************
+    160          */
+    161                                                                         /* Maximum register timeout                            */
+    162          #define  BSP_VAL_MAX_TO                         (CPU_INT16U)(0xFFFF)
+    163          
+    164          
+    165          
+    166          
+    167          /*
+    168          *********************************************************************************************************
+    169          *                                           LOCAL CONSTANTS
+    170          *********************************************************************************************************
+    171          */
+    172          
+    173          
+    174          /*
+    175          *********************************************************************************************************
+    176          *                                          LOCAL DATA TYPES
+    177          *********************************************************************************************************
+    178          */
+    179          
+    180          
+    181          /*
+    182          *********************************************************************************************************
+    183          *                                            LOCAL TABLES
+    184          *********************************************************************************************************
+    185          */
+    186          
+    187          
+    188          /*
+    189          *********************************************************************************************************
+    190          *                                       LOCAL GLOBAL VARIABLES
+    191          *********************************************************************************************************
+    192          */
+    193          
+    194          
+    195          /*
+    196          *********************************************************************************************************
+    197          *                                               MACRO'S
+    198          *********************************************************************************************************
+    199          */
+    200          
+    201          #define  BSP_PLL_FEED_SEQ(pll_nbr)              {    CPU_CRITICAL_ENTER();                             \
+    202                                                                                                                 \
+    203                                                               BSP_REG_PLLFEED(pll_nbr) = BSP_BIT_PLLFEED_VAL0;  \
+    204                                                               BSP_REG_PLLFEED(pll_nbr) = BSP_BIT_PLLFEED_VAL1;  \
+    205                                                                                                                 \
+    206                                                               CPU_CRITICAL_EXIT();                              \
+    207                                                          }
+    208          
+    209          
+    210          /*
+    211          *********************************************************************************************************
+    212          *                                      LOCAL FUNCTION PROTOTYPES
+    213          *********************************************************************************************************
+    214          */
+    215          
+    216          
+    217          
+    218          /*
+    219          *********************************************************************************************************
+    220          *                                     LOCAL CONFIGURATION ERRORS
+    221          *********************************************************************************************************
+    222          */
+    223          
+    224          
+    225          /*
+    226          *********************************************************************************************************
+    227          *********************************************************************************************************
+    228          **                                         GLOBAL FUNCTIONS
+    229          *********************************************************************************************************
+    230          *********************************************************************************************************
+    231          */
+    232          
+    233          
+    234          /*
+    235          *********************************************************************************************************
+    236          *                                             BSP_Init()
+    237          *
+    238          * Description : Initialize the Board Support Package (BSP).
+    239          *
+    240          * Argument(s) : none.
+    241          *
+    242          * Return(s)   : none.
+    243          *
+    244          * Caller(s)   : Application.
+    245          *
+    246          * Note(s)     : (1) The PLL0 Frequency is determined by:
+    247          *
+    248          *                       Fcco = (2 x M x Fin) / N
+    249          *
+    250          *                       where M   = PLL0 Multipler
+    251          *                             N   = PLL0 Pre-dividier
+    252          *                            Fin  = PLL0 Input Frequency (Main oscillator).
+    253          *
+    254          *               (2) PLL0 settings must meet the following:
+    255          *                       Fin is in the range of 32Khz to 50 Mhz.
+    256          *                       Fcco is in the range of 275 Mhz to 550 Mhz
+    257          *
+    258          *               (3) The LPC17xx CPU frequency is determined by:
+    259          *
+    260          *                       CPU_freq = Fcc0 / CPU_Div
+    261          *
+    262          *               (4) The USB clock frequency is determined by:
+    263          *
+    264          *                       USB_Clk = M x Fosc x P, or USB_clk = Fcco / (2 x P)
+    265          *
+    266          *                       Fcco    =  Fosc x 2 x M x 2 x P
+    267          *
+    268          *                       where Fcco = PLL1 output frequency.
+    269          *                             M    = PLL1 multiplier.
+    270          *                             P    = PLL1 pre-divider.
+    271          *                             Fosc = Oscialltor  frequency.
+    272          *
+    273          *               (5) The PLL1 inputs and settings must meet the following criteria:
+    274          *                   Fosc    is in the range of 10 Mhz to 25 Mhz.
+    275          *                   USBClk  is 48 Mhz
+    276          *                   Fcco    is in the range of 156 Mhz to 320 Mhz
+    277          *
+    278          *               (6) In this example the LPC1768 operates:
+    279          *
+    280          *                       PLL0_Fcco = 2 x 25 x 12 / 2
+    281          *                       PLL0_Fcco = 300mhz
+    282          *
+    283          *                       CPU_freq  =  300 Mhz  / 3
+    284          *                                 =  100 Mhz
+    285          *
+    286          *                       PLL1_Fcc0 = 12 x 4 x 2 x 2 = 192 Mhz.
+    287          *                       USB_Clk   = 12 x 4         =  48 Mhz.
+    288          *********************************************************************************************************
+    289          */
+    290          
+
+   \                                 In section .text, align 2, keep-with-next
+    291          void  BSP_Init (void)
+    292          {
+   \                     BSP_Init: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0xB084             SUB      SP,SP,#+16
+    293              CPU_INT16U    reg_to;
+    294              CPU_INT32U    reg_val;
+    295              CPU_SR_ALLOC();
+   \   00000004   0x2500             MOVS     R5,#+0
+    296          
+    297                                                                          /* ---------------- CLOCK INITIALIZATION -------------- */
+    298              BSP_REG_FLASHCFG = BSP_MSK_FLASHCFG_CLK_6                   /* Set 6 cycles to acces the Flash memory.              */
+    299                               | BSP_MSK_FLASHCFG_RST_VAL;
+   \   00000006   0xF246 0x003A      MOVW     R0,#+24634
+   \   0000000A   0x.... 0x....      LDR.W    R1,??DataTable4  ;; 0x400fc000
+   \   0000000E   0x6008             STR      R0,[R1, #+0]
+    300                                                                          /* ----------- MAIN OSCILLATOR INITIALIZATION --------- */
+    301              DEF_BIT_CLR(BSP_REG_SCS, BSP_BIT_SCS_OSCRANGE);             /* Set the main oscillator range                        */
+   \   00000010   0x.... 0x....      LDR.W    R0,??DataTable4_1  ;; 0x400fc1a0
+   \   00000014   0x6800             LDR      R0,[R0, #+0]
+   \   00000016   0xF030 0x0010      BICS     R0,R0,#0x10
+   \   0000001A   0x.... 0x....      LDR.W    R1,??DataTable4_1  ;; 0x400fc1a0
+   \   0000001E   0x6008             STR      R0,[R1, #+0]
+   \   00000020   0x2100             MOVS     R1,#+0
+    302          
+    303          
+    304              reg_to = BSP_VAL_MAX_TO;
+   \   00000022   0xF64F 0x70FF      MOVW     R0,#+65535
+   \   00000026   0x0006             MOVS     R6,R0
+    305          
+    306              DEF_BIT_SET(BSP_REG_SCS, BSP_BIT_SCS_OSCEN);                /* Enable the Main Oscillator                           */
+   \   00000028   0x.... 0x....      LDR.W    R0,??DataTable4_1  ;; 0x400fc1a0
+   \   0000002C   0x6800             LDR      R0,[R0, #+0]
+   \   0000002E   0xF050 0x0020      ORRS     R0,R0,#0x20
+   \   00000032   0x.... 0x....      LDR.W    R1,??DataTable4_1  ;; 0x400fc1a0
+   \   00000036   0x6008             STR      R0,[R1, #+0]
+    307          
+    308                                                                          /* Wait until the main oscillator is enabled.           */
+    309              while (DEF_BIT_IS_CLR(BSP_REG_SCS, BSP_BIT_SCS_OSCSTAT) &&
+    310                    (reg_to > 0u)) {
+   \                     ??BSP_Init_0: (+1)
+   \   00000038   0x.... 0x....      LDR.W    R0,??DataTable4_1  ;; 0x400fc1a0
+   \   0000003C   0x6800             LDR      R0,[R0, #+0]
+   \   0000003E   0x0980             LSRS     R0,R0,#+6
+   \   00000040   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \   00000044   0xF090 0x0001      EORS     R0,R0,#0x1
+   \   00000048   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000004A   0x2800             CMP      R0,#+0
+   \   0000004C   0xD004             BEQ.N    ??BSP_Init_1
+   \   0000004E   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   00000050   0x2E00             CMP      R6,#+0
+   \   00000052   0xD001             BEQ.N    ??BSP_Init_1
+    311                  reg_to--;
+   \   00000054   0x1E76             SUBS     R6,R6,#+1
+   \   00000056   0xE7EF             B.N      ??BSP_Init_0
+    312              }
+    313          
+    314              if (reg_to == 0u) {                                         /* Configuration fail                                   */
+   \                     ??BSP_Init_1: (+1)
+   \   00000058   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   0000005A   0x2E00             CMP      R6,#+0
+   \   0000005C   0xF000 0x8173      BEQ.W    ??BSP_Init_2
+    315                  return;
+    316              }
+    317          
+    318              BSP_REG_PCLKSEL0 = DEF_BIT_NONE;                            /* All peripheral clock runrs at CPU_Clk / 4 = 25 Mhz   */
+   \                     ??BSP_Init_3: (+1)
+   \   00000060   0x2000             MOVS     R0,#+0
+   \   00000062   0x.... 0x....      LDR.W    R1,??DataTable4_2  ;; 0x400fc1a8
+   \   00000066   0x6008             STR      R0,[R1, #+0]
+    319              BSP_REG_PCLKSEL1 = DEF_BIT_NONE;
+   \   00000068   0x2000             MOVS     R0,#+0
+   \   0000006A   0x.... 0x....      LDR.W    R1,??DataTable4_3  ;; 0x400fc1ac
+   \   0000006E   0x6008             STR      R0,[R1, #+0]
+    320          
+    321                                                                          /* ------------------ PLL0 CONFIGURATION -------------- */
+    322          
+    323              reg_val  = (((25u - 1u) <<  0u) & BSP_MSK_PLLCFG0_MSEL)     /* PLL0 values M = 25 & N = 2 (see note #6)             */
+    324                       | ((( 2u - 1u) << 16u) & BSP_MSK_PLLCFG0_NSEL);
+   \   00000070   0x.... 0x....      LDR.W    R0,??DataTable4_4  ;; 0x10018
+   \   00000074   0x0004             MOVS     R4,R0
+    325                                                                          /* 1. Disconnect PLL0 with one feed sequence if PLL ... */
+    326                                                                          /* ... already connected.                               */
+    327              if (DEF_BIT_IS_SET(BSP_REG_PLLSTAT(0u), BSP_BIT_PLLSTAT_PLLC0_STAT)) {
+   \   00000076   0x.... 0x....      LDR.W    R0,??DataTable4_5  ;; 0x400fc088
+   \   0000007A   0x6800             LDR      R0,[R0, #+0]
+   \   0000007C   0x0E40             LSRS     R0,R0,#+25
+   \   0000007E   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \   00000082   0x2800             CMP      R0,#+0
+   \   00000084   0xD01A             BEQ.N    ??BSP_Init_4
+    328                  DEF_BIT_CLR(BSP_REG_PLLCTRL(0u), BSP_BIT_PLLCTRL_PLLC);
+   \   00000086   0x.... 0x....      LDR.W    R0,??DataTable4_6  ;; 0x400fc080
+   \   0000008A   0x6800             LDR      R0,[R0, #+0]
+   \   0000008C   0xF030 0x0002      BICS     R0,R0,#0x2
+   \   00000090   0x.... 0x....      LDR.W    R1,??DataTable4_6  ;; 0x400fc080
+   \   00000094   0x6008             STR      R0,[R1, #+0]
+   \   00000096   0x2100             MOVS     R1,#+0
+    329                  BSP_PLL_FEED_SEQ(0u);
+   \   00000098   0x.... 0x....      BL       CPU_SR_Save
+   \   0000009C   0x0005             MOVS     R5,R0
+   \   0000009E   0x.... 0x....      BL       CPU_IntDisMeasStart
+   \   000000A2   0x20AA             MOVS     R0,#+170
+   \   000000A4   0x.... 0x....      LDR.W    R1,??DataTable4_7  ;; 0x400fc08c
+   \   000000A8   0x6008             STR      R0,[R1, #+0]
+   \   000000AA   0x2055             MOVS     R0,#+85
+   \   000000AC   0x.... 0x....      LDR.W    R1,??DataTable4_7  ;; 0x400fc08c
+   \   000000B0   0x6008             STR      R0,[R1, #+0]
+   \   000000B2   0x.... 0x....      BL       CPU_IntDisMeasStop
+   \   000000B6   0x0028             MOVS     R0,R5
+   \   000000B8   0x.... 0x....      BL       CPU_SR_Restore
+    330              }
+    331          
+    332              DEF_BIT_CLR(BSP_REG_PLLCTRL(0u), BSP_BIT_PLLCTRL_PLLE);     /* 2. Disable PLL0 with one feed sequence               */
+   \                     ??BSP_Init_4: (+1)
+   \   000000BC   0x.... 0x....      LDR.W    R0,??DataTable4_6  ;; 0x400fc080
+   \   000000C0   0x6800             LDR      R0,[R0, #+0]
+   \   000000C2   0x0840             LSRS     R0,R0,#+1
+   \   000000C4   0x0040             LSLS     R0,R0,#+1
+   \   000000C6   0x.... 0x....      LDR.W    R1,??DataTable4_6  ;; 0x400fc080
+   \   000000CA   0x6008             STR      R0,[R1, #+0]
+   \   000000CC   0x2100             MOVS     R1,#+0
+    333              BSP_PLL_FEED_SEQ(0u);
+   \   000000CE   0x.... 0x....      BL       CPU_SR_Save
+   \   000000D2   0x0005             MOVS     R5,R0
+   \   000000D4   0x.... 0x....      BL       CPU_IntDisMeasStart
+   \   000000D8   0x20AA             MOVS     R0,#+170
+   \   000000DA   0x.... 0x....      LDR.W    R1,??DataTable4_7  ;; 0x400fc08c
+   \   000000DE   0x6008             STR      R0,[R1, #+0]
+   \   000000E0   0x2055             MOVS     R0,#+85
+   \   000000E2   0x.... 0x....      LDR.W    R1,??DataTable4_7  ;; 0x400fc08c
+   \   000000E6   0x6008             STR      R0,[R1, #+0]
+   \   000000E8   0x.... 0x....      BL       CPU_IntDisMeasStop
+   \   000000EC   0x0028             MOVS     R0,R5
+   \   000000EE   0x.... 0x....      BL       CPU_SR_Restore
+    334          
+    335              BSP_REG_CCLKCFG   = (1u - 1u);                              /* 3. Change the CPU clock divider setting to speed ... */
+   \   000000F2   0x2000             MOVS     R0,#+0
+   \   000000F4   0x.... 0x....      LDR.W    R1,??DataTable4_8  ;; 0x400fc104
+   \   000000F8   0x6008             STR      R0,[R1, #+0]
+    336                                                                          /* ... operation without PLL0                           */
+    337          
+    338              BSP_REG_CLKSRCSEL = BSP_BIT_CLKSRCSEL_MAIN;                 /* 4. Select the main osc. as the PLL0 clock source     */
+   \   000000FA   0x2001             MOVS     R0,#+1
+   \   000000FC   0x.... 0x....      LDR.W    R1,??DataTable4_9  ;; 0x400fc10c
+   \   00000100   0x6008             STR      R0,[R1, #+0]
+    339          
+    340              BSP_REG_PLLCFG(0u) = reg_val;                               /* 5. Write to the PLLCFG and make it effective with... */
+   \   00000102   0x.... 0x....      LDR.W    R0,??DataTable4_10  ;; 0x400fc084
+   \   00000106   0x6004             STR      R4,[R0, #+0]
+    341              BSP_PLL_FEED_SEQ(0u)                                        /* ... one one feed sequence                            */
+   \   00000108   0x.... 0x....      BL       CPU_SR_Save
+   \   0000010C   0x0005             MOVS     R5,R0
+   \   0000010E   0x.... 0x....      BL       CPU_IntDisMeasStart
+   \   00000112   0x20AA             MOVS     R0,#+170
+   \   00000114   0x.... 0x....      LDR.W    R1,??DataTable4_7  ;; 0x400fc08c
+   \   00000118   0x6008             STR      R0,[R1, #+0]
+   \   0000011A   0x2055             MOVS     R0,#+85
+   \   0000011C   0x.... 0x....      LDR.W    R1,??DataTable4_7  ;; 0x400fc08c
+   \   00000120   0x6008             STR      R0,[R1, #+0]
+   \   00000122   0x.... 0x....      BL       CPU_IntDisMeasStop
+   \   00000126   0x0028             MOVS     R0,R5
+   \   00000128   0x.... 0x....      BL       CPU_SR_Restore
+    342          
+    343              DEF_BIT_SET(BSP_REG_PLLCTRL(0u), BSP_BIT_PLLCTRL_PLLE);     /* 6. Enable PLL0 with one feed sequence                */
+   \   0000012C   0x.... 0x....      LDR.W    R0,??DataTable4_6  ;; 0x400fc080
+   \   00000130   0x6800             LDR      R0,[R0, #+0]
+   \   00000132   0xF050 0x0001      ORRS     R0,R0,#0x1
+   \   00000136   0x.... 0x....      LDR.W    R1,??DataTable4_6  ;; 0x400fc080
+   \   0000013A   0x6008             STR      R0,[R1, #+0]
+    344              BSP_PLL_FEED_SEQ(0u);
+   \   0000013C   0x.... 0x....      BL       CPU_SR_Save
+   \   00000140   0x0005             MOVS     R5,R0
+   \   00000142   0x.... 0x....      BL       CPU_IntDisMeasStart
+   \   00000146   0x20AA             MOVS     R0,#+170
+   \   00000148   0x.... 0x....      LDR.W    R1,??DataTable4_7  ;; 0x400fc08c
+   \   0000014C   0x6008             STR      R0,[R1, #+0]
+   \   0000014E   0x2055             MOVS     R0,#+85
+   \   00000150   0x.... 0x....      LDR.W    R1,??DataTable4_7  ;; 0x400fc08c
+   \   00000154   0x6008             STR      R0,[R1, #+0]
+   \   00000156   0x.... 0x....      BL       CPU_IntDisMeasStop
+   \   0000015A   0x0028             MOVS     R0,R5
+   \   0000015C   0x.... 0x....      BL       CPU_SR_Restore
+    345          
+    346              BSP_REG_CCLKCFG   = (3u - 1u);                              /* 7. Change the CPU clock divider setting for ...      */
+   \   00000160   0x2002             MOVS     R0,#+2
+   \   00000162   0x.... 0x....      LDR.W    R1,??DataTable4_8  ;; 0x400fc104
+   \   00000166   0x6008             STR      R0,[R1, #+0]
+    347                                                                          /* ... operation with PLL0                              */
+    348          
+    349              reg_to = BSP_VAL_MAX_TO;                                    /* 8. Wait for PLL0 to achieve lock by monitoring ...   */
+   \   00000168   0xF64F 0x70FF      MOVW     R0,#+65535
+   \   0000016C   0x0006             MOVS     R6,R0
+    350                                                                          /* ... the PLOCK0 bit in the PLL0STAT                   */
+    351              while (DEF_BIT_IS_CLR(BSP_REG_PLLSTAT(0u), BSP_BIT_PLLSTAT_PLOCK0) &&
+    352                    (reg_to > 0u)) {
+   \                     ??BSP_Init_5: (+1)
+   \   0000016E   0x.... 0x....      LDR.W    R0,??DataTable4_5  ;; 0x400fc088
+   \   00000172   0x6800             LDR      R0,[R0, #+0]
+   \   00000174   0x0E80             LSRS     R0,R0,#+26
+   \   00000176   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \   0000017A   0xF090 0x0001      EORS     R0,R0,#0x1
+   \   0000017E   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000180   0x2800             CMP      R0,#+0
+   \   00000182   0xD004             BEQ.N    ??BSP_Init_6
+   \   00000184   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   00000186   0x2E00             CMP      R6,#+0
+   \   00000188   0xD001             BEQ.N    ??BSP_Init_6
+    353                  reg_to--;
+   \   0000018A   0x1E76             SUBS     R6,R6,#+1
+   \   0000018C   0xE7EF             B.N      ??BSP_Init_5
+    354              }
+    355          
+    356              if (reg_to == 0u) {
+   \                     ??BSP_Init_6: (+1)
+   \   0000018E   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   00000190   0x2E00             CMP      R6,#+0
+   \   00000192   0xF000 0x80D8      BEQ.W    ??BSP_Init_2
+    357                  return;
+    358              }
+    359          
+    360              DEF_BIT_SET(BSP_REG_PLLCTRL(0u), BSP_BIT_PLLCTRL_PLLC);     /* 9. Connect PLL0 with one feed sequence               */
+   \                     ??BSP_Init_7: (+1)
+   \   00000196   0x.... 0x....      LDR.W    R0,??DataTable4_6  ;; 0x400fc080
+   \   0000019A   0x6800             LDR      R0,[R0, #+0]
+   \   0000019C   0xF050 0x0002      ORRS     R0,R0,#0x2
+   \   000001A0   0x.... 0x....      LDR.W    R1,??DataTable4_6  ;; 0x400fc080
+   \   000001A4   0x6008             STR      R0,[R1, #+0]
+    361              BSP_PLL_FEED_SEQ(0u);
+   \   000001A6   0x.... 0x....      BL       CPU_SR_Save
+   \   000001AA   0x0005             MOVS     R5,R0
+   \   000001AC   0x.... 0x....      BL       CPU_IntDisMeasStart
+   \   000001B0   0x20AA             MOVS     R0,#+170
+   \   000001B2   0x.... 0x....      LDR.W    R1,??DataTable4_7  ;; 0x400fc08c
+   \   000001B6   0x6008             STR      R0,[R1, #+0]
+   \   000001B8   0x2055             MOVS     R0,#+85
+   \   000001BA   0x.... 0x....      LDR.W    R1,??DataTable4_7  ;; 0x400fc08c
+   \   000001BE   0x6008             STR      R0,[R1, #+0]
+   \   000001C0   0x.... 0x....      BL       CPU_IntDisMeasStop
+   \   000001C4   0x0028             MOVS     R0,R5
+   \   000001C6   0x.... 0x....      BL       CPU_SR_Restore
+    362                                                                          /* ------------------ PLL1 CONFIGURATION -------------- */
+    363              reg_val  = (((4u - 1u)  <<  0u) & BSP_MSK_PLLCFG1_MSEL)     /* PLL1 values M = 4; P = 2 coded as '01' (see note #6) */
+    364                       | (((0x01u   ) <<  5u) & BSP_MSK_PLLCFG1_NSEL);
+   \   000001CA   0x2023             MOVS     R0,#+35
+   \   000001CC   0x0004             MOVS     R4,R0
+    365          
+    366              DEF_BIT_CLR(BSP_REG_PLLCTRL(1u), BSP_BIT_PLLCTRL_PLLC);     /* 1. Disconnect PLL1 with one feed sequence            */
+   \   000001CE   0x.... 0x....      LDR.W    R0,??DataTable4_11  ;; 0x400fc0a0
+   \   000001D2   0x6800             LDR      R0,[R0, #+0]
+   \   000001D4   0xF030 0x0002      BICS     R0,R0,#0x2
+   \   000001D8   0x.... 0x....      LDR.W    R1,??DataTable4_11  ;; 0x400fc0a0
+   \   000001DC   0x6008             STR      R0,[R1, #+0]
+   \   000001DE   0x2100             MOVS     R1,#+0
+    367              BSP_PLL_FEED_SEQ(1u);
+   \   000001E0   0x.... 0x....      BL       CPU_SR_Save
+   \   000001E4   0x0005             MOVS     R5,R0
+   \   000001E6   0x.... 0x....      BL       CPU_IntDisMeasStart
+   \   000001EA   0x20AA             MOVS     R0,#+170
+   \   000001EC   0x.... 0x....      LDR.W    R1,??DataTable4_12  ;; 0x400fc0ac
+   \   000001F0   0x6008             STR      R0,[R1, #+0]
+   \   000001F2   0x2055             MOVS     R0,#+85
+   \   000001F4   0x.... 0x....      LDR.W    R1,??DataTable4_12  ;; 0x400fc0ac
+   \   000001F8   0x6008             STR      R0,[R1, #+0]
+   \   000001FA   0x.... 0x....      BL       CPU_IntDisMeasStop
+   \   000001FE   0x0028             MOVS     R0,R5
+   \   00000200   0x.... 0x....      BL       CPU_SR_Restore
+    368          
+    369              DEF_BIT_CLR(BSP_REG_PLLCTRL(1u), BSP_BIT_PLLCTRL_PLLE);     /* 2. Disable PLL1 with one feed sequence               */
+   \   00000204   0x.... 0x....      LDR.W    R0,??DataTable4_11  ;; 0x400fc0a0
+   \   00000208   0x6800             LDR      R0,[R0, #+0]
+   \   0000020A   0x0840             LSRS     R0,R0,#+1
+   \   0000020C   0x0040             LSLS     R0,R0,#+1
+   \   0000020E   0x.... 0x....      LDR.W    R1,??DataTable4_11  ;; 0x400fc0a0
+   \   00000212   0x6008             STR      R0,[R1, #+0]
+   \   00000214   0x2100             MOVS     R1,#+0
+    370              BSP_PLL_FEED_SEQ(1u);
+   \   00000216   0x.... 0x....      BL       CPU_SR_Save
+   \   0000021A   0x0005             MOVS     R5,R0
+   \   0000021C   0x.... 0x....      BL       CPU_IntDisMeasStart
+   \   00000220   0x20AA             MOVS     R0,#+170
+   \   00000222   0x.... 0x....      LDR.W    R1,??DataTable4_12  ;; 0x400fc0ac
+   \   00000226   0x6008             STR      R0,[R1, #+0]
+   \   00000228   0x2055             MOVS     R0,#+85
+   \   0000022A   0x.... 0x....      LDR.W    R1,??DataTable4_12  ;; 0x400fc0ac
+   \   0000022E   0x6008             STR      R0,[R1, #+0]
+   \   00000230   0x.... 0x....      BL       CPU_IntDisMeasStop
+   \   00000234   0x0028             MOVS     R0,R5
+   \   00000236   0x.... 0x....      BL       CPU_SR_Restore
+    371          
+    372              BSP_REG_PLLCFG(1u) = reg_val;                               /* 3. Write to the PLLCFG and make it effective with... */
+   \   0000023A   0x.... 0x....      LDR.W    R0,??DataTable4_13  ;; 0x400fc0a4
+   \   0000023E   0x6004             STR      R4,[R0, #+0]
+    373              BSP_PLL_FEED_SEQ(1u);                                       /* ... one one feed sequence                            */
+   \   00000240   0x.... 0x....      BL       CPU_SR_Save
+   \   00000244   0x0005             MOVS     R5,R0
+   \   00000246   0x.... 0x....      BL       CPU_IntDisMeasStart
+   \   0000024A   0x20AA             MOVS     R0,#+170
+   \   0000024C   0x.... 0x....      LDR.W    R1,??DataTable4_12  ;; 0x400fc0ac
+   \   00000250   0x6008             STR      R0,[R1, #+0]
+   \   00000252   0x2055             MOVS     R0,#+85
+   \   00000254   0x.... 0x....      LDR.W    R1,??DataTable4_12  ;; 0x400fc0ac
+   \   00000258   0x6008             STR      R0,[R1, #+0]
+   \   0000025A   0x.... 0x....      BL       CPU_IntDisMeasStop
+   \   0000025E   0x0028             MOVS     R0,R5
+   \   00000260   0x.... 0x....      BL       CPU_SR_Restore
+    374          
+    375              DEF_BIT_SET(BSP_REG_PLLCTRL(1u), BSP_BIT_PLLCTRL_PLLE);     /* 4. Enable PLL1 with one feed sequence                */
+   \   00000264   0x.... 0x....      LDR.W    R0,??DataTable4_11  ;; 0x400fc0a0
+   \   00000268   0x6800             LDR      R0,[R0, #+0]
+   \   0000026A   0xF050 0x0001      ORRS     R0,R0,#0x1
+   \   0000026E   0x.... 0x....      LDR.W    R1,??DataTable4_11  ;; 0x400fc0a0
+   \   00000272   0x6008             STR      R0,[R1, #+0]
+    376              BSP_PLL_FEED_SEQ(1u);
+   \   00000274   0x.... 0x....      BL       CPU_SR_Save
+   \   00000278   0x0005             MOVS     R5,R0
+   \   0000027A   0x.... 0x....      BL       CPU_IntDisMeasStart
+   \   0000027E   0x20AA             MOVS     R0,#+170
+   \   00000280   0x.... 0x....      LDR.W    R1,??DataTable4_12  ;; 0x400fc0ac
+   \   00000284   0x6008             STR      R0,[R1, #+0]
+   \   00000286   0x2055             MOVS     R0,#+85
+   \   00000288   0x.... 0x....      LDR.W    R1,??DataTable4_12  ;; 0x400fc0ac
+   \   0000028C   0x6008             STR      R0,[R1, #+0]
+   \   0000028E   0x.... 0x....      BL       CPU_IntDisMeasStop
+   \   00000292   0x0028             MOVS     R0,R5
+   \   00000294   0x.... 0x....      BL       CPU_SR_Restore
+    377          
+    378              reg_to = BSP_VAL_MAX_TO;                                    /* 5. Wait for PLL1 to achieve lock by monitoring ...   */
+   \   00000298   0xF64F 0x70FF      MOVW     R0,#+65535
+   \   0000029C   0x0006             MOVS     R6,R0
+    379                                                                          /* ... the PLOCK1 bit in the PLL1STAT                   */
+    380              while (DEF_BIT_IS_CLR(BSP_REG_PLLSTAT(1u), BSP_BIT_PLLSTAT_PLOCK1) &&
+    381                    (reg_to > 0u)) {
+   \                     ??BSP_Init_8: (+1)
+   \   0000029E   0x.... 0x....      LDR.W    R0,??DataTable4_14  ;; 0x400fc0a8
+   \   000002A2   0x6800             LDR      R0,[R0, #+0]
+   \   000002A4   0x0A80             LSRS     R0,R0,#+10
+   \   000002A6   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \   000002AA   0xF090 0x0001      EORS     R0,R0,#0x1
+   \   000002AE   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   000002B0   0x2800             CMP      R0,#+0
+   \   000002B2   0xD004             BEQ.N    ??BSP_Init_9
+   \   000002B4   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   000002B6   0x2E00             CMP      R6,#+0
+   \   000002B8   0xD001             BEQ.N    ??BSP_Init_9
+    382                  reg_to--;
+   \   000002BA   0x1E76             SUBS     R6,R6,#+1
+   \   000002BC   0xE7EF             B.N      ??BSP_Init_8
+    383              }
+    384          
+    385              if (reg_to == 0u) {
+   \                     ??BSP_Init_9: (+1)
+   \   000002BE   0xB2B6             UXTH     R6,R6            ;; ZeroExt  R6,R6,#+16,#+16
+   \   000002C0   0x2E00             CMP      R6,#+0
+   \   000002C2   0xD040             BEQ.N    ??BSP_Init_2
+    386                  return;
+    387              }
+    388          
+    389              DEF_BIT_SET(BSP_REG_PLLCTRL(1u), BSP_BIT_PLLCTRL_PLLC);     /* 6. Connect PLL1 with one feed sequence               */
+   \                     ??BSP_Init_10: (+1)
+   \   000002C4   0x.... 0x....      LDR.W    R0,??DataTable4_11  ;; 0x400fc0a0
+   \   000002C8   0x6800             LDR      R0,[R0, #+0]
+   \   000002CA   0xF050 0x0002      ORRS     R0,R0,#0x2
+   \   000002CE   0x.... 0x....      LDR.W    R1,??DataTable4_11  ;; 0x400fc0a0
+   \   000002D2   0x6008             STR      R0,[R1, #+0]
+    390              BSP_PLL_FEED_SEQ(1u);
+   \   000002D4   0x.... 0x....      BL       CPU_SR_Save
+   \   000002D8   0x0005             MOVS     R5,R0
+   \   000002DA   0x.... 0x....      BL       CPU_IntDisMeasStart
+   \   000002DE   0x20AA             MOVS     R0,#+170
+   \   000002E0   0x.... 0x....      LDR.W    R1,??DataTable4_12  ;; 0x400fc0ac
+   \   000002E4   0x6008             STR      R0,[R1, #+0]
+   \   000002E6   0x2055             MOVS     R0,#+85
+   \   000002E8   0x.... 0x....      LDR.W    R1,??DataTable4_12  ;; 0x400fc0ac
+   \   000002EC   0x6008             STR      R0,[R1, #+0]
+   \   000002EE   0x.... 0x....      BL       CPU_IntDisMeasStop
+   \   000002F2   0x0028             MOVS     R0,R5
+   \   000002F4   0x.... 0x....      BL       CPU_SR_Restore
+    391          
+    392          
+    393              BSP_REG_FLASHCFG = BSP_MSK_FLASHCFG_CLK_5                   /* Set 5 cycles to acces the Flash memory.              */
+    394                               | BSP_MSK_FLASHCFG_RST_VAL;
+   \   000002F8   0xF245 0x003A      MOVW     R0,#+20538
+   \   000002FC   0x.... 0x....      LDR.W    R1,??DataTable4  ;; 0x400fc000
+   \   00000300   0x6008             STR      R0,[R1, #+0]
+    395          
+    396          //    CSP_GPIO_Cfg(CSP_GPIO_PORT_NBR_00,
+    397          //                 BSP_GPIO0_LED2,
+    398          //                 CSP_GPIO_DIR_OUT,
+    399          //                 CSP_GPIO_FLAG_MODE_NONE,
+    400          //                 DEF_NO,
+    401          //                 0u,
+    402          //                 CSP_GPIO_FNCT_00);
+    403          
+    404              CSP_GPIO_Cfg(CSP_GPIO_PORT_NBR_01,
+    405                           BSP_GPIO1_LED1 |
+    406                           BSP_GPIO1_LED2 |
+    407                           BSP_GPIO1_LED3 |
+    408                           BSP_GPIO1_LED4 |
+    409                           BSP_GPIO1_LED5 |
+    410                           BSP_GPIO1_LED6 |
+    411                           BSP_GPIO1_LED7 |
+    412                           BSP_GPIO1_LED8 ,
+    413                           CSP_GPIO_DIR_OUT,
+    414                           CSP_GPIO_FLAG_MODE_NONE,
+    415                           DEF_NO,
+    416                           0u,
+    417                           CSP_GPIO_FNCT_00);
+   \   00000302   0x2000             MOVS     R0,#+0
+   \   00000304   0x9002             STR      R0,[SP, #+8]
+   \   00000306   0x2000             MOVS     R0,#+0
+   \   00000308   0x9001             STR      R0,[SP, #+4]
+   \   0000030A   0x2000             MOVS     R0,#+0
+   \   0000030C   0x9000             STR      R0,[SP, #+0]
+   \   0000030E   0x2301             MOVS     R3,#+1
+   \   00000310   0x2201             MOVS     R2,#+1
+   \   00000312   0x.... 0x....      LDR.W    R1,??DataTable4_15  ;; 0x3c710
+   \   00000316   0x2001             MOVS     R0,#+1
+   \   00000318   0x.... 0x....      BL       CSP_GPIO_Cfg
+    418          
+    419          //    CSP_GPIO_Cfg(CSP_GPIO_PORT_NBR_00,
+    420          //                 BSP_GPIO0_BUT1,
+    421          //                 CSP_GPIO_DIR_IN,
+    422          //                 CSP_GPIO_FLAG_MODE_NONE,
+    423          //                 DEF_NO,
+    424          //                 0u,
+    425          //                 CSP_GPIO_FNCT_00);
+    426          //
+    427          //    CSP_GPIO_Cfg(CSP_GPIO_PORT_NBR_02,
+    428          //                 BSP_GPIO2_BUT2,
+    429          //                 CSP_GPIO_DIR_IN,
+    430          //                 CSP_GPIO_FLAG_MODE_NONE,
+    431          //                 DEF_NO,
+    432          //                 0u,
+    433          //                 CSP_GPIO_FNCT_00);
+    434          
+    435              
+    436              CSP_GPIO_Cfg(CSP_GPIO_PORT_NBR_00,
+    437                           DEF_BIT_28,
+    438                           CSP_GPIO_DIR_IN,
+    439                           CSP_GPIO_FLAG_MODE_NONE,
+    440                           DEF_NO,
+    441                           0u,
+    442                           CSP_GPIO_FNCT_00);
+   \   0000031C   0x2000             MOVS     R0,#+0
+   \   0000031E   0x9002             STR      R0,[SP, #+8]
+   \   00000320   0x2000             MOVS     R0,#+0
+   \   00000322   0x9001             STR      R0,[SP, #+4]
+   \   00000324   0x2000             MOVS     R0,#+0
+   \   00000326   0x9000             STR      R0,[SP, #+0]
+   \   00000328   0x2301             MOVS     R3,#+1
+   \   0000032A   0x2200             MOVS     R2,#+0
+   \   0000032C   0xF05F 0x5180      MOVS     R1,#+268435456
+   \   00000330   0x2000             MOVS     R0,#+0
+   \   00000332   0x.... 0x....      BL       CSP_GPIO_Cfg
+    443              
+    444              BSP_LED_Off(0);
+   \   00000336   0x2000             MOVS     R0,#+0
+   \   00000338   0x.... 0x....      BL       BSP_LED_Off
+    445          
+    446          //    CSP_GPIO_Cfg( CSP_GPIO_PORT_NBR_02,
+    447          //                 (BSP_GPIO2_JOY_RIGHT |
+    448          //                  BSP_GPIO2_JOY_DOWN  |
+    449          //                  BSP_GPIO2_JOY_LEFT  |
+    450          //                  BSP_GPIO2_JOY_RIGHT),
+    451          //                  CSP_GPIO_DIR_IN,
+    452          //                  CSP_GPIO_FLAG_MODE_NONE,
+    453          //                  DEF_NO,
+    454          //                  0u,
+    455          //                  CSP_GPIO_FNCT_00);
+    456          //
+    457          //    CSP_GPIO_Cfg( CSP_GPIO_PORT_NBR_00,
+    458          //                  BSP_GPIO0_JOY_CENTER,
+    459          //                  CSP_GPIO_DIR_IN,
+    460          //                  CSP_GPIO_FLAG_MODE_NONE,
+    461          //                  DEF_NO,
+    462          //                  0u,
+    463          //                  CSP_GPIO_FNCT_00);
+    464          
+    465              CSP_IntInit();
+   \   0000033C   0x.... 0x....      BL       CSP_IntInit
+    466              CSP_IntDisAll(CSP_INT_CTRL_NBR_MAIN);
+   \   00000340   0x2000             MOVS     R0,#+0
+   \   00000342   0x.... 0x....      BL       CSP_IntDisAll
+    467          }
+   \                     ??BSP_Init_2: (+1)
+   \   00000346   0xBD7F             POP      {R0-R6,PC}       ;; return
+    468          
+    469          /*
+    470          *********************************************************************************************************
+    471          *                                              BSP_Start()
+    472          *
+    473          * Description : Initialize all the peripherals that required OS services (OS initialized)
+    474          *
+    475          * Argument(s) : tick_rate : The kernel tick rate in Hz.
+    476          *
+    477          * Return(s)   : none.
+    478          *
+    479          * Caller(s)   : Application.
+    480          *
+    481          * Note(s)     : none.
+    482          *********************************************************************************************************
+    483          */
+    484          
+
+   \                                 In section .text, align 2, keep-with-next
+    485          void  BSP_Start (void)
+    486          {
+   \                     BSP_Start: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+    487              CPU_INT32U  cnts;
+    488              CPU_INT32U  cpu_freq;
+    489          
+    490          
+    491              cpu_freq = CSP_PM_CPU_ClkFreqGet();                         /* Get the CPU clock                                    */
+   \   00000002   0x.... 0x....      BL       CSP_PM_CPU_ClkFreqGet
+   \   00000006   0x0005             MOVS     R5,R0
+    492          #if (OS_VERSION >= 30000u)
+    493              cnts     = (cpu_freq / OSCfg_TickRate_Hz);                  /* Calculate the number of SysTick counts               */
+   \   00000008   0x.... 0x....      LDR.W    R0,??DataTable4_16
+   \   0000000C   0x6800             LDR      R0,[R0, #+0]
+   \   0000000E   0xFBB5 0xF0F0      UDIV     R0,R5,R0
+   \   00000012   0x0004             MOVS     R4,R0
+    494          #else
+    495              cnts     = (cpu_freq / OS_TICKS_PER_SEC);
+    496          #endif
+    497              OS_CPU_SysTickInit(cnts);                                   /* Call the Generic OS Systick initialization           */
+   \   00000014   0x0020             MOVS     R0,R4
+   \   00000016   0x.... 0x....      BL       OS_CPU_SysTickInit
+    498          
+    499          }
+   \   0000001A   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    500          
+    501          
+    502          /*
+    503          *********************************************************************************************************
+    504          *                                             BSP_Joy_GetPos()
+    505          *
+    506          * Description : Get the position of the Joystick on the board.
+    507          *
+    508          * Argument(s) : none.
+    509          *
+    510          * Return(s)   : The current position of the Joystick.
+    511          *
+    512          *                           BSP_JOY_NONE     If the Joystick is not being pressed.
+    513          *                           BSP_JOY_UP       If the Joystick is toggled up.
+    514          *                           BSP_JOY_DOWN     If the Joystick is toggled down.
+    515          *                           BSP_JOY_RIGHT    If the Joystick is toggled right.
+    516          *                           BSP_JOY_LEFT     If the Joystick is toggled left.
+    517          *                           BSP_JOY_CENTER   If the Joystick is being pressed.
+    518          *
+    519          * Caller(s)  : Application.
+    520          *
+    521          * Note(s)    : none.
+    522          *********************************************************************************************************
+    523          */
+    524          
+
+   \                                 In section .text, align 2, keep-with-next
+    525          CPU_INT08U  BSP_Joy_GetPos (void)
+    526          {
+   \                     BSP_Joy_GetPos: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    527              CPU_INT32U  port_val;
+    528          
+    529          
+    530              port_val = CSP_GPIO_Rd(CSP_GPIO_PORT_NBR_02);
+   \   00000002   0x2002             MOVS     R0,#+2
+   \   00000004   0x.... 0x....      BL       CSP_GPIO_Rd
+   \   00000008   0x0004             MOVS     R4,R0
+    531          
+    532              if (DEF_BIT_IS_CLR(port_val, BSP_GPIO2_JOY_UP)) {
+   \   0000000A   0xF014 0x0001      ANDS     R0,R4,#0x1
+   \   0000000E   0xF090 0x0001      EORS     R0,R0,#0x1
+   \   00000012   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD001             BEQ.N    ??BSP_Joy_GetPos_0
+    533                  return (BSP_JOY_UP);
+   \   00000018   0x2002             MOVS     R0,#+2
+   \   0000001A   0xE02C             B.N      ??BSP_Joy_GetPos_1
+    534              }
+    535          
+    536              if (DEF_BIT_IS_CLR(port_val, BSP_GPIO2_JOY_DOWN)) {
+   \                     ??BSP_Joy_GetPos_0: (+1)
+   \   0000001C   0x0860             LSRS     R0,R4,#+1
+   \   0000001E   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \   00000022   0xF090 0x0001      EORS     R0,R0,#0x1
+   \   00000026   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000028   0x2800             CMP      R0,#+0
+   \   0000002A   0xD001             BEQ.N    ??BSP_Joy_GetPos_2
+    537                  return (BSP_JOY_DOWN);
+   \   0000002C   0x2004             MOVS     R0,#+4
+   \   0000002E   0xE022             B.N      ??BSP_Joy_GetPos_1
+    538              }
+    539          
+    540              if (DEF_BIT_IS_CLR(port_val, BSP_GPIO2_JOY_LEFT)) {
+   \                     ??BSP_Joy_GetPos_2: (+1)
+   \   00000030   0x09E0             LSRS     R0,R4,#+7
+   \   00000032   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \   00000036   0xF090 0x0001      EORS     R0,R0,#0x1
+   \   0000003A   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000003C   0x2800             CMP      R0,#+0
+   \   0000003E   0xD001             BEQ.N    ??BSP_Joy_GetPos_3
+    541                  return (BSP_JOY_LEFT);
+   \   00000040   0x2010             MOVS     R0,#+16
+   \   00000042   0xE018             B.N      ??BSP_Joy_GetPos_1
+    542              }
+    543          
+    544              if (DEF_BIT_IS_CLR(port_val, BSP_GPIO2_JOY_RIGHT)) {
+   \                     ??BSP_Joy_GetPos_3: (+1)
+   \   00000044   0x0A20             LSRS     R0,R4,#+8
+   \   00000046   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \   0000004A   0xF090 0x0001      EORS     R0,R0,#0x1
+   \   0000004E   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000050   0x2800             CMP      R0,#+0
+   \   00000052   0xD001             BEQ.N    ??BSP_Joy_GetPos_4
+    545                  return (BSP_JOY_RIGHT);
+   \   00000054   0x2008             MOVS     R0,#+8
+   \   00000056   0xE00E             B.N      ??BSP_Joy_GetPos_1
+    546              }
+    547          
+    548              port_val = CSP_GPIO_Rd(CSP_GPIO_PORT_NBR_00);
+   \                     ??BSP_Joy_GetPos_4: (+1)
+   \   00000058   0x2000             MOVS     R0,#+0
+   \   0000005A   0x.... 0x....      BL       CSP_GPIO_Rd
+   \   0000005E   0x0004             MOVS     R4,R0
+    549          
+    550              if (DEF_BIT_IS_CLR(port_val, BSP_GPIO0_JOY_CENTER)) {
+   \   00000060   0x0960             LSRS     R0,R4,#+5
+   \   00000062   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \   00000066   0xF090 0x0001      EORS     R0,R0,#0x1
+   \   0000006A   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000006C   0x2800             CMP      R0,#+0
+   \   0000006E   0xD001             BEQ.N    ??BSP_Joy_GetPos_5
+    551                  return (BSP_JOY_CENTER);
+   \   00000070   0x2020             MOVS     R0,#+32
+   \   00000072   0xE000             B.N      ??BSP_Joy_GetPos_1
+    552              }
+    553          
+    554              return (BSP_JOY_NONE);
+   \                     ??BSP_Joy_GetPos_5: (+1)
+   \   00000074   0x2000             MOVS     R0,#+0
+   \                     ??BSP_Joy_GetPos_1: (+1)
+   \   00000076   0xBD10             POP      {R4,PC}          ;; return
+    555          }
+    556          
+    557          
+    558          /*
+    559          *********************************************************************************************************
+    560          *                                             BSP_Joy_GetStatus()
+    561          *
+    562          * Description : Get the status of the Joystick at a given position.
+    563          *
+    564          * Argument(s) :   joy_pos.   Position of the Joystick.
+    565          *
+    566          *                             BSP_JOY_UP       If the Joystick is toggled up.
+    567          *                             BSP_JOY_DOWN     If the Joystick is toggled down.
+    568          *                             BSP_JOY_RIGHT    If the Joystick is toggled right.
+    569          *                             BSP_JOY_LEFT     If the Joystick is toggled left.
+    570          *                             BSP_JOY_CENTER   If the Joystick is being pressed.
+    571          *
+    572          * Return(s)   :  The current Joystick status at a given position.
+    573          *
+    574          *                             DEF_ON           If the Joystick is     in the position specifies by joy_position
+    575          *                             DEF_OFF          If the Joystick is not in the position specifies by joy_position
+    576          * Caller(s)   : Application.
+    577          *
+    578          * Note(s)     : none.
+    579          *********************************************************************************************************
+    580          */
+    581          
+
+   \                                 In section .text, align 2, keep-with-next
+    582          CPU_INT08U  BSP_Joy_GetStatus (CPU_INT08U  joy_pos)
+    583          {
+   \                     BSP_Joy_GetStatus: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    584              CPU_INT08U joy_status;
+    585          
+    586          
+    587              joy_status = BSP_Joy_GetPos();
+   \   00000004   0x.... 0x....      BL       BSP_Joy_GetPos
+   \   00000008   0x0005             MOVS     R5,R0
+    588          
+    589              if (joy_status == joy_pos) {
+   \   0000000A   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000000C   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000000E   0x42A5             CMP      R5,R4
+   \   00000010   0xD101             BNE.N    ??BSP_Joy_GetStatus_0
+    590                  return (DEF_ON);
+   \   00000012   0x2001             MOVS     R0,#+1
+   \   00000014   0xE000             B.N      ??BSP_Joy_GetStatus_1
+    591              }
+    592          
+    593              return (DEF_OFF);
+   \                     ??BSP_Joy_GetStatus_0: (+1)
+   \   00000016   0x2000             MOVS     R0,#+0
+   \                     ??BSP_Joy_GetStatus_1: (+1)
+   \   00000018   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    594          }
+    595          
+    596          
+    597          
+    598          /*
+    599          *********************************************************************************************************
+    600          *                                                 BSP_LED_Off()
+    601          *
+    602          * Description : Turn OFF any or all the LEDs on the board.
+    603          *
+    604          * Argument(s) : led_id   The ID of the LED to control:
+    605          *
+    606          *                       0    turn OFF all LEDs on the board
+    607          *                       1    turn OFF USB_UP_LED1
+    608          *                       2    turn OFF USB_UP_LED2
+    609          *
+    610          * Return(s)   : none.
+    611          *
+    612          * Caller(s)   : Application.
+    613          *
+    614          * Note(s)     : none.
+    615          *********************************************************************************************************
+    616          */
+    617          
+
+   \                                 In section .text, align 2, keep-with-next
+    618          void  BSP_LED_Off (CPU_INT08U  led)
+    619          {
+   \                     BSP_LED_Off: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    620              switch (led)  {
+   \   00000004   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD00C             BEQ.N    ??BSP_LED_Off_0
+   \   0000000A   0x2C02             CMP      R4,#+2
+   \   0000000C   0xD038             BEQ.N    ??BSP_LED_Off_1
+   \   0000000E   0xD331             BCC.N    ??BSP_LED_Off_2
+   \   00000010   0x2C04             CMP      R4,#+4
+   \   00000012   0xD041             BEQ.N    ??BSP_LED_Off_3
+   \   00000014   0xD33A             BCC.N    ??BSP_LED_Off_4
+   \   00000016   0x2C06             CMP      R4,#+6
+   \   00000018   0xD049             BEQ.N    ??BSP_LED_Off_5
+   \   0000001A   0xD343             BCC.N    ??BSP_LED_Off_6
+   \   0000001C   0x2C08             CMP      R4,#+8
+   \   0000001E   0xD052             BEQ.N    ??BSP_LED_Off_7
+   \   00000020   0xD34B             BCC.N    ??BSP_LED_Off_8
+   \   00000022   0xE056             B.N      ??BSP_LED_Off_9
+    621                  case 0u:
+    622                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
+   \                     ??BSP_LED_Off_0: (+1)
+   \   00000024   0xF44F 0x4180      MOV      R1,#+16384
+   \   00000028   0x2001             MOVS     R0,#+1
+   \   0000002A   0x.... 0x....      BL       CSP_GPIO_BitSet
+    623                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
+   \   0000002E   0xF44F 0x6180      MOV      R1,#+1024
+   \   00000032   0x2001             MOVS     R0,#+1
+   \   00000034   0x.... 0x....      BL       CSP_GPIO_BitSet
+    624                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
+   \   00000038   0xF44F 0x7100      MOV      R1,#+512
+   \   0000003C   0x2001             MOVS     R0,#+1
+   \   0000003E   0x.... 0x....      BL       CSP_GPIO_BitSet
+    625                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
+   \   00000042   0xF44F 0x7180      MOV      R1,#+256
+   \   00000046   0x2001             MOVS     R0,#+1
+   \   00000048   0x.... 0x....      BL       CSP_GPIO_BitSet
+    626                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
+   \   0000004C   0x2110             MOVS     R1,#+16
+   \   0000004E   0x2001             MOVS     R0,#+1
+   \   00000050   0x.... 0x....      BL       CSP_GPIO_BitSet
+    627                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
+   \   00000054   0xF45F 0x3100      MOVS     R1,#+131072
+   \   00000058   0x2001             MOVS     R0,#+1
+   \   0000005A   0x.... 0x....      BL       CSP_GPIO_BitSet
+    628                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED7);
+   \   0000005E   0xF45F 0x3180      MOVS     R1,#+65536
+   \   00000062   0x2001             MOVS     R0,#+1
+   \   00000064   0x.... 0x....      BL       CSP_GPIO_BitSet
+    629                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED8);   
+   \   00000068   0xF44F 0x4100      MOV      R1,#+32768
+   \   0000006C   0x2001             MOVS     R0,#+1
+   \   0000006E   0x.... 0x....      BL       CSP_GPIO_BitSet
+    630                       break;
+   \   00000072   0xE02E             B.N      ??BSP_LED_Off_10
+    631          
+    632                  case 1u:
+    633                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
+   \                     ??BSP_LED_Off_2: (+1)
+   \   00000074   0xF44F 0x4180      MOV      R1,#+16384
+   \   00000078   0x2001             MOVS     R0,#+1
+   \   0000007A   0x.... 0x....      BL       CSP_GPIO_BitSet
+    634                       break;
+   \   0000007E   0xE028             B.N      ??BSP_LED_Off_10
+    635          
+    636                  case 2u:
+    637                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
+   \                     ??BSP_LED_Off_1: (+1)
+   \   00000080   0xF44F 0x6180      MOV      R1,#+1024
+   \   00000084   0x2001             MOVS     R0,#+1
+   \   00000086   0x.... 0x....      BL       CSP_GPIO_BitSet
+    638                       break;
+   \   0000008A   0xE022             B.N      ??BSP_LED_Off_10
+    639          
+    640                  case 3u:
+    641                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
+   \                     ??BSP_LED_Off_4: (+1)
+   \   0000008C   0xF44F 0x7100      MOV      R1,#+512
+   \   00000090   0x2001             MOVS     R0,#+1
+   \   00000092   0x.... 0x....      BL       CSP_GPIO_BitSet
+    642                       break;
+   \   00000096   0xE01C             B.N      ??BSP_LED_Off_10
+    643          
+    644                  case 4u:
+    645                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
+   \                     ??BSP_LED_Off_3: (+1)
+   \   00000098   0xF44F 0x7180      MOV      R1,#+256
+   \   0000009C   0x2001             MOVS     R0,#+1
+   \   0000009E   0x.... 0x....      BL       CSP_GPIO_BitSet
+    646                       break;
+   \   000000A2   0xE016             B.N      ??BSP_LED_Off_10
+    647          
+    648                  case 5u:
+    649                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
+   \                     ??BSP_LED_Off_6: (+1)
+   \   000000A4   0x2110             MOVS     R1,#+16
+   \   000000A6   0x2001             MOVS     R0,#+1
+   \   000000A8   0x.... 0x....      BL       CSP_GPIO_BitSet
+    650                       break;
+   \   000000AC   0xE011             B.N      ??BSP_LED_Off_10
+    651          
+    652                  case 6u:
+    653                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
+   \                     ??BSP_LED_Off_5: (+1)
+   \   000000AE   0xF45F 0x3100      MOVS     R1,#+131072
+   \   000000B2   0x2001             MOVS     R0,#+1
+   \   000000B4   0x.... 0x....      BL       CSP_GPIO_BitSet
+    654                       break;
+   \   000000B8   0xE00B             B.N      ??BSP_LED_Off_10
+    655          
+    656                  case 7u:
+    657                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED7);
+   \                     ??BSP_LED_Off_8: (+1)
+   \   000000BA   0xF45F 0x3180      MOVS     R1,#+65536
+   \   000000BE   0x2001             MOVS     R0,#+1
+   \   000000C0   0x.... 0x....      BL       CSP_GPIO_BitSet
+    658                       break;
+   \   000000C4   0xE005             B.N      ??BSP_LED_Off_10
+    659          
+    660                  case 8u:
+    661                       CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED8);
+   \                     ??BSP_LED_Off_7: (+1)
+   \   000000C6   0xF44F 0x4100      MOV      R1,#+32768
+   \   000000CA   0x2001             MOVS     R0,#+1
+   \   000000CC   0x.... 0x....      BL       CSP_GPIO_BitSet
+    662                       break;
+   \   000000D0   0xE7FF             B.N      ??BSP_LED_Off_10
+    663          
+    664                  default:
+    665                      break;
+    666              }
+    667          }
+   \                     ??BSP_LED_Off_9: (+1)
+   \                     ??BSP_LED_Off_10: (+1)
+   \   000000D2   0xBD10             POP      {R4,PC}          ;; return
+    668          
+    669          
+    670          /*
+    671          *********************************************************************************************************
+    672          *                                                 BSP_LED_On()
+    673          *
+    674          * Description : Turn ON any or all the LEDs on the board.
+    675          *
+    676          * Argument(s) : led_id   The ID of the LED to control:
+    677          *
+    678          *                       0    turn ON all LEDs on the board.
+    679          *                       1    turn ON USB_UP_LED1.
+    680          *                       2    turn ON USB_UP_LED2.
+    681          *
+    682          * Return(s)   : none.
+    683          *
+    684          * Caller(s)   : Application.
+    685          *
+    686          * Note(s)     : none.
+    687          *********************************************************************************************************
+    688          */
+    689          
+
+   \                                 In section .text, align 2, keep-with-next
+    690          void  BSP_LED_On (CPU_INT08U  led)
+    691          {
+   \                     BSP_LED_On: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    692              switch (led)  {
+   \   00000004   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD00C             BEQ.N    ??BSP_LED_On_0
+   \   0000000A   0x2C02             CMP      R4,#+2
+   \   0000000C   0xD038             BEQ.N    ??BSP_LED_On_1
+   \   0000000E   0xD331             BCC.N    ??BSP_LED_On_2
+   \   00000010   0x2C04             CMP      R4,#+4
+   \   00000012   0xD041             BEQ.N    ??BSP_LED_On_3
+   \   00000014   0xD33A             BCC.N    ??BSP_LED_On_4
+   \   00000016   0x2C06             CMP      R4,#+6
+   \   00000018   0xD049             BEQ.N    ??BSP_LED_On_5
+   \   0000001A   0xD343             BCC.N    ??BSP_LED_On_6
+   \   0000001C   0x2C08             CMP      R4,#+8
+   \   0000001E   0xD052             BEQ.N    ??BSP_LED_On_7
+   \   00000020   0xD34B             BCC.N    ??BSP_LED_On_8
+   \   00000022   0xE056             B.N      ??BSP_LED_On_9
+    693                  case 0u:
+    694                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
+   \                     ??BSP_LED_On_0: (+1)
+   \   00000024   0xF44F 0x4180      MOV      R1,#+16384
+   \   00000028   0x2001             MOVS     R0,#+1
+   \   0000002A   0x.... 0x....      BL       CSP_GPIO_BitClr
+    695                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
+   \   0000002E   0xF44F 0x6180      MOV      R1,#+1024
+   \   00000032   0x2001             MOVS     R0,#+1
+   \   00000034   0x.... 0x....      BL       CSP_GPIO_BitClr
+    696                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
+   \   00000038   0xF44F 0x7100      MOV      R1,#+512
+   \   0000003C   0x2001             MOVS     R0,#+1
+   \   0000003E   0x.... 0x....      BL       CSP_GPIO_BitClr
+    697                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
+   \   00000042   0xF44F 0x7180      MOV      R1,#+256
+   \   00000046   0x2001             MOVS     R0,#+1
+   \   00000048   0x.... 0x....      BL       CSP_GPIO_BitClr
+    698                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
+   \   0000004C   0x2110             MOVS     R1,#+16
+   \   0000004E   0x2001             MOVS     R0,#+1
+   \   00000050   0x.... 0x....      BL       CSP_GPIO_BitClr
+    699                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
+   \   00000054   0xF45F 0x3100      MOVS     R1,#+131072
+   \   00000058   0x2001             MOVS     R0,#+1
+   \   0000005A   0x.... 0x....      BL       CSP_GPIO_BitClr
+    700                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED7);
+   \   0000005E   0xF45F 0x3180      MOVS     R1,#+65536
+   \   00000062   0x2001             MOVS     R0,#+1
+   \   00000064   0x.... 0x....      BL       CSP_GPIO_BitClr
+    701                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED8);   
+   \   00000068   0xF44F 0x4100      MOV      R1,#+32768
+   \   0000006C   0x2001             MOVS     R0,#+1
+   \   0000006E   0x.... 0x....      BL       CSP_GPIO_BitClr
+    702                       break;
+   \   00000072   0xE02E             B.N      ??BSP_LED_On_10
+    703          
+    704                  case 1u:
+    705                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
+   \                     ??BSP_LED_On_2: (+1)
+   \   00000074   0xF44F 0x4180      MOV      R1,#+16384
+   \   00000078   0x2001             MOVS     R0,#+1
+   \   0000007A   0x.... 0x....      BL       CSP_GPIO_BitClr
+    706                       break;
+   \   0000007E   0xE028             B.N      ??BSP_LED_On_10
+    707          
+    708                  case 2u:
+    709                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
+   \                     ??BSP_LED_On_1: (+1)
+   \   00000080   0xF44F 0x6180      MOV      R1,#+1024
+   \   00000084   0x2001             MOVS     R0,#+1
+   \   00000086   0x.... 0x....      BL       CSP_GPIO_BitClr
+    710                       break;
+   \   0000008A   0xE022             B.N      ??BSP_LED_On_10
+    711          
+    712                  case 3u:
+    713                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
+   \                     ??BSP_LED_On_4: (+1)
+   \   0000008C   0xF44F 0x7100      MOV      R1,#+512
+   \   00000090   0x2001             MOVS     R0,#+1
+   \   00000092   0x.... 0x....      BL       CSP_GPIO_BitClr
+    714                       break;
+   \   00000096   0xE01C             B.N      ??BSP_LED_On_10
+    715          
+    716                  case 4u:
+    717                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
+   \                     ??BSP_LED_On_3: (+1)
+   \   00000098   0xF44F 0x7180      MOV      R1,#+256
+   \   0000009C   0x2001             MOVS     R0,#+1
+   \   0000009E   0x.... 0x....      BL       CSP_GPIO_BitClr
+    718                       break;
+   \   000000A2   0xE016             B.N      ??BSP_LED_On_10
+    719          
+    720                  case 5u:
+    721                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
+   \                     ??BSP_LED_On_6: (+1)
+   \   000000A4   0x2110             MOVS     R1,#+16
+   \   000000A6   0x2001             MOVS     R0,#+1
+   \   000000A8   0x.... 0x....      BL       CSP_GPIO_BitClr
+    722                       break;
+   \   000000AC   0xE011             B.N      ??BSP_LED_On_10
+    723          
+    724                  case 6u:
+    725                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
+   \                     ??BSP_LED_On_5: (+1)
+   \   000000AE   0xF45F 0x3100      MOVS     R1,#+131072
+   \   000000B2   0x2001             MOVS     R0,#+1
+   \   000000B4   0x.... 0x....      BL       CSP_GPIO_BitClr
+    726                       break;
+   \   000000B8   0xE00B             B.N      ??BSP_LED_On_10
+    727          
+    728                  case 7u:
+    729                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED7);
+   \                     ??BSP_LED_On_8: (+1)
+   \   000000BA   0xF45F 0x3180      MOVS     R1,#+65536
+   \   000000BE   0x2001             MOVS     R0,#+1
+   \   000000C0   0x.... 0x....      BL       CSP_GPIO_BitClr
+    730                       break;
+   \   000000C4   0xE005             B.N      ??BSP_LED_On_10
+    731          
+    732                  case 8u:
+    733                       CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED8);
+   \                     ??BSP_LED_On_7: (+1)
+   \   000000C6   0xF44F 0x4100      MOV      R1,#+32768
+   \   000000CA   0x2001             MOVS     R0,#+1
+   \   000000CC   0x.... 0x....      BL       CSP_GPIO_BitClr
+    734                       break;
+   \   000000D0   0xE7FF             B.N      ??BSP_LED_On_10
+    735                  default:
+    736                      break;
+    737              }
+    738          }
+   \                     ??BSP_LED_On_9: (+1)
+   \                     ??BSP_LED_On_10: (+1)
+   \   000000D2   0xBD10             POP      {R4,PC}          ;; return
+    739          
+    740          
+    741          /*
+    742          *********************************************************************************************************
+    743          *                                                 BSP_LED_Toggle()
+    744          *
+    745          * Description : Toggles any or all the LEDs on the board.
+    746          *
+    747          * Argument(s) : led_id   The ID of the LED to control:
+    748          *
+    749          *                       0    toggle all LEDs on the board
+    750          *                       1    toggle USB_UP_LED1
+    751          *                       2    toggle USB_UP_LED2
+    752          *
+    753          * Return(s)   : none.
+    754          *
+    755          * Caller(s)   : Application.
+    756          *
+    757          * Note(s)     : none.
+    758          *********************************************************************************************************
+    759          */
+    760          
+
+   \                                 In section .text, align 2, keep-with-next
+    761          void  BSP_LED_Toggle (CPU_INT08U  led)
+    762          {
+   \                     BSP_LED_Toggle: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    763              switch (led)  {
+   \   00000004   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD00C             BEQ.N    ??BSP_LED_Toggle_0
+   \   0000000A   0x2C02             CMP      R4,#+2
+   \   0000000C   0xD038             BEQ.N    ??BSP_LED_Toggle_1
+   \   0000000E   0xD331             BCC.N    ??BSP_LED_Toggle_2
+   \   00000010   0x2C04             CMP      R4,#+4
+   \   00000012   0xD041             BEQ.N    ??BSP_LED_Toggle_3
+   \   00000014   0xD33A             BCC.N    ??BSP_LED_Toggle_4
+   \   00000016   0x2C06             CMP      R4,#+6
+   \   00000018   0xD049             BEQ.N    ??BSP_LED_Toggle_5
+   \   0000001A   0xD343             BCC.N    ??BSP_LED_Toggle_6
+   \   0000001C   0x2C08             CMP      R4,#+8
+   \   0000001E   0xD052             BEQ.N    ??BSP_LED_Toggle_7
+   \   00000020   0xD34B             BCC.N    ??BSP_LED_Toggle_8
+   \   00000022   0xE056             B.N      ??BSP_LED_Toggle_9
+    764                  case 0u:
+    765                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
+   \                     ??BSP_LED_Toggle_0: (+1)
+   \   00000024   0xF44F 0x4180      MOV      R1,#+16384
+   \   00000028   0x2001             MOVS     R0,#+1
+   \   0000002A   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    766                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
+   \   0000002E   0xF44F 0x6180      MOV      R1,#+1024
+   \   00000032   0x2001             MOVS     R0,#+1
+   \   00000034   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    767                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
+   \   00000038   0xF44F 0x7100      MOV      R1,#+512
+   \   0000003C   0x2001             MOVS     R0,#+1
+   \   0000003E   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    768                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
+   \   00000042   0xF44F 0x7180      MOV      R1,#+256
+   \   00000046   0x2001             MOVS     R0,#+1
+   \   00000048   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    769                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
+   \   0000004C   0x2110             MOVS     R1,#+16
+   \   0000004E   0x2001             MOVS     R0,#+1
+   \   00000050   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    770                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
+   \   00000054   0xF45F 0x3100      MOVS     R1,#+131072
+   \   00000058   0x2001             MOVS     R0,#+1
+   \   0000005A   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    771                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED7);
+   \   0000005E   0xF45F 0x3180      MOVS     R1,#+65536
+   \   00000062   0x2001             MOVS     R0,#+1
+   \   00000064   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    772                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED8);   
+   \   00000068   0xF44F 0x4100      MOV      R1,#+32768
+   \   0000006C   0x2001             MOVS     R0,#+1
+   \   0000006E   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    773                       break;
+   \   00000072   0xE02E             B.N      ??BSP_LED_Toggle_10
+    774          
+    775                  case 1u:
+    776                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
+   \                     ??BSP_LED_Toggle_2: (+1)
+   \   00000074   0xF44F 0x4180      MOV      R1,#+16384
+   \   00000078   0x2001             MOVS     R0,#+1
+   \   0000007A   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    777                       break;
+   \   0000007E   0xE028             B.N      ??BSP_LED_Toggle_10
+    778          
+    779                  case 2u:
+    780                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
+   \                     ??BSP_LED_Toggle_1: (+1)
+   \   00000080   0xF44F 0x6180      MOV      R1,#+1024
+   \   00000084   0x2001             MOVS     R0,#+1
+   \   00000086   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    781                       break;
+   \   0000008A   0xE022             B.N      ??BSP_LED_Toggle_10
+    782          
+    783                  case 3u:
+    784                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
+   \                     ??BSP_LED_Toggle_4: (+1)
+   \   0000008C   0xF44F 0x7100      MOV      R1,#+512
+   \   00000090   0x2001             MOVS     R0,#+1
+   \   00000092   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    785                       break;
+   \   00000096   0xE01C             B.N      ??BSP_LED_Toggle_10
+    786          
+    787                  case 4u:
+    788                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
+   \                     ??BSP_LED_Toggle_3: (+1)
+   \   00000098   0xF44F 0x7180      MOV      R1,#+256
+   \   0000009C   0x2001             MOVS     R0,#+1
+   \   0000009E   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    789                       break;
+   \   000000A2   0xE016             B.N      ??BSP_LED_Toggle_10
+    790          
+    791                  case 5u:
+    792                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
+   \                     ??BSP_LED_Toggle_6: (+1)
+   \   000000A4   0x2110             MOVS     R1,#+16
+   \   000000A6   0x2001             MOVS     R0,#+1
+   \   000000A8   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    793                       break;
+   \   000000AC   0xE011             B.N      ??BSP_LED_Toggle_10
+    794          
+    795                  case 6u:
+    796                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
+   \                     ??BSP_LED_Toggle_5: (+1)
+   \   000000AE   0xF45F 0x3100      MOVS     R1,#+131072
+   \   000000B2   0x2001             MOVS     R0,#+1
+   \   000000B4   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    797                       break;
+   \   000000B8   0xE00B             B.N      ??BSP_LED_Toggle_10
+    798          
+    799                  case 7u:
+    800                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED7);
+   \                     ??BSP_LED_Toggle_8: (+1)
+   \   000000BA   0xF45F 0x3180      MOVS     R1,#+65536
+   \   000000BE   0x2001             MOVS     R0,#+1
+   \   000000C0   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    801                       break;
+   \   000000C4   0xE005             B.N      ??BSP_LED_Toggle_10
+    802          
+    803                  case 8u:
+    804                       CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED8);
+   \                     ??BSP_LED_Toggle_7: (+1)
+   \   000000C6   0xF44F 0x4100      MOV      R1,#+32768
+   \   000000CA   0x2001             MOVS     R0,#+1
+   \   000000CC   0x.... 0x....      BL       CSP_GPIO_BitToggle
+    805                       break;
+   \   000000D0   0xE7FF             B.N      ??BSP_LED_Toggle_10
+    806                  default:
+    807                      break;
+    808              }
+    809          }
+   \                     ??BSP_LED_Toggle_9: (+1)
+   \                     ??BSP_LED_Toggle_10: (+1)
+   \   000000D2   0xBD10             POP      {R4,PC}          ;; return
+    810          
+    811          
+    812          /*
+    813          *********************************************************************************************************
+    814          *                                           BSP_PB_GetStatus()
+    815          *
+    816          * Description : Get the status of a push button on the board.
+    817          *
+    818          * Argument(s) : pb_id   The ID of the push button to probe
+    819          *
+    820          *                       1    probe the push button B1
+    821          *                       2    probe the push button B2
+    822          *
+    823          * Return(s)   : DEF_OFF  if the push button is not pressed
+    824          *               DEF_ONN    if the push button is     pressed
+    825          *
+    826          * Caller(s)   : Application
+    827          *
+    828          * Note(s)     : none.
+    829          *********************************************************************************************************
+    830          */
+    831          
+
+   \                                 In section .text, align 2, keep-with-next
+    832          CPU_BOOLEAN  BSP_PB_GetStatus (CPU_INT08U  pb_id)
+    833          {
+   \                     BSP_PB_GetStatus: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    834              CPU_INT32U   port_val;
+    835              CPU_BOOLEAN  pb_status;
+    836          
+    837          
+    838              pb_status = DEF_OFF;
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x0006             MOVS     R6,R0
+    839          
+    840              if (pb_id == 1u) {
+   \   00000008   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000000A   0x2C01             CMP      R4,#+1
+   \   0000000C   0xD10E             BNE.N    ??BSP_PB_GetStatus_0
+    841                  port_val = CSP_GPIO_Rd(CSP_GPIO_PORT_NBR_00);
+   \   0000000E   0x2000             MOVS     R0,#+0
+   \   00000010   0x.... 0x....      BL       CSP_GPIO_Rd
+   \   00000014   0x0005             MOVS     R5,R0
+    842                  if (DEF_BIT_IS_CLR(port_val, BSP_GPIO0_BUT1)) {
+   \   00000016   0x0DE8             LSRS     R0,R5,#+23
+   \   00000018   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \   0000001C   0xF090 0x0001      EORS     R0,R0,#0x1
+   \   00000020   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000022   0x2800             CMP      R0,#+0
+   \   00000024   0xD013             BEQ.N    ??BSP_PB_GetStatus_1
+    843                      pb_status = DEF_ON;
+   \   00000026   0x2001             MOVS     R0,#+1
+   \   00000028   0x0006             MOVS     R6,R0
+   \   0000002A   0xE010             B.N      ??BSP_PB_GetStatus_1
+    844                  }
+    845              } else if (pb_id == 2u) {
+   \                     ??BSP_PB_GetStatus_0: (+1)
+   \   0000002C   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000002E   0x2C02             CMP      R4,#+2
+   \   00000030   0xD10D             BNE.N    ??BSP_PB_GetStatus_1
+    846                  port_val =  CSP_GPIO_Rd(CSP_GPIO_PORT_NBR_02);
+   \   00000032   0x2002             MOVS     R0,#+2
+   \   00000034   0x.... 0x....      BL       CSP_GPIO_Rd
+   \   00000038   0x0005             MOVS     R5,R0
+    847                  if (DEF_BIT_IS_CLR(port_val, BSP_GPIO2_BUT2)) {
+   \   0000003A   0x0B68             LSRS     R0,R5,#+13
+   \   0000003C   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \   00000040   0xF090 0x0001      EORS     R0,R0,#0x1
+   \   00000044   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000046   0x2800             CMP      R0,#+0
+   \   00000048   0xD001             BEQ.N    ??BSP_PB_GetStatus_1
+    848                      pb_status = DEF_ON;
+   \   0000004A   0x2001             MOVS     R0,#+1
+   \   0000004C   0x0006             MOVS     R6,R0
+    849                  }
+    850              } else {
+    851                  ;
+    852              }
+    853          
+    854              return (pb_status);
+   \                     ??BSP_PB_GetStatus_1: (+1)
+   \   0000004E   0x0030             MOVS     R0,R6
+   \   00000050   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000052   0xBD70             POP      {R4-R6,PC}       ;; return
+    855          }
+    856          
+    857          /*$PAGE*/
+    858          /*
+    859          *********************************************************************************************************
+    860          *                                          CPU_TS_TmrInit()
+    861          *
+    862          * Description : Initialize & start CPU timestamp timer.
+    863          *
+    864          * Argument(s) : none.
+    865          *
+    866          * Return(s)   : none.
+    867          *
+    868          * Caller(s)   : CPU_TS_Init().
+    869          *
+    870          *               This function is an INTERNAL CPU module function & MUST be implemented by application/
+    871          *               BSP function(s) [see Note #1] but MUST NOT be called by application function(s).
+    872          *
+    873          * Note(s)     : (1) CPU_TS_TmrInit() is an application/BSP function that MUST be defined by the developer
+    874          *                   if either of the following CPU features is enabled :
+    875          *
+    876          *                   (a) CPU timestamps
+    877          *                   (b) CPU interrupts disabled time measurements
+    878          *
+    879          *                   See 'cpu_cfg.h  CPU TIMESTAMP CONFIGURATION  Note #1'
+    880          *                     & 'cpu_cfg.h  CPU INTERRUPTS DISABLED TIME MEASUREMENT CONFIGURATION  Note #1a'.
+    881          *
+    882          *               (2) (a) Timer count values MUST be returned via word-size-configurable 'CPU_TS_TMR'
+    883          *                       data type.
+    884          *
+    885          *                       (1) If timer has more bits, truncate timer values' higher-order bits greater
+    886          *                           than the configured 'CPU_TS_TMR' timestamp timer data type word size.
+    887          *
+    888          *                       (2) Since the timer MUST NOT have less bits than the configured 'CPU_TS_TMR'
+    889          *                           timestamp timer data type word size; 'CPU_CFG_TS_TMR_SIZE' MUST be
+    890          *                           configured so that ALL bits in 'CPU_TS_TMR' data type are significant.
+    891          *
+    892          *                           In other words, if timer size is not a binary-multiple of 8-bit octets
+    893          *                           (e.g. 20-bits or even 24-bits), then the next lower, binary-multiple
+    894          *                           octet word size SHOULD be configured (e.g. to 16-bits).  However, the
+    895          *                           minimum supported word size for CPU timestamp timers is 8-bits.
+    896          *
+    897          *                       See also 'cpu_cfg.h   CPU TIMESTAMP CONFIGURATION  Note #2'
+    898          *                              & 'cpu_core.h  CPU TIMESTAMP DATA TYPES     Note #1'.
+    899          *
+    900          *                   (b) Timer SHOULD be an 'up'  counter whose values increase with each time count.
+    901          *
+    902          *                   (c) When applicable, timer period SHOULD be less than the typical measured time
+    903          *                       but MUST be less than the maximum measured time; otherwise, timer resolution
+    904          *                       inadequate to measure desired times.
+    905          *
+    906          *                   See also 'CPU_TS_TmrRd()  Note #2'.
+    907          *********************************************************************************************************
+    908          */
+    909          
+    910          #if (CPU_CFG_TS_TMR_EN == DEF_ENABLED)
+
+   \                                 In section .text, align 2, keep-with-next
+    911          void  CPU_TS_TmrInit (void)
+    912          {
+   \                     CPU_TS_TmrInit: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    913              CPU_INT32U  fclk_freq;
+    914          
+    915              fclk_freq = CSP_PM_CPU_ClkFreqGet();
+   \   00000002   0x.... 0x....      BL       CSP_PM_CPU_ClkFreqGet
+   \   00000006   0x0004             MOVS     R4,R0
+    916          
+    917              BSP_REG_DEMCR  |= DEF_BIT_24;
+   \   00000008   0x....             LDR.N    R0,??DataTable4_17  ;; 0xe000edfc
+   \   0000000A   0x6800             LDR      R0,[R0, #+0]
+   \   0000000C   0xF050 0x7080      ORRS     R0,R0,#0x1000000
+   \   00000010   0x....             LDR.N    R1,??DataTable4_17  ;; 0xe000edfc
+   \   00000012   0x6008             STR      R0,[R1, #+0]
+    918              BSP_REG_DWT_CR |= DEF_BIT_00;
+   \   00000014   0x....             LDR.N    R0,??DataTable4_18  ;; 0xe0001000
+   \   00000016   0x6800             LDR      R0,[R0, #+0]
+   \   00000018   0xF050 0x0001      ORRS     R0,R0,#0x1
+   \   0000001C   0x....             LDR.N    R1,??DataTable4_18  ;; 0xe0001000
+   \   0000001E   0x6008             STR      R0,[R1, #+0]
+    919          
+    920              CPU_TS_TmrFreqSet((CPU_TS_TMR_FREQ)fclk_freq);
+   \   00000020   0x0020             MOVS     R0,R4
+   \   00000022   0x.... 0x....      BL       CPU_TS_TmrFreqSet
+    921          }
+   \   00000026   0xBD10             POP      {R4,PC}          ;; return
+    922          #endif
+    923          
+    924          
+    925          /*$PAGE*/
+    926          /*
+    927          *********************************************************************************************************
+    928          *                                           CPU_TS_TmrRd()
+    929          *
+    930          * Description : Get current CPU timestamp timer count value.
+    931          *
+    932          * Argument(s) : none.
+    933          *
+    934          * Return(s)   : Timestamp timer count (see Notes #2a & #2b).
+    935          *
+    936          * Caller(s)   : CPU_TS_Init(),
+    937          *               CPU_TS_Get32(),
+    938          *               CPU_TS_Get64(),
+    939          *               CPU_IntDisMeasStart(),
+    940          *               CPU_IntDisMeasStop().
+    941          *
+    942          *               This function is an INTERNAL CPU module function & MUST be implemented by application/
+    943          *               BSP function(s) [see Note #1] but SHOULD NOT be called by application function(s).
+    944          *
+    945          * Note(s)     : (1) CPU_TS_TmrRd() is an application/BSP function that MUST be defined by the developer
+    946          *                   if either of the following CPU features is enabled :
+    947          *
+    948          *                   (a) CPU timestamps
+    949          *                   (b) CPU interrupts disabled time measurements
+    950          *
+    951          *                   See 'cpu_cfg.h  CPU TIMESTAMP CONFIGURATION  Note #1'
+    952          *                     & 'cpu_cfg.h  CPU INTERRUPTS DISABLED TIME MEASUREMENT CONFIGURATION  Note #1a'.
+    953          *
+    954          *               (2) (a) Timer count values MUST be returned via word-size-configurable 'CPU_TS_TMR'
+    955          *                       data type.
+    956          *
+    957          *                       (1) If timer has more bits, truncate timer values' higher-order bits greater
+    958          *                           than the configured 'CPU_TS_TMR' timestamp timer data type word size.
+    959          *
+    960          *                       (2) Since the timer MUST NOT have less bits than the configured 'CPU_TS_TMR'
+    961          *                           timestamp timer data type word size; 'CPU_CFG_TS_TMR_SIZE' MUST be
+    962          *                           configured so that ALL bits in 'CPU_TS_TMR' data type are significant.
+    963          *
+    964          *                           In other words, if timer size is not a binary-multiple of 8-bit octets
+    965          *                           (e.g. 20-bits or even 24-bits), then the next lower, binary-multiple
+    966          *                           octet word size SHOULD be configured (e.g. to 16-bits).  However, the
+    967          *                           minimum supported word size for CPU timestamp timers is 8-bits.
+    968          *
+    969          *                       See also 'cpu_cfg.h   CPU TIMESTAMP CONFIGURATION  Note #2'
+    970          *                              & 'cpu_core.h  CPU TIMESTAMP DATA TYPES     Note #1'.
+    971          *
+    972          *                   (b) Timer SHOULD be an 'up'  counter whose values increase with each time count.
+    973          *
+    974          *                       (1) If timer is a 'down' counter whose values decrease with each time count,
+    975          *                           then the returned timer value MUST be ones-complemented.
+    976          *
+    977          *                   (c) (1) When applicable, the amount of time measured by CPU timestamps is
+    978          *                           calculated by either of the following equations :
+    979          *
+    980          *                           (A) Time measured  =  Number timer counts  *  Timer period
+    981          *
+    982          *                                   where
+    983          *
+    984          *                                       Number timer counts     Number of timer counts measured
+    985          *                                       Timer period            Timer's period in some units of
+    986          *                                                                   (fractional) seconds
+    987          *                                       Time measured           Amount of time measured, in same
+    988          *                                                                   units of (fractional) seconds
+    989          *                                                                   as the Timer period
+    990          *
+    991          *                                                  Number timer counts
+    992          *                           (B) Time measured  =  ---------------------
+    993          *                                                    Timer frequency
+    994          *
+    995          *                                   where
+    996          *
+    997          *                                       Number timer counts     Number of timer counts measured
+    998          *                                       Timer frequency         Timer's frequency in some units
+    999          *                                                                   of counts per second
+   1000          *                                       Time measured           Amount of time measured, in seconds
+   1001          *
+   1002          *                       (2) Timer period SHOULD be less than the typical measured time but MUST be less
+   1003          *                           than the maximum measured time; otherwise, timer resolution inadequate to
+   1004          *                           measure desired times.
+   1005          *********************************************************************************************************
+   1006          */
+   1007          
+   1008          #if (CPU_CFG_TS_TMR_EN == DEF_ENABLED)
+
+   \                                 In section .text, align 2, keep-with-next
+   1009          CPU_TS_TMR  CPU_TS_TmrRd (void)
+   1010          {
+   1011              CPU_TS_TMR  ts_tmr_cnts;
+   1012          
+   1013          
+   1014              ts_tmr_cnts  = (CPU_TS_TMR)BSP_REG_DWT_CYCCNT;
+   \                     CPU_TS_TmrRd: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable4_19  ;; 0xe0001004
+   \   00000002   0x6809             LDR      R1,[R1, #+0]
+   \   00000004   0x0008             MOVS     R0,R1
+   1015          
+   1016              return (ts_tmr_cnts);
+   \   00000006   0x4770             BX       LR               ;; return
+   1017          }
+   1018          #endif
+   1019          
+   1020          
+   1021          /*$PAGE*/
+   1022          /*
+   1023          *********************************************************************************************************
+   1024          *                                         CPU_TSxx_to_uSec()
+   1025          *
+   1026          * Description : Convert a 32-/64-bit CPU timestamp from timer counts to microseconds.
+   1027          *
+   1028          * Argument(s) : ts_cnts   CPU timestamp (in timestamp timer counts [see Note #2aA]).
+   1029          *
+   1030          * Return(s)   : Converted CPU timestamp (in microseconds           [see Note #2aD]).
+   1031          *
+   1032          * Caller(s)   : Application.
+   1033          *
+   1034          *               This function is an (optional) CPU module application interface (API) function which
+   1035          *               MAY be implemented by application/BSP function(s) [see Note #1] & MAY be called by
+   1036          *               application function(s).
+   1037          *
+   1038          * Note(s)     : (1) CPU_TS32_to_uSec()/CPU_TS64_to_uSec() are application/BSP functions that MAY be
+   1039          *                   optionally defined by the developer when either of the following CPU features is
+   1040          *                   enabled :
+   1041          *
+   1042          *                   (a) CPU timestamps
+   1043          *                   (b) CPU interrupts disabled time measurements
+   1044          *
+   1045          *                   See 'cpu_cfg.h  CPU TIMESTAMP CONFIGURATION  Note #1'
+   1046          *                     & 'cpu_cfg.h  CPU INTERRUPTS DISABLED TIME MEASUREMENT CONFIGURATION  Note #1a'.
+   1047          *
+   1048          *               (2) (a) The amount of time measured by CPU timestamps is calculated by either of
+   1049          *                       the following equations :
+   1050          *
+   1051          *                                                                        10^6 microseconds
+   1052          *                       (1) Time measured  =   Number timer counts   *  -------------------  *  Timer period
+   1053          *                                                                            1 second
+   1054          *
+   1055          *                                              Number timer counts       10^6 microseconds
+   1056          *                       (2) Time measured  =  ---------------------  *  -------------------
+   1057          *                                                Timer frequency             1 second
+   1058          *
+   1059          *                               where
+   1060          *
+   1061          *                                   (A) Number timer counts     Number of timer counts measured
+   1062          *                                   (B) Timer frequency         Timer's frequency in some units
+   1063          *                                                                   of counts per second
+   1064          *                                   (C) Timer period            Timer's period in some units of
+   1065          *                                                                   (fractional)  seconds
+   1066          *                                   (D) Time measured           Amount of time measured,
+   1067          *                                                                   in microseconds
+   1068          *
+   1069          *                   (b) Timer period SHOULD be less than the typical measured time but MUST be less
+   1070          *                       than the maximum measured time; otherwise, timer resolution inadequate to
+   1071          *                       measure desired times.
+   1072          *
+   1073          *                   (c) Specific implementations may convert any number of CPU_TS32 or CPU_TS64 bits
+   1074          *                       -- up to 32 or 64, respectively -- into microseconds.
+   1075          *********************************************************************************************************
+   1076          */
+   1077          
+   1078          #if (CPU_CFG_TS_32_EN == DEF_ENABLED)
+
+   \                                 In section .text, align 2, keep-with-next
+   1079          CPU_INT64U  CPU_TS32_to_uSec (CPU_TS32  ts_cnts)
+   1080          {
+   \                     CPU_TS32_to_uSec: (+1)
+   \   00000000   0xE92D 0x43D0      PUSH     {R4,R6-R9,LR}
+   \   00000004   0xB082             SUB      SP,SP,#+8
+   \   00000006   0x0004             MOVS     R4,R0
+   1081              CPU_INT64U  ts_us;
+   1082              CPU_INT64U  fclk_freq;
+   1083              CPU_ERR     err;
+   1084          
+   1085          
+   1086              fclk_freq = CPU_TS_TmrFreqGet(&err);
+   \   00000008   0x4668             MOV      R0,SP
+   \   0000000A   0x.... 0x....      BL       CPU_TS_TmrFreqGet
+   \   0000000E   0x2100             MOVS     R1,#+0
+   \   00000010   0x4680             MOV      R8,R0
+   \   00000012   0x4689             MOV      R9,R1
+   1087              ts_us     = ts_cnts / (fclk_freq / DEF_TIME_NBR_uS_PER_SEC);
+   \   00000014   0x4640             MOV      R0,R8
+   \   00000016   0x4649             MOV      R1,R9
+   \   00000018   0x....             LDR.N    R2,??DataTable4_20  ;; 0xf4240
+   \   0000001A   0x2300             MOVS     R3,#+0
+   \   0000001C   0x.... 0x....      BL       __aeabi_uldivmod
+   \   00000020   0x0002             MOVS     R2,R0
+   \   00000022   0x000B             MOVS     R3,R1
+   \   00000024   0x0020             MOVS     R0,R4
+   \   00000026   0x2100             MOVS     R1,#+0
+   \   00000028   0x.... 0x....      BL       __aeabi_uldivmod
+   \   0000002C   0x0006             MOVS     R6,R0
+   \   0000002E   0x000F             MOVS     R7,R1
+   1088          
+   1089              return (ts_us);
+   \   00000030   0x0030             MOVS     R0,R6
+   \   00000032   0x0039             MOVS     R1,R7
+   \   00000034   0xE8BD 0x83DC      POP      {R2-R4,R6-R9,PC}  ;; return
+   1090          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   0x400FC000         DC32     0x400fc000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \   00000000   0x400FC1A0         DC32     0x400fc1a0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \   00000000   0x400FC1A8         DC32     0x400fc1a8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_3:
+   \   00000000   0x400FC1AC         DC32     0x400fc1ac
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_4:
+   \   00000000   0x00010018         DC32     0x10018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_5:
+   \   00000000   0x400FC088         DC32     0x400fc088
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_6:
+   \   00000000   0x400FC080         DC32     0x400fc080
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_7:
+   \   00000000   0x400FC08C         DC32     0x400fc08c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_8:
+   \   00000000   0x400FC104         DC32     0x400fc104
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_9:
+   \   00000000   0x400FC10C         DC32     0x400fc10c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_10:
+   \   00000000   0x400FC084         DC32     0x400fc084
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_11:
+   \   00000000   0x400FC0A0         DC32     0x400fc0a0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_12:
+   \   00000000   0x400FC0AC         DC32     0x400fc0ac
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_13:
+   \   00000000   0x400FC0A4         DC32     0x400fc0a4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_14:
+   \   00000000   0x400FC0A8         DC32     0x400fc0a8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_15:
+   \   00000000   0x0003C710         DC32     0x3c710
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_16:
+   \   00000000   0x........         DC32     OSCfg_TickRate_Hz
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_17:
+   \   00000000   0xE000EDFC         DC32     0xe000edfc
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_18:
+   \   00000000   0xE0001000         DC32     0xe0001000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_19:
+   \   00000000   0xE0001004         DC32     0xe0001004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_20:
+   \   00000000   0x000F4240         DC32     0xf4240
+   1091          #endif
+   1092          
+   1093          
+   1094          #if (CPU_CFG_TS_64_EN == DEF_ENABLED)
+   1095          CPU_INT64U  CPU_TS64_to_uSec (CPU_TS64  ts_cnts)
+   1096          {
+   1097          
+   1098              return (0u);
+   1099          
+   1100          }
+   1101          #endif
+   1102          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   BSP_Init
+        32   -> BSP_LED_Off
+        32   -> CPU_IntDisMeasStart
+        32   -> CPU_IntDisMeasStop
+        32   -> CPU_SR_Restore
+        32   -> CPU_SR_Save
+        32   -> CSP_GPIO_Cfg
+        32   -> CSP_IntDisAll
+        32   -> CSP_IntInit
+       8   BSP_Joy_GetPos
+         8   -> CSP_GPIO_Rd
+      16   BSP_Joy_GetStatus
+        16   -> BSP_Joy_GetPos
+       8   BSP_LED_Off
+         8   -> CSP_GPIO_BitSet
+       8   BSP_LED_On
+         8   -> CSP_GPIO_BitClr
+       8   BSP_LED_Toggle
+         8   -> CSP_GPIO_BitToggle
+      16   BSP_PB_GetStatus
+        16   -> CSP_GPIO_Rd
+      16   BSP_Start
+        16   -> CSP_PM_CPU_ClkFreqGet
+        16   -> OS_CPU_SysTickInit
+      32   CPU_TS32_to_uSec
+        32   -> CPU_TS_TmrFreqGet
+        32 __aeabi_uldivmod
+       8   CPU_TS_TmrInit
+         8   -> CPU_TS_TmrFreqSet
+         8   -> CSP_PM_CPU_ClkFreqGet
+       0   CPU_TS_TmrRd
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_10
+       4  ??DataTable4_11
+       4  ??DataTable4_12
+       4  ??DataTable4_13
+       4  ??DataTable4_14
+       4  ??DataTable4_15
+       4  ??DataTable4_16
+       4  ??DataTable4_17
+       4  ??DataTable4_18
+       4  ??DataTable4_19
+       4  ??DataTable4_2
+       4  ??DataTable4_20
+       4  ??DataTable4_3
+       4  ??DataTable4_4
+       4  ??DataTable4_5
+       4  ??DataTable4_6
+       4  ??DataTable4_7
+       4  ??DataTable4_8
+       4  ??DataTable4_9
+     840  BSP_Init
+     120  BSP_Joy_GetPos
+      26  BSP_Joy_GetStatus
+     212  BSP_LED_Off
+     212  BSP_LED_On
+     212  BSP_LED_Toggle
+      84  BSP_PB_GetStatus
+      28  BSP_Start
+      56  CPU_TS32_to_uSec
+      40  CPU_TS_TmrInit
+       8  CPU_TS_TmrRd
+
+ 
+ 1 922 bytes in section .text
+ 
+ 1 922 bytes of CODE memory
+
+Errors: none
+Warnings: none

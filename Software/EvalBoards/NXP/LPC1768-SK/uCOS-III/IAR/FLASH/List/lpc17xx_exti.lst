@@ -1,0 +1,426 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       14/Dec/2017  10:39:30
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_exti.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_exti.c" -lCN
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\lpc17xx_exti.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\lpc17xx_exti.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_exti.c
+      1          /**********************************************************************
+      2          * $Id$		lpc17xx_exti.c				2010-06-18
+      3          *//**
+      4          * @file		lpc17xx_exti.c
+      5          * @brief	Contains all functions support for External interrupt firmware
+      6          * 			library on LPC17xx
+      7          * @version	3.0
+      8          * @date		18. June. 2010
+      9          * @author	NXP MCU SW Application Team
+     10          *
+     11          * Copyright(C) 2010, NXP Semiconductor
+     12          * All rights reserved.
+     13          *
+     14          ***********************************************************************
+     15          * Software that is described herein is for illustrative purposes only
+     16          * which provides customers with programming information regarding the
+     17          * products. This software is supplied "AS IS" without any warranties.
+     18          * NXP Semiconductors assumes no responsibility or liability for the
+     19          * use of the software, conveys no license or title under any patent,
+     20          * copyright, or mask work right to the product. NXP Semiconductors
+     21          * reserves the right to make changes in the software without
+     22          * notification. NXP Semiconductors also make no representation or
+     23          * warranty that such application will be suitable for the specified
+     24          * use without further testing or modification.
+     25          * Permission to use, copy, modify, and distribute this software and its
+     26          * documentation is hereby granted, under NXP Semiconductors'
+     27          * relevant copyright in the software, without fee, provided that it
+     28          * is used in conjunction with NXP Semiconductors microcontrollers.  This
+     29          * copyright, permission, and disclaimer notice must appear in all copies of
+     30          * this code.
+     31          **********************************************************************/
+     32          
+     33          /* Peripheral group ----------------------------------------------------------- */
+     34          /** @addtogroup EXTI
+     35           * @{
+     36           */
+     37          
+     38          /* Includes ------------------------------------------------------------------- */
+     39          #include "lpc17xx_exti.h"
+     40          
+     41          /* If this source file built with example, the LPC17xx FW library configuration
+     42           * file in each example directory ("lpc17xx_libcfg.h") must be included,
+     43           * otherwise the default FW library configuration file must be included instead
+     44           */
+     45          #ifdef __BUILD_WITH_EXAMPLE__
+     46          #include "lpc17xx_libcfg.h"
+     47          #else
+     48          #include "lpc17xx_libcfg_default.h"
+     49          #endif /* __BUILD_WITH_EXAMPLE__ */
+     50          
+     51          
+     52          #ifdef _EXTI
+     53          
+     54          /* Public Functions ----------------------------------------------------------- */
+     55          /** @addtogroup EXTI_Public_Functions
+     56           * @{
+     57           */
+     58          
+     59          /*********************************************************************//**
+     60           * @brief 		Initial for EXT
+     61           * 				- Set EXTINT, EXTMODE, EXTPOLAR registers to default value
+     62           * @param[in]	None
+     63           * @return 		None
+     64           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     65          void EXTI_Init(void)
+     66          {
+     67          	LPC_SC->EXTINT = 0xF;
+   \                     EXTI_Init: (+1)
+   \   00000000   0x200F             MOVS     R0,#+15
+   \   00000002   0x....             LDR.N    R1,??DataTable4  ;; 0x400fc140
+   \   00000004   0x6008             STR      R0,[R1, #+0]
+     68          	LPC_SC->EXTMODE = 0x0;
+   \   00000006   0x2000             MOVS     R0,#+0
+   \   00000008   0x....             LDR.N    R1,??DataTable4_1  ;; 0x400fc148
+   \   0000000A   0x6008             STR      R0,[R1, #+0]
+     69          	LPC_SC->EXTPOLAR = 0x0;
+   \   0000000C   0x2000             MOVS     R0,#+0
+   \   0000000E   0x....             LDR.N    R1,??DataTable4_2  ;; 0x400fc14c
+   \   00000010   0x6008             STR      R0,[R1, #+0]
+     70          }
+   \   00000012   0x4770             BX       LR               ;; return
+     71          
+     72          
+     73          /*********************************************************************//**
+     74          * @brief 		Close EXT
+     75          * @param[in]	None
+     76          * @return 		None
+     77          **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     78          void	EXTI_DeInit(void)
+     79          {
+     80          	;
+     81          }
+   \                     EXTI_DeInit: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+     82          
+     83          /*********************************************************************//**
+     84           * @brief 		Configuration for EXT
+     85           * 				- Set EXTINT, EXTMODE, EXTPOLAR register
+     86           * @param[in]	EXTICfg	Pointer to a EXTI_InitTypeDef structure
+     87           *              that contains the configuration information for the
+     88           *              specified external interrupt
+     89           * @return 		None
+     90           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     91          void EXTI_Config(EXTI_InitTypeDef *EXTICfg)
+     92          {
+   \                     EXTI_Config: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+     93          	LPC_SC->EXTINT = 0x0;
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x....             LDR.N    R1,??DataTable4  ;; 0x400fc140
+   \   00000008   0x6008             STR      R0,[R1, #+0]
+     94          	EXTI_SetMode(EXTICfg->EXTI_Line, EXTICfg->EXTI_Mode);
+   \   0000000A   0x7861             LDRB     R1,[R4, #+1]
+   \   0000000C   0x7820             LDRB     R0,[R4, #+0]
+   \   0000000E   0x.... 0x....      BL       EXTI_SetMode
+     95          	EXTI_SetPolarity(EXTICfg->EXTI_Line, EXTICfg->EXTI_polarity);
+   \   00000012   0x78A1             LDRB     R1,[R4, #+2]
+   \   00000014   0x7820             LDRB     R0,[R4, #+0]
+   \   00000016   0x.... 0x....      BL       EXTI_SetPolarity
+     96          }
+   \   0000001A   0xBD10             POP      {R4,PC}          ;; return
+     97          
+     98          /*********************************************************************//**
+     99          * @brief 		Set mode for EXTI pin
+    100          * @param[in]	EXTILine	 external interrupt line, should be:
+    101          * 				- EXTI_EINT0: external interrupt line 0
+    102          * 				- EXTI_EINT1: external interrupt line 1
+    103          * 				- EXTI_EINT2: external interrupt line 2
+    104          * 				- EXTI_EINT3: external interrupt line 3
+    105          * @param[in]	mode 	external mode, should be:
+    106          * 				- EXTI_MODE_LEVEL_SENSITIVE
+    107          * 				- EXTI_MODE_EDGE_SENSITIVE
+    108          * @return 		None
+    109          *********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    110          void EXTI_SetMode(EXTI_LINE_ENUM EXTILine, EXTI_MODE_ENUM mode)
+    111          {
+    112          	if(mode == EXTI_MODE_EDGE_SENSITIVE)
+   \                     EXTI_SetMode: (+1)
+   \   00000000   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000002   0x2901             CMP      R1,#+1
+   \   00000004   0xD107             BNE.N    ??EXTI_SetMode_0
+    113          	{
+    114          		LPC_SC->EXTMODE |= (1 << EXTILine);
+   \   00000006   0x....             LDR.N    R2,??DataTable4_1  ;; 0x400fc148
+   \   00000008   0x6812             LDR      R2,[R2, #+0]
+   \   0000000A   0x2301             MOVS     R3,#+1
+   \   0000000C   0x4083             LSLS     R3,R3,R0
+   \   0000000E   0x431A             ORRS     R2,R3,R2
+   \   00000010   0x....             LDR.N    R3,??DataTable4_1  ;; 0x400fc148
+   \   00000012   0x601A             STR      R2,[R3, #+0]
+   \   00000014   0xE009             B.N      ??EXTI_SetMode_1
+    115          	}
+    116          	else if(mode == EXTI_MODE_LEVEL_SENSITIVE)
+   \                     ??EXTI_SetMode_0: (+1)
+   \   00000016   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000018   0x2900             CMP      R1,#+0
+   \   0000001A   0xD106             BNE.N    ??EXTI_SetMode_1
+    117          	{
+    118          		LPC_SC->EXTMODE &= ~(1 << EXTILine);
+   \   0000001C   0x....             LDR.N    R2,??DataTable4_1  ;; 0x400fc148
+   \   0000001E   0x6812             LDR      R2,[R2, #+0]
+   \   00000020   0x2301             MOVS     R3,#+1
+   \   00000022   0x4083             LSLS     R3,R3,R0
+   \   00000024   0x439A             BICS     R2,R2,R3
+   \   00000026   0x....             LDR.N    R3,??DataTable4_1  ;; 0x400fc148
+   \   00000028   0x601A             STR      R2,[R3, #+0]
+    119          	}
+    120          }
+   \                     ??EXTI_SetMode_1: (+1)
+   \   0000002A   0x4770             BX       LR               ;; return
+    121          
+    122          /*********************************************************************//**
+    123          * @brief 		Set polarity for EXTI pin
+    124          * @param[in]	EXTILine	 external interrupt line, should be:
+    125          * 				- EXTI_EINT0: external interrupt line 0
+    126          * 				- EXTI_EINT1: external interrupt line 1
+    127          * 				- EXTI_EINT2: external interrupt line 2
+    128          * 				- EXTI_EINT3: external interrupt line 3
+    129          * @param[in]	polarity	 external polarity value, should be:
+    130          * 				- EXTI_POLARITY_LOW_ACTIVE_OR_FALLING_EDGE
+    131          * 				- EXTI_POLARITY_LOW_ACTIVE_OR_FALLING_EDGE
+    132          * @return 		None
+    133          *********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    134          void EXTI_SetPolarity(EXTI_LINE_ENUM EXTILine, EXTI_POLARITY_ENUM polarity)
+    135          {
+    136          	if(polarity == EXTI_POLARITY_HIGH_ACTIVE_OR_RISING_EDGE)
+   \                     EXTI_SetPolarity: (+1)
+   \   00000000   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000002   0x2901             CMP      R1,#+1
+   \   00000004   0xD107             BNE.N    ??EXTI_SetPolarity_0
+    137          	{
+    138          		LPC_SC->EXTPOLAR |= (1 << EXTILine);
+   \   00000006   0x....             LDR.N    R2,??DataTable4_2  ;; 0x400fc14c
+   \   00000008   0x6812             LDR      R2,[R2, #+0]
+   \   0000000A   0x2301             MOVS     R3,#+1
+   \   0000000C   0x4083             LSLS     R3,R3,R0
+   \   0000000E   0x431A             ORRS     R2,R3,R2
+   \   00000010   0x....             LDR.N    R3,??DataTable4_2  ;; 0x400fc14c
+   \   00000012   0x601A             STR      R2,[R3, #+0]
+   \   00000014   0xE009             B.N      ??EXTI_SetPolarity_1
+    139          	}
+    140          	else if(polarity == EXTI_POLARITY_LOW_ACTIVE_OR_FALLING_EDGE)
+   \                     ??EXTI_SetPolarity_0: (+1)
+   \   00000016   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000018   0x2900             CMP      R1,#+0
+   \   0000001A   0xD106             BNE.N    ??EXTI_SetPolarity_1
+    141          	{
+    142          		LPC_SC->EXTPOLAR &= ~(1 << EXTILine);
+   \   0000001C   0x....             LDR.N    R2,??DataTable4_2  ;; 0x400fc14c
+   \   0000001E   0x6812             LDR      R2,[R2, #+0]
+   \   00000020   0x2301             MOVS     R3,#+1
+   \   00000022   0x4083             LSLS     R3,R3,R0
+   \   00000024   0x439A             BICS     R2,R2,R3
+   \   00000026   0x....             LDR.N    R3,??DataTable4_2  ;; 0x400fc14c
+   \   00000028   0x601A             STR      R2,[R3, #+0]
+    143          	}
+    144          }
+   \                     ??EXTI_SetPolarity_1: (+1)
+   \   0000002A   0x4770             BX       LR               ;; return
+    145          
+    146          /*********************************************************************//**
+    147          * @brief 		Clear External interrupt flag
+    148          * @param[in]	EXTILine	 external interrupt line, should be:
+    149          * 				- EXTI_EINT0: external interrupt line 0
+    150          * 				- EXTI_EINT1: external interrupt line 1
+    151          * 				- EXTI_EINT2: external interrupt line 2
+    152          * 				- EXTI_EINT3: external interrupt line 3
+    153          * @return 		None
+    154          *********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    155          void EXTI_ClearEXTIFlag(EXTI_LINE_ENUM EXTILine)
+    156          {
+    157          		LPC_SC->EXTINT = (1 << EXTILine);
+   \                     EXTI_ClearEXTIFlag: (+1)
+   \   00000000   0x2101             MOVS     R1,#+1
+   \   00000002   0x4081             LSLS     R1,R1,R0
+   \   00000004   0x....             LDR.N    R2,??DataTable4  ;; 0x400fc140
+   \   00000006   0x6011             STR      R1,[R2, #+0]
+    158          }
+   \   00000008   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \   00000000   0x400FC140         DC32     0x400fc140
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_1:
+   \   00000000   0x400FC148         DC32     0x400fc148
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4_2:
+   \   00000000   0x400FC14C         DC32     0x400fc14c
+    159          
+    160          /**
+    161           * @}
+    162           */
+    163          
+    164          #endif /* _EXTI */
+    165          
+    166          /**
+    167           * @}
+    168           */
+    169          
+    170          /* --------------------------------- End Of File ------------------------------ */
+    171          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   EXTI_ClearEXTIFlag
+       8   EXTI_Config
+         8   -> EXTI_SetMode
+         8   -> EXTI_SetPolarity
+       0   EXTI_DeInit
+       0   EXTI_Init
+       0   EXTI_SetMode
+       0   EXTI_SetPolarity
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+       4  ??DataTable4_1
+       4  ??DataTable4_2
+      10  EXTI_ClearEXTIFlag
+      28  EXTI_Config
+       2  EXTI_DeInit
+      20  EXTI_Init
+      44  EXTI_SetMode
+      44  EXTI_SetPolarity
+
+ 
+ 160 bytes in section .text
+ 
+ 160 bytes of CODE memory
+
+Errors: none
+Warnings: none

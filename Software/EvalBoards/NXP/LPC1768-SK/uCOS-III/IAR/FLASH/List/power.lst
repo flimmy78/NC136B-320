@@ -1,0 +1,1024 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       14/Dec/2017  10:49:34
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC卡模块\Application\Library\MastConTask\power.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC卡模块\Application\Library\MastConTask\power.c"
+#        -lCN "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\power.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\power.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC卡模块\Application\Library\MastConTask\power.c
+      1          #include    "includes.h"  
+      2          
+      3          
+      4          typedef	struct	_stcModBusRead_
+      5          {
+      6              uint8	DeviceAddr;
+      7              uint8	WorkCode;
+      8              uint16	RegStart;
+      9              uint16	RegLenth;	
+     10              uint16	Crc16;   	
+     11          }stcModBusRead;
+     12          
+     13          typedef	struct	_stcModBusPower_
+     14          {
+     15          	uint8	Voltage[2];
+     16          	uint8	Current[2];
+     17          	uint8	Power[2];
+     18          	uint8	PosEnergy[4];
+     19          	uint8	NegEnergy[4];
+     20          //	uint8	AddNBound[2];
+     21          //	uint8	ModName[4];
+     22          }stcModBusPower;
+     23          
+     24          typedef	struct	_stcPower_
+     25          {
+     26          	int16	Voltage;
+     27          	int16	Current;
+     28          	int16	Power;
+     29          //	int16	AddNBound;	
+     30          	int32	PosEnergy;
+     31          	int32	NegEnergy;
+     32          //	int32	ModName;
+     33          }stcPower;
+     34          //
+     35          
+     36          
+     37          #define		MODBUS_HEAD		0x01
+     38          #define		MODBUS_READ		0x03
+     39          #define		MODBUS_SET		0x10
+     40          #define		MODBUS_LEN		0x07
+     41          
+     42          //------------------------------------------------------------------------
+     43          // 名称：	void	SendReadPowerCode(void)
+     44          // 功能：初始化定时器1，定时时间单位为10ms，并使能中断。
+     45          // 入口参数：无
+     46          // 出口参数：无
+     47          //从设备地址	功能码	起始寄存器地址	寄存器个数	CRC-L	CRC-H
+     48          //0x01	0x03	0x00	0x10	0x00	0x07	0x05	0xCD
+     49          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     50          void  SendReadPowerCode(void)
+     51          { 
+   \                     SendReadPowerCode: (+1)
+   \   00000000   0xB51C             PUSH     {R2-R4,LR}
+     52          	stcModBusRead		sModBusRead;
+     53              uint16	Crc16;
+     54              
+     55              sModBusRead.DeviceAddr 		= MODBUS_HEAD;
+   \   00000002   0x2001             MOVS     R0,#+1
+   \   00000004   0xF88D 0x0000      STRB     R0,[SP, #+0]
+     56              sModBusRead.WorkCode		= MODBUS_READ;
+   \   00000008   0x2003             MOVS     R0,#+3
+   \   0000000A   0xF88D 0x0001      STRB     R0,[SP, #+1]
+     57             	sModBusRead.RegStart		= 0x1000;
+   \   0000000E   0xF44F 0x5080      MOV      R0,#+4096
+   \   00000012   0xF8AD 0x0002      STRH     R0,[SP, #+2]
+     58             	sModBusRead.RegLenth		= 0x0700;
+   \   00000016   0xF44F 0x60E0      MOV      R0,#+1792
+   \   0000001A   0xF8AD 0x0004      STRH     R0,[SP, #+4]
+     59             	   	
+     60             	Crc16 = GetModBusCrc16Up((uint8 *)&sModBusRead,sizeof(sModBusRead) - 2);
+   \   0000001E   0x2106             MOVS     R1,#+6
+   \   00000020   0x4668             MOV      R0,SP
+   \   00000022   0x.... 0x....      BL       GetModBusCrc16Up
+   \   00000026   0x0004             MOVS     R4,R0
+     61             	
+     62             	sModBusRead.Crc16 			= Crc16; 
+   \   00000028   0xF8AD 0x4006      STRH     R4,[SP, #+6]
+     63             	
+     64             	SendCOM1((uint8 *)&sModBusRead,sizeof(sModBusRead));
+   \   0000002C   0x2108             MOVS     R1,#+8
+   \   0000002E   0x4668             MOV      R0,SP
+   \   00000030   0x.... 0x....      BL       SendCOM1
+     65          
+     66          }
+   \   00000034   0xBD13             POP      {R0,R1,R4,PC}    ;; return
+     67          
+     68          //------------------------------------------------------------------------
+     69          // 名称：	void  ClearPowerVal(void)
+     70          // 功能：初始化定时器1，定时时间单位为10ms，并使能中断。
+     71          // 入口参数：无
+     72          // 出口参数：无
+     73          //从设备地址	功能码	起始寄存器地址	寄存器个数	CRC-L	CRC-H
+     74          //0x01	0x10	0x00	0xA7	0x00	0x01	0x02	0x00	0x00	0xBF	0x47
+     75          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     76          void  ClearPowerVal(void)
+     77          { 
+     78          //	stcModBusRead	sModBusRead;
+     79          //    uint16			Crc16;
+     80          //    
+     81          //    sModBusRead.DeviceAddr 		= MODBUS_HEAD;
+     82          //    sModBusRead.WorkCode		= MODBUS_READ;
+     83          //   	sModBusRead.RegStart		= 0x1000;
+     84          //   	sModBusRead.RegLenth		= 0x0700;
+     85          //   	   	
+     86          //   	Crc16 = GetModBusCrc16Up((uint8 *)&sModBusRead,sizeof(sModBusRead) - 2);
+     87          //   	
+     88          //   	sModBusRead.Crc16 			= Crc16; 
+     89          //   	
+     90          //   	SendCOM1((uint8 *)&sModBusRead,sizeof(sModBusRead));
+     91          }
+   \                     ClearPowerVal: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+     92          
+     93          
+     94          
+     95          extern	void  MathPower(stcModBusPower  sModBusPower);
+     96          //----------------------------------------------------------------------------
+     97          // 名    称：   uint8  GetDipData(void)
+     98          // 功    能：   取油量数据
+     99          // 入口参数：   无
+    100          // 出口参数：   无
+    101          //----------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    102          uint8  GetPowerVal(uint8 *Buf,uint16	Len)
+    103          {
+   \                     GetPowerVal: (+1)
+   \   00000000   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \   00000004   0xB087             SUB      SP,SP,#+28
+   \   00000006   0x0004             MOVS     R4,R0
+   \   00000008   0x000D             MOVS     R5,R1
+    104          	static		uint32		Times = 0;
+    105          	int16		i = 0;	
+   \   0000000A   0x2600             MOVS     R6,#+0
+    106          	uint16		RecCheck = 0,Crc16;
+   \   0000000C   0x2000             MOVS     R0,#+0
+   \   0000000E   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    107          	uint16		ModBusLen;
+    108          	stcModBusPower	sModBusPower;
+    109          	
+    110          	ModBusLen = 1 + 1 + 1 + MODBUS_LEN*2 + 2;         		//地址+操作码+数据长度字节+数据+校验
+   \   00000012   0x2013             MOVS     R0,#+19
+   \   00000014   0x0007             MOVS     R7,R0
+    111          
+    112          	if(Times > 10)											//长时间没有数据，清零
+   \   00000016   0x....             LDR.N    R0,??DataTable7
+   \   00000018   0x6800             LDR      R0,[R0, #+0]
+   \   0000001A   0x280B             CMP      R0,#+11
+   \   0000001C   0xD317             BCC.N    ??GetPowerVal_0
+    113          	{
+    114          		uint16		tmp = 0;
+   \   0000001E   0x2000             MOVS     R0,#+0
+   \   00000020   0xF8AD 0x0002      STRH     R0,[SP, #+2]
+    115          		uint16  i;
+    116          
+    117          		for(i = 0;i<sizeof(stcModBusPower)/2;i++)
+   \   00000024   0x2000             MOVS     R0,#+0
+   \   00000026   0x4680             MOV      R8,R0
+   \                     ??GetPowerVal_1: (+1)
+   \   00000028   0xFA1F 0xF888      UXTH     R8,R8            ;; ZeroExt  R8,R8,#+16,#+16
+   \   0000002C   0xF1B8 0x0F07      CMP      R8,#+7
+   \   00000030   0xD20D             BCS.N    ??GetPowerVal_0
+    118          		{
+    119          			memcpy((uint8 *)&sModBusPower,(uint8 *)&tmp,sizeof(tmp));
+   \   00000032   0xF05F 0x0902      MOVS     R9,#+2
+   \   00000036   0xF10D 0x0A02      ADD      R10,SP,#+2
+   \   0000003A   0xF10D 0x0B08      ADD      R11,SP,#+8
+   \   0000003E   0x464A             MOV      R2,R9
+   \   00000040   0x4651             MOV      R1,R10
+   \   00000042   0x4658             MOV      R0,R11
+   \   00000044   0x.... 0x....      BL       __aeabi_memcpy
+    120          		}
+   \   00000048   0xF118 0x0801      ADDS     R8,R8,#+1
+   \   0000004C   0xE7EC             B.N      ??GetPowerVal_1
+    121          	}
+    122          	
+    123          	if(Len < ModBusLen)
+   \                     ??GetPowerVal_0: (+1)
+   \   0000004E   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   00000050   0xB2BF             UXTH     R7,R7            ;; ZeroExt  R7,R7,#+16,#+16
+   \   00000052   0x42BD             CMP      R5,R7
+   \   00000054   0xD206             BCS.N    ??GetPowerVal_2
+    124          	{
+    125          		Times++;
+   \   00000056   0x....             LDR.N    R0,??DataTable7
+   \   00000058   0x6800             LDR      R0,[R0, #+0]
+   \   0000005A   0x1C40             ADDS     R0,R0,#+1
+   \   0000005C   0x....             LDR.N    R1,??DataTable7
+   \   0000005E   0x6008             STR      R0,[R1, #+0]
+    126          		return 0;	
+   \   00000060   0x2000             MOVS     R0,#+0
+   \   00000062   0xE04F             B.N      ??GetPowerVal_3
+    127          	}
+    128          
+    129          	for(i = 0; i < Len - ModBusLen;i++)
+   \                     ??GetPowerVal_2: (+1)
+   \   00000064   0x2000             MOVS     R0,#+0
+   \   00000066   0x0006             MOVS     R6,R0
+   \                     ??GetPowerVal_4: (+1)
+   \   00000068   0xB236             SXTH     R6,R6            ;; SignExt  R6,R6,#+16,#+16
+   \   0000006A   0xB2AD             UXTH     R5,R5            ;; ZeroExt  R5,R5,#+16,#+16
+   \   0000006C   0xB2BF             UXTH     R7,R7            ;; ZeroExt  R7,R7,#+16,#+16
+   \   0000006E   0x1BE8             SUBS     R0,R5,R7
+   \   00000070   0x4286             CMP      R6,R0
+   \   00000072   0xDA46             BGE.N    ??GetPowerVal_5
+    130          	{
+    131          		if(Buf[i] == MODBUS_HEAD && Buf[i+1] == MODBUS_READ 
+    132          			&& Buf[i+2] == MODBUS_LEN*2)
+   \   00000074   0xB236             SXTH     R6,R6            ;; SignExt  R6,R6,#+16,#+16
+   \   00000076   0x5D30             LDRB     R0,[R6, R4]
+   \   00000078   0x2801             CMP      R0,#+1
+   \   0000007A   0xD140             BNE.N    ??GetPowerVal_6
+   \   0000007C   0xB236             SXTH     R6,R6            ;; SignExt  R6,R6,#+16,#+16
+   \   0000007E   0x1930             ADDS     R0,R6,R4
+   \   00000080   0x7840             LDRB     R0,[R0, #+1]
+   \   00000082   0x2803             CMP      R0,#+3
+   \   00000084   0xD13B             BNE.N    ??GetPowerVal_6
+   \   00000086   0xB236             SXTH     R6,R6            ;; SignExt  R6,R6,#+16,#+16
+   \   00000088   0x1930             ADDS     R0,R6,R4
+   \   0000008A   0x7880             LDRB     R0,[R0, #+2]
+   \   0000008C   0x280E             CMP      R0,#+14
+   \   0000008E   0xD136             BNE.N    ??GetPowerVal_6
+    133          		{
+    134          			memcpy((uint8 *)&RecCheck,&Buf[i + ModBusLen - 2],sizeof(RecCheck));
+   \   00000090   0xF05F 0x0802      MOVS     R8,#+2
+   \   00000094   0xB236             SXTH     R6,R6            ;; SignExt  R6,R6,#+16,#+16
+   \   00000096   0xB2BF             UXTH     R7,R7            ;; ZeroExt  R7,R7,#+16,#+16
+   \   00000098   0x19B8             ADDS     R0,R7,R6
+   \   0000009A   0x1900             ADDS     R0,R0,R4
+   \   0000009C   0xF1B0 0x0902      SUBS     R9,R0,#+2
+   \   000000A0   0x46EA             MOV      R10,SP
+   \   000000A2   0x4642             MOV      R2,R8
+   \   000000A4   0x4649             MOV      R1,R9
+   \   000000A6   0x4650             MOV      R0,R10
+   \   000000A8   0x.... 0x....      BL       __aeabi_memcpy
+    135          			
+    136          			Crc16 = GetModBusCrc16Up(&Buf[i],ModBusLen - 2);
+   \   000000AC   0x1EB9             SUBS     R1,R7,#+2
+   \   000000AE   0xB289             UXTH     R1,R1            ;; ZeroExt  R1,R1,#+16,#+16
+   \   000000B0   0xB236             SXTH     R6,R6            ;; SignExt  R6,R6,#+16,#+16
+   \   000000B2   0x1930             ADDS     R0,R6,R4
+   \   000000B4   0x.... 0x....      BL       GetModBusCrc16Up
+   \   000000B8   0xF8AD 0x0004      STRH     R0,[SP, #+4]
+    137          				
+    138          			if(Crc16 == RecCheck)							//校验正确
+   \   000000BC   0xF8BD 0x0004      LDRH     R0,[SP, #+4]
+   \   000000C0   0xF8BD 0x1000      LDRH     R1,[SP, #+0]
+   \   000000C4   0x4288             CMP      R0,R1
+   \   000000C6   0xD115             BNE.N    ??GetPowerVal_7
+    139          			{
+    140          				memcpy((uint8 *)&sModBusPower,&Buf[i+3],sizeof(sModBusPower));		
+   \   000000C8   0xF05F 0x080E      MOVS     R8,#+14
+   \   000000CC   0xB236             SXTH     R6,R6            ;; SignExt  R6,R6,#+16,#+16
+   \   000000CE   0x1930             ADDS     R0,R6,R4
+   \   000000D0   0xF110 0x0903      ADDS     R9,R0,#+3
+   \   000000D4   0xF10D 0x0A08      ADD      R10,SP,#+8
+   \   000000D8   0x4642             MOV      R2,R8
+   \   000000DA   0x4649             MOV      R1,R9
+   \   000000DC   0x4650             MOV      R0,R10
+   \   000000DE   0x.... 0x....      BL       __aeabi_memcpy
+    141          				
+    142          				MathPower(sModBusPower);						//转换成功率
+   \   000000E2   0xA802             ADD      R0,SP,#+8
+   \   000000E4   0xC80F             LDM      R0,{R0-R3}
+   \   000000E6   0x.... 0x....      BL       MathPower
+    143          
+    144          				Times = 0;							
+   \   000000EA   0x2000             MOVS     R0,#+0
+   \   000000EC   0x....             LDR.N    R1,??DataTable7
+   \   000000EE   0x6008             STR      R0,[R1, #+0]
+    145          
+    146          				return	1;
+   \   000000F0   0x2001             MOVS     R0,#+1
+   \   000000F2   0xE007             B.N      ??GetPowerVal_3
+    147          			}
+    148          			else
+    149          			{
+    150          				Times++;
+   \                     ??GetPowerVal_7: (+1)
+   \   000000F4   0x....             LDR.N    R0,??DataTable7
+   \   000000F6   0x6800             LDR      R0,[R0, #+0]
+   \   000000F8   0x1C40             ADDS     R0,R0,#+1
+   \   000000FA   0x....             LDR.N    R1,??DataTable7
+   \   000000FC   0x6008             STR      R0,[R1, #+0]
+    151          			}
+    152          		}
+    153          	}
+   \                     ??GetPowerVal_6: (+1)
+   \   000000FE   0x1C76             ADDS     R6,R6,#+1
+   \   00000100   0xE7B2             B.N      ??GetPowerVal_4
+    154          	
+    155          	return 0;
+   \                     ??GetPowerVal_5: (+1)
+   \   00000102   0x2000             MOVS     R0,#+0
+   \                     ??GetPowerVal_3: (+1)
+   \   00000104   0xB007             ADD      SP,SP,#+28
+   \   00000106   0xE8BD 0x8FF0      POP      {R4-R11,PC}      ;; return
+    156          }
+
+   \                                 In section .bss, align 4
+   \                     ??Times:
+   \   00000000                      DS8 4
+    157          
+    158          //------------------------------------------------------------------------
+    159          // 名称：	void  ClearPowerVal(void)
+    160          // 功能：初始化定时器1，定时时间单位为10ms，并使能中断。
+    161          // 入口参数：无
+    162          // 出口参数：无
+    163          //从设备地址	功能码	起始寄存器地址	寄存器个数	CRC-L	CRC-H
+    164          //0x01	0x10	0x00	0xA7	0x00	0x01	0x02	0x00	0x00	0xBF	0x47
+    165          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    166          void  SetPowerAddAndBound(uint8 Add)
+    167          { 
+    168          //	static	stcModBusRead	sModBusRead;
+    169          //    uint16			Crc16;
+    170          //    static	uint8			Buf[16];
+    171          //    
+    172          //    sModBusRead.DeviceAddr 		= Add;
+    173          //    sModBusRead.WorkCode		= MODBUS_SET;
+    174          //   	sModBusRead.RegStart		= 0x2000;
+    175          //   	sModBusRead.RegLenth		= 0x0100;
+    176          //   	   	
+    177          //   	memcpy(Buf,(uint8 *)&sModBusRead,sizeof(sModBusRead)-2);
+    178          //   	
+    179          //   	Buf[sizeof(sModBusRead)-2] = 0x02;
+    180          //   	
+    181          //   	Buf[sizeof(sModBusRead)-1] = 0x01;			//Addr
+    182          //   	
+    183          //   	Buf[sizeof(sModBusRead)] = 0x06;			//Bound
+    184          //   	   	
+    185          //   	Crc16 = GetModBusCrc16Up(Buf,sizeof(sModBusRead)+1);
+    186          //   	
+    187          //   	memcpy(&Buf[sizeof(sModBusRead)+1],(uint8 *)&Crc16,sizeof(Crc16)); 
+    188          //   	
+    189          //   	SendCOM1(Buf,sizeof(sModBusRead)+3);
+    190          }
+   \                     SetPowerAddAndBound: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    191          
+    192          //------------------------------------------------------------------------
+    193          // 名称：	void	SendReadPowerCode(void)
+    194          // 功能：初始化定时器1，定时时间单位为10ms，并使能中断。
+    195          // 入口参数：无
+    196          // 出口参数：无
+    197          //从设备地址	功能码	起始寄存器地址	寄存器个数	CRC-L	CRC-H
+    198          //0x01	0x03	0x00	0x10	0x00	0x07	0x05	0xCD
+    199          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    200          void  ScanPowerAddr(void)
+    201          { 
+    202          //	static	stcModBusRead		sModBusRead;
+    203          //	uint16	RecBufLen;
+    204          //	static	uint8	Buf[128];
+    205          //    uint16	Crc16;
+    206          //    uint32	i;
+    207          //    
+    208          //    for(i = 0; i < 16;i++)
+    209          //    {
+    210          //	    sModBusRead.DeviceAddr 		= i;
+    211          //	    sModBusRead.WorkCode		= MODBUS_READ;
+    212          //	   	sModBusRead.RegStart		= 0x1000;
+    213          //	   	sModBusRead.RegLenth		= 0x0700;
+    214          //	   	   	
+    215          //   		Crc16 = GetModBusCrc16Up((uint8 *)&sModBusRead,sizeof(sModBusRead) - 2);
+    216          //   	
+    217          //   		sModBusRead.Crc16 			= Crc16; 
+    218          //   		
+    219          //   		SendCOM1((uint8 *)&sModBusRead,sizeof(sModBusRead));
+    220          //   		
+    221          //   		DelayX10ms(1);
+    222          //   		
+    223          //		RecBufLen = ReadCOM1(Buf,256);	    
+    224          //		
+    225          //		if( RecBufLen )
+    226          //		{				
+    227          //			break;
+    228          //	    }
+    229          //   	}
+    230          //   	
+    231          //   	SetPowerAddAndBound(i);
+    232          }
+   \                     ScanPowerAddr: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    233          
+    234          //----------------------------------------------------------------------------
+    235          // 名    称：   uint8  GetDipData(void)
+    236          // 功    能：   取油量数据
+    237          // 入口参数：   无
+    238          // 出口参数：   无
+    239          //----------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    240          uint8  GetModbusPowerVal(void)
+    241          {
+    242          //	static	uint8			Buf[256];									
+    243          //	static	uint32			Time = 0;
+    244          //	static	uint32			Times = 0;
+    245          //	uint32					RecBufLen;					
+    246          //	
+    247          //	if(GetSysTime() - Time > 150)						
+    248          //	{
+    249          //		if(Times++)
+    250          //		{
+    251          //			RecBufLen = ReadCOM1(Buf,256);	    
+    252          //			
+    253          //			if( RecBufLen )
+    254          //			{				
+    255          //				if(!GetPowerVal(Buf,RecBufLen))						
+    256          //				{
+    257          //					//printfcom0("\r\nGetPowerVal(Buf,RecBufLen)ERR!");
+    258          //				}	
+    259          //		    }
+    260          //	    }
+    261          //	    
+    262          //	    Time = GetSysTime();
+    263          //    }
+    264          //    
+    265              return	0;
+   \                     GetModbusPowerVal: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+    266          }
+    267          
+    268          //------------------------------------------------------------------------
+    269          // 名    称：   int16     GetRealData16(int16  Data)
+    270          // 功    能：   
+    271          // 入口参数：   
+    272          //              
+    273          // 出口参数：   
+    274          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    275          int16     GetRealData16(uint16  Data)
+    276          {
+   \                     GetRealData16: (+1)
+   \   00000000   0x0001             MOVS     R1,R0
+    277          	int16	Tmp;
+    278          	
+    279          	Tmp = Data;
+   \   00000002   0x000A             MOVS     R2,R1
+   \   00000004   0xB212             SXTH     R2,R2            ;; SignExt  R2,R2,#+16,#+16
+   \   00000006   0x0010             MOVS     R0,R2
+    280              if(Data >= 0x8000)
+   \   00000008   0xB289             UXTH     R1,R1            ;; ZeroExt  R1,R1,#+16,#+16
+   \   0000000A   0xF5B1 0x4F00      CMP      R1,#+32768
+   \   0000000E   0xDB04             BLT.N    ??GetRealData16_0
+    281              {
+    282                   Tmp = -(Data - 0x8000);
+   \   00000010   0xB289             UXTH     R1,R1            ;; ZeroExt  R1,R1,#+16,#+16
+   \   00000012   0xF5B1 0x4200      SUBS     R2,R1,#+32768
+   \   00000016   0x4252             RSBS     R2,R2,#+0
+   \   00000018   0x0010             MOVS     R0,R2
+    283              }
+    284          
+    285              return  Tmp;
+   \                     ??GetRealData16_0: (+1)
+   \   0000001A   0xB200             SXTH     R0,R0            ;; SignExt  R0,R0,#+16,#+16
+   \   0000001C   0x4770             BX       LR               ;; return
+    286          }
+    287          
+    288          //------------------------------------------------------------------------
+    289          // 名    称：   int16     GetRealData16(int16  Data)
+    290          // 功    能：   
+    291          // 入口参数：   
+    292          //              
+    293          // 出口参数：   
+    294          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    295          int32     GetRealData32(uint32  Data)
+    296          {
+   \                     GetRealData32: (+1)
+   \   00000000   0x0001             MOVS     R1,R0
+    297          	int32	Tmp;
+    298          	
+    299          	Tmp = Data;
+   \   00000002   0x0008             MOVS     R0,R1
+    300              if(Data >= 0x80000000)
+   \   00000004   0xF1B1 0x4F00      CMP      R1,#-2147483648
+   \   00000008   0xD303             BCC.N    ??GetRealData32_0
+    301              {
+    302                   Tmp = -(Data - 0x80000000);
+   \   0000000A   0xF111 0x4200      ADDS     R2,R1,#-2147483648
+   \   0000000E   0x4252             RSBS     R2,R2,#+0
+   \   00000010   0x0010             MOVS     R0,R2
+    303              }
+    304          
+    305              return  Tmp;
+   \                     ??GetRealData32_0: (+1)
+   \   00000012   0x4770             BX       LR               ;; return
+    306          }
+    307          
+
+   \                                 In section .bss, align 2
+    308          int16	l_Voltage;
+   \                     l_Voltage:
+   \   00000000                      DS8 2
+
+   \                                 In section .bss, align 2
+    309          int16	l_Current;
+   \                     l_Current:
+   \   00000000                      DS8 2
+
+   \                                 In section .bss, align 2
+    310          int16	l_Power;
+   \                     l_Power:
+   \   00000000                      DS8 2
+    311          //	int16	AddNBound;	
+
+   \                                 In section .bss, align 4
+    312          int32	l_PosEnergy;
+   \                     l_PosEnergy:
+   \   00000000                      DS8 4
+
+   \                                 In section .bss, align 4
+    313          int32	l_NegEnergy;
+   \                     l_NegEnergy:
+   \   00000000                      DS8 4
+    314          ////----------------------------------------------------------------------------
+    315          //// 名    称：   uint8  GetPower(void)
+    316          //// 功    能：   取油量数据
+    317          //// 入口参数：   无
+    318          //// 出口参数：   无
+    319          ////----------------------------------------------------------------------------
+    320          //void  MathPower(stcModBusPower  sModBusPower)
+    321          //{
+    322          ////	static	uint32	Time;
+    323          //	stcPower	sPower;
+    324          //
+    325          ////	if(GetSysTime() - Time > 150)
+    326          //	{
+    327          //		sPower.Voltage 	= GetRealData16((uint16)sModBusPower.Voltage[0]*256 + (uint16)sModBusPower.Voltage[1]);
+    328          //		sPower.Current 	= GetRealData16((uint16)sModBusPower.Current[0]*256 + (uint16)sModBusPower.Current[1]);
+    329          //		sPower.Power   	= GetRealData16((uint16)sModBusPower.Power[0]*256   + (uint16)sModBusPower.Power[1]);
+    330          //		sPower.PosEnergy= GetRealData32(sModBusPower.PosEnergy[0]*256*256*256  + sModBusPower.PosEnergy[1]*256*256
+    331          //						+ sModBusPower.PosEnergy[2]*256   + sModBusPower.PosEnergy[3]);
+    332          //		sPower.NegEnergy= GetRealData32(sModBusPower.NegEnergy[0]*256*256*256  + sModBusPower.NegEnergy[1]*256*256
+    333          //						+ sModBusPower.NegEnergy[2]*256   + sModBusPower.NegEnergy[3]);		
+    334          //						
+    335          //
+    336          //		l_Current = ((int32)sPower.Current ) / 2;	
+    337          //		l_Voltage = ((int32)sPower.Voltage ) /10;
+    338          //		l_Power	  =	((int32)sPower.Power*5*100);	
+    339          //		l_PosEnergy=((int32)sPower.PosEnergy)*5*10/36;
+    340          //		l_NegEnergy= ((int32)sPower.NegEnergy)*5*10/36;
+    341          //
+    342          //        printfcom1("\r\n voltage %d,%d,%d,%d,%d",l_Current,l_Voltage
+    343          //		,l_Power,l_PosEnergy,l_NegEnergy);
+    344          //		
+    345          //		
+    346          ////		Time = GetSysTime();
+    347          //	}
+    348          //}	
+    349          
+    350          //----------------------------------------------------------------------------
+    351          // 名    称：   uint8  GetPower(void)
+    352          // 功    能：   取油量数据
+    353          // 入口参数：   无
+    354          // 出口参数：   无
+    355          //----------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    356          int16  GetCur(void)
+    357          {
+    358          	return 	l_Current;
+   \                     GetCur: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable7_1
+   \   00000002   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000006   0x4770             BX       LR               ;; return
+    359          }
+    360          
+    361          
+    362          //----------------------------------------------------------------------------
+    363          // 名    称：   uint8  GetPower(void)
+    364          // 功    能：   取油量数据
+    365          // 入口参数：   无
+    366          // 出口参数：   无
+    367          //----------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    368          int16  GetVol(void)
+    369          {
+    370          	return 	l_Voltage;	
+   \                     GetVol: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable7_2
+   \   00000002   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000006   0x4770             BX       LR               ;; return
+    371          }
+    372          
+    373          //----------------------------------------------------------------------------
+    374          // 名    称：   uint8  GetPower(void)
+    375          // 功    能：   取油量数据
+    376          // 入口参数：   无
+    377          // 出口参数：   无
+    378          //----------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    379          int32  GetPow(void)
+    380          {
+    381          	return 	l_Power;
+   \                     GetPow: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable7_3
+   \   00000002   0xF9B0 0x0000      LDRSH    R0,[R0, #+0]
+   \   00000006   0x4770             BX       LR               ;; return
+    382          }
+    383          
+    384          //----------------------------------------------------------------------------
+    385          // 名    称：   uint8  GetPower(void)
+    386          // 功    能：   取油量数据
+    387          // 入口参数：   无
+    388          // 出口参数：   无
+    389          //----------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    390          int32  GetPosEnergy(void)
+    391          {
+    392          	return 	l_PosEnergy;
+   \                     GetPosEnergy: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable7_4
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+    393          }
+    394          
+    395          //----------------------------------------------------------------------------
+    396          // 名    称：   uint8  GetPower(void)
+    397          // 功    能：   取油量数据
+    398          // 入口参数：   无
+    399          // 出口参数：   无
+    400          //----------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    401          int32  GetNegEnergy(void)
+    402          {
+    403          	return 	l_NegEnergy;
+   \                     GetNegEnergy: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable7_5
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+    404          }
+    405          
+    406          //----------------------------------------------------------------------------
+    407          // 名    称：   uint8  GetPower(void)
+    408          // 功    能：   取油量数据
+    409          // 入口参数：   无
+    410          // 出口参数：   无
+    411          //----------------------------------------------------------------------------
+    412          //int32  GetInitNegEnergy(void)
+    413          //{
+    414          ////	return 	((int32)sPower.NegEnergy);
+    415          //}
+    416          
+    417          //----------------------------------------------------------------------------
+    418          // 名    称：   uint8  GetPower(void)
+    419          // 功    能：   取油量数据
+    420          // 入口参数：   无
+    421          // 出口参数：   无
+    422          //----------------------------------------------------------------------------
+    423          //int32  GetInitEnergy(void)
+    424          //{
+    425          //	return 	((int32)sPower.PosEnergy);
+    426          //}
+    427          ////----------------------------------------------------------------------------
+    428          // 名    称：   uint8  GetPower(void)
+    429          // 功    能：   取油量数据
+    430          // 入口参数：   无
+    431          // 出口参数：   无
+    432          //----------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    433          void  TestPower(void)
+    434          {
+    435          //	static	uint32	Time = 0;
+    436          //	
+    437          //	ScanPowerAddr();
+    438          //	
+    439          //	GetModbusPowerVal();
+    440          //	
+    441          //	if(GetSysTime() - Time > 100)
+    442          //	{
+    443          //		MathPower();
+    444          //
+    445          //		//printfcom0("\r\n%f,%f,%f,%f,%f",(float)(((int32)sPower.Voltage * 1000)/10000),(float)((int32)sPower.Current*5*1000)/10000
+    446          //		,((float)sPower.Power*5*1000*1000)/10000,((float)sPower.PosEnergy*5*1000*1000)/(1000*3600),((float)sPower.NegEnergy*50*380)/(1000*3600));
+    447          //				
+    448          //		////printfcom0("\r\n%hi",-100);				
+    449          //		SendReadPowerCode();
+    450          //		
+    451          //		DelayX10ms(1);
+    452          //				
+    453          //		Time = GetSysTime();
+    454          //	}
+    455          //	DelayX10ms(100);
+    456          }
+   \                     TestPower: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    457          
+
+   \                                 In section .text, align 2, keep-with-next
+    458          uint8  GetCOM1Data(void)
+    459          {
+   \                     GetCOM1Data: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB090             SUB      SP,SP,#+64
+    460          	uint8					Buf[64];									
+    461          	static	uint32			ErrTimes = 0;
+    462          	uint32					RecBufLen;				
+    463          	
+    464          	RecBufLen = ReadCOM1(Buf,sizeof(Buf));
+   \   00000004   0x2140             MOVS     R1,#+64
+   \   00000006   0x4668             MOV      R0,SP
+   \   00000008   0x.... 0x....      BL       ReadCOM1
+   \   0000000C   0x0004             MOVS     R4,R0
+    465          	 	 
+    466          	if( RecBufLen )
+   \   0000000E   0x2C00             CMP      R4,#+0
+   \   00000010   0xD008             BEQ.N    ??GetCOM1Data_0
+    467          	{
+    468          		if(!GetPowerVal(Buf,RecBufLen))	
+   \   00000012   0x0021             MOVS     R1,R4
+   \   00000014   0xB289             UXTH     R1,R1            ;; ZeroExt  R1,R1,#+16,#+16
+   \   00000016   0x4668             MOV      R0,SP
+   \   00000018   0x.... 0x....      BL       GetPowerVal
+   \   0000001C   0x2800             CMP      R0,#+0
+   \   0000001E   0xD106             BNE.N    ??GetCOM1Data_1
+    469          		{
+    470          //			printfcom0("\r\n !GetPowerVal(Buf,RecBufLen)");
+    471          			return 1;
+   \   00000020   0x2001             MOVS     R0,#+1
+   \   00000022   0xE005             B.N      ??GetCOM1Data_2
+    472          		}	
+    473          	}
+    474              else
+    475              {
+    476          		ErrTimes++;
+   \                     ??GetCOM1Data_0: (+1)
+   \   00000024   0x....             LDR.N    R0,??DataTable7_6
+   \   00000026   0x6800             LDR      R0,[R0, #+0]
+   \   00000028   0x1C40             ADDS     R0,R0,#+1
+   \   0000002A   0x....             LDR.N    R1,??DataTable7_6
+   \   0000002C   0x6008             STR      R0,[R1, #+0]
+    477          		
+    478          		if(ErrTimes > 2)
+    479          		{
+    480          //			printfcom0("\r\n 111!GetPowerVal(Buf,RecBufLen)");
+    481          			//l_DipComErrFlg = ERROR;		
+    482          		}
+    483              }
+    484          	    
+    485              return	0;
+   \                     ??GetCOM1Data_1: (+1)
+   \   0000002E   0x2000             MOVS     R0,#+0
+   \                     ??GetCOM1Data_2: (+1)
+   \   00000030   0xB010             ADD      SP,SP,#+64
+   \   00000032   0xBD10             POP      {R4,PC}          ;; return
+    486          }
+
+   \                                 In section .bss, align 4
+   \                     ??ErrTimes:
+   \   00000000                      DS8 4
+
+   \                                 In section .text, align 2, keep-with-next
+    487          void	COM1Task(void)
+    488          {
+   \                     COM1Task: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    489          	static	uint32	Time;
+    490          
+    491          	if(GetSysTime() - Time > 100)
+   \   00000002   0x.... 0x....      BL       GetSysTime
+   \   00000006   0x....             LDR.N    R1,??DataTable7_7
+   \   00000008   0x6809             LDR      R1,[R1, #+0]
+   \   0000000A   0x1A40             SUBS     R0,R0,R1
+   \   0000000C   0x2865             CMP      R0,#+101
+   \   0000000E   0xD307             BCC.N    ??COM1Task_0
+    492          	{
+    493          		GetCOM1Data();
+   \   00000010   0x.... 0x....      BL       GetCOM1Data
+    494          		
+    495          		SendReadPowerCode();			//取电量信号
+   \   00000014   0x.... 0x....      BL       SendReadPowerCode
+    496          
+    497          		Time = GetSysTime();
+   \   00000018   0x.... 0x....      BL       GetSysTime
+   \   0000001C   0x....             LDR.N    R1,??DataTable7_7
+   \   0000001E   0x6008             STR      R0,[R1, #+0]
+    498          	}
+    499          }
+   \                     ??COM1Task_0: (+1)
+   \   00000020   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .bss, align 4
+   \                     ??Time:
+   \   00000000                      DS8 4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \   00000000   0x........         DC32     ??Times
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \   00000000   0x........         DC32     l_Current
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \   00000000   0x........         DC32     l_Voltage
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \   00000000   0x........         DC32     l_Power
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \   00000000   0x........         DC32     l_PosEnergy
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \   00000000   0x........         DC32     l_NegEnergy
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \   00000000   0x........         DC32     ??ErrTimes
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_7:
+   \   00000000   0x........         DC32     ??Time
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   COM1Task
+         8   -> GetCOM1Data
+         8   -> GetSysTime
+         8   -> SendReadPowerCode
+       0   ClearPowerVal
+      72   GetCOM1Data
+        72   -> GetPowerVal
+        72   -> ReadCOM1
+       0   GetCur
+       0   GetModbusPowerVal
+       0   GetNegEnergy
+       0   GetPosEnergy
+       0   GetPow
+      64   GetPowerVal
+        64   -> GetModBusCrc16Up
+        64   -> MathPower
+        64   -> __aeabi_memcpy
+       0   GetRealData16
+       0   GetRealData32
+       0   GetVol
+       0   ScanPowerAddr
+      16   SendReadPowerCode
+        16   -> GetModBusCrc16Up
+        16   -> SendCOM1
+       0   SetPowerAddAndBound
+       0   TestPower
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+       4  ??DataTable7_7
+      34  COM1Task
+       2  ClearPowerVal
+       4  ErrTimes
+      52  GetCOM1Data
+       8  GetCur
+       4  GetModbusPowerVal
+       6  GetNegEnergy
+       6  GetPosEnergy
+       8  GetPow
+     266  GetPowerVal
+      30  GetRealData16
+      20  GetRealData32
+       8  GetVol
+       2  ScanPowerAddr
+      54  SendReadPowerCode
+       2  SetPowerAddAndBound
+       2  TestPower
+       4  Time
+       4  Times
+       2  l_Current
+       4  l_NegEnergy
+       4  l_PosEnergy
+       2  l_Power
+       2  l_Voltage
+
+ 
+  26 bytes in section .bss
+ 536 bytes in section .text
+ 
+ 536 bytes of CODE memory
+  26 bytes of DATA memory
+
+Errors: none
+Warnings: none

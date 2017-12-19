@@ -1,0 +1,1256 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       18/Dec/2017  15:16:23
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  F:\iar\NC136B-320 IC卡模块\Software\BSP\Driver\bsp_FRAM.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC卡模块\Software\BSP\Driver\bsp_FRAM.c" -lCN
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\bsp_FRAM.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\bsp_FRAM.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC卡模块\Software\BSP\Driver\bsp_FRAM.c
+      1          /*******************************************************************************
+      2           *   Filename:      bsp_FRAM.c
+      3           *   Revised:       $Date: 2017-05-15$
+      4           *   Revision:      $
+      5           *   Writer:	    redmorningcn.
+      6           *
+      7           *   Description:
+      8           *   Notes:
+      9           *     				E-mail:redmorningcn@qq.com
+     10           *
+     11           *   All copyrights reserved to redmorningcn.
+     12           *
+     13           *******************************************************************************/
+     14          
+     15          /*******************************************************************************
+     16          * INCLUDES
+     17          */
+     18          #include <includes.h>
+     19          #include "bsp_FRAM.h"
+     20          #include "App_ctrl.h"
+     21          					  
+     22          
+     23          /***********************************************
+     24          * 描述: OS接口
+     25          */
+     26          #if UCOS_EN     == DEF_ENABLED
+     27              #if OS_VERSION > 30000U
+     28          //    static  OS_SEM			Bsp_Fram_Sem;    	//信号量
+     29              #else
+     30              static  OS_EVENT		*Bsp_Fram_Sem;    //信号量
+     31              #endif
+     32          #endif
+     33              
+     34          
+     35          #if (UCOS_EN     == DEF_ENABLED)
+     36          /*******************************************************************************
+     37          * 名    称： 		FRAM_WaitEvent
+     38          * 功    能： 		等待信号量
+     39          * 入口参数： 	无
+     40          * 出口参数：  	0（操作有误），1（操作成功）
+     41          * 作　 　者： 	redmorningcn
+     42          * 创建日期： 	2017-05-15
+     43          * 修    改：
+     44          * 修改日期：
+     45          * 备    注： 仅在使用UCOS操作系统时使用
+     46          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     47          static uint8_t FRAM_WaitEvent(void)
+     48          {
+     49              /***********************************************
+     50              * 描述： OS接口
+     51              */
+     52          
+     53          //#if OS_VERSION > 30000U
+     54          //    return BSP_OS_SemWait(&Bsp_Fram_Sem,0);           	// 等待信号量
+     55          //#else
+     56          //    uint8_t       err;
+     57          //    OSSemPend(Bsp_Fram_Sem,0,&err);                   		// 等待信号量
+     58          //    if ( err = OS_ERR_NONE )
+     59          //      return TRUE;
+     60          //    else
+     61                return FALSE;
+   \                     FRAM_WaitEvent: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x4770             BX       LR               ;; return
+     62          //#endif
+     63          }
+     64          
+     65          /*******************************************************************************
+     66          * 名    称：	 	FRAM_SendEvent
+     67          * 功    能： 		释放信号量
+     68          * 入口参数： 	无
+     69          * 出口参数： 	无
+     70          * 作　 　者： 	redmorningcn
+     71          * 创建日期： 	2017-05-15
+     72          * 修    改：
+     73          * 修改日期：
+     74          * 备    注： 仅在使用UCOS操作系统时使用
+     75          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     76          static void FRAM_SendEvent(void)
+     77          {
+     78              /***********************************************
+     79              * 描述： OS接口
+     80              */
+     81          //#if OS_VERSION > 30000U
+     82          //    BSP_OS_SemPost(&Bsp_Fram_Sem);                        	// 发送信号量
+     83          //#else
+     84          //    uint8_t       err;
+     85          //    OSSemPost(Bsp_Fram_Sem);                             		 // 发送信号量
+     86          //#endif
+     87          }
+   \                     FRAM_SendEvent: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+     88          
+     89          #endif /* end of (UCOS_EN     == DEF_ENABLED)*/
+     90          
+     91          
+     92          //-------------------------------------------------------------------------------------------------------
+     93          //函数名称: 		WriteFM24CL16()
+     94          //功    能:			对FM24CL16指定地址进行写数据
+     95          //入口参数:         ADDR:       操作地址    地址：0 ~ sizeof(FM24CL16)
+     96          //                  		*DataBuf:   数据缓冲
+     97          //                  Len: 	数据长度
+     98          //作　 　者： 	redmorningcn
+     99          //创建日期： 	2017-05-15
+    100          //出口参数:    	无
+    101          //说明：            
+    102          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    103          uint8 WriteFM24CL64(uint16  Addr, uint8 *DataBuf, uint32 DataBufLen)            
+    104          {
+   \                     WriteFM24CL64: (+1)
+   \   00000000   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+   \   00000008   0x0016             MOVS     R6,R2
+    105              uint32  i = 0;
+   \   0000000A   0x2700             MOVS     R7,#+0
+    106              uint8   SlaveAddr;                                      //从机地址
+    107              uint16  AddrTemp = 0;                                   //地址缓存
+   \   0000000C   0xF05F 0x0900      MOVS     R9,#+0
+    108              
+    109              AddrTemp = Addr;
+   \   00000010   0x46A1             MOV      R9,R4
+    110              AddrTemp += FRAM_START_ADDR;                            //计算地址
+    111          
+    112              if( (uint16)AddrTemp + DataBufLen > FRAM_END_ADDR ) 
+   \   00000012   0xFA1F 0xF989      UXTH     R9,R9            ;; ZeroExt  R9,R9,#+16,#+16
+   \   00000016   0xEB16 0x0009      ADDS     R0,R6,R9
+   \   0000001A   0xF5B0 0x5F00      CMP      R0,#+8192
+   \   0000001E   0xD901             BLS.N    ??WriteFM24CL64_0
+    113              {
+    114                  return  FALSE;                                      			//地址未超阶
+   \   00000020   0x2000             MOVS     R0,#+0
+   \   00000022   0xE025             B.N      ??WriteFM24CL64_1
+    115              }
+    116                  
+    117              SlaveAddr = FRAM_DIVICE_ADDR & (~(0x01));               //求FM24CL64设备写地址
+   \                     ??WriteFM24CL64_0: (+1)
+   \   00000024   0x20A0             MOVS     R0,#+160
+   \   00000026   0x4680             MOV      R8,R0
+    118              
+    119              StartI2C();                                             		//启动IIC总线
+   \   00000028   0x.... 0x....      BL       StartI2C
+    120              
+    121              WriteByteWithI2C(SlaveAddr);                            //写FM24CL64地址
+   \   0000002C   0x4640             MOV      R0,R8
+   \   0000002E   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000030   0x.... 0x....      BL       WriteByteWithI2C
+    122              CheckSlaveAckI2C();
+   \   00000034   0x.... 0x....      BL       CheckSlaveAckI2C
+    123           
+    124              WriteByteWithI2C(Addr >> 8);                            //写FM24CL64高位地址
+   \   00000038   0x0020             MOVS     R0,R4
+   \   0000003A   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   0000003C   0x0A00             LSRS     R0,R0,#+8
+   \   0000003E   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000040   0x.... 0x....      BL       WriteByteWithI2C
+    125              CheckSlaveAckI2C();
+   \   00000044   0x.... 0x....      BL       CheckSlaveAckI2C
+    126              
+    127              WriteByteWithI2C( Addr );                               //写FM24CL64低位地址
+   \   00000048   0x0020             MOVS     R0,R4
+   \   0000004A   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000004C   0x.... 0x....      BL       WriteByteWithI2C
+    128              CheckSlaveAckI2C();     
+   \   00000050   0x.... 0x....      BL       CheckSlaveAckI2C
+    129            
+    130              for(i = 0; i < DataBufLen; i++)                         //发送数据
+   \   00000054   0x2000             MOVS     R0,#+0
+   \   00000056   0x0007             MOVS     R7,R0
+   \                     ??WriteFM24CL64_2: (+1)
+   \   00000058   0x42B7             CMP      R7,R6
+   \   0000005A   0xD206             BCS.N    ??WriteFM24CL64_3
+    131              {
+    132                  WriteByteWithI2C(DataBuf[i]);                       //写数据
+   \   0000005C   0x5D78             LDRB     R0,[R7, R5]
+   \   0000005E   0x.... 0x....      BL       WriteByteWithI2C
+    133                  CheckSlaveAckI2C();                                 //读从机应答信号
+   \   00000062   0x.... 0x....      BL       CheckSlaveAckI2C
+    134              }
+   \   00000066   0x1C7F             ADDS     R7,R7,#+1
+   \   00000068   0xE7F6             B.N      ??WriteFM24CL64_2
+    135              
+    136              StopI2C();                                              //停止IIC操作   
+   \                     ??WriteFM24CL64_3: (+1)
+   \   0000006A   0x.... 0x....      BL       StopI2C
+    137              
+    138              return  TRUE;                                           //正确
+   \   0000006E   0x2001             MOVS     R0,#+1
+   \                     ??WriteFM24CL64_1: (+1)
+   \   00000070   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}    ;; return
+    139          }
+    140          
+    141          //-------------------------------------------------------------------------------------------------------
+    142          //函数名称:         ReadFM24CL16()
+    143          //功    能:         读取FM24CL16指定地址进行数据
+    144          //入口参数:         ADDR:       操作地址   地址：0 ~ sizeof(FM24CL16)
+    145          //                  *DataBuf:   数据缓冲 
+    146          //                  Len:        数据长度
+    147          //出口参数:         无
+    148          //作　 　者： 	redmorningcn
+    149          //创建日期： 	2017-05-15
+    150          //说明：            
+    151          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    152          uint8 ReadFM24CL64(uint16  Addr, uint8 *DataBuf, uint32 DataBufLen)            
+    153          {
+   \                     ReadFM24CL64: (+1)
+   \   00000000   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+   \   00000008   0x0016             MOVS     R6,R2
+    154              uint32  i = 0;
+   \   0000000A   0x2700             MOVS     R7,#+0
+    155              uint8   SlaveAddr;                                      //从机地址
+    156              uint16  AddrTemp;                                       //地址缓存
+    157              
+    158              AddrTemp = Addr;
+   \   0000000C   0x46A1             MOV      R9,R4
+    159              
+    160              AddrTemp += FRAM_START_ADDR;                            //计算地址
+    161              
+    162              if( (uint16)AddrTemp + DataBufLen > FRAM_END_ADDR ) 
+   \   0000000E   0xFA1F 0xF989      UXTH     R9,R9            ;; ZeroExt  R9,R9,#+16,#+16
+   \   00000012   0xEB16 0x0009      ADDS     R0,R6,R9
+   \   00000016   0xF5B0 0x5F00      CMP      R0,#+8192
+   \   0000001A   0xD901             BLS.N    ??ReadFM24CL64_0
+    163              {
+    164                  return  FALSE;                                      //地址未超阶
+   \   0000001C   0x2000             MOVS     R0,#+0
+   \   0000001E   0xE035             B.N      ??ReadFM24CL64_1
+    165              }
+    166              
+    167              SlaveAddr = FRAM_DIVICE_ADDR & (~(0x01));               //求FM24CL64设备写地址
+   \                     ??ReadFM24CL64_0: (+1)
+   \   00000020   0x20A0             MOVS     R0,#+160
+   \   00000022   0x4680             MOV      R8,R0
+    168              
+    169              StartI2C();                                             //启动IIC总线
+   \   00000024   0x.... 0x....      BL       StartI2C
+    170              
+    171              WriteByteWithI2C(SlaveAddr);                            //写FM24CL64设备写地址
+   \   00000028   0x4640             MOV      R0,R8
+   \   0000002A   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000002C   0x.... 0x....      BL       WriteByteWithI2C
+    172              CheckSlaveAckI2C();                                     //读从机应答信号
+   \   00000030   0x.... 0x....      BL       CheckSlaveAckI2C
+    173              
+    174              WriteByteWithI2C(Addr >> 8 );                           //写数据高位地址
+   \   00000034   0x0020             MOVS     R0,R4
+   \   00000036   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   00000038   0x0A00             LSRS     R0,R0,#+8
+   \   0000003A   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000003C   0x.... 0x....      BL       WriteByteWithI2C
+    175              CheckSlaveAckI2C();                                     //读从机应答信号
+   \   00000040   0x.... 0x....      BL       CheckSlaveAckI2C
+    176              
+    177              WriteByteWithI2C( Addr );                               //写数据低位地址
+   \   00000044   0x0020             MOVS     R0,R4
+   \   00000046   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000048   0x.... 0x....      BL       WriteByteWithI2C
+    178              CheckSlaveAckI2C();                                     //读从机应答信号
+   \   0000004C   0x.... 0x....      BL       CheckSlaveAckI2C
+    179                  
+    180              SlaveAddr = (FRAM_DIVICE_ADDR)|(0x01);                  //求FM24CL64设备读地址
+   \   00000050   0x20A1             MOVS     R0,#+161
+   \   00000052   0x4680             MOV      R8,R0
+    181              
+    182              StartI2C();                                             //启动IIC总线
+   \   00000054   0x.... 0x....      BL       StartI2C
+    183              
+    184              WriteByteWithI2C(SlaveAddr);                            //写FM24CL16地址
+   \   00000058   0x4640             MOV      R0,R8
+   \   0000005A   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000005C   0x.... 0x....      BL       WriteByteWithI2C
+    185              CheckSlaveAckI2C();                                     //读从机应答信号
+   \   00000060   0x.... 0x....      BL       CheckSlaveAckI2C
+    186             
+    187              for(i = 0; i < (DataBufLen -1); i++)                    //发送数据
+   \   00000064   0x2000             MOVS     R0,#+0
+   \   00000066   0x0007             MOVS     R7,R0
+   \                     ??ReadFM24CL64_2: (+1)
+   \   00000068   0x1E70             SUBS     R0,R6,#+1
+   \   0000006A   0x4287             CMP      R7,R0
+   \   0000006C   0xD206             BCS.N    ??ReadFM24CL64_3
+    188              {
+    189                  DataBuf[i] = ReadByteWithI2C();                     //写数据
+   \   0000006E   0x.... 0x....      BL       ReadByteWithI2C
+   \   00000072   0x5578             STRB     R0,[R7, R5]
+    190                  MasterAckI2C();                                     //主机应答从机
+   \   00000074   0x.... 0x....      BL       MasterAckI2C
+    191              }
+   \   00000078   0x1C7F             ADDS     R7,R7,#+1
+   \   0000007A   0xE7F5             B.N      ??ReadFM24CL64_2
+    192              DataBuf[i] = ReadByteWithI2C();                         //写数据
+   \                     ??ReadFM24CL64_3: (+1)
+   \   0000007C   0x.... 0x....      BL       ReadByteWithI2C
+   \   00000080   0x5578             STRB     R0,[R7, R5]
+    193              
+    194              MasterNoAckI2C();                                       //主机应答从机
+   \   00000082   0x.... 0x....      BL       MasterNoAckI2C
+    195              
+    196              StopI2C();
+   \   00000086   0x.... 0x....      BL       StopI2C
+    197              
+    198              return  TRUE;                                           //正确
+   \   0000008A   0x2001             MOVS     R0,#+1
+   \                     ??ReadFM24CL64_1: (+1)
+   \   0000008C   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}    ;; return
+    199          }
+    200          
+    201          
+    202          //  RecNumMgr
+    203          //
+    204          //-------------------------------------------------------------------------------------------------------
+    205          //函数名称	:       FRAM_StoreRecNumMgr()
+    206          //功    		能	:       存储数据记录管理地址
+    207          //入口参数	:       待存储的数据记录指针
+    208          //出口参数  :       成功TURE，失败FALSE
+    209          //作　 　者： 	redmorningcn
+    210          //创建日期： 	2017-05-15
+    211          //说		 明：            
+    212          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    213          uint8 FRAM_StoreRecNumMgr(StrRecNumMgr  *SRecNumMgr)
+    214          {
+   \                     FRAM_StoreRecNumMgr: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    215          	uint8	flg = TRUE;
+   \   00000004   0x2501             MOVS     R5,#+1
+    216          	
+    217          	FRAM_WaitEvent();
+   \   00000006   0x.... 0x....      BL       FRAM_WaitEvent
+    218          	if(!WriteFM24CL64(FRAM_RECNUM_MGR_ADDR, (uint8 *)SRecNumMgr, sizeof(StrRecNumMgr)))		//存数据管理
+   \   0000000A   0x2210             MOVS     R2,#+16
+   \   0000000C   0x0021             MOVS     R1,R4
+   \   0000000E   0x2004             MOVS     R0,#+4
+   \   00000010   0x.... 0x....      BL       WriteFM24CL64
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD101             BNE.N    ??FRAM_StoreRecNumMgr_0
+    219          		flg = FALSE;
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x0005             MOVS     R5,R0
+    220          	
+    221          	FRAM_SendEvent();
+   \                     ??FRAM_StoreRecNumMgr_0: (+1)
+   \   0000001C   0x.... 0x....      BL       FRAM_SendEvent
+    222          	return	flg;
+   \   00000020   0x0028             MOVS     R0,R5
+   \   00000022   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000024   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    223          }
+    224          
+    225          
+    226          //-------------------------------------------------------------------------------------------------------
+    227          //函数名称	:      FRAM_ReadRecNumMgr()
+    228          //功    		能	:      读数据记录管理指令
+    229          //入口参数	:      待读取的数据记录的储存位置
+    230          //出口参数  :      成功TURE，失败FALSE
+    231          //作　 　者 ： 	redmorningcn
+    232          //创建日期  ： 	2017-05-15
+    233          //说		 明：  
+    234          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    235          uint8 FRAM_ReadRecNumMgr(StrRecNumMgr  *SRecNumMgr)
+    236          {
+   \                     FRAM_ReadRecNumMgr: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    237          	uint8	flg = TRUE;
+   \   00000004   0x2501             MOVS     R5,#+1
+    238          	
+    239          	FRAM_WaitEvent();
+   \   00000006   0x.... 0x....      BL       FRAM_WaitEvent
+    240          	if(!ReadFM24CL64(FRAM_RECNUM_MGR_ADDR, (uint8 *)SRecNumMgr, sizeof(StrRecNumMgr)))		//读数据管理
+   \   0000000A   0x2210             MOVS     R2,#+16
+   \   0000000C   0x0021             MOVS     R1,R4
+   \   0000000E   0x2004             MOVS     R0,#+4
+   \   00000010   0x.... 0x....      BL       ReadFM24CL64
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD101             BNE.N    ??FRAM_ReadRecNumMgr_0
+    241          		flg = FALSE;
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x0005             MOVS     R5,R0
+    242          	
+    243          	FRAM_SendEvent();
+   \                     ??FRAM_ReadRecNumMgr_0: (+1)
+   \   0000001C   0x.... 0x....      BL       FRAM_SendEvent
+    244          	return	flg;
+   \   00000020   0x0028             MOVS     R0,R5
+   \   00000022   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000024   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    245          }
+    246          
+    247          //  ProductInfo
+    248          //
+    249          //-------------------------------------------------------------------------------------------------------
+    250          //函数名称:       FRAM_StoreProductInfo()
+    251          //功    能:       存产品信息
+    252          //入口参数:      
+    253          //出口参数:       
+    254          //作　 　者： 	    redmorningcn
+    255          //创建日期： 	    2017-05-15
+    256          //说		 明：            
+    257          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    258          uint8 FRAM_StoreProductInfo(StrProductInfo  *sProductInfo)
+    259          {
+   \                     FRAM_StoreProductInfo: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    260          	uint8	flg = TRUE;
+   \   00000004   0x2501             MOVS     R5,#+1
+    261          	
+    262          	FRAM_WaitEvent();
+   \   00000006   0x.... 0x....      BL       FRAM_WaitEvent
+    263          	if(!WriteFM24CL64(FRAM_PRODUCT_INFO_ADDR, (uint8 *)sProductInfo, sizeof(StrProductInfo)))		
+   \   0000000A   0x220C             MOVS     R2,#+12
+   \   0000000C   0x0021             MOVS     R1,R4
+   \   0000000E   0x2014             MOVS     R0,#+20
+   \   00000010   0x.... 0x....      BL       WriteFM24CL64
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD101             BNE.N    ??FRAM_StoreProductInfo_0
+    264          		flg = FALSE;
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x0005             MOVS     R5,R0
+    265          	
+    266          	FRAM_SendEvent();
+   \                     ??FRAM_StoreProductInfo_0: (+1)
+   \   0000001C   0x.... 0x....      BL       FRAM_SendEvent
+    267          	return	flg;
+   \   00000020   0x0028             MOVS     R0,R5
+   \   00000022   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000024   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    268          }
+    269          
+    270          //-------------------------------------------------------------------------------------------------------
+    271          //函数名称	:      FRAM_ReadProductInfo()
+    272          //功    		能	:      读产品信息
+    273          //入口参数	:      产品的
+    274          //出口参数  :       
+    275          //作　 　者 ： 	redmorningcn
+    276          //创建日期  ： 	2017-05-15
+    277          //说		 明：  
+    278          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    279          uint8 FRAM_ReadProductInfo(StrProductInfo  *sProductInfo)
+    280          {
+   \                     FRAM_ReadProductInfo: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    281          	uint8	flg = TRUE;
+   \   00000004   0x2501             MOVS     R5,#+1
+    282          	
+    283          	FRAM_WaitEvent();
+   \   00000006   0x.... 0x....      BL       FRAM_WaitEvent
+    284          	if(!ReadFM24CL64(FRAM_PRODUCT_INFO_ADDR, (uint8 *)sProductInfo, sizeof(StrProductInfo)))		
+   \   0000000A   0x220C             MOVS     R2,#+12
+   \   0000000C   0x0021             MOVS     R1,R4
+   \   0000000E   0x2014             MOVS     R0,#+20
+   \   00000010   0x.... 0x....      BL       ReadFM24CL64
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD101             BNE.N    ??FRAM_ReadProductInfo_0
+    285          		flg = FALSE;
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x0005             MOVS     R5,R0
+    286          	
+    287          	FRAM_SendEvent();
+   \                     ??FRAM_ReadProductInfo_0: (+1)
+   \   0000001C   0x.... 0x....      BL       FRAM_SendEvent
+    288          	return	flg;
+   \   00000020   0x0028             MOVS     R0,R5
+   \   00000022   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000024   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    289          }
+    290          
+    291          
+    292          
+    293          //  currecord
+    294          //
+    295          //-------------------------------------------------------------------------------------------------------
+    296          //函数名称	:      FRAM_StoreCurRecord()
+    297          //功    		能	:      存当前记录的 
+    298          //入口参数	:      
+    299          //出口参数  :       
+    300          //作　 　者 ： 	redmorningcn
+    301          //创建日期  ： 	2017-05-15
+    302          //说		 明：            
+    303          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    304          uint8 FRAM_StoreCurRecord(stcFlshRec  *sFlshRec)
+    305          {
+   \                     FRAM_StoreCurRecord: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    306          	uint8	flg = TRUE;
+   \   00000004   0x2501             MOVS     R5,#+1
+    307          	
+    308          	FRAM_WaitEvent();
+   \   00000006   0x.... 0x....      BL       FRAM_WaitEvent
+    309          	if(!WriteFM24CL64(FRAM_REC_ADDR, (uint8 *)sFlshRec, sizeof(stcFlshRec)))		
+   \   0000000A   0x2280             MOVS     R2,#+128
+   \   0000000C   0x0021             MOVS     R1,R4
+   \   0000000E   0x2020             MOVS     R0,#+32
+   \   00000010   0x.... 0x....      BL       WriteFM24CL64
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD101             BNE.N    ??FRAM_StoreCurRecord_0
+    310          		flg = FALSE;
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x0005             MOVS     R5,R0
+    311          	
+    312          	FRAM_SendEvent();
+   \                     ??FRAM_StoreCurRecord_0: (+1)
+   \   0000001C   0x.... 0x....      BL       FRAM_SendEvent
+    313          	return	flg;
+   \   00000020   0x0028             MOVS     R0,R5
+   \   00000022   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000024   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    314          }
+    315          
+    316          //-------------------------------------------------------------------------------------------------------
+    317          //函数名称	:      FRAM_ReadProductInfo()
+    318          //功    		能	:      读当前记录的 
+    319          //入口参数	:      产品的
+    320          //出口参数  :       
+    321          //作　 　者 ： 	redmorningcn
+    322          //创建日期  ： 	2017-05-15
+    323          //说		 明：  
+    324          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    325          uint8 FRAM_ReadCurRecord(stcFlshRec  *sFlshRec)
+    326          {
+   \                     FRAM_ReadCurRecord: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    327          	uint8	flg = TRUE;
+   \   00000004   0x2501             MOVS     R5,#+1
+    328          	
+    329          	FRAM_WaitEvent();
+   \   00000006   0x.... 0x....      BL       FRAM_WaitEvent
+    330          	if(!ReadFM24CL64(FRAM_REC_ADDR, (uint8 *)sFlshRec, sizeof(stcFlshRec)))		
+   \   0000000A   0x2280             MOVS     R2,#+128
+   \   0000000C   0x0021             MOVS     R1,R4
+   \   0000000E   0x2020             MOVS     R0,#+32
+   \   00000010   0x.... 0x....      BL       ReadFM24CL64
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD101             BNE.N    ??FRAM_ReadCurRecord_0
+    331          		flg = FALSE;
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x0005             MOVS     R5,R0
+    332          	
+    333          	FRAM_SendEvent();
+   \                     ??FRAM_ReadCurRecord_0: (+1)
+   \   0000001C   0x.... 0x....      BL       FRAM_SendEvent
+    334          	return	flg;
+   \   00000020   0x0028             MOVS     R0,R5
+   \   00000022   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000024   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    335          }
+    336          
+    337          //  oilpara
+    338          //
+    339          //-------------------------------------------------------------------------------------------------------
+    340          //函数名称	:      FRAM_StoreOilPara()
+    341          //功    		能	:      
+    342          //入口参数	:      
+    343          //出口参数  :       
+    344          //作　 　者 ： 	redmorningcn
+    345          //创建日期  ： 	2017-05-15
+    346          //说		 明：            
+    347          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    348          uint8 FRAM_StoreOilPara(StrOilPara  *SOilPara)
+    349          {
+   \                     FRAM_StoreOilPara: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    350          	uint8	flg = TRUE;
+   \   00000004   0x2501             MOVS     R5,#+1
+    351          	
+    352          	FRAM_WaitEvent();
+   \   00000006   0x.... 0x....      BL       FRAM_WaitEvent
+    353          	if(!WriteFM24CL64(FRAM_OIL_PARA_ADDR, (uint8 *)SOilPara, sizeof(StrOilPara)))		
+   \   0000000A   0x220C             MOVS     R2,#+12
+   \   0000000C   0x0021             MOVS     R1,R4
+   \   0000000E   0x20A0             MOVS     R0,#+160
+   \   00000010   0x.... 0x....      BL       WriteFM24CL64
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD101             BNE.N    ??FRAM_StoreOilPara_0
+    354          		flg = FALSE;
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x0005             MOVS     R5,R0
+    355          	
+    356          	FRAM_SendEvent();
+   \                     ??FRAM_StoreOilPara_0: (+1)
+   \   0000001C   0x.... 0x....      BL       FRAM_SendEvent
+    357          	return	flg;
+   \   00000020   0x0028             MOVS     R0,R5
+   \   00000022   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000024   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    358          }
+    359          
+    360          //-------------------------------------------------------------------------------------------------------
+    361          //函数名称	:      FRAM_ReadOilPara()
+    362          //功    		能	:      
+    363          //入口参数	:     
+    364          //出口参数  :       
+    365          //作　 　者 ： 	redmorningcn
+    366          //创建日期  ： 	2017-05-15
+    367          //说		 明：  
+    368          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    369          uint8 FRAM_ReadOilPara(StrOilPara  *SOilPara)
+    370          {
+   \                     FRAM_ReadOilPara: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    371          	uint8	flg = TRUE;
+   \   00000004   0x2501             MOVS     R5,#+1
+    372          	
+    373          	FRAM_WaitEvent();
+   \   00000006   0x.... 0x....      BL       FRAM_WaitEvent
+    374          	if(!ReadFM24CL64(FRAM_OIL_PARA_ADDR, (uint8 *)SOilPara, sizeof(StrOilPara)))		
+   \   0000000A   0x220C             MOVS     R2,#+12
+   \   0000000C   0x0021             MOVS     R1,R4
+   \   0000000E   0x20A0             MOVS     R0,#+160
+   \   00000010   0x.... 0x....      BL       ReadFM24CL64
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD101             BNE.N    ??FRAM_ReadOilPara_0
+    375          		flg = FALSE;
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x0005             MOVS     R5,R0
+    376          	
+    377          	FRAM_SendEvent();
+   \                     ??FRAM_ReadOilPara_0: (+1)
+   \   0000001C   0x.... 0x....      BL       FRAM_SendEvent
+    378          	return	flg;
+   \   00000020   0x0028             MOVS     R0,R5
+   \   00000022   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000024   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    379          }
+    380          
+    381          
+    382          //  runpara
+    383          //
+    384          //-------------------------------------------------------------------------------------------------------
+    385          //函数名称	:      FRAM_StoreRunPara()
+    386          //功    		能	:      
+    387          //入口参数	:      
+    388          //出口参数  :       
+    389          //作　 　者 ： 	redmorningcn
+    390          //创建日期  ： 	2017-05-15
+    391          //说		 明：            
+    392          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    393          uint8 FRAM_StoreRunPara(stcRunPara  *sRunPara)
+    394          {
+   \                     FRAM_StoreRunPara: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    395          	uint8	flg = TRUE;
+   \   00000004   0x2501             MOVS     R5,#+1
+    396          	
+    397          	FRAM_WaitEvent();
+   \   00000006   0x.... 0x....      BL       FRAM_WaitEvent
+    398          	
+    399          	if(!WriteFM24CL64(FRAM_RUN_PARA_ADDR, (uint8 *)sRunPara, sizeof(stcRunPara)))		
+   \   0000000A   0x2210             MOVS     R2,#+16
+   \   0000000C   0x0021             MOVS     R1,R4
+   \   0000000E   0x20AC             MOVS     R0,#+172
+   \   00000010   0x.... 0x....      BL       WriteFM24CL64
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD101             BNE.N    ??FRAM_StoreRunPara_0
+    400          		flg = FALSE;
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x0005             MOVS     R5,R0
+    401          	
+    402          	FRAM_SendEvent();
+   \                     ??FRAM_StoreRunPara_0: (+1)
+   \   0000001C   0x.... 0x....      BL       FRAM_SendEvent
+    403          	return	flg;
+   \   00000020   0x0028             MOVS     R0,R5
+   \   00000022   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000024   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    404          }
+    405          
+    406          //-------------------------------------------------------------------------------------------------------
+    407          //函数名称	:      FRAM_ReadRunPara()
+    408          //功    		能	:      
+    409          //入口参数	:     
+    410          //出口参数  :       
+    411          //作　 　者 ： 	redmorningcn
+    412          //创建日期  ： 	2017-05-15
+    413          //说		 明：  
+    414          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    415          uint8 FRAM_ReadRunPara(stcRunPara  *sRunPara)
+    416          {
+   \                     FRAM_ReadRunPara: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    417          	uint8	flg = TRUE;
+   \   00000004   0x2501             MOVS     R5,#+1
+    418          	
+    419          	FRAM_WaitEvent();
+   \   00000006   0x.... 0x....      BL       FRAM_WaitEvent
+    420          	
+    421          	if(!ReadFM24CL64(FRAM_RUN_PARA_ADDR, (uint8 *)sRunPara, sizeof(stcRunPara)))		
+   \   0000000A   0x2210             MOVS     R2,#+16
+   \   0000000C   0x0021             MOVS     R1,R4
+   \   0000000E   0x20AC             MOVS     R0,#+172
+   \   00000010   0x.... 0x....      BL       ReadFM24CL64
+   \   00000014   0x2800             CMP      R0,#+0
+   \   00000016   0xD101             BNE.N    ??FRAM_ReadRunPara_0
+    422          		flg = FALSE;
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x0005             MOVS     R5,R0
+    423          	
+    424          	FRAM_SendEvent();
+   \                     ??FRAM_ReadRunPara_0: (+1)
+   \   0000001C   0x.... 0x....      BL       FRAM_SendEvent
+    425          	return	flg;
+   \   00000020   0x0028             MOVS     R0,R5
+   \   00000022   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000024   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    426          }
+    427          
+    428          //  calcmodel
+    429          //
+    430          //-------------------------------------------------------------------------------------------------------
+    431          //函数名称	:      FRAM_StoreCalcModel()
+    432          //功    		能	:      
+    433          //入口参数	:      
+    434          //出口参数  :       
+    435          //作　 　者 ： 	redmorningcn
+    436          //创建日期  ： 	2017-05-15
+    437          //说		 明：            
+    438          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    439          uint8 FRAM_StoreCalcModel(stcCalcModel  *sCalcModel)
+    440          {
+   \                     FRAM_StoreCalcModel: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    441          	uint8	flg = TRUE;
+   \   00000004   0x2501             MOVS     R5,#+1
+    442          	
+    443          	FRAM_WaitEvent();
+   \   00000006   0x.... 0x....      BL       FRAM_WaitEvent
+    444          	
+    445          	if(!WriteFM24CL64(FRAM_CALC_MODEL_ADDR, (uint8 *)sCalcModel, sizeof(stcCalcModel)))		
+   \   0000000A   0xF44F 0x72CC      MOV      R2,#+408
+   \   0000000E   0x0021             MOVS     R1,R4
+   \   00000010   0x20B4             MOVS     R0,#+180
+   \   00000012   0x.... 0x....      BL       WriteFM24CL64
+   \   00000016   0x2800             CMP      R0,#+0
+   \   00000018   0xD101             BNE.N    ??FRAM_StoreCalcModel_0
+    446          		flg = FALSE;
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0x0005             MOVS     R5,R0
+    447          	
+    448          	FRAM_SendEvent();
+   \                     ??FRAM_StoreCalcModel_0: (+1)
+   \   0000001E   0x.... 0x....      BL       FRAM_SendEvent
+    449          	return	flg;
+   \   00000022   0x0028             MOVS     R0,R5
+   \   00000024   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000026   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    450          }
+    451          
+    452          //-------------------------------------------------------------------------------------------------------
+    453          //函数名称	:      FRAM_ReadRunPara()
+    454          //功    		能	:      
+    455          //入口参数	:     
+    456          //出口参数  :       
+    457          //作　 　者 ： 	redmorningcn
+    458          //创建日期  ： 	2017-05-15
+    459          //说		 明：  
+    460          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    461          uint8 FRAM_ReadCalcModel(stcCalcModel  *sCalcModel)
+    462          {
+   \                     FRAM_ReadCalcModel: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    463          	uint8	flg = TRUE;
+   \   00000004   0x2501             MOVS     R5,#+1
+    464          	
+    465          	FRAM_WaitEvent();
+   \   00000006   0x.... 0x....      BL       FRAM_WaitEvent
+    466          	
+    467          	if(!ReadFM24CL64(FRAM_CALC_MODEL_ADDR, (uint8 *)sCalcModel, sizeof(stcCalcModel)))		
+   \   0000000A   0xF44F 0x72CC      MOV      R2,#+408
+   \   0000000E   0x0021             MOVS     R1,R4
+   \   00000010   0x20B4             MOVS     R0,#+180
+   \   00000012   0x.... 0x....      BL       ReadFM24CL64
+   \   00000016   0x2800             CMP      R0,#+0
+   \   00000018   0xD101             BNE.N    ??FRAM_ReadCalcModel_0
+    468          		flg = FALSE;
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0x0005             MOVS     R5,R0
+    469          	
+    470          	FRAM_SendEvent();
+   \                     ??FRAM_ReadCalcModel_0: (+1)
+   \   0000001E   0x.... 0x....      BL       FRAM_SendEvent
+    471          	return	flg;
+   \   00000022   0x0028             MOVS     R0,R5
+   \   00000024   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000026   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    472          }
+    473          
+    474          //-------------------------------------------------------------------------------------------------------
+    475          //函数名称	:      GetOilBoxModelsModel()
+    476          //功         能	:  查找邮箱模型区域，寻找有效的油箱模型。 
+    477          //入口参数	:     
+    478          //出口参数  :       
+    479          //作　 　者 ： 	redmorningcn
+    480          //创建日期  ： 	2017-05-15
+    481          //说		 明：  
+    482          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    483          uint8	GetOilBoxModelsModel(stcModel * sModel)
+    484          {
+   \                     GetOilBoxModelsModel: (+1)
+   \   00000000   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+    485          	  uint32	i;
+    486          	  uint32	ModelNumAdd;
+    487          	  uint32	ModelAdd;
+    488          	  uint8		ModelNum;
+    489          	  uint16	CrcCheck;
+    490          	  uint8		OilBoxTypCod;
+    491          
+    492          	  OilBoxTypCod	= GetOilBoxCod(); 
+   \   00000006   0x.... 0x....      BL       GetOilBoxCod
+   \   0000000A   0x4681             MOV      R9,R0
+    493          
+    494          	  for(i = 0; i < 18;i++)
+   \   0000000C   0x2000             MOVS     R0,#+0
+   \   0000000E   0x0005             MOVS     R5,R0
+   \                     ??GetOilBoxModelsModel_0: (+1)
+   \   00000010   0x2D12             CMP      R5,#+18
+   \   00000012   0xD22C             BCS.N    ??GetOilBoxModelsModel_1
+    495          	  {
+    496          	      ModelNumAdd =  OIL_BOX_MODEL_ADDR + sizeof(stcModel)*i + sizeof(stcModPot)*50 + 2 + 2;
+   \   00000014   0x20D0             MOVS     R0,#+208
+   \   00000016   0xFB00 0xF005      MUL      R0,R0,R5
+   \   0000001A   0xF600 0x009C      ADDW     R0,R0,#+2204
+   \   0000001E   0x0006             MOVS     R6,R0
+    497          
+    498          		  ReadFM24CL64(ModelNumAdd,(uint8 *)&ModelNum, sizeof(ModelNum));
+   \   00000020   0x2201             MOVS     R2,#+1
+   \   00000022   0x4669             MOV      R1,SP
+   \   00000024   0x0030             MOVS     R0,R6
+   \   00000026   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   00000028   0x.... 0x....      BL       ReadFM24CL64
+    499          
+    500          //		  printfcom0("\r\n 11 OilBoxTypCod == ModelNum %d ,i = %d",ModelNum,i);
+    501          
+    502          		  if(OilBoxTypCod == ModelNum)
+   \   0000002C   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \   00000030   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   00000034   0x4581             CMP      R9,R0
+   \   00000036   0xD118             BNE.N    ??GetOilBoxModelsModel_2
+    503          		  {
+    504          //		  	  printfcom0("\r\n 2OilBoxTypCod == ModelNum %d,i = %d",ModelNum,i);
+    505          			  
+    506          			  ModelAdd = OIL_BOX_MODEL_ADDR + sizeof(stcModel)*i;		  		
+   \   00000038   0x20D0             MOVS     R0,#+208
+   \   0000003A   0xFB00 0xF005      MUL      R0,R0,R5
+   \   0000003E   0xF510 0x60FA      ADDS     R0,R0,#+2000
+   \   00000042   0x0007             MOVS     R7,R0
+    507          		      ReadFM24CL64(ModelAdd,(uint8 *)sModel,sizeof(stcModel));
+   \   00000044   0x22D0             MOVS     R2,#+208
+   \   00000046   0x0021             MOVS     R1,R4
+   \   00000048   0x0038             MOVS     R0,R7
+   \   0000004A   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   0000004C   0x.... 0x....      BL       ReadFM24CL64
+    508          //			  printfcom0("\r\n ModelAdd == ModelNum %d,i = %d",ModelAdd);
+    509          //			  for(i = 0;i < sModel->PotNum;i++)
+    510          //			  {
+    511          //			  	printfcom0("\r\n  gaodu %d,youliang %d",sModel->sModPot[i].HigVal,sModel->sModPot[i].DipVal);
+    512          //			  }
+    513          
+    514          			  CrcCheck = GetCrc16Check((uint8 *)sModel,sizeof(stcModel) - 2);
+   \   00000050   0x21CE             MOVS     R1,#+206
+   \   00000052   0x0020             MOVS     R0,R4
+   \   00000054   0x.... 0x....      BL       GetCrc16Check
+   \   00000058   0x4680             MOV      R8,R0
+    515          
+    516          			  if(CrcCheck == sModel->CrcCheck)
+   \   0000005A   0xF8B4 0x00CE      LDRH     R0,[R4, #+206]
+   \   0000005E   0xFA1F 0xF888      UXTH     R8,R8            ;; ZeroExt  R8,R8,#+16,#+16
+   \   00000062   0x4580             CMP      R8,R0
+   \   00000064   0xD101             BNE.N    ??GetOilBoxModelsModel_2
+    517          			  {
+    518          			  	 //printfcom0("\r\n 3PotNum %d",sModel->PotNum);	
+    519          			  	 return  1;
+   \   00000066   0x2001             MOVS     R0,#+1
+   \   00000068   0xE002             B.N      ??GetOilBoxModelsModel_3
+    520          			  }
+    521          		  }
+    522          	  }
+   \                     ??GetOilBoxModelsModel_2: (+1)
+   \   0000006A   0x1C6D             ADDS     R5,R5,#+1
+   \   0000006C   0xE7D0             B.N      ??GetOilBoxModelsModel_0
+    523          
+    524          	  return  0;
+   \                     ??GetOilBoxModelsModel_1: (+1)
+   \   0000006E   0x2000             MOVS     R0,#+0
+   \                     ??GetOilBoxModelsModel_3: (+1)
+   \   00000070   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}    ;; return
+    525          }
+    526          
+    527          //-------------------------------------------------------------------------------------------------------
+    528          //函数名称	:      GetOilBoxModelsModelSemple()
+    529          //功    		能	:     查找邮箱模型区域，寻找有效的油箱模型。  
+    530          //入口参数	:     
+    531          //出口参数  :       
+    532          //作　 　者 ： 	redmorningcn
+    533          //创建日期  ： 	2017-05-15
+    534          //说		 明：  
+    535          //--------------------------------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    536          uint8	GetOilBoxModelsModelSemple(stcModelSemple * sModelSemple)
+    537          {
+   \                     GetOilBoxModelsModelSemple: (+1)
+   \   00000000   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+    538          	  uint32	i;
+    539          	  uint32	ModelNumAdd;
+    540          	  uint32	ModelAdd;
+    541          	  uint8		ModelNum;
+    542          	  uint16	CrcCheck;
+    543          	  uint8		OilBoxTypCod;
+    544          
+    545          	  OilBoxTypCod	= GetOilBoxCod(); 
+   \   00000006   0x.... 0x....      BL       GetOilBoxCod
+   \   0000000A   0x4681             MOV      R9,R0
+    546          
+    547          	  for(i = 0; i < 46;i++)
+   \   0000000C   0x2000             MOVS     R0,#+0
+   \   0000000E   0x0005             MOVS     R5,R0
+   \                     ??GetOilBoxModelsModelSemple_0: (+1)
+   \   00000010   0x2D2E             CMP      R5,#+46
+   \   00000012   0xD22B             BCS.N    ??GetOilBoxModelsModelSemple_1
+    548          	  {
+    549          		  ModelNumAdd =  OIL_BOX_MODEL_ADDR + sizeof(stcModel)*18 
+    550          		  				+ sizeof(stcModelSemple)*i + sizeof(stcModPot)*10 + 2 + 2;
+   \   00000014   0x2030             MOVS     R0,#+48
+   \   00000016   0xF241 0x619C      MOVW     R1,#+5788
+   \   0000001A   0xFB00 0x1005      MLA      R0,R0,R5,R1
+   \   0000001E   0x0006             MOVS     R6,R0
+    551          
+    552          		  ReadFM24CL64(ModelNumAdd,(uint8 *)&ModelNum, sizeof(ModelNum));
+   \   00000020   0x2201             MOVS     R2,#+1
+   \   00000022   0x4669             MOV      R1,SP
+   \   00000024   0x0030             MOVS     R0,R6
+   \   00000026   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   00000028   0x.... 0x....      BL       ReadFM24CL64
+    553          
+    554          		  //printfcom0("\r\n 22 OilBoxTypCod == ModelNum %d, %d",ModelNum,OilBoxTypCod);
+    555          
+    556          		  if(OilBoxTypCod == ModelNum)
+   \   0000002C   0xF89D 0x0000      LDRB     R0,[SP, #+0]
+   \   00000030   0xFA5F 0xF989      UXTB     R9,R9            ;; ZeroExt  R9,R9,#+24,#+24
+   \   00000034   0x4581             CMP      R9,R0
+   \   00000036   0xD117             BNE.N    ??GetOilBoxModelsModelSemple_2
+    557          		  {
+    558          			  ModelAdd = OIL_BOX_MODEL_ADDR + sizeof(stcModel)*18  
+    559          			  			+ sizeof(stcModelSemple)*i ;
+   \   00000038   0x2030             MOVS     R0,#+48
+   \   0000003A   0xF241 0x6170      MOVW     R1,#+5744
+   \   0000003E   0xFB00 0x1005      MLA      R0,R0,R5,R1
+   \   00000042   0x0007             MOVS     R7,R0
+    560          		
+    561          		      ReadFM24CL64(ModelAdd,(uint8 *)sModelSemple,sizeof(stcModelSemple));
+   \   00000044   0x2230             MOVS     R2,#+48
+   \   00000046   0x0021             MOVS     R1,R4
+   \   00000048   0x0038             MOVS     R0,R7
+   \   0000004A   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   0000004C   0x.... 0x....      BL       ReadFM24CL64
+    562          
+    563          			  CrcCheck = GetCrc16Check((uint8 *)sModelSemple,sizeof(stcModelSemple) - 2);
+   \   00000050   0x212E             MOVS     R1,#+46
+   \   00000052   0x0020             MOVS     R0,R4
+   \   00000054   0x.... 0x....      BL       GetCrc16Check
+   \   00000058   0x4680             MOV      R8,R0
+    564          
+    565          //			  printfcom0("\r\n 22 CrcCheck == CrcCheck %d, %d",CrcCheck,sModelSemple->CrcCheck);
+    566          			  if(CrcCheck == sModelSemple->CrcCheck)
+   \   0000005A   0x8DE0             LDRH     R0,[R4, #+46]
+   \   0000005C   0xFA1F 0xF888      UXTH     R8,R8            ;; ZeroExt  R8,R8,#+16,#+16
+   \   00000060   0x4580             CMP      R8,R0
+   \   00000062   0xD101             BNE.N    ??GetOilBoxModelsModelSemple_2
+    567          			  {
+    568          			  	 return  1;
+   \   00000064   0x2001             MOVS     R0,#+1
+   \   00000066   0xE002             B.N      ??GetOilBoxModelsModelSemple_3
+    569          			  }
+    570          		  }
+    571          	  }
+   \                     ??GetOilBoxModelsModelSemple_2: (+1)
+   \   00000068   0x1C6D             ADDS     R5,R5,#+1
+   \   0000006A   0xE7D1             B.N      ??GetOilBoxModelsModelSemple_0
+    572          
+    573          	  return  0;
+   \                     ??GetOilBoxModelsModelSemple_1: (+1)
+   \   0000006C   0x2000             MOVS     R0,#+0
+   \                     ??GetOilBoxModelsModelSemple_3: (+1)
+   \   0000006E   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}    ;; return
+    574          }
+    575          
+    576          //#endif
+    577              
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   FRAM_ReadCalcModel
+        16   -> FRAM_SendEvent
+        16   -> FRAM_WaitEvent
+        16   -> ReadFM24CL64
+      16   FRAM_ReadCurRecord
+        16   -> FRAM_SendEvent
+        16   -> FRAM_WaitEvent
+        16   -> ReadFM24CL64
+      16   FRAM_ReadOilPara
+        16   -> FRAM_SendEvent
+        16   -> FRAM_WaitEvent
+        16   -> ReadFM24CL64
+      16   FRAM_ReadProductInfo
+        16   -> FRAM_SendEvent
+        16   -> FRAM_WaitEvent
+        16   -> ReadFM24CL64
+      16   FRAM_ReadRecNumMgr
+        16   -> FRAM_SendEvent
+        16   -> FRAM_WaitEvent
+        16   -> ReadFM24CL64
+      16   FRAM_ReadRunPara
+        16   -> FRAM_SendEvent
+        16   -> FRAM_WaitEvent
+        16   -> ReadFM24CL64
+       0   FRAM_SendEvent
+      16   FRAM_StoreCalcModel
+        16   -> FRAM_SendEvent
+        16   -> FRAM_WaitEvent
+        16   -> WriteFM24CL64
+      16   FRAM_StoreCurRecord
+        16   -> FRAM_SendEvent
+        16   -> FRAM_WaitEvent
+        16   -> WriteFM24CL64
+      16   FRAM_StoreOilPara
+        16   -> FRAM_SendEvent
+        16   -> FRAM_WaitEvent
+        16   -> WriteFM24CL64
+      16   FRAM_StoreProductInfo
+        16   -> FRAM_SendEvent
+        16   -> FRAM_WaitEvent
+        16   -> WriteFM24CL64
+      16   FRAM_StoreRecNumMgr
+        16   -> FRAM_SendEvent
+        16   -> FRAM_WaitEvent
+        16   -> WriteFM24CL64
+      16   FRAM_StoreRunPara
+        16   -> FRAM_SendEvent
+        16   -> FRAM_WaitEvent
+        16   -> WriteFM24CL64
+       0   FRAM_WaitEvent
+      32   GetOilBoxModelsModel
+        32   -> GetCrc16Check
+        32   -> GetOilBoxCod
+        32   -> ReadFM24CL64
+      32   GetOilBoxModelsModelSemple
+        32   -> GetCrc16Check
+        32   -> GetOilBoxCod
+        32   -> ReadFM24CL64
+      32   ReadFM24CL64
+        32   -> CheckSlaveAckI2C
+        32   -> MasterAckI2C
+        32   -> MasterNoAckI2C
+        32   -> ReadByteWithI2C
+        32   -> StartI2C
+        32   -> StopI2C
+        32   -> WriteByteWithI2C
+      32   WriteFM24CL64
+        32   -> CheckSlaveAckI2C
+        32   -> StartI2C
+        32   -> StopI2C
+        32   -> WriteByteWithI2C
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      40  FRAM_ReadCalcModel
+      38  FRAM_ReadCurRecord
+      38  FRAM_ReadOilPara
+      38  FRAM_ReadProductInfo
+      38  FRAM_ReadRecNumMgr
+      38  FRAM_ReadRunPara
+       2  FRAM_SendEvent
+      40  FRAM_StoreCalcModel
+      38  FRAM_StoreCurRecord
+      38  FRAM_StoreOilPara
+      38  FRAM_StoreProductInfo
+      38  FRAM_StoreRecNumMgr
+      38  FRAM_StoreRunPara
+       4  FRAM_WaitEvent
+     116  GetOilBoxModelsModel
+     114  GetOilBoxModelsModelSemple
+     144  ReadFM24CL64
+     116  WriteFM24CL64
+
+ 
+ 956 bytes in section .text
+ 
+ 956 bytes of CODE memory
+
+Errors: none
+Warnings: none

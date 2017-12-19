@@ -1,0 +1,2300 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       14/Dec/2017  10:39:30
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_emac.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_emac.c" -lCN
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\List\lpc17xx_emac.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\FLASH\Obj\lpc17xx_emac.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_emac.c
+      1          /**********************************************************************
+      2          * $Id$		lpc17xx_emac.c				2010-05-21
+      3          *//**
+      4          * @file		lpc17xx_emac.c
+      5          * @brief	Contains all functions support for Ethernet MAC firmware
+      6          * 			library on LPC17xx
+      7          * @version	2.0
+      8          * @date		21. May. 2010
+      9          * @author	NXP MCU SW Application Team
+     10          *
+     11          * Copyright(C) 2010, NXP Semiconductor
+     12          * All rights reserved.
+     13          *
+     14          ***********************************************************************
+     15          * Software that is described herein is for illustrative purposes only
+     16          * which provides customers with programming information regarding the
+     17          * products. This software is supplied "AS IS" without any warranties.
+     18          * NXP Semiconductors assumes no responsibility or liability for the
+     19          * use of the software, conveys no license or title under any patent,
+     20          * copyright, or mask work right to the product. NXP Semiconductors
+     21          * reserves the right to make changes in the software without
+     22          * notification. NXP Semiconductors also make no representation or
+     23          * warranty that such application will be suitable for the specified
+     24          * use without further testing or modification.
+     25          * Permission to use, copy, modify, and distribute this software and its
+     26          * documentation is hereby granted, under NXP Semiconductors'
+     27          * relevant copyright in the software, without fee, provided that it
+     28          * is used in conjunction with NXP Semiconductors microcontrollers.  This
+     29          * copyright, permission, and disclaimer notice must appear in all copies of
+     30          * this code.
+     31          **********************************************************************/
+     32          
+     33          /* Peripheral group ----------------------------------------------------------- */
+     34          /** @addtogroup EMAC
+     35           * @{
+     36           */
+     37          
+     38          /* Includes ------------------------------------------------------------------- */
+     39          #include "lpc17xx_emac.h"
+     40          #include "lpc17xx_clkpwr.h"
+     41          
+     42          /* If this source file built with example, the LPC17xx FW library configuration
+     43           * file in each example directory ("lpc17xx_libcfg.h") must be included,
+     44           * otherwise the default FW library configuration file must be included instead
+     45           */
+     46          #ifdef __BUILD_WITH_EXAMPLE__
+     47          #include "lpc17xx_libcfg.h"
+     48          #else
+     49          #include "lpc17xx_libcfg_default.h"
+     50          #endif /* __BUILD_WITH_EXAMPLE__ */
+     51          
+     52          
+     53          #ifdef _EMAC
+     54          
+     55          /* Private Variables ---------------------------------------------------------- */
+     56          /** @defgroup EMAC_Private_Variables EMAC Private Variables
+     57           * @{
+     58           */
+     59          
+     60          /* MII Mgmt Configuration register - Clock divider setting */
+
+   \                                 In section .rodata, align 4
+     61          const uint8_t EMAC_clkdiv[] = { 4, 6, 8, 10, 14, 20, 28, 36, 40, 44, 48, 52, 56, 60, 64};
+   \                     EMAC_clkdiv:
+   \   00000000   0x04 0x06          DC8 4, 6, 8, 10, 14, 20, 28, 36, 40, 44, 48, 52, 56, 60, 64, 0
+   \              0x08 0x0A    
+   \              0x0E 0x14    
+   \              0x1C 0x24    
+   \              0x28 0x2C    
+   \              0x30 0x34    
+   \              0x38 0x3C    
+   \              0x40 0x00    
+     62          
+     63          /* EMAC local DMA Descriptors */
+     64          
+     65          /** Rx Descriptor data array */
+
+   \                                 In section .bss, align 4
+     66          static RX_Desc Rx_Desc[EMAC_NUM_RX_FRAG];
+   \                     Rx_Desc:
+   \   00000000                      DS8 32
+     67          
+     68          /** Rx Status data array - Must be 8-Byte aligned */
+     69          #if defined ( __CC_ARM   )
+     70          static __align(8) RX_Stat Rx_Stat[EMAC_NUM_RX_FRAG];
+     71          #elif defined ( __ICCARM__ )
+     72          #pragma data_alignment=8
+
+   \                                 In section .bss, align 8
+     73          static RX_Stat Rx_Stat[EMAC_NUM_RX_FRAG];
+   \                     Rx_Stat:
+   \   00000000                      DS8 32
+     74          #elif defined   (  __GNUC__  )
+     75          static __attribute__ ((aligned (8))) RX_Stat Rx_Stat[EMAC_NUM_RX_FRAG];
+     76          #endif
+     77          
+     78          /** Tx Descriptor data array */
+
+   \                                 In section .bss, align 4
+     79          static TX_Desc Tx_Desc[EMAC_NUM_TX_FRAG];
+   \                     Tx_Desc:
+   \   00000000                      DS8 24
+     80          /** Tx Status data array */
+
+   \                                 In section .bss, align 4
+     81          static TX_Stat Tx_Stat[EMAC_NUM_TX_FRAG];
+   \                     Tx_Stat:
+   \   00000000                      DS8 12
+     82          
+     83          /* EMAC local DMA buffers */
+     84          /** Rx buffer data */
+
+   \                                 In section .bss, align 4
+     85          static uint32_t rx_buf[EMAC_NUM_RX_FRAG][EMAC_ETH_MAX_FLEN>>2];
+   \                     rx_buf:
+   \   00000000                      DS8 6144
+     86          /** Tx buffer data */
+
+   \                                 In section .bss, align 4
+     87          static uint32_t tx_buf[EMAC_NUM_TX_FRAG][EMAC_ETH_MAX_FLEN>>2];
+   \                     tx_buf:
+   \   00000000                      DS8 4608
+     88          
+     89          /**
+     90           * @}
+     91           */
+     92          
+     93          /* Private Functions ---------------------------------------------------------- */
+     94          static void rx_descr_init (void);
+     95          static void tx_descr_init (void);
+     96          static int32_t write_PHY (uint32_t PhyReg, uint16_t Value);
+     97          static int32_t  read_PHY (uint32_t PhyReg);
+     98          
+     99          static void setEmacAddr(uint8_t abStationAddr[]);
+    100          static int32_t emac_CRCCalc(uint8_t frame_no_fcs[], int32_t frame_len);
+    101          
+    102          
+    103          /*--------------------------- rx_descr_init ---------------------------------*/
+    104          /*********************************************************************//**
+    105           * @brief 		Initializes RX Descriptor
+    106           * @param[in] 	None
+    107           * @return 		None
+    108           ***********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    109          static void rx_descr_init (void)
+    110          {
+    111          	/* Initialize Receive Descriptor and Status array. */
+    112          	uint32_t i;
+    113          
+    114          	for (i = 0; i < EMAC_NUM_RX_FRAG; i++) {
+   \                     rx_descr_init: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0x0008             MOVS     R0,R1
+   \                     ??rx_descr_init_0: (+1)
+   \   00000004   0x2804             CMP      R0,#+4
+   \   00000006   0xD21D             BCS.N    ??rx_descr_init_1
+    115          		Rx_Desc[i].Packet  = (uint32_t)&rx_buf[i];
+   \   00000008   0x.... 0x....      LDR.W    R1,??DataTable22
+   \   0000000C   0xF44F 0x62C0      MOV      R2,#+1536
+   \   00000010   0xFB02 0x1100      MLA      R1,R2,R0,R1
+   \   00000014   0x.... 0x....      LDR.W    R2,??DataTable22_1
+   \   00000018   0xF842 0x1030      STR      R1,[R2, R0, LSL #+3]
+    116          		Rx_Desc[i].Ctrl    = EMAC_RCTRL_INT | (EMAC_ETH_MAX_FLEN - 1);
+   \   0000001C   0x.... 0x....      LDR.W    R1,??DataTable22_2  ;; 0x800005ff
+   \   00000020   0x.... 0x....      LDR.W    R2,??DataTable22_1
+   \   00000024   0xEB12 0x02C0      ADDS     R2,R2,R0, LSL #+3
+   \   00000028   0x6051             STR      R1,[R2, #+4]
+    117          		Rx_Stat[i].Info    = 0;
+   \   0000002A   0x2100             MOVS     R1,#+0
+   \   0000002C   0x.... 0x....      LDR.W    R2,??DataTable22_3
+   \   00000030   0xF842 0x1030      STR      R1,[R2, R0, LSL #+3]
+    118          		Rx_Stat[i].HashCRC = 0;
+   \   00000034   0x2100             MOVS     R1,#+0
+   \   00000036   0x.... 0x....      LDR.W    R2,??DataTable22_3
+   \   0000003A   0xEB12 0x02C0      ADDS     R2,R2,R0, LSL #+3
+   \   0000003E   0x6051             STR      R1,[R2, #+4]
+    119          	}
+   \   00000040   0x1C40             ADDS     R0,R0,#+1
+   \   00000042   0xE7DF             B.N      ??rx_descr_init_0
+    120          
+    121          	/* Set EMAC Receive Descriptor Registers. */
+    122          	LPC_EMAC->RxDescriptor       = (uint32_t)&Rx_Desc[0];
+   \                     ??rx_descr_init_1: (+1)
+   \   00000044   0x.... 0x....      LDR.W    R1,??DataTable22_1
+   \   00000048   0x.... 0x....      LDR.W    R2,??DataTable22_4  ;; 0x50000108
+   \   0000004C   0x6011             STR      R1,[R2, #+0]
+    123          	LPC_EMAC->RxStatus           = (uint32_t)&Rx_Stat[0];
+   \   0000004E   0x.... 0x....      LDR.W    R1,??DataTable22_3
+   \   00000052   0x.... 0x....      LDR.W    R2,??DataTable22_5  ;; 0x5000010c
+   \   00000056   0x6011             STR      R1,[R2, #+0]
+    124          	LPC_EMAC->RxDescriptorNumber = EMAC_NUM_RX_FRAG - 1;
+   \   00000058   0x2103             MOVS     R1,#+3
+   \   0000005A   0x.... 0x....      LDR.W    R2,??DataTable22_6  ;; 0x50000110
+   \   0000005E   0x6011             STR      R1,[R2, #+0]
+    125          
+    126          	/* Rx Descriptors Point to 0 */
+    127          	LPC_EMAC->RxConsumeIndex  = 0;
+   \   00000060   0x2100             MOVS     R1,#+0
+   \   00000062   0x.... 0x....      LDR.W    R2,??DataTable22_7  ;; 0x50000118
+   \   00000066   0x6011             STR      R1,[R2, #+0]
+    128          }
+   \   00000068   0x4770             BX       LR               ;; return
+    129          
+    130          
+    131          /*--------------------------- tx_descr_init ---- ----------------------------*/
+    132          /*********************************************************************//**
+    133           * @brief 		Initializes TX Descriptor
+    134           * @param[in] 	None
+    135           * @return 		None
+    136           ***********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    137          static void tx_descr_init (void) {
+    138          	/* Initialize Transmit Descriptor and Status array. */
+    139          	uint32_t i;
+    140          
+    141          	for (i = 0; i < EMAC_NUM_TX_FRAG; i++) {
+   \                     tx_descr_init: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0x0008             MOVS     R0,R1
+   \                     ??tx_descr_init_0: (+1)
+   \   00000004   0x2803             CMP      R0,#+3
+   \   00000006   0xD216             BCS.N    ??tx_descr_init_1
+    142          		Tx_Desc[i].Packet = (uint32_t)&tx_buf[i];
+   \   00000008   0x.... 0x....      LDR.W    R1,??DataTable22_8
+   \   0000000C   0xF44F 0x62C0      MOV      R2,#+1536
+   \   00000010   0xFB02 0x1100      MLA      R1,R2,R0,R1
+   \   00000014   0x.... 0x....      LDR.W    R2,??DataTable22_9
+   \   00000018   0xF842 0x1030      STR      R1,[R2, R0, LSL #+3]
+    143          		Tx_Desc[i].Ctrl   = 0;
+   \   0000001C   0x2100             MOVS     R1,#+0
+   \   0000001E   0x.... 0x....      LDR.W    R2,??DataTable22_9
+   \   00000022   0xEB12 0x02C0      ADDS     R2,R2,R0, LSL #+3
+   \   00000026   0x6051             STR      R1,[R2, #+4]
+    144          		Tx_Stat[i].Info   = 0;
+   \   00000028   0x2100             MOVS     R1,#+0
+   \   0000002A   0x.... 0x....      LDR.W    R2,??DataTable22_10
+   \   0000002E   0xF842 0x1020      STR      R1,[R2, R0, LSL #+2]
+    145          	}
+   \   00000032   0x1C40             ADDS     R0,R0,#+1
+   \   00000034   0xE7E6             B.N      ??tx_descr_init_0
+    146          
+    147          	/* Set EMAC Transmit Descriptor Registers. */
+    148          	LPC_EMAC->TxDescriptor       = (uint32_t)&Tx_Desc[0];
+   \                     ??tx_descr_init_1: (+1)
+   \   00000036   0x.... 0x....      LDR.W    R1,??DataTable22_9
+   \   0000003A   0x.... 0x....      LDR.W    R2,??DataTable22_11  ;; 0x5000011c
+   \   0000003E   0x6011             STR      R1,[R2, #+0]
+    149          	LPC_EMAC->TxStatus           = (uint32_t)&Tx_Stat[0];
+   \   00000040   0x.... 0x....      LDR.W    R1,??DataTable22_10
+   \   00000044   0x.... 0x....      LDR.W    R2,??DataTable22_12  ;; 0x50000120
+   \   00000048   0x6011             STR      R1,[R2, #+0]
+    150          	LPC_EMAC->TxDescriptorNumber = EMAC_NUM_TX_FRAG - 1;
+   \   0000004A   0x2102             MOVS     R1,#+2
+   \   0000004C   0x.... 0x....      LDR.W    R2,??DataTable22_13  ;; 0x50000124
+   \   00000050   0x6011             STR      R1,[R2, #+0]
+    151          
+    152          	/* Tx Descriptors Point to 0 */
+    153          	LPC_EMAC->TxProduceIndex  = 0;
+   \   00000052   0x2100             MOVS     R1,#+0
+   \   00000054   0x.... 0x....      LDR.W    R2,??DataTable22_14  ;; 0x50000128
+   \   00000058   0x6011             STR      R1,[R2, #+0]
+    154          }
+   \   0000005A   0x4770             BX       LR               ;; return
+    155          
+    156          
+    157          /*--------------------------- write_PHY -------------------------------------*/
+    158          /*********************************************************************//**
+    159           * @brief 		Write value to PHY device
+    160           * @param[in] 	PhyReg: PHY Register address
+    161           * @param[in] 	Value:  Value to write
+    162           * @return 		0 - if success
+    163           * 				1 - if fail
+    164           ***********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    165          static int32_t write_PHY (uint32_t PhyReg, uint16_t Value)
+    166          {
+   \                     write_PHY: (+1)
+   \   00000000   0xB410             PUSH     {R4}
+   \   00000002   0x0002             MOVS     R2,R0
+    167          	/* Write a data 'Value' to PHY register 'PhyReg'. */
+    168          	uint32_t tout;
+    169          
+    170          	LPC_EMAC->MADR = EMAC_DEF_ADR | PhyReg;
+   \   00000004   0xF452 0x7080      ORRS     R0,R2,#0x100
+   \   00000008   0x.... 0x....      LDR.W    R4,??DataTable22_15  ;; 0x50000028
+   \   0000000C   0x6020             STR      R0,[R4, #+0]
+    171          	LPC_EMAC->MWTD = Value;
+   \   0000000E   0xB289             UXTH     R1,R1            ;; ZeroExt  R1,R1,#+16,#+16
+   \   00000010   0x.... 0x....      LDR.W    R0,??DataTable22_16  ;; 0x5000002c
+   \   00000014   0x6001             STR      R1,[R0, #+0]
+    172          
+    173          	/* Wait until operation completed */
+    174          	tout = 0;
+   \   00000016   0x2000             MOVS     R0,#+0
+   \   00000018   0x0003             MOVS     R3,R0
+    175          	for (tout = 0; tout < EMAC_MII_WR_TOUT; tout++) {
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0x0003             MOVS     R3,R0
+   \                     ??write_PHY_0: (+1)
+   \   0000001E   0xF5B3 0x2FA0      CMP      R3,#+327680
+   \   00000022   0xD208             BCS.N    ??write_PHY_1
+    176          		if ((LPC_EMAC->MIND & EMAC_MIND_BUSY) == 0) {
+   \   00000024   0x.... 0x....      LDR.W    R0,??DataTable22_17  ;; 0x50000034
+   \   00000028   0x6800             LDR      R0,[R0, #+0]
+   \   0000002A   0x07C0             LSLS     R0,R0,#+31
+   \   0000002C   0xD401             BMI.N    ??write_PHY_2
+    177          			return (0);
+   \   0000002E   0x2000             MOVS     R0,#+0
+   \   00000030   0xE003             B.N      ??write_PHY_3
+    178          		}
+    179          	}
+   \                     ??write_PHY_2: (+1)
+   \   00000032   0x1C5B             ADDS     R3,R3,#+1
+   \   00000034   0xE7F3             B.N      ??write_PHY_0
+    180          	// Time out!
+    181          	return (-1);
+   \                     ??write_PHY_1: (+1)
+   \   00000036   0xF05F 0x30FF      MOVS     R0,#-1
+   \                     ??write_PHY_3: (+1)
+   \   0000003A   0xBC10             POP      {R4}
+   \   0000003C   0x4770             BX       LR               ;; return
+    182          }
+    183          
+    184          
+    185          /*--------------------------- read_PHY --------------------------------------*/
+    186          /*********************************************************************//**
+    187           * @brief 		Read value from PHY device
+    188           * @param[in] 	PhyReg: PHY Register address
+    189           * @return 		0 - if success
+    190           * 				1 - if fail
+    191           ***********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    192          static int32_t read_PHY (uint32_t PhyReg)
+    193          {
+   \                     read_PHY: (+1)
+   \   00000000   0x0001             MOVS     R1,R0
+    194          	/* Read a PHY register 'PhyReg'. */
+    195          	uint32_t tout;
+    196          
+    197          	LPC_EMAC->MADR = EMAC_DEF_ADR | PhyReg;
+   \   00000002   0xF451 0x7080      ORRS     R0,R1,#0x100
+   \   00000006   0x.... 0x....      LDR.W    R3,??DataTable22_15  ;; 0x50000028
+   \   0000000A   0x6018             STR      R0,[R3, #+0]
+    198          	LPC_EMAC->MCMD = EMAC_MCMD_READ;
+   \   0000000C   0x2001             MOVS     R0,#+1
+   \   0000000E   0x.... 0x....      LDR.W    R3,??DataTable22_18  ;; 0x50000024
+   \   00000012   0x6018             STR      R0,[R3, #+0]
+    199          
+    200          	/* Wait until operation completed */
+    201          	tout = 0;
+   \   00000014   0x2000             MOVS     R0,#+0
+   \   00000016   0x0002             MOVS     R2,R0
+    202          	for (tout = 0; tout < EMAC_MII_RD_TOUT; tout++) {
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x0002             MOVS     R2,R0
+   \                     ??read_PHY_0: (+1)
+   \   0000001C   0xF5B2 0x2FA0      CMP      R2,#+327680
+   \   00000020   0xD20E             BCS.N    ??read_PHY_1
+    203          		if ((LPC_EMAC->MIND & EMAC_MIND_BUSY) == 0) {
+   \   00000022   0x.... 0x....      LDR.W    R0,??DataTable22_17  ;; 0x50000034
+   \   00000026   0x6800             LDR      R0,[R0, #+0]
+   \   00000028   0x07C0             LSLS     R0,R0,#+31
+   \   0000002A   0xD407             BMI.N    ??read_PHY_2
+    204          			LPC_EMAC->MCMD = 0;
+   \   0000002C   0x2000             MOVS     R0,#+0
+   \   0000002E   0x.... 0x....      LDR.W    R3,??DataTable22_18  ;; 0x50000024
+   \   00000032   0x6018             STR      R0,[R3, #+0]
+    205          			return (LPC_EMAC->MRDD);
+   \   00000034   0x.... 0x....      LDR.W    R0,??DataTable22_19  ;; 0x50000030
+   \   00000038   0x6800             LDR      R0,[R0, #+0]
+   \   0000003A   0xE003             B.N      ??read_PHY_3
+    206          		}
+    207          	}
+   \                     ??read_PHY_2: (+1)
+   \   0000003C   0x1C52             ADDS     R2,R2,#+1
+   \   0000003E   0xE7ED             B.N      ??read_PHY_0
+    208          	// Time out!
+    209          	return (-1);
+   \                     ??read_PHY_1: (+1)
+   \   00000040   0xF05F 0x30FF      MOVS     R0,#-1
+   \                     ??read_PHY_3: (+1)
+   \   00000044   0x4770             BX       LR               ;; return
+    210          }
+    211          
+    212          /*********************************************************************//**
+    213           * @brief		Set Station MAC address for EMAC module
+    214           * @param[in]	abStationAddr Pointer to Station address that contains 6-bytes
+    215           * 				of MAC address (should be in order from MAC Address 1 to MAC Address 6)
+    216           * @return		None
+    217           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    218          static void setEmacAddr(uint8_t abStationAddr[])
+    219          {
+    220          	/* Set the Ethernet MAC Address registers */
+    221          	LPC_EMAC->SA0 = ((uint32_t)abStationAddr[5] << 8) | (uint32_t)abStationAddr[4];
+   \                     setEmacAddr: (+1)
+   \   00000000   0x7941             LDRB     R1,[R0, #+5]
+   \   00000002   0x7902             LDRB     R2,[R0, #+4]
+   \   00000004   0xEA52 0x2101      ORRS     R1,R2,R1, LSL #+8
+   \   00000008   0x.... 0x....      LDR.W    R2,??DataTable22_20  ;; 0x50000040
+   \   0000000C   0x6011             STR      R1,[R2, #+0]
+    222          	LPC_EMAC->SA1 = ((uint32_t)abStationAddr[3] << 8) | (uint32_t)abStationAddr[2];
+   \   0000000E   0x78C1             LDRB     R1,[R0, #+3]
+   \   00000010   0x7882             LDRB     R2,[R0, #+2]
+   \   00000012   0xEA52 0x2101      ORRS     R1,R2,R1, LSL #+8
+   \   00000016   0x.... 0x....      LDR.W    R2,??DataTable22_21  ;; 0x50000044
+   \   0000001A   0x6011             STR      R1,[R2, #+0]
+    223          	LPC_EMAC->SA2 = ((uint32_t)abStationAddr[1] << 8) | (uint32_t)abStationAddr[0];
+   \   0000001C   0x7841             LDRB     R1,[R0, #+1]
+   \   0000001E   0x7802             LDRB     R2,[R0, #+0]
+   \   00000020   0xEA52 0x2101      ORRS     R1,R2,R1, LSL #+8
+   \   00000024   0x.... 0x....      LDR.W    R2,??DataTable22_22  ;; 0x50000048
+   \   00000028   0x6011             STR      R1,[R2, #+0]
+    224          }
+   \   0000002A   0x4770             BX       LR               ;; return
+    225          
+    226          
+    227          /*********************************************************************//**
+    228           * @brief		Calculates CRC code for number of bytes in the frame
+    229           * @param[in]	frame_no_fcs	Pointer to the first byte of the frame
+    230           * @param[in]	frame_len		length of the frame without the FCS
+    231           * @return		the CRC as a 32 bit integer
+    232           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    233          static int32_t emac_CRCCalc(uint8_t frame_no_fcs[], int32_t frame_len)
+    234          {
+   \                     emac_CRCCalc: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x0003             MOVS     R3,R0
+   \   00000006   0x000A             MOVS     R2,R1
+    235          	int i; 		// iterator
+    236          	int j; 		// another iterator
+    237          	char byte; 	// current byte
+    238          	int crc; 	// CRC result
+    239          	int q0, q1, q2, q3; // temporary variables
+    240          	crc = 0xFFFFFFFF;
+   \   00000008   0xF05F 0x31FF      MOVS     R1,#-1
+   \   0000000C   0x0008             MOVS     R0,R1
+    241          	for (i = 0; i < frame_len; i++) {
+   \   0000000E   0x2100             MOVS     R1,#+0
+   \   00000010   0x000C             MOVS     R4,R1
+   \                     ??emac_CRCCalc_0: (+1)
+   \   00000012   0x4294             CMP      R4,R2
+   \   00000014   0xDA48             BGE.N    ??emac_CRCCalc_1
+    242          		byte = *frame_no_fcs++;
+   \   00000016   0x7819             LDRB     R1,[R3, #+0]
+   \   00000018   0x000E             MOVS     R6,R1
+   \   0000001A   0x1C5B             ADDS     R3,R3,#+1
+    243          		for (j = 0; j < 2; j++) {
+   \   0000001C   0x2100             MOVS     R1,#+0
+   \   0000001E   0x000D             MOVS     R5,R1
+   \                     ??emac_CRCCalc_2: (+1)
+   \   00000020   0x2D02             CMP      R5,#+2
+   \   00000022   0xDA3F             BGE.N    ??emac_CRCCalc_3
+    244          			if (((crc >> 28) ^ (byte >> 3)) & 0x00000001) {
+   \   00000024   0x0031             MOVS     R1,R6
+   \   00000026   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000028   0x08C9             LSRS     R1,R1,#+3
+   \   0000002A   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   0000002C   0xEA91 0x7120      EORS     R1,R1,R0, ASR #+28
+   \   00000030   0x07C9             LSLS     R1,R1,#+31
+   \   00000032   0xD503             BPL.N    ??emac_CRCCalc_4
+    245          				q3 = 0x04C11DB7;
+   \   00000034   0x.... 0x....      LDR.W    R1,??DataTable22_23  ;; 0x4c11db7
+   \   00000038   0x4688             MOV      R8,R1
+   \   0000003A   0xE001             B.N      ??emac_CRCCalc_5
+    246          			} else {
+    247          				q3 = 0x00000000;
+   \                     ??emac_CRCCalc_4: (+1)
+   \   0000003C   0x2100             MOVS     R1,#+0
+   \   0000003E   0x4688             MOV      R8,R1
+    248          			}
+    249          			if (((crc >> 29) ^ (byte >> 2)) & 0x00000001) {
+   \                     ??emac_CRCCalc_5: (+1)
+   \   00000040   0x0031             MOVS     R1,R6
+   \   00000042   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000044   0x0889             LSRS     R1,R1,#+2
+   \   00000046   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000048   0xEA91 0x7160      EORS     R1,R1,R0, ASR #+29
+   \   0000004C   0x07C9             LSLS     R1,R1,#+31
+   \   0000004E   0xD503             BPL.N    ??emac_CRCCalc_6
+    250          				q2 = 0x09823B6E;
+   \   00000050   0x.... 0x....      LDR.W    R1,??DataTable22_24  ;; 0x9823b6e
+   \   00000054   0x468E             MOV      LR,R1
+   \   00000056   0xE001             B.N      ??emac_CRCCalc_7
+    251          			} else {
+    252          				q2 = 0x00000000;
+   \                     ??emac_CRCCalc_6: (+1)
+   \   00000058   0x2100             MOVS     R1,#+0
+   \   0000005A   0x468E             MOV      LR,R1
+    253          			}
+    254          			if (((crc >> 30) ^ (byte >> 1)) & 0x00000001) {
+   \                     ??emac_CRCCalc_7: (+1)
+   \   0000005C   0x0031             MOVS     R1,R6
+   \   0000005E   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000060   0x0849             LSRS     R1,R1,#+1
+   \   00000062   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000064   0xEA91 0x71A0      EORS     R1,R1,R0, ASR #+30
+   \   00000068   0x07C9             LSLS     R1,R1,#+31
+   \   0000006A   0xD503             BPL.N    ??emac_CRCCalc_8
+    255          				q1 = 0x130476DC;
+   \   0000006C   0x.... 0x....      LDR.W    R1,??DataTable22_25  ;; 0x130476dc
+   \   00000070   0x468C             MOV      R12,R1
+   \   00000072   0xE001             B.N      ??emac_CRCCalc_9
+    256          			} else {
+    257          				q1 = 0x00000000;
+   \                     ??emac_CRCCalc_8: (+1)
+   \   00000074   0x2100             MOVS     R1,#+0
+   \   00000076   0x468C             MOV      R12,R1
+    258          			}
+    259          			if (((crc >> 31) ^ (byte >> 0)) & 0x00000001) {
+   \                     ??emac_CRCCalc_9: (+1)
+   \   00000078   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   0000007A   0xEA96 0x71E0      EORS     R1,R6,R0, ASR #+31
+   \   0000007E   0x07C9             LSLS     R1,R1,#+31
+   \   00000080   0xD503             BPL.N    ??emac_CRCCalc_10
+    260          				q0 = 0x2608EDB8;
+   \   00000082   0x.... 0x....      LDR.W    R1,??DataTable22_26  ;; 0x2608edb8
+   \   00000086   0x000F             MOVS     R7,R1
+   \   00000088   0xE001             B.N      ??emac_CRCCalc_11
+    261          			} else {
+    262          				q0 = 0x00000000;
+   \                     ??emac_CRCCalc_10: (+1)
+   \   0000008A   0x2100             MOVS     R1,#+0
+   \   0000008C   0x000F             MOVS     R7,R1
+    263          			}
+    264          			crc = (crc << 4) ^ q3 ^ q2 ^ q1 ^ q0;
+   \                     ??emac_CRCCalc_11: (+1)
+   \   0000008E   0xEA98 0x1000      EORS     R0,R8,R0, LSL #+4
+   \   00000092   0xEA9E 0x0000      EORS     R0,LR,R0
+   \   00000096   0xEA9C 0x0000      EORS     R0,R12,R0
+   \   0000009A   0x4078             EORS     R0,R7,R0
+    265          			byte >>= 4;
+   \   0000009C   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   0000009E   0x0936             LSRS     R6,R6,#+4
+    266          		}
+   \   000000A0   0x1C6D             ADDS     R5,R5,#+1
+   \   000000A2   0xE7BD             B.N      ??emac_CRCCalc_2
+    267          	}
+   \                     ??emac_CRCCalc_3: (+1)
+   \   000000A4   0x1C64             ADDS     R4,R4,#+1
+   \   000000A6   0xE7B4             B.N      ??emac_CRCCalc_0
+    268          	return crc;
+   \                     ??emac_CRCCalc_1: (+1)
+   \   000000A8   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    269          }
+    270          /* End of Private Functions --------------------------------------------------- */
+    271          
+    272          
+    273          /* Public Functions ----------------------------------------------------------- */
+    274          /** @addtogroup EMAC_Public_Functions
+    275           * @{
+    276           */
+    277          
+    278          
+    279          /*********************************************************************//**
+    280           * @brief		Initializes the EMAC peripheral according to the specified
+    281          *               parameters in the EMAC_ConfigStruct.
+    282           * @param[in]	EMAC_ConfigStruct Pointer to a EMAC_CFG_Type structure
+    283          *                    that contains the configuration information for the
+    284          *                    specified EMAC peripheral.
+    285           * @return		None
+    286           *
+    287           * Note: This function will initialize EMAC module according to procedure below:
+    288           *  - Remove the soft reset condition from the MAC
+    289           *  - Configure the PHY via the MIIM interface of the MAC
+    290           *  - Select RMII mode
+    291           *  - Configure the transmit and receive DMA engines, including the descriptor arrays
+    292           *  - Configure the host registers (MAC1,MAC2 etc.) in the MAC
+    293           *  - Enable the receive and transmit data paths
+    294           *  In default state after initializing, only Rx Done and Tx Done interrupt are enabled,
+    295           *  all remain interrupts are disabled
+    296           *  (Ref. from LPC17xx UM)
+    297           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    298          Status EMAC_Init(EMAC_CFG_Type *EMAC_ConfigStruct)
+    299          {
+   \                     EMAC_Init: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    300          	/* Initialize the EMAC Ethernet controller. */
+    301          	int32_t regv,tout, tmp;
+    302          
+    303          	/* Set up clock and power for Ethernet module */
+    304          	CLKPWR_ConfigPPWR (CLKPWR_PCONP_PCENET, ENABLE);
+   \   00000004   0x2101             MOVS     R1,#+1
+   \   00000006   0xF05F 0x4080      MOVS     R0,#+1073741824
+   \   0000000A   0x.... 0x....      BL       CLKPWR_ConfigPPWR
+    305          
+    306          	/* Reset all EMAC internal modules */
+    307          	LPC_EMAC->MAC1    = EMAC_MAC1_RES_TX | EMAC_MAC1_RES_MCS_TX | EMAC_MAC1_RES_RX |
+    308          					EMAC_MAC1_RES_MCS_RX | EMAC_MAC1_SIM_RES | EMAC_MAC1_SOFT_RES;
+   \   0000000E   0xF44F 0x404F      MOV      R0,#+52992
+   \   00000012   0xF05F 0x41A0      MOVS     R1,#+1342177280
+   \   00000016   0x6008             STR      R0,[R1, #+0]
+    309          
+    310          	LPC_EMAC->Command = EMAC_CR_REG_RES | EMAC_CR_TX_RES | EMAC_CR_RX_RES | EMAC_CR_PASS_RUNT_FRM;
+   \   00000018   0x2078             MOVS     R0,#+120
+   \   0000001A   0x.... 0x....      LDR.W    R1,??DataTable22_27  ;; 0x50000100
+   \   0000001E   0x6008             STR      R0,[R1, #+0]
+    311          
+    312          	/* A short delay after reset. */
+    313          	for (tout = 100; tout; tout--);
+   \   00000020   0x2064             MOVS     R0,#+100
+   \   00000022   0x0006             MOVS     R6,R0
+   \                     ??EMAC_Init_0: (+1)
+   \   00000024   0x2E00             CMP      R6,#+0
+   \   00000026   0xD001             BEQ.N    ??EMAC_Init_1
+   \   00000028   0x1E76             SUBS     R6,R6,#+1
+   \   0000002A   0xE7FB             B.N      ??EMAC_Init_0
+    314          
+    315          	/* Initialize MAC control registers. */
+    316          	LPC_EMAC->MAC1 = EMAC_MAC1_PASS_ALL;
+   \                     ??EMAC_Init_1: (+1)
+   \   0000002C   0x2002             MOVS     R0,#+2
+   \   0000002E   0xF05F 0x41A0      MOVS     R1,#+1342177280
+   \   00000032   0x6008             STR      R0,[R1, #+0]
+    317          	LPC_EMAC->MAC2 = EMAC_MAC2_CRC_EN | EMAC_MAC2_PAD_EN;
+   \   00000034   0x2030             MOVS     R0,#+48
+   \   00000036   0x.... 0x....      LDR.W    R1,??DataTable22_28  ;; 0x50000004
+   \   0000003A   0x6008             STR      R0,[R1, #+0]
+    318          	LPC_EMAC->MAXF = EMAC_ETH_MAX_FLEN;
+   \   0000003C   0xF44F 0x60C0      MOV      R0,#+1536
+   \   00000040   0x.... 0x....      LDR.W    R1,??DataTable22_29  ;; 0x50000014
+   \   00000044   0x6008             STR      R0,[R1, #+0]
+    319          	/*
+    320          	 * Find the clock that close to desired target clock
+    321          	 */
+    322          	tmp = SystemCoreClock / EMAC_MCFG_MII_MAXCLK;
+   \   00000046   0x.... 0x....      LDR.W    R0,??DataTable22_30
+   \   0000004A   0x6800             LDR      R0,[R0, #+0]
+   \   0000004C   0x.... 0x....      LDR.W    R1,??DataTable22_31  ;; 0x2625a0
+   \   00000050   0xFBB0 0xF0F1      UDIV     R0,R0,R1
+   \   00000054   0x0007             MOVS     R7,R0
+    323          	for (tout = 0; tout < sizeof (EMAC_clkdiv); tout++){
+   \   00000056   0x2000             MOVS     R0,#+0
+   \   00000058   0x0006             MOVS     R6,R0
+   \                     ??EMAC_Init_2: (+1)
+   \   0000005A   0x2E0F             CMP      R6,#+15
+   \   0000005C   0xD206             BCS.N    ??EMAC_Init_3
+    324          		if (EMAC_clkdiv[tout] >= tmp) break;
+   \   0000005E   0x.... 0x....      LDR.W    R0,??DataTable22_32
+   \   00000062   0x5C30             LDRB     R0,[R6, R0]
+   \   00000064   0x42B8             CMP      R0,R7
+   \   00000066   0xDA01             BGE.N    ??EMAC_Init_3
+    325          	}
+   \                     ??EMAC_Init_4: (+1)
+   \   00000068   0x1C76             ADDS     R6,R6,#+1
+   \   0000006A   0xE7F6             B.N      ??EMAC_Init_2
+    326          	tout++;
+   \                     ??EMAC_Init_3: (+1)
+   \   0000006C   0x1C76             ADDS     R6,R6,#+1
+    327          	// Write to MAC configuration register and reset
+    328          	LPC_EMAC->MCFG = EMAC_MCFG_CLK_SEL(tout) | EMAC_MCFG_RES_MII;
+   \   0000006E   0xF016 0x000F      ANDS     R0,R6,#0xF
+   \   00000072   0x0080             LSLS     R0,R0,#+2
+   \   00000074   0xF450 0x4000      ORRS     R0,R0,#0x8000
+   \   00000078   0x.... 0x....      LDR.W    R1,??DataTable22_33  ;; 0x50000020
+   \   0000007C   0x6008             STR      R0,[R1, #+0]
+    329          	// release reset
+    330          	LPC_EMAC->MCFG &= ~(EMAC_MCFG_RES_MII);
+   \   0000007E   0x.... 0x....      LDR.W    R0,??DataTable22_33  ;; 0x50000020
+   \   00000082   0x6800             LDR      R0,[R0, #+0]
+   \   00000084   0xF430 0x4000      BICS     R0,R0,#0x8000
+   \   00000088   0x.... 0x....      LDR.W    R1,??DataTable22_33  ;; 0x50000020
+   \   0000008C   0x6008             STR      R0,[R1, #+0]
+    331          	LPC_EMAC->CLRT = EMAC_CLRT_DEF;
+   \   0000008E   0xF243 0x700F      MOVW     R0,#+14095
+   \   00000092   0x.... 0x....      LDR.W    R1,??DataTable22_34  ;; 0x50000010
+   \   00000096   0x6008             STR      R0,[R1, #+0]
+    332          	LPC_EMAC->IPGR = EMAC_IPGR_P2_DEF;
+   \   00000098   0x2012             MOVS     R0,#+18
+   \   0000009A   0x.... 0x....      LDR.W    R1,??DataTable22_35  ;; 0x5000000c
+   \   0000009E   0x6008             STR      R0,[R1, #+0]
+    333          
+    334          	/* Enable Reduced MII interface. */
+    335          	LPC_EMAC->Command = EMAC_CR_RMII | EMAC_CR_PASS_RUNT_FRM;
+   \   000000A0   0xF44F 0x7010      MOV      R0,#+576
+   \   000000A4   0x.... 0x....      LDR.W    R1,??DataTable22_27  ;; 0x50000100
+   \   000000A8   0x6008             STR      R0,[R1, #+0]
+    336          
+    337          	/* Reset Reduced MII Logic. */
+    338          //	LPC_EMAC->SUPP = EMAC_SUPP_RES_RMII;
+    339          
+    340          	for (tout = 100; tout; tout--);
+   \   000000AA   0x2064             MOVS     R0,#+100
+   \   000000AC   0x0006             MOVS     R6,R0
+   \                     ??EMAC_Init_5: (+1)
+   \   000000AE   0x2E00             CMP      R6,#+0
+   \   000000B0   0xD001             BEQ.N    ??EMAC_Init_6
+   \   000000B2   0x1E76             SUBS     R6,R6,#+1
+   \   000000B4   0xE7FB             B.N      ??EMAC_Init_5
+    341          	LPC_EMAC->SUPP = 0;
+   \                     ??EMAC_Init_6: (+1)
+   \   000000B6   0x2000             MOVS     R0,#+0
+   \   000000B8   0x.... 0x....      LDR.W    R1,??DataTable22_36  ;; 0x50000018
+   \   000000BC   0x6008             STR      R0,[R1, #+0]
+    342          
+    343          	/* Put the DP83848C in reset mode */
+    344          	write_PHY (EMAC_PHY_REG_BMCR, EMAC_PHY_BMCR_RESET);
+   \   000000BE   0xF44F 0x4100      MOV      R1,#+32768
+   \   000000C2   0x2000             MOVS     R0,#+0
+   \   000000C4   0x.... 0x....      BL       write_PHY
+    345          
+    346          	/* Wait for hardware reset to end. */
+    347          	for (tout = EMAC_PHY_RESP_TOUT; tout>=0; tout--) {
+   \   000000C8   0xF45F 0x1080      MOVS     R0,#+1048576
+   \   000000CC   0x0006             MOVS     R6,R0
+   \                     ??EMAC_Init_7: (+1)
+   \   000000CE   0x2E00             CMP      R6,#+0
+   \   000000D0   0xD40C             BMI.N    ??EMAC_Init_8
+    348          		regv = read_PHY (EMAC_PHY_REG_BMCR);
+   \   000000D2   0x2000             MOVS     R0,#+0
+   \   000000D4   0x.... 0x....      BL       read_PHY
+   \   000000D8   0x0005             MOVS     R5,R0
+    349          		if (!(regv & (EMAC_PHY_BMCR_RESET | EMAC_PHY_BMCR_POWERDOWN))) {
+   \   000000DA   0xF415 0x4F08      TST      R5,#0x8800
+   \   000000DE   0xD005             BEQ.N    ??EMAC_Init_8
+    350          			/* Reset complete, device not Power Down. */
+    351          			break;
+    352          		}
+    353          		if (tout == 0){
+   \                     ??EMAC_Init_9: (+1)
+   \   000000E0   0x2E00             CMP      R6,#+0
+   \   000000E2   0xD101             BNE.N    ??EMAC_Init_10
+    354          			// Time out, return ERROR
+    355          			return (ERROR);
+   \   000000E4   0x2000             MOVS     R0,#+0
+   \   000000E6   0xE02D             B.N      ??EMAC_Init_11
+    356          		}
+    357          	}
+   \                     ??EMAC_Init_10: (+1)
+   \   000000E8   0x1E76             SUBS     R6,R6,#+1
+   \   000000EA   0xE7F0             B.N      ??EMAC_Init_7
+    358          
+    359          	// Set PHY mode
+    360          	if (EMAC_SetPHYMode(EMAC_ConfigStruct->Mode) < 0){
+   \                     ??EMAC_Init_8: (+1)
+   \   000000EC   0x6820             LDR      R0,[R4, #+0]
+   \   000000EE   0x.... 0x....      BL       EMAC_SetPHYMode
+   \   000000F2   0x2800             CMP      R0,#+0
+   \   000000F4   0xD501             BPL.N    ??EMAC_Init_12
+    361          		return (ERROR);
+   \   000000F6   0x2000             MOVS     R0,#+0
+   \   000000F8   0xE024             B.N      ??EMAC_Init_11
+    362          	}
+    363          
+    364          	// Set EMAC address
+    365          	setEmacAddr(EMAC_ConfigStruct->pbEMAC_Addr);
+   \                     ??EMAC_Init_12: (+1)
+   \   000000FA   0x6860             LDR      R0,[R4, #+4]
+   \   000000FC   0x.... 0x....      BL       setEmacAddr
+    366          
+    367          	/* Initialize Tx and Rx DMA Descriptors */
+    368          	rx_descr_init ();
+   \   00000100   0x.... 0x....      BL       rx_descr_init
+    369          	tx_descr_init ();
+   \   00000104   0x.... 0x....      BL       tx_descr_init
+    370          
+    371          	// Set Receive Filter register: enable broadcast and multicast
+    372          	LPC_EMAC->RxFilterCtrl = EMAC_RFC_MCAST_EN | EMAC_RFC_BCAST_EN | EMAC_RFC_PERFECT_EN;
+   \   00000108   0x2026             MOVS     R0,#+38
+   \   0000010A   0x.... 0x....      LDR.W    R1,??DataTable22_37  ;; 0x50000200
+   \   0000010E   0x6008             STR      R0,[R1, #+0]
+    373          
+    374          	/* Enable Rx Done and Tx Done interrupt for EMAC */
+    375          	LPC_EMAC->IntEnable = EMAC_INT_RX_DONE | EMAC_INT_TX_DONE;
+   \   00000110   0x2088             MOVS     R0,#+136
+   \   00000112   0x.... 0x....      LDR.W    R1,??DataTable22_38  ;; 0x50000fe4
+   \   00000116   0x6008             STR      R0,[R1, #+0]
+    376          
+    377          	/* Reset all interrupts */
+    378          	LPC_EMAC->IntClear  = 0xFFFF;
+   \   00000118   0xF64F 0x70FF      MOVW     R0,#+65535
+   \   0000011C   0x.... 0x....      LDR.W    R1,??DataTable22_39  ;; 0x50000fe8
+   \   00000120   0x6008             STR      R0,[R1, #+0]
+    379          
+    380          	/* Enable receive and transmit mode of MAC Ethernet core */
+    381          	LPC_EMAC->Command  |= (EMAC_CR_RX_EN | EMAC_CR_TX_EN);
+   \   00000122   0x.... 0x....      LDR.W    R0,??DataTable22_27  ;; 0x50000100
+   \   00000126   0x6800             LDR      R0,[R0, #+0]
+   \   00000128   0xF050 0x0003      ORRS     R0,R0,#0x3
+   \   0000012C   0x.... 0x....      LDR.W    R1,??DataTable22_27  ;; 0x50000100
+   \   00000130   0x6008             STR      R0,[R1, #+0]
+    382          	LPC_EMAC->MAC1     |= EMAC_MAC1_REC_EN;
+   \   00000132   0xF05F 0x40A0      MOVS     R0,#+1342177280
+   \   00000136   0x6800             LDR      R0,[R0, #+0]
+   \   00000138   0xF050 0x0001      ORRS     R0,R0,#0x1
+   \   0000013C   0xF05F 0x41A0      MOVS     R1,#+1342177280
+   \   00000140   0x6008             STR      R0,[R1, #+0]
+    383          
+    384          	return SUCCESS;
+   \   00000142   0x2001             MOVS     R0,#+1
+   \                     ??EMAC_Init_11: (+1)
+   \   00000144   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    385          }
+    386          
+    387          
+    388          /*********************************************************************//**
+    389           * @brief		De-initializes the EMAC peripheral registers to their
+    390          *                  default reset values.
+    391           * @param[in]	None
+    392           * @return 		None
+    393           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    394          void EMAC_DeInit(void)
+    395          {
+   \                     EMAC_DeInit: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    396          	// Disable all interrupt
+    397          	LPC_EMAC->IntEnable = 0x00;
+   \   00000002   0x2000             MOVS     R0,#+0
+   \   00000004   0x.... 0x....      LDR.W    R1,??DataTable22_38  ;; 0x50000fe4
+   \   00000008   0x6008             STR      R0,[R1, #+0]
+    398          	// Clear all pending interrupt
+    399          	LPC_EMAC->IntClear = (0xFF) | (EMAC_INT_SOFT_INT | EMAC_INT_WAKEUP);
+   \   0000000A   0xF243 0x00FF      MOVW     R0,#+12543
+   \   0000000E   0x.... 0x....      LDR.W    R1,??DataTable22_39  ;; 0x50000fe8
+   \   00000012   0x6008             STR      R0,[R1, #+0]
+    400          
+    401          	/* TurnOff clock and power for Ethernet module */
+    402          	CLKPWR_ConfigPPWR (CLKPWR_PCONP_PCENET, DISABLE);
+   \   00000014   0x2100             MOVS     R1,#+0
+   \   00000016   0xF05F 0x4080      MOVS     R0,#+1073741824
+   \   0000001A   0x.... 0x....      BL       CLKPWR_ConfigPPWR
+    403          }
+   \   0000001E   0xBD01             POP      {R0,PC}          ;; return
+    404          
+    405          
+    406          /*********************************************************************//**
+    407           * @brief		Check specified PHY status in EMAC peripheral
+    408           * @param[in]	ulPHYState	Specified PHY Status Type, should be:
+    409           * 							- EMAC_PHY_STAT_LINK: Link Status
+    410           * 							- EMAC_PHY_STAT_SPEED: Speed Status
+    411           * 							- EMAC_PHY_STAT_DUP: Duplex Status
+    412           * @return		Status of specified PHY status (0 or 1).
+    413           * 				(-1) if error.
+    414           *
+    415           * Note:
+    416           * For EMAC_PHY_STAT_LINK, return value:
+    417           * - 0: Link Down
+    418           * - 1: Link Up
+    419           * For EMAC_PHY_STAT_SPEED, return value:
+    420           * - 0: 10Mbps
+    421           * - 1: 100Mbps
+    422           * For EMAC_PHY_STAT_DUP, return value:
+    423           * - 0: Half-Duplex
+    424           * - 1: Full-Duplex
+    425           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    426          int32_t EMAC_CheckPHYStatus(uint32_t ulPHYState)
+    427          {
+   \                     EMAC_CheckPHYStatus: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    428          	int32_t regv, tmp;
+    429          #ifdef MCB_LPC_1768
+    430          	regv = read_PHY (EMAC_PHY_REG_STS);
+   \   00000004   0x2010             MOVS     R0,#+16
+   \   00000006   0x.... 0x....      BL       read_PHY
+   \   0000000A   0x0005             MOVS     R5,R0
+    431          	switch(ulPHYState){
+   \   0000000C   0x2C00             CMP      R4,#+0
+   \   0000000E   0xD003             BEQ.N    ??EMAC_CheckPHYStatus_0
+   \   00000010   0x2C02             CMP      R4,#+2
+   \   00000012   0xD00E             BEQ.N    ??EMAC_CheckPHYStatus_1
+   \   00000014   0xD304             BCC.N    ??EMAC_CheckPHYStatus_2
+   \   00000016   0xE013             B.N      ??EMAC_CheckPHYStatus_3
+    432          	case EMAC_PHY_STAT_LINK:
+    433          		tmp = (regv & EMAC_PHY_SR_LINK) ? 1 : 0;
+   \                     ??EMAC_CheckPHYStatus_0: (+1)
+   \   00000018   0xF015 0x0001      ANDS     R0,R5,#0x1
+   \   0000001C   0x0006             MOVS     R6,R0
+    434          		break;
+   \   0000001E   0xE012             B.N      ??EMAC_CheckPHYStatus_4
+    435          	case EMAC_PHY_STAT_SPEED:
+    436          		tmp = (regv & EMAC_PHY_SR_SPEED) ? 0 : 1;
+   \                     ??EMAC_CheckPHYStatus_2: (+1)
+   \   00000020   0xF3C5 0x0040      UBFX     R0,R5,#+1,#+1
+   \   00000024   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \   00000028   0xF090 0x0001      EORS     R0,R0,#0x1
+   \   0000002C   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   0000002E   0x0006             MOVS     R6,R0
+    437          		break;
+   \   00000030   0xE009             B.N      ??EMAC_CheckPHYStatus_4
+    438          	case EMAC_PHY_STAT_DUP:
+    439          		tmp = (regv & EMAC_PHY_SR_FULL_DUP) ? 1 : 0;
+   \                     ??EMAC_CheckPHYStatus_1: (+1)
+   \   00000032   0xF415 0x4FA0      TST      R5,#0x5000
+   \   00000036   0xD001             BEQ.N    ??EMAC_CheckPHYStatus_5
+   \   00000038   0x2601             MOVS     R6,#+1
+   \   0000003A   0xE000             B.N      ??EMAC_CheckPHYStatus_6
+   \                     ??EMAC_CheckPHYStatus_5: (+1)
+   \   0000003C   0x2600             MOVS     R6,#+0
+    440          		break;
+   \                     ??EMAC_CheckPHYStatus_6: (+1)
+   \   0000003E   0xE002             B.N      ??EMAC_CheckPHYStatus_4
+    441          #elif defined(IAR_LPC_1768)
+    442          	/* Use IAR_LPC_1768 board:
+    443          	 * FSZ8721BL doesn't have Status Register
+    444          	 * so we read Basic Mode Status Register (0x01h) instead
+    445          	 */
+    446          	regv = read_PHY (EMAC_PHY_REG_BMSR);
+    447          	switch(ulPHYState){
+    448          	case EMAC_PHY_STAT_LINK:
+    449          		tmp = (regv & EMAC_PHY_BMSR_LINK_STATUS) ? 1 : 0;
+    450          		break;
+    451          	case EMAC_PHY_STAT_SPEED:
+    452          		tmp = (regv & EMAC_PHY_SR_100_SPEED) ? 1 : 0;
+    453          		break;
+    454          	case EMAC_PHY_STAT_DUP:
+    455          		tmp = (regv & EMAC_PHY_SR_FULL_DUP) ? 1 : 0;
+    456          		break;
+    457          #endif
+    458          	default:
+    459          		tmp = -1;
+   \                     ??EMAC_CheckPHYStatus_3: (+1)
+   \   00000040   0xF05F 0x30FF      MOVS     R0,#-1
+   \   00000044   0x0006             MOVS     R6,R0
+    460          		break;
+    461          	}
+    462          	return (tmp);
+   \                     ??EMAC_CheckPHYStatus_4: (+1)
+   \   00000046   0x0030             MOVS     R0,R6
+   \   00000048   0xBD70             POP      {R4-R6,PC}       ;; return
+    463          }
+    464          
+    465          
+    466          /*********************************************************************//**
+    467           * @brief		Set specified PHY mode in EMAC peripheral
+    468           * @param[in]	ulPHYMode	Specified PHY mode, should be:
+    469           * 							- EMAC_MODE_AUTO
+    470           * 							- EMAC_MODE_10M_FULL
+    471           * 							- EMAC_MODE_10M_HALF
+    472           * 							- EMAC_MODE_100M_FULL
+    473           * 							- EMAC_MODE_100M_HALF
+    474           * @return		Return (0) if no error, otherwise return (-1)
+    475           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    476          int32_t EMAC_SetPHYMode(uint32_t ulPHYMode)
+    477          {
+   \                     EMAC_SetPHYMode: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    478          	int32_t id1, id2, tout;
+    479          
+    480          	/* Check if this is a DP83848C PHY. */
+    481          	id1 = read_PHY (EMAC_PHY_REG_IDR1);
+   \   00000004   0x2002             MOVS     R0,#+2
+   \   00000006   0x.... 0x....      BL       read_PHY
+   \   0000000A   0x0005             MOVS     R5,R0
+    482          	id2 = read_PHY (EMAC_PHY_REG_IDR2);
+   \   0000000C   0x2003             MOVS     R0,#+3
+   \   0000000E   0x.... 0x....      BL       read_PHY
+   \   00000012   0x0006             MOVS     R6,R0
+    483          
+    484          #ifdef MCB_LPC_1768
+    485          	if (((id1 << 16) | (id2 & 0xFFF0)) == EMAC_DP83848C_ID) {
+   \   00000014   0xF64F 0x70F0      MOVW     R0,#+65520
+   \   00000018   0x4030             ANDS     R0,R0,R6
+   \   0000001A   0xEA50 0x4005      ORRS     R0,R0,R5, LSL #+16
+   \   0000001E   0x.... 0x....      LDR.W    R1,??DataTable22_40  ;; 0x20005c90
+   \   00000022   0x4288             CMP      R0,R1
+   \   00000024   0xD134             BNE.N    ??EMAC_SetPHYMode_0
+    486          		switch(ulPHYMode){
+   \   00000026   0x2C00             CMP      R4,#+0
+   \   00000028   0xD006             BEQ.N    ??EMAC_SetPHYMode_1
+   \   0000002A   0x2C02             CMP      R4,#+2
+   \   0000002C   0xD017             BEQ.N    ??EMAC_SetPHYMode_2
+   \   0000002E   0xD310             BCC.N    ??EMAC_SetPHYMode_3
+   \   00000030   0x2C04             CMP      R4,#+4
+   \   00000032   0xD01F             BEQ.N    ??EMAC_SetPHYMode_4
+   \   00000034   0xD318             BCC.N    ??EMAC_SetPHYMode_5
+   \   00000036   0xE023             B.N      ??EMAC_SetPHYMode_6
+    487          		case EMAC_MODE_AUTO:
+    488          			write_PHY (EMAC_PHY_REG_BMCR, EMAC_PHY_AUTO_NEG);
+   \                     ??EMAC_SetPHYMode_1: (+1)
+   \   00000038   0xF44F 0x5140      MOV      R1,#+12288
+   \   0000003C   0x2000             MOVS     R0,#+0
+   \   0000003E   0x.... 0x....      BL       write_PHY
+    489          #elif defined(IAR_LPC_1768) /* Use IAR LPC1768 KickStart board */
+    490          	if (((id1 << 16) | id2) == EMAC_KSZ8721BL_ID) {
+    491          		/* Configure the PHY device */
+    492          		switch(ulPHYMode){
+    493          		case EMAC_MODE_AUTO:
+    494          			/* Use auto-negotiation about the link speed. */
+    495          			write_PHY (EMAC_PHY_REG_BMCR, EMAC_PHY_AUTO_NEG);
+    496          //			write_PHY (EMAC_PHY_REG_BMCR, EMAC_PHY_BMCR_AN);
+    497          #endif
+    498          			/* Wait to complete Auto_Negotiation */
+    499          			for (tout = EMAC_PHY_RESP_TOUT; tout>=0; tout--) {
+   \   00000042   0xF45F 0x1080      MOVS     R0,#+1048576
+   \   00000046   0x0007             MOVS     R7,R0
+   \                     ??EMAC_SetPHYMode_7: (+1)
+   \   00000048   0x2F00             CMP      R7,#+0
+   \   0000004A   0xD401             BMI.N    ??EMAC_SetPHYMode_8
+   \   0000004C   0x1E7F             SUBS     R7,R7,#+1
+   \   0000004E   0xE7FB             B.N      ??EMAC_SetPHYMode_7
+    500          				
+    501          			}
+    502          			break;
+   \                     ??EMAC_SetPHYMode_8: (+1)
+   \   00000050   0xE019             B.N      ??EMAC_SetPHYMode_9
+    503          		case EMAC_MODE_10M_FULL:
+    504          			/* Connect at 10MBit full-duplex */
+    505          			write_PHY (EMAC_PHY_REG_BMCR, EMAC_PHY_FULLD_10M);
+   \                     ??EMAC_SetPHYMode_3: (+1)
+   \   00000052   0xF44F 0x7180      MOV      R1,#+256
+   \   00000056   0x2000             MOVS     R0,#+0
+   \   00000058   0x.... 0x....      BL       write_PHY
+    506          			break;
+   \   0000005C   0xE013             B.N      ??EMAC_SetPHYMode_9
+    507          		case EMAC_MODE_10M_HALF:
+    508          			/* Connect at 10MBit half-duplex */
+    509          			write_PHY (EMAC_PHY_REG_BMCR, EMAC_PHY_HALFD_10M);
+   \                     ??EMAC_SetPHYMode_2: (+1)
+   \   0000005E   0x2100             MOVS     R1,#+0
+   \   00000060   0x2000             MOVS     R0,#+0
+   \   00000062   0x.... 0x....      BL       write_PHY
+    510          			break;
+   \   00000066   0xE00E             B.N      ??EMAC_SetPHYMode_9
+    511          		case EMAC_MODE_100M_FULL:
+    512          			/* Connect at 100MBit full-duplex */
+    513          			write_PHY (EMAC_PHY_REG_BMCR, EMAC_PHY_FULLD_100M);
+   \                     ??EMAC_SetPHYMode_5: (+1)
+   \   00000068   0xF44F 0x5104      MOV      R1,#+8448
+   \   0000006C   0x2000             MOVS     R0,#+0
+   \   0000006E   0x.... 0x....      BL       write_PHY
+    514          			break;
+   \   00000072   0xE008             B.N      ??EMAC_SetPHYMode_9
+    515          		case EMAC_MODE_100M_HALF:
+    516          			/* Connect at 100MBit half-duplex */
+    517          			write_PHY (EMAC_PHY_REG_BMCR, EMAC_PHY_HALFD_100M);
+   \                     ??EMAC_SetPHYMode_4: (+1)
+   \   00000074   0xF44F 0x5100      MOV      R1,#+8192
+   \   00000078   0x2000             MOVS     R0,#+0
+   \   0000007A   0x.... 0x....      BL       write_PHY
+    518          			break;
+   \   0000007E   0xE002             B.N      ??EMAC_SetPHYMode_9
+    519          		default:
+    520          			// un-supported
+    521          			return (-1);
+   \                     ??EMAC_SetPHYMode_6: (+1)
+   \   00000080   0xF05F 0x30FF      MOVS     R0,#-1
+   \   00000084   0xE00B             B.N      ??EMAC_SetPHYMode_10
+    522          		}
+    523          	}
+    524          	// It's not correct module ID
+    525          	else {
+    526          		return (-1);
+    527          	}
+    528          
+    529          	// Update EMAC configuration with current PHY status
+    530          	if (EMAC_UpdatePHYStatus() < 0){
+   \                     ??EMAC_SetPHYMode_9: (+1)
+   \   00000086   0x.... 0x....      BL       EMAC_UpdatePHYStatus
+   \   0000008A   0x2800             CMP      R0,#+0
+   \   0000008C   0xD506             BPL.N    ??EMAC_SetPHYMode_11
+   \   0000008E   0xE002             B.N      ??EMAC_SetPHYMode_12
+   \                     ??EMAC_SetPHYMode_0: (+1)
+   \   00000090   0xF05F 0x30FF      MOVS     R0,#-1
+   \   00000094   0xE003             B.N      ??EMAC_SetPHYMode_10
+    531          		return (-1);
+   \                     ??EMAC_SetPHYMode_12: (+1)
+   \   00000096   0xF05F 0x30FF      MOVS     R0,#-1
+   \   0000009A   0xE000             B.N      ??EMAC_SetPHYMode_10
+    532          	}
+    533          
+    534          	// Complete
+    535          	return (0);
+   \                     ??EMAC_SetPHYMode_11: (+1)
+   \   0000009C   0x2000             MOVS     R0,#+0
+   \                     ??EMAC_SetPHYMode_10: (+1)
+   \   0000009E   0xBDF2             POP      {R1,R4-R7,PC}    ;; return
+    536          }
+    537          
+    538          
+    539          /*********************************************************************//**
+    540           * @brief		Auto-Configures value for the EMAC configuration register to
+    541           * 				match with current PHY mode
+    542           * @param[in]	None
+    543           * @return		Return (0) if no error, otherwise return (-1)
+    544           *
+    545           * Note: The EMAC configuration will be auto-configured:
+    546           * 		- Speed mode.
+    547           * 		- Half/Full duplex mode
+    548           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    549          int32_t EMAC_UpdatePHYStatus(void)
+    550          {
+   \                     EMAC_UpdatePHYStatus: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+    551          	int32_t regv, tout;
+    552          
+    553          	/* Check the link status. */
+    554          #ifdef MCB_LPC_1768
+    555          	for (tout = EMAC_PHY_RESP_TOUT; tout>=0; tout--) {
+   \   00000002   0xF45F 0x1080      MOVS     R0,#+1048576
+   \   00000006   0x0005             MOVS     R5,R0
+   \                     ??EMAC_UpdatePHYStatus_0: (+1)
+   \   00000008   0x2D00             CMP      R5,#+0
+   \   0000000A   0xD40C             BMI.N    ??EMAC_UpdatePHYStatus_1
+    556          		regv = read_PHY (EMAC_PHY_REG_STS);
+   \   0000000C   0x2010             MOVS     R0,#+16
+   \   0000000E   0x.... 0x....      BL       read_PHY
+   \   00000012   0x0004             MOVS     R4,R0
+    557          		if (regv & EMAC_PHY_SR_LINK) {
+   \   00000014   0x07E0             LSLS     R0,R4,#+31
+   \   00000016   0xD406             BMI.N    ??EMAC_UpdatePHYStatus_1
+    558          			/* Link is on. */
+    559          			break;
+    560          		}
+    561          		if (tout == 0){
+   \                     ??EMAC_UpdatePHYStatus_2: (+1)
+   \   00000018   0x2D00             CMP      R5,#+0
+   \   0000001A   0xD102             BNE.N    ??EMAC_UpdatePHYStatus_3
+    562          			// time out
+    563          			return (-1);
+   \   0000001C   0xF05F 0x30FF      MOVS     R0,#-1
+   \   00000020   0xE021             B.N      ??EMAC_UpdatePHYStatus_4
+    564          		}
+    565          	}
+   \                     ??EMAC_UpdatePHYStatus_3: (+1)
+   \   00000022   0x1E6D             SUBS     R5,R5,#+1
+   \   00000024   0xE7F0             B.N      ??EMAC_UpdatePHYStatus_0
+    566          	/* Configure Full/Half Duplex mode. */
+    567          	if (regv & EMAC_PHY_SR_DUP) {
+   \                     ??EMAC_UpdatePHYStatus_1: (+1)
+   \   00000026   0x0760             LSLS     R0,R4,#+29
+   \   00000028   0xD50F             BPL.N    ??EMAC_UpdatePHYStatus_5
+    568          	/* Full duplex is enabled. */
+    569          			LPC_EMAC->MAC2    |= EMAC_MAC2_FULL_DUP;
+   \   0000002A   0x....             LDR.N    R0,??DataTable22_28  ;; 0x50000004
+   \   0000002C   0x6800             LDR      R0,[R0, #+0]
+   \   0000002E   0xF050 0x0001      ORRS     R0,R0,#0x1
+   \   00000032   0x....             LDR.N    R1,??DataTable22_28  ;; 0x50000004
+   \   00000034   0x6008             STR      R0,[R1, #+0]
+    570          			LPC_EMAC->Command |= EMAC_CR_FULL_DUP;
+   \   00000036   0x....             LDR.N    R0,??DataTable22_27  ;; 0x50000100
+   \   00000038   0x6800             LDR      R0,[R0, #+0]
+   \   0000003A   0xF450 0x6080      ORRS     R0,R0,#0x400
+   \   0000003E   0x....             LDR.N    R1,??DataTable22_27  ;; 0x50000100
+   \   00000040   0x6008             STR      R0,[R1, #+0]
+    571          			LPC_EMAC->IPGT     = EMAC_IPGT_FULL_DUP;
+   \   00000042   0x2015             MOVS     R0,#+21
+   \   00000044   0x....             LDR.N    R1,??DataTable22_41  ;; 0x50000008
+   \   00000046   0x6008             STR      R0,[R1, #+0]
+   \   00000048   0xE002             B.N      ??EMAC_UpdatePHYStatus_6
+    572          	} else {
+    573          		/* Half duplex mode. */
+    574          		LPC_EMAC->IPGT = EMAC_IPGT_HALF_DUP;
+   \                     ??EMAC_UpdatePHYStatus_5: (+1)
+   \   0000004A   0x2012             MOVS     R0,#+18
+   \   0000004C   0x....             LDR.N    R1,??DataTable22_41  ;; 0x50000008
+   \   0000004E   0x6008             STR      R0,[R1, #+0]
+    575          	}
+    576          	if (regv & EMAC_PHY_SR_SPEED) {
+   \                     ??EMAC_UpdatePHYStatus_6: (+1)
+   \   00000050   0x07A0             LSLS     R0,R4,#+30
+   \   00000052   0xD503             BPL.N    ??EMAC_UpdatePHYStatus_7
+    577          	/* 10MBit mode. */
+    578          		LPC_EMAC->SUPP = 0;
+   \   00000054   0x2000             MOVS     R0,#+0
+   \   00000056   0x....             LDR.N    R1,??DataTable22_36  ;; 0x50000018
+   \   00000058   0x6008             STR      R0,[R1, #+0]
+   \   0000005A   0xE003             B.N      ??EMAC_UpdatePHYStatus_8
+    579          	} else {
+    580          		/* 100MBit mode. */
+    581          		LPC_EMAC->SUPP = EMAC_SUPP_SPEED;
+   \                     ??EMAC_UpdatePHYStatus_7: (+1)
+   \   0000005C   0xF44F 0x7080      MOV      R0,#+256
+   \   00000060   0x....             LDR.N    R1,??DataTable22_36  ;; 0x50000018
+   \   00000062   0x6008             STR      R0,[R1, #+0]
+    582          	}
+    583          #elif defined(IAR_LPC_1768)
+    584          	for (tout = EMAC_PHY_RESP_TOUT; tout>=0; tout--) {
+    585          		regv = read_PHY (EMAC_PHY_REG_BMSR);
+    586          		if (regv & EMAC_PHY_BMSR_LINK_STATUS) {
+    587          			/* Link is on. */
+    588          			break;
+    589          		}
+    590          		if (tout == 0){
+    591          			// time out
+    592          			return (-1);
+    593          		}
+    594          	}
+    595          
+    596          	/* Configure Full/Half Duplex mode. */
+    597          	if (regv & EMAC_PHY_SR_FULL_DUP) {
+    598          		/* Full duplex is enabled. */
+    599          		LPC_EMAC->MAC2    |= EMAC_MAC2_FULL_DUP;
+    600          		LPC_EMAC->Command |= EMAC_CR_FULL_DUP;
+    601          		LPC_EMAC->IPGT     = EMAC_IPGT_FULL_DUP;
+    602          	} else {
+    603          		/* Half duplex mode. */
+    604          		LPC_EMAC->IPGT = EMAC_IPGT_HALF_DUP;
+    605          	}
+    606          
+    607          	/* Configure 100MBit/10MBit mode. */
+    608          	if (!(regv & EMAC_PHY_SR_100_SPEED)) {
+    609          		/* 10MBit mode. */
+    610          		LPC_EMAC->SUPP = 0;
+    611          	} else {
+    612          		/* 100MBit mode. */
+    613          		LPC_EMAC->SUPP = EMAC_SUPP_SPEED;
+    614          	}
+    615          #endif
+    616          	// Complete
+    617          	return (0);
+   \                     ??EMAC_UpdatePHYStatus_8: (+1)
+   \   00000064   0x2000             MOVS     R0,#+0
+   \                     ??EMAC_UpdatePHYStatus_4: (+1)
+   \   00000066   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    618          }
+    619          
+    620          
+    621          /*********************************************************************//**
+    622           * @brief		Enable/Disable hash filter functionality for specified destination
+    623           * 				MAC address in EMAC module
+    624           * @param[in]	dstMAC_addr		Pointer to the first MAC destination address, should
+    625           * 								be 6-bytes length, in order LSB to the MSB
+    626           * @param[in]	NewState		New State of this command, should be:
+    627           *									- ENABLE.
+    628           *									- DISABLE.
+    629           * @return		None
+    630           *
+    631           * Note:
+    632           * The standard Ethernet cyclic redundancy check (CRC) function is calculated from
+    633           * the 6 byte destination address in the Ethernet frame (this CRC is calculated
+    634           * anyway as part of calculating the CRC of the whole frame), then bits [28:23] out of
+    635           * the 32 bits CRC result are taken to form the hash. The 6 bit hash is used to access
+    636           * the hash table: it is used as an index in the 64 bit HashFilter register that has been
+    637           * programmed with accept values. If the selected accept value is 1, the frame is
+    638           * accepted.
+    639           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    640          void EMAC_SetHashFilter(uint8_t dstMAC_addr[], FunctionalState NewState)
+    641          {
+   \                     EMAC_SetHashFilter: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+    642          	uint32_t *pReg;
+    643          	uint32_t tmp;
+    644          	int32_t crc;
+    645          
+    646          	// Calculate the CRC from the destination MAC address
+    647          	crc = emac_CRCCalc(dstMAC_addr, 6);
+   \   00000008   0x2106             MOVS     R1,#+6
+   \   0000000A   0x0020             MOVS     R0,R4
+   \   0000000C   0x.... 0x....      BL       emac_CRCCalc
+   \   00000010   0x0006             MOVS     R6,R0
+    648          	// Extract the value from CRC to get index value for hash filter table
+    649          	crc = (crc >> 23) & 0x3F;
+   \   00000012   0xF3C6 0x56C5      UBFX     R6,R6,#+23,#+6
+    650          
+    651          	pReg = (crc > 31) ? ((uint32_t *)&LPC_EMAC->HashFilterH) \
+    652          								: ((uint32_t *)&LPC_EMAC->HashFilterL);
+   \   00000016   0x2E20             CMP      R6,#+32
+   \   00000018   0xDB01             BLT.N    ??EMAC_SetHashFilter_0
+   \   0000001A   0x....             LDR.N    R7,??DataTable22_42  ;; 0x50000214
+   \   0000001C   0xE000             B.N      ??EMAC_SetHashFilter_1
+   \                     ??EMAC_SetHashFilter_0: (+1)
+   \   0000001E   0x....             LDR.N    R7,??DataTable22_43  ;; 0x50000210
+    653          	tmp = (crc > 31) ? (crc - 32) : crc;
+   \                     ??EMAC_SetHashFilter_1: (+1)
+   \   00000020   0x2E20             CMP      R6,#+32
+   \   00000022   0xDB02             BLT.N    ??EMAC_SetHashFilter_2
+   \   00000024   0xF1B6 0x0820      SUBS     R8,R6,#+32
+   \   00000028   0xE000             B.N      ??EMAC_SetHashFilter_3
+   \                     ??EMAC_SetHashFilter_2: (+1)
+   \   0000002A   0x46B0             MOV      R8,R6
+    654          	if (NewState == ENABLE) {
+   \                     ??EMAC_SetHashFilter_3: (+1)
+   \   0000002C   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000002E   0x2D01             CMP      R5,#+1
+   \   00000030   0xD106             BNE.N    ??EMAC_SetHashFilter_4
+    655          		(*pReg) |= (1UL << tmp);
+   \   00000032   0x6838             LDR      R0,[R7, #+0]
+   \   00000034   0x2101             MOVS     R1,#+1
+   \   00000036   0xFA11 0xF108      LSLS     R1,R1,R8
+   \   0000003A   0x4308             ORRS     R0,R1,R0
+   \   0000003C   0x6038             STR      R0,[R7, #+0]
+   \   0000003E   0xE005             B.N      ??EMAC_SetHashFilter_5
+    656          	} else {
+    657          		(*pReg) &= ~(1UL << tmp);
+   \                     ??EMAC_SetHashFilter_4: (+1)
+   \   00000040   0x6838             LDR      R0,[R7, #+0]
+   \   00000042   0x2101             MOVS     R1,#+1
+   \   00000044   0xFA11 0xF108      LSLS     R1,R1,R8
+   \   00000048   0x4388             BICS     R0,R0,R1
+   \   0000004A   0x6038             STR      R0,[R7, #+0]
+    658          	}
+    659          	// Enable Rx Filter
+    660          	LPC_EMAC->Command &= ~EMAC_CR_PASS_RX_FILT;
+   \                     ??EMAC_SetHashFilter_5: (+1)
+   \   0000004C   0x....             LDR.N    R0,??DataTable22_27  ;; 0x50000100
+   \   0000004E   0x6800             LDR      R0,[R0, #+0]
+   \   00000050   0xF030 0x0080      BICS     R0,R0,#0x80
+   \   00000054   0x....             LDR.N    R1,??DataTable22_27  ;; 0x50000100
+   \   00000056   0x6008             STR      R0,[R1, #+0]
+    661          }
+   \   00000058   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    662          
+    663          /*********************************************************************//**
+    664           * @brief		Enable/Disable Filter mode for each specified type EMAC peripheral
+    665           * @param[in]	ulFilterMode	Filter mode, should be:
+    666           * 								- EMAC_RFC_UCAST_EN: all frames of unicast types
+    667           * 								will be accepted
+    668           * 								- EMAC_RFC_BCAST_EN: broadcast frame will be
+    669           * 								accepted
+    670           * 								- EMAC_RFC_MCAST_EN: all frames of multicast
+    671           * 								types will be accepted
+    672           * 								- EMAC_RFC_UCAST_HASH_EN: The imperfect hash
+    673           * 								filter will be applied to unicast addresses
+    674           * 								- EMAC_RFC_MCAST_HASH_EN: The imperfect hash
+    675           * 								filter will be applied to multicast addresses
+    676           * 								- EMAC_RFC_PERFECT_EN: the destination address
+    677           * 								will be compared with the 6 byte station address
+    678           * 								programmed in the station address by the filter
+    679           * 								- EMAC_RFC_MAGP_WOL_EN: the result of the magic
+    680           * 								packet filter will generate a WoL interrupt when
+    681           * 								there is a match
+    682           * 								- EMAC_RFC_PFILT_WOL_EN: the result of the perfect address
+    683           * 								matching filter and the imperfect hash filter will
+    684           * 								generate a WoL interrupt when there is a match
+    685           * @param[in]	NewState	New State of this command, should be:
+    686           * 								- ENABLE
+    687           * 								- DISABLE
+    688           * @return		None
+    689           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    690          void EMAC_SetFilterMode(uint32_t ulFilterMode, FunctionalState NewState)
+    691          {
+    692          	if (NewState == ENABLE){
+   \                     EMAC_SetFilterMode: (+1)
+   \   00000000   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000002   0x2901             CMP      R1,#+1
+   \   00000004   0xD105             BNE.N    ??EMAC_SetFilterMode_0
+    693          		LPC_EMAC->RxFilterCtrl |= ulFilterMode;
+   \   00000006   0x....             LDR.N    R2,??DataTable22_37  ;; 0x50000200
+   \   00000008   0x6812             LDR      R2,[R2, #+0]
+   \   0000000A   0x4302             ORRS     R2,R0,R2
+   \   0000000C   0x....             LDR.N    R3,??DataTable22_37  ;; 0x50000200
+   \   0000000E   0x601A             STR      R2,[R3, #+0]
+   \   00000010   0xE004             B.N      ??EMAC_SetFilterMode_1
+    694          	} else {
+    695          		LPC_EMAC->RxFilterCtrl &= ~ulFilterMode;
+   \                     ??EMAC_SetFilterMode_0: (+1)
+   \   00000012   0x....             LDR.N    R2,??DataTable22_37  ;; 0x50000200
+   \   00000014   0x6812             LDR      R2,[R2, #+0]
+   \   00000016   0x4382             BICS     R2,R2,R0
+   \   00000018   0x....             LDR.N    R3,??DataTable22_37  ;; 0x50000200
+   \   0000001A   0x601A             STR      R2,[R3, #+0]
+    696          	}
+    697          }
+   \                     ??EMAC_SetFilterMode_1: (+1)
+   \   0000001C   0x4770             BX       LR               ;; return
+    698          
+    699          /*********************************************************************//**
+    700           * @brief		Get status of Wake On LAN Filter for each specified
+    701           * 				type in EMAC peripheral, clear this status if it is set
+    702           * @param[in]	ulWoLMode	WoL Filter mode, should be:
+    703           * 								- EMAC_WOL_UCAST: unicast frames caused WoL
+    704           * 								- EMAC_WOL_UCAST: broadcast frame caused WoL
+    705           * 								- EMAC_WOL_MCAST: multicast frame caused WoL
+    706           * 								- EMAC_WOL_UCAST_HASH: unicast frame that passes the
+    707           * 								imperfect hash filter caused WoL
+    708           * 								- EMAC_WOL_MCAST_HASH: multicast frame that passes the
+    709           * 								imperfect hash filter caused WoL
+    710           * 								- EMAC_WOL_PERFECT:perfect address matching filter
+    711           * 								caused WoL
+    712           * 								- EMAC_WOL_RX_FILTER: the receive filter caused WoL
+    713           * 								- EMAC_WOL_MAG_PACKET: the magic packet filter caused WoL
+    714           * @return		SET/RESET
+    715           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    716          FlagStatus EMAC_GetWoLStatus(uint32_t ulWoLMode)
+    717          {
+   \                     EMAC_GetWoLStatus: (+1)
+   \   00000000   0x0001             MOVS     R1,R0
+    718          	if (LPC_EMAC->RxFilterWoLStatus & ulWoLMode) {
+   \   00000002   0x....             LDR.N    R0,??DataTable22_44  ;; 0x50000204
+   \   00000004   0x6800             LDR      R0,[R0, #+0]
+   \   00000006   0x4208             TST      R0,R1
+   \   00000008   0xD003             BEQ.N    ??EMAC_GetWoLStatus_0
+    719          		LPC_EMAC->RxFilterWoLClear = ulWoLMode;
+   \   0000000A   0x....             LDR.N    R0,??DataTable22_45  ;; 0x50000208
+   \   0000000C   0x6001             STR      R1,[R0, #+0]
+    720          		return SET;
+   \   0000000E   0x2001             MOVS     R0,#+1
+   \   00000010   0xE000             B.N      ??EMAC_GetWoLStatus_1
+    721          	} else {
+    722          		return RESET;
+   \                     ??EMAC_GetWoLStatus_0: (+1)
+   \   00000012   0x2000             MOVS     R0,#+0
+   \                     ??EMAC_GetWoLStatus_1: (+1)
+   \   00000014   0x4770             BX       LR               ;; return
+    723          	}
+    724          }
+    725          
+    726          
+    727          /*********************************************************************//**
+    728           * @brief		Write data to Tx packet data buffer at current index due to
+    729           * 				TxProduceIndex
+    730           * @param[in]	pDataStruct		Pointer to a EMAC_PACKETBUF_Type structure
+    731           * 							data that contain specified information about
+    732           * 							Packet data buffer.
+    733           * @return		None
+    734           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    735          void EMAC_WritePacketBuffer(EMAC_PACKETBUF_Type *pDataStruct)
+    736          {
+   \                     EMAC_WritePacketBuffer: (+1)
+   \   00000000   0xB470             PUSH     {R4-R6}
+    737          	uint32_t idx,len;
+    738          	uint32_t *sp,*dp;
+    739          
+    740          	idx = LPC_EMAC->TxProduceIndex;
+   \   00000002   0x....             LDR.N    R5,??DataTable22_14  ;; 0x50000128
+   \   00000004   0x682D             LDR      R5,[R5, #+0]
+   \   00000006   0x0029             MOVS     R1,R5
+    741          	sp  = (uint32_t *)pDataStruct->pbDataBuf;
+   \   00000008   0x6845             LDR      R5,[R0, #+4]
+   \   0000000A   0x002A             MOVS     R2,R5
+    742          	dp  = (uint32_t *)Tx_Desc[idx].Packet;
+   \   0000000C   0x....             LDR.N    R5,??DataTable22_9
+   \   0000000E   0xF855 0x5031      LDR      R5,[R5, R1, LSL #+3]
+   \   00000012   0x002B             MOVS     R3,R5
+    743          	/* Copy frame data to EMAC packet buffers. */
+    744          	for (len = (pDataStruct->ulDataLen + 3) >> 2; len; len--) {
+   \   00000014   0x6805             LDR      R5,[R0, #+0]
+   \   00000016   0x1CED             ADDS     R5,R5,#+3
+   \   00000018   0x08AD             LSRS     R5,R5,#+2
+   \   0000001A   0x002C             MOVS     R4,R5
+   \                     ??EMAC_WritePacketBuffer_0: (+1)
+   \   0000001C   0x2C00             CMP      R4,#+0
+   \   0000001E   0xD005             BEQ.N    ??EMAC_WritePacketBuffer_1
+    745          		*dp++ = *sp++;
+   \   00000020   0x6815             LDR      R5,[R2, #+0]
+   \   00000022   0x601D             STR      R5,[R3, #+0]
+   \   00000024   0x1D12             ADDS     R2,R2,#+4
+   \   00000026   0x1D1B             ADDS     R3,R3,#+4
+    746          	}
+   \   00000028   0x1E64             SUBS     R4,R4,#+1
+   \   0000002A   0xE7F7             B.N      ??EMAC_WritePacketBuffer_0
+    747          	Tx_Desc[idx].Ctrl = (pDataStruct->ulDataLen - 1) | (EMAC_TCTRL_INT | EMAC_TCTRL_LAST);
+   \                     ??EMAC_WritePacketBuffer_1: (+1)
+   \   0000002C   0x6805             LDR      R5,[R0, #+0]
+   \   0000002E   0x1E6D             SUBS     R5,R5,#+1
+   \   00000030   0xF055 0x4540      ORRS     R5,R5,#0xC0000000
+   \   00000034   0x....             LDR.N    R6,??DataTable22_9
+   \   00000036   0xEB16 0x06C1      ADDS     R6,R6,R1, LSL #+3
+   \   0000003A   0x6075             STR      R5,[R6, #+4]
+    748          }
+   \   0000003C   0xBC70             POP      {R4-R6}
+   \   0000003E   0x4770             BX       LR               ;; return
+    749          
+    750          /*********************************************************************//**
+    751           * @brief		Read data from Rx packet data buffer at current index due
+    752           * 				to RxConsumeIndex
+    753           * @param[in]	pDataStruct		Pointer to a EMAC_PACKETBUF_Type structure
+    754           * 							data that contain specified information about
+    755           * 							Packet data buffer.
+    756           * @return		None
+    757           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    758          void EMAC_ReadPacketBuffer(EMAC_PACKETBUF_Type *pDataStruct)
+    759          {
+   \                     EMAC_ReadPacketBuffer: (+1)
+   \   00000000   0xB430             PUSH     {R4,R5}
+    760          	uint32_t idx, len;
+    761          	uint32_t *dp, *sp;
+    762          
+    763          	idx = LPC_EMAC->RxConsumeIndex;
+   \   00000002   0x....             LDR.N    R5,??DataTable22_7  ;; 0x50000118
+   \   00000004   0x682D             LDR      R5,[R5, #+0]
+   \   00000006   0x0029             MOVS     R1,R5
+    764          	dp = (uint32_t *)pDataStruct->pbDataBuf;
+   \   00000008   0x6845             LDR      R5,[R0, #+4]
+   \   0000000A   0x002B             MOVS     R3,R5
+    765          	sp = (uint32_t *)Rx_Desc[idx].Packet;
+   \   0000000C   0x....             LDR.N    R5,??DataTable22_1
+   \   0000000E   0xF855 0x5031      LDR      R5,[R5, R1, LSL #+3]
+   \   00000012   0x002C             MOVS     R4,R5
+    766          
+    767          	if (pDataStruct->pbDataBuf != NULL) {
+   \   00000014   0x6845             LDR      R5,[R0, #+4]
+   \   00000016   0x2D00             CMP      R5,#+0
+   \   00000018   0xD00B             BEQ.N    ??EMAC_ReadPacketBuffer_0
+    768          		for (len = (pDataStruct->ulDataLen + 3) >> 2; len; len--) {
+   \   0000001A   0x6805             LDR      R5,[R0, #+0]
+   \   0000001C   0x1CED             ADDS     R5,R5,#+3
+   \   0000001E   0x08AD             LSRS     R5,R5,#+2
+   \   00000020   0x002A             MOVS     R2,R5
+   \                     ??EMAC_ReadPacketBuffer_1: (+1)
+   \   00000022   0x2A00             CMP      R2,#+0
+   \   00000024   0xD005             BEQ.N    ??EMAC_ReadPacketBuffer_0
+    769          			*dp++ = *sp++;
+   \   00000026   0x6825             LDR      R5,[R4, #+0]
+   \   00000028   0x601D             STR      R5,[R3, #+0]
+   \   0000002A   0x1D24             ADDS     R4,R4,#+4
+   \   0000002C   0x1D1B             ADDS     R3,R3,#+4
+    770          		}
+   \   0000002E   0x1E52             SUBS     R2,R2,#+1
+   \   00000030   0xE7F7             B.N      ??EMAC_ReadPacketBuffer_1
+    771          	}
+    772          }
+   \                     ??EMAC_ReadPacketBuffer_0: (+1)
+   \   00000032   0xBC30             POP      {R4,R5}
+   \   00000034   0x4770             BX       LR               ;; return
+    773          
+    774          /*********************************************************************//**
+    775           * @brief 		Enable/Disable interrupt for each type in EMAC
+    776           * @param[in]	ulIntType	Interrupt Type, should be:
+    777           * 							- EMAC_INT_RX_OVERRUN: Receive Overrun
+    778           * 							- EMAC_INT_RX_ERR: Receive Error
+    779           * 							- EMAC_INT_RX_FIN: Receive Descriptor Finish
+    780           * 							- EMAC_INT_RX_DONE: Receive Done
+    781           * 							- EMAC_INT_TX_UNDERRUN: Transmit Under-run
+    782           * 							- EMAC_INT_TX_ERR: Transmit Error
+    783           * 							- EMAC_INT_TX_FIN: Transmit descriptor finish
+    784           * 							- EMAC_INT_TX_DONE: Transmit Done
+    785           * 							- EMAC_INT_SOFT_INT: Software interrupt
+    786           * 							- EMAC_INT_WAKEUP: Wakeup interrupt
+    787           * @param[in]	NewState	New State of this function, should be:
+    788           * 							- ENABLE.
+    789           * 							- DISABLE.
+    790           * @return		None
+    791           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    792          void EMAC_IntCmd(uint32_t ulIntType, FunctionalState NewState)
+    793          {
+    794          	if (NewState == ENABLE) {
+   \                     EMAC_IntCmd: (+1)
+   \   00000000   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000002   0x2901             CMP      R1,#+1
+   \   00000004   0xD105             BNE.N    ??EMAC_IntCmd_0
+    795          		LPC_EMAC->IntEnable |= ulIntType;
+   \   00000006   0x....             LDR.N    R2,??DataTable22_38  ;; 0x50000fe4
+   \   00000008   0x6812             LDR      R2,[R2, #+0]
+   \   0000000A   0x4302             ORRS     R2,R0,R2
+   \   0000000C   0x....             LDR.N    R3,??DataTable22_38  ;; 0x50000fe4
+   \   0000000E   0x601A             STR      R2,[R3, #+0]
+   \   00000010   0xE004             B.N      ??EMAC_IntCmd_1
+    796          	} else {
+    797          		LPC_EMAC->IntEnable &= ~(ulIntType);
+   \                     ??EMAC_IntCmd_0: (+1)
+   \   00000012   0x....             LDR.N    R2,??DataTable22_38  ;; 0x50000fe4
+   \   00000014   0x6812             LDR      R2,[R2, #+0]
+   \   00000016   0x4382             BICS     R2,R2,R0
+   \   00000018   0x....             LDR.N    R3,??DataTable22_38  ;; 0x50000fe4
+   \   0000001A   0x601A             STR      R2,[R3, #+0]
+    798          	}
+    799          }
+   \                     ??EMAC_IntCmd_1: (+1)
+   \   0000001C   0x4770             BX       LR               ;; return
+    800          
+    801          /*********************************************************************//**
+    802           * @brief 		Check whether if specified interrupt flag is set or not
+    803           * 				for each interrupt type in EMAC and clear interrupt pending
+    804           * 				if it is set.
+    805           * @param[in]	ulIntType	Interrupt Type, should be:
+    806           * 							- EMAC_INT_RX_OVERRUN: Receive Overrun
+    807           * 							- EMAC_INT_RX_ERR: Receive Error
+    808           * 							- EMAC_INT_RX_FIN: Receive Descriptor Finish
+    809           * 							- EMAC_INT_RX_DONE: Receive Done
+    810           * 							- EMAC_INT_TX_UNDERRUN: Transmit Under-run
+    811           * 							- EMAC_INT_TX_ERR: Transmit Error
+    812           * 							- EMAC_INT_TX_FIN: Transmit descriptor finish
+    813           * 							- EMAC_INT_TX_DONE: Transmit Done
+    814           * 							- EMAC_INT_SOFT_INT: Software interrupt
+    815           * 							- EMAC_INT_WAKEUP: Wakeup interrupt
+    816           * @return		New state of specified interrupt (SET or RESET)
+    817           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    818          IntStatus EMAC_IntGetStatus(uint32_t ulIntType)
+    819          {
+   \                     EMAC_IntGetStatus: (+1)
+   \   00000000   0x0001             MOVS     R1,R0
+    820          	if (LPC_EMAC->IntStatus & ulIntType) {
+   \   00000002   0x....             LDR.N    R0,??DataTable22_46  ;; 0x50000fe0
+   \   00000004   0x6800             LDR      R0,[R0, #+0]
+   \   00000006   0x4208             TST      R0,R1
+   \   00000008   0xD003             BEQ.N    ??EMAC_IntGetStatus_0
+    821          		LPC_EMAC->IntClear = ulIntType;
+   \   0000000A   0x....             LDR.N    R0,??DataTable22_39  ;; 0x50000fe8
+   \   0000000C   0x6001             STR      R1,[R0, #+0]
+    822          		return SET;
+   \   0000000E   0x2001             MOVS     R0,#+1
+   \   00000010   0xE000             B.N      ??EMAC_IntGetStatus_1
+    823          	} else {
+    824          		return RESET;
+   \                     ??EMAC_IntGetStatus_0: (+1)
+   \   00000012   0x2000             MOVS     R0,#+0
+   \                     ??EMAC_IntGetStatus_1: (+1)
+   \   00000014   0x4770             BX       LR               ;; return
+    825          	}
+    826          }
+    827          
+    828          
+    829          /*********************************************************************//**
+    830           * @brief		Check whether if the current RxConsumeIndex is not equal to the
+    831           * 				current RxProduceIndex.
+    832           * @param[in]	None
+    833           * @return		TRUE if they're not equal, otherwise return FALSE
+    834           *
+    835           * Note: In case the RxConsumeIndex is not equal to the RxProduceIndex,
+    836           * it means there're available data has been received. They should be read
+    837           * out and released the Receive Data Buffer by updating the RxConsumeIndex value.
+    838           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    839          Bool EMAC_CheckReceiveIndex(void)
+    840          {
+    841          	if (LPC_EMAC->RxConsumeIndex != LPC_EMAC->RxProduceIndex) {
+   \                     EMAC_CheckReceiveIndex: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable22_7  ;; 0x50000118
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+   \   00000004   0x....             LDR.N    R1,??DataTable22_47  ;; 0x50000114
+   \   00000006   0x6809             LDR      R1,[R1, #+0]
+   \   00000008   0x4288             CMP      R0,R1
+   \   0000000A   0xD001             BEQ.N    ??EMAC_CheckReceiveIndex_0
+    842          		return TRUE;
+   \   0000000C   0x2001             MOVS     R0,#+1
+   \   0000000E   0xE000             B.N      ??EMAC_CheckReceiveIndex_1
+    843          	} else {
+    844          		return FALSE;
+   \                     ??EMAC_CheckReceiveIndex_0: (+1)
+   \   00000010   0x2000             MOVS     R0,#+0
+   \                     ??EMAC_CheckReceiveIndex_1: (+1)
+   \   00000012   0x4770             BX       LR               ;; return
+    845          	}
+    846          }
+    847          
+    848          
+    849          /*********************************************************************//**
+    850           * @brief		Check whether if the current TxProduceIndex is not equal to the
+    851           * 				current RxProduceIndex - 1.
+    852           * @param[in]	None
+    853           * @return		TRUE if they're not equal, otherwise return FALSE
+    854           *
+    855           * Note: In case the RxConsumeIndex is equal to the RxProduceIndex - 1,
+    856           * it means the transmit buffer is available and data can be written to transmit
+    857           * buffer to be sent.
+    858           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    859          Bool EMAC_CheckTransmitIndex(void)
+    860          {
+    861              uint32_t tmp = LPC_EMAC->TxConsumeIndex;
+   \                     EMAC_CheckTransmitIndex: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable22_48  ;; 0x5000012c
+   \   00000002   0x6801             LDR      R1,[R0, #+0]
+    862              if (LPC_EMAC->TxProduceIndex == ( tmp - 1 ))
+   \   00000004   0x....             LDR.N    R0,??DataTable22_14  ;; 0x50000128
+   \   00000006   0x6800             LDR      R0,[R0, #+0]
+   \   00000008   0x1E4A             SUBS     R2,R1,#+1
+   \   0000000A   0x4290             CMP      R0,R2
+   \   0000000C   0xD101             BNE.N    ??EMAC_CheckTransmitIndex_0
+    863              {
+    864                  return FALSE;
+   \   0000000E   0x2000             MOVS     R0,#+0
+   \   00000010   0xE008             B.N      ??EMAC_CheckTransmitIndex_1
+    865              }
+    866              else if( ( tmp == 0 ) && ( LPC_EMAC->TxProduceIndex == ( EMAC_NUM_TX_FRAG - 1 ) ) )
+   \                     ??EMAC_CheckTransmitIndex_0: (+1)
+   \   00000012   0x2900             CMP      R1,#+0
+   \   00000014   0xD105             BNE.N    ??EMAC_CheckTransmitIndex_2
+   \   00000016   0x....             LDR.N    R0,??DataTable22_14  ;; 0x50000128
+   \   00000018   0x6800             LDR      R0,[R0, #+0]
+   \   0000001A   0x2802             CMP      R0,#+2
+   \   0000001C   0xD101             BNE.N    ??EMAC_CheckTransmitIndex_2
+    867              {
+    868                  return FALSE;
+   \   0000001E   0x2000             MOVS     R0,#+0
+   \   00000020   0xE000             B.N      ??EMAC_CheckTransmitIndex_1
+    869              }
+    870              else
+    871              {
+    872                  return TRUE;
+   \                     ??EMAC_CheckTransmitIndex_2: (+1)
+   \   00000022   0x2001             MOVS     R0,#+1
+   \                     ??EMAC_CheckTransmitIndex_1: (+1)
+   \   00000024   0x4770             BX       LR               ;; return
+    873              }
+    874          }
+    875          
+    876          
+    877          
+    878          /*********************************************************************//**
+    879           * @brief		Get current status value of receive data (due to RxConsumeIndex)
+    880           * @param[in]	ulRxStatType	Received Status type, should be one of following:
+    881           * 							- EMAC_RINFO_CTRL_FRAME: Control Frame
+    882           * 							- EMAC_RINFO_VLAN: VLAN Frame
+    883           * 							- EMAC_RINFO_FAIL_FILT: RX Filter Failed
+    884           * 							- EMAC_RINFO_MCAST: Multicast Frame
+    885           * 							- EMAC_RINFO_BCAST: Broadcast Frame
+    886           * 							- EMAC_RINFO_CRC_ERR: CRC Error in Frame
+    887           * 							- EMAC_RINFO_SYM_ERR: Symbol Error from PHY
+    888           * 							- EMAC_RINFO_LEN_ERR: Length Error
+    889           * 							- EMAC_RINFO_RANGE_ERR: Range error(exceeded max size)
+    890           * 							- EMAC_RINFO_ALIGN_ERR: Alignment error
+    891           * 							- EMAC_RINFO_OVERRUN: Receive overrun
+    892           * 							- EMAC_RINFO_NO_DESCR: No new Descriptor available
+    893           * 							- EMAC_RINFO_LAST_FLAG: last Fragment in Frame
+    894           * 							- EMAC_RINFO_ERR: Error Occurred (OR of all error)
+    895           * @return		Current value of receive data (due to RxConsumeIndex)
+    896           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    897          FlagStatus EMAC_CheckReceiveDataStatus(uint32_t ulRxStatType)
+    898          {
+    899          	uint32_t idx;
+    900          	idx = LPC_EMAC->RxConsumeIndex;
+   \                     EMAC_CheckReceiveDataStatus: (+1)
+   \   00000000   0x....             LDR.N    R2,??DataTable22_7  ;; 0x50000118
+   \   00000002   0x6812             LDR      R2,[R2, #+0]
+   \   00000004   0x0011             MOVS     R1,R2
+    901          	return (((Rx_Stat[idx].Info) & ulRxStatType) ? SET : RESET);
+   \   00000006   0x....             LDR.N    R2,??DataTable22_3
+   \   00000008   0xF852 0x1031      LDR      R1,[R2, R1, LSL #+3]
+   \   0000000C   0x4201             TST      R1,R0
+   \   0000000E   0xD001             BEQ.N    ??EMAC_CheckReceiveDataStatus_0
+   \   00000010   0x2001             MOVS     R0,#+1
+   \   00000012   0xE000             B.N      ??EMAC_CheckReceiveDataStatus_1
+   \                     ??EMAC_CheckReceiveDataStatus_0: (+1)
+   \   00000014   0x2000             MOVS     R0,#+0
+   \                     ??EMAC_CheckReceiveDataStatus_1: (+1)
+   \   00000016   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000018   0x4770             BX       LR               ;; return
+    902          }
+    903          
+    904          
+    905          /*********************************************************************//**
+    906           * @brief		Get size of current Received data in received buffer (due to
+    907           * 				RxConsumeIndex)
+    908           * @param[in]	None
+    909           * @return		Size of received data
+    910           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    911          uint32_t EMAC_GetReceiveDataSize(void)
+    912          {
+    913          	uint32_t idx;
+    914          	idx =LPC_EMAC->RxConsumeIndex;
+   \                     EMAC_GetReceiveDataSize: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable22_7  ;; 0x50000118
+   \   00000002   0x6809             LDR      R1,[R1, #+0]
+   \   00000004   0x0008             MOVS     R0,R1
+    915          	return ((Rx_Stat[idx].Info) & EMAC_RINFO_SIZE);
+   \   00000006   0x....             LDR.N    R1,??DataTable22_3
+   \   00000008   0xF851 0x0030      LDR      R0,[R1, R0, LSL #+3]
+   \   0000000C   0x0540             LSLS     R0,R0,#+21       ;; ZeroExtS R0,R0,#+21,#+21
+   \   0000000E   0x0D40             LSRS     R0,R0,#+21
+   \   00000010   0x4770             BX       LR               ;; return
+    916          }
+    917          
+    918          /*********************************************************************//**
+    919           * @brief		Increase the RxConsumeIndex (after reading the Receive buffer
+    920           * 				to release the Receive buffer) and wrap-around the index if
+    921           * 				it reaches the maximum Receive Number
+    922           * @param[in]	None
+    923           * @return		None
+    924           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    925          void EMAC_UpdateRxConsumeIndex(void)
+    926          {
+    927          	// Get current Rx consume index
+    928          	uint32_t idx = LPC_EMAC->RxConsumeIndex;
+   \                     EMAC_UpdateRxConsumeIndex: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable22_7  ;; 0x50000118
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+    929          
+    930          	/* Release frame from EMAC buffer */
+    931          	if (++idx == EMAC_NUM_RX_FRAG) idx = 0;
+   \   00000004   0x1C40             ADDS     R0,R0,#+1
+   \   00000006   0x2804             CMP      R0,#+4
+   \   00000008   0xD101             BNE.N    ??EMAC_UpdateRxConsumeIndex_0
+   \   0000000A   0x2100             MOVS     R1,#+0
+   \   0000000C   0x0008             MOVS     R0,R1
+    932          	LPC_EMAC->RxConsumeIndex = idx;
+   \                     ??EMAC_UpdateRxConsumeIndex_0: (+1)
+   \   0000000E   0x....             LDR.N    R1,??DataTable22_7  ;; 0x50000118
+   \   00000010   0x6008             STR      R0,[R1, #+0]
+    933          }
+   \   00000012   0x4770             BX       LR               ;; return
+    934          
+    935          /*********************************************************************//**
+    936           * @brief		Increase the TxProduceIndex (after writting to the Transmit buffer
+    937           * 				to enable the Transmit buffer) and wrap-around the index if
+    938           * 				it reaches the maximum Transmit Number
+    939           * @param[in]	None
+    940           * @return		None
+    941           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    942          void EMAC_UpdateTxProduceIndex(void)
+    943          {
+    944          	// Get current Tx produce index
+    945          	uint32_t idx = LPC_EMAC->TxProduceIndex;
+   \                     EMAC_UpdateTxProduceIndex: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable22_14  ;; 0x50000128
+   \   00000002   0x6800             LDR      R0,[R0, #+0]
+    946          
+    947          	/* Start frame transmission */
+    948          	if (++idx == EMAC_NUM_TX_FRAG) idx = 0;
+   \   00000004   0x1C40             ADDS     R0,R0,#+1
+   \   00000006   0x2803             CMP      R0,#+3
+   \   00000008   0xD101             BNE.N    ??EMAC_UpdateTxProduceIndex_0
+   \   0000000A   0x2100             MOVS     R1,#+0
+   \   0000000C   0x0008             MOVS     R0,R1
+    949          	LPC_EMAC->TxProduceIndex = idx;
+   \                     ??EMAC_UpdateTxProduceIndex_0: (+1)
+   \   0000000E   0x....             LDR.N    R1,??DataTable22_14  ;; 0x50000128
+   \   00000010   0x6008             STR      R0,[R1, #+0]
+    950          }
+   \   00000012   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22:
+   \   00000000   0x........         DC32     rx_buf
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_1:
+   \   00000000   0x........         DC32     Rx_Desc
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_2:
+   \   00000000   0x800005FF         DC32     0x800005ff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_3:
+   \   00000000   0x........         DC32     Rx_Stat
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_4:
+   \   00000000   0x50000108         DC32     0x50000108
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_5:
+   \   00000000   0x5000010C         DC32     0x5000010c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_6:
+   \   00000000   0x50000110         DC32     0x50000110
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_7:
+   \   00000000   0x50000118         DC32     0x50000118
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_8:
+   \   00000000   0x........         DC32     tx_buf
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_9:
+   \   00000000   0x........         DC32     Tx_Desc
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_10:
+   \   00000000   0x........         DC32     Tx_Stat
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_11:
+   \   00000000   0x5000011C         DC32     0x5000011c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_12:
+   \   00000000   0x50000120         DC32     0x50000120
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_13:
+   \   00000000   0x50000124         DC32     0x50000124
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_14:
+   \   00000000   0x50000128         DC32     0x50000128
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_15:
+   \   00000000   0x50000028         DC32     0x50000028
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_16:
+   \   00000000   0x5000002C         DC32     0x5000002c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_17:
+   \   00000000   0x50000034         DC32     0x50000034
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_18:
+   \   00000000   0x50000024         DC32     0x50000024
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_19:
+   \   00000000   0x50000030         DC32     0x50000030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_20:
+   \   00000000   0x50000040         DC32     0x50000040
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_21:
+   \   00000000   0x50000044         DC32     0x50000044
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_22:
+   \   00000000   0x50000048         DC32     0x50000048
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_23:
+   \   00000000   0x04C11DB7         DC32     0x4c11db7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_24:
+   \   00000000   0x09823B6E         DC32     0x9823b6e
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_25:
+   \   00000000   0x130476DC         DC32     0x130476dc
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_26:
+   \   00000000   0x2608EDB8         DC32     0x2608edb8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_27:
+   \   00000000   0x50000100         DC32     0x50000100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_28:
+   \   00000000   0x50000004         DC32     0x50000004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_29:
+   \   00000000   0x50000014         DC32     0x50000014
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_30:
+   \   00000000   0x........         DC32     SystemCoreClock
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_31:
+   \   00000000   0x002625A0         DC32     0x2625a0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_32:
+   \   00000000   0x........         DC32     EMAC_clkdiv
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_33:
+   \   00000000   0x50000020         DC32     0x50000020
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_34:
+   \   00000000   0x50000010         DC32     0x50000010
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_35:
+   \   00000000   0x5000000C         DC32     0x5000000c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_36:
+   \   00000000   0x50000018         DC32     0x50000018
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_37:
+   \   00000000   0x50000200         DC32     0x50000200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_38:
+   \   00000000   0x50000FE4         DC32     0x50000fe4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_39:
+   \   00000000   0x50000FE8         DC32     0x50000fe8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_40:
+   \   00000000   0x20005C90         DC32     0x20005c90
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_41:
+   \   00000000   0x50000008         DC32     0x50000008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_42:
+   \   00000000   0x50000214         DC32     0x50000214
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_43:
+   \   00000000   0x50000210         DC32     0x50000210
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_44:
+   \   00000000   0x50000204         DC32     0x50000204
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_45:
+   \   00000000   0x50000208         DC32     0x50000208
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_46:
+   \   00000000   0x50000FE0         DC32     0x50000fe0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_47:
+   \   00000000   0x50000114         DC32     0x50000114
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable22_48:
+   \   00000000   0x5000012C         DC32     0x5000012c
+    951          
+    952          
+    953          /**
+    954           * @}
+    955           */
+    956          
+    957          #endif /* _EMAC */
+    958          
+    959          /**
+    960           * @}
+    961           */
+    962          
+    963          /* --------------------------------- End Of File ------------------------------ */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   EMAC_CheckPHYStatus
+        16   -> read_PHY
+       0   EMAC_CheckReceiveDataStatus
+       0   EMAC_CheckReceiveIndex
+       0   EMAC_CheckTransmitIndex
+       8   EMAC_DeInit
+         8   -> CLKPWR_ConfigPPWR
+       0   EMAC_GetReceiveDataSize
+       0   EMAC_GetWoLStatus
+      24   EMAC_Init
+        24   -> CLKPWR_ConfigPPWR
+        24   -> EMAC_SetPHYMode
+        24   -> read_PHY
+        24   -> rx_descr_init
+        24   -> setEmacAddr
+        24   -> tx_descr_init
+        24   -> write_PHY
+       0   EMAC_IntCmd
+       0   EMAC_IntGetStatus
+       8   EMAC_ReadPacketBuffer
+       0   EMAC_SetFilterMode
+      24   EMAC_SetHashFilter
+        24   -> emac_CRCCalc
+      24   EMAC_SetPHYMode
+        24   -> EMAC_UpdatePHYStatus
+        24   -> read_PHY
+        24   -> write_PHY
+      16   EMAC_UpdatePHYStatus
+        16   -> read_PHY
+       0   EMAC_UpdateRxConsumeIndex
+       0   EMAC_UpdateTxProduceIndex
+      12   EMAC_WritePacketBuffer
+      24   emac_CRCCalc
+       0   read_PHY
+       0   rx_descr_init
+       0   setEmacAddr
+       0   tx_descr_init
+       4   write_PHY
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable22
+       4  ??DataTable22_1
+       4  ??DataTable22_10
+       4  ??DataTable22_11
+       4  ??DataTable22_12
+       4  ??DataTable22_13
+       4  ??DataTable22_14
+       4  ??DataTable22_15
+       4  ??DataTable22_16
+       4  ??DataTable22_17
+       4  ??DataTable22_18
+       4  ??DataTable22_19
+       4  ??DataTable22_2
+       4  ??DataTable22_20
+       4  ??DataTable22_21
+       4  ??DataTable22_22
+       4  ??DataTable22_23
+       4  ??DataTable22_24
+       4  ??DataTable22_25
+       4  ??DataTable22_26
+       4  ??DataTable22_27
+       4  ??DataTable22_28
+       4  ??DataTable22_29
+       4  ??DataTable22_3
+       4  ??DataTable22_30
+       4  ??DataTable22_31
+       4  ??DataTable22_32
+       4  ??DataTable22_33
+       4  ??DataTable22_34
+       4  ??DataTable22_35
+       4  ??DataTable22_36
+       4  ??DataTable22_37
+       4  ??DataTable22_38
+       4  ??DataTable22_39
+       4  ??DataTable22_4
+       4  ??DataTable22_40
+       4  ??DataTable22_41
+       4  ??DataTable22_42
+       4  ??DataTable22_43
+       4  ??DataTable22_44
+       4  ??DataTable22_45
+       4  ??DataTable22_46
+       4  ??DataTable22_47
+       4  ??DataTable22_48
+       4  ??DataTable22_5
+       4  ??DataTable22_6
+       4  ??DataTable22_7
+       4  ??DataTable22_8
+       4  ??DataTable22_9
+      74  EMAC_CheckPHYStatus
+      26  EMAC_CheckReceiveDataStatus
+      20  EMAC_CheckReceiveIndex
+      38  EMAC_CheckTransmitIndex
+      32  EMAC_DeInit
+      18  EMAC_GetReceiveDataSize
+      22  EMAC_GetWoLStatus
+     326  EMAC_Init
+      30  EMAC_IntCmd
+      22  EMAC_IntGetStatus
+      54  EMAC_ReadPacketBuffer
+      30  EMAC_SetFilterMode
+      92  EMAC_SetHashFilter
+     160  EMAC_SetPHYMode
+     104  EMAC_UpdatePHYStatus
+      20  EMAC_UpdateRxConsumeIndex
+      20  EMAC_UpdateTxProduceIndex
+      64  EMAC_WritePacketBuffer
+      16  EMAC_clkdiv
+      32  Rx_Desc
+      32  Rx_Stat
+      24  Tx_Desc
+      12  Tx_Stat
+     172  emac_CRCCalc
+      70  read_PHY
+    6144  rx_buf
+     106  rx_descr_init
+      44  setEmacAddr
+    4608  tx_buf
+      92  tx_descr_init
+      62  write_PHY
+
+ 
+ 10 852 bytes in section .bss
+     16 bytes in section .rodata
+  1 894 bytes in section .text
+ 
+  1 894 bytes of CODE  memory
+     16 bytes of CONST memory
+ 10 852 bytes of DATA  memory
+
+Errors: none
+Warnings: 1

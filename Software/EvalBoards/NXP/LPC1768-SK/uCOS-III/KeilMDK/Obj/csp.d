@@ -1,0 +1,16 @@
+.\obj\csp.o: ..\..\..\..\..\uC-CSP\MCU\csp.c
+.\obj\csp.o: ..\..\..\..\..\uC-CSP\MCU\csp.h
+.\obj\csp.o: ..\..\..\..\..\uC-CPU\ARM-Cortex-M3\RealView\cpu.h
+.\obj\csp.o: ..\..\..\..\..\uC-CPU\cpu_def.h
+.\obj\csp.o: ..\..\uCOS-III\cpu_cfg.h
+.\obj\csp.o: ..\..\..\..\..\uC-CPU\cpu_core.h
+.\obj\csp.o: ..\..\..\..\..\uC-LIB\lib_def.h
+.\obj\csp.o: ..\..\..\..\..\uC-LIB\lib_mem.h
+.\obj\csp.o: ..\..\..\..\..\uC-CPU\cpu_core.h
+.\obj\csp.o: ..\..\uCOS-III\KeilMDK\app_cfg.h
+.\obj\csp.o: ..\..\..\..\..\uC-LIB\lib_str.h
+.\obj\csp.o: ..\..\..\..\..\uC-LIB\lib_ascii.h
+.\obj\csp.o: ..\..\uCOS-III\csp_cfg.h
+.\obj\csp.o: ..\..\..\..\..\uC-CSP\MCU\csp_types.h
+.\obj\csp.o: ..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\csp_grp.h
+.\obj\csp.o: ..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\csp_dev.h
