@@ -74,11 +74,8 @@
 *********************************************************************************************************
 */
 
-
-#define  APP_TASK_START_PRIO        (OS_CFG_PRIO_MAX - 14)  
-#define  MB_OS_CFG_RX_TASK_PRIO     (OS_CFG_PRIO_MAX - 13)  // ModBus任务的优先级（没有用到ModBus则不需要关注）
-#define  APP_TASK_WIFI_PRIO         (OS_CFG_PRIO_MAX - 12) 
-#define  APP_TASK_COMM_PRIO         (OS_CFG_PRIO_MAX - 15)  
+#define  APP_TASK_START_PRIO        (OS_CFG_PRIO_MAX - 14)
+#define  MB_OS_CFG_RX_TASK_PRIO     (OS_CFG_PRIO_MAX - 13) 
 #define  APP_TASK_DTU_PRIO          (OS_CFG_PRIO_MAX - 12) 
 #define  APP_TASK_SENSOR_PRIO       (OS_CFG_PRIO_MAX - 11)  
 #define  APP_TASK_MATER_PRIO        (OS_CFG_PRIO_MAX - 11) 
@@ -86,9 +83,13 @@
 #define  APP_TASK_KEY_PRIO          (OS_CFG_PRIO_MAX -  9)  
 #define  APP_TASK_CONTROL_PRIO      (OS_CFG_PRIO_MAX -  8)  
 
-#define  APP_TASK_OSAL_PRIO         (OS_CFG_PRIO_MAX -  3)  // 例程任务优先级，可以随意修改。
+#define  APP_TASK_CARD_PRIO         (OS_CFG_PRIO_MAX -  7)
+#define  APP_TASK_COMM_PRIO         (OS_CFG_PRIO_MAX - 10) 
+#define  APP_TASK_OSAL_PRIO         (OS_CFG_PRIO_MAX -  2) 
 
-#define  APP_TASK_CARD_PRIO       (OS_CFG_PRIO_MAX -  10)  // 例程任务优先级，可以随意修改。
+#define  APP_TASK_WIFI_PRIO         (OS_CFG_PRIO_MAX - 12) 
+//#define  APP_TASK_OSAL_PRIO         (OS_CFG_PRIO_MAX -  3)  // 例程任务优先级，可以随意修改。
+  // 例程任务优先级，可以随意修改。
 
 #define  APP_TASK_SAMPLE_PRIO       (OS_CFG_PRIO_MAX -  2)  // 例程任务优先级，可以随意修改。
 /*

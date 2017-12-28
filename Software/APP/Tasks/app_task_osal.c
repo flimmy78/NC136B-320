@@ -44,7 +44,7 @@ const  CPU_CHAR  *app_task_osal__c = "$Id: $";
 /*******************************************************************************
  * MACROS
  */
-#define  OSAL_CYCLE_TIME_TICKS     (OS_CFG_TICK_RATE_HZ / 1u)
+#define  CYCLE_TIME_TICKS     (OS_CFG_TICK_RATE_HZ / 1u)
 
 /*******************************************************************************
  * TYPEDEFS
@@ -229,19 +229,13 @@ static  void  AppTaskOsal (void *p_arg)
         } while (TaskActive);                           // 等待所有任务执行完
         
         /***********************************************
-        * 描述： 本任务看门狗标志置位
-        */
-        OSFlagPost ((OS_FLAG_GRP *)&WdtFlagGRP,
-                     (OS_FLAGS     ) WDT_FLAG_OSAL,
-                     (OS_OPT       ) OS_OPT_POST_FLAG_SET,
-                     (OS_ERR      *) &err);
-        
-        /***********************************************
         * 描述： 去除任务运行的时间，等到一个控制周期里剩余需要延时的时间
         */
-        dly   = OSAL_CYCLE_TIME_TICKS - ( OSTimeGet(&err) - ticks );
-        if ( dly  <= 0 ) {
-            dly   = 1;
+        dly   = CYCLE_TIME_TICKS - ( OSTimeGet(&err) - ticks );
+        if ( dly  < 1 ) {
+            dly = 1;
+        } else if ( dly > CYCLE_TIME_TICKS ) {
+            dly = CYCLE_TIME_TICKS;
         }
     }
 #else
@@ -263,7 +257,7 @@ static void APP_OsalInit(void)
     /***********************************************
     * 描述： 在看门狗标志组注册本任务的看门狗标志
     */
-    WdtFlags |= WDT_FLAG_OSAL;
+    BSP_OS_SemCreate(&Osal_EvtSem,0,"Osal EvtSem");
 }
 
 /*******************************************************************************

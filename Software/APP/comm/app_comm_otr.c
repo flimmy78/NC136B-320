@@ -120,7 +120,6 @@ INT8U	WriteFlsh(INT32U Dst, uint8 * sFlshRec, INT32U NByte);
 
 
 /*******************************************************************************/
-extern  stcSysCtrl      sCtrl;
 stcModelCard            m_sModelCard;
 
 /*******************************************************************************
@@ -137,18 +136,18 @@ stcModelCard            m_sModelCard;
 *******************************************************************************/
 void DataComReadAsk(unsigned int startnum,unsigned int endnum)
 {
-	sCtrl.Otr.Wr.Code = DATA_CARD;						//数据类型
-	sCtrl.Otr.Wr.Info.sReqRec.StartNum 	= startnum;		//开始记录
-	sCtrl.Otr.Wr.Info.sReqRec.EndNum	= endnum;		//结束记录
+	Ctrl.Otr.Wr.Code = DATA_CARD;						//数据类型
+	Ctrl.Otr.Wr.Info.sReqRec.StartNum 	= startnum;		//开始记录
+	Ctrl.Otr.Wr.Info.sReqRec.EndNum	= endnum;		//结束记录
 	
-	CSNC_SendData(	sCtrl.Otr.pch,						//通讯控制块
+	CSNC_SendData(	Ctrl.Otr.pch,						//通讯控制块
                   SLAVE_ADDR_OTR,						//源地址
                   MASTE_ADDR_HOST,					    //目标地址
-                  sCtrl.Otr.ConnCtrl[0].SendFramNum,	//发送帧号
+                  Ctrl.Otr.ConnCtrl[0].SendFramNum,	//发送帧号
                   0,									//帧类型，默认为0，在数据区内明确		
-                  (uint8 *)&sCtrl.Otr.Wr,				//发送缓冲区
+                  (uint8 *)&Ctrl.Otr.Wr,				//发送缓冲区
                   //发送数据区长度
-                  sizeof(sCtrl.Otr.Wr.Code)+sizeof(sCtrl.Otr.Wr.Info.sReqRec));
+                  sizeof(Ctrl.Otr.Wr.Code)+sizeof(Ctrl.Otr.Wr.Info.sReqRec));
 }
 
 
@@ -178,15 +177,15 @@ uint8  	JudegLocoInfo(uint8   buf[])
                &&    psRec->JcRealType  != 0 
                    &&   psRec->JcRealNo     != 0    ){
                        
-                       if(psRec->JcRealType   == sCtrl.sProductInfo.sLocoId.Type
-                           &&psRec->JcRealNo     == sCtrl.sProductInfo.sLocoId.Num){
+                       if(psRec->JcRealType   == Ctrl.sProductInfo.sLocoId.Type
+                           &&psRec->JcRealNo     == Ctrl.sProductInfo.sLocoId.Num){
                                return 1;                       //机车信息正确
                            }
                        
-                       sCtrl.sProductInfo.sLocoId.Type = psRec->JcRealType ; 
-                       sCtrl.sProductInfo.sLocoId.Num  = psRec->JcRealNo   ;
+                       Ctrl.sProductInfo.sLocoId.Type = psRec->JcRealType ; 
+                       Ctrl.sProductInfo.sLocoId.Num  = psRec->JcRealNo   ;
                        
-                       FRAM_StoreProductInfo((StrProductInfo  *)&sCtrl.sProductInfo);//存机车号
+                       FRAM_StoreProductInfo((StrProductInfo  *)&Ctrl.sProductInfo);//存机车号
                        return 0;
                    }
     }
@@ -220,109 +219,134 @@ void	comm_rec_read(StrDevOtr * sDtu,uint8 addrnum)
     static     uint8       rectimes = 0;
 	
 	//数据记录长度128字节
-	if(sCtrl.Otr.RxCtrl.Len == sizeof(sCtrl.Otr.Rd.sRec)){		
-		//存数据记录
-		if(sCtrl.Otr.Rd.sRec.StoreCnt == sCtrl.sRecNumMgr.IcRead){//如果接收到的数据记录和想要接收的相同，则保存数据。		
-			//保存数据记录
-            recsmalltimes = 0;
-            recbigtimes = 0;    
-                           
-			sCtrl.sRecNumMgr.IcRead++;
-            
-//            if(++rectimes == 1 )        //开机或256次后，判断一次
-//            {
-//                if(JudegLocoInfo((uint8 *)&sCtrl.Otr.Rd.sRec) == 0)//机车信息变化，记录号清零(bug如果中途变更了车号，后续数据无法读取。)
-//                    sCtrl.sRecNumMgr.IcRead = 0;
+	if(Ctrl.Otr.RxCtrl.Len == sizeof(Ctrl.Otr.Rd.sRec)){
+        
+        //if ( Ctrl.sRunPara.DealFlag ) {
+        //    return;
+        //}
+		//存数据记录//如果接收到的数据记录和想要接收的相同，则保存数据。		
+		if(Ctrl.Otr.Rd.sRec.StoreCnt == Ctrl.sRecNumMgr.IcRead){
+            extern uint8 GetCardStatus(void);
+//            
+//            if ( 1 == GetCardStatus() ) {
+//                BSP_OS_SemPost(&Bsp_Card_Sem);
+//                return;
+//            } else 
+//            if ( 1== Ctrl.sRunPara.plugcard ) {
+//                BSP_OS_TimeDly(50);
 //            }
+            //保存数据记录
+            recsmalltimes   = 0;
+            recbigtimes     = 0;    
+                           
+			Ctrl.sRecNumMgr.IcRead++;
+            //先应答再存储
+		  	uint32	FlshAddr = GetRecNumAddr(Ctrl.Otr.Rd.sRec.StoreCnt); 
+            //BSP_LED_Toggle(8);
+
+			WriteFlsh(FlshAddr, (uint8 *)&Ctrl.Otr.Rd.sRec, sizeof(stcFlshRec));
+            BSP_LED_Toggle(8);
+            osal_start_timerEx( OS_TASK_ID_LED,
+                               OS_EVT_LED_TICKS,
+                               200);
+            //存储器判断
+            ReadFlsh(FlshAddr, (uint8 *)&Ctrl.sRec, sizeof(stcFlshRec)); 
             
 			//如果还有数据未取完，继续请求数据。
-			if(sCtrl.sRecNumMgr.IcRead < sCtrl.sRecNumMgr.Current){	
+			if(Ctrl.sRecNumMgr.IcRead < Ctrl.sRecNumMgr.Current){	
 				errtimes = 0;
-				DataComReadAsk(sCtrl.sRecNumMgr.IcRead,sCtrl.sRecNumMgr.IcRead +1);
+				DataComReadAsk(Ctrl.sRecNumMgr.IcRead,Ctrl.sRecNumMgr.IcRead +1);
 				
-			}else if(sCtrl.sRecNumMgr.IcRead > sCtrl.sRecNumMgr.Current){
+			}else if(Ctrl.sRecNumMgr.IcRead > Ctrl.sRecNumMgr.Current){
 				errtimes++;
 				if(errtimes > 2)									//流水号异常。
-					sCtrl.sRecNumMgr.IcRead = sCtrl.sRecNumMgr.Current;
+					Ctrl.sRecNumMgr.IcRead = Ctrl.sRecNumMgr.Current;
 			}
+           
             
-		  	uint32	FlshAddr = GetRecNumAddr(sCtrl.Otr.Rd.sRec.StoreCnt);       //先应答再存储
+//            uint8 storetimes = 3;
+//            while((Ctrl.sRec.StoreCnt +1) != Ctrl.sRecNumMgr.IcRead && storetimes-- ) //如果数据存储异常，再次存储
+//            {
+//                Ctrl.sRec.StoreCnt = Ctrl.sRecNumMgr.IcRead -1;
+//                WriteFlsh(FlshAddr, (uint8 *)&Ctrl.Otr.Rd.sRec, sizeof(stcFlshRec));
+//            
+//                ReadFlsh(FlshAddr, (uint8 *)&Ctrl.sRec, sizeof(stcFlshRec));       //存储器判断
+//            }
+                
+//           //调整未读IC卡值
+            if(Ctrl.sRecNumMgr.IcRead != 0xffffffff && Ctrl.sRecNumMgr.CardRead > Ctrl.sRecNumMgr.IcRead){
+                Ctrl.sRecNumMgr.CardRead = Ctrl.sRecNumMgr.IcRead;
+            }
+			FRAM_StoreRecNumMgr((StrRecNumMgr *)&Ctrl.sRecNumMgr);	//存流水号
             
-			WriteFlsh(FlshAddr, (uint8 *)&sCtrl.Otr.Rd.sRec, sizeof(stcFlshRec));
-            
-            ReadFlsh(FlshAddr, (uint8 *)&sCtrl.sRec, sizeof(stcFlshRec));       //存储器判断
-            
-			FRAM_StoreRecNumMgr((StrRecNumMgr *)&sCtrl.sRecNumMgr);	//存流水号
-            
-		}
-        else  if(sCtrl.Otr.Rd.sRec.StoreCnt +1 == sCtrl.sRecNumMgr.Current) //无最新记录，发前条数据，不处理
-        {
-        }
-        else
-        //if(sCtrl.Otr.Rd.sRec.StoreCnt < sCtrl.sRecNumMgr.IcRead ) //流水号比已存的小，认为是新换盒体，重新更改流水号
-        {
+		} else  if(Ctrl.Otr.Rd.sRec.StoreCnt +1 == Ctrl.sRecNumMgr.Current) {//无最新记录，发前条数据，不处理
+        
+        } else {
+        //if(Ctrl.Otr.Rd.sRec.StoreCnt < Ctrl.sRecNumMgr.IcRead ) //流水号比已存的小，认为是新换盒体，重新更改流水号
             recsmalltimes++;
             if(recsmalltimes > 3){                                  //数据异常处理
                 recsmalltimes = 0;
                 
-                if(sCtrl.Otr.Rd.sRec.StoreCnt != 0xffffffff && sCtrl.Otr.Rd.sRec.StoreCnt != 0)
+                if(Ctrl.Otr.Rd.sRec.StoreCnt != 0xffffffff && Ctrl.Otr.Rd.sRec.StoreCnt != 0)
                 {     //扇区正常     
-                    if(sCtrl.Otr.Rd.sRec.StoreCnt < sCtrl.sRecNumMgr.Current) //数据记录在已存的记录范围内
+                    if(Ctrl.Otr.Rd.sRec.StoreCnt < Ctrl.sRecNumMgr.Current) //数据记录在已存的记录范围内
                     {
-                        sCtrl.sRecNumMgr.IcRead     = sCtrl.Otr.Rd.sRec.StoreCnt;               //
-                        sCtrl.sRecNumMgr.CardRead   = sCtrl.sRecNumMgr.IcRead ;                 //重新讀卡
+                        Ctrl.sRecNumMgr.IcRead     = Ctrl.Otr.Rd.sRec.StoreCnt;               //
+                        Ctrl.sRecNumMgr.CardRead   = Ctrl.sRecNumMgr.IcRead ;                 //重新讀卡
                     }else{
-                        sCtrl.sRecNumMgr.IcRead++;                              //如果无效，则记录号++，继续执行
+                        Ctrl.sRecNumMgr.IcRead++;                              //如果无效，则记录号++，继续执行
                     }
                 }             
                 else
                 {
-                    sCtrl.sRecNumMgr.IcRead++;                              //如果无效，则记录号++，继续执行
+                    Ctrl.sRecNumMgr.IcRead++;                              //如果无效，则记录号++，继续执行
                 }
                 
-                uint32	FlshAddr = GetRecNumAddr(sCtrl.sRecNumMgr.IcRead);       //先应答再存储
+                uint32	FlshAddr = GetRecNumAddr(Ctrl.sRecNumMgr.IcRead);       //先应答再存储
                 
-                WriteFlsh(FlshAddr, (uint8 *)&sCtrl.Otr.Rd.sRec, sizeof(stcFlshRec));    
+                WriteFlsh(FlshAddr, (uint8 *)&Ctrl.Otr.Rd.sRec, sizeof(stcFlshRec));    
                 
-                DataComReadAsk(sCtrl.sRecNumMgr.IcRead,sCtrl.sRecNumMgr.IcRead +1);
+                DataComReadAsk(Ctrl.sRecNumMgr.IcRead,Ctrl.sRecNumMgr.IcRead +1);
             }
         }
 //        else
 //        {
 //            recbigtimes++;
-//            if(sCtrl.sRecNumMgr.IcRead  > 5){       //该数据记录异常，跳过该记录   
+//            if(Ctrl.sRecNumMgr.IcRead  > 5){       //该数据记录异常，跳过该记录   
 //                recbigtimes = 0;
-//                sCtrl.sRecNumMgr.IcRead++;
+//                Ctrl.sRecNumMgr.IcRead++;
 //
 //            }
 //        }
         
 	}
-	else if(sCtrl.Otr.RxCtrl.Len == sizeof(sCtrl.Otr.Rd.sTinyRec))	//统计模块发起查询
+	else if(    Ctrl.Otr.RxCtrl.Len == sizeof(Ctrl.Otr.Rd.sTinyRec)       //V.2.0
+            
+             ||  Ctrl.Otr.RxCtrl.Len ==  0x13                                //V.1.0
+             )	//统计模块发起查询
 	{
-		if(sCtrl.Otr.Rd.sTinyRec.CurRecNum < sCtrl.sRecNumMgr.IcRead)
+		if(Ctrl.Otr.Rd.sTinyRec.CurRecNum < Ctrl.sRecNumMgr.IcRead)
 		{
 			errtimes++;
 			if( errtimes > 2 ){										//流水号异常。
-				sCtrl.sRecNumMgr.Current = sCtrl.Otr.Rd.sTinyRec.CurRecNum;
-				sCtrl.sRecNumMgr.IcRead = sCtrl.sRecNumMgr.Current;
+				Ctrl.sRecNumMgr.Current = Ctrl.Otr.Rd.sTinyRec.CurRecNum;
+				Ctrl.sRecNumMgr.IcRead = Ctrl.sRecNumMgr.Current;
                 
-				FRAM_StoreRecNumMgr((StrRecNumMgr *)&sCtrl.sRecNumMgr);	//存流水号
+				FRAM_StoreRecNumMgr((StrRecNumMgr *)&Ctrl.sRecNumMgr);	//存流水号
 			}
 		}
 		else
 		{
-			sCtrl.sRecNumMgr.Current = sCtrl.Otr.Rd.sTinyRec.CurRecNum;
-			DataComReadAsk(sCtrl.sRecNumMgr.IcRead,sCtrl.sRecNumMgr.IcRead +1);
+			Ctrl.sRecNumMgr.Current = Ctrl.Otr.Rd.sTinyRec.CurRecNum;
+			DataComReadAsk(Ctrl.sRecNumMgr.IcRead,Ctrl.sRecNumMgr.IcRead +1);
             
-			FRAM_StoreRecNumMgr((StrRecNumMgr *)&sCtrl.sRecNumMgr);	//存流水号
+			FRAM_StoreRecNumMgr((StrRecNumMgr *)&Ctrl.sRecNumMgr);	//存流水号
 		}
 		
 	}else{			
         //如果其他数据，应答接受请求
-		DataComReadAsk(sCtrl.sRecNumMgr.IcRead,sCtrl.sRecNumMgr.IcRead +1);
+		DataComReadAsk(Ctrl.sRecNumMgr.IcRead,Ctrl.sRecNumMgr.IcRead +1);
 	}
-    
 }
 
 
@@ -356,10 +380,8 @@ void	ClearModelSendNum(void)
 *******************************************************************************/
 void    comm_para_flow(StrDevOtr * sDtu,uint8 addrnum)
 {
-//    stcTime     sTime;
-//    uint8       i = 0;
-//    uint32      modelrecvnum =0;
-//    uint32      tmp32;
+    OS_ERR          err;
+    uint8       retrytimes = 0;
 	uint8		Infolen = 0;
 	uint8		*p = (uint8 *)&m_sModelCard;
     
@@ -367,42 +389,42 @@ void    comm_para_flow(StrDevOtr * sDtu,uint8 addrnum)
     * 描述： 根据IC卡类型进行相应操作。卡类型在插入卡后，赋值
     * 	     如果未插卡，则认为是普通数据卡。
     */ 
-    sDtu->Wr.Code	=	sCtrl.sRunPara.CardType;
+    sDtu->Wr.Code	=	Ctrl.sRunPara.CardType;
 	
-    switch (sCtrl.sRunPara.CardType)  	
+    switch (Ctrl.sRunPara.CardType)  	
     {
         //设置密度
     case    DENSITY_CARD: 
-        sDtu->Wr.Info.Density	=	sCtrl.SOilPara.Density;
-        Infolen	=	sizeof(sCtrl.SOilPara.Density);
+        sDtu->Wr.Info.Density	=	Ctrl.SOilPara.Density;
+        Infolen	=	sizeof(Ctrl.SOilPara.Density);
         break;
         
     case    HIGHT_CARD:  
-        sDtu->Wr.Info.Hig	=	sCtrl.SOilPara.Hig;
-        Infolen	=	sizeof(sCtrl.SOilPara.Hig);            
+        sDtu->Wr.Info.Hig	=	Ctrl.SOilPara.Hig;
+        Infolen	=	sizeof(Ctrl.SOilPara.Hig);            
         break;
         
         //模型选择卡
     case    MODEL_SELECT_CARD:   
-        sDtu->Wr.Info.ModelNum	=	sCtrl.SOilPara.ModelNum;
-        Infolen	=	sizeof(sCtrl.SOilPara.ModelNum);
+        sDtu->Wr.Info.ModelNum	=	Ctrl.SOilPara.ModelNum;
+        Infolen	=	sizeof(Ctrl.SOilPara.ModelNum);
         break;
         
         //车型车号
     case    FIX_CARD: 
-        sDtu->Wr.Info.sLocoId.Num	=	sCtrl.sProductInfo.sLocoId.Num;
-        sDtu->Wr.Info.sLocoId.Type	=	sCtrl.sProductInfo.sLocoId.Type;
+        sDtu->Wr.Info.sLocoId.Num	=	Ctrl.sProductInfo.sLocoId.Num;
+        sDtu->Wr.Info.sLocoId.Type	=	Ctrl.sProductInfo.sLocoId.Type;
         
-        Infolen	=	sizeof(	sCtrl.sProductInfo.sLocoId.Num) +
-            sizeof( sCtrl.sProductInfo.sLocoId.Type	);
+        Infolen	=	sizeof(	Ctrl.sProductInfo.sLocoId.Num) +
+            sizeof( Ctrl.sProductInfo.sLocoId.Type	);
         break;
         
         //读数据指示
     case    DATA_CARD_DIS: 
         
-        sDtu->Wr.Info.CardRecNum	=	sCtrl.sRec.StoreCnt;
+        sDtu->Wr.Info.CardRecNum	=	Ctrl.sRec.StoreCnt;
         
-        Infolen	=	sizeof(sCtrl.sRec.StoreCnt);
+        Infolen	=	sizeof(Ctrl.sRec.StoreCnt);
         
         sDtu->ConnCtrl[0].SendFramNum++;
         
@@ -410,9 +432,9 @@ void    comm_para_flow(StrDevOtr * sDtu,uint8 addrnum)
         
     case    DATA_CARD_ERR: 
         
-        sDtu->Wr.Info.Buf[0]	=	sCtrl.sRunPara.CardErrData;
+        sDtu->Wr.Info.Buf[0]	=	Ctrl.sRunPara.CardErrData;
         
-        Infolen	=	sizeof(sCtrl.sRunPara.CardErrData);
+        Infolen	=	sizeof(Ctrl.sRunPara.CardErrData);
         
         sDtu->ConnCtrl[0].SendFramNum++;
         
@@ -430,56 +452,26 @@ void    comm_para_flow(StrDevOtr * sDtu,uint8 addrnum)
         *   后续每200ms发送数据，序号从0开始累加。
         数据发送完成后，序号为0xffffffff。
         */    
-    case    MODEL_CARD: 
-//        if(sizeof(stcModelCard ) > 128 * modelsendnum )
-//        {
-//            if((sizeof(stcModelCard ) - 128 * modelsendnum) > 128 ){
-//                if(modelsendnum == 0)
-//                    p = (uint8 *)&m_sModelCard;		
-//                //数据序号
-//                memcpy((uint8 *)&sDtu->Wr.Info.Buf[0],(uint8 *)&modelsendnum,sizeof(modelsendnum));	
-//                //数据内容
-//                memcpy((uint8 *)&sDtu->Wr.Info.Buf[4],&p[modelsendnum*128],128);
-//                modelsendnum++;
-//                
-//                Infolen = sizeof(modelsendnum)+128;
-//            } else {		
-//                //发送结束信号
-//                modelsendnum = 0xffffffff;
-//                //数据序号
-//                memcpy((uint8 *)&sDtu->Wr.Info.Buf[0],(uint8 *)&modelsendnum,sizeof(modelsendnum));	
-//                //数据内容
-//                memcpy((uint8 *)&sDtu->Wr.Info.Buf[4],&p[modelsendnum*128],(sizeof(stcModelCard ) - 128 * modelsendnum));
-//                
-//                Infolen = sizeof(modelsendnum) + (sizeof(stcModelCard ) - 128 * modelsendnum);
-//                
-//                //更改卡类型。退出模型卡
-//                modelsendnum = 0;
-//                sCtrl.sRunPara.CardType = DATA_CARD;
-//            }
-//        }else{
-//            sCtrl.sRunPara.CardType = 	DATA_CARD; //退出模型卡
-//            sDtu->Wr.Code			=	sCtrl.sRunPara.CardType;
-//            Infolen = 0;
-//            //不发送数据
-//            return;			
-//        }
-//        
-        
+    case    MODEL_CARD: {
         modelsendnum         = 0;
         p = (uint8 *)&m_sModelCard;		
         int     sendmodellen  = 0;  //已发送数据长度
-        while(sizeof(stcModelCard ) > 128 * modelsendnum )
-        {
-            if((sizeof(stcModelCard ) - 128 * modelsendnum) > 128 ){
+        uint16   sendtimes = 0;
+        
+        OSFlagPendAbort(( OS_FLAG_GRP *)&Ctrl.Os.CommEvtFlagGrp,
+                        ( OS_OPT       ) OS_OPT_PEND_ABORT_ALL,
+                        ( OS_ERR      *)&err );
+        
+        while(sizeof(stcModelCard ) > 128 * modelsendnum ) {
+            
+            if((sizeof(stcModelCard ) - 128 * modelsendnum) > 128 ) {
                 if(modelsendnum == 0)
                     p = (uint8 *)&m_sModelCard;		
                 //数据序号
                 memcpy((uint8 *)&sDtu->Wr.Info.Buf[0],(uint8 *)&modelsendnum,sizeof(modelsendnum));	
                 //数据内容
                 memcpy((uint8 *)&sDtu->Wr.Info.Buf[4],&p[sendmodellen],128);
-                modelsendnum++;
-                sendmodellen += 128;
+                
                 
                 Infolen = sizeof(modelsendnum)+128;
             } else {		
@@ -495,30 +487,74 @@ void    comm_para_flow(StrDevOtr * sDtu,uint8 addrnum)
                 sendmodellen = sizeof(stcModelCard ) ;
                 //更改卡类型。退出模型卡
                 //modelsendnum = 0;
-                sCtrl.sRunPara.CardType = DATA_CARD;
+                Ctrl.sRunPara.CardType = DATA_CARD;
             }
             
             
-            CSNC_SendData(	    sDtu->pch,						//通讯控制块
-                                SLAVE_ADDR_OTR,					//源地址
-                                MASTE_ADDR_HOST,				//目标地址
-                                sDtu->ConnCtrl[0].SendFramNum,	//发送帧号
-                                0,								//帧类型，默认为0，在数据区内明确		
-                                (uint8 *)&sDtu->Wr,				//发送缓冲区
-                                Infolen+sizeof(sDtu->Wr.Code)	//发送数据区长度
-                                    );
+            CSNC_SendData(sDtu->pch,                        //通讯控制块
+                          SLAVE_ADDR_OTR,					//源地址
+                          MASTE_ADDR_HOST,				    //目标地址
+                          sDtu->ConnCtrl[0].SendFramNum,	//发送帧号
+                          0,								//帧类型，默认为0，在数据区内明确		
+                          (uint8 *)&sDtu->Wr,				//发送缓冲区
+                          Infolen+sizeof(sDtu->Wr.Code)	//发送数据区长度
+                              );
             
-//            int senddelay = 10000000;
-//            while(senddelay--);
-            OS_ERR  os_err;
-            OSTimeDlyHMSM(0, 0, 0, 200,
-                          OS_OPT_TIME_HMSM_STRICT, &os_err);
+            //数据完成
+            if(modelsendnum == 0xffffffff)
+                return;            
+
+            OS_FLAGS    flags = 
+            OSFlagPend( ( OS_FLAG_GRP *)&Ctrl.Os.CommEvtFlagGrp,
+                       ( OS_FLAGS     ) COMM_EVT_FLAG_OTR_RX,
+                       ( OS_TICK      ) 250,
+                       ( OS_OPT       ) OS_OPT_PEND_FLAG_SET_ANY,
+                       ( CPU_TS      *) NULL,
+                       ( OS_ERR      *)&err);
             
+            
+            /***********************************************
+            * 描述： 如果串口有应答，则继续发送下一帧
+            */
+            if ( err == OS_ERR_NONE ) {                
+                /***********************************************
+                * 描述： 清除标志位
+                */
+                OSFlagPost( ( OS_FLAG_GRP  *)&Ctrl.Os.CommEvtFlagGrp,
+                            ( OS_FLAGS      )COMM_EVT_FLAG_OTR_RX,
+                            ( OS_OPT        )OS_OPT_POST_FLAG_CLR,
+                            ( OS_ERR       *)&err);
+               
+                if( Ctrl.Otr.RxCtrl.FramNum == sDtu->ConnCtrl[0].SendFramNum  && 
+                    Ctrl.Otr.Rd.modelcontrl.code == MODEL_CARD )  {
+                    retrytimes      = 0;
+                    modelsendnum++;
+                    sendmodellen   += 128;
+                } else {
+                    retrytimes++;
+                    if(retrytimes > 2) {
+                        retrytimes      = 0;
+                        modelsendnum++;
+                        sendmodellen   += 128; 
+                   } 
+                }
+            /***********************************************
+            * 描述： 如果串口没有应答，则超时后发送下一帧
+            */
+            } else  {
+                retrytimes++;
+                if(retrytimes > 2) {
+                    retrytimes      = 0;
+                    modelsendnum++;
+                    sendmodellen   += 128;
+
+                }
+            }
         }
         
         return;
         
-        break;
+    } break;
         /***********************************************
         * 描述： 数据卡(默认状态)。
         *   对
@@ -538,7 +574,7 @@ void    comm_para_flow(StrDevOtr * sDtu,uint8 addrnum)
     
 	CSNC_SendData(	sDtu->pch,						//通讯控制块
                   SLAVE_ADDR_OTR,					//源地址
-                  MASTE_ADDR_HOST,				//目标地址
+                  MASTE_ADDR_HOST,				    //目标地址
                   sDtu->ConnCtrl[0].SendFramNum,	//发送帧号
                   0,								//帧类型，默认为0，在数据区内明确		
                   (uint8 *)&sDtu->Wr,				//发送缓冲区

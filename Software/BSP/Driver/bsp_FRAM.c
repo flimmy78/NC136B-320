@@ -19,18 +19,17 @@
 #include "bsp_FRAM.h"
 #include "App_ctrl.h"
 					  
-
 /***********************************************
 * 描述: OS接口
 */
 #if UCOS_EN     == DEF_ENABLED
-    #if OS_VERSION > 30000U
-//    static  OS_SEM			Bsp_Fram_Sem;    	//信号量
-    #else
-    static  OS_EVENT		*Bsp_Fram_Sem;    //信号量
-    #endif
+#if OS_VERSION > 30000U
+static  OS_SEM			Bsp_FramSem;    	//信号量
+#else
+static  OS_EVENT		*Bsp_FramSem;       //信号量
 #endif
-    
+#endif
+
 
 #if (UCOS_EN     == DEF_ENABLED)
 /*******************************************************************************
@@ -38,7 +37,7 @@
 * 功    能： 		等待信号量
 * 入口参数： 	无
 * 出口参数：  	0（操作有误），1（操作成功）
-* 作　 　者： 	redmorningcn
+* 作    者： 	redmorningcn
 * 创建日期： 	2017-05-15
 * 修    改：
 * 修改日期：
@@ -49,17 +48,8 @@ static uint8_t FRAM_WaitEvent(void)
     /***********************************************
     * 描述： OS接口
     */
-
-//#if OS_VERSION > 30000U
-//    return BSP_OS_SemWait(&Bsp_Fram_Sem,0);           	// 等待信号量
-//#else
-//    uint8_t       err;
-//    OSSemPend(Bsp_Fram_Sem,0,&err);                   		// 等待信号量
-//    if ( err = OS_ERR_NONE )
-//      return TRUE;
-//    else
-      return FALSE;
-//#endif
+    //return TRUE;
+    return BSP_OS_SemWait(&Bsp_FramSem,0);           	// 等待信号量
 }
 
 /*******************************************************************************
@@ -67,7 +57,7 @@ static uint8_t FRAM_WaitEvent(void)
 * 功    能： 		释放信号量
 * 入口参数： 	无
 * 出口参数： 	无
-* 作　 　者： 	redmorningcn
+* 作    者： 	redmorningcn
 * 创建日期： 	2017-05-15
 * 修    改：
 * 修改日期：
@@ -75,20 +65,34 @@ static uint8_t FRAM_WaitEvent(void)
 *******************************************************************************/
 static void FRAM_SendEvent(void)
 {
+    BSP_OS_SemPost(&Bsp_FramSem);                        	// 发送信号量
+}
+
+/*******************************************************************************
+* 名    称： FRAM_SendEvent
+* 功    能： 释放信号量
+* 入口参数： 无
+* 出口参数： 无
+* 作    者： redmorningcn
+* 创建日期： 2017-05-15
+* 修    改：
+* 修改日期：
+* 备    注： 仅在使用UCOS操作系统时使用
+*******************************************************************************/
+void BSP_FramOsInit(void)
+{
     /***********************************************
     * 描述： OS接口
     */
-//#if OS_VERSION > 30000U
-//    BSP_OS_SemPost(&Bsp_Fram_Sem);                        	// 发送信号量
-//#else
-//    uint8_t       err;
-//    OSSemPost(Bsp_Fram_Sem);                             		 // 发送信号量
-//#endif
+#if (UCOS_EN     == DEF_ENABLED)
+#if OS_VERSION > 30000U
+    BSP_OS_SemCreate(&Bsp_FramSem,1, "Bsp EepSem");      // 创建信号量
+#else
+    Bsp_FramSem     = OSSemCreate(1);                    // 创建信号量
+#endif
+#endif
 }
-
-#endif /* end of (UCOS_EN     == DEF_ENABLED)*/
-
-
+#endif
 //-------------------------------------------------------------------------------------------------------
 //函数名称: 		WriteFM24CL16()
 //功    能:			对FM24CL16指定地址进行写数据

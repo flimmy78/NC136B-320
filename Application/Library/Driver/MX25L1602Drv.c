@@ -371,7 +371,7 @@ INT08U MX25L1602_WR(INT32U Dst, INT08U* SndbufPt, INT32U NByte)
         //		printfcom0(" %d,%d, ",Dst+i,Dst+i % 4096);
 		if((Dst+i) % 4096 == 0)
 		{
-			MX25L1602_Erase((Dst+i)/4096,(Dst+i)/4096);
+			MX25L1602_Erase((Dst+i)/4096,1+(Dst+i)/4096);
 			//printfcom0("\r\n EraseEraseEraseErase");
 		}
         //////		
@@ -594,18 +594,116 @@ INT08U JudgeFlashIDErrFlg(void)
     
 	return 	flsherrflg;
 }
+/***********************************************
+* 描述: OS接口
+*/
+#if UCOS_EN     == DEF_ENABLED
+#if OS_VERSION > 30000U
+static  OS_SEM			Bsp_FlashSem;    	//信号量
+#else
+static  OS_EVENT      *Bsp_FlashSem;       //信号量
+#endif
+#endif
+#if (UCOS_EN     == DEF_ENABLED)
+/*******************************************************************************
+* 名    称： BSP_FlashWaitEvent
+* 功    能： 等待信号量
+* 入口参数： 无
+* 出口参数： 0（操作有误），1（操作成功）
+* 作    者： redmorningcn
+* 创建日期： 2017-05-15
+* 修    改：
+* 修改日期：
+* 备    注： 仅在使用UCOS操作系统时使用
+*******************************************************************************/
+uint8_t BSP_FlashOsInit(void)
+{    
+    /***********************************************
+    * 描述： OS接口
+    */
+#if (UCOS_EN     == DEF_ENABLED)
+#if OS_VERSION > 30000U
+    BSP_OS_SemCreate(&Bsp_FlashSem,1, "Bsp_FlashSem");      // 创建信号量
+#else
+    Bsp_FramSem     = OSSemCreate(1);                       // 创建信号量
+#endif
+#endif 
+    return TRUE;
+}
 
+/*******************************************************************************
+* 名    称： BSP_FlashWaitEvent
+* 功    能： 等待信号量
+* 入口参数： 无
+* 出口参数： 0（操作有误），1（操作成功）
+* 作    者： redmorningcn
+* 创建日期： 2017-05-15
+* 修    改：
+* 修改日期：
+* 备    注： 仅在使用UCOS操作系统时使用
+*******************************************************************************/
+static uint8_t BSP_FlashWaitEvent(void)
+{
+    /***********************************************
+    * 描述： OS接口
+    */
+    return BSP_OS_SemWait(&Bsp_FlashSem,0); 
+}
+/*******************************************************************************
+* 名    称： FRAM_SendEvent
+* 功    能： 释放信号量
+* 入口参数： 无
+* 出口参数： 无
+* 作    者： redmorningcn
+* 创建日期： 2017-05-15
+* 修    改：
+* 修改日期：
+* 备    注： 仅在使用UCOS操作系统时使用
+*******************************************************************************/
+static void BSP_FlashSendEvent(void)
+{
+    BSP_OS_SemPost(&Bsp_FlashSem);                        	// 发送信号量
+}
+#endif
 INT08U ReadFlsh(uint32 Addr,INT08U *buf,uint32 Len)
 {	
-	return	MX25L1602_RD(Addr, Len,(INT08U* )buf);
+    uint8   len;
+	BSP_FlashWaitEvent();
+    
+    len =	 MX25L1602_RD(Addr, Len,(INT08U* )buf);
+    
+	BSP_FlashSendEvent();
+    return len;
 }
 
 INT08U	WriteFlsh(INT32U Dst, INT08U * sFlshRec, INT32U NByte)
 {
-	return	MX25L1602_WR(Dst,(INT08U*)sFlshRec,NByte);
+    uint8   len;
+	BSP_FlashWaitEvent();
+    
+	len =	MX25L1602_WR(Dst,(INT08U*)sFlshRec,NByte);
+    
+	BSP_FlashSendEvent();
+    return len;
+
 }
 
+//测试flash读写
+void    judgeFlshReadWriteTest(void)
+{
+    uint32  i = 0;
+    uint32  tmp;
+    for( i = 0 ;i < 0xffffffff;i++)
+    {
+        WriteFlsh(i*4,(uint8 *)&i,sizeof(i));
+        ReadFlsh(i*4,(uint8 *)&tmp,sizeof(tmp));
+        if(tmp == i)
+            tmp *=4;
+        else
+            tmp *=3;
 
+    }
+}
 
 /*********************************************************************************************************
 ** End Of File

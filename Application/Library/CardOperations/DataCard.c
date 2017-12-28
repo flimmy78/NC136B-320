@@ -18,8 +18,6 @@
 #define		CARD_BUF_LEN		1024			//IC卡处理缓冲区大小	
 uint8 FRAM_StoreRecNumMgr(StrRecNumMgr  *SRecNumMgr);
 
-extern  stcSysCtrl  sCtrl;
-
 
 //----------------------------------------------------------------------
 //函数名称:  	uint32_t  GetWritePageLen(uint32_t Start, uint32_t WriteLen,uint32_t MaxWriteLen)
@@ -210,14 +208,11 @@ void	DataCard(uint8_t copyflg)
 	ReadCard(CardAddrTmp,(uint8 *)&WriteCardTimes,sizeof(WriteCardTimes));	
     
 	//计算数据文件开始地址。
-	if(WriteCardTimes == 0 || WriteCardTimes >= 100 )
-	{
+	if(WriteCardTimes == 0 || WriteCardTimes >= 100 ) {
 		CardStartAddr = CARD_DATA_ADDR;
 		if(WriteCardTimes > 100)
 			WriteCardTimes = 0;
-	}
-	else
-	{
+	} else {
 		CardAddrTmp = 	CARD_FLG_ADDR+
                         sizeof(stcCardID)+
                         sizeof(stcCardType)+
@@ -228,8 +223,7 @@ void	DataCard(uint8_t copyflg)
         
 		CardStartAddr 	= sCardIndex.EndAddr;
 		
-		if(CardStartAddr < CARD_DATA_ADDR)
-		{
+		if(CardStartAddr < CARD_DATA_ADDR) {
 			CardStartAddr = CARD_DATA_ADDR;
 		}
 	}
@@ -245,28 +239,25 @@ void	DataCard(uint8_t copyflg)
     
     
 	//计算记录条数
-	if(sCtrl.sRecNumMgr.IcRead >= sCtrl.sRecNumMgr.CardRead)	
-	{
-		NoReadRecNum	= 		sCtrl.sRecNumMgr.IcRead -
-                             	sCtrl.sRecNumMgr.CardRead;  //Flsh的未读记录长度
+	if(Ctrl.sRecNumMgr.IcRead >= Ctrl.sRecNumMgr.CardRead) {
+		NoReadRecNum	= 		Ctrl.sRecNumMgr.IcRead -
+                             	Ctrl.sRecNumMgr.CardRead;  //Flsh的未读记录长度
         
 		if(copyflg == 1)
-			NoReadRecNum = sCtrl.sRecNumMgr.IcRead;			//copy卡
+			NoReadRecNum = Ctrl.sRecNumMgr.IcRead;			//copy卡
         
         if(NoReadRecNum < 2)                                //没有新数据记录
         {
-            sCtrl.sRunPara.CardType     = DATA_CARD_ERR;    //指示卡错误
-            sCtrl.sRunPara.CardErrData  = 0x04;             //模块无新数据记录
+            Ctrl.sRunPara.CardType     = DATA_CARD_ERR;    //指示卡错误
+            Ctrl.sRunPara.CardErrData  = 0x04;             //模块无新数据记录
             return;
         }
-	}
-	else
-	{
-		sCtrl.sRecNumMgr.CardRead = sCtrl.sRecNumMgr.IcRead;	//序号异常，重新幅值
+	} else {
+		Ctrl.sRecNumMgr.CardRead = Ctrl.sRecNumMgr.IcRead;	//序号异常，重新幅值
 		NoReadRecNum = 0;
         
-        sCtrl.sRunPara.CardType     = DATA_CARD_ERR;    //指示卡错误
-        sCtrl.sRunPara.CardErrData  = 0x02;             //记录序号错误。数据重新存储
+        Ctrl.sRunPara.CardType     = DATA_CARD_ERR;    //指示卡错误
+        Ctrl.sRunPara.CardErrData  = 0x02;             //记录序号错误。数据重新存储
 		return;
 	}
     
@@ -275,16 +266,16 @@ void	DataCard(uint8_t copyflg)
     
     //IC卡可写数据长度小于5条，则范围IC卡已满标识，退出卡操作
     if(CardMaxRecNum < 5){
-        sCtrl.sRunPara.CardType     = DATA_CARD_ERR;    //指示卡错误
-        sCtrl.sRunPara.CardErrData  = 0x03;             //IC卡已满 
+        Ctrl.sRunPara.CardType     = DATA_CARD_ERR;    //指示卡错误
+        Ctrl.sRunPara.CardErrData  = 0x03;             //IC卡已满 
         return;
     }
 	//要写数据长度，根据空检大小，剩余记录号，IC卡余量计算。	
 	FlshRecCnt 		= GetReadFlshRecCnt(NoReadRecNum,CardMaxRecNum);	
     
 	//计算开始记录号
-	FlshStartRecNum = sCtrl.sRecNumMgr.IcRead  - FlshRecCnt ;
-    storeCardRead   = sCtrl.sRecNumMgr.IcRead;
+	FlshStartRecNum = Ctrl.sRecNumMgr.IcRead  - FlshRecCnt ;
+    storeCardRead   = Ctrl.sRecNumMgr.IcRead;
     /********************************************
     *	开始写数据
     */
@@ -298,22 +289,21 @@ void	DataCard(uint8_t copyflg)
     
 	BufWriteLen = 0;
     int writepagetimes = 0;
-	while( FinishLen < MaxWriteLen)								//写完退出
-	{
-		ReadFlshRec((stcFlshRec *)&sCtrl.sRec,FlshStartRecNum++);//从flash中读出数据
+	while( FinishLen < MaxWriteLen) 	{						//写完退出
+	
+		ReadFlshRec((stcFlshRec *)&Ctrl.sRec,FlshStartRecNum++);//从flash中读出数据
         
-        if(sCtrl.sRec.StoreCnt == 0xffffffff)
-           sCtrl.sRec.StoreCnt  =  FlshStartRecNum;
+        if(Ctrl.sRec.StoreCnt == 0xffffffff)
+           Ctrl.sRec.StoreCnt  =  FlshStartRecNum;
         
 		WritePageLen = GetWritePageLen(	CardStartAddr,			//开始地址
                                         FinishLen,				//已完成长度
                                         MaxWriteLen);			//最大数据长度
         
-		memcpy(&CardBuf[BufWriteLen],(uint8_t *)&sCtrl.sRec,sizeof(stcFlshRec));
+		memcpy(&CardBuf[BufWriteLen],(uint8_t *)&Ctrl.sRec,sizeof(stcFlshRec));
 		BufWriteLen += sizeof(stcFlshRec);
         
-		if(WritePageLen == BufWriteLen || WritePageLen < BufWriteLen)
-		{
+		if(WritePageLen == BufWriteLen || WritePageLen < BufWriteLen) {
 			NextRecCardAddr = CardStartAddr + FinishLen;        //IC卡下一地址
             
    			WriteCard(NextRecCardAddr,CardBuf,WritePageLen);    //写卡
@@ -322,35 +312,43 @@ void	DataCard(uint8_t copyflg)
             
 			BufWriteLen = 0;
             
-			sCtrl.sRunPara.CardType = DATA_CARD_DIS;            //IC卡指示
+			Ctrl.sRunPara.CardType = DATA_CARD_DIS;            //IC卡指示
             
             writepagetimes++;
-            if(writepagetimes %20 == 0){
-            //
+            if(writepagetimes % 10 == 0) {
+                OSSetWdtFlag(( OS_FLAGS     ) WDT_FLAG_DUMP); 
                 OS_ERR  os_err;
-                BSP_LED_Toggle(7);
                 BSP_LED_Toggle(8);
-
-                OSFlagPost( ( OS_FLAG_GRP  *)&sCtrl.Os.CommEvtFlagGrp,
+                
+                OSFlagPost( ( OS_FLAG_GRP  *)&Ctrl.Os.CommEvtFlagGrp,
                            ( OS_FLAGS      )COMM_EVT_FLAG_PLUG_CARD,
                            ( OS_OPT        )OS_OPT_POST_FLAG_SET,
                            ( OS_ERR       *)&os_err);
 
             }
+            
             //没有ic卡也要退出
-            //if(sCtrl.sRunPara.plugcard == 0)                    //
             if(ReadIC_SWT() == 0)
                 return;
 		}
 	}
-    
+    if ( writepagetimes ) {
+        OS_ERR  os_err;
+        BSP_LED_Toggle(8);
+        
+        OSFlagPost( ( OS_FLAG_GRP  *)&Ctrl.Os.CommEvtFlagGrp,
+                   ( OS_FLAGS      )COMM_EVT_FLAG_PLUG_CARD,
+                   ( OS_OPT        )OS_OPT_POST_FLAG_SET,
+                   ( OS_ERR       *)&os_err);
+
+     }
 	/********************************************
 	*	 IC卡完成，修改索引页
 	*/
-    //sCardIndex.LocoNum      = sCtrl.sRec.LocoNum;
-    memcpy((uint8 *)&sCardIndex.LocoNum,(uint8 *)&sCtrl.sRec.LocoNum,sizeof(sCardIndex.LocoNum));
-    //sCardIndex.LocoType     = sCtrl.sRec.LocoTyp;
-    memcpy((uint8 *)&sCardIndex.LocoType,(uint8 *)&sCtrl.sRec.LocoTyp,sizeof(sCtrl.sRec.LocoTyp));
+    //sCardIndex.LocoNum      = Ctrl.sRec.LocoNum;
+    memcpy((uint8 *)&sCardIndex.LocoNum,(uint8 *)&Ctrl.sRec.LocoNum,sizeof(sCardIndex.LocoNum));
+    //sCardIndex.LocoType     = Ctrl.sRec.LocoTyp;
+    memcpy((uint8 *)&sCardIndex.LocoType,(uint8 *)&Ctrl.sRec.LocoTyp,sizeof(Ctrl.sRec.LocoTyp));
 
 	sCardIndex.StartAddr	    = CardStartAddr;
 	sCardIndex.EndAddr 		    = CardStartAddr + MaxWriteLen;
@@ -374,16 +372,16 @@ void	DataCard(uint8_t copyflg)
 	
 	WriteCard(CardAddrTmp,(uint8_t *)&sCardIndex,sizeof(stcCardIndex));
     
-	if(copyflg == 0)
-	{
-        //sCtrl.sRecNumMgr.CardRead   = sCtrl.sRecNumMgr.GrsRead; //已读记录号
-        sCtrl.sRecNumMgr.CardRead   = storeCardRead; //已读记录号
+	if(copyflg == 0) {
+        //Ctrl.sRecNumMgr.CardRead   = Ctrl.sRecNumMgr.GrsRead; //已读记录号
+        Ctrl.sRecNumMgr.CardRead   = storeCardRead; //已读记录号
         
-		FRAM_StoreRecNumMgr((StrRecNumMgr * )&sCtrl.sRecNumMgr);
+		FRAM_StoreRecNumMgr((StrRecNumMgr * )&Ctrl.sRecNumMgr);
 	}
 	
-	sCtrl.sRunPara.CardType = DATA_CARD_FIN;					//IC卡结束
+	Ctrl.sRunPara.CardType = DATA_CARD_FIN;					//IC卡结束
 } 
+
 uint32  GetRecNumAddr(uint32 FlshRecNum);
 uint8 ReadFlsh(uint32 Addr,uint8 *buf,uint32 Len);
 

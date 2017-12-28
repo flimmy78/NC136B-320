@@ -66,6 +66,7 @@ extern OS_FLAGS         WdtFlags;
 extern OS_FLAG_GRP      BeepFlagGrp;            //蜂鸣器标志组
 extern OS_FLAGS         BeepFlags;
 
+extern OS_SEM			 Bsp_Card_Sem;    	    //信号量 IC卡的信号量
 /*******************************************************************************
  * LOCAL VARIABLES
  */
@@ -79,13 +80,12 @@ extern OS_FLAGS         BeepFlags;
 *        例程只写了4个标志位，可自行添加。
 *        标志组是32位，一个标志组最多可添加32个标志位
 */
-#define WDT_FLAG_DTU                (1<<0)    // 0X00000001
 #define WDT_FLAG_COMM               (1<<0)    // 0X00000001
-#define WDT_FLAG_SEN                (1<<1)    // 0X00000002
+#define WDT_FLAG_DUMP               (1<<1)    // 0X00000002
 #define WDT_FLAG_TMR                (1<<2)    // 0X00000004
 #define WDT_FLAG_CTRL               (1<<3)    // 0X00000008
 #define WDT_FLAG_BEEP               (1<<4)    // 0X00000010
-#define WDT_FLAG_OSAL               (1<<5)    // 0X00000020
+#define WDT_FLAG_LED                (1<<5)    // 0X00000020
 #define WDT_FLAG_DISP               (1<<6)    // 0X00000040
 #define WDT_FLAG_MATER              (1<<7)    // 0X00000040
 

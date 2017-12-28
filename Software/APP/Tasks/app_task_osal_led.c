@@ -90,7 +90,6 @@ static  void    AppTaskLed           (void *p_arg);
 /*******************************************************************************
  * EXTERN VARIABLES
  */
-extern  stcSysCtrl  sCtrl;
 
 /*******************************************************************************/
 
@@ -106,161 +105,62 @@ extern  stcSysCtrl  sCtrl;
  * 修改日期：
  *******************************************************************************/
 
-//#if ( OSAL_EN == DEF_ENABLED )
 osalEvt  TaskLedEvtProcess(INT8U task_id, osalEvt task_event)
-//#else
-//static  void  AppTaskLed (void *p_arg)
-//#endif
-{
-//    OS_ERR      err;
-//    INT32U      ticks;
-//    INT32S      dly;
-//    CPU_SR_ALLOC();
-//    
-//    /***********************************************
-//    * 描述：Task body, always written as an infinite loop.
-//    */
-//#if ( OSAL_EN == DEF_ENABLED )
-//#else
-//    TaskInitLed();
-//    
-//    while (DEF_TRUE) {
-//#endif
-//        /***********************************************
-//        * 描述： 本任务看门狗标志置位
-//        */
-//        OS_FlagPost ((OS_FLAG_GRP *)&WdtFlagGRP,
-//                     (OS_FLAGS     ) WDT_FLAG_LED,
-//                     (OS_OPT       ) OS_OPT_POST_FLAG_SET,
-//                     (CPU_TS       ) 0,
-//                     (OS_ERR      *) &err);
-//        /***********************************************
-//        * 描述： 得到系统当前时间
-//        */
-//        ticks = OSTimeGet(&err);
-//        
-//#if ( OSAL_EN == DEF_ENABLED )
-        if( task_event & OS_EVT_LED_TICKS ) {
-//#else
-//#endif
-            static  uint8   mode = 0;
-            static  uint8   dlytimes = 0;
-            /***********************************************
-            * 描述： 开机显示
-            */
-            while(mode < 5)
-            {
-                mode++;
-                
-                BSP_LED_Toggle(7);      //对应指示灯点亮
-                BSP_LED_Toggle(8);
-                ///BSP_LED_On(mode);
-                osal_start_timerEx( OS_TASK_ID_LED,
-                                    OS_EVT_LED_TICKS,
-                                    200);
-                return ( task_event ^ OS_EVT_LED_TICKS );
-            }
-//
-//            
-//            /***********************************************
-//            * 描述： MTR接口通讯指示,有通讯数据，指示灯闪烁
-//            */
-//
-//            /***********************************************
-//            * 描述： OTR接口通讯指示,有通讯数据，指示灯闪烁
-//            */
-//            if(sCtrl.Otr.ConnectFlag){
-//                BSP_LED_Toggle(2);  //对应指示灯点亮
-//            }else{
-//                BSP_LED_Off(2);     //对应指示灯点关闭
-//            }
-//            
-//
-//            /***********************************************
-//            * 描述： 有速度信号，指示灯闪烁。如果无速度信号，
-//            * 在取计算值超时清零。
-//            */
-//            if(sCtrl.sRec.Myspeed1){
-//                BSP_LED_Toggle(4);  //对应指示灯点亮
-//            }else{
-//                BSP_LED_Off(4);     //对应指示灯点关闭
-//            }
-//            
-//            /***********************************************
-//            * 描述： 有速度信号，指示灯闪烁
-//            * 无信号时，在取计算值超时清零。
-//            */
-//            if(sCtrl.sRec.Myspeed2){
-//                BSP_LED_Toggle(5);  //对应指示灯点亮
-//            }else{
-//                BSP_LED_Off(5);     //对应指示灯点关闭
-//            }
-//            
-//            /***********************************************
-//            * 描述： 有速度信号，指示灯闪烁
-//            * 无信号时，在取计算值超时时清零。
-//            */
-//            if(sCtrl.sRec.MyEngRotSpd){
-//                BSP_LED_Toggle(6);  //对应指示灯点亮
-//            }else{
-//                BSP_LED_Off(6);     //对应指示灯点关闭
-//            }
-//            
-//            /***********************************************
-//            * 描述： 工况有信号
-//            * 
-//            */
-//            if(sCtrl.sRec.MyLocoWorkState){
-//                BSP_LED_Toggle(7);  //对应指示灯点亮
-//            }else{
-//                BSP_LED_Off(7);     //对应指示灯点关闭
-//            }
+{    
+    /***********************************************
+    * 描述： 本任务看门狗标志置位
+    */
+    OSSetWdtFlag(( OS_FLAGS     ) WDT_FLAG_LED);
+    
+    if( task_event & OS_EVT_LED_TICKS ) {
+        static  uint8   mode = 0;
+        static  uint8   dlytimes = 0;
+        /***********************************************
+        * 描述： 开机显示
+        */
+        while(mode < 5) {
+            mode++;
             
-            /***********************************************
-            * 描述： 运行指示灯
-            */
+            BSP_LED_Toggle(7);                          //对应指示灯点亮
+            BSP_LED_Toggle(8);
             
-            if(sCtrl.sRunPara.plugcard == 1){
-                BSP_LED_Toggle(7);  //对应指示灯点亮
-            }else
-            {
-                BSP_LED_Off(7);
-            }
-            if(sCtrl.Otr.ConnCtrl[0].ErrFlg == 0){  //通讯正常，快闪0.1s
-                BSP_LED_Toggle(8);
-            }else
-            {
-                dlytimes++;
-                if(dlytimes > 5){   
-                    BSP_LED_Toggle(8);              //通讯异常，慢闪0.5s
-                    dlytimes = 0;
-                }
-            }
-            
-//            LedWorkTimes[8] = LED_TOGGLE_CNT;
-
-            /***********************************************
-            * 描述： 根据工作次数，点亮相应的指示。
-            */
-//            for(uint8 i=1;i<BSP_LED_NUM+1;i++){
-//                if(LedWorkTimes[i]){
-//                    LedWorkTimes[i]--;
-//                    BSP_LED_Toggle(i);  //对应指示灯点亮
-//                }else{
-//                    BSP_LED_Off(i);     //对应指示灯点关闭
-//                }
-//            }
-
-            /***********************************************
-            * 描述： 定时器重启
-            */
             osal_start_timerEx( OS_TASK_ID_LED,
-                                OS_EVT_LED_TICKS,
-                                50);
+                               OS_EVT_LED_TICKS,
+                               200);
             return ( task_event ^ OS_EVT_LED_TICKS );
         }
         
-        return  task_event;
+        /***********************************************
+        * 描述： 运行指示灯
+        */
+        
+        //if(Ctrl.sRunPara.plugcard == 1){
+        //    BSP_LED_Toggle(7);  //对应指示灯点亮
+        //}else {
+        //    BSP_LED_Off(7);
+        //}
+        
+        if(Ctrl.Otr.ConnCtrl[0].ErrFlg == 0){  //通讯正常，快闪0.1s
+            BSP_LED_Toggle(8);
+        } else {
+            dlytimes++;
+            if(dlytimes > 5){   
+                BSP_LED_Toggle(8);              //通讯异常，慢闪0.5s
+                dlytimes = 0;
+            }
+        }        
+        
+        /***********************************************
+        * 描述： 定时器重启
+        */
+        osal_start_timerEx( OS_TASK_ID_LED,
+                           OS_EVT_LED_TICKS,
+                           50);
+        
+        return ( task_event ^ OS_EVT_LED_TICKS );
+    }
+    
+    return  0;
 }
 
 
@@ -276,23 +176,11 @@ osalEvt  TaskLedEvtProcess(INT8U task_id, osalEvt task_event)
  *******************************************************************************/
 void TaskInitLed(void)
 {    
-//    /***********************************************
-//    * 描述： 初始化本任务用到的相关硬件
-//    */
-//    BSP_LedInit();
-
     /***********************************************
     * 描述： 在看门狗标志组注册本任务的看门狗标志
     */
-    //WdtFlags |= WDT_FLAG_LED;
-    /*************************************************
-    * 描述：启动事件查询
-    */
-//    for(uint8 i = 0; i< 8;i++)
-//    {
-//        LedWorkTimes[i] = 0;
-//    }
-//    
+    OSRegWdtFlag(( OS_FLAGS     )WDT_FLAG_LED );
+    
     osal_start_timerEx( OS_TASK_ID_LED,
                         OS_EVT_LED_TICKS,
                         1000);

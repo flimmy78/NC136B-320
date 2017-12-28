@@ -76,6 +76,7 @@ uint8 FRAM_ReadRunPara(stcRunPara  *sRunPara);
 OS_FLAG_GRP         WdtFlagGRP;                     //看门狗标志组
 OS_FLAGS            WdtFlags;
 
+stcSysCtrl          Ctrl;
 /*******************************************************************************
  * LOCAL FUNCTIONS
  *
@@ -85,46 +86,6 @@ OS_FLAGS            WdtFlags;
 /*******************************************************************************
  * GLOBAL FUNCTIONS
  */
-
-stcSysCtrl       sCtrl;
-
-
-void    app_init_sctrl(void)
-{
-    sCtrl.Password      =   0;
-    sCtrl.SoftWareID    =   1705;       //年月，版本
-    
-//开始标示    //存储时间间隔
-    sCtrl.sRunPara.StartFlg = 1;  
-    sCtrl.sRunPara.SysSta   = 0;        
-    
-   	FRAM_StoreRunPara((stcRunPara *) &sCtrl.sRunPara);
-    
-    sCtrl.sRunPara.plugcard = 0;        //没插卡      
-    sCtrl.sRunPara.StoreTime= 60;       
-    
-//IC模块 数据 初始化    
-    sCtrl.Otr.ConnCtrl[0].ConnFlg   = 1;
-    sCtrl.Otr.ConnCtrl[0].ErrFlg    = 0;
-    sCtrl.Otr.ConnCtrl[0].MasterAddr= 0x80;
-    sCtrl.Otr.ConnCtrl[0].SlaveAddr = SLAVE_ADDR_OTR;
-    sCtrl.Otr.ConnCtrl[0].RecvEndFlg= 0;
-    sCtrl.Otr.ConnCtrl[0].SendFlg   = 0;
-    sCtrl.Otr.ConnCtrl[0].SendFramNum=1;
-    sCtrl.Otr.ConnCtrl[0].TimeOut   = 10;       
-    
-//IC模块 参数 初始化    
-    sCtrl.Otr.ConnCtrl[1].ConnFlg   = 1;
-    sCtrl.Otr.ConnCtrl[1].ErrFlg    = 0;
-    sCtrl.Otr.ConnCtrl[1].MasterAddr= 0x80;
-    sCtrl.Otr.ConnCtrl[1].SlaveAddr = SLAVE_ADDR_SET;
-    sCtrl.Otr.ConnCtrl[1].RecvEndFlg= 0;
-    sCtrl.Otr.ConnCtrl[1].SendFlg   = 0;
-    sCtrl.Otr.ConnCtrl[1].SendFramNum=1;
-    sCtrl.Otr.ConnCtrl[1].TimeOut   = 10;       
-}
-
-
 
 /*******************************************************************************
  * EXTERN VARIABLES
@@ -145,23 +106,7 @@ void    app_init_sctrl(void)
  * 修改日期：
  *******************************************************************************/
  void App_Main(void)
- {
-     
-    //初始化flash
-    InitFlashIO();
-    //初始化fram
-    GPIO_Fram_Init();
-    
-    app_init_sctrl();                  //初始化全局变量
-     
-   //读sCtrl 
-    FRAM_ReadRecNumMgr((StrRecNumMgr  *)&sCtrl.sRecNumMgr);         //读记录号
-    FRAM_ReadProductInfo((StrProductInfo  *)&sCtrl.sProductInfo);   //读产品编号
-//    FRAM_ReadCurRecord((stcFlshRec  *)&sCtrl.sRec);                 //读当前记录
-//    FRAM_ReadOilPara((StrOilPara  *)&sCtrl.SOilPara);               //读计算参数
-    FRAM_ReadRunPara((stcRunPara  *)&sCtrl.sRunPara);               //读运行参数
-//    FRAM_ReadCalcModel((stcCalcModel  *)&sCtrl.sCalcModel);         //读计算模型
-     
+ { 
     //NVIC_SetVTOR(0x10000);
     /***********************************************
     * 描述： Disable all interrupts.
@@ -295,6 +240,61 @@ void    app_init_sctrl(void)
                   OS_TASK_PRO_LED,                  // 任务优先级
                   OS_TASK_ID_LED);                  // 任务ID    
  }
+  
+void app_init_sctrl(void)
+{
+    extern uint8_t BSP_FlashOsInit(void);
+    //初始化fram 
+    GPIO_Fram_Init();
+    BSP_FramOsInit(); 
+    WdtReset();
+    //初始化flash
+    InitFlashIO();
+    BSP_FlashOsInit(); 
+    WdtReset();
+    
+    Ctrl.Password      =   0;
+    Ctrl.SoftWareID    =   1705;       //年月，版本
+    
+    //开始标示    //存储时间间隔
+    Ctrl.sRunPara.StartFlg = 1;  
+    Ctrl.sRunPara.SysSta   = 0;        
+    
+   	FRAM_StoreRunPara((stcRunPara *) &Ctrl.sRunPara);
+    
+    Ctrl.sRunPara.plugcard = 0;        //没插卡      
+    Ctrl.sRunPara.StoreTime= 60;       
+    
+    //IC模块 数据 初始化    
+    Ctrl.Otr.ConnCtrl[0].ConnFlg   = 1;
+    Ctrl.Otr.ConnCtrl[0].ErrFlg    = 0;
+    Ctrl.Otr.ConnCtrl[0].MasterAddr= 0x80;
+    Ctrl.Otr.ConnCtrl[0].SlaveAddr = SLAVE_ADDR_OTR;
+    Ctrl.Otr.ConnCtrl[0].RecvEndFlg= 0;
+    Ctrl.Otr.ConnCtrl[0].SendFlg   = 0;
+    Ctrl.Otr.ConnCtrl[0].SendFramNum=1;
+    Ctrl.Otr.ConnCtrl[0].TimeOut   = 10;       
+    
+    //IC模块 参数 初始化    
+    Ctrl.Otr.ConnCtrl[1].ConnFlg   = 1;
+    Ctrl.Otr.ConnCtrl[1].ErrFlg    = 0;
+    Ctrl.Otr.ConnCtrl[1].MasterAddr= 0x80;
+    Ctrl.Otr.ConnCtrl[1].SlaveAddr = SLAVE_ADDR_SET;
+    Ctrl.Otr.ConnCtrl[1].RecvEndFlg= 0;
+    Ctrl.Otr.ConnCtrl[1].SendFlg   = 0;
+    Ctrl.Otr.ConnCtrl[1].SendFramNum=1;
+    Ctrl.Otr.ConnCtrl[1].TimeOut   = 10; 
+    
+    WdtReset();
+    //读sCtrl 
+    FRAM_ReadRecNumMgr((StrRecNumMgr  *)&Ctrl.sRecNumMgr);         //读记录号
+    FRAM_ReadProductInfo((StrProductInfo  *)&Ctrl.sProductInfo);   //读产品编号
+    //    FRAM_ReadCurRecord((stcFlshRec  *)&Ctrl.sRec);                 //读当前记录
+    //    FRAM_ReadOilPara((StrOilPara  *)&Ctrl.SOilPara);               //读计算参数
+    FRAM_ReadRunPara((stcRunPara  *)&Ctrl.sRunPara);               //读运行参数
+    //    FRAM_ReadCalcModel((stcCalcModel  *)&Ctrl.sCalcModel);         //读计算模型
+    
+}
 /*******************************************************************************
  *              end of file                                                    *
  *******************************************************************************/

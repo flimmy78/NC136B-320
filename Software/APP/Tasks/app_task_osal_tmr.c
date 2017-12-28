@@ -29,6 +29,7 @@
 #include "app.h"
 #include "bsp_timer.h"
 #include "os_cfg_app.h"
+#include <app_ctrl.h>
 
 #ifdef VSC_INCLUDE_SOURCE_FILE_NAMES
 const  CPU_CHAR  *app_task_tmr__c = "$Id: $";
@@ -52,7 +53,6 @@ const  CPU_CHAR  *app_task_tmr__c = "$Id: $";
 /*******************************************************************************
  * TYPEDEFS
  */
-extern     stcSysCtrl   sCtrl;
 
 /*******************************************************************************
  * LOCAL VARIABLES
@@ -105,49 +105,41 @@ uint8_t ReadIC_SWT(void);
 osalEvt  TaskTmrEvtProcess(INT8U task_id, osalEvt task_event)
 {
     OS_ERR      err;
-//    static BOOL     chang_flag = FALSE;
     
     /***********************************************
     * 描述： 本任务看门狗标志置位
     */
-    OSFlagPost ((OS_FLAG_GRP *)&WdtFlagGRP,
-                 (OS_FLAGS     ) WDT_FLAG_TMR,
-                 (OS_OPT       ) OS_OPT_POST_FLAG_SET,
-                 (OS_ERR      *) &err);    
-  
+    OSSetWdtFlag(( OS_FLAGS     ) WDT_FLAG_TMR);   
+    
     /***************************************************************************
     * 描述： 统计模块和无线发送模块通讯定时器，
     COMM_EVT_FLAG_DTU_TIMEOUT 标示。
-    */
-    
-    static  uint8   mPlugTime = 0;
-    static  uint8   mNoPlugTime = 0;
-
-    if( task_event & OS_EVT_TMR_SEC ) {        
-
-	   //无卡状态下，插入IC卡
-	   if(ReadIC_SWT() == 1 && sCtrl.sRunPara.plugcard == 0)  //无卡状态下，插入IC卡卡，发送信号量
-		{
-	        if( mPlugTime++ > 2)                          	
-	        {
-	            sCtrl.sRunPara.plugcard = 1;
-				
-				BSP_OS_SemPost(&Bsp_Card_Sem);              //发送信号量，启动 IC卡任务       
-
+    */    
+    if( task_event & OS_EVT_TMR_SEC ) {
+        static  uint8   mPlugTime = 0;
+        static  uint8   mNoPlugTime = 0;
+        
+        //无卡状态下，插入IC卡
+        //无卡状态下，插入IC卡卡，发送信号量
+        if(ReadIC_SWT() == 1 && Ctrl.sRunPara.plugcard == 0) {
+	        if( mPlugTime++ > 2) {
+	            Ctrl.sRunPara.plugcard = 1;
+				//发送信号量，启动 IC卡任务  
+				BSP_OS_SemPost(&Bsp_Card_Sem);
+                
 	            mNoPlugTime = 0;
 	        }
-		//有卡状态，
-		} else if( ReadIC_SWT() == 0 &&  sCtrl.sRunPara.plugcard == 1) {//有卡状态，且已经拔出IC卡      
-	        if( mNoPlugTime++ > 2)                          	
-	        {
-	            sCtrl.sRunPara.plugcard = 0;
-
+        //有卡状态，且已经拔出IC卡   
+		} else if ( ReadIC_SWT() == 0 &&  Ctrl.sRunPara.plugcard == 1) {   
+	        if( mNoPlugTime++ > 2) {
+	            Ctrl.sRunPara.plugcard = 0;                
 	            mPlugTime = 0;
 	        }
 	    }
-
+        
         return ( task_event ^ OS_EVT_TMR_SEC );
     }
+    
     return 0;
 }
 
@@ -164,17 +156,13 @@ osalEvt  TaskTmrEvtProcess(INT8U task_id, osalEvt task_event)
 void TaskInitTmr(void)
 {
     /***********************************************
-    * 描述： 初始化
-    */    
-       
-    /***********************************************
     * 描述： 在看门狗标志组注册本任务的看门狗标志
     */
-    WdtFlags |= WDT_FLAG_TMR;
+    //OSRegWdtFlag(( OS_FLAGS     )WDT_FLAG_TMR );
     /*************************************************
     * 描述：启动事件查询
     */
-    osal_start_timerRl( OS_TASK_ID_TMR, OS_EVT_TMR_SEC, OS_TICKS_PER_SEC/10);
+    //osal_start_timerRl( OS_TASK_ID_TMR, OS_EVT_TMR_SEC, OS_TICKS_PER_SEC/10);
 }
 
 /*******************************************************************************

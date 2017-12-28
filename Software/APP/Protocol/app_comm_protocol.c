@@ -365,7 +365,7 @@ void	CSNC_SendData(	MODBUS_CH *pch,
         uint8   times = 0;
          while(pch->RxBufByteCtr != 0)
          {
-            BSP_OS_TimeDly(5);
+            BSP_OS_TimeDly(1);
             times++;
              if(pch->RxBufByteCtr == 0 || times > 10){
                  break;

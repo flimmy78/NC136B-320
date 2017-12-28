@@ -15,7 +15,7 @@ void	 NOP(void)
 void	nop(void)
 {
 	uint8 i;
-    i =20;
+    i =30;
 	NOP();
 	while(i--);
 }

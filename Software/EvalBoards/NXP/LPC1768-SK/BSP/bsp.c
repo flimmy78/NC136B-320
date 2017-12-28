@@ -293,145 +293,145 @@ void  BSP_Init (void)
     CPU_INT16U    reg_to;
     CPU_INT32U    reg_val;
     CPU_SR_ALLOC();
-
-                                                                /* ---------------- CLOCK INITIALIZATION -------------- */
+    
+    /* ---------------- CLOCK INITIALIZATION -------------- */
     BSP_REG_FLASHCFG = BSP_MSK_FLASHCFG_CLK_6                   /* Set 6 cycles to acces the Flash memory.              */
-                     | BSP_MSK_FLASHCFG_RST_VAL;
-                                                                /* ----------- MAIN OSCILLATOR INITIALIZATION --------- */
+        | BSP_MSK_FLASHCFG_RST_VAL;
+    /* ----------- MAIN OSCILLATOR INITIALIZATION --------- */
     DEF_BIT_CLR(BSP_REG_SCS, BSP_BIT_SCS_OSCRANGE);             /* Set the main oscillator range                        */
-
-
+    
+    
     reg_to = BSP_VAL_MAX_TO;
-
+    
     DEF_BIT_SET(BSP_REG_SCS, BSP_BIT_SCS_OSCEN);                /* Enable the Main Oscillator                           */
-
-                                                                /* Wait until the main oscillator is enabled.           */
+    
+    /* Wait until the main oscillator is enabled.           */
     while (DEF_BIT_IS_CLR(BSP_REG_SCS, BSP_BIT_SCS_OSCSTAT) &&
-          (reg_to > 0u)) {
-        reg_to--;
-    }
-
+           (reg_to > 0u)) {
+               reg_to--;
+           }
+    
     if (reg_to == 0u) {                                         /* Configuration fail                                   */
         return;
     }
-
+    
     BSP_REG_PCLKSEL0 = DEF_BIT_NONE;                            /* All peripheral clock runrs at CPU_Clk / 4 = 25 Mhz   */
     BSP_REG_PCLKSEL1 = DEF_BIT_NONE;
-
-                                                                /* ------------------ PLL0 CONFIGURATION -------------- */
-
+    
+    /* ------------------ PLL0 CONFIGURATION -------------- */
+    
     reg_val  = (((25u - 1u) <<  0u) & BSP_MSK_PLLCFG0_MSEL)     /* PLL0 values M = 25 & N = 2 (see note #6)             */
-             | ((( 2u - 1u) << 16u) & BSP_MSK_PLLCFG0_NSEL);
-                                                                /* 1. Disconnect PLL0 with one feed sequence if PLL ... */
-                                                                /* ... already connected.                               */
+        | ((( 2u - 1u) << 16u) & BSP_MSK_PLLCFG0_NSEL);
+    /* 1. Disconnect PLL0 with one feed sequence if PLL ... */
+    /* ... already connected.                               */
     if (DEF_BIT_IS_SET(BSP_REG_PLLSTAT(0u), BSP_BIT_PLLSTAT_PLLC0_STAT)) {
         DEF_BIT_CLR(BSP_REG_PLLCTRL(0u), BSP_BIT_PLLCTRL_PLLC);
         BSP_PLL_FEED_SEQ(0u);
     }
-
+    
     DEF_BIT_CLR(BSP_REG_PLLCTRL(0u), BSP_BIT_PLLCTRL_PLLE);     /* 2. Disable PLL0 with one feed sequence               */
     BSP_PLL_FEED_SEQ(0u);
-
+    
     BSP_REG_CCLKCFG   = (1u - 1u);                              /* 3. Change the CPU clock divider setting to speed ... */
-                                                                /* ... operation without PLL0                           */
-
+    /* ... operation without PLL0                           */
+    
     BSP_REG_CLKSRCSEL = BSP_BIT_CLKSRCSEL_MAIN;                 /* 4. Select the main osc. as the PLL0 clock source     */
-
+    
     BSP_REG_PLLCFG(0u) = reg_val;                               /* 5. Write to the PLLCFG and make it effective with... */
     BSP_PLL_FEED_SEQ(0u)                                        /* ... one one feed sequence                            */
-
-    DEF_BIT_SET(BSP_REG_PLLCTRL(0u), BSP_BIT_PLLCTRL_PLLE);     /* 6. Enable PLL0 with one feed sequence                */
+        
+        DEF_BIT_SET(BSP_REG_PLLCTRL(0u), BSP_BIT_PLLCTRL_PLLE);     /* 6. Enable PLL0 with one feed sequence                */
     BSP_PLL_FEED_SEQ(0u);
-
+    
     BSP_REG_CCLKCFG   = (3u - 1u);                              /* 7. Change the CPU clock divider setting for ...      */
-                                                                /* ... operation with PLL0                              */
-
+    /* ... operation with PLL0                              */
+    
     reg_to = BSP_VAL_MAX_TO;                                    /* 8. Wait for PLL0 to achieve lock by monitoring ...   */
-                                                                /* ... the PLOCK0 bit in the PLL0STAT                   */
+    /* ... the PLOCK0 bit in the PLL0STAT                   */
     while (DEF_BIT_IS_CLR(BSP_REG_PLLSTAT(0u), BSP_BIT_PLLSTAT_PLOCK0) &&
-          (reg_to > 0u)) {
-        reg_to--;
-    }
-
+           (reg_to > 0u)) {
+               reg_to--;
+           }
+    
     if (reg_to == 0u) {
         return;
     }
-
+    
     DEF_BIT_SET(BSP_REG_PLLCTRL(0u), BSP_BIT_PLLCTRL_PLLC);     /* 9. Connect PLL0 with one feed sequence               */
     BSP_PLL_FEED_SEQ(0u);
-                                                                /* ------------------ PLL1 CONFIGURATION -------------- */
+    /* ------------------ PLL1 CONFIGURATION -------------- */
     reg_val  = (((4u - 1u)  <<  0u) & BSP_MSK_PLLCFG1_MSEL)     /* PLL1 values M = 4; P = 2 coded as '01' (see note #6) */
-             | (((0x01u   ) <<  5u) & BSP_MSK_PLLCFG1_NSEL);
-
+        | (((0x01u   ) <<  5u) & BSP_MSK_PLLCFG1_NSEL);
+    
     DEF_BIT_CLR(BSP_REG_PLLCTRL(1u), BSP_BIT_PLLCTRL_PLLC);     /* 1. Disconnect PLL1 with one feed sequence            */
     BSP_PLL_FEED_SEQ(1u);
-
+    
     DEF_BIT_CLR(BSP_REG_PLLCTRL(1u), BSP_BIT_PLLCTRL_PLLE);     /* 2. Disable PLL1 with one feed sequence               */
     BSP_PLL_FEED_SEQ(1u);
-
+    
     BSP_REG_PLLCFG(1u) = reg_val;                               /* 3. Write to the PLLCFG and make it effective with... */
     BSP_PLL_FEED_SEQ(1u);                                       /* ... one one feed sequence                            */
-
+    
     DEF_BIT_SET(BSP_REG_PLLCTRL(1u), BSP_BIT_PLLCTRL_PLLE);     /* 4. Enable PLL1 with one feed sequence                */
     BSP_PLL_FEED_SEQ(1u);
-
+    
     reg_to = BSP_VAL_MAX_TO;                                    /* 5. Wait for PLL1 to achieve lock by monitoring ...   */
-                                                                /* ... the PLOCK1 bit in the PLL1STAT                   */
+    /* ... the PLOCK1 bit in the PLL1STAT                   */
     while (DEF_BIT_IS_CLR(BSP_REG_PLLSTAT(1u), BSP_BIT_PLLSTAT_PLOCK1) &&
-          (reg_to > 0u)) {
-        reg_to--;
-    }
-
+           (reg_to > 0u)) {
+               reg_to--;
+           }
+    
     if (reg_to == 0u) {
         return;
     }
-
+    
     DEF_BIT_SET(BSP_REG_PLLCTRL(1u), BSP_BIT_PLLCTRL_PLLC);     /* 6. Connect PLL1 with one feed sequence               */
     BSP_PLL_FEED_SEQ(1u);
-
-
+    
+    
     BSP_REG_FLASHCFG = BSP_MSK_FLASHCFG_CLK_5                   /* Set 5 cycles to acces the Flash memory.              */
-                     | BSP_MSK_FLASHCFG_RST_VAL;
-
-//    CSP_GPIO_Cfg(CSP_GPIO_PORT_NBR_00,
-//                 BSP_GPIO0_LED2,
-//                 CSP_GPIO_DIR_OUT,
-//                 CSP_GPIO_FLAG_MODE_NONE,
-//                 DEF_NO,
-//                 0u,
-//                 CSP_GPIO_FNCT_00);
-
+        | BSP_MSK_FLASHCFG_RST_VAL;
+    
+    //    CSP_GPIO_Cfg(CSP_GPIO_PORT_NBR_00,
+    //                 BSP_GPIO0_LED2,
+    //                 CSP_GPIO_DIR_OUT,
+    //                 CSP_GPIO_FLAG_MODE_NONE,
+    //                 DEF_NO,
+    //                 0u,
+    //                 CSP_GPIO_FNCT_00);
+    
     CSP_GPIO_Cfg(CSP_GPIO_PORT_NBR_01,
                  BSP_GPIO1_LED1 |
-                 BSP_GPIO1_LED2 |
-                 BSP_GPIO1_LED3 |
-                 BSP_GPIO1_LED4 |
-                 BSP_GPIO1_LED5 |
-                 BSP_GPIO1_LED6 |
-                 BSP_GPIO1_LED7 |
-                 BSP_GPIO1_LED8 ,
-                 CSP_GPIO_DIR_OUT,
-                 CSP_GPIO_FLAG_MODE_NONE,
-                 DEF_NO,
-                 0u,
-                 CSP_GPIO_FNCT_00);
-
-//    CSP_GPIO_Cfg(CSP_GPIO_PORT_NBR_00,
-//                 BSP_GPIO0_BUT1,
-//                 CSP_GPIO_DIR_IN,
-//                 CSP_GPIO_FLAG_MODE_NONE,
-//                 DEF_NO,
-//                 0u,
-//                 CSP_GPIO_FNCT_00);
-//
-//    CSP_GPIO_Cfg(CSP_GPIO_PORT_NBR_02,
-//                 BSP_GPIO2_BUT2,
-//                 CSP_GPIO_DIR_IN,
-//                 CSP_GPIO_FLAG_MODE_NONE,
-//                 DEF_NO,
-//                 0u,
-//                 CSP_GPIO_FNCT_00);
-
+                     BSP_GPIO1_LED2 |
+                         BSP_GPIO1_LED3 |
+                             BSP_GPIO1_LED4 |
+                                 BSP_GPIO1_LED5 |
+                                     BSP_GPIO1_LED6 |
+                                         BSP_GPIO1_LED7 |
+                                             BSP_GPIO1_LED8 ,
+                                             CSP_GPIO_DIR_OUT,
+                                             CSP_GPIO_FLAG_MODE_NONE,
+                                             DEF_NO,
+                                             0u,
+                                             CSP_GPIO_FNCT_00);
+    
+    //    CSP_GPIO_Cfg(CSP_GPIO_PORT_NBR_00,
+    //                 BSP_GPIO0_BUT1,
+    //                 CSP_GPIO_DIR_IN,
+    //                 CSP_GPIO_FLAG_MODE_NONE,
+    //                 DEF_NO,
+    //                 0u,
+    //                 CSP_GPIO_FNCT_00);
+    //
+    //    CSP_GPIO_Cfg(CSP_GPIO_PORT_NBR_02,
+    //                 BSP_GPIO2_BUT2,
+    //                 CSP_GPIO_DIR_IN,
+    //                 CSP_GPIO_FLAG_MODE_NONE,
+    //                 DEF_NO,
+    //                 0u,
+    //                 CSP_GPIO_FNCT_00);
+    
     
     CSP_GPIO_Cfg(CSP_GPIO_PORT_NBR_00,
                  DEF_BIT_28,
@@ -442,26 +442,26 @@ void  BSP_Init (void)
                  CSP_GPIO_FNCT_00);
     
     BSP_LED_Off(0);
-
-//    CSP_GPIO_Cfg( CSP_GPIO_PORT_NBR_02,
-//                 (BSP_GPIO2_JOY_RIGHT |
-//                  BSP_GPIO2_JOY_DOWN  |
-//                  BSP_GPIO2_JOY_LEFT  |
-//                  BSP_GPIO2_JOY_RIGHT),
-//                  CSP_GPIO_DIR_IN,
-//                  CSP_GPIO_FLAG_MODE_NONE,
-//                  DEF_NO,
-//                  0u,
-//                  CSP_GPIO_FNCT_00);
-//
-//    CSP_GPIO_Cfg( CSP_GPIO_PORT_NBR_00,
-//                  BSP_GPIO0_JOY_CENTER,
-//                  CSP_GPIO_DIR_IN,
-//                  CSP_GPIO_FLAG_MODE_NONE,
-//                  DEF_NO,
-//                  0u,
-//                  CSP_GPIO_FNCT_00);
-
+    
+    //    CSP_GPIO_Cfg( CSP_GPIO_PORT_NBR_02,
+    //                 (BSP_GPIO2_JOY_RIGHT |
+    //                  BSP_GPIO2_JOY_DOWN  |
+    //                  BSP_GPIO2_JOY_LEFT  |
+    //                  BSP_GPIO2_JOY_RIGHT),
+    //                  CSP_GPIO_DIR_IN,
+    //                  CSP_GPIO_FLAG_MODE_NONE,
+    //                  DEF_NO,
+    //                  0u,
+    //                  CSP_GPIO_FNCT_00);
+    //
+    //    CSP_GPIO_Cfg( CSP_GPIO_PORT_NBR_00,
+    //                  BSP_GPIO0_JOY_CENTER,
+    //                  CSP_GPIO_DIR_IN,
+    //                  CSP_GPIO_FLAG_MODE_NONE,
+    //                  DEF_NO,
+    //                  0u,
+    //                  CSP_GPIO_FNCT_00);
+    
     CSP_IntInit();
     CSP_IntDisAll(CSP_INT_CTRL_NBR_MAIN);
 }
@@ -619,39 +619,39 @@ void  BSP_LED_Off (CPU_INT08U  led)
 {
     switch (led)  {
         case 0u:
-             CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
-             CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
-             CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
-             CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
-             CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
-             CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
+             //CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
+             //CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
+             //CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
+             //CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
+             //CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
+             //CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
              CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED7);
              CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED8);   
              break;
 
-        case 1u:
-             CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
-             break;
-
-        case 2u:
-             CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
-             break;
-
-        case 3u:
-             CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
-             break;
-
-        case 4u:
-             CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
-             break;
-
-        case 5u:
-             CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
-             break;
-
-        case 6u:
-             CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
-             break;
+        //case 1u:
+        //     CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
+        //     break;
+        //
+        //case 2u:
+        //     CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
+        //     break;
+        //
+        //case 3u:
+        //     CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
+        //     break;
+        //
+        //case 4u:
+        //     CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
+        //     break;
+        //
+        //case 5u:
+        //     CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
+        //     break;
+        //
+        //case 6u:
+        //     CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
+        //     break;
 
         case 7u:
              CSP_GPIO_BitSet(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED7);
@@ -691,39 +691,39 @@ void  BSP_LED_On (CPU_INT08U  led)
 {
     switch (led)  {
         case 0u:
-             CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
-             CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
-             CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
-             CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
-             CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
-             CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
+             //CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
+             //CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
+             //CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
+             //CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
+             //CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
+             //CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
              CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED7);
              CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED8);   
              break;
 
-        case 1u:
-             CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
-             break;
-
-        case 2u:
-             CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
-             break;
-
-        case 3u:
-             CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
-             break;
-
-        case 4u:
-             CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
-             break;
-
-        case 5u:
-             CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
-             break;
-
-        case 6u:
-             CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
-             break;
+        //case 1u:
+        //     CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
+        //     break;
+        //
+        //case 2u:
+        //     CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
+        //     break;
+        //
+        //case 3u:
+        //     CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
+        //     break;
+        //
+        //case 4u:
+        //     CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
+        //     break;
+        //
+        //case 5u:
+        //     CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
+        //     break;
+        //
+        //case 6u:
+        //     CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
+        //     break;
 
         case 7u:
              CSP_GPIO_BitClr(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED7);
@@ -762,39 +762,39 @@ void  BSP_LED_Toggle (CPU_INT08U  led)
 {
     switch (led)  {
         case 0u:
-             CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
-             CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
-             CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
-             CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
-             CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
-             CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
+             //CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
+             //CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
+             //CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
+             //CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
+             //CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
+             //CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
              CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED7);
              CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED8);   
              break;
 
-        case 1u:
-             CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
-             break;
-
-        case 2u:
-             CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
-             break;
-
-        case 3u:
-             CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
-             break;
-
-        case 4u:
-             CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
-             break;
-
-        case 5u:
-             CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
-             break;
-
-        case 6u:
-             CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
-             break;
+        //case 1u:
+        //     CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED1);
+        //     break;
+        //
+        //case 2u:
+        //     CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED2);
+        //     break;
+        //
+        //case 3u:
+        //     CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED3);
+        //     break;
+        //
+        //case 4u:
+        //     CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED4);
+        //     break;
+        //
+        //case 5u:
+        //     CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED5);
+        //     break;
+        //
+        //case 6u:
+        //     CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED6);
+        //     break;
 
         case 7u:
              CSP_GPIO_BitToggle(CSP_GPIO_PORT_NBR_01, BSP_GPIO1_LED7);
@@ -808,6 +808,55 @@ void  BSP_LED_Toggle (CPU_INT08U  led)
     }
 }
 
+/*
+*********************************************************************************************************
+*                                            BSP_LED_Flash()
+*
+* Description : Flash any or all the LEDs on the board.
+*
+* Argument(s) : led     The ID of the LED to control:
+*
+*                       0    TOGGLE all LEDs on the board
+*                       1    TOGGLE LED 1
+*                       2    TOGGLE LED 2
+*                       3    TOGGLE LED 3
+*                       4    TOGGLE LED 4
+*
+* Return(s)   : none.
+*
+* Caller(s)   : Application.
+*
+* Note(s)     : none.
+*********************************************************************************************************
+*/
+
+void BSP_LED_Flash( CPU_INT08U led, CPU_INT16U cnt, CPU_INT32U cycle, CPU_INT32U duty)
+{
+    CPU_INT32U  timeOn;
+    CPU_INT32U  timeOff;
+    CPU_INT32U  i;
+
+    if ( cycle < duty )
+      return;
+    if( duty == 0 )
+      return;
+
+    timeOn      = duty;
+    timeOff     = cycle - duty;
+
+    /***********************************************
+    * ÃèÊö£º ÉùÒôÌáÊ¾
+    */
+    for ( i = 0; i < cnt; i++  ) {
+      BSP_LED_On(led);
+      void   BSP_OS_TimeDlyMs (CPU_INT32U  dly_ms);
+      BSP_OS_TimeDlyMs(timeOn);
+      BSP_LED_Off(led);
+      if ( i+1 == cnt)
+        break;
+      BSP_OS_TimeDlyMs(timeOff);
+    }
+}
 
 /*
 *********************************************************************************************************
@@ -1017,7 +1066,7 @@ CPU_TS_TMR  CPU_TS_TmrRd (void)
 }
 #endif
 
-
+    
 /*$PAGE*/
 /*
 *********************************************************************************************************

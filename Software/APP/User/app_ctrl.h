@@ -417,8 +417,12 @@ typedef struct {
 } StrMtrCommRecvData;
 
 //应答联合体，可定义多类型结构互用
+
 typedef union {
 	StrMtrCommRecvData		sRecv;
+    
+
+
 	uint8				Buf[MTR_COMM_RECV_BUF_LEN];
 }UniMtrCommRecvData;
 
@@ -572,6 +576,10 @@ __packed
 typedef union {
 	stcFlshRec	sRec;						//数据记录     128 	
     stcTinyRec  sTinyRec;                   //简单数据记录
+    struct _modelcontrl_{
+        uint32	code;
+        uint32	num;
+    }modelcontrl;
 	uint8		Buf[160];					//
 } UniOtrCommRecvData;
 
@@ -694,7 +702,9 @@ typedef struct _StrOilPara {
 typedef struct _stcRunPara_					
 {
 	uint8		StoreTime;					// 1 		数据记录存储周期
-	uint8		plugcard;					// 1		插卡
+	uint8		plugcard            : 1;	// 1		插卡
+	uint8		DealFlag            : 1;	// 1		IC卡处理中
+	uint8		RsvFlag             : 6;	// 1		预留
 	uint8		StartFlg;					// 1    	首次运行
 	uint8		SysSta;						// 1   	    系统运行状态
 	uint32		CardType;					// 4        卡参数
@@ -726,6 +736,8 @@ typedef struct _stcCalcModel_
 //事件标示组。
 __packed
 typedef struct {
+    OS_FLAG_GRP             WdtEvtFlagGRP;      //看门狗标志组
+    OS_FLAGS                WdtEvtFlags;
     OS_FLAG_GRP             WifiEvtFlagGrp;
     OS_FLAGS                WifiEvtFlag;
     OS_FLAG_GRP             CommEvtFlagGrp;		// 串口通讯标示组
@@ -778,15 +790,12 @@ typedef struct _StrSysCtrlPara {
     */
     StrDevOtr	Otr;
 
-//定义全局的Os操作变量?   
-	StrCtrlOS    	Os;                                	 // OS系统结构体变量    
-	
-//    //显示结构体	
-//    	StrDisp           Disp;                            	//显示结构体变量 	
+    //定义全局的Os操作变量?   
+	StrCtrlOS    	Os;                                	 // OS系统结构体变量    	
 	
 } stcSysCtrl;
 
-extern  stcSysCtrl       sCtrl;
+extern  stcSysCtrl       Ctrl;
 
 
 /*******************************************************************************
@@ -813,6 +822,8 @@ void        App_Error                   (void);
 void        App_FanHandCtrl             (INT08U step);
 void        App_FanAutoCtrl             (INT08U step);
 void        App_ParaFilter              (void);
+void        OSSetWdtFlag                ( OS_FLAGS flag );
+void        OSRegWdtFlag                ( OS_FLAGS flag );
 
 /***************************************************
 * 描述： OSAL任务初始化函数体声明

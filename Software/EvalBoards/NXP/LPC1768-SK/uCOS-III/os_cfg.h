@@ -45,7 +45,7 @@
 #define OS_CFG_OBJ_TYPE_CHK_EN          DEF_ENABLED        /* Enable (DEF_ENABLED) object type checking                             */
 #define OS_CFG_TS_EN                    DEF_ENABLED        /* Enable (DEF_ENABLED) time stamping                                    */
 
-#define OS_CFG_PRIO_MAX                 64u                /* Defines the maximum number of task priorities (see OS_PRIO data type) */
+#define OS_CFG_PRIO_MAX                 32u                /* Defines the maximum number of task priorities (see OS_PRIO data type) */
 
 #define OS_CFG_SCHED_LOCK_TIME_MEAS_EN  DEF_DISABLED       /* Include (DEF_ENABLED) code to measure scheduler lock time             */
 #define OS_CFG_SCHED_ROUND_ROBIN_EN     DEF_DISABLED       /* Include (DEF_ENABLED) code for Round-Robin scheduling                 */

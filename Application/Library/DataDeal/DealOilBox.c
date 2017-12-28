@@ -783,7 +783,7 @@ uint8   GetOilBoxCod(void)
 {
     uint8      		OilBoxTypCod = 1;                                   	//装车信息
 	
-    OilBoxTypCod = sCtrl.SOilPara.ModelNum;
+    OilBoxTypCod = Ctrl.SOilPara.ModelNum;
 //	l_SelModelErrFlg = ERROR;	
 //	
 //    if(ReadSelectModel( (uint8 *)&OilBoxTypCod))					//读取设置的油量模型编号

@@ -170,42 +170,45 @@ static  void  AppTaskComm (void *p_arg)
     OS_ERR      err;
 
     OS_TICK     dly     = CYCLE_TIME_TICKS;
-//    OS_TICK     ticks;
+    OS_TICK     ticks;
     /***********************************************
     * 描述： 任务初始化
     
     */
     APP_CommInit();   
     
+    InitFlashIO();      //初始化flash
+
+    GPIO_Fram_Init();   //初始化fram
+    
+    InitDS3231();       //初始化时钟
+    
     OS_ProtocolInit();
-             
+    /***********************************************
+    * 描述： 在看门狗标志组注册本任务的看门狗标志
+    */
+    OSRegWdtFlag(( OS_FLAGS     ) WDT_FLAG_COMM);     
     /***********************************************
     * 描述： Task body, always written as an infinite loop.
     */
-    while (DEF_TRUE) { 
+    while (DEF_TRUE) {         
         /***********************************************
         * 描述： 本任务看门狗标志置位
         */
-        OSFlagPost(( OS_FLAG_GRP *)&WdtFlagGRP,
-                    ( OS_FLAGS     ) WDT_FLAG_COMM,
-                    ( OS_OPT       ) OS_OPT_POST_FLAG_SET,
-                    ( OS_ERR      *) &err);
+        OSSetWdtFlag(( OS_FLAGS     ) WDT_FLAG_COMM);        
         
-        
+        OS_ERR      terr;
+        ticks   = OSTimeGet(&terr);                        // 获取当前OSTick
         /***********************************************
         * 描述： 等待COMM的标识组
         */
         OS_FLAGS    flags = 
-        OSFlagPend( ( OS_FLAG_GRP *)&sCtrl.Os.CommEvtFlagGrp,
-                    ( OS_FLAGS     ) sCtrl.Os.CommEvtFlag,
+        OSFlagPend( ( OS_FLAG_GRP *)&Ctrl.Os.CommEvtFlagGrp,
+                    ( OS_FLAGS     ) Ctrl.Os.CommEvtFlag,
                     ( OS_TICK      ) dly,
                     ( OS_OPT       ) OS_OPT_PEND_FLAG_SET_ANY,
                     ( CPU_TS      *) NULL,
                     ( OS_ERR      *)&err);
-        
-//        OS_ERR      terr;
-//        ticks   = OSTimeGet(&terr);                        // 获取当前OSTick
-        
 
         /***********************************************
         * 描述： 没有错误,有事件发生
@@ -215,25 +218,23 @@ static  void  AppTaskComm (void *p_arg)
 
             /***********************************************
             * 从机，如果收到数据通讯发起；或者有邋IC卡插入，同样发起通讯
-            */           
+            */
+            //插入IC卡
             if(    flags & COMM_EVT_FLAG_PLUG_CARD) {
 
-					comm_para_flow((StrDevOtr *)&sCtrl.Otr,0);   	//设置根据IC卡类型操作
+					comm_para_flow((StrDevOtr *)&Ctrl.Otr,0);   	    //设置根据IC卡类型操作
 					
-					flagClr |=  COMM_EVT_FLAG_PLUG_CARD;   			//插入IC卡
-               }else if( flags & COMM_EVT_FLAG_OTR_RX) {			//接收到数据
+					flagClr |=  COMM_EVT_FLAG_PLUG_CARD; 
+               //接收到数据
+               } else if ( flags & COMM_EVT_FLAG_OTR_RX) {			   
                		//接收数据。 1、询问是否需要数据；2、数据记录
-                    //BSP_LED_Toggle(8);
-
-               		if(sCtrl.Otr.RxCtrl.SourceAddr == MASTE_ADDR_HOST){	//主机地址
+               		if(Ctrl.Otr.RxCtrl.SourceAddr == MASTE_ADDR_HOST){	//主机地址
                		
-						comm_rec_read((StrDevOtr *)&sCtrl.Otr,0);		//取数据记录
+						comm_rec_read((StrDevOtr *)&Ctrl.Otr,0);		//取数据记录
 					}
                			
-                    sCtrl.Otr.ConnCtrl[0].TimeOut   = 0;
-                    sCtrl.Otr.ConnCtrl[0].ErrFlg    = 0;
-                    
-                    BSP_LED_Toggle(8);
+                    Ctrl.Otr.ConnCtrl[0].TimeOut   = 0;
+                    Ctrl.Otr.ConnCtrl[0].ErrFlg    = 0;
 
                		flagClr |=  COMM_EVT_FLAG_OTR_RX;    				//接收到数据
                	}
@@ -248,16 +249,25 @@ static  void  AppTaskComm (void *p_arg)
             /***********************************************
             * 描述： 清除标志位
             */
-            OSFlagPost( ( OS_FLAG_GRP  *)&sCtrl.Os.CommEvtFlagGrp,
+            OSFlagPost( ( OS_FLAG_GRP  *)&Ctrl.Os.CommEvtFlagGrp,
                         ( OS_FLAGS      )flagClr,
                         ( OS_OPT        )OS_OPT_POST_FLAG_CLR,
                         ( OS_ERR       *)&err);
         }
         
         
-        if(sCtrl.Otr.ConnCtrl[0].TimeOut++ > 2)         //2秒没通讯
-            sCtrl.Otr.ConnCtrl[0].ErrFlg = 1;
-        BSP_OS_TimeDly(5);
+        if(Ctrl.Otr.ConnCtrl[0].TimeOut++ > 2)         //2秒没通讯
+            Ctrl.Otr.ConnCtrl[0].ErrFlg = 1;
+        
+        /***********************************************
+        * 描述： 去除任务运行的时间，等到一个控制周期里剩余需要延时的时间
+        */
+        dly   = CYCLE_TIME_TICKS - ( OSTimeGet(&err) - ticks );
+        if ( dly  < 1 ) {
+            dly = 1;
+        } else if ( dly > CYCLE_TIME_TICKS ) {
+            dly = CYCLE_TIME_TICKS;
+        }
     }
 }
 
@@ -312,7 +322,7 @@ void App_ModbusInit(void)
     pch->RxFrameHead    = 0x1028;                   // ... 添加匹配帧头
     pch->RxFrameTail    = 0x102C;                   // ... 添加匹配帧尾
     
-    sCtrl.Otr.pch       = pch;                      // ... modbus控制块和全局结构体建立连接
+    Ctrl.Otr.pch       = pch;                      // ... modbus控制块和全局结构体建立连接
 #endif
     
     // UART3
@@ -345,25 +355,20 @@ void App_ModbusInit(void)
     /***********************************************
     * 描述： 创建事件标志组,协调comm收发
     */
-    OSFlagCreate(( OS_FLAG_GRP  *)&sCtrl.Os.CommEvtFlagGrp,
+    OSFlagCreate(( OS_FLAG_GRP  *)&Ctrl.Os.CommEvtFlagGrp,
                  ( CPU_CHAR     *)"App_CommFlag",
                  ( OS_FLAGS      )0,
                  ( OS_ERR       *)&err);
     
-    sCtrl.Os.CommEvtFlag= COMM_EVT_FLAG_OTR_RX        // OTR 接收事件
-                        + COMM_EVT_FLAG_OTR_TIMEOUT  // OTR 操作超时，定时发送使用
-                         + COMM_EVT_FLAG_PLUG_CARD;  // IC卡触发
+    Ctrl.Os.CommEvtFlag=   COMM_EVT_FLAG_OTR_RX        // OTR 接收事件
+                         +  COMM_EVT_FLAG_OTR_TIMEOUT  // OTR 操作超时，定时发送使用
+                         +  COMM_EVT_FLAG_PLUG_CARD;  // IC卡触发
 
     
     /***********************************************
     * 描述： 初始化MODBUS通信
     */        
-    App_ModbusInit();
-    
-    /***********************************************
-    * 描述： 在看门狗标志组注册本任务的看门狗标志
-    */
-    WdtFlags |= WDT_FLAG_COMM;
+    App_ModbusInit();    
 }
 
 
@@ -454,9 +459,9 @@ INT08U APP_CommRxDataDealCB(MODBUS_CH  *pch)
            if(         MASTE_ADDR_HOST == SourceAddr 
                )   
             {
-                sCtrl.Otr.RxCtrl.SourceAddr = SourceAddr;           //源地址
-                sCtrl.Otr.RxCtrl.DestAddr   = GetRecSlaveAddr();    //目标地址
-                sCtrl.Otr.RxCtrl.FramNum    = GetRecvFrameNbr();    //接收到的帧号
+                Ctrl.Otr.RxCtrl.SourceAddr = SourceAddr;           //源地址
+                Ctrl.Otr.RxCtrl.DestAddr   = GetRecSlaveAddr();    //目标地址
+                Ctrl.Otr.RxCtrl.FramNum    = GetRecvFrameNbr();    //接收到的帧号
                 
                /***********************************************
                 * 描述：无线通讯及IC卡通讯，定义数据区的前 4 个字节为命令字，   
@@ -464,16 +469,16 @@ INT08U APP_CommRxDataDealCB(MODBUS_CH  *pch)
                 */                   
                 if(Len >=4)                                        
                 {
-//                    sCtrl.Otr.RxCtrl.Len        = Len - 4;                  //数据区长度
+//                    Ctrl.Otr.RxCtrl.Len        = Len - 4;                  //数据区长度
 //                    //取数据记录，将数据记录保存到接收区
 //                    OS_CRITICAL_ENTER();
-//                        memcpy( (INT08U *)&sCtrl.Otr.RxCtrl.Code, (INT08U *)&pch->RxFrameData[DataPos], 4);        //功能码
-//                        memcpy( (INT08U *)&sCtrl.Otr.Rd.Buf[0],   (INT08U *)&pch->RxFrameData[DataPos+4], Len-4 );   //数据区
+//                        memcpy( (INT08U *)&Ctrl.Otr.RxCtrl.Code, (INT08U *)&pch->RxFrameData[DataPos], 4);        //功能码
+//                        memcpy( (INT08U *)&Ctrl.Otr.Rd.Buf[0],   (INT08U *)&pch->RxFrameData[DataPos+4], Len-4 );   //数据区
 //                    OS_CRITICAL_EXIT();                    
-                    sCtrl.Otr.RxCtrl.Len        = Len;                  //数据区长度    只接收数据记录、查询
+                    Ctrl.Otr.RxCtrl.Len        = Len;                  //数据区长度    只接收数据记录、查询
                     //取数据记录，将数据记录保存到接收区
                     //OS_CRITICAL_ENTER();
-                        memcpy( (INT08U *)&sCtrl.Otr.Rd.Buf[0],   (INT08U *)&pch->RxFrameData[DataPos], Len );   //数据区
+                        memcpy( (INT08U *)&Ctrl.Otr.Rd.Buf[0],   (INT08U *)&pch->RxFrameData[DataPos], Len );   //数据区
                     //OS_CRITICAL_EXIT(); 
                     
                 }
@@ -482,20 +487,20 @@ INT08U APP_CommRxDataDealCB(MODBUS_CH  *pch)
                 */       
                 for(uint8 i = 0;i< COMM_DEV_OTR_CONN_NUM;i++)
                 {
-                    if( sCtrl.Otr.ConnCtrl[i].SlaveAddr == SourceAddr){
-                        sCtrl.Otr.ConnCtrl[i].RecvEndFlg  = 1;      //接收到数据，置1。数据处理后置0
-                        sCtrl.Otr.ConnCtrl[i].TimeOut     = 0;      //超时计数器清零。
+                    if( Ctrl.Otr.ConnCtrl[i].SlaveAddr == SourceAddr){
+                        Ctrl.Otr.ConnCtrl[i].RecvEndFlg  = 1;      //接收到数据，置1。数据处理后置0
+                        Ctrl.Otr.ConnCtrl[i].TimeOut     = 0;      //超时计数器清零。
                     }
                 } 
                 
-                OSFlagPost(( OS_FLAG_GRP *)&sCtrl.Os.CommEvtFlagGrp,
+                OSFlagPost(( OS_FLAG_GRP *)&Ctrl.Os.CommEvtFlagGrp,
                 ( OS_FLAGS     ) COMM_EVT_FLAG_OTR_RX,
                 ( OS_OPT       ) OS_OPT_POST_FLAG_SET,
                 ( OS_ERR      *) &err);       
             }
                 
-            sCtrl.Otr.ConnectFlag       = 1;
-            sCtrl.Otr.ConnectTimeOut    = 0;   
+            Ctrl.Otr.ConnectFlag       = 1;
+            Ctrl.Otr.ConnectTimeOut    = 0;   
             
             break;
         
@@ -563,16 +568,16 @@ INT08U IAP_CommRxDataDealCB(MODBUS_CH  *pch)
 //        /***********************************************
 //        * 描述： 发送数据处理
 //        */
-//        CSNC_SendData(	(MODBUS_CH      *)sCtrl.Com.pch,
-//                        (unsigned char  ) sCtrl.Com.SlaveAddr,          // SourceAddr,
-//                        (unsigned char  ) sCtrl.Com.Rd.Head.SrcAddr,    // DistAddr,
+//        CSNC_SendData(	(MODBUS_CH      *)Ctrl.Com.pch,
+//                        (unsigned char  ) Ctrl.Com.SlaveAddr,          // SourceAddr,
+//                        (unsigned char  ) Ctrl.Com.Rd.Head.SrcAddr,    // DistAddr,
 //                        (unsigned char *)&pch->RxFrameData[8],          // DataBuf,
 //                        (unsigned short ) Len); 
 //        /***********************************************
 //        * 描述： 置位IAP结束标志位
 //        */
 //        OS_ERR err;
-//        OS_FlagPost(( OS_FLAG_GRP *)&sCtrl.Os.CommEvtFlagGrp,
+//        OS_FlagPost(( OS_FLAG_GRP *)&Ctrl.Os.CommEvtFlagGrp,
 //                    ( OS_FLAGS     ) COMM_EVT_FLAG_IAP_END,
 //                    ( OS_OPT       ) OS_OPT_POST_FLAG_SET,
 //                    ( CPU_TS       ) 0,
@@ -589,9 +594,9 @@ INT08U IAP_CommRxDataDealCB(MODBUS_CH  *pch)
 //        /***********************************************
 //        * 描述： 发送数据处理
 //        */
-//        CSNC_SendData(	(MODBUS_CH      *)sCtrl.Com.pch,
-//                        (unsigned char  ) sCtrl.Com.SlaveAddr,          // SourceAddr,
-//                        (unsigned char  ) sCtrl.Com.Rd.Head.SrcAddr,    // DistAddr,
+//        CSNC_SendData(	(MODBUS_CH      *)Ctrl.Com.pch,
+//                        (unsigned char  ) Ctrl.Com.SlaveAddr,          // SourceAddr,
+//                        (unsigned char  ) Ctrl.Com.Rd.Head.SrcAddr,    // DistAddr,
 //                        (unsigned char *)&pch->RxFrameData[8],         // DataBuf,
 //                        (unsigned int	 ) Len);                        // DataLen 
 //#endif
@@ -608,7 +613,7 @@ INT08U IAP_CommRxDataDealCB(MODBUS_CH  *pch)
 //    /***********************************************
 //    * 描述： 将数据打包给发送结构
 //    */
-//    sCtrl.Com.Wr.Head.DataLen       = 0;
+//    Ctrl.Com.Wr.Head.DataLen       = 0;
 //    /***********************************************
 //    * 描述： 编辑应答内容
 //    */
@@ -622,9 +627,9 @@ INT08U IAP_CommRxDataDealCB(MODBUS_CH  *pch)
 //    /***********************************************
 //    * 描述： 发送数据处理
 //    */
-//    CSNC_SendData(	(MODBUS_CH     *) sCtrl.Com.pch,
-//                    (unsigned char  ) sCtrl.Com.SlaveAddr,                    // SourceAddr,
-//                    (unsigned char  ) sCtrl.Com.Rd.Head.SrcAddr,              // DistAddr,
+//    CSNC_SendData(	(MODBUS_CH     *) Ctrl.Com.pch,
+//                    (unsigned char  ) Ctrl.Com.SlaveAddr,                    // SourceAddr,
+//                    (unsigned char  ) Ctrl.Com.Rd.Head.SrcAddr,              // DistAddr,
 //                    (unsigned char *) str,                                    // DataBuf,
 //                    (unsigned short ) strlen(str));                           // DataLen 
 //    if ( Len < 128 ) {
@@ -632,7 +637,7 @@ INT08U IAP_CommRxDataDealCB(MODBUS_CH  *pch)
 //        * 描述： 置位IAP结束标志位
 //        */
 //        OS_ERR err;
-//        OS_FlagPost(( OS_FLAG_GRP *)&sCtrl.Os.CommEvtFlagGrp,
+//        OS_FlagPost(( OS_FLAG_GRP *)&Ctrl.Os.CommEvtFlagGrp,
 //                    ( OS_FLAGS     ) COMM_EVT_FLAG_IAP_END,
 //                    ( OS_OPT       ) OS_OPT_POST_FLAG_SET,
 //                    ( CPU_TS       ) 0,
@@ -644,8 +649,8 @@ INT08U IAP_CommRxDataDealCB(MODBUS_CH  *pch)
 //    /***********************************************
 //    * 描述： 串口接受COMM模组的消息并处理
 //    */
-//    sCtrl.Com.ConnectTimeOut    = 0;                // 超时计数器清零
-//    sCtrl.Com.ConnectFlag       = TRUE;             // 转连接成功标志
+//    Ctrl.Com.ConnectTimeOut    = 0;                // 超时计数器清零
+//    Ctrl.Com.ConnectFlag       = TRUE;             // 转连接成功标志
 //    
     return TRUE;
 }
@@ -795,7 +800,7 @@ CPU_BOOLEAN APP_MaterCommHandler (MODBUS_CH  *pch)
     if ( ( pch->RxFrameHead == head ) &&
          ( pch->RxFrameTail == tail ) ) {
         DataBuf = &pch->RxFrameData[8];
-//        Len     = sCtrl.Com.Rd.Head.DataLen;        
+//        Len     = Ctrl.Com.Rd.Head.DataLen;        
         head    = BUILD_INT16U(DataBuf[1], DataBuf[0]);
     }
     
@@ -910,8 +915,8 @@ CPU_BOOLEAN APP_MaterCommHandler (MODBUS_CH  *pch)
  *******************************************************************************/
 CPU_BOOLEAN APP_CSNC_CommHandler (MODBUS_CH  *pch)
 {   
-//    if ( pch->PortNbr == sCtrl.Dtu.pch->PortNbr ) {
-//        if ( GetRecvFrameNbr() == sCtrl.Com.Rd.Head.PacketSn ) {
+//    if ( pch->PortNbr == Ctrl.Dtu.pch->PortNbr ) {
+//        if ( GetRecvFrameNbr() == Ctrl.Com.Rd.Head.PacketSn ) {
 //            /***********************************************
 //            * 描述： 清除定时上传标志
 //            */
@@ -932,8 +937,8 @@ CPU_BOOLEAN APP_CSNC_CommHandler (MODBUS_CH  *pch)
 //    /***********************************************
 //    * 描述： 串口接受COMM模组的消息并处理
 //    */
-//    sCtrl.Com.ConnectTimeOut    = 0;                // 超时计数器清零
-//    sCtrl.Com.ConnectFlag       = TRUE;             // 转连接成功标志
+//    Ctrl.Com.ConnectTimeOut    = 0;                // 超时计数器清零
+//    Ctrl.Com.ConnectFlag       = TRUE;             // 转连接成功标志
 //    
     return TRUE;
 }

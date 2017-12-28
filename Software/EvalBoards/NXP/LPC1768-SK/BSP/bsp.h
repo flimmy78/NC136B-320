@@ -140,6 +140,7 @@ void         BSP_Start              (void);
 void         BSP_LED_On             (CPU_INT08U   led_id);
 void         BSP_LED_Off            (CPU_INT08U   led_id);
 void         BSP_LED_Toggle         (CPU_INT08U   led_id);
+void         BSP_LED_Flash          ( CPU_INT08U led, CPU_INT16U cnt, CPU_INT32U cycle, CPU_INT32U duty);
 
 
 /*

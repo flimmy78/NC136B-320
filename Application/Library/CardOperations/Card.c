@@ -674,36 +674,15 @@ uint8_t ReadCard(uint32 Addr,uint8_t *TargetBuf,uint32 Len)
 	AddrTemp =  Addr; 
     AddrTemp += l_CardStartAddr;                                      	//映射到IC卡内部
                
-    if(AddrTemp + Len > l_CardStartAddr + l_CardPageNum*l_CardPageSize)    
-    {
-       //printfcom0("\r\n READ AddrTemp + Len %d > l_CardStartAddr + l_CardPageNum*l_CardPageSize %d  ", 
-//       								AddrTemp + Len,l_CardStartAddr + l_CardPageNum*l_CardPageSize);
+    if(AddrTemp + Len > l_CardStartAddr + l_CardPageNum*l_CardPageSize) {
        return  FALSE;                                                   //地址超阶
     }
 
     PageNum         = AddrTemp / l_CardPageSize ;                     	//求页
     PageOffset      = AddrTemp % l_CardPageSize ;                     	//求页内地址
     ReadPageTimes   = (Len + PageOffset  + (l_CardPageSize - 1)) / l_CardPageSize;            
-    /* 																	//读页次数        
-    for(i = 0; i < ReadPageTimes; i++)
-    {
-        PageNoReadSize = 	l_CardPageSize - (PageOffset + BufOffset)
-        					 % l_CardPageSize;							//计算IC卡一页内未写地址
-        BufNoReadSize	=	Len - BufOffset;							//缓冲区未读入字节长度
-        LenTemp = (PageNoReadSize < BufNoReadSize ? PageNoReadSize:BufNoReadSize);
-        																//取将一页写满或将未读入字节长度
-	    BufferRead_Card(((l_CardBufNum++%2)+1),PageNum,PageOffset
-	    							,(uint8_t *)&TargetBuf[BufOffset],LenTemp);	
-	    																//取数 
-        BufOffset += LenTemp;
-        PageNum++; 
-    }
-    */
     
-    for(i = 0; i <= ReadPageTimes; i++)
-    {
-    	//SysFastHoldTast();
-
+    for(i = 0; i <= ReadPageTimes; i++) {
         PageNoReadSize = 	l_CardPageSize - (PageOffset + BufOffset)
         					 % l_CardPageSize;						//计算IC卡一页内未写地址
         BufNoReadSize	=	Len - BufOffset;						//缓冲区未读入字节长度
@@ -717,8 +696,6 @@ uint8_t ReadCard(uint32 Addr,uint8_t *TargetBuf,uint32 Len)
         
         PageNum++; 
     }
-    
-    //NOP(); 
     return  TRUE;	                                                    //正确                   
 }
 
