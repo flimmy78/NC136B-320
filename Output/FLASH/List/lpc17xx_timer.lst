@@ -1,0 +1,1703 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       26/Dec/2017  20:29:50
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_timer.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_timer.c" -lCN
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\lpc17xx_timer.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\lpc17xx_timer.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_timer.c
+      1          /**********************************************************************
+      2          * $Id$		lpc17xx_timer.c				2011-03-10
+      3          *//**
+      4          * @file		lpc17xx_timer.c
+      5          * @brief	Contains all functions support for Timer firmware library
+      6          * 			on LPC17xx
+      7          * @version	3.1
+      8          * @date		10. March. 2011
+      9          * @author	NXP MCU SW Application Team
+     10          *
+     11          * Copyright(C) 2011, NXP Semiconductor
+     12          * All rights reserved.
+     13          *
+     14          ***********************************************************************
+     15          * Software that is described herein is for illustrative purposes only
+     16          * which provides customers with programming information regarding the
+     17          * products. This software is supplied "AS IS" without any warranties.
+     18          * NXP Semiconductors assumes no responsibility or liability for the
+     19          * use of the software, conveys no license or title under any patent,
+     20          * copyright, or mask work right to the product. NXP Semiconductors
+     21          * reserves the right to make changes in the software without
+     22          * notification. NXP Semiconductors also make no representation or
+     23          * warranty that such application will be suitable for the specified
+     24          * use without further testing or modification.
+     25          * Permission to use, copy, modify, and distribute this software and its
+     26          * documentation is hereby granted, under NXP Semiconductors'
+     27          * relevant copyright in the software, without fee, provided that it
+     28          * is used in conjunction with NXP Semiconductors microcontrollers.  This
+     29          * copyright, permission, and disclaimer notice must appear in all copies of
+     30          * this code.
+     31          **********************************************************************/
+     32          
+     33          /* Peripheral group ----------------------------------------------------------- */
+     34          /** @addtogroup TIM
+     35           * @{
+     36           */
+     37          
+     38          /* Includes ------------------------------------------------------------------- */
+     39          #include "lpc17xx_timer.h"
+     40          #include "lpc17xx_clkpwr.h"
+     41          #include "lpc17xx_pinsel.h"
+     42          
+     43          /* If this source file built with example, the LPC17xx FW library configuration
+     44           * file in each example directory ("lpc17xx_libcfg.h") must be included,
+     45           * otherwise the default FW library configuration file must be included instead
+     46           */
+     47          #ifdef __BUILD_WITH_EXAMPLE__
+     48          #include "lpc17xx_libcfg.h"
+     49          #else
+     50          #include "lpc17xx_libcfg_default.h"
+     51          #endif /* __BUILD_WITH_EXAMPLE__ */
+     52          
+     53          #ifdef _TIM
+     54          
+     55          /* Private Functions ---------------------------------------------------------- */
+     56          
+     57          static uint32_t getPClock (uint32_t timernum);
+     58          static uint32_t converUSecToVal (uint32_t timernum, uint32_t usec);
+     59          static uint32_t converPtrToTimeNum (LPC_TIM_TypeDef *TIMx);
+     60          
+     61          
+     62          /*********************************************************************//**
+     63           * @brief 		Get peripheral clock of each timer controller
+     64           * @param[in]	timernum Timer number
+     65           * @return 		Peripheral clock of timer
+     66           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     67          static uint32_t getPClock (uint32_t timernum)
+     68          {
+   \                     getPClock: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+     69          	uint32_t clkdlycnt;
+     70          	switch (timernum)
+   \   00000004   0x2C00             CMP      R4,#+0
+   \   00000006   0xD005             BEQ.N    ??getPClock_0
+   \   00000008   0x2C02             CMP      R4,#+2
+   \   0000000A   0xD00D             BEQ.N    ??getPClock_1
+   \   0000000C   0xD307             BCC.N    ??getPClock_2
+   \   0000000E   0x2C03             CMP      R4,#+3
+   \   00000010   0xD00F             BEQ.N    ??getPClock_3
+   \   00000012   0xE012             B.N      ??getPClock_4
+     71          	{
+     72          	case 0:
+     73          		clkdlycnt = CLKPWR_GetPCLK (CLKPWR_PCLKSEL_TIMER0);
+   \                     ??getPClock_0: (+1)
+   \   00000014   0x2002             MOVS     R0,#+2
+   \   00000016   0x.... 0x....      BL       CLKPWR_GetPCLK
+   \   0000001A   0x0005             MOVS     R5,R0
+     74          		break;
+   \   0000001C   0xE00D             B.N      ??getPClock_4
+     75          
+     76          	case 1:
+     77          		clkdlycnt = CLKPWR_GetPCLK (CLKPWR_PCLKSEL_TIMER1);
+   \                     ??getPClock_2: (+1)
+   \   0000001E   0x2004             MOVS     R0,#+4
+   \   00000020   0x.... 0x....      BL       CLKPWR_GetPCLK
+   \   00000024   0x0005             MOVS     R5,R0
+     78          		break;
+   \   00000026   0xE008             B.N      ??getPClock_4
+     79          
+     80          	case 2:
+     81          		clkdlycnt = CLKPWR_GetPCLK (CLKPWR_PCLKSEL_TIMER2);
+   \                     ??getPClock_1: (+1)
+   \   00000028   0x202C             MOVS     R0,#+44
+   \   0000002A   0x.... 0x....      BL       CLKPWR_GetPCLK
+   \   0000002E   0x0005             MOVS     R5,R0
+     82          		break;
+   \   00000030   0xE003             B.N      ??getPClock_4
+     83          
+     84          	case 3:
+     85          		clkdlycnt = CLKPWR_GetPCLK (CLKPWR_PCLKSEL_TIMER3);
+   \                     ??getPClock_3: (+1)
+   \   00000032   0x202E             MOVS     R0,#+46
+   \   00000034   0x.... 0x....      BL       CLKPWR_GetPCLK
+   \   00000038   0x0005             MOVS     R5,R0
+     86          		break;
+     87          	}
+     88          	return clkdlycnt;
+   \                     ??getPClock_4: (+1)
+   \   0000003A   0x0028             MOVS     R0,R5
+   \   0000003C   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+     89          }
+     90          
+     91          
+     92          /*********************************************************************//**
+     93           * @brief 		Convert a time to a timer count value
+     94           * @param[in]	timernum Timer number
+     95           * @param[in]	usec Time in microseconds
+     96           * @return 		The number of required clock ticks to give the time delay
+     97           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     98          uint32_t converUSecToVal (uint32_t timernum, uint32_t usec)
+     99          {
+   \                     converUSecToVal: (+1)
+   \   00000000   0xE92D 0x4370      PUSH     {R4-R6,R8,R9,LR}
+   \   00000004   0x0006             MOVS     R6,R0
+   \   00000006   0x4688             MOV      R8,R1
+    100          	uint64_t clkdlycnt;
+    101          
+    102          	// Get Pclock of timer
+    103          	clkdlycnt = (uint64_t) getPClock(timernum);
+   \   00000008   0x0030             MOVS     R0,R6
+   \   0000000A   0x.... 0x....      BL       getPClock
+   \   0000000E   0x2100             MOVS     R1,#+0
+   \   00000010   0x0004             MOVS     R4,R0
+   \   00000012   0x000D             MOVS     R5,R1
+    104          
+    105          	clkdlycnt = (clkdlycnt * usec) / 1000000;
+   \   00000014   0xF05F 0x0900      MOVS     R9,#+0
+   \   00000018   0xFBA8 0x0104      UMULL    R0,R1,R8,R4
+   \   0000001C   0xFB08 0x1105      MLA      R1,R8,R5,R1
+   \   00000020   0xFB09 0x1104      MLA      R1,R9,R4,R1
+   \   00000024   0x.... 0x....      LDR.W    R2,??DataTable13  ;; 0xf4240
+   \   00000028   0x2300             MOVS     R3,#+0
+   \   0000002A   0x.... 0x....      BL       __aeabi_uldivmod
+   \   0000002E   0x0004             MOVS     R4,R0
+   \   00000030   0x000D             MOVS     R5,R1
+    106          	return (uint32_t) clkdlycnt;
+   \   00000032   0x0020             MOVS     R0,R4
+   \   00000034   0xE8BD 0x8370      POP      {R4-R6,R8,R9,PC}  ;; return
+    107          }
+    108          
+    109          
+    110          /*********************************************************************//**
+    111           * @brief 		Convert a timer register pointer to a timer number
+    112           * @param[in]	TIMx Pointer to LPC_TIM_TypeDef, should be:
+    113           * 				- LPC_TIM0: TIMER0 peripheral
+    114           * 				- LPC_TIM1: TIMER1 peripheral
+    115           * 				- LPC_TIM2: TIMER2 peripheral
+    116           * 				- LPC_TIM3: TIMER3 peripheral
+    117           * @return 		The timer number (0 to 3) or 0xFFFF FFFF if register pointer is bad
+    118           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    119          uint32_t converPtrToTimeNum (LPC_TIM_TypeDef *TIMx)
+    120          {
+   \                     converPtrToTimeNum: (+1)
+   \   00000000   0x0001             MOVS     R1,R0
+    121          	uint32_t tnum = 0xFFFFFFFF;
+   \   00000002   0xF05F 0x30FF      MOVS     R0,#-1
+    122          
+    123          	if (TIMx == LPC_TIM0)
+   \   00000006   0xF1B1 0x2F40      CMP      R1,#+1073758208
+   \   0000000A   0xD102             BNE.N    ??converPtrToTimeNum_0
+    124          	{
+    125          		tnum = 0;
+   \   0000000C   0x2200             MOVS     R2,#+0
+   \   0000000E   0x0010             MOVS     R0,R2
+   \   00000010   0xE013             B.N      ??converPtrToTimeNum_1
+    126          	}
+    127          	else if (TIMx == LPC_TIM1)
+   \                     ??converPtrToTimeNum_0: (+1)
+   \   00000012   0x.... 0x....      LDR.W    R2,??DataTable13_1  ;; 0x40008000
+   \   00000016   0x4291             CMP      R1,R2
+   \   00000018   0xD102             BNE.N    ??converPtrToTimeNum_2
+    128          	{
+    129          		tnum = 1;
+   \   0000001A   0x2201             MOVS     R2,#+1
+   \   0000001C   0x0010             MOVS     R0,R2
+   \   0000001E   0xE00C             B.N      ??converPtrToTimeNum_1
+    130          	}
+    131          	else if (TIMx == LPC_TIM2)
+   \                     ??converPtrToTimeNum_2: (+1)
+   \   00000020   0x.... 0x....      LDR.W    R2,??DataTable13_2  ;; 0x40090000
+   \   00000024   0x4291             CMP      R1,R2
+   \   00000026   0xD102             BNE.N    ??converPtrToTimeNum_3
+    132          	{
+    133          		tnum = 2;
+   \   00000028   0x2202             MOVS     R2,#+2
+   \   0000002A   0x0010             MOVS     R0,R2
+   \   0000002C   0xE005             B.N      ??converPtrToTimeNum_1
+    134          	}
+    135          	else if (TIMx == LPC_TIM3)
+   \                     ??converPtrToTimeNum_3: (+1)
+   \   0000002E   0x.... 0x....      LDR.W    R2,??DataTable13_3  ;; 0x40094000
+   \   00000032   0x4291             CMP      R1,R2
+   \   00000034   0xD101             BNE.N    ??converPtrToTimeNum_1
+    136          	{
+    137          		tnum = 3;
+   \   00000036   0x2203             MOVS     R2,#+3
+   \   00000038   0x0010             MOVS     R0,R2
+    138          	}
+    139          
+    140          	return tnum;
+   \                     ??converPtrToTimeNum_1: (+1)
+   \   0000003A   0x4770             BX       LR               ;; return
+    141          }
+    142          
+    143          /* End of Private Functions ---------------------------------------------------- */
+    144          
+    145          
+    146          /* Public Functions ----------------------------------------------------------- */
+    147          /** @addtogroup TIM_Public_Functions
+    148           * @{
+    149           */
+    150          
+    151          /*********************************************************************//**
+    152           * @brief 		Get Interrupt Status
+    153           * @param[in]	TIMx Timer selection, should be:
+    154           *   			- LPC_TIM0: TIMER0 peripheral
+    155           * 				- LPC_TIM1: TIMER1 peripheral
+    156           * 				- LPC_TIM2: TIMER2 peripheral
+    157           * 				- LPC_TIM3: TIMER3 peripheral
+    158           * @param[in]	IntFlag: interrupt type, should be:
+    159           * 				- TIM_MR0_INT: Interrupt for Match channel 0
+    160           * 				- TIM_MR1_INT: Interrupt for Match channel 1
+    161           * 				- TIM_MR2_INT: Interrupt for Match channel 2
+    162           * 				- TIM_MR3_INT: Interrupt for Match channel 3
+    163           * 				- TIM_CR0_INT: Interrupt for Capture channel 0
+    164           * 				- TIM_CR1_INT: Interrupt for Capture channel 1
+    165           * @return 		FlagStatus
+    166           * 				- SET : interrupt
+    167           * 				- RESET : no interrupt
+    168           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    169          FlagStatus TIM_GetIntStatus(LPC_TIM_TypeDef *TIMx, TIM_INT_TYPE IntFlag)
+    170          {
+   \                     TIM_GetIntStatus: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    171          	uint8_t temp;
+    172          	CHECK_PARAM(PARAM_TIMx(TIMx));
+   \   00000006   0xF1B4 0x2F40      CMP      R4,#+1073758208
+   \   0000000A   0xD010             BEQ.N    ??TIM_GetIntStatus_0
+   \   0000000C   0x.... 0x....      LDR.W    R0,??DataTable13_1  ;; 0x40008000
+   \   00000010   0x4284             CMP      R4,R0
+   \   00000012   0xD00C             BEQ.N    ??TIM_GetIntStatus_0
+   \   00000014   0x.... 0x....      LDR.W    R0,??DataTable13_2  ;; 0x40090000
+   \   00000018   0x4284             CMP      R4,R0
+   \   0000001A   0xD008             BEQ.N    ??TIM_GetIntStatus_0
+   \   0000001C   0x.... 0x....      LDR.W    R0,??DataTable13_3  ;; 0x40094000
+   \   00000020   0x4284             CMP      R4,R0
+   \   00000022   0xD004             BEQ.N    ??TIM_GetIntStatus_0
+   \   00000024   0x21AC             MOVS     R1,#+172
+   \   00000026   0x.... 0x....      LDR.W    R0,??DataTable13_4
+   \   0000002A   0x.... 0x....      BL       check_failed
+    173          	CHECK_PARAM(PARAM_TIM_INT_TYPE(IntFlag));
+   \                     ??TIM_GetIntStatus_0: (+1)
+   \   0000002E   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000030   0x2D00             CMP      R5,#+0
+   \   00000032   0xD013             BEQ.N    ??TIM_GetIntStatus_1
+   \   00000034   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000036   0x2D01             CMP      R5,#+1
+   \   00000038   0xD010             BEQ.N    ??TIM_GetIntStatus_1
+   \   0000003A   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000003C   0x2D02             CMP      R5,#+2
+   \   0000003E   0xD00D             BEQ.N    ??TIM_GetIntStatus_1
+   \   00000040   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000042   0x2D03             CMP      R5,#+3
+   \   00000044   0xD00A             BEQ.N    ??TIM_GetIntStatus_1
+   \   00000046   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000048   0x2D04             CMP      R5,#+4
+   \   0000004A   0xD007             BEQ.N    ??TIM_GetIntStatus_1
+   \   0000004C   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000004E   0x2D05             CMP      R5,#+5
+   \   00000050   0xD004             BEQ.N    ??TIM_GetIntStatus_1
+   \   00000052   0x21AD             MOVS     R1,#+173
+   \   00000054   0x.... 0x....      LDR.W    R0,??DataTable13_4
+   \   00000058   0x.... 0x....      BL       check_failed
+    174          	temp = (TIMx->IR)& TIM_IR_CLR(IntFlag);
+   \                     ??TIM_GetIntStatus_1: (+1)
+   \   0000005C   0x6820             LDR      R0,[R4, #+0]
+   \   0000005E   0x2101             MOVS     R1,#+1
+   \   00000060   0x40A9             LSLS     R1,R1,R5
+   \   00000062   0x4008             ANDS     R0,R1,R0
+   \   00000064   0x0006             MOVS     R6,R0
+    175          	if (temp)
+   \   00000066   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000068   0x2E00             CMP      R6,#+0
+   \   0000006A   0xD001             BEQ.N    ??TIM_GetIntStatus_2
+    176          		return SET;
+   \   0000006C   0x2001             MOVS     R0,#+1
+   \   0000006E   0xE000             B.N      ??TIM_GetIntStatus_3
+    177          
+    178          	return RESET;
+   \                     ??TIM_GetIntStatus_2: (+1)
+   \   00000070   0x2000             MOVS     R0,#+0
+   \                     ??TIM_GetIntStatus_3: (+1)
+   \   00000072   0xBD70             POP      {R4-R6,PC}       ;; return
+    179          
+    180          }
+    181          /*********************************************************************//**
+    182           * @brief 		Get Capture Interrupt Status
+    183           * @param[in]	TIMx Timer selection, should be:
+    184           *  	   		- LPC_TIM0: TIMER0 peripheral
+    185           * 				- LPC_TIM1: TIMER1 peripheral
+    186           * 				- LPC_TIM2: TIMER2 peripheral
+    187           * 				- LPC_TIM3: TIMER3 peripheral
+    188           * @param[in]	IntFlag: interrupt type, should be:
+    189           * 				- TIM_MR0_INT: Interrupt for Match channel 0
+    190           * 				- TIM_MR1_INT: Interrupt for Match channel 1
+    191           * 				- TIM_MR2_INT: Interrupt for Match channel 2
+    192           * 				- TIM_MR3_INT: Interrupt for Match channel 3
+    193           * 				- TIM_CR0_INT: Interrupt for Capture channel 0
+    194           * 				- TIM_CR1_INT: Interrupt for Capture channel 1
+    195           * @return 		FlagStatus
+    196           * 				- SET : interrupt
+    197           * 				- RESET : no interrupt
+    198           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    199          FlagStatus TIM_GetIntCaptureStatus(LPC_TIM_TypeDef *TIMx, TIM_INT_TYPE IntFlag)
+    200          {
+   \                     TIM_GetIntCaptureStatus: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    201          	uint8_t temp;
+    202          	CHECK_PARAM(PARAM_TIMx(TIMx));
+   \   00000006   0xF1B4 0x2F40      CMP      R4,#+1073758208
+   \   0000000A   0xD010             BEQ.N    ??TIM_GetIntCaptureStatus_0
+   \   0000000C   0x.... 0x....      LDR.W    R0,??DataTable13_1  ;; 0x40008000
+   \   00000010   0x4284             CMP      R4,R0
+   \   00000012   0xD00C             BEQ.N    ??TIM_GetIntCaptureStatus_0
+   \   00000014   0x.... 0x....      LDR.W    R0,??DataTable13_2  ;; 0x40090000
+   \   00000018   0x4284             CMP      R4,R0
+   \   0000001A   0xD008             BEQ.N    ??TIM_GetIntCaptureStatus_0
+   \   0000001C   0x.... 0x....      LDR.W    R0,??DataTable13_3  ;; 0x40094000
+   \   00000020   0x4284             CMP      R4,R0
+   \   00000022   0xD004             BEQ.N    ??TIM_GetIntCaptureStatus_0
+   \   00000024   0x21CA             MOVS     R1,#+202
+   \   00000026   0x.... 0x....      LDR.W    R0,??DataTable13_4
+   \   0000002A   0x.... 0x....      BL       check_failed
+    203          	CHECK_PARAM(PARAM_TIM_INT_TYPE(IntFlag));
+   \                     ??TIM_GetIntCaptureStatus_0: (+1)
+   \   0000002E   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000030   0x2D00             CMP      R5,#+0
+   \   00000032   0xD013             BEQ.N    ??TIM_GetIntCaptureStatus_1
+   \   00000034   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000036   0x2D01             CMP      R5,#+1
+   \   00000038   0xD010             BEQ.N    ??TIM_GetIntCaptureStatus_1
+   \   0000003A   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000003C   0x2D02             CMP      R5,#+2
+   \   0000003E   0xD00D             BEQ.N    ??TIM_GetIntCaptureStatus_1
+   \   00000040   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000042   0x2D03             CMP      R5,#+3
+   \   00000044   0xD00A             BEQ.N    ??TIM_GetIntCaptureStatus_1
+   \   00000046   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000048   0x2D04             CMP      R5,#+4
+   \   0000004A   0xD007             BEQ.N    ??TIM_GetIntCaptureStatus_1
+   \   0000004C   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000004E   0x2D05             CMP      R5,#+5
+   \   00000050   0xD004             BEQ.N    ??TIM_GetIntCaptureStatus_1
+   \   00000052   0x21CB             MOVS     R1,#+203
+   \   00000054   0x.... 0x....      LDR.W    R0,??DataTable13_4
+   \   00000058   0x.... 0x....      BL       check_failed
+    204          	temp = (TIMx->IR) & (1<<(4+IntFlag));
+   \                     ??TIM_GetIntCaptureStatus_1: (+1)
+   \   0000005C   0x6820             LDR      R0,[R4, #+0]
+   \   0000005E   0x2101             MOVS     R1,#+1
+   \   00000060   0x1D2A             ADDS     R2,R5,#+4
+   \   00000062   0x4091             LSLS     R1,R1,R2
+   \   00000064   0x4008             ANDS     R0,R1,R0
+   \   00000066   0x0006             MOVS     R6,R0
+    205          	if(temp)
+   \   00000068   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   0000006A   0x2E00             CMP      R6,#+0
+   \   0000006C   0xD001             BEQ.N    ??TIM_GetIntCaptureStatus_2
+    206          		return SET;
+   \   0000006E   0x2001             MOVS     R0,#+1
+   \   00000070   0xE000             B.N      ??TIM_GetIntCaptureStatus_3
+    207          	return RESET;
+   \                     ??TIM_GetIntCaptureStatus_2: (+1)
+   \   00000072   0x2000             MOVS     R0,#+0
+   \                     ??TIM_GetIntCaptureStatus_3: (+1)
+   \   00000074   0xBD70             POP      {R4-R6,PC}       ;; return
+    208          }
+    209          /*********************************************************************//**
+    210           * @brief 		Clear Interrupt pending
+    211           * @param[in]	TIMx Timer selection, should be:
+    212           *    			- LPC_TIM0: TIMER0 peripheral
+    213           * 				- LPC_TIM1: TIMER1 peripheral
+    214           * 				- LPC_TIM2: TIMER2 peripheral
+    215           * 				- LPC_TIM3: TIMER3 peripheral
+    216           * @param[in]	IntFlag: interrupt type, should be:
+    217           * 				- TIM_MR0_INT: Interrupt for Match channel 0
+    218           * 				- TIM_MR1_INT: Interrupt for Match channel 1
+    219           * 				- TIM_MR2_INT: Interrupt for Match channel 2
+    220           * 				- TIM_MR3_INT: Interrupt for Match channel 3
+    221           * 				- TIM_CR0_INT: Interrupt for Capture channel 0
+    222           * 				- TIM_CR1_INT: Interrupt for Capture channel 1
+    223           * @return 		None
+    224           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    225          void TIM_ClearIntPending(LPC_TIM_TypeDef *TIMx, TIM_INT_TYPE IntFlag)
+    226          {
+   \                     TIM_ClearIntPending: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    227          	CHECK_PARAM(PARAM_TIMx(TIMx));
+   \   00000006   0xF1B4 0x2F40      CMP      R4,#+1073758208
+   \   0000000A   0xD010             BEQ.N    ??TIM_ClearIntPending_0
+   \   0000000C   0x.... 0x....      LDR.W    R0,??DataTable13_1  ;; 0x40008000
+   \   00000010   0x4284             CMP      R4,R0
+   \   00000012   0xD00C             BEQ.N    ??TIM_ClearIntPending_0
+   \   00000014   0x.... 0x....      LDR.W    R0,??DataTable13_2  ;; 0x40090000
+   \   00000018   0x4284             CMP      R4,R0
+   \   0000001A   0xD008             BEQ.N    ??TIM_ClearIntPending_0
+   \   0000001C   0x.... 0x....      LDR.W    R0,??DataTable13_3  ;; 0x40094000
+   \   00000020   0x4284             CMP      R4,R0
+   \   00000022   0xD004             BEQ.N    ??TIM_ClearIntPending_0
+   \   00000024   0x21E3             MOVS     R1,#+227
+   \   00000026   0x.... 0x....      LDR.W    R0,??DataTable13_4
+   \   0000002A   0x.... 0x....      BL       check_failed
+    228          	CHECK_PARAM(PARAM_TIM_INT_TYPE(IntFlag));
+   \                     ??TIM_ClearIntPending_0: (+1)
+   \   0000002E   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000030   0x2D00             CMP      R5,#+0
+   \   00000032   0xD013             BEQ.N    ??TIM_ClearIntPending_1
+   \   00000034   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000036   0x2D01             CMP      R5,#+1
+   \   00000038   0xD010             BEQ.N    ??TIM_ClearIntPending_1
+   \   0000003A   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000003C   0x2D02             CMP      R5,#+2
+   \   0000003E   0xD00D             BEQ.N    ??TIM_ClearIntPending_1
+   \   00000040   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000042   0x2D03             CMP      R5,#+3
+   \   00000044   0xD00A             BEQ.N    ??TIM_ClearIntPending_1
+   \   00000046   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000048   0x2D04             CMP      R5,#+4
+   \   0000004A   0xD007             BEQ.N    ??TIM_ClearIntPending_1
+   \   0000004C   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000004E   0x2D05             CMP      R5,#+5
+   \   00000050   0xD004             BEQ.N    ??TIM_ClearIntPending_1
+   \   00000052   0x21E4             MOVS     R1,#+228
+   \   00000054   0x.... 0x....      LDR.W    R0,??DataTable13_4
+   \   00000058   0x.... 0x....      BL       check_failed
+    229          	TIMx->IR = TIM_IR_CLR(IntFlag);
+   \                     ??TIM_ClearIntPending_1: (+1)
+   \   0000005C   0x2001             MOVS     R0,#+1
+   \   0000005E   0x40A8             LSLS     R0,R0,R5
+   \   00000060   0x6020             STR      R0,[R4, #+0]
+    230          }
+   \   00000062   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    231          
+    232          /*********************************************************************//**
+    233           * @brief 		Clear Capture Interrupt pending
+    234           * @param[in]	TIMx Timer selection, should be
+    235           *    			- LPC_TIM0: TIMER0 peripheral
+    236           * 				- LPC_TIM1: TIMER1 peripheral
+    237           * 				- LPC_TIM2: TIMER2 peripheral
+    238           * 				- LPC_TIM3: TIMER3 peripheral
+    239           * @param[in]	IntFlag interrupt type, should be:
+    240           *				- TIM_MR0_INT: Interrupt for Match channel 0
+    241           * 				- TIM_MR1_INT: Interrupt for Match channel 1
+    242           * 				- TIM_MR2_INT: Interrupt for Match channel 2
+    243           * 				- TIM_MR3_INT: Interrupt for Match channel 3
+    244           * 				- TIM_CR0_INT: Interrupt for Capture channel 0
+    245           * 				- TIM_CR1_INT: Interrupt for Capture channel 1
+    246           * @return 		None
+    247           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    248          void TIM_ClearIntCapturePending(LPC_TIM_TypeDef *TIMx, TIM_INT_TYPE IntFlag)
+    249          {
+   \                     TIM_ClearIntCapturePending: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    250          	CHECK_PARAM(PARAM_TIMx(TIMx));
+   \   00000006   0xF1B4 0x2F40      CMP      R4,#+1073758208
+   \   0000000A   0xD010             BEQ.N    ??TIM_ClearIntCapturePending_0
+   \   0000000C   0x.... 0x....      LDR.W    R0,??DataTable13_1  ;; 0x40008000
+   \   00000010   0x4284             CMP      R4,R0
+   \   00000012   0xD00C             BEQ.N    ??TIM_ClearIntCapturePending_0
+   \   00000014   0x.... 0x....      LDR.W    R0,??DataTable13_2  ;; 0x40090000
+   \   00000018   0x4284             CMP      R4,R0
+   \   0000001A   0xD008             BEQ.N    ??TIM_ClearIntCapturePending_0
+   \   0000001C   0x.... 0x....      LDR.W    R0,??DataTable13_3  ;; 0x40094000
+   \   00000020   0x4284             CMP      R4,R0
+   \   00000022   0xD004             BEQ.N    ??TIM_ClearIntCapturePending_0
+   \   00000024   0x21FA             MOVS     R1,#+250
+   \   00000026   0x.... 0x....      LDR.W    R0,??DataTable13_4
+   \   0000002A   0x.... 0x....      BL       check_failed
+    251          	CHECK_PARAM(PARAM_TIM_INT_TYPE(IntFlag));
+   \                     ??TIM_ClearIntCapturePending_0: (+1)
+   \   0000002E   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000030   0x2D00             CMP      R5,#+0
+   \   00000032   0xD013             BEQ.N    ??TIM_ClearIntCapturePending_1
+   \   00000034   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000036   0x2D01             CMP      R5,#+1
+   \   00000038   0xD010             BEQ.N    ??TIM_ClearIntCapturePending_1
+   \   0000003A   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000003C   0x2D02             CMP      R5,#+2
+   \   0000003E   0xD00D             BEQ.N    ??TIM_ClearIntCapturePending_1
+   \   00000040   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000042   0x2D03             CMP      R5,#+3
+   \   00000044   0xD00A             BEQ.N    ??TIM_ClearIntCapturePending_1
+   \   00000046   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000048   0x2D04             CMP      R5,#+4
+   \   0000004A   0xD007             BEQ.N    ??TIM_ClearIntCapturePending_1
+   \   0000004C   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000004E   0x2D05             CMP      R5,#+5
+   \   00000050   0xD004             BEQ.N    ??TIM_ClearIntCapturePending_1
+   \   00000052   0x21FB             MOVS     R1,#+251
+   \   00000054   0x.... 0x....      LDR.W    R0,??DataTable13_4
+   \   00000058   0x.... 0x....      BL       check_failed
+    252          	TIMx->IR = (1<<(4+IntFlag));
+   \                     ??TIM_ClearIntCapturePending_1: (+1)
+   \   0000005C   0x2001             MOVS     R0,#+1
+   \   0000005E   0x1D29             ADDS     R1,R5,#+4
+   \   00000060   0x4088             LSLS     R0,R0,R1
+   \   00000062   0x6020             STR      R0,[R4, #+0]
+    253          }
+   \   00000064   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    254          
+    255          /*********************************************************************//**
+    256           * @brief 		Configuration for Timer at initial time
+    257           * @param[in] 	TimerCounterMode timer counter mode, should be:
+    258           * 				- TIM_TIMER_MODE: Timer mode
+    259           * 				- TIM_COUNTER_RISING_MODE: Counter rising mode
+    260           * 				- TIM_COUNTER_FALLING_MODE: Counter falling mode
+    261           * 				- TIM_COUNTER_ANY_MODE:Counter on both edges
+    262           * @param[in] 	TIM_ConfigStruct pointer to TIM_TIMERCFG_Type or
+    263           * 				TIM_COUNTERCFG_Type
+    264           * @return 		None
+    265           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    266          void TIM_ConfigStructInit(TIM_MODE_OPT TimerCounterMode, void *TIM_ConfigStruct)
+    267          {
+    268          	if (TimerCounterMode == TIM_TIMER_MODE )
+   \                     TIM_ConfigStructInit: (+1)
+   \   00000000   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000002   0x2800             CMP      R0,#+0
+   \   00000004   0xD104             BNE.N    ??TIM_ConfigStructInit_0
+    269          	{
+    270          		TIM_TIMERCFG_Type * pTimeCfg = (TIM_TIMERCFG_Type *)TIM_ConfigStruct;
+    271          		pTimeCfg->PrescaleOption = TIM_PRESCALE_USVAL;
+   \   00000006   0x2201             MOVS     R2,#+1
+   \   00000008   0x700A             STRB     R2,[R1, #+0]
+    272          		pTimeCfg->PrescaleValue = 1;
+   \   0000000A   0x2201             MOVS     R2,#+1
+   \   0000000C   0x604A             STR      R2,[R1, #+4]
+   \   0000000E   0xE001             B.N      ??TIM_ConfigStructInit_1
+    273          	}
+    274          	else
+    275          	{
+    276          		TIM_COUNTERCFG_Type * pCounterCfg = (TIM_COUNTERCFG_Type *)TIM_ConfigStruct;
+    277          		pCounterCfg->CountInputSelect = TIM_COUNTER_INCAP0;
+   \                     ??TIM_ConfigStructInit_0: (+1)
+   \   00000010   0x2200             MOVS     R2,#+0
+   \   00000012   0x704A             STRB     R2,[R1, #+1]
+    278          	}
+    279          }
+   \                     ??TIM_ConfigStructInit_1: (+1)
+   \   00000014   0x4770             BX       LR               ;; return
+    280          
+    281          /*********************************************************************//**
+    282           * @brief 		Initial Timer/Counter device
+    283           * 				 	Set Clock frequency for Timer
+    284           * 					Set initial configuration for Timer
+    285           * @param[in]	TIMx  Timer selection, should be:
+    286           * 				- LPC_TIM0: TIMER0 peripheral
+    287           * 				- LPC_TIM1: TIMER1 peripheral
+    288           * 				- LPC_TIM2: TIMER2 peripheral
+    289           * 				- LPC_TIM3: TIMER3 peripheral
+    290           * @param[in]	TimerCounterMode Timer counter mode, should be:
+    291           * 				- TIM_TIMER_MODE: Timer mode
+    292           * 				- TIM_COUNTER_RISING_MODE: Counter rising mode
+    293           * 				- TIM_COUNTER_FALLING_MODE: Counter falling mode
+    294           * 				- TIM_COUNTER_ANY_MODE:Counter on both edges
+    295           * @param[in]	TIM_ConfigStruct pointer to TIM_TIMERCFG_Type
+    296           * 				that contains the configuration information for the
+    297           *                    specified Timer peripheral.
+    298           * @return 		None
+    299           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    300          void TIM_Init(LPC_TIM_TypeDef *TIMx, TIM_MODE_OPT TimerCounterMode, void *TIM_ConfigStruct)
+    301          {
+   \                     TIM_Init: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+   \   00000006   0x000D             MOVS     R5,R1
+   \   00000008   0x0016             MOVS     R6,R2
+    302          	TIM_TIMERCFG_Type *pTimeCfg;
+    303          	TIM_COUNTERCFG_Type *pCounterCfg;
+    304          
+    305          	CHECK_PARAM(PARAM_TIMx(TIMx));
+   \   0000000A   0xF1B4 0x2F40      CMP      R4,#+1073758208
+   \   0000000E   0xD011             BEQ.N    ??TIM_Init_0
+   \   00000010   0x.... 0x....      LDR.W    R0,??DataTable13_1  ;; 0x40008000
+   \   00000014   0x4284             CMP      R4,R0
+   \   00000016   0xD00D             BEQ.N    ??TIM_Init_0
+   \   00000018   0x.... 0x....      LDR.W    R0,??DataTable13_2  ;; 0x40090000
+   \   0000001C   0x4284             CMP      R4,R0
+   \   0000001E   0xD009             BEQ.N    ??TIM_Init_0
+   \   00000020   0x.... 0x....      LDR.W    R0,??DataTable13_3  ;; 0x40094000
+   \   00000024   0x4284             CMP      R4,R0
+   \   00000026   0xD005             BEQ.N    ??TIM_Init_0
+   \   00000028   0xF240 0x1131      MOVW     R1,#+305
+   \   0000002C   0x.... 0x....      LDR.W    R0,??DataTable13_4
+   \   00000030   0x.... 0x....      BL       check_failed
+    306          	CHECK_PARAM(PARAM_TIM_MODE_OPT(TimerCounterMode));
+   \                     ??TIM_Init_0: (+1)
+   \   00000034   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000036   0x2D00             CMP      R5,#+0
+   \   00000038   0xD00E             BEQ.N    ??TIM_Init_1
+   \   0000003A   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000003C   0x2D01             CMP      R5,#+1
+   \   0000003E   0xD00B             BEQ.N    ??TIM_Init_1
+   \   00000040   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000042   0x2D01             CMP      R5,#+1
+   \   00000044   0xD008             BEQ.N    ??TIM_Init_1
+   \   00000046   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000048   0x2D01             CMP      R5,#+1
+   \   0000004A   0xD005             BEQ.N    ??TIM_Init_1
+   \   0000004C   0xF44F 0x7199      MOV      R1,#+306
+   \   00000050   0x.... 0x....      LDR.W    R0,??DataTable13_4
+   \   00000054   0x.... 0x....      BL       check_failed
+    307          
+    308          	//set power
+    309          
+    310          	if (TIMx== LPC_TIM0)
+   \                     ??TIM_Init_1: (+1)
+   \   00000058   0xF1B4 0x2F40      CMP      R4,#+1073758208
+   \   0000005C   0xD108             BNE.N    ??TIM_Init_2
+    311          	{
+    312          		CLKPWR_ConfigPPWR (CLKPWR_PCONP_PCTIM0, ENABLE);
+   \   0000005E   0x2101             MOVS     R1,#+1
+   \   00000060   0x2002             MOVS     R0,#+2
+   \   00000062   0x.... 0x....      BL       CLKPWR_ConfigPPWR
+    313          		//PCLK_Timer0 = CCLK/4
+    314          		CLKPWR_SetPCLKDiv (CLKPWR_PCLKSEL_TIMER0, CLKPWR_PCLKSEL_CCLK_DIV_4);
+   \   00000066   0x2100             MOVS     R1,#+0
+   \   00000068   0x2002             MOVS     R0,#+2
+   \   0000006A   0x.... 0x....      BL       CLKPWR_SetPCLKDiv
+   \   0000006E   0xE027             B.N      ??TIM_Init_3
+    315          	}
+    316          	else if (TIMx== LPC_TIM1)
+   \                     ??TIM_Init_2: (+1)
+   \   00000070   0x.... 0x....      LDR.W    R0,??DataTable13_1  ;; 0x40008000
+   \   00000074   0x4284             CMP      R4,R0
+   \   00000076   0xD108             BNE.N    ??TIM_Init_4
+    317          	{
+    318          		CLKPWR_ConfigPPWR (CLKPWR_PCONP_PCTIM1, ENABLE);
+   \   00000078   0x2101             MOVS     R1,#+1
+   \   0000007A   0x2004             MOVS     R0,#+4
+   \   0000007C   0x.... 0x....      BL       CLKPWR_ConfigPPWR
+    319          		//PCLK_Timer1 = CCLK/4
+    320          		CLKPWR_SetPCLKDiv (CLKPWR_PCLKSEL_TIMER1, CLKPWR_PCLKSEL_CCLK_DIV_4);
+   \   00000080   0x2100             MOVS     R1,#+0
+   \   00000082   0x2004             MOVS     R0,#+4
+   \   00000084   0x.... 0x....      BL       CLKPWR_SetPCLKDiv
+   \   00000088   0xE01A             B.N      ??TIM_Init_3
+    321          
+    322          	}
+    323          
+    324          	else if (TIMx== LPC_TIM2)
+   \                     ??TIM_Init_4: (+1)
+   \   0000008A   0x.... 0x....      LDR.W    R0,??DataTable13_2  ;; 0x40090000
+   \   0000008E   0x4284             CMP      R4,R0
+   \   00000090   0xD109             BNE.N    ??TIM_Init_5
+    325          	{
+    326          		CLKPWR_ConfigPPWR (CLKPWR_PCONP_PCTIM2, ENABLE);
+   \   00000092   0x2101             MOVS     R1,#+1
+   \   00000094   0xF45F 0x0080      MOVS     R0,#+4194304
+   \   00000098   0x.... 0x....      BL       CLKPWR_ConfigPPWR
+    327          		//PCLK_Timer2= CCLK/4
+    328          		CLKPWR_SetPCLKDiv (CLKPWR_PCLKSEL_TIMER2, CLKPWR_PCLKSEL_CCLK_DIV_4);
+   \   0000009C   0x2100             MOVS     R1,#+0
+   \   0000009E   0x202C             MOVS     R0,#+44
+   \   000000A0   0x.... 0x....      BL       CLKPWR_SetPCLKDiv
+   \   000000A4   0xE00C             B.N      ??TIM_Init_3
+    329          	}
+    330          	else if (TIMx== LPC_TIM3)
+   \                     ??TIM_Init_5: (+1)
+   \   000000A6   0x.... 0x....      LDR.W    R0,??DataTable13_3  ;; 0x40094000
+   \   000000AA   0x4284             CMP      R4,R0
+   \   000000AC   0xD108             BNE.N    ??TIM_Init_3
+    331          	{
+    332          		CLKPWR_ConfigPPWR (CLKPWR_PCONP_PCTIM3, ENABLE);
+   \   000000AE   0x2101             MOVS     R1,#+1
+   \   000000B0   0xF45F 0x0000      MOVS     R0,#+8388608
+   \   000000B4   0x.... 0x....      BL       CLKPWR_ConfigPPWR
+    333          		//PCLK_Timer3= CCLK/4
+    334          		CLKPWR_SetPCLKDiv (CLKPWR_PCLKSEL_TIMER3, CLKPWR_PCLKSEL_CCLK_DIV_4);
+   \   000000B8   0x2100             MOVS     R1,#+0
+   \   000000BA   0x202E             MOVS     R0,#+46
+   \   000000BC   0x.... 0x....      BL       CLKPWR_SetPCLKDiv
+    335          
+    336          	}
+    337          
+    338          	TIMx->CCR &= ~TIM_CTCR_MODE_MASK;
+   \                     ??TIM_Init_3: (+1)
+   \   000000C0   0x6AA0             LDR      R0,[R4, #+40]
+   \   000000C2   0x0880             LSRS     R0,R0,#+2
+   \   000000C4   0x0080             LSLS     R0,R0,#+2
+   \   000000C6   0x62A0             STR      R0,[R4, #+40]
+    339          	TIMx->CCR |= TIM_TIMER_MODE;
+   \   000000C8   0x6AA0             LDR      R0,[R4, #+40]
+   \   000000CA   0x62A0             STR      R0,[R4, #+40]
+    340          
+    341          	TIMx->TC =0;
+   \   000000CC   0x2000             MOVS     R0,#+0
+   \   000000CE   0x60A0             STR      R0,[R4, #+8]
+    342          	TIMx->PC =0;
+   \   000000D0   0x2000             MOVS     R0,#+0
+   \   000000D2   0x6120             STR      R0,[R4, #+16]
+    343          	TIMx->PR =0;
+   \   000000D4   0x2000             MOVS     R0,#+0
+   \   000000D6   0x60E0             STR      R0,[R4, #+12]
+    344          	TIMx->TCR |= (1<<1); //Reset Counter
+   \   000000D8   0x6860             LDR      R0,[R4, #+4]
+   \   000000DA   0xF050 0x0002      ORRS     R0,R0,#0x2
+   \   000000DE   0x6060             STR      R0,[R4, #+4]
+    345          	TIMx->TCR &= ~(1<<1); //release reset
+   \   000000E0   0x6860             LDR      R0,[R4, #+4]
+   \   000000E2   0xF030 0x0002      BICS     R0,R0,#0x2
+   \   000000E6   0x6060             STR      R0,[R4, #+4]
+    346          	if (TimerCounterMode == TIM_TIMER_MODE )
+   \   000000E8   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   000000EA   0x2D00             CMP      R5,#+0
+   \   000000EC   0xD110             BNE.N    ??TIM_Init_6
+    347          	{
+    348          		pTimeCfg = (TIM_TIMERCFG_Type *)TIM_ConfigStruct;
+   \   000000EE   0x0037             MOVS     R7,R6
+    349          		if (pTimeCfg->PrescaleOption  == TIM_PRESCALE_TICKVAL)
+   \   000000F0   0x7838             LDRB     R0,[R7, #+0]
+   \   000000F2   0x2800             CMP      R0,#+0
+   \   000000F4   0xD103             BNE.N    ??TIM_Init_7
+    350          		{
+    351          			TIMx->PR   = pTimeCfg->PrescaleValue -1  ;
+   \   000000F6   0x6878             LDR      R0,[R7, #+4]
+   \   000000F8   0x1E40             SUBS     R0,R0,#+1
+   \   000000FA   0x60E0             STR      R0,[R4, #+12]
+   \   000000FC   0xE015             B.N      ??TIM_Init_8
+    352          		}
+    353          		else
+    354          		{
+    355          			TIMx->PR   = converUSecToVal (converPtrToTimeNum(TIMx),pTimeCfg->PrescaleValue)-1;
+   \                     ??TIM_Init_7: (+1)
+   \   000000FE   0x0020             MOVS     R0,R4
+   \   00000100   0x.... 0x....      BL       converPtrToTimeNum
+   \   00000104   0x6879             LDR      R1,[R7, #+4]
+   \   00000106   0x.... 0x....      BL       converUSecToVal
+   \   0000010A   0x1E40             SUBS     R0,R0,#+1
+   \   0000010C   0x60E0             STR      R0,[R4, #+12]
+   \   0000010E   0xE00C             B.N      ??TIM_Init_8
+    356          		}
+    357          	}
+    358          	else
+    359          	{
+    360          
+    361          		pCounterCfg = (TIM_COUNTERCFG_Type *)TIM_ConfigStruct;
+   \                     ??TIM_Init_6: (+1)
+   \   00000110   0x46B0             MOV      R8,R6
+    362          		TIMx->CCR  &= ~TIM_CTCR_INPUT_MASK;
+   \   00000112   0x6AA0             LDR      R0,[R4, #+40]
+   \   00000114   0xF030 0x000C      BICS     R0,R0,#0xC
+   \   00000118   0x62A0             STR      R0,[R4, #+40]
+    363          		if (pCounterCfg->CountInputSelect == TIM_COUNTER_INCAP1)
+   \   0000011A   0xF898 0x0001      LDRB     R0,[R8, #+1]
+   \   0000011E   0x2801             CMP      R0,#+1
+   \   00000120   0xD103             BNE.N    ??TIM_Init_8
+    364          			TIMx->CCR |= _BIT(2);
+   \   00000122   0x6AA0             LDR      R0,[R4, #+40]
+   \   00000124   0xF050 0x0004      ORRS     R0,R0,#0x4
+   \   00000128   0x62A0             STR      R0,[R4, #+40]
+    365          	}
+    366          
+    367          	// Clear interrupt pending
+    368          	TIMx->IR = 0xFFFFFFFF;
+   \                     ??TIM_Init_8: (+1)
+   \   0000012A   0xF05F 0x30FF      MOVS     R0,#-1
+   \   0000012E   0x6020             STR      R0,[R4, #+0]
+    369          
+    370          }
+   \   00000130   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    371          
+    372          /*********************************************************************//**
+    373           * @brief 		Close Timer/Counter device
+    374           * @param[in]	TIMx  Pointer to timer device, should be:
+    375           * 				- LPC_TIM0: TIMER0 peripheral
+    376           * 				- LPC_TIM1: TIMER1 peripheral
+    377           * 				- LPC_TIM2: TIMER2 peripheral
+    378           * 				- LPC_TIM3: TIMER3 peripheral
+    379           * @return 		None
+    380           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    381          void TIM_DeInit (LPC_TIM_TypeDef *TIMx)
+    382          {
+   \                     TIM_DeInit: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    383          	CHECK_PARAM(PARAM_TIMx(TIMx));
+   \   00000004   0xF1B4 0x2F40      CMP      R4,#+1073758208
+   \   00000008   0xD00D             BEQ.N    ??TIM_DeInit_0
+   \   0000000A   0x....             LDR.N    R0,??DataTable13_1  ;; 0x40008000
+   \   0000000C   0x4284             CMP      R4,R0
+   \   0000000E   0xD00A             BEQ.N    ??TIM_DeInit_0
+   \   00000010   0x....             LDR.N    R0,??DataTable13_2  ;; 0x40090000
+   \   00000012   0x4284             CMP      R4,R0
+   \   00000014   0xD007             BEQ.N    ??TIM_DeInit_0
+   \   00000016   0x....             LDR.N    R0,??DataTable13_3  ;; 0x40094000
+   \   00000018   0x4284             CMP      R4,R0
+   \   0000001A   0xD004             BEQ.N    ??TIM_DeInit_0
+   \   0000001C   0xF240 0x117F      MOVW     R1,#+383
+   \   00000020   0x....             LDR.N    R0,??DataTable13_4
+   \   00000022   0x.... 0x....      BL       check_failed
+    384          	// Disable timer/counter
+    385          	TIMx->TCR = 0x00;
+   \                     ??TIM_DeInit_0: (+1)
+   \   00000026   0x2000             MOVS     R0,#+0
+   \   00000028   0x6060             STR      R0,[R4, #+4]
+    386          
+    387          	// Disable power
+    388          	if (TIMx== LPC_TIM0)
+   \   0000002A   0xF1B4 0x2F40      CMP      R4,#+1073758208
+   \   0000002E   0xD104             BNE.N    ??TIM_DeInit_1
+    389          		CLKPWR_ConfigPPWR (CLKPWR_PCONP_PCTIM0, DISABLE);
+   \   00000030   0x2100             MOVS     R1,#+0
+   \   00000032   0x2002             MOVS     R0,#+2
+   \   00000034   0x.... 0x....      BL       CLKPWR_ConfigPPWR
+   \   00000038   0xE018             B.N      ??TIM_DeInit_2
+    390          
+    391          	else if (TIMx== LPC_TIM1)
+   \                     ??TIM_DeInit_1: (+1)
+   \   0000003A   0x....             LDR.N    R0,??DataTable13_1  ;; 0x40008000
+   \   0000003C   0x4284             CMP      R4,R0
+   \   0000003E   0xD104             BNE.N    ??TIM_DeInit_3
+    392          		CLKPWR_ConfigPPWR (CLKPWR_PCONP_PCTIM1, DISABLE);
+   \   00000040   0x2100             MOVS     R1,#+0
+   \   00000042   0x2004             MOVS     R0,#+4
+   \   00000044   0x.... 0x....      BL       CLKPWR_ConfigPPWR
+   \   00000048   0xE010             B.N      ??TIM_DeInit_2
+    393          
+    394          	else if (TIMx== LPC_TIM2)
+   \                     ??TIM_DeInit_3: (+1)
+   \   0000004A   0x....             LDR.N    R0,??DataTable13_2  ;; 0x40090000
+   \   0000004C   0x4284             CMP      R4,R0
+   \   0000004E   0xD105             BNE.N    ??TIM_DeInit_4
+    395          		CLKPWR_ConfigPPWR (CLKPWR_PCONP_PCTIM2, DISABLE);
+   \   00000050   0x2100             MOVS     R1,#+0
+   \   00000052   0xF45F 0x0080      MOVS     R0,#+4194304
+   \   00000056   0x.... 0x....      BL       CLKPWR_ConfigPPWR
+   \   0000005A   0xE007             B.N      ??TIM_DeInit_2
+    396          
+    397          	else if (TIMx== LPC_TIM3)
+   \                     ??TIM_DeInit_4: (+1)
+   \   0000005C   0x....             LDR.N    R0,??DataTable13_3  ;; 0x40094000
+   \   0000005E   0x4284             CMP      R4,R0
+   \   00000060   0xD104             BNE.N    ??TIM_DeInit_2
+    398          		CLKPWR_ConfigPPWR (CLKPWR_PCONP_PCTIM2, DISABLE);
+   \   00000062   0x2100             MOVS     R1,#+0
+   \   00000064   0xF45F 0x0080      MOVS     R0,#+4194304
+   \   00000068   0x.... 0x....      BL       CLKPWR_ConfigPPWR
+    399          
+    400          }
+   \                     ??TIM_DeInit_2: (+1)
+   \   0000006C   0xBD10             POP      {R4,PC}          ;; return
+    401          
+    402          /*********************************************************************//**
+    403           * @brief	 	Start/Stop Timer/Counter device
+    404           * @param[in]	TIMx Pointer to timer device, should be:
+    405           *  			- LPC_TIM0: TIMER0 peripheral
+    406           * 				- LPC_TIM1: TIMER1 peripheral
+    407           * 				- LPC_TIM2: TIMER2 peripheral
+    408           * 				- LPC_TIM3: TIMER3 peripheral
+    409           * @param[in]	NewState
+    410           * 				-	ENABLE  : set timer enable
+    411           * 				-	DISABLE : disable timer
+    412           * @return 		None
+    413           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    414          void TIM_Cmd(LPC_TIM_TypeDef *TIMx, FunctionalState NewState)
+    415          {
+   \                     TIM_Cmd: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    416          	CHECK_PARAM(PARAM_TIMx(TIMx));
+   \   00000006   0xF1B4 0x2F40      CMP      R4,#+1073758208
+   \   0000000A   0xD00D             BEQ.N    ??TIM_Cmd_0
+   \   0000000C   0x....             LDR.N    R0,??DataTable13_1  ;; 0x40008000
+   \   0000000E   0x4284             CMP      R4,R0
+   \   00000010   0xD00A             BEQ.N    ??TIM_Cmd_0
+   \   00000012   0x....             LDR.N    R0,??DataTable13_2  ;; 0x40090000
+   \   00000014   0x4284             CMP      R4,R0
+   \   00000016   0xD007             BEQ.N    ??TIM_Cmd_0
+   \   00000018   0x....             LDR.N    R0,??DataTable13_3  ;; 0x40094000
+   \   0000001A   0x4284             CMP      R4,R0
+   \   0000001C   0xD004             BEQ.N    ??TIM_Cmd_0
+   \   0000001E   0xF44F 0x71D0      MOV      R1,#+416
+   \   00000022   0x....             LDR.N    R0,??DataTable13_4
+   \   00000024   0x.... 0x....      BL       check_failed
+    417          	if (NewState == ENABLE)
+   \                     ??TIM_Cmd_0: (+1)
+   \   00000028   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000002A   0x2D01             CMP      R5,#+1
+   \   0000002C   0xD104             BNE.N    ??TIM_Cmd_1
+    418          	{
+    419          		TIMx->TCR	|=  TIM_ENABLE;
+   \   0000002E   0x6860             LDR      R0,[R4, #+4]
+   \   00000030   0xF050 0x0001      ORRS     R0,R0,#0x1
+   \   00000034   0x6060             STR      R0,[R4, #+4]
+   \   00000036   0xE003             B.N      ??TIM_Cmd_2
+    420          	}
+    421          	else
+    422          	{
+    423          		TIMx->TCR &= ~TIM_ENABLE;
+   \                     ??TIM_Cmd_1: (+1)
+   \   00000038   0x6860             LDR      R0,[R4, #+4]
+   \   0000003A   0x0840             LSRS     R0,R0,#+1
+   \   0000003C   0x0040             LSLS     R0,R0,#+1
+   \   0000003E   0x6060             STR      R0,[R4, #+4]
+    424          	}
+    425          }
+   \                     ??TIM_Cmd_2: (+1)
+   \   00000040   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    426          
+    427          /*********************************************************************//**
+    428           * @brief 		Reset Timer/Counter device,
+    429           * 					Make TC and PC are synchronously reset on the next
+    430           * 					positive edge of PCLK
+    431           * @param[in]	TIMx Pointer to timer device, should be:
+    432           *   			- LPC_TIM0: TIMER0 peripheral
+    433           * 				- LPC_TIM1: TIMER1 peripheral
+    434           * 				- LPC_TIM2: TIMER2 peripheral
+    435           * 				- LPC_TIM3: TIMER3 peripheral
+    436           * @return 		None
+    437           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    438          void TIM_ResetCounter(LPC_TIM_TypeDef *TIMx)
+    439          {
+   \                     TIM_ResetCounter: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    440          	CHECK_PARAM(PARAM_TIMx(TIMx));
+   \   00000004   0xF1B4 0x2F40      CMP      R4,#+1073758208
+   \   00000008   0xD00D             BEQ.N    ??TIM_ResetCounter_0
+   \   0000000A   0x....             LDR.N    R0,??DataTable13_1  ;; 0x40008000
+   \   0000000C   0x4284             CMP      R4,R0
+   \   0000000E   0xD00A             BEQ.N    ??TIM_ResetCounter_0
+   \   00000010   0x....             LDR.N    R0,??DataTable13_2  ;; 0x40090000
+   \   00000012   0x4284             CMP      R4,R0
+   \   00000014   0xD007             BEQ.N    ??TIM_ResetCounter_0
+   \   00000016   0x....             LDR.N    R0,??DataTable13_3  ;; 0x40094000
+   \   00000018   0x4284             CMP      R4,R0
+   \   0000001A   0xD004             BEQ.N    ??TIM_ResetCounter_0
+   \   0000001C   0xF44F 0x71DC      MOV      R1,#+440
+   \   00000020   0x....             LDR.N    R0,??DataTable13_4
+   \   00000022   0x.... 0x....      BL       check_failed
+    441          	TIMx->TCR |= TIM_RESET;
+   \                     ??TIM_ResetCounter_0: (+1)
+   \   00000026   0x6860             LDR      R0,[R4, #+4]
+   \   00000028   0xF050 0x0002      ORRS     R0,R0,#0x2
+   \   0000002C   0x6060             STR      R0,[R4, #+4]
+    442          	TIMx->TCR &= ~TIM_RESET;
+   \   0000002E   0x6860             LDR      R0,[R4, #+4]
+   \   00000030   0xF030 0x0002      BICS     R0,R0,#0x2
+   \   00000034   0x6060             STR      R0,[R4, #+4]
+    443          }
+   \   00000036   0xBD10             POP      {R4,PC}          ;; return
+    444          
+    445          /*********************************************************************//**
+    446           * @brief 		Configuration for Match register
+    447           * @param[in]	TIMx Pointer to timer device, should be:
+    448           *   			- LPC_TIM0: TIMER0 peripheral
+    449           * 				- LPC_TIM1: TIMER1 peripheral
+    450           * 				- LPC_TIM2: TIMER2 peripheral
+    451           * 				- LPC_TIM3: TIMER3 peripheral
+    452           * @param[in]   TIM_MatchConfigStruct Pointer to TIM_MATCHCFG_Type
+    453           * 					- MatchChannel : choose channel 0 or 1
+    454           * 					- IntOnMatch	 : if SET, interrupt will be generated when MRxx match
+    455           * 									the value in TC
+    456           * 					- StopOnMatch	 : if SET, TC and PC will be stopped whenM Rxx match
+    457           * 									the value in TC
+    458           * 					- ResetOnMatch : if SET, Reset on MR0 when MRxx match
+    459           * 									the value in TC
+    460           * 					-ExtMatchOutputType: Select output for external match
+    461           * 						 +	 0:	Do nothing for external output pin if match
+    462           *						 +   1:	Force external output pin to low if match
+    463           *						 + 	 2: Force external output pin to high if match
+    464           *						 + 	 3: Toggle external output pin if match
+    465           *					MatchValue: Set the value to be compared with TC value
+    466           * @return 		None
+    467           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    468          void TIM_ConfigMatch(LPC_TIM_TypeDef *TIMx, TIM_MATCHCFG_Type *TIM_MatchConfigStruct)
+    469          {
+   \                     TIM_ConfigMatch: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    470          
+    471          	CHECK_PARAM(PARAM_TIMx(TIMx));
+   \   00000006   0xF1B4 0x2F40      CMP      R4,#+1073758208
+   \   0000000A   0xD00D             BEQ.N    ??TIM_ConfigMatch_0
+   \   0000000C   0x....             LDR.N    R0,??DataTable13_1  ;; 0x40008000
+   \   0000000E   0x4284             CMP      R4,R0
+   \   00000010   0xD00A             BEQ.N    ??TIM_ConfigMatch_0
+   \   00000012   0x....             LDR.N    R0,??DataTable13_2  ;; 0x40090000
+   \   00000014   0x4284             CMP      R4,R0
+   \   00000016   0xD007             BEQ.N    ??TIM_ConfigMatch_0
+   \   00000018   0x....             LDR.N    R0,??DataTable13_3  ;; 0x40094000
+   \   0000001A   0x4284             CMP      R4,R0
+   \   0000001C   0xD004             BEQ.N    ??TIM_ConfigMatch_0
+   \   0000001E   0xF240 0x11D7      MOVW     R1,#+471
+   \   00000022   0x....             LDR.N    R0,??DataTable13_4
+   \   00000024   0x.... 0x....      BL       check_failed
+    472          	CHECK_PARAM(PARAM_TIM_EXTMATCH_OPT(TIM_MatchConfigStruct->ExtMatchOutputType));
+   \                     ??TIM_ConfigMatch_0: (+1)
+   \   00000028   0x7928             LDRB     R0,[R5, #+4]
+   \   0000002A   0x2800             CMP      R0,#+0
+   \   0000002C   0xD00D             BEQ.N    ??TIM_ConfigMatch_1
+   \   0000002E   0x7928             LDRB     R0,[R5, #+4]
+   \   00000030   0x2801             CMP      R0,#+1
+   \   00000032   0xD00A             BEQ.N    ??TIM_ConfigMatch_1
+   \   00000034   0x7928             LDRB     R0,[R5, #+4]
+   \   00000036   0x2802             CMP      R0,#+2
+   \   00000038   0xD007             BEQ.N    ??TIM_ConfigMatch_1
+   \   0000003A   0x7928             LDRB     R0,[R5, #+4]
+   \   0000003C   0x2803             CMP      R0,#+3
+   \   0000003E   0xD004             BEQ.N    ??TIM_ConfigMatch_1
+   \   00000040   0xF44F 0x71EC      MOV      R1,#+472
+   \   00000044   0x....             LDR.N    R0,??DataTable13_4
+   \   00000046   0x.... 0x....      BL       check_failed
+    473          
+    474          	switch(TIM_MatchConfigStruct->MatchChannel)
+   \                     ??TIM_ConfigMatch_1: (+1)
+   \   0000004A   0x7828             LDRB     R0,[R5, #+0]
+   \   0000004C   0x2800             CMP      R0,#+0
+   \   0000004E   0xD005             BEQ.N    ??TIM_ConfigMatch_2
+   \   00000050   0x2802             CMP      R0,#+2
+   \   00000052   0xD009             BEQ.N    ??TIM_ConfigMatch_3
+   \   00000054   0xD305             BCC.N    ??TIM_ConfigMatch_4
+   \   00000056   0x2803             CMP      R0,#+3
+   \   00000058   0xD009             BEQ.N    ??TIM_ConfigMatch_5
+   \   0000005A   0xE00B             B.N      ??TIM_ConfigMatch_6
+    475          	{
+    476          	case 0:
+    477          		TIMx->MR0 = TIM_MatchConfigStruct->MatchValue;
+   \                     ??TIM_ConfigMatch_2: (+1)
+   \   0000005C   0x68A8             LDR      R0,[R5, #+8]
+   \   0000005E   0x61A0             STR      R0,[R4, #+24]
+    478          		break;
+   \   00000060   0xE009             B.N      ??TIM_ConfigMatch_7
+    479          	case 1:
+    480          		TIMx->MR1 = TIM_MatchConfigStruct->MatchValue;
+   \                     ??TIM_ConfigMatch_4: (+1)
+   \   00000062   0x68A8             LDR      R0,[R5, #+8]
+   \   00000064   0x61E0             STR      R0,[R4, #+28]
+    481          		break;
+   \   00000066   0xE006             B.N      ??TIM_ConfigMatch_7
+    482          	case 2:
+    483          		TIMx->MR2 = TIM_MatchConfigStruct->MatchValue;
+   \                     ??TIM_ConfigMatch_3: (+1)
+   \   00000068   0x68A8             LDR      R0,[R5, #+8]
+   \   0000006A   0x6220             STR      R0,[R4, #+32]
+    484          		break;
+   \   0000006C   0xE003             B.N      ??TIM_ConfigMatch_7
+    485          	case 3:
+    486          		TIMx->MR3 = TIM_MatchConfigStruct->MatchValue;
+   \                     ??TIM_ConfigMatch_5: (+1)
+   \   0000006E   0x68A8             LDR      R0,[R5, #+8]
+   \   00000070   0x6260             STR      R0,[R4, #+36]
+    487          		break;
+   \   00000072   0xE000             B.N      ??TIM_ConfigMatch_7
+    488          	default:
+    489          		//Error match value
+    490          		//Error loop
+    491          		while(1);
+   \                     ??TIM_ConfigMatch_6: (+1)
+   \   00000074   0xE7FE             B.N      ??TIM_ConfigMatch_6
+    492          	}
+    493          	//interrupt on MRn
+    494          	TIMx->MCR &=~TIM_MCR_CHANNEL_MASKBIT(TIM_MatchConfigStruct->MatchChannel);
+   \                     ??TIM_ConfigMatch_7: (+1)
+   \   00000076   0x6960             LDR      R0,[R4, #+20]
+   \   00000078   0x2107             MOVS     R1,#+7
+   \   0000007A   0x782A             LDRB     R2,[R5, #+0]
+   \   0000007C   0x2303             MOVS     R3,#+3
+   \   0000007E   0x435A             MULS     R2,R3,R2
+   \   00000080   0x4091             LSLS     R1,R1,R2
+   \   00000082   0x4388             BICS     R0,R0,R1
+   \   00000084   0x6160             STR      R0,[R4, #+20]
+    495          
+    496          	if (TIM_MatchConfigStruct->IntOnMatch)
+   \   00000086   0x7868             LDRB     R0,[R5, #+1]
+   \   00000088   0x2800             CMP      R0,#+0
+   \   0000008A   0xD007             BEQ.N    ??TIM_ConfigMatch_8
+    497          		TIMx->MCR |= TIM_INT_ON_MATCH(TIM_MatchConfigStruct->MatchChannel);
+   \   0000008C   0x6960             LDR      R0,[R4, #+20]
+   \   0000008E   0x2101             MOVS     R1,#+1
+   \   00000090   0x782A             LDRB     R2,[R5, #+0]
+   \   00000092   0x2303             MOVS     R3,#+3
+   \   00000094   0x435A             MULS     R2,R3,R2
+   \   00000096   0x4091             LSLS     R1,R1,R2
+   \   00000098   0x4308             ORRS     R0,R1,R0
+   \   0000009A   0x6160             STR      R0,[R4, #+20]
+    498          
+    499          	//reset on MRn
+    500          	if (TIM_MatchConfigStruct->ResetOnMatch)
+   \                     ??TIM_ConfigMatch_8: (+1)
+   \   0000009C   0x78E8             LDRB     R0,[R5, #+3]
+   \   0000009E   0x2800             CMP      R0,#+0
+   \   000000A0   0xD008             BEQ.N    ??TIM_ConfigMatch_9
+    501          		TIMx->MCR |= TIM_RESET_ON_MATCH(TIM_MatchConfigStruct->MatchChannel);
+   \   000000A2   0x6960             LDR      R0,[R4, #+20]
+   \   000000A4   0x2101             MOVS     R1,#+1
+   \   000000A6   0x782A             LDRB     R2,[R5, #+0]
+   \   000000A8   0x2303             MOVS     R3,#+3
+   \   000000AA   0x435A             MULS     R2,R3,R2
+   \   000000AC   0x1C52             ADDS     R2,R2,#+1
+   \   000000AE   0x4091             LSLS     R1,R1,R2
+   \   000000B0   0x4308             ORRS     R0,R1,R0
+   \   000000B2   0x6160             STR      R0,[R4, #+20]
+    502          
+    503          	//stop on MRn
+    504          	if (TIM_MatchConfigStruct->StopOnMatch)
+   \                     ??TIM_ConfigMatch_9: (+1)
+   \   000000B4   0x78A8             LDRB     R0,[R5, #+2]
+   \   000000B6   0x2800             CMP      R0,#+0
+   \   000000B8   0xD008             BEQ.N    ??TIM_ConfigMatch_10
+    505          		TIMx->MCR |= TIM_STOP_ON_MATCH(TIM_MatchConfigStruct->MatchChannel);
+   \   000000BA   0x6960             LDR      R0,[R4, #+20]
+   \   000000BC   0x2101             MOVS     R1,#+1
+   \   000000BE   0x782A             LDRB     R2,[R5, #+0]
+   \   000000C0   0x2303             MOVS     R3,#+3
+   \   000000C2   0x435A             MULS     R2,R3,R2
+   \   000000C4   0x1C92             ADDS     R2,R2,#+2
+   \   000000C6   0x4091             LSLS     R1,R1,R2
+   \   000000C8   0x4308             ORRS     R0,R1,R0
+   \   000000CA   0x6160             STR      R0,[R4, #+20]
+    506          
+    507          	// match output type
+    508          
+    509          	TIMx->EMR 	&= ~TIM_EM_MASK(TIM_MatchConfigStruct->MatchChannel);
+   \                     ??TIM_ConfigMatch_10: (+1)
+   \   000000CC   0x6BE0             LDR      R0,[R4, #+60]
+   \   000000CE   0x2103             MOVS     R1,#+3
+   \   000000D0   0x782A             LDRB     R2,[R5, #+0]
+   \   000000D2   0x0052             LSLS     R2,R2,#+1
+   \   000000D4   0x1D12             ADDS     R2,R2,#+4
+   \   000000D6   0x4091             LSLS     R1,R1,R2
+   \   000000D8   0x4388             BICS     R0,R0,R1
+   \   000000DA   0x63E0             STR      R0,[R4, #+60]
+    510          	TIMx->EMR   |= TIM_EM_SET(TIM_MatchConfigStruct->MatchChannel,TIM_MatchConfigStruct->ExtMatchOutputType);
+   \   000000DC   0x6BE0             LDR      R0,[R4, #+60]
+   \   000000DE   0x7929             LDRB     R1,[R5, #+4]
+   \   000000E0   0xF011 0x0103      ANDS     R1,R1,#0x3
+   \   000000E4   0x782A             LDRB     R2,[R5, #+0]
+   \   000000E6   0x0052             LSLS     R2,R2,#+1
+   \   000000E8   0x1D12             ADDS     R2,R2,#+4
+   \   000000EA   0x4091             LSLS     R1,R1,R2
+   \   000000EC   0x4308             ORRS     R0,R1,R0
+   \   000000EE   0x63E0             STR      R0,[R4, #+60]
+    511          }
+   \   000000F0   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    512          /*********************************************************************//**
+    513           * @brief 		Update Match value
+    514           * @param[in]	TIMx Pointer to timer device, should be:
+    515           *   			- LPC_TIM0: TIMER0 peripheral
+    516           * 				- LPC_TIM1: TIMER1 peripheral
+    517           * 				- LPC_TIM2: TIMER2 peripheral
+    518           * 				- LPC_TIM3: TIMER3 peripheral
+    519           * @param[in]	MatchChannel	Match channel, should be: 0..3
+    520           * @param[in]	MatchValue		updated match value
+    521           * @return 		None
+    522           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    523          void TIM_UpdateMatchValue(LPC_TIM_TypeDef *TIMx,uint8_t MatchChannel, uint32_t MatchValue)
+    524          {
+   \                     TIM_UpdateMatchValue: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+   \   00000006   0x0016             MOVS     R6,R2
+    525          	CHECK_PARAM(PARAM_TIMx(TIMx));
+   \   00000008   0xF1B4 0x2F40      CMP      R4,#+1073758208
+   \   0000000C   0xD00D             BEQ.N    ??TIM_UpdateMatchValue_0
+   \   0000000E   0x....             LDR.N    R0,??DataTable13_1  ;; 0x40008000
+   \   00000010   0x4284             CMP      R4,R0
+   \   00000012   0xD00A             BEQ.N    ??TIM_UpdateMatchValue_0
+   \   00000014   0x....             LDR.N    R0,??DataTable13_2  ;; 0x40090000
+   \   00000016   0x4284             CMP      R4,R0
+   \   00000018   0xD007             BEQ.N    ??TIM_UpdateMatchValue_0
+   \   0000001A   0x....             LDR.N    R0,??DataTable13_3  ;; 0x40094000
+   \   0000001C   0x4284             CMP      R4,R0
+   \   0000001E   0xD004             BEQ.N    ??TIM_UpdateMatchValue_0
+   \   00000020   0xF240 0x210D      MOVW     R1,#+525
+   \   00000024   0x....             LDR.N    R0,??DataTable13_4
+   \   00000026   0x.... 0x....      BL       check_failed
+    526          	switch(MatchChannel)
+   \                     ??TIM_UpdateMatchValue_0: (+1)
+   \   0000002A   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000002C   0x2D00             CMP      R5,#+0
+   \   0000002E   0xD005             BEQ.N    ??TIM_UpdateMatchValue_1
+   \   00000030   0x2D02             CMP      R5,#+2
+   \   00000032   0xD007             BEQ.N    ??TIM_UpdateMatchValue_2
+   \   00000034   0xD304             BCC.N    ??TIM_UpdateMatchValue_3
+   \   00000036   0x2D03             CMP      R5,#+3
+   \   00000038   0xD006             BEQ.N    ??TIM_UpdateMatchValue_4
+   \   0000003A   0xE007             B.N      ??TIM_UpdateMatchValue_5
+    527          	{
+    528          	case 0:
+    529          		TIMx->MR0 = MatchValue;
+   \                     ??TIM_UpdateMatchValue_1: (+1)
+   \   0000003C   0x61A6             STR      R6,[R4, #+24]
+    530          		break;
+   \   0000003E   0xE006             B.N      ??TIM_UpdateMatchValue_6
+    531          	case 1:
+    532          		TIMx->MR1 = MatchValue;
+   \                     ??TIM_UpdateMatchValue_3: (+1)
+   \   00000040   0x61E6             STR      R6,[R4, #+28]
+    533          		break;
+   \   00000042   0xE004             B.N      ??TIM_UpdateMatchValue_6
+    534          	case 2:
+    535          		TIMx->MR2 = MatchValue;
+   \                     ??TIM_UpdateMatchValue_2: (+1)
+   \   00000044   0x6226             STR      R6,[R4, #+32]
+    536          		break;
+   \   00000046   0xE002             B.N      ??TIM_UpdateMatchValue_6
+    537          	case 3:
+    538          		TIMx->MR3 = MatchValue;
+   \                     ??TIM_UpdateMatchValue_4: (+1)
+   \   00000048   0x6266             STR      R6,[R4, #+36]
+    539          		break;
+   \   0000004A   0xE000             B.N      ??TIM_UpdateMatchValue_6
+    540          	default:
+    541          		//Error Loop
+    542          		while(1);
+   \                     ??TIM_UpdateMatchValue_5: (+1)
+   \   0000004C   0xE7FE             B.N      ??TIM_UpdateMatchValue_5
+    543          	}
+    544          
+    545          }
+   \                     ??TIM_UpdateMatchValue_6: (+1)
+   \   0000004E   0xBD70             POP      {R4-R6,PC}       ;; return
+    546          /*********************************************************************//**
+    547           * @brief 		Configuration for Capture register
+    548           * @param[in]	TIMx Pointer to timer device, should be:
+    549           *   			- LPC_TIM0: TIMER0 peripheral
+    550           * 				- LPC_TIM1: TIMER1 peripheral
+    551           * 				- LPC_TIM2: TIMER2 peripheral
+    552           * 				- LPC_TIM3: TIMER3 peripheral
+    553           * 					- CaptureChannel: set the channel to capture data
+    554           * 					- RisingEdge    : if SET, Capture at rising edge
+    555           * 					- FallingEdge	: if SET, Capture at falling edge
+    556           * 					- IntOnCaption  : if SET, Capture generate interrupt
+    557           * @param[in]   TIM_CaptureConfigStruct	Pointer to TIM_CAPTURECFG_Type
+    558           * @return 		None
+    559           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    560          void TIM_ConfigCapture(LPC_TIM_TypeDef *TIMx, TIM_CAPTURECFG_Type *TIM_CaptureConfigStruct)
+    561          {
+   \                     TIM_ConfigCapture: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    562          
+    563          	CHECK_PARAM(PARAM_TIMx(TIMx));
+   \   00000006   0xF1B4 0x2F40      CMP      R4,#+1073758208
+   \   0000000A   0xD00D             BEQ.N    ??TIM_ConfigCapture_0
+   \   0000000C   0x....             LDR.N    R0,??DataTable13_1  ;; 0x40008000
+   \   0000000E   0x4284             CMP      R4,R0
+   \   00000010   0xD00A             BEQ.N    ??TIM_ConfigCapture_0
+   \   00000012   0x....             LDR.N    R0,??DataTable13_2  ;; 0x40090000
+   \   00000014   0x4284             CMP      R4,R0
+   \   00000016   0xD007             BEQ.N    ??TIM_ConfigCapture_0
+   \   00000018   0x....             LDR.N    R0,??DataTable13_3  ;; 0x40094000
+   \   0000001A   0x4284             CMP      R4,R0
+   \   0000001C   0xD004             BEQ.N    ??TIM_ConfigCapture_0
+   \   0000001E   0xF240 0x2133      MOVW     R1,#+563
+   \   00000022   0x....             LDR.N    R0,??DataTable13_4
+   \   00000024   0x.... 0x....      BL       check_failed
+    564          	TIMx->CCR &= ~TIM_CCR_CHANNEL_MASKBIT(TIM_CaptureConfigStruct->CaptureChannel);
+   \                     ??TIM_ConfigCapture_0: (+1)
+   \   00000028   0x6AA0             LDR      R0,[R4, #+40]
+   \   0000002A   0x2107             MOVS     R1,#+7
+   \   0000002C   0x782A             LDRB     R2,[R5, #+0]
+   \   0000002E   0x2303             MOVS     R3,#+3
+   \   00000030   0x435A             MULS     R2,R3,R2
+   \   00000032   0x4091             LSLS     R1,R1,R2
+   \   00000034   0x4388             BICS     R0,R0,R1
+   \   00000036   0x62A0             STR      R0,[R4, #+40]
+    565          
+    566          	if (TIM_CaptureConfigStruct->RisingEdge)
+   \   00000038   0x7868             LDRB     R0,[R5, #+1]
+   \   0000003A   0x2800             CMP      R0,#+0
+   \   0000003C   0xD007             BEQ.N    ??TIM_ConfigCapture_1
+    567          		TIMx->CCR |= TIM_CAP_RISING(TIM_CaptureConfigStruct->CaptureChannel);
+   \   0000003E   0x6AA0             LDR      R0,[R4, #+40]
+   \   00000040   0x2101             MOVS     R1,#+1
+   \   00000042   0x782A             LDRB     R2,[R5, #+0]
+   \   00000044   0x2303             MOVS     R3,#+3
+   \   00000046   0x435A             MULS     R2,R3,R2
+   \   00000048   0x4091             LSLS     R1,R1,R2
+   \   0000004A   0x4308             ORRS     R0,R1,R0
+   \   0000004C   0x62A0             STR      R0,[R4, #+40]
+    568          
+    569          	if (TIM_CaptureConfigStruct->FallingEdge)
+   \                     ??TIM_ConfigCapture_1: (+1)
+   \   0000004E   0x78A8             LDRB     R0,[R5, #+2]
+   \   00000050   0x2800             CMP      R0,#+0
+   \   00000052   0xD008             BEQ.N    ??TIM_ConfigCapture_2
+    570          		TIMx->CCR |= TIM_CAP_FALLING(TIM_CaptureConfigStruct->CaptureChannel);
+   \   00000054   0x6AA0             LDR      R0,[R4, #+40]
+   \   00000056   0x2101             MOVS     R1,#+1
+   \   00000058   0x782A             LDRB     R2,[R5, #+0]
+   \   0000005A   0x2303             MOVS     R3,#+3
+   \   0000005C   0x435A             MULS     R2,R3,R2
+   \   0000005E   0x1C52             ADDS     R2,R2,#+1
+   \   00000060   0x4091             LSLS     R1,R1,R2
+   \   00000062   0x4308             ORRS     R0,R1,R0
+   \   00000064   0x62A0             STR      R0,[R4, #+40]
+    571          
+    572          	if (TIM_CaptureConfigStruct->IntOnCaption)
+   \                     ??TIM_ConfigCapture_2: (+1)
+   \   00000066   0x78E8             LDRB     R0,[R5, #+3]
+   \   00000068   0x2800             CMP      R0,#+0
+   \   0000006A   0xD008             BEQ.N    ??TIM_ConfigCapture_3
+    573          		TIMx->CCR |= TIM_INT_ON_CAP(TIM_CaptureConfigStruct->CaptureChannel);
+   \   0000006C   0x6AA0             LDR      R0,[R4, #+40]
+   \   0000006E   0x2101             MOVS     R1,#+1
+   \   00000070   0x782A             LDRB     R2,[R5, #+0]
+   \   00000072   0x2303             MOVS     R3,#+3
+   \   00000074   0x435A             MULS     R2,R3,R2
+   \   00000076   0x1C92             ADDS     R2,R2,#+2
+   \   00000078   0x4091             LSLS     R1,R1,R2
+   \   0000007A   0x4308             ORRS     R0,R1,R0
+   \   0000007C   0x62A0             STR      R0,[R4, #+40]
+    574          }
+   \                     ??TIM_ConfigCapture_3: (+1)
+   \   0000007E   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    575          
+    576          /*********************************************************************//**
+    577           * @brief 		Read value of capture register in timer/counter device
+    578           * @param[in]	TIMx Pointer to timer/counter device, should be:
+    579           *  			- LPC_TIM0: TIMER0 peripheral
+    580           * 				- LPC_TIM1: TIMER1 peripheral
+    581           * 				- LPC_TIM2: TIMER2 peripheral
+    582           * 				- LPC_TIM3: TIMER3 peripheral
+    583           * @param[in]	CaptureChannel: capture channel number, should be:
+    584           * 				- TIM_COUNTER_INCAP0: CAPn.0 input pin for TIMERn
+    585           * 				- TIM_COUNTER_INCAP1: CAPn.1 input pin for TIMERn
+    586           * @return 		Value of capture register
+    587           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    588          uint32_t TIM_GetCaptureValue(LPC_TIM_TypeDef *TIMx, TIM_COUNTER_INPUT_OPT CaptureChannel)
+    589          {
+   \                     TIM_GetCaptureValue: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    590          	CHECK_PARAM(PARAM_TIMx(TIMx));
+   \   00000006   0xF1B4 0x2F40      CMP      R4,#+1073758208
+   \   0000000A   0xD00D             BEQ.N    ??TIM_GetCaptureValue_0
+   \   0000000C   0x....             LDR.N    R0,??DataTable13_1  ;; 0x40008000
+   \   0000000E   0x4284             CMP      R4,R0
+   \   00000010   0xD00A             BEQ.N    ??TIM_GetCaptureValue_0
+   \   00000012   0x....             LDR.N    R0,??DataTable13_2  ;; 0x40090000
+   \   00000014   0x4284             CMP      R4,R0
+   \   00000016   0xD007             BEQ.N    ??TIM_GetCaptureValue_0
+   \   00000018   0x....             LDR.N    R0,??DataTable13_3  ;; 0x40094000
+   \   0000001A   0x4284             CMP      R4,R0
+   \   0000001C   0xD004             BEQ.N    ??TIM_GetCaptureValue_0
+   \   0000001E   0xF240 0x214E      MOVW     R1,#+590
+   \   00000022   0x....             LDR.N    R0,??DataTable13_4
+   \   00000024   0x.... 0x....      BL       check_failed
+    591          	CHECK_PARAM(PARAM_TIM_COUNTER_INPUT_OPT(CaptureChannel));
+   \                     ??TIM_GetCaptureValue_0: (+1)
+   \   00000028   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000002A   0x2D00             CMP      R5,#+0
+   \   0000002C   0xD007             BEQ.N    ??TIM_GetCaptureValue_1
+   \   0000002E   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000030   0x2D01             CMP      R5,#+1
+   \   00000032   0xD004             BEQ.N    ??TIM_GetCaptureValue_1
+   \   00000034   0xF240 0x214F      MOVW     R1,#+591
+   \   00000038   0x....             LDR.N    R0,??DataTable13_4
+   \   0000003A   0x.... 0x....      BL       check_failed
+    592          
+    593          	if(CaptureChannel==0)
+   \                     ??TIM_GetCaptureValue_1: (+1)
+   \   0000003E   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000040   0x2D00             CMP      R5,#+0
+   \   00000042   0xD101             BNE.N    ??TIM_GetCaptureValue_2
+    594          		return TIMx->CR0;
+   \   00000044   0x6AE0             LDR      R0,[R4, #+44]
+   \   00000046   0xE000             B.N      ??TIM_GetCaptureValue_3
+    595          	else
+    596          		return TIMx->CR1;
+   \                     ??TIM_GetCaptureValue_2: (+1)
+   \   00000048   0x6B20             LDR      R0,[R4, #+48]
+   \                     ??TIM_GetCaptureValue_3: (+1)
+   \   0000004A   0xBD32             POP      {R1,R4,R5,PC}    ;; return
+    597          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13:
+   \   00000000   0x000F4240         DC32     0xf4240
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_1:
+   \   00000000   0x40008000         DC32     0x40008000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_2:
+   \   00000000   0x40090000         DC32     0x40090000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_3:
+   \   00000000   0x40094000         DC32     0x40094000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_4:
+   \   00000000   0x........         DC32     ?_0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \   00000000   0x46 0x3A          DC8 46H, 3AH, 5CH, 69H, 61H, 72H, 5CH, 4EH
+   \              0x5C 0x69    
+   \              0x61 0x72    
+   \              0x5C 0x4E    
+   \   00000008   0x43 0x31          DC8 43H, 31H, 33H, 36H, 42H, 2DH, 33H, 32H
+   \              0x33 0x36    
+   \              0x42 0x2D    
+   \              0x33 0x32    
+   \   00000010   0x30 0x20          DC8 30H, 20H, 49H, 43H, 0BFH, 0A8H, 0C4H, 0A3H
+   \              0x49 0x43    
+   \              0xBF 0xA8    
+   \              0xC4 0xA3    
+   \   00000018   0xBF 0xE9          DC8 0BFH, 0E9H, 5CH, 53H, 6FH, 66H, 74H, 77H
+   \              0x5C 0x53    
+   \              0x6F 0x66    
+   \              0x74 0x77    
+   \   00000020   0x61 0x72          DC8 61H, 72H, 65H, 5CH, 43H, 53H, 42H, 5CH
+   \              0x65 0x5C    
+   \              0x43 0x53    
+   \              0x42 0x5C    
+   \   00000028   0x73 0x6F          DC8 73H, 6FH, 75H, 72H, 63H, 65H, 5CH, 6CH
+   \              0x75 0x72    
+   \              0x63 0x65    
+   \              0x5C 0x6C    
+   \   00000030   0x70 0x63          DC8 70H, 63H, 31H, 37H, 78H, 78H, 5FH, 74H
+   \              0x31 0x37    
+   \              0x78 0x78    
+   \              0x5F 0x74    
+   \   00000038   0x69 0x6D          DC8 69H, 6DH, 65H, 72H, 2EH, 63H, 0
+   \              0x65 0x72    
+   \              0x2E 0x63    
+   \              0x00         
+   \   0000003F   0x00               DC8 0
+    598          
+    599          /**
+    600           * @}
+    601           */
+    602          
+    603          #endif /* _TIMER */
+    604          
+    605          /**
+    606           * @}
+    607           */
+    608          
+    609          /* --------------------------------- End Of File ------------------------------ */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   TIM_ClearIntCapturePending
+        16   -> check_failed
+      16   TIM_ClearIntPending
+        16   -> check_failed
+      16   TIM_Cmd
+        16   -> check_failed
+      16   TIM_ConfigCapture
+        16   -> check_failed
+      16   TIM_ConfigMatch
+        16   -> check_failed
+       0   TIM_ConfigStructInit
+       8   TIM_DeInit
+         8   -> CLKPWR_ConfigPPWR
+         8   -> check_failed
+      16   TIM_GetCaptureValue
+        16   -> check_failed
+      16   TIM_GetIntCaptureStatus
+        16   -> check_failed
+      16   TIM_GetIntStatus
+        16   -> check_failed
+      24   TIM_Init
+        24   -> CLKPWR_ConfigPPWR
+        24   -> CLKPWR_SetPCLKDiv
+        24   -> check_failed
+        24   -> converPtrToTimeNum
+        24   -> converUSecToVal
+       8   TIM_ResetCounter
+         8   -> check_failed
+      16   TIM_UpdateMatchValue
+        16   -> check_failed
+       0   converPtrToTimeNum
+      24   converUSecToVal
+        24   -> getPClock
+        24 __aeabi_uldivmod
+      16   getPClock
+        16   -> CLKPWR_GetPCLK
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable13
+       4  ??DataTable13_1
+       4  ??DataTable13_2
+       4  ??DataTable13_3
+       4  ??DataTable13_4
+      64  ?_0
+     102  TIM_ClearIntCapturePending
+     100  TIM_ClearIntPending
+      66  TIM_Cmd
+     128  TIM_ConfigCapture
+     242  TIM_ConfigMatch
+      22  TIM_ConfigStructInit
+     110  TIM_DeInit
+      76  TIM_GetCaptureValue
+     118  TIM_GetIntCaptureStatus
+     116  TIM_GetIntStatus
+     308  TIM_Init
+      56  TIM_ResetCounter
+      80  TIM_UpdateMatchValue
+      60  converPtrToTimeNum
+      56  converUSecToVal
+      62  getPClock
+
+ 
+    64 bytes in section .rodata
+ 1 722 bytes in section .text
+ 
+ 1 722 bytes of CODE  memory
+    64 bytes of CONST memory
+
+Errors: none
+Warnings: none

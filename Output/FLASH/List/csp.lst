@@ -1,0 +1,407 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       28/Dec/2017  08:42:38
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\uC-CSP\MCU\csp.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\uC-CSP\MCU\csp.c" -D RELEASE -lCN
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\csp.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\csp.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\uC-CSP\MCU\csp.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                              uC/CSP
+      4          *                                        Chip Support Package
+      5          *
+      6          *                            (c) Copyright 2010; Micrium, Inc.; Weston, FL
+      7          *                         (c) Copyright 2003-2010; Micrium, Inc.; Weston, FL
+      8          *
+      9          *               All rights reserved. Protected by international copyright laws.
+     10          *
+     11          *               uC/CSP is provided in source form to registered licensees ONLY.  It is
+     12          *               illegal to distribute this source code to any third party unless you receive
+     13          *               written permission by an authorized Micrium representative.  Knowledge of
+     14          *               the source code may NOT be used to develop a similar product.
+     15          *
+     16          *               Please help us continue to provide the Embedded community with the finest
+     17          *               software available.  Your honesty is greatly appreciated.
+     18          *
+     19          *               You can contact us at www.micrium.com.
+     20          *********************************************************************************************************
+     21          */
+     22          
+     23          /*
+     24          *********************************************************************************************************
+     25          *
+     26          *                                      uC/CSP COMMON DRIVER API.
+     27          *
+     28          * Filename      : csp.c
+     29          * Version       : V1.00
+     30          * Programmer(s) : FT
+     31          *********************************************************************************************************
+     32          * Note(s)       :
+     33          *********************************************************************************************************
+     34          */
+     35          
+     36          
+     37          /*
+     38          *********************************************************************************************************
+     39          *                                             INCLUDE FILES
+     40          *********************************************************************************************************
+     41          */
+     42          
+     43          
+     44          #define  CSP_MODULE
+     45          #define  CSP_GRP_MODULE
+     46          #define  CSP_DEV_MODULE
+     47          
+     48          #include <csp.h>
+     49          
+     50          
+     51          /*
+     52          *********************************************************************************************************
+     53          *                                             LOCAL DEFINES
+     54          *********************************************************************************************************
+     55          */
+     56          
+     57          
+     58          /*
+     59          *********************************************************************************************************
+     60          *                                            LOCAL VARIABLES
+     61          *********************************************************************************************************
+     62          */
+     63          
+     64          
+     65          /*
+     66          *********************************************************************************************************
+     67          *                                         FUNCTION PROTOTYPES
+     68          *********************************************************************************************************
+     69          */
+     70          
+     71          
+     72          /*
+     73          *********************************************************************************************************
+     74          *                                        CSP_IntVectClr()
+     75          *
+     76          * Description : Clear the interrupt vector structure.
+     77          *
+     78          * Argument(s) : p_vect      Pointer to a interrupt vector.
+     79          *
+     80          * Return(s)   : none
+     81          *
+     82          * Caller(s)   : CSP_IntInit()
+     83          *
+     84          * Note(s)     : none.
+     85          *********************************************************************************************************
+     86          */
+     87          
+
+   \                                 In section .text, align 2, keep-with-next
+     88          void  CSP_IntVectClr (CSP_INT_VECT  *p_vect)
+     89          {
+     90              p_vect->FnctPtr = (CPU_FNCT_PTR )0;
+   \                     CSP_IntVectClr: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0x6001             STR      R1,[R0, #+0]
+     91          
+     92          #if (CSP_CFG_INT_ISR_ARG_EN == DEF_ENABLED)
+     93              p_vect->ArgPtr  = (void *)0;
+   \   00000004   0x2100             MOVS     R1,#+0
+   \   00000006   0x6041             STR      R1,[R0, #+4]
+     94          #endif
+     95          
+     96          #if (CSP_CFG_INT_ISR_EXEC_MEAS_EN == DEF_ENABLED) && \
+     97              (CPU_CFG_TS_EN                == DEF_ENABLED)
+     98              p_vect->TimeMax = (CPU_TS )0;                               /* Intialize Interrupt excecution time.                 */
+   \   00000008   0x2100             MOVS     R1,#+0
+   \   0000000A   0x6081             STR      R1,[R0, #+8]
+     99              p_vect->TimeCur = (CPU_TS )0;
+   \   0000000C   0x2100             MOVS     R1,#+0
+   \   0000000E   0x60C1             STR      R1,[R0, #+12]
+    100          #endif
+    101          }
+   \   00000010   0x4770             BX       LR               ;; return
+    102          
+    103          
+    104          
+    105          /*
+    106          *********************************************************************************************************
+    107          *                                        CSP_IntVectSet()
+    108          *
+    109          * Description : Set the interrupt vector structure.
+    110          *
+    111          * Argument(s) : p_vect      Pointer to a interrupt vector.
+    112          *
+    113          * Return(s)   : none
+    114          *
+    115          * Caller(s)   : CSP_IntInit()
+    116          *
+    117          * Note(s)     : none.
+    118          *********************************************************************************************************
+    119          */
+    120          
+
+   \                                 In section .text, align 2, keep-with-next
+    121          void  CSP_IntVectSet (CSP_INT_VECT  *p_vect,
+    122                                CPU_FNCT_PTR   isr_fnct,
+    123                                void          *p_arg)
+    124          {
+    125              p_vect->FnctPtr = isr_fnct;
+   \                     CSP_IntVectSet: (+1)
+   \   00000000   0x6001             STR      R1,[R0, #+0]
+    126          #if (CSP_CFG_INT_ISR_ARG_EN == DEF_ENABLED)
+    127              p_vect->ArgPtr  = p_arg;
+   \   00000002   0x6042             STR      R2,[R0, #+4]
+    128          #endif
+    129          
+    130          #if (CSP_CFG_INT_ISR_EXEC_MEAS_EN == DEF_ENABLED) && \
+    131              (CPU_CFG_TS_EN                == DEF_ENABLED)
+    132              p_vect->TimeMax = (CPU_TS )0;                               /* Intialize Interrupt excecution time.                 */
+   \   00000004   0x2300             MOVS     R3,#+0
+   \   00000006   0x6083             STR      R3,[R0, #+8]
+    133              p_vect->TimeCur = (CPU_TS )0;
+   \   00000008   0x2300             MOVS     R3,#+0
+   \   0000000A   0x60C3             STR      R3,[R0, #+12]
+    134          #endif
+    135          }
+   \   0000000C   0x4770             BX       LR               ;; return
+    136          
+    137          
+    138          /*
+    139          *********************************************************************************************************
+    140          *                                        CSP_IntVectDeref()
+    141          *
+    142          * Description : Dereference an Interrupt vector.
+    143          *
+    144          * Argument(s) : p_vect      Pointer to a interrupt vector.
+    145          *
+    146          * Return(s)   : none
+    147          *
+    148          * Caller(s)   : CSP_IntHandlerSrc()
+    149          *               CSP_IntHandler()
+    150          *
+    151          * Note(s)     : none.
+    152          *********************************************************************************************************
+    153          */
+    154          
+
+   \                                 In section .text, align 2, keep-with-next
+    155          void  CSP_IntVectDeref (CSP_INT_VECT  *p_vect)
+    156          {
+   \                     CSP_IntVectDeref: (+1)
+   \   00000000   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \   00000004   0x0004             MOVS     R4,R0
+    157          #if (CSP_CFG_INT_ISR_ARG_EN == DEF_ENABLED)
+    158              void          *p_int_arg;
+    159          #endif
+    160              CPU_FNCT_PTR   int_isr_fnct;
+    161          #if (CSP_CFG_INT_ISR_EXEC_MEAS_EN == DEF_ENABLED) && \
+    162              (CPU_CFG_TS_EN               == DEF_ENABLED)
+    163              CPU_TS         ts;
+    164              CPU_SR_ALLOC();
+   \   00000006   0x2700             MOVS     R7,#+0
+    165          #endif
+    166          
+    167          
+    168              int_isr_fnct =  p_vect->FnctPtr;
+   \   00000008   0x6820             LDR      R0,[R4, #+0]
+   \   0000000A   0x0006             MOVS     R6,R0
+    169          #if (CSP_CFG_INT_ISR_ARG_EN == DEF_ENABLED)
+    170              p_int_arg    =  p_vect->ArgPtr;
+   \   0000000C   0x6860             LDR      R0,[R4, #+4]
+   \   0000000E   0x0005             MOVS     R5,R0
+    171          #endif
+    172          
+    173             if (int_isr_fnct != (CPU_FNCT_PTR)0) {
+   \   00000010   0x0030             MOVS     R0,R6
+   \   00000012   0x2800             CMP      R0,#+0
+   \   00000014   0xD019             BEQ.N    ??CSP_IntVectDeref_0
+    174          #if (CSP_CFG_INT_ISR_EXEC_MEAS_EN == DEF_ENABLED) && \
+    175              (CPU_CFG_TS_EN                == DEF_ENABLED)
+    176                  ts = CPU_TS_Get32();                                    /* Get current time stamp.                              */
+   \   00000016   0x.... 0x....      BL       CPU_TS_Get32
+   \   0000001A   0x4680             MOV      R8,R0
+    177          #endif
+    178          
+    179          #if (CSP_CFG_INT_NESTING_EN == DEF_ENABLED)
+    180                  CPU_IntEn();
+    181          #endif
+    182          
+    183          #if (CSP_CFG_INT_ISR_ARG_EN == DEF_ENABLED)
+    184                  (*int_isr_fnct)(p_int_arg);                             /* Call interrupt handler                               */
+   \   0000001C   0x0028             MOVS     R0,R5
+   \   0000001E   0x47B0             BLX      R6
+    185          #else
+    186                  (*int_isr_fnct)((void *)0);                             /* Call interrupt handler (default argument)            */
+    187          #endif
+    188          
+    189          #if (CSP_CFG_INT_NESTING_EN == DEF_ENABLED)
+    190                  CPU_IntDis();
+    191          #endif
+    192          
+    193          #if (CSP_CFG_INT_ISR_EXEC_MEAS_EN == DEF_ENABLED) && \
+    194              (CPU_CFG_TS_EN                == DEF_ENABLED)
+    195                  ts = CPU_TS_Get32() - ts;                               /* Compute delta time between start and end.            */
+   \   00000020   0x.... 0x....      BL       CPU_TS_Get32
+   \   00000024   0xEBB0 0x0808      SUBS     R8,R0,R8
+    196                                                                          /* Detect peak value                                    */
+    197                  CPU_CRITICAL_ENTER();
+   \   00000028   0x.... 0x....      BL       CPU_SR_Save
+   \   0000002C   0x0007             MOVS     R7,R0
+   \   0000002E   0x.... 0x....      BL       CPU_IntDisMeasStart
+    198          
+    199                  if (p_vect->TimeMax < ts) {
+   \   00000032   0x68A0             LDR      R0,[R4, #+8]
+   \   00000034   0x4540             CMP      R0,R8
+   \   00000036   0xD201             BCS.N    ??CSP_IntVectDeref_1
+    200                      p_vect->TimeMax = ts;
+   \   00000038   0xF8C4 0x8008      STR      R8,[R4, #+8]
+    201                  }
+    202          
+    203                  p_vect->TimeCur = ts;
+   \                     ??CSP_IntVectDeref_1: (+1)
+   \   0000003C   0xF8C4 0x800C      STR      R8,[R4, #+12]
+    204          
+    205                  CPU_CRITICAL_EXIT();
+   \   00000040   0x.... 0x....      BL       CPU_IntDisMeasStop
+   \   00000044   0x0038             MOVS     R0,R7
+   \   00000046   0x.... 0x....      BL       CPU_SR_Restore
+    206          #endif
+    207             }
+    208          }
+   \                     ??CSP_IntVectDeref_0: (+1)
+   \   0000004A   0xE8BD 0x81F0      POP      {R4-R8,PC}       ;; return
+    209          
+    210          
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   CSP_IntVectClr
+      24   CSP_IntVectDeref
+        24   -- Indirect call
+        24   -> CPU_IntDisMeasStart
+        24   -> CPU_IntDisMeasStop
+        24   -> CPU_SR_Restore
+        24   -> CPU_SR_Save
+        24   -> CPU_TS_Get32
+       0   CSP_IntVectSet
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      18  CSP_IntVectClr
+      78  CSP_IntVectDeref
+      14  CSP_IntVectSet
+
+ 
+ 110 bytes in section .text
+ 
+ 110 bytes of CODE memory
+
+Errors: none
+Warnings: none

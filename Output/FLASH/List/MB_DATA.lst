@@ -1,0 +1,1177 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       28/Dec/2017  08:42:40
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC卡模块\Software\uC-MB\Cfg\Template\MB_DATA.C
+#    Command line =  
+#        "F:\iar\NC136B-320 IC卡模块\Software\uC-MB\Cfg\Template\MB_DATA.C" -D
+#        RELEASE -lCN "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\MB_DATA.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\MB_DATA.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC卡模块\Software\uC-MB\Cfg\Template\MB_DATA.C
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                              uC/Modbus
+      4          *                                       The Embedded Modbus Stack
+      5          *
+      6          *                          (c) Copyright 2003-2009; Micrium, Inc.; Weston, FL
+      7          *
+      8          *               All rights reserved.  Protected by international copyright laws.
+      9          *               Knowledge of the source code may NOT be used to develop a similar product.
+     10          *               Please help us continue to provide the Embedded community with the finest
+     11          *               software available.  Your honesty is greatly appreciated.
+     12          *********************************************************************************************************
+     13          */
+     14          
+     15          /*
+     16          *********************************************************************************************************
+     17          *
+     18          *                         uC/MODBUS TARGET SPECIFIC DATA ACCESS FUNCTIONS (Template)
+     19          *
+     20          * Filename      : mb_data.c
+     21          * Version       : V2.12
+     22          * Programmer(s) : JJL
+     23          *********************************************************************************************************
+     24          * Note(s)       :
+     25          *********************************************************************************************************
+     26          */
+     27          
+     28          
+     29          #include <mb.h>
+     30          #include <os.h>
+     31          #include <app.h>
+     32          //#include <bsp_time.h>
+     33          //#include <bsp_eeprom.h>
+     34          #include <includes.h>
+     35          #include <global.h>
+     36          
+     37          /*******************************************************************************
+     38          * 名    称： exchangeBytes
+     39          * 功    能： 模拟的htons 或者 ntohs，如果系统支字节序更改可直接替换成系统函数
+     40          * 入口参数： value
+     41          * 出口参数： 更改过字节序的short数值
+     42          * 作　 　者： 无名沈.
+     43          * 创建日期： 2015-06-25
+     44          * 修    改：
+     45          * 修改日期：
+     46          * 备    注：
+     47          *******************************************************************************/
+     48          //int16_t	exchangeBytes(int16_t	value)
+     49          //{
+     50          //	int16_t		tmp_value;
+     51          //	uint8_t		*index_1, *index_2;
+     52          //
+     53          //	index_1 = (uint8_t *)&tmp_value;
+     54          //	index_2 = (uint8_t *)&value;
+     55          //
+     56          //	*index_1 = *(index_2+1);
+     57          //	*(index_1+1) = *index_2;
+     58          //
+     59          //	return tmp_value;
+     60          //}
+     61          
+     62          #if MODBUS_CFG_SLAVE_EN == DEF_ENABLED
+
+   \                                 In section .data, align 4
+     63          StrMbData   mbData  = {MB_DATA_NBR_REGS, MB_DATA_NBR_COILS, 0,0,0};
+   \                     mbData:
+   \   00000000   0x007D 0x0020      DC16 125, 32
+   \   00000004   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000018   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000028   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000038   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000048   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000058   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000068   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000078   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000088   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   00000098   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000A8   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000B8   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000C8   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000D8   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000E8   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \   000000F8   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+     64          #endif
+     65          /*$PAGE*/
+     66          /*
+     67          *********************************************************************************************************
+     68          *                                     GET THE VALUE OF A SINGLE COIL
+     69          *
+     70          * Description: This function returns the value of a single coil.
+     71          *              It is called by 'MBS_FC01_CoilRd()'.
+     72          *              You must 'map' the 'coil' to the actual application's coil.
+     73          *
+     74          * Arguments  : coil     is the coil number that is being requested.
+     75          *
+     76          *              perr     is a pointer to an error code variable.  You must either return:
+     77          *
+     78          *                       MODBUS_ERR_NONE     the specified coil is valid and you are returning its value.
+     79          *                       MODBUS_ERR_RANGE    the specified coil is an invalid coil number in your
+     80          *                                           application (i.e. product).  YOUR product defines what the
+     81          *                                           valid range of values is for the 'coil' argument.
+     82          *
+     83          * Note(s)    : 1) You can perform the mapping of coil number to application coils directly in this
+     84          *                 function or via a table lookup.  A table lookup would make sense if you had a lot of
+     85          *                 coils in your product.
+     86          *********************************************************************************************************
+     87          */
+     88          
+     89          #if (MODBUS_CFG_FC01_EN == DEF_ENABLED)
+
+   \                                 In section .text, align 2, keep-with-next
+     90          CPU_BOOLEAN  MB_CoilRd (CPU_INT16U   coil,
+     91                                  CPU_INT16U  *perr)
+     92          {
+   \                     MB_CoilRd: (+1)
+   \   00000000   0x0002             MOVS     R2,R0
+     93          //    /***********************************************
+     94          //    * 描述： 密码确认，通讯前先将MB_DATA_ACC_PASSWORD写入reg0
+     95          //    */
+     96          //    if ( Ctrl.Para.dat.Password != MB_DATA_ACC_PASSWORD ) {
+     97          //        *perr = MODBUS_ERR_ILLEGAL_DATA_ADDR;
+     98          //        return 0;
+     99          //    }
+    100          //    
+    101              CPU_BOOLEAN     coil_val = 0;
+   \   00000002   0x2000             MOVS     R0,#+0
+    102          //    CPU_INT16U      reg         = coil / 16;        // 获取当前寄存器
+    103          //    CPU_INT08U      bit         = coil % 16;        // 获取当前寄存器的位
+    104          //    CPU_INT16U      reg_val;
+    105          //    //CPU_INT16U      *preg       = (CPU_INT16U *) Ctrl.Para.buf2;
+    106          //    CPU_INT16U *preg       = (CPU_INT16U *)& Ctrl.Para.buf2[0];
+    107          //    /***********************************************
+    108          //    * 描述： 获取值
+    109          //    */
+    110          //    if ( reg < sizeof(Ctrl) / 2 ) {
+    111          //        reg_val = preg[reg];
+    112          //        *perr = MODBUS_ERR_NONE;
+    113          //    } else {
+    114          //        reg_val = 0;
+    115          //        *perr = MODBUS_ERR_ILLEGAL_DATA_ADDR;
+    116          //    }
+    117          //        
+    118          //    /***********************************************
+    119          //    * 描述： 获取当前位的值
+    120          //    */
+    121          //    coil_val    = (CPU_BOOLEAN)(reg_val & ( 1 << bit ) );
+    122          //
+    123              return (coil_val);
+   \   00000004   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000006   0x4770             BX       LR               ;; return
+    124          }
+    125          #endif
+    126          
+    127          /*
+    128          *********************************************************************************************************
+    129          *                                     SET THE VALUE OF A SINGLE COIL
+    130          *
+    131          * Description: This function changes the value of a single coil.
+    132          *              It is called by 'MBS_FC05_CoilWr()' and 'MBS_FC15_CoilWrMultiple()'.
+    133          *              You must 'map' the 'coil' to the actual application's coil.
+    134          *
+    135          * Arguments  : coil      is the coil number that needs to be changed.
+    136          *
+    137          *              coil_val  is the desired value of the coil.  This value can be either DEF_TRUE or DEF_FALSE with
+    138          *                        DEF_TRUE indicating an energized coil.
+    139          *
+    140          *              perr      is a pointer to an error code variable.  You must either return:
+    141          *
+    142          *                        MODBUS_ERR_NONE     the specified coil is valid and your code changed the value
+    143          *                                            of the coil.
+    144          *                        MODBUS_ERR_RANGE    the specified coil is an invalid coil number in your
+    145          *                                            application (i.e. product).  YOUR product defines what the
+    146          *                                            valid range of values is for the 'coil' argument.
+    147          *                        MODBUS_ERR_WR       if the device is not able to write or accept the value
+    148          *
+    149          * Note(s)    : 1) You can perform the mapping of coil number to application coils directly in this
+    150          *                 function or via a table lookup.  A table lookup would make sense if you had a lot of
+    151          *                 coils in your product.
+    152          *********************************************************************************************************
+    153          */
+    154          
+    155          #if (MODBUS_CFG_FC05_EN == DEF_ENABLED) || \
+    156              (MODBUS_CFG_FC15_EN == DEF_ENABLED)
+
+   \                                 In section .text, align 2, keep-with-next
+    157          void  MB_CoilWr (CPU_INT16U    coil,
+    158                           CPU_BOOLEAN   coil_val,
+    159                           CPU_INT16U   *perr)
+    160          {
+    161          //    /***********************************************
+    162          //    * 描述： 密码确认，通讯前先将MB_DATA_ACC_PASSWORD写入reg0
+    163          //    */
+    164          //    if ( Ctrl.Para.dat.Password != MB_DATA_ACC_PASSWORD ) {
+    165          //        *perr = MODBUS_ERR_ILLEGAL_DATA_ADDR;
+    166          //        return;
+    167          //    }
+    168          //    
+    169          //    (void)coil;
+    170          //    (void)coil_val;
+    171          //    CPU_SR          cpu_sr;
+    172          //    CPU_INT16U      reg         = coil / 16;
+    173          //    CPU_INT08U      bit         = coil % 16;
+    174          //    CPU_INT16U      reg_val     = 0;
+    175          //    CPU_INT16U      temp;
+    176          //
+    177          //    /***********************************************
+    178          //    * 描述： 获取当前位
+    179          //    */
+    180          //    reg_val         |= coil_val << bit;
+    181          //    
+    182          //    //CPU_INT16U      *preg       = (CPU_INT16U *) Ctrl.Para.buf2;
+    183          //    CPU_INT16U *preg       = (CPU_INT16U *)& Ctrl.Para.buf2[0];
+    184          //    /***********************************************
+    185          //    * 描述： 获取值
+    186          //    */
+    187          //    if ( reg < sizeof(Ctrl) / 2 ) {
+    188          //        /***********************************************
+    189          //        * 描述：
+    190          //        */
+    191          //        if ( reg < 127 ) {
+    192          //            int idx = reg - 0;
+    193          //            
+    194          //            CPU_CRITICAL_ENTER();
+    195          //            temp          = preg[idx];
+    196          //            ( reg_val )   ? ( reg_val = reg_val | temp )
+    197          //                : ( reg_val =~reg_val & temp );
+    198          //                preg[idx]       = reg_val;
+    199          //                CPU_CRITICAL_EXIT();
+    200          //        }
+    201          //        *perr = MODBUS_ERR_NONE;
+    202          //    } else {
+    203          //        reg_val = 0;
+    204          //        *perr = MODBUS_ERR_ILLEGAL_DATA_ADDR;
+    205          //    }
+    206          }
+   \                     MB_CoilWr: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    207          #endif
+    208          
+    209          /*$PAGE*/
+    210          /*
+    211          *********************************************************************************************************
+    212          *                                GET THE VALUE OF A SINGLE DISCRETE INPUT
+    213          *
+    214          * Description: This function reads the value of a single DI (DI means Discrete Input).
+    215          *              It is called by 'MBS_FC02_DIRd()'.
+    216          *              You must 'map' the 'di'  to the actual application's DI.
+    217          *
+    218          * Arguments  : di        is the Discrete Input number that needs to be read.
+    219          *
+    220          *              perr      is a pointer to an error code variable.  You must either return:
+    221          *
+    222          *                        MODBUS_ERR_NONE     the specified DI is valid and your code is returning its
+    223          *                                            current value.
+    224          *                        MODBUS_ERR_RANGE    the specified DI is an invalid Discrete Input number in your
+    225          *                                            application (i.e. product).  YOUR product defines what the
+    226          *                                            valid range of values is for the 'di' argument.
+    227          *
+    228          * Note(s)    : 1) You can perform the mapping of DI number to the application DIs directly in this function
+    229          *                 or via a table lookup.  A table lookup would make sense if you had a lot of Discrete
+    230          *                 Inputs in your product.
+    231          *********************************************************************************************************
+    232          */
+    233          
+    234          #if (MODBUS_CFG_FC02_EN == DEF_ENABLED)
+    235          CPU_BOOLEAN  MB_DIRd (CPU_INT16U   di,
+    236                                CPU_INT16U  *perr)
+    237          {
+    238              (void)di;
+    239              *perr = MODBUS_ERR_NONE;
+    240              return (DEF_FALSE);
+    241          }
+    242          #endif
+    243          
+    244          /*$PAGE*/
+    245          /*
+    246          *********************************************************************************************************
+    247          *                               GET THE VALUE OF A SINGLE INPUT REGISTER
+    248          *
+    249          * Description: This function reads the value of a single Input Register.
+    250          *              It is called by 'MBS_FC04_InRegRd()' when the argument 'reg' is BELOW the value set by
+    251          *              the configuration constant MODBUS_CFG_FP_START_IX (see MB_CFG.H).
+    252          *              You must 'map' the Input Register to the actual application's corresponding integer register.
+    253          *
+    254          * Arguments  : reg       is the Input Register number that needs to be read.
+    255          *
+    256          *              perr      is a pointer to an error code variable.  You must either return:
+    257          *
+    258          *                        MODBUS_ERR_NONE     the specified input register is valid and your code is
+    259          *                                            returning its current value.
+    260          *                        MODBUS_ERR_RANGE    the specified input register is an invalid number in your
+    261          *                                            application (i.e. product).  YOUR product defines what the
+    262          *                                            valid range of values is for the 'reg' argument.
+    263          *
+    264          * Note(s)    : 1) You can perform the mapping of input register number to the application's input registers
+    265          *                 directly in this function or via a table lookup.  A table lookup would make sense if you
+    266          *                 had a lot of Input Registers in your product.
+    267          *              2) If your product doesn't have input registers, you could simply set '*err' to
+    268          *                 MODBUS_ERR_NONE and return 0.
+    269          *********************************************************************************************************
+    270          */
+    271          
+    272          #if (MODBUS_CFG_FC04_EN == DEF_ENABLED)
+    273          CPU_INT16U  MB_InRegRd (CPU_INT16U   reg,
+    274                                  CPU_INT16U  *perr)
+    275          {
+    276              CPU_INT16U  val;
+    277              CPU_SR      cpu_sr;
+    278          
+    279          
+    280              switch (reg) {
+    281                  case 10:
+    282                       CPU_CRITICAL_ENTER();
+    283                       val = (CPU_INT16U)OSCPUUsage;
+    284                       CPU_CRITICAL_EXIT();
+    285                       break;
+    286          
+    287                  case 11:
+    288                       CPU_CRITICAL_ENTER();
+    289                       val = (CPU_INT16U)OSCtxSwCtr;
+    290                       CPU_CRITICAL_EXIT();
+    291                       break;
+    292          
+    293                  case 12:
+    294                       CPU_CRITICAL_ENTER();
+    295                       val = (CPU_INT16U)(OSTime >> 16);
+    296                       CPU_CRITICAL_EXIT();
+    297                       break;
+    298          
+    299                  case 13:
+    300                       CPU_CRITICAL_ENTER();
+    301                       val = (CPU_INT16U)(OSTime & 0x0000FFFF);
+    302                       CPU_CRITICAL_EXIT();
+    303                       break;
+    304          
+    305                  case 14:
+    306                       CPU_CRITICAL_ENTER();
+    307                       val = (CPU_INT16U)MB_ChSize;
+    308                       CPU_CRITICAL_EXIT();
+    309                       break;
+    310          
+    311                  case 15:
+    312                       CPU_CRITICAL_ENTER();
+    313                       val = (CPU_INT16U)(MB_TotalRAMSize & 0x0000FFFF);
+    314                       CPU_CRITICAL_EXIT();
+    315                       break;
+    316          
+    317                  default:
+    318                       val = 0;
+    319                       break;
+    320              }
+    321              *perr = MODBUS_ERR_NONE;
+    322              return (val);
+    323          }
+    324          #endif
+    325          
+    326          /*
+    327          *********************************************************************************************************
+    328          *                     GET THE VALUE OF A SINGLE 'FLOATING-POINT' INPUT REGISTER
+    329          *
+    330          * Description: This function reads the value of a single Input Register.
+    331          *              It is called by 'MBS_FC04_InRegRd()' when the argument 'reg' is ABOVE or equal to the
+    332          *              value set the configuration constant MODBUS_CFG_FP_START_IX (see MB_CFG.H).
+    333          *              You must 'map' the Input Register to the actual application's corresponding floating-point
+    334          *              register.
+    335          *
+    336          * Arguments  : reg       is the Input Register number that needs to be read.
+    337          *
+    338          *              perr      is a pointer to an error code variable.  You must either return:
+    339          *
+    340          *                        MODBUS_ERR_NONE     the specified input register is valid and your code is
+    341          *                                            returning its current value.
+    342          *                        MODBUS_ERR_RANGE    the specified input register is an invalid number in your
+    343          *                                            application (i.e. product).  YOUR product defines what the
+    344          *                                            valid range of values is for the 'reg' argument.
+    345          *
+    346          * Note(s)    : 1) You can perform the mapping of input register number to the application's input registers
+    347          *                 directly in this function or via a table lookup.  A table lookup would make sense if you
+    348          *                 had a lot of Input Registers in your product.
+    349          *              2) If your product doesn't have input registers, you could simply set '*err' to
+    350          *                 MODBUS_ERR_NONE and return (CPU_FP32)0.
+    351          *********************************************************************************************************
+    352          */
+    353          
+    354          #if (MODBUS_CFG_FP_EN   == DEF_ENABLED)
+    355          #if (MODBUS_CFG_FC04_EN == DEF_ENABLED)
+    356          CPU_FP32  MB_InRegRdFP (CPU_INT16U   reg,
+    357                                  CPU_INT16U  *perr)
+    358          {
+    359              (void)reg;
+    360              *perr = MODBUS_ERR_NONE;
+    361              return ((CPU_FP32)0);
+    362          }
+    363          #endif
+    364          #endif
+    365          
+    366          /*$PAGE*/
+    367          /*
+    368          *********************************************************************************************************
+    369          *                             GET THE VALUE OF A SINGLE HOLDING REGISTER
+    370          *
+    371          * Description: This function reads the value of a single Holding Register.
+    372          *              It is called by 'MBS_FC03_HoldingRegRd()' when the argument 'reg' is BELOW the value set
+    373          *              by the configuration constant MODBUS_CFG_FP_START_IX (see MB_CFG.H).
+    374          *              You must 'map' the Holding Register to the actual application's corresponding integer register.
+    375          *
+    376          * Arguments  : reg       is the Holding Register number that needs to be read.
+    377          *
+    378          *              perr      is a pointer to an error code variable.  You must either return:
+    379          *
+    380          *                        MODBUS_ERR_NONE     the specified holding register is valid and your code is
+    381          *                                            returning its current value.
+    382          *                        MODBUS_ERR_RANGE    the specified holding register is an invalid number in your
+    383          *                                            application (i.e. product).  YOUR product defines what the
+    384          *                                            valid range of values is for the 'reg' argument.
+    385          *
+    386          * Note(s)    : 1) You can perform the mapping of holding register number to the application's holding
+    387          *                 registers directly in this function or via a table lookup.  A table lookup would make
+    388          *                 sense if you had a lot of Holding Registers in your product.
+    389          *              2) If your product doesn't have holding registers, you could simply set '*err' to
+    390          *                 MODBUS_ERR_NONE and return 0.
+    391          *********************************************************************************************************
+    392          */
+    393          
+    394          #if (MODBUS_CFG_FC03_EN == DEF_ENABLED)
+
+   \                                 In section .text, align 2, keep-with-next
+    395          CPU_INT16U  MB_HoldingRegRd (CPU_INT16U   reg,
+    396                                       CPU_INT16U  *perr)
+    397          {
+   \                     MB_HoldingRegRd: (+1)
+   \   00000000   0x0002             MOVS     R2,R0
+    398              CPU_INT16U  reg_val=0;
+   \   00000002   0x2000             MOVS     R0,#+0
+    399          //    CPU_SR      cpu_sr;
+    400          
+    401          //    /***********************************************
+    402          //    * 描述： 密码确认，通讯前先将MB_DATA_ACC_PASSWORD写入reg0
+    403          //    */
+    404          //    if ( Ctrl.Para.dat.Password != MB_DATA_ACC_PASSWORD ) {
+    405          //        *perr = MODBUS_ERR_ILLEGAL_DATA_ADDR;
+    406          //        return 0;
+    407          //    }
+    408          //        
+    409          //    CPU_INT16U *preg       = (CPU_INT16U *)& Ctrl.Para.buf2[0];
+    410          //    /***********************************************
+    411          //    * 描述： 获取值
+    412          //    */
+    413          //    if ( reg < sizeof(Ctrl) / 2 ) {
+    414          //        CPU_CRITICAL_ENTER();
+    415          //        reg_val = preg[reg];
+    416          //        CPU_CRITICAL_EXIT();
+    417          //        *perr = MODBUS_ERR_NONE;
+    418          //    } else {
+    419          //        reg_val = 0;
+    420          //        *perr = MODBUS_ERR_ILLEGAL_DATA_ADDR;
+    421          //    }
+    422              
+    423              return (reg_val);
+   \   00000004   0xB280             UXTH     R0,R0            ;; ZeroExt  R0,R0,#+16,#+16
+   \   00000006   0x4770             BX       LR               ;; return
+    424          }
+    425          #endif
+    426          
+    427          /*$PAGE*/
+    428          /*
+    429          *********************************************************************************************************
+    430          *                     GET THE VALUE OF A SINGLE 'FLOATING-POINT' HOLDING REGISTER
+    431          *
+    432          * Description: This function reads the value of a single Floating-Point Holding Register.
+    433          *              It is called by 'MBS_FC03_HoldingRegRd()' when the argument 'reg' is ABOVE or equal to the
+    434          *              value set by the configuration constant MODBUS_CFG_FP_START_IX (see MB_CFG.H).
+    435          *              You must 'map' the Holding Register to the actual application's corresponding floating-point
+    436          *              register.
+    437          *
+    438          * Arguments  : reg       is the Holding Register number that needs to be read.
+    439          *
+    440          *              perr      is a pointer to an error code variable.  You must either return:
+    441          *
+    442          *                        MODBUS_ERR_NONE     the specified holding register is valid and your code is
+    443          *                                            returning its current value.
+    444          *                        MODBUS_ERR_RANGE    the specified holding register is an invalid number in your
+    445          *                                            application (i.e. product).  YOUR product defines what the
+    446          *                                            valid range of values is for the 'reg' argument.
+    447          *
+    448          * Note(s)    : 1) You can perform the mapping of holding register number to the application's holding
+    449          *                 registers directly in this function or via a table lookup.  A table lookup would make
+    450          *                 sense if you had a lot of Holding Registers in your product.
+    451          *              2) If your product doesn't have holding registers, you could simply set '*err' to
+    452          *                 MODBUS_ERR_NONE and return 0.
+    453          *********************************************************************************************************
+    454          */
+    455          
+    456          #if (MODBUS_CFG_FP_EN   == DEF_ENABLED)
+    457          #if (MODBUS_CFG_FC03_EN == DEF_ENABLED)
+    458          CPU_FP32  MB_HoldingRegRdFP (CPU_INT16U   reg,
+    459                                       CPU_INT16U  *perr)
+    460          {
+    461              (void)reg;    
+    462              
+    463              /***********************************************
+    464              * 描述： 密码确认，通讯前先将MB_DATA_ACC_PASSWORD写入reg0
+    465              */
+    466              if ( Ctrl.Para.dat.Password != MB_DATA_ACC_PASSWORD ) {
+    467                  *perr = MODBUS_ERR_ILLEGAL_DATA_ADDR;
+    468                  return 0;
+    469              }
+    470              /***********************************************
+    471              * 描述： 浮点寄存器
+    472              */
+    473              CPU_FP32   *preg        = (CPU_FP32 *)&Ctrl.Sen.Para.buf3[0];
+    474              reg        = reg - MODBUS_CFG_FP_START_IX;
+    475              CPU_FP32   reg_val      = 0;
+    476              
+    477              /***********************************************
+    478              * 描述： 获取值
+    479              */
+    480              if ( reg < sizeof(UnionSenPara) / 4 ) {
+    481                  preg    += reg;
+    482                  CPU_SR_ALLOC();
+    483                  CPU_CRITICAL_ENTER();
+    484                  reg_val     = *preg;
+    485                  CPU_CRITICAL_EXIT();
+    486                  *perr = MODBUS_ERR_NONE;
+    487              } else {
+    488                  *perr = MODBUS_ERR_RANGE;
+    489              }
+    490              
+    491              return ((CPU_FP32)reg_val);
+    492          }
+    493          #endif
+    494          #endif
+    495          
+    496          /*$PAGE*/
+    497          /*
+    498          *********************************************************************************************************
+    499          *                            SET THE VALUE OF A SINGLE HOLDING REGISTER
+    500          *
+    501          * Description: This function is called to change the value of a single Integer Holding Register.
+    502          *              It is called by 'MBS_FC06_HoldingRegWr()' and 'MBS_FC16_HoldingRegWrMultiple()' when the argument
+    503          *              'reg' is BELOW to the value set by the configuration constant MODBUS_CFG_FP_START_IX (see MB_CFG.H).
+    504          *              You must 'map' the Holding Register to the actual application's corresponding integer register.
+    505          *
+    506          * Arguments  : reg       is the Holding Register number that needs to be read.
+    507          *
+    508          *              reg_val   is the desired value of the holding register.
+    509          *                        The value is specified as an unsigned integer even though it could actually be
+    510          *                        represented by a signed integer.
+    511          *
+    512          *              perr      is a pointer to an error code variable.  You must either return:
+    513          *
+    514          *                        MODBUS_ERR_NONE     the specified holding register is valid and your code is
+    515          *                                            returning its current value.
+    516          *                        MODBUS_ERR_RANGE    the specified holding register is an invalid number in your
+    517          *                                            application (i.e. product).  YOUR product defines what the
+    518          *                                            valid range of values is for the 'reg' argument.
+    519          *                        MODBUS_ERR_WR       if the device is not able to write or accept the value
+    520          *
+    521          * Note(s)    : 1) You can perform the mapping of holding register number to the application's holding
+    522          *                 registers directly in this function or via a table lookup.  A table lookup would make
+    523          *                 sense if you had a lot of Holding Registers in your product.
+    524          *              2) If your product doesn't have holding registers, you could simply set '*err' to
+    525          *                 MODBUS_ERR_NONE and return 0.
+    526          *********************************************************************************************************
+    527          */
+    528          #if (MODBUS_CFG_FC06_EN == DEF_ENABLED) || \
+    529              (MODBUS_CFG_FC16_EN == DEF_ENABLED)
+
+   \                                 In section .text, align 2, keep-with-next
+    530          void  MB_HoldingRegWr (CPU_INT16U   reg,
+    531                                 CPU_INT16U   reg_val,
+    532                                 CPU_INT16U  *perr)
+    533          {
+    534          //    /* Access to your variable here! */
+    535          //    (void)reg;
+    536          //    (void)reg_val;
+    537          //    
+    538          //    /***********************************************
+    539          //    * 描述： 密码确认，通讯前先将MB_DATA_ACC_PASSWORD写入reg0
+    540          //    */
+    541          //    if ( ( Ctrl.Para.dat.Password == MB_DATA_ACC_PASSWORD ) ||
+    542          //         ( ( reg == 0 ) && ( reg_val == MB_DATA_ACC_PASSWORD ) ) ) {
+    543          //    } else {
+    544          //        *perr = MODBUS_ERR_ILLEGAL_DATA_ADDR;
+    545          //        return;
+    546          //    }
+    547          //    
+    548          //    CPU_INT16U *preg       = (CPU_INT16U *)& Ctrl.Para.buf2[0];
+    549          //     
+    550          //    /***********************************************
+    551          //    * 描述： 获取值
+    552          //    */
+    553          //    if ( reg < sizeof(Ctrl) / 2 ) {
+    554          //        preg    += reg;
+    555          //        /***********************************************
+    556          //        * 描述： 写入测量模块校准参数
+    557          //        */    
+    558          //        extern BOOL App_SetParaToSensor(INT08U dev, INT32U addr, INT08U *dat, INT16U len);
+    559          //        if ( preg == &Ctrl.Para.buf2[58] ) {
+    560          //            if ( ( reg_val & 0x0001 ) == 0x0001 ) {
+    561          //                NVIC_SystemReset();                        // 重启（core_cm3.h文件提供该函数）
+    562          //            }
+    563          //        } else if ( ( preg > &Ctrl.Para.buf2[0] ) &&
+    564          //             ( preg <= &Ctrl.Para.buf2[127] ) ) {
+    565          //            BSP_I2CSetPort(2);
+    566          //            
+    567          //            INT16U addr = (preg - &Ctrl.Para.buf2[0])*2;
+    568          //            //INT08U *pb  = (INT08U *)preg;
+    569          //            
+    570          //            if ( !BSP_EEP_WriteINT16U (addr, reg_val ) ) {
+    571          //            //if ( !App_SetParaToSensor(2, addr, NULL, 2) ) {
+    572          //                *perr = MODBUS_ERR_ILLEGAL_DATA_VAL;
+    573          //                return;
+    574          //            }
+    575          //        /***********************************************
+    576          //        * 描述： 写入传感器模块校准参数
+    577          //        */
+    578          //        } else if ( ( preg >= &Ctrl.Sen.Para.buf2[0] ) &&
+    579          //                    ( preg <= &Ctrl.Sen.Para.buf2[128] ) ) {
+    580          //            BSP_I2CSetPort(1);
+    581          //            INT16U addr = (preg - Ctrl.Sen.Para.buf2)*2;
+    582          //            //INT08U *pb  = (INT08U *)preg;
+    583          //            
+    584          //            //if ( App_SetParaToEep(addr, NULL, 2 ) ) {
+    585          //            if ( !BSP_EEP_WriteINT16U (addr, reg_val ) ) {
+    586          //                *perr = MODBUS_ERR_ILLEGAL_DATA_VAL;
+    587          //                BSP_I2CSetPort(2);
+    588          //                return;
+    589          //            }
+    590          //          //  BSP_I2CSetPort(2);
+    591          ////        } else if ( ( preg > (INT16U *)&Ctrl.Tab ) &&
+    592          ////             ( preg <= (INT16U *)&Ctrl.Tab.buf2[127] ) ) {
+    593          ////            BSP_I2CSetPort(2);
+    594          ////            
+    595          ////            INT16U addr = (preg - (INT16U *)&Ctrl.Tab.buf2)*2+256;
+    596          ////            INT08U *pb  = (INT08U *)preg;
+    597          ////            
+    598          ////            if ( !BSP_EEP_WriteINT16U (addr, reg_val ) ) {
+    599          ////            //if ( App_SetParaToEep(addr, NULL, 2 ) ) { 
+    600          ////                *perr = MODBUS_ERR_ILLEGAL_DATA_VAL;
+    601          ////                return;
+    602          ////            }
+    603          //        /***********************************************
+    604          //        * 描述： 写入测量模块校准参数
+    605          //        */
+    606          //        }
+    607          //        
+    608          //        CPU_SR_ALLOC();
+    609          //        CPU_CRITICAL_ENTER();
+    610          //        *preg       = reg_val;
+    611          //        CPU_CRITICAL_EXIT();
+    612          //        
+    613          //        *perr = MODBUS_ERR_NONE;
+    614          //    } else {
+    615          //        *perr = MODBUS_ERR_ILLEGAL_DATA_ADDR;
+    616          //    }    
+    617          }
+   \                     MB_HoldingRegWr: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    618          #endif
+    619          
+    620          /*$PAGE*/
+    621          /*
+    622          *********************************************************************************************************
+    623          *                     SET THE VALUE OF A SINGLE 'FLOATING-POINT' HOLDING REGISTER
+    624          *
+    625          * Description: This function is called to change the value of a single Floating-Point Holding Register.
+    626          *              It is called by 'MBS_FC06_HoldingRegWr()' and 'MBS_FC16_HoldingRegWrMultiple()' when the argument
+    627          *              'reg' is ABOVE or equal to the value set by the configuration constant MODBUS_CFG_FP_START_IX
+    628          *              (see MB_CFG.H).
+    629          *              You must 'map' the Holding Register to the actual application's corresponding floating-point
+    630          *              register.
+    631          *
+    632          * Arguments  : reg       is the Holding Register number that needs to be read.
+    633          *
+    634          *              reg_val   is the desired value of the holding register.
+    635          *                        The value is specified as an unsigned integer even though it could actually be
+    636          *                        represented by a signed integer.
+    637          *
+    638          *              perr      is a pointer to an error code variable.  You must either return:
+    639          *
+    640          *                        MODBUS_ERR_NONE     the specified holding register is valid and your code is
+    641          *                                            returning its current value.
+    642          *                        MODBUS_ERR_RANGE    the specified holding register is an invalid number in your
+    643          *                                            application (i.e. product).  YOUR product defines what the
+    644          *                                            valid range of values is for the 'reg' argument.
+    645          *                        MODBUS_ERR_WR       if the device is not able to write or accept the value
+    646          *
+    647          * Note(s)    : 1) You can perform the mapping of holding register number to the application's holding
+    648          *                 registers directly in this function or via a table lookup.  A table lookup would make
+    649          *                 sense if you had a lot of Holding Registers in your product.
+    650          *              2) If your product doesn't have holding registers, you could simply set '*err' to
+    651          *                 MODBUS_ERR_NONE and return 0.
+    652          *********************************************************************************************************
+    653          */
+    654          
+    655          #if (MODBUS_CFG_FP_EN    == DEF_ENABLED)
+    656          #if (MODBUS_CFG_FC06_EN == DEF_ENABLED) || \
+    657              (MODBUS_CFG_FC16_EN == DEF_ENABLED)
+    658          void  MB_HoldingRegWrFP (CPU_INT16U   reg,
+    659                                   CPU_FP32     reg_val_fp,
+    660                                   CPU_INT16U  *perr)
+    661          {
+    662              (void)reg;
+    663              (void)reg_val_fp;
+    664                  
+    665          //    /***********************************************
+    666          //    * 描述： 密码确认，通讯前先将MB_DATA_ACC_PASSWORD写入reg0
+    667          //    */
+    668          //    if ( Ctrl.Para.dat.Password != MB_DATA_ACC_PASSWORD ) {
+    669          //        *perr = MODBUS_ERR_ILLEGAL_DATA_ADDR;
+    670          //        return;
+    671          //    }
+    672          //    
+    673          //    /***********************************************
+    674          //    * 描述： 浮点寄存器
+    675          //    */
+    676          //    CPU_FP32   *preg      = (CPU_FP32 *)&Ctrl.Sen.Para.buf3[0];
+    677          //    reg        = reg - MODBUS_CFG_FP_START_IX;
+    678          //    /***********************************************
+    679          //    * 描述： 获取值
+    680          //    */
+    681          //    if ( reg < sizeof(UnionSenPara) / 4 ) {
+    682          //        preg    += reg;
+    683          //        CPU_SR_ALLOC();
+    684          //        CPU_CRITICAL_ENTER();
+    685          //        *preg    = reg_val_fp;
+    686          //        CPU_CRITICAL_EXIT();
+    687          //        *perr = MODBUS_ERR_NONE;
+    688          //    } else {
+    689          //        *perr = MODBUS_ERR_RANGE;
+    690          //    }
+    691          }
+    692          #endif
+    693          #endif
+    694          
+    695          /*$PAGE*/
+    696          /*
+    697          *********************************************************************************************************
+    698          *                              GET A SINGLE ENTRY FROM A RECORD IN A FILE
+    699          *
+    700          * Description: This function is called to read a single integer from a file.
+    701          *              As mentionned in the Modbus specifications, a file is an organization of records.
+    702          *              Each file can contain up to 10,000 records (addressed from 0 to 9999).
+    703          *              You must 'map' the File/Record/Ix to the actual application's corresponding data.
+    704          *
+    705          * Arguments  : file_nbr    is the number of the desired file.
+    706          *
+    707          *              record_nbr  is the desired record within the file
+    708          *
+    709          *              ix          is the desired entry in the specified record.
+    710          *
+    711          *              record_len  is the desired length of the record.  Note that this parameter is passed to
+    712          *                          this function to provide the 'requested' requested length from the MODBUS command.
+    713          *
+    714          *              perr        is a pointer to an error code variable.  You must either return:
+    715          *
+    716          *                          MODBUS_ERR_NONE     the specified file/record/entry is valid and your code is
+    717          *                                              returning its current value.
+    718          *                          MODBUS_ERR_FILE     if the specified 'file_nbr' is not a valid file number in
+    719          *                                              your product.
+    720          *                          MODBUS_ERR_RECORD   if the specified 'record_nbr' is not a valid record in the
+    721          *                                              specified file.
+    722          *                          MODBUS_ERR_IX       if the specified 'ix' is not a valid index into the specified
+    723          *                                              record.
+    724          *
+    725          * Note(s)    : 1) You can perform the mapping of file/record/ix to the application's data directly in
+    726          *                 this function or via a table lookup.  A table lookup would make sense if you had a lot
+    727          *                 data in your files.
+    728          *********************************************************************************************************
+    729          */
+    730          
+    731          #if (MODBUS_CFG_FC20_EN == DEF_ENABLED)
+
+   \                                 In section .text, align 2, keep-with-next
+    732          CPU_INT16U  MB_FileRd (CPU_INT16U   file_nbr,
+    733                                 CPU_INT16U   record_nbr,
+    734                                 CPU_INT16U   ix,
+    735                                 CPU_INT08U   record_len,
+    736                                 CPU_INT16U  *perr)
+    737          {
+   \                     MB_FileRd: (+1)
+   \   00000000   0xB430             PUSH     {R4,R5}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x9D02             LDR      R5,[SP, #+8]
+    738              (void)file_nbr;
+    739              (void)record_nbr;
+    740              (void)ix;
+    741              (void)record_len;
+    742              *perr  = MODBUS_ERR_NONE;
+   \   00000006   0x2000             MOVS     R0,#+0
+   \   00000008   0x8028             STRH     R0,[R5, #+0]
+    743              return (0);
+   \   0000000A   0x2000             MOVS     R0,#+0
+   \   0000000C   0xBC30             POP      {R4,R5}
+   \   0000000E   0x4770             BX       LR               ;; return
+    744          }
+    745          #endif
+    746          
+    747          /*$PAGE*/
+    748          /*
+    749          *********************************************************************************************************
+    750          *                               SET A SINGLE ENTRY OF A RECORD IN A FILE
+    751          *
+    752          * Description: This function is called to change a single integer value in a file.
+    753          *              As mentionned in the Modbus specifications, a file is an organization of records.
+    754          *              Each file can contain up to 10,000 records (addressed from 0 to 9999).
+    755          *              You must 'map' the File/Record/Ix to the actual application's corresponding data.
+    756          *
+    757          * Arguments  : file_nbr    is the number of the desired file.
+    758          *
+    759          *              record_nbr  is the desired record within the file
+    760          *
+    761          *              ix          is the desired entry in the specified record.
+    762          *
+    763          *              record_len  is the desired length of the record.  Note that this parameter is passed to
+    764          *                          this function to provide the 'requested' requested length from the MODBUS command.
+    765          *
+    766          *              val         is the new value to place in the file.
+    767          *
+    768          *              perr        is a pointer to an error code variable.  You must either return:
+    769          *
+    770          *                          MODBUS_ERR_NONE     the specified file/record/entry is valid and your code is
+    771          *                                              returning its current value.
+    772          *                          MODBUS_ERR_FILE     if the specified 'file_nbr' is not a valid file number in
+    773          *                                              your product.
+    774          *                          MODBUS_ERR_RECORD   if the specified 'record_nbr' is not a valid record in the
+    775          *                                              specified file.
+    776          *                          MODBUS_ERR_IX       if the specified 'ix' is not a valid index into the specified
+    777          *                                              record.
+    778          *
+    779          * Note(s)    : 1) You can perform the mapping of file/record/ix to the application's data directly in
+    780          *                 this function or via a table lookup.  A table lookup would make sense if you had a lot
+    781          *                 data in your files.
+    782          *********************************************************************************************************
+    783          */
+    784          
+    785          #if (MODBUS_CFG_FC21_EN == DEF_ENABLED)
+
+   \                                 In section .text, align 2, keep-with-next
+    786          void  MB_FileWr (CPU_INT16U   file_nbr,
+    787                           CPU_INT16U   record_nbr,
+    788                           CPU_INT16U   ix,
+    789                           CPU_INT08U   record_len,
+    790                           CPU_INT16U   val,
+    791                           CPU_INT16U  *perr)
+    792          {
+   \                     MB_FileWr: (+1)
+   \   00000000   0xB430             PUSH     {R4,R5}
+   \   00000002   0x9C03             LDR      R4,[SP, #+12]
+    793              (void)file_nbr;
+    794              (void)record_nbr;
+    795              (void)ix;
+    796              (void)record_len;
+    797              (void)val;
+    798              *perr = MODBUS_ERR_NONE;
+   \   00000004   0x2500             MOVS     R5,#+0
+   \   00000006   0x8025             STRH     R5,[R4, #+0]
+    799          }
+   \   00000008   0xBC30             POP      {R4,R5}
+   \   0000000A   0x4770             BX       LR               ;; return
+    800          #endif
+    801          
+    802          /***********************************************
+    803          * 描述： 2015/12/07增加，用于非MODBBUS通信
+    804          *        非MODBUS通信，带帧头帧尾的通信数据处理
+    805          */
+    806          #if MB_NONMODBUS_EN == DEF_ENABLED
+
+   \                                 In section .text, align 2, keep-with-next
+    807          CPU_BOOLEAN NON_MBS_FCxx_Handler (MODBUS_CH  *pch)
+    808          {    
+   \                     NON_MBS_FCxx_Handler: (+1)
+   \   00000000   0x0001             MOVS     R1,R0
+    809              /***********************************************
+    810              * 描述： 调用串口数据处理回调函数
+    811              */
+    812          //    extern INT08U APP_CommRxDataDealCB(MODBUS_CH  *pch);
+    813          //    
+    814          //    return APP_CommRxDataDealCB(pch);
+    815              
+    816              return 0;
+   \   00000002   0x2000             MOVS     R0,#+0
+   \   00000004   0x4770             BX       LR               ;; return
+    817          }
+    818          #endif
+    819          
+    820          
+    821          /***********************************************
+    822          * 描述： 2016/01/08增加，用于非MODBBUS IAP升级通信
+    823          */
+    824          #if MB_IAPMODBUS_EN == DEF_ENABLED
+
+   \                                 In section .text, align 2, keep-with-next
+    825          CPU_BOOLEAN IAP_MBS_FCxx_Handler (MODBUS_CH  *pch)
+    826          {    
+   \                     IAP_MBS_FCxx_Handler: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    827              /***********************************************
+    828              * 描述： 调用串口数据处理回调函数
+    829              */
+    830              extern INT08U IAP_CommRxDataDealCB(MODBUS_CH  *pch);
+    831              
+    832              return IAP_CommRxDataDealCB(pch);
+   \   00000004   0x0020             MOVS     R0,R4
+   \   00000006   0x.... 0x....      BL       IAP_CommRxDataDealCB
+   \   0000000A   0xBD10             POP      {R4,PC}          ;; return
+    833          }
+    834          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   IAP_MBS_FCxx_Handler
+         8   -> IAP_CommRxDataDealCB
+       0   MB_CoilRd
+       0   MB_CoilWr
+       8   MB_FileRd
+       8   MB_FileWr
+       0   MB_HoldingRegRd
+       0   MB_HoldingRegWr
+       0   NON_MBS_FCxx_Handler
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      12  IAP_MBS_FCxx_Handler
+       8  MB_CoilRd
+       2  MB_CoilWr
+      16  MB_FileRd
+      12  MB_FileWr
+       8  MB_HoldingRegRd
+       2  MB_HoldingRegWr
+       6  NON_MBS_FCxx_Handler
+     268  mbData
+
+ 
+ 268 bytes in section .data
+  66 bytes in section .text
+ 
+  66 bytes of CODE memory
+ 268 bytes of DATA memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,497 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       28/Dec/2017  08:42:37
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  F:\iar\NC136B-320 IC卡模块\Software\BSP\Driver\bsp_wdt.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC卡模块\Software\BSP\Driver\bsp_wdt.c" -D RELEASE
+#        -lCN "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\bsp_wdt.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\bsp_wdt.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC卡模块\Software\BSP\Driver\bsp_wdt.c
+      1          /*******************************************************************************
+      2           *   Filename:       bsp_wdt.c
+      3           *   Revised:        All copyrights reserved to Roger.
+      4           *   Date:           2015-08-11
+      5           *   Revision:       v1.0
+      6           *   Writer:	     wumingshen.
+      7           *
+      8           *   Description:    看门狗驱动模块
+      9           *
+     10           *
+     11           *   Notes:
+     12           *   独立看门狗工作原理：在键值寄存器（IWDG_KR）中写入0XCCCC，开始启用独立看门狗，
+     13           *   此时计数器开始从其复位值OXFFF递减计数，当计数器计数到末尾0X000的时候，会产生
+     14           *   一个复位信号（IWDG_RESET），无论何时，只要寄存器IWDG_KR中被写入0XAAAA，IWDG_RLR
+     15           *   中的值就会被重新加载到计数器中从而避免产生看门狗复位。
+     16           *
+     17           *   All copyrights reserved to wumingshen
+     18           *******************************************************************************/
+     19          
+     20          /*******************************************************************************
+     21          * INCLUDES
+     22          */
+     23          #include <includes.h>
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __interwork __softfp void NVIC_SystemReset(void)
+   \                     NVIC_SystemReset: (+1)
+   \   00000000   0xF3BF 0x8F4F      DSB      
+   \   00000004   0x....             LDR.N    R0,??DataTable5  ;; 0xe000ed0c
+   \   00000006   0x6800             LDR      R0,[R0, #+0]
+   \   00000008   0xF410 0x60E0      ANDS     R0,R0,#0x700
+   \   0000000C   0x....             LDR.N    R1,??DataTable5_1  ;; 0x5fa0004
+   \   0000000E   0x4308             ORRS     R0,R1,R0
+   \   00000010   0x....             LDR.N    R1,??DataTable5  ;; 0xe000ed0c
+   \   00000012   0x6008             STR      R0,[R1, #+0]
+   \   00000014   0xF3BF 0x8F4F      DSB      
+   \                     ??NVIC_SystemReset_0: (+1)
+   \   00000018   0xE7FE             B.N      ??NVIC_SystemReset_0
+     24          #include <bsp_wdt.h>
+     25          
+     26          #define BSP_WDT_MODULE_EN 1
+     27          #if BSP_WDT_MODULE_EN > 0
+     28          
+     29          // 0:禁止；1：外部看门狗；2：内部看门狗；3：同时使用内部和外部看门狗;
+
+   \                                 In section .bss, align 1
+     30          INT08U BSP_WdtMode  = 0;
+   \                     BSP_WdtMode:
+   \   00000000                      DS8 1
+     31          /*******************************************************************************
+     32           * 描述： 该模块是否搭载uCOS系统使用
+     33           */
+     34          #define  UCOS_EN        DEF_ENABLED
+     35          
+     36          /*******************************************************************************
+     37          * 名    称： BSP_WdtRst
+     38          * 功    能： 喂狗
+     39          * 入口参数： 无
+     40          * 出口参数： 无
+     41          * 作    者： 无名沈
+     42          * 创建日期： 2014-08-18
+     43          * 修    改：
+     44          * 修改日期：
+     45          * 备    注：
+     46          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     47          void  BSP_WDT_Rst(void)
+     48          {
+   \                     BSP_WDT_Rst: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     49              if ( BSP_WdtMode == BSP_WDT_MODE_NONE )
+   \   00000002   0x....             LDR.N    R0,??DataTable5_2
+   \   00000004   0x7800             LDRB     R0,[R0, #+0]
+   \   00000006   0x2800             CMP      R0,#+0
+   \   00000008   0xD01C             BEQ.N    ??BSP_WDT_Rst_0
+     50                  return;
+     51          #if OS_CRITICAL_METHOD == 3u                     /* Allocate storage for CPU status register           */
+     52              OS_CPU_SR  cpu_sr = 0u;
+     53          #endif
+     54              /***********************************************
+     55              * 描述：STM内部看门狗喂狗 Reload IWDG counter
+     56              */
+     57              if ( ( BSP_WdtMode == BSP_WDT_MODE_INT ) || ( BSP_WdtMode == BSP_WDT_MODE_ALL ) ) {
+   \                     ??BSP_WDT_Rst_1: (+1)
+   \   0000000A   0x....             LDR.N    R0,??DataTable5_2
+   \   0000000C   0x7800             LDRB     R0,[R0, #+0]
+   \   0000000E   0x2802             CMP      R0,#+2
+   \   00000010   0xD003             BEQ.N    ??BSP_WDT_Rst_2
+   \   00000012   0x....             LDR.N    R0,??DataTable5_2
+   \   00000014   0x7800             LDRB     R0,[R0, #+0]
+   \   00000016   0x2803             CMP      R0,#+3
+   \   00000018   0xD101             BNE.N    ??BSP_WDT_Rst_3
+     58                  //IWDG_ReloadCounter();
+     59                  WDT_Feed(); 
+   \                     ??BSP_WDT_Rst_2: (+1)
+   \   0000001A   0x.... 0x....      BL       WDT_Feed
+     60              }
+     61              /***********************************************
+     62              * 描述：外部看门狗喂狗
+     63              */
+     64              if ( ( BSP_WdtMode == BSP_WDT_MODE_EXT ) || ( BSP_WdtMode == BSP_WDT_MODE_ALL ) ) {
+   \                     ??BSP_WDT_Rst_3: (+1)
+   \   0000001E   0x....             LDR.N    R0,??DataTable5_2
+   \   00000020   0x7800             LDRB     R0,[R0, #+0]
+   \   00000022   0x2801             CMP      R0,#+1
+   \   00000024   0xD003             BEQ.N    ??BSP_WDT_Rst_4
+   \   00000026   0x....             LDR.N    R0,??DataTable5_2
+   \   00000028   0x7800             LDRB     R0,[R0, #+0]
+   \   0000002A   0x2803             CMP      R0,#+3
+   \   0000002C   0xD10A             BNE.N    ??BSP_WDT_Rst_5
+     65                  //CPU_SR_ALLOC();
+     66                  //OS_CRITICAL_ENTER();
+     67                  //GPIO_SetBits(WDI_GPIO_PORT, WDI_GPIO_PIN); 
+     68                  GPIO_SetOrClearValue(WDI_GPIO_PIN,0);
+   \                     ??BSP_WDT_Rst_4: (+1)
+   \   0000002E   0x2100             MOVS     R1,#+0
+   \   00000030   0x201C             MOVS     R0,#+28
+   \   00000032   0x.... 0x....      BL       GPIO_SetOrClearValue
+     69                  Delay_Nus(5);
+   \   00000036   0x2005             MOVS     R0,#+5
+   \   00000038   0x.... 0x....      BL       Delay_Nus
+     70                  //GPIO_ResetBits(WDI_GPIO_PORT, WDI_GPIO_PIN);
+     71                  GPIO_SetOrClearValue(WDI_GPIO_PIN,1);
+   \   0000003C   0x2101             MOVS     R1,#+1
+   \   0000003E   0x201C             MOVS     R0,#+28
+   \   00000040   0x.... 0x....      BL       GPIO_SetOrClearValue
+     72                  //OS_CRITICAL_EXIT();
+     73              }
+     74          }
+   \                     ??BSP_WDT_Rst_5: (+1)
+   \                     ??BSP_WDT_Rst_0: (+1)
+   \   00000044   0xBD01             POP      {R0,PC}          ;; return
+     75          
+     76          /*******************************************************************************
+     77          * 名    称： BSP_WDT_GetMode
+     78          * 功    能： 获取用了什么看门狗
+     79          * 入口参数： 无
+     80          * 出口参数： 无
+     81          * 作    者： 无名沈
+     82          * 创建日期： 2014-08-18
+     83          * 修    改：
+     84          * 修改日期：
+     85          * 备    注： （内部的？外部的？还是两个都用？）
+     86          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     87          uint8_t  BSP_WDT_GetMode(void)
+     88          {
+     89              return BSP_WdtMode;
+   \                     BSP_WDT_GetMode: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable5_2
+   \   00000002   0x7800             LDRB     R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+     90          }
+     91          
+     92          /*******************************************************************************
+     93          * 名    称： BSP_WDT_Init
+     94          * 功    能： 独立看门狗初始化
+     95          * 入口参数： 0:禁止；1：外部看门狗；2：内部看门狗；3：同时使用内部和外部看门狗;
+     96          * 出口参数： 0：初始化成功 1：初始化失败
+     97          * 作    者： 无名沈
+     98          * 创建日期： 2014-08-18
+     99          * 修    改：
+    100          * 修改日期：
+    101          * 备    注：
+    102          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    103          uint8_t BSP_WDT_Init(uint8_t mode)
+    104          {
+   \                     BSP_WDT_Init: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    105              BSP_WdtMode = mode;
+   \   00000004   0x....             LDR.N    R0,??DataTable5_2
+   \   00000006   0x7004             STRB     R4,[R0, #+0]
+    106          
+    107              if ( mode == BSP_WDT_MODE_NONE )  //禁止狗
+   \   00000008   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000000A   0x2C00             CMP      R4,#+0
+   \   0000000C   0xD101             BNE.N    ??BSP_WDT_Init_0
+    108                  return 0;
+   \   0000000E   0x2000             MOVS     R0,#+0
+   \   00000010   0xE017             B.N      ??BSP_WDT_Init_1
+    109          
+    110              if ( ( mode == BSP_WDT_MODE_INT ) || ( mode == BSP_WDT_MODE_ALL ) ) { //使用内部狗或者内部外部狗一起用
+   \                     ??BSP_WDT_Init_0: (+1)
+   \   00000012   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000014   0x2C02             CMP      R4,#+2
+   \   00000016   0xD002             BEQ.N    ??BSP_WDT_Init_2
+   \   00000018   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000001A   0x2C03             CMP      R4,#+3
+   \   0000001C   0xD106             BNE.N    ??BSP_WDT_Init_3
+    111                  WDT_Init(WDT_CLKSRC_IRC,WDT_MODE_RESET);
+   \                     ??BSP_WDT_Init_2: (+1)
+   \   0000001E   0x2101             MOVS     R1,#+1
+   \   00000020   0x2000             MOVS     R0,#+0
+   \   00000022   0x.... 0x....      BL       WDT_Init
+    112                  WDT_Start(2000000);
+   \   00000026   0x....             LDR.N    R0,??DataTable5_3  ;; 0x1e8480
+   \   00000028   0x.... 0x....      BL       WDT_Start
+    113              }
+    114              if ( ( mode == BSP_WDT_MODE_EXT ) || ( mode == BSP_WDT_MODE_ALL ) ) { //使用外狗或者内狗外狗一起用
+   \                     ??BSP_WDT_Init_3: (+1)
+   \   0000002C   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000002E   0x2C01             CMP      R4,#+1
+   \   00000030   0xD002             BEQ.N    ??BSP_WDT_Init_4
+   \   00000032   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000034   0x2C03             CMP      R4,#+3
+   \   00000036   0xD103             BNE.N    ??BSP_WDT_Init_5
+    115                  GPIO_PinselConfig(WDI_GPIO_PIN,0);	
+   \                     ??BSP_WDT_Init_4: (+1)
+   \   00000038   0x2100             MOVS     R1,#+0
+   \   0000003A   0x201C             MOVS     R0,#+28
+   \   0000003C   0x.... 0x....      BL       GPIO_PinselConfig
+    116              }
+    117          
+    118              return 1;
+   \                     ??BSP_WDT_Init_5: (+1)
+   \   00000040   0x2001             MOVS     R0,#+1
+   \                     ??BSP_WDT_Init_1: (+1)
+   \   00000042   0xBD10             POP      {R4,PC}          ;; return
+    119          }
+    120          
+    121          #define	Boot_APP_START_ADDR 0
+    122          /****************************************************************************
+    123          * 名称：void  FeedDog(void)
+    124          * 功能：看门狗喂狗操作。
+    125          * 入口参数：无
+    126          * 出口参数：无
+    127          ****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    128          void  ResetSys(void)
+    129          {  
+    130          	SCB->VTOR = Boot_APP_START_ADDR & 0x1FFFFF80;	//偏移中断向量
+   \                     ResetSys: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x....             LDR.N    R1,??DataTable5_4  ;; 0xe000ed08
+   \   00000004   0x6008             STR      R0,[R1, #+0]
+    131          }
+   \   00000006   0x4770             BX       LR               ;; return
+    132          
+    133          /****************************************************************************
+    134          * 名称：void  FeedDog(void)
+    135          * 功能：看门狗喂狗操作。
+    136          * 入口参数：无
+    137          * 出口参数：无
+    138          ****************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    139          void  FeedDog(void)
+    140          {  
+   \                     FeedDog: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    141          	WDT_Feed();
+   \   00000002   0x.... 0x....      BL       WDT_Feed
+    142          }
+   \   00000006   0xBD01             POP      {R0,PC}          ;; return
+    143          
+    144          /*******************************************************************************
+    145          * 名    称： BSP_SystemSoftReset
+    146          * 功    能： 系统软件重启
+    147          * 入口参数： 无
+    148          * 出口参数： 无
+    149          * 作    者： 无名沈
+    150          * 创建日期： 2014-08-18
+    151          * 修    改：
+    152          * 修改日期：
+    153          * 备    注： 在Cortex-M3权威指南中指出：从SYSRESETREQ 被置为有效，到复位发生器执行复位命令，
+    154          *       往往会有一个延时。在此延时期间，处理器仍然可以响应中断请求。但我们的本意往往是要
+    155          *       让此次执行到此为止，不要再做任何其它事情了。所以，最好在发出复位请求前，先把
+    156          *       FAULTMASK 置位 。
+    157          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    158          void  BSP_RST_SystemRst(void)
+    159          {
+   \                     BSP_RST_SystemRst: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    160          #if (UCOS_EN == ENABLE)
+    161              #if OS_CRITICAL_METHOD == 3u                    /* Allocate storage for CPU status register */
+    162                  OS_CPU_SR  cpu_sr = 0u;
+    163                  cpu_sr  = cpu_sr;
+    164                  cpu_sr  = 0u;
+    165              #endif
+    166              CPU_CRITICAL_ENTER();                           //关闭所有中断(cpu.h文件提供该函数)
+    167          #else
+    168              __set_FAULTMASK(1);                             //关闭所有中断(core_cm3.h文件提供该函数)
+   \   00000002   0x2001             MOVS     R0,#+1
+   \   00000004   0xF380 0x8813      MSR      FAULTMASK,R0
+    169          #endif
+    170          
+    171              NVIC_SystemReset();                             // 重启（core_cm3.h文件提供该函数）
+   \   00000008   0x.... 0x....      BL       NVIC_SystemReset
+    172              
+    173          	SCB->VTOR = Boot_APP_START_ADDR & 0x1FFFFF80;	//偏移中断向量
+   \   0000000C   0x2000             MOVS     R0,#+0
+   \   0000000E   0x....             LDR.N    R1,??DataTable5_4  ;; 0xe000ed08
+   \   00000010   0x6008             STR      R0,[R1, #+0]
+    174              /***************************************************
+    175              * 描述： 防止系统软件重启出错，打开看门狗，死等待系统复位
+    176              */
+    177              BSP_WDT_Init(BSP_WDT_MODE_ALL);
+   \   00000012   0x2003             MOVS     R0,#+3
+   \   00000014   0x.... 0x....      BL       BSP_WDT_Init
+    178              while(1);
+   \                     ??BSP_RST_SystemRst_0: (+1)
+   \   00000018   0xE7FE             B.N      ??BSP_RST_SystemRst_0
+    179          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \   00000000   0xE000ED0C         DC32     0xe000ed0c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \   00000000   0x05FA0004         DC32     0x5fa0004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \   00000000   0x........         DC32     BSP_WdtMode
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \   00000000   0x001E8480         DC32     0x1e8480
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_4:
+   \   00000000   0xE000ED08         DC32     0xe000ed08
+    180          
+    181          /*******************************************************************************
+    182          *              end of file                                                    *
+    183          *******************************************************************************/
+    184          #endif
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   BSP_RST_SystemRst
+         8   -> BSP_WDT_Init
+         8   -> NVIC_SystemReset
+       0   BSP_WDT_GetMode
+       8   BSP_WDT_Init
+         8   -> GPIO_PinselConfig
+         8   -> WDT_Init
+         8   -> WDT_Start
+       8   BSP_WDT_Rst
+         8   -> Delay_Nus
+         8   -> GPIO_SetOrClearValue
+         8   -> WDT_Feed
+       8   FeedDog
+         8   -> WDT_Feed
+       0   NVIC_SystemReset
+       0   ResetSys
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+      26  BSP_RST_SystemRst
+       6  BSP_WDT_GetMode
+      68  BSP_WDT_Init
+      70  BSP_WDT_Rst
+       1  BSP_WdtMode
+       8  FeedDog
+      26  NVIC_SystemReset
+       8  ResetSys
+
+ 
+   1 byte  in section .bss
+ 232 bytes in section .text
+ 
+ 232 bytes of CODE memory
+   1 byte  of DATA memory
+
+Errors: none
+Warnings: none

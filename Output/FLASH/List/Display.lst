@@ -1,0 +1,1931 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       28/Dec/2017  08:42:39
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC卡模块\Application\Library\Driver\Display.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC卡模块\Application\Library\Driver\Display.c" -D
+#        RELEASE -lCN "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\Display.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\Display.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC卡模块\Application\Library\Driver\Display.c
+      1          #include 	"string.h"
+      2          #include <includes.h>
+      3          
+      4          #define		SCK1			7	
+      5          #define		MISO1			8	
+      6          #define		MOSI1			9
+      7          #define		CS_DIS			213		
+      8          #define		SOFT_SPI_CS1	CS_DIS
+      9          
+     10          
+     11          //定义端口及功能引脚---------------------------------------------------------------
+     12          //#define     DDR_7219    DDRB 
+     13          //#define     PINT_7219   PINB
+     14          //#define     PORT_7219   PORTB  
+     15          //#define     CS_7219     4                       //数据锁存
+     16          
+     17          //max7219寄存器地址定义-------------------------------------------------------------
+     18          #define     NoOp        0x00                    // 空操作寄存器
+     19          #define     Digit0      0x01                    // 数码管1寄存器
+     20          #define     Digit1      0x02                    // 数码管2寄存器
+     21          #define     Digit2      0x03                    // 数码管3寄存器
+     22          #define     Digit3      0x04                    // 数码管4寄存器
+     23          #define     Digit4      0x05                    // 数码管5寄存器
+     24          #define     Digit5      0x06                    // 数码管6寄存器
+     25          #define     Digit6      0x07                    // 数码管7寄存器
+     26          #define     Digit7      0x08                    // 数码管8寄存器
+     27          /**/
+     28          #define     DecodeMode  0x09                    // 译码模式寄存器
+     29          #define     Intensity   0x0a                    // 亮度寄存器
+     30          #define     ScanLimit   0x0b                    // 扫描位数寄存器
+     31          #define     ShutDown    0x0c                    // 低功耗模式寄存器
+     32          #define     DisplayTest 0x0f                    // 显示测试寄存器
+     33          //max7219控制寄存器命令
+     34          #define     ShutdownMode    0x00                // 低功耗方式
+     35          #define     NormalOperation 0x01                // 正常操作方式
+     36          //#define     DecodeDigit     0xff                // 译码设置，8位均为BCD码;对8个数都编码   
+     37          #define     NoDecodeDigit   0x00                // 译码设置，对8个数都不编码   
+     38          #define     ScanDigit       0x07                // 扫描位数设置，显示8位数码管
+     39          //#define   ScanDigit 0x03                      // 扫描位数设置，显示8位数码管
+     40          #define   	IntensityGrade  0x0f                // 亮度级别设置
+     41          //#define     IntensityGrade  0x03              // 亮度级别设置
+     42          #define     TestMode    0x01                    // 显示测试模式 
+     43          #define     TextEnd     0x00                    // 显示测试结束，恢复正常工作模式
+     44          
+     45          ////---------------------------------------------------------------------------------
+     46          ////函数名称:             void InitIOForSPI1( void )
+     47          ////功    能:             将相应端口初始化为SPI口
+     48          ////入口参数:             
+     49          ////出口参数:             
+     50          ////----------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     51          void InitIOForSPI1( void )
+     52          {
+   \                     InitIOForSPI1: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+     53          	GPIO_PinselConfig(SCK1,0);
+   \   00000002   0x2100             MOVS     R1,#+0
+   \   00000004   0x2007             MOVS     R0,#+7
+   \   00000006   0x.... 0x....      BL       GPIO_PinselConfig
+     54          	GPIO_PinselConfig(MOSI1,0);
+   \   0000000A   0x2100             MOVS     R1,#+0
+   \   0000000C   0x2009             MOVS     R0,#+9
+   \   0000000E   0x.... 0x....      BL       GPIO_PinselConfig
+     55          	GPIO_PinselConfig(MISO1,0);
+   \   00000012   0x2100             MOVS     R1,#+0
+   \   00000014   0x2008             MOVS     R0,#+8
+   \   00000016   0x.... 0x....      BL       GPIO_PinselConfig
+     56          	GPIO_PinselConfig(SOFT_SPI_CS1,0);
+   \   0000001A   0x2100             MOVS     R1,#+0
+   \   0000001C   0x20D5             MOVS     R0,#+213
+   \   0000001E   0x.... 0x....      BL       GPIO_PinselConfig
+     57          }
+   \   00000022   0xBD01             POP      {R0,PC}          ;; return
+     58          //void SPI1_Init(void)
+     59          //{
+     60          //	SSP_CFG_Type SSP_ConfigStruct;
+     61          //
+     62          //	SSP_ConfigStructInit(&SSP_ConfigStruct);
+     63          //	// Initialize SSP peripheral with parameter given in structure above
+     64          //	SSP_Init(LPC_SSP1, &SSP_ConfigStruct);
+     65          //
+     66          //	// Enable SSP peripheral
+     67          //	SSP_Cmd(LPC_SSP1, ENABLE);
+     68          //}
+     69          //
+     70          //
+     71          //void InitIOForSPI1( void )
+     72          //{
+     73          //	GPIO_PinselConfig(SCK1,2);
+     74          //	GPIO_PinselConfig(MOSI1,2);
+     75          //	GPIO_PinselConfig(MISO1,2);
+     76          //	GPIO_PinselConfig(SOFT_SPI_CS1,0);
+     77          //
+     78          //	SPI1_Init();
+     79          //}
+     80          
+     81          //------------------------------------------------------------------------
+     82          //  名  称 ：void WriteSCK1( uint8 temp )
+     83          //  功  能 ：设置 SCK1
+     84          // 入口参数：无
+     85          // 出口参数：无
+     86          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+     87          void WriteSCK1(uint8 temp)
+     88          {	
+   \                     WriteSCK1: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+     89          	if(temp)		
+   \   00000004   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD004             BEQ.N    ??WriteSCK1_0
+     90          	{
+     91          		GPIO_SetOrClearValue(SCK1,1);
+   \   0000000A   0x2101             MOVS     R1,#+1
+   \   0000000C   0x2007             MOVS     R0,#+7
+   \   0000000E   0x.... 0x....      BL       GPIO_SetOrClearValue
+   \   00000012   0xE003             B.N      ??WriteSCK1_1
+     92          	}
+     93          	else
+     94          	{
+     95          		GPIO_SetOrClearValue(SCK1,0);		
+   \                     ??WriteSCK1_0: (+1)
+   \   00000014   0x2100             MOVS     R1,#+0
+   \   00000016   0x2007             MOVS     R0,#+7
+   \   00000018   0x.... 0x....      BL       GPIO_SetOrClearValue
+     96          	}	
+     97          	nop();	
+   \                     ??WriteSCK1_1: (+1)
+   \   0000001C   0x.... 0x....      BL       `nop`
+     98          }
+   \   00000020   0xBD10             POP      {R4,PC}          ;; return
+     99          
+    100          //------------------------------------------------------------------------
+    101          //  名  称 ：uint8 ReadSCK1(void)
+    102          //  功  能 ：读取 SCK1 的值
+    103          // 入口参数：无
+    104          // 出口参数：无
+    105          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    106          uint8 ReadSCK1(void)
+    107          {
+   \                     ReadSCK1: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    108          	uint8 temp;
+    109          	
+    110          	temp = 	GPIO_ReadIoVal(SCK1);
+   \   00000002   0x2007             MOVS     R0,#+7
+   \   00000004   0x.... 0x....      BL       GPIO_ReadIoVal
+   \   00000008   0x0004             MOVS     R4,R0
+    111          	nop();
+   \   0000000A   0x.... 0x....      BL       `nop`
+    112          	return temp;
+   \   0000000E   0x0020             MOVS     R0,R4
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0xBD10             POP      {R4,PC}          ;; return
+    113          }
+    114          
+    115          //------------------------------------------------------------------------
+    116          //  名  称 ：void WriteMOSI1( uint8 temp )
+    117          //  功  能 ：设置 MOSI1
+    118          // 入口参数：无
+    119          // 出口参数：无
+    120          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    121          void WriteMOSI1(uint8 temp)
+    122          {
+   \                     WriteMOSI1: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    123          	if(temp)		
+   \   00000004   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD004             BEQ.N    ??WriteMOSI1_0
+    124          	{
+    125          		GPIO_SetOrClearValue(MOSI1,1);
+   \   0000000A   0x2101             MOVS     R1,#+1
+   \   0000000C   0x2009             MOVS     R0,#+9
+   \   0000000E   0x.... 0x....      BL       GPIO_SetOrClearValue
+   \   00000012   0xE003             B.N      ??WriteMOSI1_1
+    126          	}
+    127          	else
+    128          	{
+    129          		GPIO_SetOrClearValue(MOSI1,0);		
+   \                     ??WriteMOSI1_0: (+1)
+   \   00000014   0x2100             MOVS     R1,#+0
+   \   00000016   0x2009             MOVS     R0,#+9
+   \   00000018   0x.... 0x....      BL       GPIO_SetOrClearValue
+    130          	}	
+    131          	nop();		
+   \                     ??WriteMOSI1_1: (+1)
+   \   0000001C   0x.... 0x....      BL       `nop`
+    132          }
+   \   00000020   0xBD10             POP      {R4,PC}          ;; return
+    133          
+    134          //------------------------------------------------------------------------
+    135          //  名  称 ：uint8 ReadMOSI1(void)
+    136          //  功  能 ：读取 MOSI1 的值
+    137          // 入口参数：无
+    138          // 出口参数：无
+    139          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    140          uint8 ReadMOSI1(void)
+    141          {
+   \                     ReadMOSI1: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    142          	uint8 temp;
+    143          	
+    144          	temp = 	GPIO_ReadIoVal(MOSI1);
+   \   00000002   0x2009             MOVS     R0,#+9
+   \   00000004   0x.... 0x....      BL       GPIO_ReadIoVal
+   \   00000008   0x0004             MOVS     R4,R0
+    145          	nop();
+   \   0000000A   0x.... 0x....      BL       `nop`
+    146          	return temp;
+   \   0000000E   0x0020             MOVS     R0,R4
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0xBD10             POP      {R4,PC}          ;; return
+    147          }
+    148          
+    149          //------------------------------------------------------------------------
+    150          //  名  称 ：void WriteMOSI1( uint8 temp )
+    151          //  功  能 ：设置 MOSI1
+    152          // 入口参数：无
+    153          // 出口参数：无
+    154          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    155          void WriteMISO1(uint8 temp)
+    156          {
+   \                     WriteMISO1: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    157          	if(temp)		
+   \   00000004   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD004             BEQ.N    ??WriteMISO1_0
+    158          	{
+    159          		GPIO_SetOrClearValue(MISO1,1);
+   \   0000000A   0x2101             MOVS     R1,#+1
+   \   0000000C   0x2008             MOVS     R0,#+8
+   \   0000000E   0x.... 0x....      BL       GPIO_SetOrClearValue
+   \   00000012   0xE003             B.N      ??WriteMISO1_1
+    160          	}
+    161          	else
+    162          	{
+    163          		GPIO_SetOrClearValue(MISO1,0);		
+   \                     ??WriteMISO1_0: (+1)
+   \   00000014   0x2100             MOVS     R1,#+0
+   \   00000016   0x2008             MOVS     R0,#+8
+   \   00000018   0x.... 0x....      BL       GPIO_SetOrClearValue
+    164          	}
+    165          		
+    166          	nop();		
+   \                     ??WriteMISO1_1: (+1)
+   \   0000001C   0x.... 0x....      BL       `nop`
+    167          }
+   \   00000020   0xBD10             POP      {R4,PC}          ;; return
+    168          
+    169          //------------------------------------------------------------------------
+    170          //  名  称 ：uint8 ReadMOSI1(void)
+    171          //  功  能 ：读取 MOSI1 的值
+    172          // 入口参数：无
+    173          // 出口参数：无
+    174          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    175          uint8 ReadMISO1(void)
+    176          {
+   \                     ReadMISO1: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+    177          	uint8 temp;
+    178          
+    179          	temp = 	GPIO_ReadIoVal(MISO1);
+   \   00000002   0x2008             MOVS     R0,#+8
+   \   00000004   0x.... 0x....      BL       GPIO_ReadIoVal
+   \   00000008   0x0004             MOVS     R4,R0
+    180          
+    181          	nop();
+   \   0000000A   0x.... 0x....      BL       `nop`
+    182          	return temp;
+   \   0000000E   0x0020             MOVS     R0,R4
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0xBD10             POP      {R4,PC}          ;; return
+    183          }
+    184          
+    185          //------------------------------------------------------------------------
+    186          //  名  称 ：void WriteMOSI1( uint8 temp )
+    187          //  功  能 ：设置 MOSI1
+    188          // 入口参数：无
+    189          // 出口参数：无
+    190          //------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    191          void WriteSoftSpiCS1(uint8 temp)
+    192          {
+   \                     WriteSoftSpiCS1: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    193          	if(temp)		
+   \   00000004   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000006   0x2C00             CMP      R4,#+0
+   \   00000008   0xD004             BEQ.N    ??WriteSoftSpiCS1_0
+    194          	{
+    195          		GPIO_SetOrClearValue(SOFT_SPI_CS1,1);
+   \   0000000A   0x2101             MOVS     R1,#+1
+   \   0000000C   0x20D5             MOVS     R0,#+213
+   \   0000000E   0x.... 0x....      BL       GPIO_SetOrClearValue
+   \   00000012   0xE003             B.N      ??WriteSoftSpiCS1_1
+    196          	}
+    197          	else
+    198          	{
+    199          		GPIO_SetOrClearValue(SOFT_SPI_CS1,0);		
+   \                     ??WriteSoftSpiCS1_0: (+1)
+   \   00000014   0x2100             MOVS     R1,#+0
+   \   00000016   0x20D5             MOVS     R0,#+213
+   \   00000018   0x.... 0x....      BL       GPIO_SetOrClearValue
+    200          	}	
+    201          
+    202          	nop();		
+   \                     ??WriteSoftSpiCS1_1: (+1)
+   \   0000001C   0x.... 0x....      BL       `nop`
+    203          }
+   \   00000020   0xBD10             POP      {R4,PC}          ;; return
+    204          
+
+   \                                 In section .text, align 2, keep-with-next
+    205          void WriteCS_DIS(uint8 temp)
+    206          {
+   \                     WriteCS_DIS: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    207          	WriteSoftSpiCS1(temp);
+   \   00000004   0x0020             MOVS     R0,R4
+   \   00000006   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000008   0x.... 0x....      BL       WriteSoftSpiCS1
+    208          }
+   \   0000000C   0xBD10             POP      {R4,PC}          ;; return
+    209          
+    210          //---------------------------------------------------------------------------------
+    211          //函数名称:             void SentByte_SPI1(uint8 ch)
+    212          //功    能:             SPI发送一字节数据
+    213          //入口参数:             Data8
+    214          //出口参数:             无
+    215          //说    明:				以模拟SPI总线方式发送数据
+    216          //----------------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    217          void SentByte_SPI1(uint8 ch)
+    218          {
+   \                     SentByte_SPI1: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    219          	uint8 i,temp;   
+    220          	
+    221          	WriteSCK1 ( 0 );
+   \   00000004   0x2000             MOVS     R0,#+0
+   \   00000006   0x.... 0x....      BL       WriteSCK1
+    222          
+    223              for (i=0;i<8;i++)
+   \   0000000A   0x2000             MOVS     R0,#+0
+   \   0000000C   0x0005             MOVS     R5,R0
+   \                     ??SentByte_SPI1_0: (+1)
+   \   0000000E   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000010   0x2D08             CMP      R5,#+8
+   \   00000012   0xDA1D             BGE.N    ??SentByte_SPI1_1
+    224              {
+    225          		temp=ch&0x80;
+   \   00000014   0xF014 0x0080      ANDS     R0,R4,#0x80
+   \   00000018   0x0006             MOVS     R6,R0
+    226              	ch=ch<<1;
+   \   0000001A   0x0064             LSLS     R4,R4,#+1
+    227                  if(temp)
+   \   0000001C   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   0000001E   0x2E00             CMP      R6,#+0
+   \   00000020   0xD009             BEQ.N    ??SentByte_SPI1_2
+    228                  {
+    229                  	WriteMOSI1( 1 );	
+   \   00000022   0x2001             MOVS     R0,#+1
+   \   00000024   0x.... 0x....      BL       WriteMOSI1
+    230          
+    231                  	WriteSCK1 ( 0 );
+   \   00000028   0x2000             MOVS     R0,#+0
+   \   0000002A   0x.... 0x....      BL       WriteSCK1
+    232          
+    233                  	WriteSCK1 ( 1 );	        	
+   \   0000002E   0x2001             MOVS     R0,#+1
+   \   00000030   0x.... 0x....      BL       WriteSCK1
+   \   00000034   0xE008             B.N      ??SentByte_SPI1_3
+    234                  }
+    235                  else
+    236                  {
+    237                  	WriteMOSI1( 0 );	
+   \                     ??SentByte_SPI1_2: (+1)
+   \   00000036   0x2000             MOVS     R0,#+0
+   \   00000038   0x.... 0x....      BL       WriteMOSI1
+    238          
+    239                      WriteSCK1 ( 0 );
+   \   0000003C   0x2000             MOVS     R0,#+0
+   \   0000003E   0x.... 0x....      BL       WriteSCK1
+    240                      
+    241                  	WriteSCK1 ( 1 );
+   \   00000042   0x2001             MOVS     R0,#+1
+   \   00000044   0x.... 0x....      BL       WriteSCK1
+    242                  }
+    243          		NOP();
+   \                     ??SentByte_SPI1_3: (+1)
+   \   00000048   0x.... 0x....      BL       `NOP`
+    244              }
+   \   0000004C   0x1C6D             ADDS     R5,R5,#+1
+   \   0000004E   0xE7DE             B.N      ??SentByte_SPI1_0
+    245                  
+    246              WriteSCK1 ( 0 );
+   \                     ??SentByte_SPI1_1: (+1)
+   \   00000050   0x2000             MOVS     R0,#+0
+   \   00000052   0x.... 0x....      BL       WriteSCK1
+    247          }
+   \   00000056   0xBD70             POP      {R4-R6,PC}       ;; return
+    248          //void SentByte_SPI1(uint8 ch)
+    249          //{
+    250          //	uint32	time;
+    251          //	time = GetSysTime();
+    252          //
+    253          //	SSP_SendData(LPC_SSP1,ch);
+    254          //	while(SSP_GetStatus(LPC_SSP1,SSP_STAT_TXFIFO_EMPTY)!=SET)
+    255          //	{	
+    256          //		printfcom0("\r\n test");
+    257          //		if(GetSysTime()-time>100)
+    258          //		{
+    259          //			
+    260          //			return;	
+    261          //		}	
+    262          //	}
+    263          //}
+    264          
+    265          //----------------------------------------------------------------------------
+    266          //函数名称:   void SentByteTo7219(uint8 Addr,uint8 Num) 
+    267          //功    能:   向7219发送1Byte数据或命令
+    268          //入口参数:   addr:   数据接收地址
+    269          //            num:    要存的数据
+    270          //出口参数:   无
+    271          //-----------------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    272          void SentByteTo7219(uint8 Addr,uint8 Num) 
+    273          { 
+   \                     SentByteTo7219: (+1)
+   \   00000000   0xB538             PUSH     {R3-R5,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+   \   00000004   0x000D             MOVS     R5,R1
+    274          	 WriteCS_DIS( 0 );	
+   \   00000006   0x2000             MOVS     R0,#+0
+   \   00000008   0x.... 0x....      BL       WriteCS_DIS
+    275          	 		   					   		
+    276            	 SentByte_SPI1( Addr );		
+   \   0000000C   0x0020             MOVS     R0,R4
+   \   0000000E   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000010   0x.... 0x....      BL       SentByte_SPI1
+    277                       										
+    278            	 SentByte_SPI1( Num );   
+   \   00000014   0x0028             MOVS     R0,R5
+   \   00000016   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000018   0x.... 0x....      BL       SentByte_SPI1
+    279          	                  	
+    280            	 WriteCS_DIS( 1 );			  									
+   \   0000001C   0x2001             MOVS     R0,#+1
+   \   0000001E   0x.... 0x....      BL       WriteCS_DIS
+    281          }
+   \   00000022   0xBD31             POP      {R0,R4,R5,PC}    ;; return
+    282          
+    283          
+    284          typedef	struct  _stcDisplay
+    285          {
+    286          	char	Buf[12];
+    287          	uint32	Time;			//显示的时间
+    288          	uint32	Degree;			//显示的次数
+    289          //	uint8	Enable;			
+    290          }stcDisplay;
+    291          
+    292          #define		DIS_BUF_NUM		10
+
+   \                                 In section .bss, align 4
+    293          stcDisplay	sDisplay[DIS_BUF_NUM];
+   \                     sDisplay:
+   \   00000000                      DS8 200
+
+   \                                 In section .bss, align 4
+    294          stcDisplay	sDisplayBak[DIS_BUF_NUM];
+   \                     sDisplayBak:
+   \   00000000                      DS8 200
+    295          
+    296          //----------------------------------------------------------------------------
+    297          // 名    称：   uint32 Displayf(char *fmt, va_list param) 
+    298          // 功    能：   
+    299          // 入口参数：  
+    300          
+    301          // 出口参数：   
+    302          //----------------------------------------------------------------------------  
+
+   \                                 In section .text, align 2, keep-with-next
+    303          void InitDisplayBuf(void)
+    304          {
+    305          	uint8	i;
+    306          	
+    307          	for(i = 0; i < DIS_BUF_NUM;i++)
+   \                     InitDisplayBuf: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0x0008             MOVS     R0,R1
+   \                     ??InitDisplayBuf_0: (+1)
+   \   00000004   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000006   0x280A             CMP      R0,#+10
+   \   00000008   0xDA09             BGE.N    ??InitDisplayBuf_1
+    308          	{
+    309          		sDisplay[i].Degree = 0;
+   \   0000000A   0x2100             MOVS     R1,#+0
+   \   0000000C   0x.... 0x....      LDR.W    R2,??DataTable9
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0x2314             MOVS     R3,#+20
+   \   00000014   0xFB03 0x2200      MLA      R2,R3,R0,R2
+   \   00000018   0x6111             STR      R1,[R2, #+16]
+    310          	}
+   \   0000001A   0x1C40             ADDS     R0,R0,#+1
+   \   0000001C   0xE7F2             B.N      ??InitDisplayBuf_0
+    311          }
+   \                     ??InitDisplayBuf_1: (+1)
+   \   0000001E   0x4770             BX       LR               ;; return
+    312          
+    313          //----------------------------------------------------------------------------
+    314          // 名    称：   void ClaerDisplaySet(void)
+    315          // 功    能：   
+    316          // 入口参数：  
+    317          
+    318          // 出口参数：   
+    319          //----------------------------------------------------------------------------  
+
+   \                                 In section .text, align 2, keep-with-next
+    320          void ClaerDisplaySet(void)
+    321          {
+   \                     ClaerDisplaySet: (+1)
+   \   00000000   0xB5F8             PUSH     {R3-R7,LR}
+    322          	uint8	i;
+    323          	
+    324          	memcpy((uint8 *)sDisplayBak,(uint8 *)sDisplay,sizeof(sDisplay));  //888888
+   \   00000002   0x25C8             MOVS     R5,#+200
+   \   00000004   0x.... 0x....      LDR.W    R6,??DataTable9
+   \   00000008   0x.... 0x....      LDR.W    R7,??DataTable9_1
+   \   0000000C   0x002A             MOVS     R2,R5
+   \   0000000E   0x0031             MOVS     R1,R6
+   \   00000010   0x0038             MOVS     R0,R7
+   \   00000012   0x.... 0x....      BL       __aeabi_memcpy
+    325          	
+    326          	for(i = 0; i < DIS_BUF_NUM;i++)			//清显示
+   \   00000016   0x2000             MOVS     R0,#+0
+   \   00000018   0x0004             MOVS     R4,R0
+   \                     ??ClaerDisplaySet_0: (+1)
+   \   0000001A   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000001C   0x2C0A             CMP      R4,#+10
+   \   0000001E   0xDA09             BGE.N    ??ClaerDisplaySet_1
+    327          	{
+    328          		sDisplay[i].Degree = 0;			
+   \   00000020   0x2000             MOVS     R0,#+0
+   \   00000022   0x.... 0x....      LDR.W    R1,??DataTable9
+   \   00000026   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   00000028   0x2214             MOVS     R2,#+20
+   \   0000002A   0xFB02 0x1104      MLA      R1,R2,R4,R1
+   \   0000002E   0x6108             STR      R0,[R1, #+16]
+    329          	}
+   \   00000030   0x1C64             ADDS     R4,R4,#+1
+   \   00000032   0xE7F2             B.N      ??ClaerDisplaySet_0
+    330          }
+   \                     ??ClaerDisplaySet_1: (+1)
+   \   00000034   0xBDF1             POP      {R0,R4-R7,PC}    ;; return
+    331          
+    332          //----------------------------------------------------------------------------
+    333          // 名    称：   void ClaerDisplaySetWithoutStore(void)
+    334          // 功    能：   
+    335          // 入口参数：  
+    336          
+    337          // 出口参数：   
+    338          //----------------------------------------------------------------------------  
+
+   \                                 In section .text, align 2, keep-with-next
+    339          void ClaerDisplaySetWithoutStore(void)
+    340          {
+    341          	uint8	i;
+    342          		
+    343          	for(i = 0; i < DIS_BUF_NUM;i++)			//清显示
+   \                     ClaerDisplaySetWithoutStore: (+1)
+   \   00000000   0x2100             MOVS     R1,#+0
+   \   00000002   0x0008             MOVS     R0,R1
+   \                     ??ClaerDisplaySetWithoutStore_0: (+1)
+   \   00000004   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000006   0x280A             CMP      R0,#+10
+   \   00000008   0xDA09             BGE.N    ??ClaerDisplaySetWithoutStore_1
+    344          	{
+    345          		sDisplay[i].Degree = 0;			
+   \   0000000A   0x2100             MOVS     R1,#+0
+   \   0000000C   0x.... 0x....      LDR.W    R2,??DataTable9
+   \   00000010   0xB2C0             UXTB     R0,R0            ;; ZeroExt  R0,R0,#+24,#+24
+   \   00000012   0x2314             MOVS     R3,#+20
+   \   00000014   0xFB03 0x2200      MLA      R2,R3,R0,R2
+   \   00000018   0x6111             STR      R1,[R2, #+16]
+    346          	}
+   \   0000001A   0x1C40             ADDS     R0,R0,#+1
+   \   0000001C   0xE7F2             B.N      ??ClaerDisplaySetWithoutStore_0
+    347          }
+   \                     ??ClaerDisplaySetWithoutStore_1: (+1)
+   \   0000001E   0x4770             BX       LR               ;; return
+    348          
+    349          extern	void InitDisplay (void);
+    350          
+    351          //----------------------------------------------------------------------------
+    352          // 名    称：   void ResumeDisplaySet(void)
+    353          // 功    能：   
+    354          // 入口参数：  
+    355          
+    356          // 出口参数：   
+    357          //----------------------------------------------------------------------------  
+
+   \                                 In section .text, align 2, keep-with-next
+    358          void ResumeDisplaySet(void)
+    359          {	
+   \                     ResumeDisplaySet: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+    360          	InitDisplay();
+   \   00000002   0x.... 0x....      BL       InitDisplay
+    361          
+    362          	memcpy((uint8 *)sDisplay,(uint8 *)sDisplayBak,sizeof(sDisplay)); 	//888888
+   \   00000006   0x24C8             MOVS     R4,#+200
+   \   00000008   0x.... 0x....      LDR.W    R5,??DataTable9_1
+   \   0000000C   0x.... 0x....      LDR.W    R6,??DataTable9
+   \   00000010   0x0022             MOVS     R2,R4
+   \   00000012   0x0029             MOVS     R1,R5
+   \   00000014   0x0030             MOVS     R0,R6
+   \   00000016   0x.... 0x....      BL       __aeabi_memcpy
+    363          }
+   \   0000001A   0xBD70             POP      {R4-R6,PC}       ;; return
+    364          
+    365          //-------------------------------------------------------------------
+    366          //函数名称:     void InitDisplay (void)
+    367          //功    能:     7219初始化
+    368          //入口参数:     无
+    369          //出口参数:     无
+    370          //-------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    371          void InitDisplay (void)
+    372          {
+   \                     InitDisplay: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    373          	InitIOForSPI1();								//SPI端口初始化IO口
+   \   00000002   0x.... 0x....      BL       InitIOForSPI1
+    374          	
+    375          	InitDisplayBuf();								//初始化显示缓冲区
+   \   00000006   0x.... 0x....      BL       InitDisplayBuf
+    376          	
+    377              SentByteTo7219 (DisplayTest,TextEnd);         	// 设置工作模式
+   \   0000000A   0x2100             MOVS     R1,#+0
+   \   0000000C   0x200F             MOVS     R0,#+15
+   \   0000000E   0x.... 0x....      BL       SentByteTo7219
+    378          	SentByteTo7219 (ScanLimit,ScanDigit);         	// 设置扫描界限
+   \   00000012   0x2107             MOVS     R1,#+7
+   \   00000014   0x200B             MOVS     R0,#+11
+   \   00000016   0x.... 0x....      BL       SentByteTo7219
+    379              SentByteTo7219 (DecodeMode,NoDecodeDigit);      // 设置不译码模式
+   \   0000001A   0x2100             MOVS     R1,#+0
+   \   0000001C   0x2009             MOVS     R0,#+9
+   \   0000001E   0x.... 0x....      BL       SentByteTo7219
+    380              SentByteTo7219 (Intensity,IntensityGrade);    	// 设置亮度
+   \   00000022   0x210F             MOVS     R1,#+15
+   \   00000024   0x200A             MOVS     R0,#+10
+   \   00000026   0x.... 0x....      BL       SentByteTo7219
+    381              SentByteTo7219 (ShutDown,NormalOperation);    	// 设置为正常工作模式
+   \   0000002A   0x2101             MOVS     R1,#+1
+   \   0000002C   0x200C             MOVS     R0,#+12
+   \   0000002E   0x.... 0x....      BL       SentByteTo7219
+    382          }
+   \   00000032   0xBD01             POP      {R0,PC}          ;; return
+    383          		  
+
+   \                                 In section .data, align 4
+    384          uint8 LedNumCode[]={0x7E,0x30,0x6D,0x79,0x33,0x5B,0x5F,0x70,0x7F,0x7B,0x77,
+   \                     LedNumCode:
+   \   00000000   0x7E 0x30          DC8 126, 48, 109, 121, 51, 91, 95, 112, 127, 123, 119, 31, 78, 61, 79
+   \              0x6D 0x79    
+   \              0x33 0x5B    
+   \              0x5F 0x70    
+   \              0x7F 0x7B    
+   \              0x77 0x1F    
+   \              0x4E 0x3D    
+   \              0x4F         
+   \   0000000F   0x47               DC8 71
+    385                             // 0    1    2    3    4    5    6    7    8    9    A 
+    386                               0x1F,0x4E,0x3D,0x4F,0x47};  
+    387                             // b   C    d     E    F      
+    388          
+
+   \                                 In section .data, align 4
+    389          uint8 LedCharCode[] = {0x00,0xE5,0xE5,0xE5,0xE5,0xE5,0xE5,0xE5,0xE5,0xE5,0xE5,0xE5,0x80,0x01,0x80,0xE5,
+   \                     LedCharCode:
+   \   00000000   0x00 0xE5          DC8 0, 229, 229, 229, 229, 229, 229, 229, 229, 229, 229, 229, 128, 1
+   \              0xE5 0xE5    
+   \              0xE5 0xE5    
+   \              0xE5 0xE5    
+   \              0xE5 0xE5    
+   \              0xE5 0xE5    
+   \              0x80 0x01    
+   \   0000000E   0x80 0xE5          DC8 128, 229, 126, 48, 109, 121, 51, 91, 95, 112, 127, 123, 229, 229
+   \              0x7E 0x30    
+   \              0x6D 0x79    
+   \              0x33 0x5B    
+   \              0x5F 0x70    
+   \              0x7F 0x7B    
+   \              0xE5 0xE5    
+   \   0000001C   0xE5 0xE5          DC8 229, 229, 229, 229, 229, 119, 31, 78, 61, 79, 71, 95, 55, 48, 60
+   \              0xE5 0xE5    
+   \              0xE5 0x77    
+   \              0x1F 0x4E    
+   \              0x3D 0x4F    
+   \              0x47 0x5F    
+   \              0x37 0x30    
+   \              0x3C         
+   \   0000002B   0x87 0x0E          DC8 135, 14, 229, 118, 126, 103, 254, 102, 91, 15, 62, 62, 229, 55, 51
+   \              0xE5 0x76    
+   \              0x7E 0x67    
+   \              0xFE 0x66    
+   \              0x5B 0x0F    
+   \              0x3E 0x3E    
+   \              0xE5 0x37    
+   \              0x33         
+   \   0000003A   0x6D 0xE5          DC8 109, 229, 229, 229, 229, 8, 229, 119, 31, 13, 61, 79, 71, 123, 23
+   \              0xE5 0xE5    
+   \              0xE5 0x08    
+   \              0xE5 0x77    
+   \              0x1F 0x0D    
+   \              0x3D 0x4F    
+   \              0x47 0x7B    
+   \              0x17         
+   \   00000049   0x30 0x3C          DC8 48, 60, 135, 14, 229, 21, 29, 103, 115, 5, 91, 15, 28, 28, 211, 55
+   \              0x87 0x0E    
+   \              0xE5 0x15    
+   \              0x1D 0x67    
+   \              0x73 0x05    
+   \              0x5B 0x0F    
+   \              0x1C 0x1C    
+   \              0xD3 0x37    
+   \   00000059   0x33 0x6D          DC8 51, 109, 229, 229, 229, 229, 229, 0, 0, 0, 0
+   \              0xE5 0xE5    
+   \              0xE5 0xE5    
+   \              0xE5 0x00    
+   \              0x00 0x00    
+   \              0x00         
+    390          					//       !    "    #    $    %    &    '    (     )    *    +    ,    -    .   /
+    391          					  0x7E,0x30,0x6D,0x79,0x33,0x5B,0x5F,0x70,0x7F,0x7B, 
+    392          					// 0    1    2		3   4    5    6    7    8    9	
+    393          					  0xE5,0xE5,0xE5,0xE5,0xE5,0xE5,0xE5,
+    394          					// :    ;    <    =     >   ?    @
+    395          					  0x77,0x1F,0x4E,0x3d,0x4F,0x47,0x5F,0x37,0x30,0x3c,0x87,0x0e,0xE5,
+    396                              //  A    B   C    D     E    F    G    H   I    J    K    L    M    
+    397                                0x76,0x7E,0x67,0xFE,0x66,0x5B,0x0F,0x3E,0x3E,0xE5,0x37,0x33,0x6D,
+    398                              //  N    O    P   Q    R     S    T    U    V   W    X    Y    Z     
+    399                                0xE5,0xE5,0xE5,0xE5,0x08,0xE5,
+    400                               // [    \    ]    ^    _    `
+    401                                0x77,0x1F,0x0D,0x3D,0x4F,0x47,0x7B,0x17,0x30,0x3c,0x87,0x0e,0xE5,
+    402                               // a    b   c    d     e    f    g    h    i    j     k    l    m
+    403          					  0x15,0x1D,0x67,0x73,0x05,0x5B,0x0F,0x1C,0x1C,0xD3,0x37,0x33,0x6D,
+    404                               // n    o   p    q     r    s    t    u    v   w    x    y    z     
+    405                                0xE5,0xE5,0xE5,0xE5,0xE5,0x00//
+    406                                // {    |    }    ~       灭
+    407          					   };     
+    408                     
+    409          #define     LED_CHAR_NNM    	16                  //数码管显示编码个数 
+    410          
+    411          
+    412          #define     DISPLAY_LED_NUM 	8                   //数码管个数   
+    413          
+    414                  
+    415          //--------------------------------------------------------------------
+    416          //void          DisplayNum (uint32 Unmber)
+    417          //功    能:     用数码管将整型数据显示出来
+    418          //入口参数:     number
+    419          //出口参数:     无
+    420          //-------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    421          void    DisplayNum (uint32 Unmber)
+    422          {
+   \                     DisplayNum: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB083             SUB      SP,SP,#+12
+   \   00000004   0x0004             MOVS     R4,R0
+    423              unsigned char i  = DISPLAY_LED_NUM;
+   \   00000006   0x2508             MOVS     R5,#+8
+    424          	unsigned char digit[8] = {Digit0,Digit1,Digit2,Digit3,Digit4,Digit5,Digit6,Digit7};
+   \   00000008   0x4668             MOV      R0,SP
+   \   0000000A   0x.... 0x....      LDR.W    R1,??DataTable9_2
+   \   0000000E   0xC90C             LDM      R1!,{R2,R3}
+   \   00000010   0xC00C             STM      R0!,{R2,R3}
+   \   00000012   0x3908             SUBS     R1,R1,#+8
+   \   00000014   0x3808             SUBS     R0,R0,#+8
+    425          	
+    426          	InitDisplay();                                //显示初始化
+   \   00000016   0x.... 0x....      BL       InitDisplay
+    427          	
+    428          	do
+    429          	{ 		
+    430          		i--;
+   \                     ??DisplayNum_0: (+1)
+   \   0000001A   0x1E6D             SUBS     R5,R5,#+1
+    431          		SentByteTo7219(digit[i],LedNumCode[Unmber % 10] );       //从低位到高位显示
+   \   0000001C   0x200A             MOVS     R0,#+10
+   \   0000001E   0xFBB4 0xF1F0      UDIV     R1,R4,R0
+   \   00000022   0xFB00 0x4011      MLS      R0,R0,R1,R4
+   \   00000026   0x.... 0x....      LDR.W    R1,??DataTable9_3
+   \   0000002A   0x5C41             LDRB     R1,[R0, R1]
+   \   0000002C   0x4668             MOV      R0,SP
+   \   0000002E   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000030   0x5C28             LDRB     R0,[R5, R0]
+   \   00000032   0x.... 0x....      BL       SentByteTo7219
+    432          		Unmber /= 10;                       
+   \   00000036   0x200A             MOVS     R0,#+10
+   \   00000038   0xFBB4 0xF4F0      UDIV     R4,R4,R0
+    433          	}while(i && Unmber);
+   \   0000003C   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000003E   0x2D00             CMP      R5,#+0
+   \   00000040   0xD001             BEQ.N    ??DisplayNum_1
+   \   00000042   0x2C00             CMP      R4,#+0
+   \   00000044   0xD1E9             BNE.N    ??DisplayNum_0
+    434          		
+    435          	while(i)
+   \                     ??DisplayNum_1: (+1)
+   \   00000046   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000048   0x2D00             CMP      R5,#+0
+   \   0000004A   0xD007             BEQ.N    ??DisplayNum_2
+    436          	{
+    437                  i--;
+   \   0000004C   0x1E6D             SUBS     R5,R5,#+1
+    438                  SentByteTo7219(digit[i],0x00);            //将没有用位的显示清除        
+   \   0000004E   0x2100             MOVS     R1,#+0
+   \   00000050   0x4668             MOV      R0,SP
+   \   00000052   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000054   0x5C28             LDRB     R0,[R5, R0]
+   \   00000056   0x.... 0x....      BL       SentByteTo7219
+   \   0000005A   0xE7F4             B.N      ??DisplayNum_1
+    439              }	  
+    440          }
+   \                     ??DisplayNum_2: (+1)
+   \   0000005C   0xBD37             POP      {R0-R2,R4,R5,PC}  ;; return
+    441          
+    442          //--------------------------------------------------------------------
+    443          //void          DisplayNumWithDoit (uint32 Unmber)
+    444          //功    能:     用数码管将整型数据显示出来
+    445          //入口参数:     number
+    446          //出口参数:     无
+    447          //-------------------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    448          void    DisplayNumWithDot (uint32 Unmber)
+    449          {
+   \                     DisplayNumWithDot: (+1)
+   \   00000000   0xB530             PUSH     {R4,R5,LR}
+   \   00000002   0xB083             SUB      SP,SP,#+12
+   \   00000004   0x0004             MOVS     R4,R0
+    450              unsigned char i  = DISPLAY_LED_NUM;
+   \   00000006   0x2508             MOVS     R5,#+8
+    451          	unsigned char digit[8] = {Digit0,Digit1,Digit2,Digit3,Digit4,Digit5,Digit6,Digit7};
+   \   00000008   0x4668             MOV      R0,SP
+   \   0000000A   0x.... 0x....      LDR.W    R1,??DataTable9_4
+   \   0000000E   0xC90C             LDM      R1!,{R2,R3}
+   \   00000010   0xC00C             STM      R0!,{R2,R3}
+   \   00000012   0x3908             SUBS     R1,R1,#+8
+   \   00000014   0x3808             SUBS     R0,R0,#+8
+    452          
+    453          	do
+    454          	{ 		
+    455          		i--;
+   \                     ??DisplayNumWithDot_0: (+1)
+   \   00000016   0x1E6D             SUBS     R5,R5,#+1
+    456          		SentByteTo7219(digit[i],LedNumCode[Unmber % 10] + 0x80);	//从低位到高位显示
+   \   00000018   0x200A             MOVS     R0,#+10
+   \   0000001A   0xFBB4 0xF1F0      UDIV     R1,R4,R0
+   \   0000001E   0xFB00 0x4011      MLS      R0,R0,R1,R4
+   \   00000022   0x.... 0x....      LDR.W    R1,??DataTable9_3
+   \   00000026   0x5C40             LDRB     R0,[R0, R1]
+   \   00000028   0xF1B0 0x0180      SUBS     R1,R0,#+128
+   \   0000002C   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   0000002E   0x4668             MOV      R0,SP
+   \   00000030   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000032   0x5C28             LDRB     R0,[R5, R0]
+   \   00000034   0x.... 0x....      BL       SentByteTo7219
+    457          		Unmber /= 10;                       
+   \   00000038   0x200A             MOVS     R0,#+10
+   \   0000003A   0xFBB4 0xF4F0      UDIV     R4,R4,R0
+    458          	}while(i && Unmber);
+   \   0000003E   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000040   0x2D00             CMP      R5,#+0
+   \   00000042   0xD001             BEQ.N    ??DisplayNumWithDot_1
+   \   00000044   0x2C00             CMP      R4,#+0
+   \   00000046   0xD1E6             BNE.N    ??DisplayNumWithDot_0
+    459          		
+    460          	while(i)
+   \                     ??DisplayNumWithDot_1: (+1)
+   \   00000048   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000004A   0x2D00             CMP      R5,#+0
+   \   0000004C   0xD007             BEQ.N    ??DisplayNumWithDot_2
+    461          	{
+    462                  i--;
+   \   0000004E   0x1E6D             SUBS     R5,R5,#+1
+    463                  SentByteTo7219(digit[i],0x00);            					//将没有用位的显示清除        
+   \   00000050   0x2100             MOVS     R1,#+0
+   \   00000052   0x4668             MOV      R0,SP
+   \   00000054   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000056   0x5C28             LDRB     R0,[R5, R0]
+   \   00000058   0x.... 0x....      BL       SentByteTo7219
+   \   0000005C   0xE7F4             B.N      ??DisplayNumWithDot_1
+    464              }	  
+    465          }
+   \                     ??DisplayNumWithDot_2: (+1)
+   \   0000005E   0xBD37             POP      {R0-R2,R4,R5,PC}  ;; return
+    466          
+    467          //------------------------------------------------------
+    468          //函数名称:     DisplayString ()
+    469          //功    能:     用数码管显示字符串代码
+    470          //入口参数:     String: 字符代码
+    471          //出口参数:     无
+    472          //显示内容:     String
+    473          //内容代码:	    调用格式  DisplayString("ABCD");
+    474          //-------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    475          void DisplayString(char * String)
+    476          {
+   \                     DisplayString: (+1)
+   \   00000000   0xB5F0             PUSH     {R4-R7,LR}
+   \   00000002   0xB083             SUB      SP,SP,#+12
+   \   00000004   0x0004             MOVS     R4,R0
+    477          	uint8   i = 0;
+   \   00000006   0x2700             MOVS     R7,#+0
+    478          	uint8   digit[8] = {Digit0,Digit1,Digit2,Digit3,Digit4,Digit5,Digit6,Digit7};
+   \   00000008   0x4668             MOV      R0,SP
+   \   0000000A   0x....             LDR.N    R1,??DataTable9_5
+   \   0000000C   0xC90C             LDM      R1!,{R2,R3}
+   \   0000000E   0xC00C             STM      R0!,{R2,R3}
+   \   00000010   0x3908             SUBS     R1,R1,#+8
+   \   00000012   0x3808             SUBS     R0,R0,#+8
+    479          	uint8   CharTemp;
+    480          	uint8	DotNum = 0;
+   \   00000014   0x2600             MOVS     R6,#+0
+    481          	
+    482          	while( i < DISPLAY_LED_NUM)
+   \                     ??DisplayString_0: (+1)
+   \   00000016   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   00000018   0x2F08             CMP      R7,#+8
+   \   0000001A   0xDA07             BGE.N    ??DisplayString_1
+    483          	{
+    484                  SentByteTo7219(digit[i],0x00);                      						//将没有用位的显示清除  
+   \   0000001C   0x2100             MOVS     R1,#+0
+   \   0000001E   0x4668             MOV      R0,SP
+   \   00000020   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   00000022   0x5C38             LDRB     R0,[R7, R0]
+   \   00000024   0x.... 0x....      BL       SentByteTo7219
+    485                    
+    486                  i++;    
+   \   00000028   0x1C7F             ADDS     R7,R7,#+1
+   \   0000002A   0xE7F4             B.N      ??DisplayString_0
+    487              }	
+    488          	
+    489          	i = 0;
+   \                     ??DisplayString_1: (+1)
+   \   0000002C   0x2000             MOVS     R0,#+0
+   \   0000002E   0x0007             MOVS     R7,R0
+    490          	while(i < DISPLAY_LED_NUM + DotNum  && strlen((char *)String) - i > 0)
+   \                     ??DisplayString_2: (+1)
+   \   00000030   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   00000032   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000034   0xF116 0x0008      ADDS     R0,R6,#+8
+   \   00000038   0x4287             CMP      R7,R0
+   \   0000003A   0xDA69             BGE.N    ??DisplayString_3
+   \   0000003C   0x0020             MOVS     R0,R4
+   \   0000003E   0x.... 0x....      BL       strlen
+   \   00000042   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   00000044   0x1BC0             SUBS     R0,R0,R7
+   \   00000046   0x2800             CMP      R0,#+0
+   \   00000048   0xD062             BEQ.N    ??DisplayString_3
+    491          	{ 		
+    492          		i++;
+   \   0000004A   0x1C7F             ADDS     R7,R7,#+1
+    493          		if(String[strlen((char *)String) - i - DotNum] >= ' '  )					//
+   \   0000004C   0x0020             MOVS     R0,R4
+   \   0000004E   0x.... 0x....      BL       strlen
+   \   00000052   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   00000054   0x1BC0             SUBS     R0,R0,R7
+   \   00000056   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000058   0x1B80             SUBS     R0,R0,R6
+   \   0000005A   0x5D00             LDRB     R0,[R0, R4]
+   \   0000005C   0x2820             CMP      R0,#+32
+   \   0000005E   0xDBE7             BLT.N    ??DisplayString_2
+    494          		{
+    495          			if(String[strlen((char *)String) - i - DotNum] != '.' )					//对'.'进行处理
+   \   00000060   0x0020             MOVS     R0,R4
+   \   00000062   0x.... 0x....      BL       strlen
+   \   00000066   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   00000068   0x1BC0             SUBS     R0,R0,R7
+   \   0000006A   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   0000006C   0x1B80             SUBS     R0,R0,R6
+   \   0000006E   0x5D00             LDRB     R0,[R0, R4]
+   \   00000070   0x282E             CMP      R0,#+46
+   \   00000072   0xD013             BEQ.N    ??DisplayString_4
+    496          			{
+    497          				CharTemp = String[strlen((char *)String)- i - DotNum] - ' ' ; 		//求显示字符位置,LedCharCode位置
+   \   00000074   0x0020             MOVS     R0,R4
+   \   00000076   0x.... 0x....      BL       strlen
+   \   0000007A   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   0000007C   0x1BC0             SUBS     R0,R0,R7
+   \   0000007E   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000080   0x1B80             SUBS     R0,R0,R6
+   \   00000082   0x5D00             LDRB     R0,[R0, R4]
+   \   00000084   0x3820             SUBS     R0,R0,#+32
+   \   00000086   0x0005             MOVS     R5,R0
+    498          				SentByteTo7219(digit[DISPLAY_LED_NUM - i],LedCharCode[CharTemp] );	//从低位到高位显示      
+   \   00000088   0x....             LDR.N    R0,??DataTable9_6
+   \   0000008A   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000008C   0x5C29             LDRB     R1,[R5, R0]
+   \   0000008E   0x4668             MOV      R0,SP
+   \   00000090   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   00000092   0x1BC0             SUBS     R0,R0,R7
+   \   00000094   0x7A00             LDRB     R0,[R0, #+8]
+   \   00000096   0x.... 0x....      BL       SentByteTo7219
+   \   0000009A   0xE7C9             B.N      ??DisplayString_2
+    499          			}
+    500          			else
+    501          			{	
+    502          				if(String[strlen((char *)String)- i - DotNum - 1] != '.')
+   \                     ??DisplayString_4: (+1)
+   \   0000009C   0x0020             MOVS     R0,R4
+   \   0000009E   0x.... 0x....      BL       strlen
+   \   000000A2   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   000000A4   0x1BC0             SUBS     R0,R0,R7
+   \   000000A6   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000A8   0x1B80             SUBS     R0,R0,R6
+   \   000000AA   0x1900             ADDS     R0,R0,R4
+   \   000000AC   0xF810 0x0C01      LDRB     R0,[R0, #-1]
+   \   000000B0   0x282E             CMP      R0,#+46
+   \   000000B2   0xD019             BEQ.N    ??DisplayString_5
+    503          				{
+    504          					CharTemp = String[strlen((char *)String)- i - DotNum - 1] - ' ';  
+   \   000000B4   0x0020             MOVS     R0,R4
+   \   000000B6   0x.... 0x....      BL       strlen
+   \   000000BA   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   000000BC   0x1BC0             SUBS     R0,R0,R7
+   \   000000BE   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000C0   0x1B80             SUBS     R0,R0,R6
+   \   000000C2   0x1900             ADDS     R0,R0,R4
+   \   000000C4   0xF810 0x0C01      LDRB     R0,[R0, #-1]
+   \   000000C8   0x3820             SUBS     R0,R0,#+32
+   \   000000CA   0x0005             MOVS     R5,R0
+    505          					SentByteTo7219(digit[DISPLAY_LED_NUM - i],LedCharCode[CharTemp] + 0x80);
+   \   000000CC   0x....             LDR.N    R0,??DataTable9_6
+   \   000000CE   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   000000D0   0x5C28             LDRB     R0,[R5, R0]
+   \   000000D2   0xF1B0 0x0180      SUBS     R1,R0,#+128
+   \   000000D6   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   000000D8   0x4668             MOV      R0,SP
+   \   000000DA   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   000000DC   0x1BC0             SUBS     R0,R0,R7
+   \   000000DE   0x7A00             LDRB     R0,[R0, #+8]
+   \   000000E0   0x.... 0x....      BL       SentByteTo7219
+    506          					DotNum++;
+   \   000000E4   0x1C76             ADDS     R6,R6,#+1
+   \   000000E6   0xE7A3             B.N      ??DisplayString_2
+    507          				}  
+    508          				else
+    509          				{
+    510          					CharTemp = String[strlen((char *)String)- i - DotNum ] - ' ' ; 
+   \                     ??DisplayString_5: (+1)
+   \   000000E8   0x0020             MOVS     R0,R4
+   \   000000EA   0x.... 0x....      BL       strlen
+   \   000000EE   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   000000F0   0x1BC0             SUBS     R0,R0,R7
+   \   000000F2   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   000000F4   0x1B80             SUBS     R0,R0,R6
+   \   000000F6   0x5D00             LDRB     R0,[R0, R4]
+   \   000000F8   0x3820             SUBS     R0,R0,#+32
+   \   000000FA   0x0005             MOVS     R5,R0
+    511          					SentByteTo7219(digit[DISPLAY_LED_NUM - i],LedCharCode[CharTemp]); 
+   \   000000FC   0x....             LDR.N    R0,??DataTable9_6
+   \   000000FE   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000100   0x5C29             LDRB     R1,[R5, R0]
+   \   00000102   0x4668             MOV      R0,SP
+   \   00000104   0xB2FF             UXTB     R7,R7            ;; ZeroExt  R7,R7,#+24,#+24
+   \   00000106   0x1BC0             SUBS     R0,R0,R7
+   \   00000108   0x7A00             LDRB     R0,[R0, #+8]
+   \   0000010A   0x.... 0x....      BL       SentByteTo7219
+   \   0000010E   0xE78F             B.N      ??DisplayString_2
+    512          				}
+    513          			}
+    514          		}      
+    515          	}
+    516          }
+   \                     ??DisplayString_3: (+1)
+   \   00000110   0xBDF7             POP      {R0-R2,R4-R7,PC}  ;; return
+    517          
+    518          //------------------------------------------------------
+    519          //函数名称:MovDisplayChar ()
+    520          //功    能:用数码管显示字符即已定字符
+    521          //入口参数:character: 字符代码
+    522          //出口参数:无
+    523          //显示内容:   -   E   H   L   P   Black
+    524          //内容代码:	  A	  B	  C	  D	  E	  F	  
+    525          //-------------------------------------------------------
+
+   \                                 In section .text, align 2, keep-with-next
+    526          void MovDisplayChar (uint8 character)
+    527          {
+   \                     MovDisplayChar: (+1)
+   \   00000000   0xB57C             PUSH     {R2-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    528          	uint8 i = DISPLAY_LED_NUM ,j;
+   \   00000004   0x2608             MOVS     R6,#+8
+    529          	uint8 digit[8] = {Digit0,Digit1,Digit2,Digit3,Digit4,Digit5,Digit6,Digit7};
+   \   00000006   0x4668             MOV      R0,SP
+   \   00000008   0x....             LDR.N    R1,??DataTable9_7
+   \   0000000A   0xC90C             LDM      R1!,{R2,R3}
+   \   0000000C   0xC00C             STM      R0!,{R2,R3}
+   \   0000000E   0x3908             SUBS     R1,R1,#+8
+   \   00000010   0x3808             SUBS     R0,R0,#+8
+    530          		
+    531          	for(j = 0;j < 12; j++)
+   \   00000012   0x2000             MOVS     R0,#+0
+   \   00000014   0x0005             MOVS     R5,R0
+   \                     ??MovDisplayChar_0: (+1)
+   \   00000016   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   00000018   0x2D0C             CMP      R5,#+12
+   \   0000001A   0xDA23             BGE.N    ??MovDisplayChar_1
+    532          	{
+    533          	 	 i = DISPLAY_LED_NUM;
+   \   0000001C   0x2008             MOVS     R0,#+8
+   \   0000001E   0x0006             MOVS     R6,R0
+    534          		 while(i)
+   \                     ??MovDisplayChar_2: (+1)
+   \   00000020   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   00000022   0x2E00             CMP      R6,#+0
+   \   00000024   0xD007             BEQ.N    ??MovDisplayChar_3
+    535          		 {
+    536                      i--;
+   \   00000026   0x1E76             SUBS     R6,R6,#+1
+    537                      SentByteTo7219(digit[i],0x00);            						//将没有用位的显示清除
+   \   00000028   0x2100             MOVS     R1,#+0
+   \   0000002A   0x4668             MOV      R0,SP
+   \   0000002C   0xB2F6             UXTB     R6,R6            ;; ZeroExt  R6,R6,#+24,#+24
+   \   0000002E   0x5C30             LDRB     R0,[R6, R0]
+   \   00000030   0x.... 0x....      BL       SentByteTo7219
+   \   00000034   0xE7F4             B.N      ??MovDisplayChar_2
+    538                   }	
+    539          		 
+    540          		SentByteTo7219(digit[j%4],LedNumCode[character%LED_CHAR_NNM]);       //从低位到高位显示   
+   \                     ??MovDisplayChar_3: (+1)
+   \   00000036   0x....             LDR.N    R0,??DataTable9_3
+   \   00000038   0xB2E4             UXTB     R4,R4            ;; ZeroExt  R4,R4,#+24,#+24
+   \   0000003A   0x2110             MOVS     R1,#+16
+   \   0000003C   0xFB94 0xF2F1      SDIV     R2,R4,R1
+   \   00000040   0xFB02 0x4211      MLS      R2,R2,R1,R4
+   \   00000044   0x5C11             LDRB     R1,[R2, R0]
+   \   00000046   0x4668             MOV      R0,SP
+   \   00000048   0xB2ED             UXTB     R5,R5            ;; ZeroExt  R5,R5,#+24,#+24
+   \   0000004A   0x2204             MOVS     R2,#+4
+   \   0000004C   0xFB95 0xF3F2      SDIV     R3,R5,R2
+   \   00000050   0xFB03 0x5312      MLS      R3,R3,R2,R5
+   \   00000054   0x5C18             LDRB     R0,[R3, R0]
+   \   00000056   0x.... 0x....      BL       SentByteTo7219
+    541          		DelayX10ms(20);                 
+   \   0000005A   0x2014             MOVS     R0,#+20
+   \   0000005C   0x.... 0x....      BL       DelayX10ms
+    542          	}
+   \   00000060   0x1C6D             ADDS     R5,R5,#+1
+   \   00000062   0xE7D8             B.N      ??MovDisplayChar_0
+    543          }
+   \                     ??MovDisplayChar_1: (+1)
+   \   00000064   0xBD73             POP      {R0,R1,R4-R6,PC}  ;; return
+    544          
+    545          //----------------------------------------------------------------------------
+    546          // 名    称：   uint32 Displayf(char *fmt, va_list param) 
+    547          // 功    能：   
+    548          // 入口参数：  
+    549          
+    550          // 出口参数：   
+    551          //----------------------------------------------------------------------------  
+
+   \                                 In section .text, align 2, keep-with-next
+    552          uint32 Displayf(char *fmt, ...) 
+    553          { 
+   \                     Displayf: (+1)
+   \   00000000   0xB40E             PUSH     {R1-R3}
+   \   00000002   0xB570             PUSH     {R4-R6,LR}
+   \   00000004   0xB0C1             SUB      SP,SP,#+260
+   \   00000006   0x0004             MOVS     R4,R0
+    554             va_list  argptr;
+    555             uint32   cnt;
+    556             char     a[255];
+    557             
+    558             strlen(fmt);
+   \   00000008   0x0020             MOVS     R0,R4
+   \   0000000A   0x.... 0x....      BL       strlen
+    559             if(strlen(fmt) > (sizeof(a) - 55))
+   \   0000000E   0x0020             MOVS     R0,R4
+   \   00000010   0x.... 0x....      BL       strlen
+   \   00000014   0x28C9             CMP      R0,#+201
+   \   00000016   0xD301             BCC.N    ??Displayf_0
+    560             {
+    561                  return FALSE;
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0xE00B             B.N      ??Displayf_1
+    562             }
+    563             va_start(argptr, fmt);
+   \                     ??Displayf_0: (+1)
+   \   0000001C   0xA845             ADD      R0,SP,#+276
+   \   0000001E   0x0005             MOVS     R5,R0
+    564             
+    565             cnt = vsprintf(a, fmt, argptr);
+   \   00000020   0x002A             MOVS     R2,R5
+   \   00000022   0x0021             MOVS     R1,R4
+   \   00000024   0x4668             MOV      R0,SP
+   \   00000026   0x.... 0x....      BL       vsprintf
+   \   0000002A   0x0006             MOVS     R6,R0
+    566             
+    567             va_end(argptr);
+    568             
+    569             DisplayString(a); 
+   \   0000002C   0x4668             MOV      R0,SP
+   \   0000002E   0x.... 0x....      BL       DisplayString
+    570          	
+    571             return(cnt);
+   \   00000032   0x0030             MOVS     R0,R6
+   \                     ??Displayf_1: (+1)
+   \   00000034   0xB041             ADD      SP,SP,#+260
+   \   00000036   0xBC70             POP      {R4-R6}
+   \   00000038   0xF85D 0xFB10      LDR      PC,[SP], #+16    ;; return
+    572          }
+    573          
+    574          extern	void   FeedDog(void);
+    575          //----------------------------------------------------------------------------
+    576          // 名    称：   uint32 DisplaySet(uint32 Time,uint32 Degree,char *fmt, ... )
+    577          // 功    能：   设置要显示的值
+    578          // 入口参数：   Time：显示时间，Degree：显示次数，*fmt：显示内容
+    579          // 出口参数：   
+    580          //----------------------------------------------------------------------------  
+
+   \                                 In section .text, align 2, keep-with-next
+    581          uint32 DisplaySet(uint32 Time,uint32 Degree,char *fmt, ... ) 
+    582          { 
+   \                     DisplaySet: (+1)
+   \   00000000   0xB408             PUSH     {R3}
+   \   00000002   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \   00000006   0xB0C2             SUB      SP,SP,#+264
+   \   00000008   0x0004             MOVS     R4,R0
+   \   0000000A   0x000D             MOVS     R5,R1
+   \   0000000C   0x0016             MOVS     R6,R2
+    583             va_list  argptr;
+    584             uint32   cnt;
+    585             char     a[255];
+    586             //char     b[10] = {' ',' ',' ',' '};
+    587             uint32	i,j;
+    588             
+    589             strlen(fmt);
+   \   0000000E   0x0030             MOVS     R0,R6
+   \   00000010   0x.... 0x....      BL       strlen
+    590             if(strlen(fmt) > (sizeof(a) - 55))
+   \   00000014   0x0030             MOVS     R0,R6
+   \   00000016   0x.... 0x....      BL       strlen
+   \   0000001A   0x28C9             CMP      R0,#+201
+   \   0000001C   0xD301             BCC.N    ??DisplaySet_0
+    591             {
+    592                  return FALSE;
+   \   0000001E   0x2000             MOVS     R0,#+0
+   \   00000020   0xE03F             B.N      ??DisplaySet_1
+    593             }
+    594             va_start(argptr, fmt);
+   \                     ??DisplaySet_0: (+1)
+   \   00000022   0xA84B             ADD      R0,SP,#+300
+   \   00000024   0x9000             STR      R0,[SP, #+0]
+    595             
+    596             cnt = vsprintf(a, fmt, argptr);
+   \   00000026   0x9A00             LDR      R2,[SP, #+0]
+   \   00000028   0x0031             MOVS     R1,R6
+   \   0000002A   0xA801             ADD      R0,SP,#+4
+   \   0000002C   0x.... 0x....      BL       vsprintf
+   \   00000030   0x0007             MOVS     R7,R0
+    597             
+    598             va_end(argptr);
+    599          
+    600             FeedDog();							//喂狗
+   \   00000032   0x.... 0x....      BL       FeedDog
+    601          
+    602             for(i= 0 ;i < DIS_BUF_NUM; i++)
+   \   00000036   0x2000             MOVS     R0,#+0
+   \   00000038   0x4680             MOV      R8,R0
+   \                     ??DisplaySet_2: (+1)
+   \   0000003A   0xF1B8 0x0F0A      CMP      R8,#+10
+   \   0000003E   0xD22F             BCS.N    ??DisplaySet_3
+    603             {
+    604                 if(sDisplay[i].Degree == 0)
+   \   00000040   0x....             LDR.N    R0,??DataTable9
+   \   00000042   0x2114             MOVS     R1,#+20
+   \   00000044   0xFB01 0x0008      MLA      R0,R1,R8,R0
+   \   00000048   0x6900             LDR      R0,[R0, #+16]
+   \   0000004A   0x2800             CMP      R0,#+0
+   \   0000004C   0xD125             BNE.N    ??DisplaySet_4
+    605                 {	
+    606                 		for(j = 0; j< sizeof(sDisplay[i].Buf); j++)
+   \   0000004E   0x2000             MOVS     R0,#+0
+   \   00000050   0x4681             MOV      R9,R0
+   \                     ??DisplaySet_5: (+1)
+   \   00000052   0xF1B9 0x0F0C      CMP      R9,#+12
+   \   00000056   0xD209             BCS.N    ??DisplaySet_6
+    607                 		{
+    608                 			sDisplay[i].Buf[j] = '\0';
+   \   00000058   0x2000             MOVS     R0,#+0
+   \   0000005A   0x....             LDR.N    R1,??DataTable9
+   \   0000005C   0x2214             MOVS     R2,#+20
+   \   0000005E   0xFB02 0x1108      MLA      R1,R2,R8,R1
+   \   00000062   0xF809 0x0001      STRB     R0,[R9, R1]
+    609                 		}
+   \   00000066   0xF119 0x0901      ADDS     R9,R9,#+1
+   \   0000006A   0xE7F2             B.N      ??DisplaySet_5
+    610                 			
+    611                 	   	sDisplay[i].Time 	= Time;
+   \                     ??DisplaySet_6: (+1)
+   \   0000006C   0x....             LDR.N    R0,??DataTable9
+   \   0000006E   0x2114             MOVS     R1,#+20
+   \   00000070   0xFB01 0x0008      MLA      R0,R1,R8,R0
+   \   00000074   0x60C4             STR      R4,[R0, #+12]
+    612                 	   	sDisplay[i].Degree 	= Degree;
+   \   00000076   0x....             LDR.N    R0,??DataTable9
+   \   00000078   0x2114             MOVS     R1,#+20
+   \   0000007A   0xFB01 0x0008      MLA      R0,R1,R8,R0
+   \   0000007E   0x6105             STR      R5,[R0, #+16]
+    613                 	   	memcpy(sDisplay[i].Buf,a,cnt);
+   \   00000080   0xF10D 0x0A04      ADD      R10,SP,#+4
+   \   00000084   0x....             LDR.N    R0,??DataTable9
+   \   00000086   0x2114             MOVS     R1,#+20
+   \   00000088   0xFB01 0x0B08      MLA      R11,R1,R8,R0
+   \   0000008C   0x003A             MOVS     R2,R7
+   \   0000008E   0x4651             MOV      R1,R10
+   \   00000090   0x4658             MOV      R0,R11
+   \   00000092   0x.... 0x....      BL       __aeabi_memcpy
+    614          			
+    615                 	   /*
+    616                 	   /////////////////////////////////////
+    617                 	   if(cnt > 4)
+    618                 	   {
+    619                 	   		if(cnt-4<4)
+    620                 	   		{
+    621                 	   			memcpy(sDisplay[i].Buf,&a[4],cnt-4);
+    622                 	   			memcpy(&sDisplay[i].Buf[cnt-4],b,4-(cnt-4));
+    623                 	   			memcpy(&sDisplay[i].Buf[4],a,4);
+    624                 	   		}
+    625                 	   		else
+    626                 	   		{
+    627                 	   			memcpy(sDisplay[i].Buf,&a[4],4);
+    628                 	   			memcpy(&sDisplay[i].Buf[4],a,4);	
+    629                 	   		}
+    630                 	   }
+    631                 	   else
+    632                 	   {/ *
+    633          				memcpy(sDisplay[i].Buf,&a[4],cnt-4);
+    634          				memcpy(&sDisplay[i].Buf[cnt-4],b,4-(cnt-4));
+    635          				memcpy(&sDisplay[i].Buf[4],a,4);
+    636          			* /	
+    637                 	   		memcpy(sDisplay[i].Buf,b,4);
+    638                 	   		memcpy(&sDisplay[i].Buf[4],a,cnt);
+    639                 	   		memcpy(&sDisplay[i].Buf[4+ cnt],b,(4-cnt));
+    640                 	   }
+    641                 	   */    	  	
+    642          		   return 1;
+   \   00000096   0x2001             MOVS     R0,#+1
+   \   00000098   0xE003             B.N      ??DisplaySet_1
+    643                 }
+    644             }
+   \                     ??DisplaySet_4: (+1)
+   \   0000009A   0xF118 0x0801      ADDS     R8,R8,#+1
+   \   0000009E   0xE7CC             B.N      ??DisplaySet_2
+    645             
+    646             return(cnt);
+   \                     ??DisplaySet_3: (+1)
+   \   000000A0   0x0038             MOVS     R0,R7
+   \                     ??DisplaySet_1: (+1)
+   \   000000A2   0xB042             ADD      SP,SP,#+264
+   \   000000A4   0xE8BD 0x0FF0      POP      {R4-R11}
+   \   000000A8   0xF85D 0xFB08      LDR      PC,[SP], #+8     ;; return
+    647          }	
+    648          
+    649          //----------------------------------------------------------------------------
+    650          // 名    称：   void DisplayContrl(void) 
+    651          // 功    能：   
+    652          // 入口参数：  
+    653          
+    654          // 出口参数：   
+    655          //----------------------------------------------------------------------------  
+
+   \                                 In section .text, align 2, keep-with-next
+    656          void DisplayContrl(void) 
+    657          {
+   \                     DisplayContrl: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    658          	static	uint8	i = 0;
+    659          	static  uint32	Time = 0;
+    660          	static	uint32	DisplayTimes = 0;
+    661          	static  uint32	LastTime = 0;
+    662          //	static	uint32	DisResTimes = 0;	
+    663          		
+    664          	while(i < DIS_BUF_NUM)
+   \                     ??DisplayContrl_0: (+1)
+   \   00000002   0x....             LDR.N    R0,??DataTable9_8
+   \   00000004   0x7800             LDRB     R0,[R0, #+0]
+   \   00000006   0x280A             CMP      R0,#+10
+   \   00000008   0xDA63             BGE.N    ??DisplayContrl_1
+    665          	{
+    666          	   if(sDisplay[i].Degree != 0)
+   \   0000000A   0x....             LDR.N    R0,??DataTable9
+   \   0000000C   0x....             LDR.N    R1,??DataTable9_8
+   \   0000000E   0x7809             LDRB     R1,[R1, #+0]
+   \   00000010   0x2214             MOVS     R2,#+20
+   \   00000012   0xFB02 0x0001      MLA      R0,R2,R1,R0
+   \   00000016   0x6900             LDR      R0,[R0, #+16]
+   \   00000018   0x2800             CMP      R0,#+0
+   \   0000001A   0xD051             BEQ.N    ??DisplayContrl_2
+    667                 {	
+    668                 	   if(DisplayTimes == 0)
+   \   0000001C   0x....             LDR.N    R0,??DataTable9_9
+   \   0000001E   0x6800             LDR      R0,[R0, #+0]
+   \   00000020   0x2800             CMP      R0,#+0
+   \   00000022   0xD108             BNE.N    ??DisplayContrl_3
+    669                 	   {
+    670                 	   	    Time = sDisplay[i].Time;
+   \   00000024   0x....             LDR.N    R0,??DataTable9
+   \   00000026   0x....             LDR.N    R1,??DataTable9_8
+   \   00000028   0x7809             LDRB     R1,[R1, #+0]
+   \   0000002A   0x2214             MOVS     R2,#+20
+   \   0000002C   0xFB02 0x0001      MLA      R0,R2,R1,R0
+   \   00000030   0x68C0             LDR      R0,[R0, #+12]
+   \   00000032   0x....             LDR.N    R1,??DataTable9_10
+   \   00000034   0x6008             STR      R0,[R1, #+0]
+    671                 	   }
+    672          
+    673                 	   if(Time != 0)
+   \                     ??DisplayContrl_3: (+1)
+   \   00000036   0x....             LDR.N    R0,??DataTable9_10
+   \   00000038   0x6800             LDR      R0,[R0, #+0]
+   \   0000003A   0x2800             CMP      R0,#+0
+   \   0000003C   0xD024             BEQ.N    ??DisplayContrl_4
+    674                 	   {
+    675          				//Time--;
+    676          				DisplayString(sDisplay[i].Buf);
+   \   0000003E   0x....             LDR.N    R0,??DataTable9
+   \   00000040   0x....             LDR.N    R1,??DataTable9_8
+   \   00000042   0x7809             LDRB     R1,[R1, #+0]
+   \   00000044   0x2214             MOVS     R2,#+20
+   \   00000046   0xFB02 0x0001      MLA      R0,R2,R1,R0
+   \   0000004A   0x.... 0x....      BL       DisplayString
+    677          
+    678          				if(Time > GetSysTime() - LastTime)
+   \   0000004E   0x.... 0x....      BL       GetSysTime
+   \   00000052   0x....             LDR.N    R1,??DataTable9_11
+   \   00000054   0x6809             LDR      R1,[R1, #+0]
+   \   00000056   0x1A40             SUBS     R0,R0,R1
+   \   00000058   0x....             LDR.N    R1,??DataTable9_10
+   \   0000005A   0x6809             LDR      R1,[R1, #+0]
+   \   0000005C   0x4288             CMP      R0,R1
+   \   0000005E   0xD20A             BCS.N    ??DisplayContrl_5
+    679          				{
+    680          					Time -= (GetSysTime() - LastTime);
+   \   00000060   0x.... 0x....      BL       GetSysTime
+   \   00000064   0x....             LDR.N    R1,??DataTable9_10
+   \   00000066   0x6809             LDR      R1,[R1, #+0]
+   \   00000068   0x1A08             SUBS     R0,R1,R0
+   \   0000006A   0x....             LDR.N    R1,??DataTable9_11
+   \   0000006C   0x6809             LDR      R1,[R1, #+0]
+   \   0000006E   0x1808             ADDS     R0,R1,R0
+   \   00000070   0x....             LDR.N    R1,??DataTable9_10
+   \   00000072   0x6008             STR      R0,[R1, #+0]
+   \   00000074   0xE002             B.N      ??DisplayContrl_6
+    681          				}
+    682          				else
+    683          				{
+    684          					Time = 0;
+   \                     ??DisplayContrl_5: (+1)
+   \   00000076   0x2000             MOVS     R0,#+0
+   \   00000078   0x....             LDR.N    R1,??DataTable9_10
+   \   0000007A   0x6008             STR      R0,[R1, #+0]
+    685          				}
+    686          				
+    687          				DisplayTimes++;
+   \                     ??DisplayContrl_6: (+1)
+   \   0000007C   0x....             LDR.N    R0,??DataTable9_9
+   \   0000007E   0x6800             LDR      R0,[R0, #+0]
+   \   00000080   0x1C40             ADDS     R0,R0,#+1
+   \   00000082   0x....             LDR.N    R1,??DataTable9_9
+   \   00000084   0x6008             STR      R0,[R1, #+0]
+   \   00000086   0xE016             B.N      ??DisplayContrl_7
+    688                 	   }
+    689                 	   else
+    690                 	   {
+    691                 	   		sDisplay[i].Degree = sDisplay[i].Degree - 1;  
+   \                     ??DisplayContrl_4: (+1)
+   \   00000088   0x....             LDR.N    R0,??DataTable9
+   \   0000008A   0x....             LDR.N    R1,??DataTable9_8
+   \   0000008C   0x7809             LDRB     R1,[R1, #+0]
+   \   0000008E   0x2214             MOVS     R2,#+20
+   \   00000090   0xFB02 0x0001      MLA      R0,R2,R1,R0
+   \   00000094   0x6900             LDR      R0,[R0, #+16]
+   \   00000096   0x1E40             SUBS     R0,R0,#+1
+   \   00000098   0x....             LDR.N    R1,??DataTable9
+   \   0000009A   0x....             LDR.N    R2,??DataTable9_8
+   \   0000009C   0x7812             LDRB     R2,[R2, #+0]
+   \   0000009E   0x2314             MOVS     R3,#+20
+   \   000000A0   0xFB03 0x1102      MLA      R1,R3,R2,R1
+   \   000000A4   0x6108             STR      R0,[R1, #+16]
+    692                 	   		DisplayTimes = 0;
+   \   000000A6   0x2000             MOVS     R0,#+0
+   \   000000A8   0x....             LDR.N    R1,??DataTable9_9
+   \   000000AA   0x6008             STR      R0,[R1, #+0]
+    693                 	   		i++;
+   \   000000AC   0x....             LDR.N    R0,??DataTable9_8
+   \   000000AE   0x7800             LDRB     R0,[R0, #+0]
+   \   000000B0   0x1C40             ADDS     R0,R0,#+1
+   \   000000B2   0x....             LDR.N    R1,??DataTable9_8
+   \   000000B4   0x7008             STRB     R0,[R1, #+0]
+    694                 	   }
+    695                 	   
+    696                 	   LastTime = GetSysTime();
+   \                     ??DisplayContrl_7: (+1)
+   \   000000B6   0x.... 0x....      BL       GetSysTime
+   \   000000BA   0x....             LDR.N    R1,??DataTable9_11
+   \   000000BC   0x6008             STR      R0,[R1, #+0]
+    697                 	   return ;
+   \   000000BE   0xE00F             B.N      ??DisplayContrl_8
+    698                 }
+    699          	   
+    700          	   DisplayTimes = 0;
+   \                     ??DisplayContrl_2: (+1)
+   \   000000C0   0x2000             MOVS     R0,#+0
+   \   000000C2   0x....             LDR.N    R1,??DataTable9_9
+   \   000000C4   0x6008             STR      R0,[R1, #+0]
+    701          	   i++;
+   \   000000C6   0x....             LDR.N    R0,??DataTable9_8
+   \   000000C8   0x7800             LDRB     R0,[R0, #+0]
+   \   000000CA   0x1C40             ADDS     R0,R0,#+1
+   \   000000CC   0x....             LDR.N    R1,??DataTable9_8
+   \   000000CE   0x7008             STRB     R0,[R1, #+0]
+   \   000000D0   0xE797             B.N      ??DisplayContrl_0
+    702             	}
+    703             	
+    704             	LastTime = GetSysTime();
+   \                     ??DisplayContrl_1: (+1)
+   \   000000D2   0x.... 0x....      BL       GetSysTime
+   \   000000D6   0x....             LDR.N    R1,??DataTable9_11
+   \   000000D8   0x6008             STR      R0,[R1, #+0]
+    705             	i = 0;
+   \   000000DA   0x2000             MOVS     R0,#+0
+   \   000000DC   0x....             LDR.N    R1,??DataTable9_8
+   \   000000DE   0x7008             STRB     R0,[R1, #+0]
+    706          }
+   \                     ??DisplayContrl_8: (+1)
+   \   000000E0   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .bss, align 1
+   \                     ??i:
+   \   00000000                      DS8 1
+
+   \                                 In section .bss, align 4
+   \                     ??Time:
+   \   00000000                      DS8 4
+
+   \                                 In section .bss, align 4
+   \                     ??DisplayTimes:
+   \   00000000                      DS8 4
+
+   \                                 In section .bss, align 4
+   \                     ??LastTime:
+   \   00000000                      DS8 4
+    707          
+    708          //----------------------------------------------------------------------------
+    709          // 名    称：   void HoldDisplay(void) 
+    710          // 功    能：   显示维护	
+    711          // 入口参数：  
+    712          
+    713          // 出口参数：   
+    714          //----------------------------------------------------------------------------  
+
+   \                                 In section .text, align 2, keep-with-next
+    715          void HoldDisplay(void) 
+    716          {
+   \                     HoldDisplay: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    717          	DisplayContrl();			
+   \   00000002   0x.... 0x....      BL       DisplayContrl
+    718          }
+   \   00000006   0xBD01             POP      {R0,PC}          ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9:
+   \   00000000   0x........         DC32     sDisplay
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_1:
+   \   00000000   0x........         DC32     sDisplayBak
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_2:
+   \   00000000   0x........         DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_3:
+   \   00000000   0x........         DC32     LedNumCode
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_4:
+   \   00000000   0x........         DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_5:
+   \   00000000   0x........         DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_6:
+   \   00000000   0x........         DC32     LedCharCode
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_7:
+   \   00000000   0x........         DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_8:
+   \   00000000   0x........         DC32     ??i
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_9:
+   \   00000000   0x........         DC32     ??DisplayTimes
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_10:
+   \   00000000   0x........         DC32     ??Time
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_11:
+   \   00000000   0x........         DC32     ??LastTime
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \   00000000   0x01 0x02          DC8 1, 2, 3, 4, 5, 6, 7, 8
+   \              0x03 0x04    
+   \              0x05 0x06    
+   \              0x07 0x08    
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \   00000000   0x01 0x02          DC8 1, 2, 3, 4, 5, 6, 7, 8
+   \              0x03 0x04    
+   \              0x05 0x06    
+   \              0x07 0x08    
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \   00000000   0x01 0x02          DC8 1, 2, 3, 4, 5, 6, 7, 8
+   \              0x03 0x04    
+   \              0x05 0x06    
+   \              0x07 0x08    
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \   00000000   0x01 0x02          DC8 1, 2, 3, 4, 5, 6, 7, 8
+   \              0x03 0x04    
+   \              0x05 0x06    
+   \              0x07 0x08    
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   ClaerDisplaySet
+        24   -> __aeabi_memcpy
+       0   ClaerDisplaySetWithoutStore
+       8   DisplayContrl
+         8   -> DisplayString
+         8   -> GetSysTime
+      24   DisplayNum
+        24   -> InitDisplay
+        24   -> SentByteTo7219
+      24   DisplayNumWithDot
+        24   -> SentByteTo7219
+     304   DisplaySet
+       304   -> FeedDog
+       304   -> __aeabi_memcpy
+       304   -> strlen
+       304   -> vsprintf
+      32   DisplayString
+        32   -> SentByteTo7219
+        32   -> strlen
+     288   Displayf
+       288   -> DisplayString
+       288   -> strlen
+       288   -> vsprintf
+       8   HoldDisplay
+         8   -> DisplayContrl
+       8   InitDisplay
+         8   -> InitDisplayBuf
+         8   -> InitIOForSPI1
+         8   -> SentByteTo7219
+       0   InitDisplayBuf
+       8   InitIOForSPI1
+         8   -> GPIO_PinselConfig
+      24   MovDisplayChar
+        24   -> DelayX10ms
+        24   -> SentByteTo7219
+       8   ReadMISO1
+         8   -> GPIO_ReadIoVal
+         8   -> nop
+       8   ReadMOSI1
+         8   -> GPIO_ReadIoVal
+         8   -> nop
+       8   ReadSCK1
+         8   -> GPIO_ReadIoVal
+         8   -> nop
+      16   ResumeDisplaySet
+        16   -> InitDisplay
+        16   -> __aeabi_memcpy
+      16   SentByteTo7219
+        16   -> SentByte_SPI1
+        16   -> WriteCS_DIS
+      16   SentByte_SPI1
+        16   -> NOP
+        16   -> WriteMOSI1
+        16   -> WriteSCK1
+       8   WriteCS_DIS
+         8   -> WriteSoftSpiCS1
+       8   WriteMISO1
+         8   -> GPIO_SetOrClearValue
+         8   -> nop
+       8   WriteMOSI1
+         8   -> GPIO_SetOrClearValue
+         8   -> nop
+       8   WriteSCK1
+         8   -> GPIO_SetOrClearValue
+         8   -> nop
+       8   WriteSoftSpiCS1
+         8   -> GPIO_SetOrClearValue
+         8   -> nop
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable9
+       4  ??DataTable9_1
+       4  ??DataTable9_10
+       4  ??DataTable9_11
+       4  ??DataTable9_2
+       4  ??DataTable9_3
+       4  ??DataTable9_4
+       4  ??DataTable9_5
+       4  ??DataTable9_6
+       4  ??DataTable9_7
+       4  ??DataTable9_8
+       4  ??DataTable9_9
+       8  ?_0
+       8  ?_1
+       8  ?_2
+       8  ?_3
+      54  ClaerDisplaySet
+      32  ClaerDisplaySetWithoutStore
+     226  DisplayContrl
+      94  DisplayNum
+      96  DisplayNumWithDot
+     172  DisplaySet
+     274  DisplayString
+       4  DisplayTimes
+      60  Displayf
+       8  HoldDisplay
+      52  InitDisplay
+      32  InitDisplayBuf
+      36  InitIOForSPI1
+       4  LastTime
+     100  LedCharCode
+      16  LedNumCode
+     102  MovDisplayChar
+      20  ReadMISO1
+      20  ReadMOSI1
+      20  ReadSCK1
+      28  ResumeDisplaySet
+      36  SentByteTo7219
+      88  SentByte_SPI1
+       4  Time
+      14  WriteCS_DIS
+      34  WriteMISO1
+      34  WriteMOSI1
+      34  WriteSCK1
+      34  WriteSoftSpiCS1
+       1  i
+     200  sDisplay
+     200  sDisplayBak
+
+ 
+   413 bytes in section .bss
+   116 bytes in section .data
+    32 bytes in section .rodata
+ 1 648 bytes in section .text
+ 
+ 1 648 bytes of CODE  memory
+    32 bytes of CONST memory
+   529 bytes of DATA  memory
+
+Errors: none
+Warnings: none

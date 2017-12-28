@@ -1,0 +1,708 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       28/Dec/2017  08:42:36
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\app.c
+#    Command line =  
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\app.c" -D RELEASE
+#        -lCN "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\app.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\app.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\app.c
+      1          /*
+      2          *********************************************************************************************************
+      3          *                                              EXAMPLE CODE
+      4          *
+      5          *                          (c) Copyright 2003-2012; Micrium, Inc.; Weston, FL
+      6          *
+      7          *               All rights reserved.  Protected by international copyright laws.
+      8          *               Knowledge of the source code may NOT be used to develop a similar product.
+      9          *               Please help us continue to provide the Embedded community with the finest
+     10          *               software available.  Your honesty is greatly appreciated.
+     11          *********************************************************************************************************
+     12          */
+     13          
+     14          /*
+     15          *********************************************************************************************************
+     16          *
+     17          *                                            EXAMPLE CODE
+     18          *
+     19          *                                             NXP LPC1768
+     20          *                                                on the
+     21          *                                     IAR LPC1768-SK Kickstart Kit
+     22          *
+     23          * Filename      : app.c
+     24          * Version       : V1.00
+     25          * Programmer(s) : FT
+     26          *********************************************************************************************************
+     27          */
+     28          
+     29          /*
+     30          *********************************************************************************************************
+     31          *                                             INCLUDE FILES
+     32          *********************************************************************************************************
+     33          */
+     34          
+     35          #include <includes.h>
+     36          #include <os_app_hooks.h>
+     37          #include <app.h>
+     38          
+     39          #include <lpc17xx_nvic.h>
+     40          
+     41          /*
+     42          *********************************************************************************************************
+     43          *                                            LOCAL DEFINES
+     44          *********************************************************************************************************
+     45          */
+     46          #define WdtTimeoutSec               120
+     47          #define CYCLE_TIME_TICKS            (OS_TICKS_PER_SEC * 1)
+     48          
+     49          /*
+     50          *********************************************************************************************************
+     51          *                                       LOCAL GLOBAL VARIABLES
+     52          *********************************************************************************************************
+     53          */
+     54          
+     55                                                                          /* ----------------- APPLICATION GLOBALS ------------------ */
+     56                                                                          /* -------- uC/OS-III APPLICATION TASK STACKS ------------- */
+
+   \                                 In section .bss, align 4
+     57          static  OS_TCB        App_TaskStartTCB;
+   \                     App_TaskStartTCB:
+   \   00000000                      DS8 160
+
+   \                                 In section .bss, align 4
+     58          static  CPU_STK_SIZE  App_TaskStartStk[APP_CFG_TASK_START_STK_SIZE];
+   \                     App_TaskStartStk:
+   \   00000000                      DS8 256
+     59          
+     60          
+     61          /*
+     62          *********************************************************************************************************
+     63          *                                      LOCAL FUNCTION PROTOTYPES
+     64          *********************************************************************************************************
+     65          */
+     66          
+     67          static  void    App_ObjCreate           (void);
+     68          static  void    App_TaskCreate          (void);
+     69          static  void    App_TaskStart           (void       *p_arg);
+     70          extern  void    App_Main                (void);
+     71          
+     72          
+     73          /*
+     74          *********************************************************************************************************
+     75          *                                                main()
+     76          *
+     77          * Description : This is the standard entry point for C code.  It is assumed that your code will call
+     78          *               main() once you have performed all necessary initialization.
+     79          *
+     80          * Argument(s) : none.
+     81          *
+     82          * Return(s)   : none.
+     83          *
+     84          * Caller(s)   : This the main standard entry point.
+     85          *
+     86          * Note(s)     : none.
+     87          *********************************************************************************************************
+     88          */
+
+   \                                 In section .text, align 2, keep-with-next
+     89          int  main (void)
+     90          {
+   \                     main: (+1)
+   \   00000000   0xB500             PUSH     {LR}
+   \   00000002   0xB08B             SUB      SP,SP,#+44
+     91              OS_ERR  err;
+     92              
+     93              App_Main();
+   \   00000004   0x.... 0x....      BL       App_Main
+     94          
+     95              OSInit(&err);                                               /* Initialize "uC/OS-III, The Real-Time Kernel"         */
+   \   00000008   0xA809             ADD      R0,SP,#+36
+   \   0000000A   0x.... 0x....      BL       OSInit
+     96          
+     97              OSTaskCreate((OS_TCB     *)&App_TaskStartTCB,               /* Create the start task                                */
+     98                           (CPU_CHAR   *)"App Task Start",
+     99                           (OS_TASK_PTR ) App_TaskStart,
+    100                           (void       *) 0,
+    101                           (OS_PRIO     ) APP_CFG_TASK_START_PRIO,
+    102                           (CPU_STK    *)&App_TaskStartStk[0],
+    103                           (CPU_STK     )(APP_CFG_TASK_START_STK_SIZE / 10u),
+    104                           (CPU_STK_SIZE) APP_CFG_TASK_START_STK_SIZE,
+    105                           (OS_MSG_QTY  ) 0,
+    106                           (OS_TICK     ) 0,
+    107                           (void       *) 0,
+    108                           (OS_OPT      )(OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR),
+    109                           (OS_ERR     *)&err);
+   \   0000000E   0xA809             ADD      R0,SP,#+36
+   \   00000010   0x9008             STR      R0,[SP, #+32]
+   \   00000012   0x2003             MOVS     R0,#+3
+   \   00000014   0x9007             STR      R0,[SP, #+28]
+   \   00000016   0x2000             MOVS     R0,#+0
+   \   00000018   0x9006             STR      R0,[SP, #+24]
+   \   0000001A   0x2000             MOVS     R0,#+0
+   \   0000001C   0x9005             STR      R0,[SP, #+20]
+   \   0000001E   0x2000             MOVS     R0,#+0
+   \   00000020   0x9004             STR      R0,[SP, #+16]
+   \   00000022   0x2040             MOVS     R0,#+64
+   \   00000024   0x9003             STR      R0,[SP, #+12]
+   \   00000026   0x2006             MOVS     R0,#+6
+   \   00000028   0x9002             STR      R0,[SP, #+8]
+   \   0000002A   0x....             LDR.N    R0,??DataTable3
+   \   0000002C   0x9001             STR      R0,[SP, #+4]
+   \   0000002E   0x2002             MOVS     R0,#+2
+   \   00000030   0x9000             STR      R0,[SP, #+0]
+   \   00000032   0x2300             MOVS     R3,#+0
+   \   00000034   0x.... 0x....      ADR.W    R2,App_TaskStart
+   \   00000038   0x....             LDR.N    R1,??DataTable3_1
+   \   0000003A   0x....             LDR.N    R0,??DataTable3_2
+   \   0000003C   0x.... 0x....      BL       OSTaskCreate
+    110          #if (OS_TASK_NAME_EN > 0u)
+    111              OSTaskNameSet(APP_CFG_TASK_START_PRIO, "Start", &err);
+    112          #endif
+    113          
+    114              OSStart(&err);                                              /* Start multitasking (i.e. give control to uC/OS-III). */
+   \   00000040   0xA809             ADD      R0,SP,#+36
+   \   00000042   0x.... 0x....      BL       OSStart
+    115          
+    116              while(DEF_ON){												/* Should Never Get Here							    */
+   \                     ??main_0: (+1)
+   \   00000046   0xE7FE             B.N      ??main_0
+    117              };
+    118          }
+    119          
+    120          /*
+    121          *********************************************************************************************************
+    122          *                                          App_TaskStart()
+    123          *
+    124          * Description : This is an example of a startup task.  As mentioned in the book's text, you MUST
+    125          *               initialize the ticker only once multitasking has started.
+    126          *
+    127          * Argument(s) : p_arg   is the argument passed to 'App_TaskStart()' by 'OSTaskCreate()'.
+    128          *
+    129          * Return(s)   : none.
+    130          *
+    131          * Caller(s)   : This is a task.
+    132          *
+    133          * Notes       : (1) The first line of code is used to prevent a compiler warning because 'p_arg' is not
+    134          *                   used.  The compiler should not generate any code for this statement.
+    135          *********************************************************************************************************
+    136          */
+    137          
+
+   \                                 In section .text, align 4, keep-with-next
+    138          static  void  App_TaskStart (void *p_arg)
+    139          {
+   \                     App_TaskStart: (+1)
+   \   00000000   0xB5FE             PUSH     {R1-R7,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    140              OS_ERR          err;
+    141              OS_TICK         dly             = CYCLE_TIME_TICKS;
+   \   00000004   0xF44F 0x757A      MOV      R5,#+1000
+    142              OS_TICK         ticks;
+    143              CPU_INT16U  	TimeOutCnt      = 0;                        //看门狗超时计数器
+   \   00000008   0x2700             MOVS     R7,#+0
+    144          
+    145              (void)p_arg;                                                /* See Note #1                                          */
+    146              
+    147              /***********************************************
+    148              * 描述： 设置UCOS钩子函数
+    149              */
+    150              App_OS_SetAllHooks();
+   \   0000000A   0x.... 0x....      BL       App_OS_SetAllHooks
+    151              
+    152              CPU_Init();
+   \   0000000E   0x.... 0x....      BL       CPU_Init
+    153               
+    154              BSP_Init();                                                 /* Initialize BSP functions                             */
+   \   00000012   0x.... 0x....      BL       BSP_Init
+    155              
+    156              Mem_Init();
+   \   00000016   0x.... 0x....      BL       Mem_Init
+    157          
+    158              BSP_OSTickInit();                                                /* Start BSP and tick initialization                    */
+   \   0000001A   0x.... 0x....      BL       BSP_OSTickInit
+    159          
+    160          #if (OS_TASK_STAT_EN > 0)
+    161              OSStatInit();                                               /* Determine CPU capacity                               */
+    162          #endif
+    163          
+    164              /***********************************************
+    165              * 描述： 喂狗
+    166              */
+    167              WdtReset();
+   \   0000001E   0x.... 0x....      BL       BSP_WDT_Rst
+    168              
+    169              app_init_sctrl();                  //初始化全局变量
+   \   00000022   0x.... 0x....      BL       app_init_sctrl
+    170           
+    171              App_ObjCreate();                                            /* Create Applicaiton kernel objects                    */
+   \   00000026   0x.... 0x....      BL       App_ObjCreate
+    172          
+    173              App_TaskCreate();                                           /* Create Application tasks                             */
+   \   0000002A   0x.... 0x....      BL       App_TaskCreate
+    174          
+    175              while (DEF_TRUE) { 
+    176                  /***********************************************
+    177                  * 描述： 喂狗
+    178                  */
+    179                  WdtReset();
+   \                     ??App_TaskStart_0: (+1)
+   \   0000002E   0x.... 0x....      BL       BSP_WDT_Rst
+    180                      
+    181                  /***********************************************
+    182                  * 描述： 得到系统当前时间
+    183                  */
+    184                  ticks = OSTimeGet(&err);
+   \   00000032   0xA802             ADD      R0,SP,#+8
+   \   00000034   0x.... 0x....      BL       OSTimeGet
+   \   00000038   0x0006             MOVS     R6,R0
+    185                  
+    186                  /***********************************************************************
+    187                  * 描述： 独立看门狗标志组检查， 判断是否所有任务已喂狗
+    188                  */
+    189                  OSFlagPend(( OS_FLAG_GRP *)&Ctrl.Os.WdtEvtFlagGRP,
+    190                             ( OS_FLAGS     ) Ctrl.Os.WdtEvtFlags,
+    191                             ( OS_TICK      ) 50,
+    192                             ( OS_OPT       ) OS_OPT_PEND_FLAG_SET_ALL,                   //全部置一
+    193                             ( CPU_TS      *) NULL,
+    194                             ( OS_ERR      *)&err);
+   \   0000003A   0xA802             ADD      R0,SP,#+8
+   \   0000003C   0x9001             STR      R0,[SP, #+4]
+   \   0000003E   0x2000             MOVS     R0,#+0
+   \   00000040   0x9000             STR      R0,[SP, #+0]
+   \   00000042   0x2304             MOVS     R3,#+4
+   \   00000044   0x2232             MOVS     R2,#+50
+   \   00000046   0x....             LDR.N    R0,??DataTable3_3
+   \   00000048   0xF8D0 0x1245      LDR      R1,[R0, #+581]
+   \   0000004C   0x....             LDR.N    R0,??DataTable3_4
+   \   0000004E   0x.... 0x....      BL       OSFlagPend
+    195                  
+    196                  if(err == OS_ERR_NONE) {                                                //所有任务已喂狗
+   \   00000052   0xF8BD 0x0008      LDRH     R0,[SP, #+8]
+   \   00000056   0x2800             CMP      R0,#+0
+   \   00000058   0xD110             BNE.N    ??App_TaskStart_1
+    197                      TimeOutCnt = 0;                                                     //超时计数器清零
+   \   0000005A   0x2000             MOVS     R0,#+0
+   \   0000005C   0x0007             MOVS     R7,R0
+    198                      BSP_LED_Flash( 7, 1, 50, 25);
+   \   0000005E   0x2319             MOVS     R3,#+25
+   \   00000060   0x2232             MOVS     R2,#+50
+   \   00000062   0x2101             MOVS     R1,#+1
+   \   00000064   0x2007             MOVS     R0,#+7
+   \   00000066   0x.... 0x....      BL       BSP_LED_Flash
+    199                      OSFlagPost ((OS_FLAG_GRP *)&Ctrl.Os.WdtEvtFlagGRP,                             //清零所有标志
+    200                                   (OS_FLAGS     ) Ctrl.Os.WdtEvtFlags,
+    201                                   (OS_OPT       ) OS_OPT_POST_FLAG_CLR,
+    202                                   (OS_ERR      *) &err);
+   \   0000006A   0xAB02             ADD      R3,SP,#+8
+   \   0000006C   0x2201             MOVS     R2,#+1
+   \   0000006E   0x....             LDR.N    R0,??DataTable3_3
+   \   00000070   0xF8D0 0x1245      LDR      R1,[R0, #+581]
+   \   00000074   0x....             LDR.N    R0,??DataTable3_4
+   \   00000076   0x.... 0x....      BL       OSFlagPost
+   \   0000007A   0xE016             B.N      ??App_TaskStart_2
+    203                  } else {                                                                //不是所有任务都喂狗
+    204                      TimeOutCnt++;                                                       //超时计数器加1
+   \                     ??App_TaskStart_1: (+1)
+   \   0000007C   0x1C7F             ADDS     R7,R7,#+1
+    205                      if(TimeOutCnt > WdtTimeoutSec) {                                    //喂狗超时                
+   \   0000007E   0xB2BF             UXTH     R7,R7            ;; ZeroExt  R7,R7,#+16,#+16
+   \   00000080   0x2F79             CMP      R7,#+121
+   \   00000082   0xDB0A             BLT.N    ??App_TaskStart_3
+    206                          BSP_LED_Flash( 0, 5, 450, 450);
+   \   00000084   0xF44F 0x73E1      MOV      R3,#+450
+   \   00000088   0xF44F 0x72E1      MOV      R2,#+450
+   \   0000008C   0x2105             MOVS     R1,#+5
+   \   0000008E   0x2000             MOVS     R0,#+0
+   \   00000090   0x.... 0x....      BL       BSP_LED_Flash
+    207                          /***********************************************
+    208                          * 描述： 2017/12/1,无名沈：系统重启
+    209                          */
+    210          #if defined     (RELEASE)
+    211                          SystemReset();
+   \   00000094   0x.... 0x....      BL       BSP_RST_SystemRst
+   \   00000098   0xE007             B.N      ??App_TaskStart_2
+    212          #else
+    213                          /***********************************************
+    214                          * 描述： 如果程序处在升级模式
+    215                          */
+    216                          while(1){
+    217                              /*******************************************************
+    218                              * 描述： 长时间等不到某任务的看门狗标志位注册，说明有任务死了，
+    219                              *        指示灯快速闪烁，进入死循环等待系统复位
+    220                              */
+    221                              BSP_LED_Toggle(0);
+    222                              BSP_OS_TimeDly(100);
+    223                              /***********************************************
+    224                              * 描述： 喂狗
+    225                              */
+    226                              WdtReset();
+    227                          }               
+    228          #endif  
+    229                      } else {
+    230                          BSP_LED_Flash( 7, 1, 450, 450);  
+   \                     ??App_TaskStart_3: (+1)
+   \   0000009A   0xF44F 0x73E1      MOV      R3,#+450
+   \   0000009E   0xF44F 0x72E1      MOV      R2,#+450
+   \   000000A2   0x2101             MOVS     R1,#+1
+   \   000000A4   0x2007             MOVS     R0,#+7
+   \   000000A6   0x.... 0x....      BL       BSP_LED_Flash
+    231                      }
+    232                  }
+    233                  /***********************************************
+    234                  * 描述： 去除任务运行的时间，等到一个控制周期里剩余需要延时的时间
+    235                  */
+    236                  dly   = CYCLE_TIME_TICKS - ( OSTimeGet(&err) - ticks );
+   \                     ??App_TaskStart_2: (+1)
+   \   000000AA   0xA802             ADD      R0,SP,#+8
+   \   000000AC   0x.... 0x....      BL       OSTimeGet
+   \   000000B0   0xF5D0 0x707A      RSBS     R0,R0,#+1000
+   \   000000B4   0x1830             ADDS     R0,R6,R0
+   \   000000B6   0x0005             MOVS     R5,R0
+    237                  if ( dly  < 1 ) {
+   \   000000B8   0x2D00             CMP      R5,#+0
+   \   000000BA   0xD102             BNE.N    ??App_TaskStart_4
+    238                      dly = 1;
+   \   000000BC   0x2001             MOVS     R0,#+1
+   \   000000BE   0x0005             MOVS     R5,R0
+   \   000000C0   0xE005             B.N      ??App_TaskStart_5
+    239                  } else if ( dly > CYCLE_TIME_TICKS ) {
+   \                     ??App_TaskStart_4: (+1)
+   \   000000C2   0xF5B5 0x7F7A      CMP      R5,#+1000
+   \   000000C6   0xD902             BLS.N    ??App_TaskStart_5
+    240                      dly = CYCLE_TIME_TICKS;
+   \   000000C8   0xF44F 0x707A      MOV      R0,#+1000
+   \   000000CC   0x0005             MOVS     R5,R0
+    241                  }
+    242                  BSP_OS_TimeDly(dly);        
+   \                     ??App_TaskStart_5: (+1)
+   \   000000CE   0x0028             MOVS     R0,R5
+   \   000000D0   0x.... 0x....      BL       BSP_OS_TimeDly
+   \   000000D4   0xE7AB             B.N      ??App_TaskStart_0
+    243              }
+    244          }
+    245          
+    246          
+    247          /*
+    248          *********************************************************************************************************
+    249          *                                      App_ObjCreate()
+    250          *
+    251          * Description:  Creates the application kernel objects.
+    252          *
+    253          * Argument(s) :  none.
+    254          *
+    255          * Return(s)   :  none.
+    256          *
+    257          * Caller(s)   :  App_TaskStart().
+    258          *
+    259          * Note(s)     :  none.
+    260          *********************************************************************************************************
+    261          */
+    262          
+
+   \                                 In section .text, align 2, keep-with-next
+    263          static  void  App_ObjCreate (void)
+    264          {
+    265          }
+   \                     App_ObjCreate: (+1)
+   \   00000000   0x4770             BX       LR               ;; return
+    266          
+    267          
+    268          /*
+    269          *********************************************************************************************************
+    270          *                                      App_TaskCreate()
+    271          *
+    272          * Description :  This function creates the application tasks.
+    273          *
+    274          * Argument(s) :  none.
+    275          *
+    276          * Return(s)   :  none.
+    277          *
+    278          * Caller(s)   :  App_TaskStart().
+    279          *
+    280          * Note(s)     :  none.
+    281          *********************************************************************************************************
+    282          */
+    283          extern void OS_TaskCreateHook(void);
+
+   \                                 In section .text, align 2, keep-with-next
+    284          static  void  App_TaskCreate (void)
+    285          {
+   \                     App_TaskCreate: (+1)
+   \   00000000   0xB580             PUSH     {R7,LR}
+    286            
+    287              OS_TaskCreateHook();
+   \   00000002   0x.... 0x....      BL       OS_TaskCreateHook
+    288              /***********************************************
+    289              * 描述： 在此处创建OSAL任务
+    290              */
+    291              App_TaskOsalCreate();
+   \   00000006   0x.... 0x....      BL       App_TaskOsalCreate
+    292          }
+   \   0000000A   0xBD01             POP      {R0,PC}          ;; return
+    293          
+    294          
+    295          /*******************************************************************************
+    296          * 名    称： OSSetWdtFlag
+    297          * 功    能： 任务喂狗
+    298          * 入口参数： 无
+    299          * 出口参数： 无
+    300          * 作    者： 无名沈
+    301          * 创建日期： 2017/11/18
+    302          * 修    改： 
+    303          * 修改日期： 
+    304          * 备    注： 
+    305          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    306          void OSRegWdtFlag( OS_FLAGS flag )
+    307          {
+    308              /***********************************************
+    309              * 描述： 在看门狗标志组注册本任务的看门狗标志
+    310              */
+    311              Ctrl.Os.WdtEvtFlags |= flag;
+   \                     OSRegWdtFlag: (+1)
+   \   00000000   0x....             LDR.N    R1,??DataTable3_3
+   \   00000002   0xF8D1 0x1245      LDR      R1,[R1, #+581]
+   \   00000006   0x4301             ORRS     R1,R0,R1
+   \   00000008   0x....             LDR.N    R2,??DataTable3_3
+   \   0000000A   0xF8C2 0x1245      STR      R1,[R2, #+581]
+    312          }
+   \   0000000E   0x4770             BX       LR               ;; return
+    313          
+    314          /*******************************************************************************
+    315          * 名    称： OSSetWdtFlag
+    316          * 功    能： 任务喂狗
+    317          * 入口参数： 无
+    318          * 出口参数： 无
+    319          * 作    者： 无名沈
+    320          * 创建日期： 2017/11/18
+    321          * 修    改： 
+    322          * 修改日期： 
+    323          * 备    注： 
+    324          *******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    325          void OSSetWdtFlag( OS_FLAGS flag )
+    326          {
+   \                     OSSetWdtFlag: (+1)
+   \   00000000   0xB510             PUSH     {R4,LR}
+   \   00000002   0xB082             SUB      SP,SP,#+8
+   \   00000004   0x0004             MOVS     R4,R0
+    327              OS_ERR    err;
+    328              
+    329              /***********************************************
+    330              * 描述： 本任务看门狗标志置位
+    331              */
+    332              OSFlagPost(( OS_FLAG_GRP  *)&Ctrl.Os.WdtEvtFlagGRP,
+    333                          ( OS_FLAGS     ) flag,
+    334                          ( OS_OPT       ) OS_OPT_POST_FLAG_SET,
+    335                          ( OS_ERR      *) &err);
+   \   00000006   0x466B             MOV      R3,SP
+   \   00000008   0x2200             MOVS     R2,#+0
+   \   0000000A   0x0021             MOVS     R1,R4
+   \   0000000C   0x....             LDR.N    R0,??DataTable3_4
+   \   0000000E   0x.... 0x....      BL       OSFlagPost
+    336          }
+   \   00000012   0xBD13             POP      {R0,R1,R4,PC}    ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   0x........         DC32     App_TaskStartStk
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \   00000000   0x........         DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \   00000000   0x........         DC32     App_TaskStartTCB
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \   00000000   0x........         DC32     Ctrl
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_4:
+   \   00000000   0x........         DC32     Ctrl+0x21D
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \   00000000   0x41 0x70          DC8 "App Task Start"
+   \              0x70 0x20    
+   \              0x54 0x61    
+   \              0x73 0x6B    
+   \              0x20 0x53    
+   \              0x74 0x61    
+   \              0x72 0x74    
+   \              0x00         
+   \   0000000F   0x00               DC8 0
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   App_ObjCreate
+       8   App_TaskCreate
+         8   -> App_TaskOsalCreate
+         8   -> OS_TaskCreateHook
+      32   App_TaskStart
+        32   -> App_OS_SetAllHooks
+        32   -> App_ObjCreate
+        32   -> App_TaskCreate
+        32   -> BSP_Init
+        32   -> BSP_LED_Flash
+        32   -> BSP_OSTickInit
+        32   -> BSP_OS_TimeDly
+        32   -> BSP_RST_SystemRst
+        32   -> BSP_WDT_Rst
+        32   -> CPU_Init
+        32   -> Mem_Init
+        32   -> OSFlagPend
+        32   -> OSFlagPost
+        32   -> OSTimeGet
+        32   -> app_init_sctrl
+       0   OSRegWdtFlag
+      16   OSSetWdtFlag
+        16   -> OSFlagPost
+      48   main
+        48   -> App_Main
+        48   -> OSInit
+        48   -> OSStart
+        48   -> OSTaskCreate
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable3_4
+      16  ?_0
+       2  App_ObjCreate
+      12  App_TaskCreate
+     214  App_TaskStart
+     256  App_TaskStartStk
+     160  App_TaskStartTCB
+      16  OSRegWdtFlag
+      20  OSSetWdtFlag
+      72  main
+
+ 
+ 416 bytes in section .bss
+  16 bytes in section .rodata
+ 356 bytes in section .text
+ 
+ 356 bytes of CODE  memory
+  16 bytes of CONST memory
+ 416 bytes of DATA  memory
+
+Errors: none
+Warnings: 2

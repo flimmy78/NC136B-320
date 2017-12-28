@@ -1,0 +1,705 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       26/Dec/2017  20:29:48
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_clkpwr.c
+#    Command line =  
+#        "F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_clkpwr.c" -lCN
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 7.3\arm\CMSIS\Include\"
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\lpc17xx_clkpwr.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC¿¨Ä£¿é\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\lpc17xx_clkpwr.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC¿¨Ä£¿é\Software\CSB\source\lpc17xx_clkpwr.c
+      1          /**********************************************************************
+      2          * $Id$		lpc17xx_clkpwr.c				2010-06-18
+      3          *//**
+      4          * @file		lpc17xx_clkpwr.c
+      5          * @brief	Contains all functions support for Clock and Power Control
+      6          * 			firmware library on LPC17xx
+      7          * @version	3.0
+      8          * @date		18. June. 2010
+      9          * @author	NXP MCU SW Application Team
+     10          *
+     11          * Copyright(C) 2010, NXP Semiconductor
+     12          * All rights reserved.
+     13          *
+     14          ***********************************************************************
+     15          * Software that is described herein is for illustrative purposes only
+     16          * which provides customers with programming information regarding the
+     17          * products. This software is supplied "AS IS" without any warranties.
+     18          * NXP Semiconductors assumes no responsibility or liability for the
+     19          * use of the software, conveys no license or title under any patent,
+     20          * copyright, or mask work right to the product. NXP Semiconductors
+     21          * reserves the right to make changes in the software without
+     22          * notification. NXP Semiconductors also make no representation or
+     23          * warranty that such application will be suitable for the specified
+     24          * use without further testing or modification.
+     25          * Permission to use, copy, modify, and distribute this software and its
+     26          * documentation is hereby granted, under NXP Semiconductors'
+     27          * relevant copyright in the software, without fee, provided that it
+     28          * is used in conjunction with NXP Semiconductors microcontrollers.  This
+     29          * copyright, permission, and disclaimer notice must appear in all copies of
+     30          * this code.
+     31          **********************************************************************/
+     32          
+     33          /* Peripheral group ----------------------------------------------------------- */
+     34          /** @addtogroup CLKPWR
+     35           * @{
+     36           */
+     37          
+     38          /* Includes ------------------------------------------------------------------- */
+     39          #include "lpc17xx_clkpwr.h"
+     40          
+     41          
+     42          /* Public Functions ----------------------------------------------------------- */
+     43          /** @addtogroup CLKPWR_Public_Functions
+     44           * @{
+     45           */
+     46          
+     47          /*********************************************************************//**
+     48           * @brief 		Set value of each Peripheral Clock Selection
+     49           * @param[in]	ClkType	Peripheral Clock Selection of each type,
+     50           * 				should be one of the following:
+     51           *				- CLKPWR_PCLKSEL_WDT   		: WDT
+     52          				- CLKPWR_PCLKSEL_TIMER0   	: Timer 0
+     53          				- CLKPWR_PCLKSEL_TIMER1   	: Timer 1
+     54          				- CLKPWR_PCLKSEL_UART0   	: UART 0
+     55          				- CLKPWR_PCLKSEL_UART1  	: UART 1
+     56          				- CLKPWR_PCLKSEL_PWM1   	: PWM 1
+     57          				- CLKPWR_PCLKSEL_I2C0   	: I2C 0
+     58          				- CLKPWR_PCLKSEL_SPI   		: SPI
+     59          				- CLKPWR_PCLKSEL_SSP1   	: SSP 1
+     60          				- CLKPWR_PCLKSEL_DAC   		: DAC
+     61          				- CLKPWR_PCLKSEL_ADC   		: ADC
+     62          				- CLKPWR_PCLKSEL_CAN1  		: CAN 1
+     63          				- CLKPWR_PCLKSEL_CAN2  		: CAN 2
+     64          				- CLKPWR_PCLKSEL_ACF   		: ACF
+     65          				- CLKPWR_PCLKSEL_QEI 		: QEI
+     66          				- CLKPWR_PCLKSEL_PCB   		: PCB
+     67          				- CLKPWR_PCLKSEL_I2C1   	: I2C 1
+     68          				- CLKPWR_PCLKSEL_SSP0   	: SSP 0
+     69          				- CLKPWR_PCLKSEL_TIMER2   	: Timer 2
+     70          				- CLKPWR_PCLKSEL_TIMER3   	: Timer 3
+     71          				- CLKPWR_PCLKSEL_UART2   	: UART 2
+     72          				- CLKPWR_PCLKSEL_UART3   	: UART 3
+     73          				- CLKPWR_PCLKSEL_I2C2   	: I2C 2
+     74          				- CLKPWR_PCLKSEL_I2S   		: I2S
+     75          				- CLKPWR_PCLKSEL_RIT   		: RIT
+     76          				- CLKPWR_PCLKSEL_SYSCON   	: SYSCON
+     77          				- CLKPWR_PCLKSEL_MC 		: MC
+     78          
+     79           * @param[in]	DivVal	Value of divider, should be:
+     80           * 				- CLKPWR_PCLKSEL_CCLK_DIV_4 : PCLK_peripheral = CCLK/4
+     81           * 				- CLKPWR_PCLKSEL_CCLK_DIV_1 : PCLK_peripheral = CCLK/1
+     82           *				- CLKPWR_PCLKSEL_CCLK_DIV_2 : PCLK_peripheral = CCLK/2
+     83           *
+     84           * @return none
+     85           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     86          void CLKPWR_SetPCLKDiv (uint32_t ClkType, uint32_t DivVal)
+     87          {
+   \                     CLKPWR_SetPCLKDiv: (+1)
+   \   00000000   0xB410             PUSH     {R4}
+     88          	uint32_t bitpos;
+     89          
+     90          	bitpos = (ClkType < 32) ? (ClkType) : (ClkType - 32);
+   \   00000002   0x2820             CMP      R0,#+32
+   \   00000004   0xD201             BCS.N    ??CLKPWR_SetPCLKDiv_0
+   \   00000006   0x0002             MOVS     R2,R0
+   \   00000008   0xE001             B.N      ??CLKPWR_SetPCLKDiv_1
+   \                     ??CLKPWR_SetPCLKDiv_0: (+1)
+   \   0000000A   0xF1B0 0x0220      SUBS     R2,R0,#+32
+     91          
+     92          	/* PCLKSEL0 selected */
+     93          	if (ClkType < 32)
+   \                     ??CLKPWR_SetPCLKDiv_1: (+1)
+   \   0000000E   0x2820             CMP      R0,#+32
+   \   00000010   0xD20E             BCS.N    ??CLKPWR_SetPCLKDiv_2
+     94          	{
+     95          		/* Clear two bit at bit position */
+     96          		LPC_SC->PCLKSEL0 &= (~(CLKPWR_PCLKSEL_BITMASK(bitpos)));
+   \   00000012   0x....             LDR.N    R3,??DataTable7  ;; 0x400fc1a8
+   \   00000014   0x681B             LDR      R3,[R3, #+0]
+   \   00000016   0x2403             MOVS     R4,#+3
+   \   00000018   0x4094             LSLS     R4,R4,R2
+   \   0000001A   0x43A3             BICS     R3,R3,R4
+   \   0000001C   0x....             LDR.N    R4,??DataTable7  ;; 0x400fc1a8
+   \   0000001E   0x6023             STR      R3,[R4, #+0]
+     97          
+     98          		/* Set two selected bit */
+     99          		LPC_SC->PCLKSEL0 |= (CLKPWR_PCLKSEL_SET(bitpos, DivVal));
+   \   00000020   0x....             LDR.N    R3,??DataTable7  ;; 0x400fc1a8
+   \   00000022   0x681B             LDR      R3,[R3, #+0]
+   \   00000024   0xFA11 0xF402      LSLS     R4,R1,R2
+   \   00000028   0x4323             ORRS     R3,R4,R3
+   \   0000002A   0x....             LDR.N    R4,??DataTable7  ;; 0x400fc1a8
+   \   0000002C   0x6023             STR      R3,[R4, #+0]
+   \   0000002E   0xE00D             B.N      ??CLKPWR_SetPCLKDiv_3
+    100          	}
+    101          	/* PCLKSEL1 selected */
+    102          	else
+    103          	{
+    104          		/* Clear two bit at bit position */
+    105          		LPC_SC->PCLKSEL1 &= ~(CLKPWR_PCLKSEL_BITMASK(bitpos));
+   \                     ??CLKPWR_SetPCLKDiv_2: (+1)
+   \   00000030   0x....             LDR.N    R3,??DataTable7_1  ;; 0x400fc1ac
+   \   00000032   0x681B             LDR      R3,[R3, #+0]
+   \   00000034   0x2403             MOVS     R4,#+3
+   \   00000036   0x4094             LSLS     R4,R4,R2
+   \   00000038   0x43A3             BICS     R3,R3,R4
+   \   0000003A   0x....             LDR.N    R4,??DataTable7_1  ;; 0x400fc1ac
+   \   0000003C   0x6023             STR      R3,[R4, #+0]
+    106          
+    107          		/* Set two selected bit */
+    108          		LPC_SC->PCLKSEL1 |= (CLKPWR_PCLKSEL_SET(bitpos, DivVal));
+   \   0000003E   0x....             LDR.N    R3,??DataTable7_1  ;; 0x400fc1ac
+   \   00000040   0x681B             LDR      R3,[R3, #+0]
+   \   00000042   0xFA11 0xF402      LSLS     R4,R1,R2
+   \   00000046   0x4323             ORRS     R3,R4,R3
+   \   00000048   0x....             LDR.N    R4,??DataTable7_1  ;; 0x400fc1ac
+   \   0000004A   0x6023             STR      R3,[R4, #+0]
+    109          	}
+    110          }
+   \                     ??CLKPWR_SetPCLKDiv_3: (+1)
+   \   0000004C   0xBC10             POP      {R4}
+   \   0000004E   0x4770             BX       LR               ;; return
+    111          
+    112          
+    113          /*********************************************************************//**
+    114           * @brief		Get current value of each Peripheral Clock Selection
+    115           * @param[in]	ClkType	Peripheral Clock Selection of each type,
+    116           * 				should be one of the following:
+    117           *				- CLKPWR_PCLKSEL_WDT   		: WDT
+    118          				- CLKPWR_PCLKSEL_TIMER0   	: Timer 0
+    119          				- CLKPWR_PCLKSEL_TIMER1   	: Timer 1
+    120          				- CLKPWR_PCLKSEL_UART0   	: UART 0
+    121          				- CLKPWR_PCLKSEL_UART1  	: UART 1
+    122          				- CLKPWR_PCLKSEL_PWM1   	: PWM 1
+    123          				- CLKPWR_PCLKSEL_I2C0   	: I2C 0
+    124          				- CLKPWR_PCLKSEL_SPI   		: SPI
+    125          				- CLKPWR_PCLKSEL_SSP1   	: SSP 1
+    126          				- CLKPWR_PCLKSEL_DAC   		: DAC
+    127          				- CLKPWR_PCLKSEL_ADC   		: ADC
+    128          				- CLKPWR_PCLKSEL_CAN1  		: CAN 1
+    129          				- CLKPWR_PCLKSEL_CAN2  		: CAN 2
+    130          				- CLKPWR_PCLKSEL_ACF   		: ACF
+    131          				- CLKPWR_PCLKSEL_QEI 		: QEI
+    132          				- CLKPWR_PCLKSEL_PCB   		: PCB
+    133          				- CLKPWR_PCLKSEL_I2C1   	: I2C 1
+    134          				- CLKPWR_PCLKSEL_SSP0   	: SSP 0
+    135          				- CLKPWR_PCLKSEL_TIMER2   	: Timer 2
+    136          				- CLKPWR_PCLKSEL_TIMER3   	: Timer 3
+    137          				- CLKPWR_PCLKSEL_UART2   	: UART 2
+    138          				- CLKPWR_PCLKSEL_UART3   	: UART 3
+    139          				- CLKPWR_PCLKSEL_I2C2   	: I2C 2
+    140          				- CLKPWR_PCLKSEL_I2S   		: I2S
+    141          				- CLKPWR_PCLKSEL_RIT   		: RIT
+    142          				- CLKPWR_PCLKSEL_SYSCON   	: SYSCON
+    143          				- CLKPWR_PCLKSEL_MC 		: MC
+    144          
+    145           * @return		Value of Selected Peripheral Clock Selection
+    146           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    147          uint32_t CLKPWR_GetPCLKSEL (uint32_t ClkType)
+    148          {
+   \                     CLKPWR_GetPCLKSEL: (+1)
+   \   00000000   0x0001             MOVS     R1,R0
+    149          	uint32_t bitpos, retval;
+    150          
+    151          	if (ClkType < 32)
+   \   00000002   0x2920             CMP      R1,#+32
+   \   00000004   0xD204             BCS.N    ??CLKPWR_GetPCLKSEL_0
+    152          	{
+    153          		bitpos = ClkType;
+   \   00000006   0x000A             MOVS     R2,R1
+    154          		retval = LPC_SC->PCLKSEL0;
+   \   00000008   0x....             LDR.N    R3,??DataTable7  ;; 0x400fc1a8
+   \   0000000A   0x681B             LDR      R3,[R3, #+0]
+   \   0000000C   0x0018             MOVS     R0,R3
+   \   0000000E   0xE005             B.N      ??CLKPWR_GetPCLKSEL_1
+    155          	}
+    156          	else
+    157          	{
+    158          		bitpos = ClkType - 32;
+   \                     ??CLKPWR_GetPCLKSEL_0: (+1)
+   \   00000010   0xF1B1 0x0320      SUBS     R3,R1,#+32
+   \   00000014   0x001A             MOVS     R2,R3
+    159          		retval = LPC_SC->PCLKSEL1;
+   \   00000016   0x....             LDR.N    R3,??DataTable7_1  ;; 0x400fc1ac
+   \   00000018   0x681B             LDR      R3,[R3, #+0]
+   \   0000001A   0x0018             MOVS     R0,R3
+    160          	}
+    161          
+    162          	retval = CLKPWR_PCLKSEL_GET(bitpos, retval);
+   \                     ??CLKPWR_GetPCLKSEL_1: (+1)
+   \   0000001C   0x40D0             LSRS     R0,R0,R2
+   \   0000001E   0xF010 0x0003      ANDS     R0,R0,#0x3
+    163          	return retval;
+   \   00000022   0x4770             BX       LR               ;; return
+    164          }
+    165          
+    166          
+    167          
+    168          /*********************************************************************//**
+    169           * @brief 		Get current value of each Peripheral Clock
+    170           * @param[in]	ClkType	Peripheral Clock Selection of each type,
+    171           * 				should be one of the following:
+    172           *				- CLKPWR_PCLKSEL_WDT   		: WDT
+    173          				- CLKPWR_PCLKSEL_TIMER0   	: Timer 0
+    174          				- CLKPWR_PCLKSEL_TIMER1   	: Timer 1
+    175          				- CLKPWR_PCLKSEL_UART0   	: UART 0
+    176          				- CLKPWR_PCLKSEL_UART1  	: UART 1
+    177          				- CLKPWR_PCLKSEL_PWM1   	: PWM 1
+    178          				- CLKPWR_PCLKSEL_I2C0   	: I2C 0
+    179          				- CLKPWR_PCLKSEL_SPI   		: SPI
+    180          				- CLKPWR_PCLKSEL_SSP1   	: SSP 1
+    181          				- CLKPWR_PCLKSEL_DAC   		: DAC
+    182          				- CLKPWR_PCLKSEL_ADC   		: ADC
+    183          				- CLKPWR_PCLKSEL_CAN1  		: CAN 1
+    184          				- CLKPWR_PCLKSEL_CAN2  		: CAN 2
+    185          				- CLKPWR_PCLKSEL_ACF   		: ACF
+    186          				- CLKPWR_PCLKSEL_QEI 		: QEI
+    187          				- CLKPWR_PCLKSEL_PCB   		: PCB
+    188          				- CLKPWR_PCLKSEL_I2C1   	: I2C 1
+    189          				- CLKPWR_PCLKSEL_SSP0   	: SSP 0
+    190          				- CLKPWR_PCLKSEL_TIMER2   	: Timer 2
+    191          				- CLKPWR_PCLKSEL_TIMER3   	: Timer 3
+    192          				- CLKPWR_PCLKSEL_UART2   	: UART 2
+    193          				- CLKPWR_PCLKSEL_UART3   	: UART 3
+    194          				- CLKPWR_PCLKSEL_I2C2   	: I2C 2
+    195          				- CLKPWR_PCLKSEL_I2S   		: I2S
+    196          				- CLKPWR_PCLKSEL_RIT   		: RIT
+    197          				- CLKPWR_PCLKSEL_SYSCON   	: SYSCON
+    198          				- CLKPWR_PCLKSEL_MC 		: MC
+    199          
+    200           * @return		Value of Selected Peripheral Clock
+    201           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    202          uint32_t CLKPWR_GetPCLK (uint32_t ClkType)
+    203          {
+   \                     CLKPWR_GetPCLK: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+   \   00000002   0x0004             MOVS     R4,R0
+    204          	uint32_t retval, div;
+    205          
+    206          	retval = SystemCoreClock;
+   \   00000004   0x....             LDR.N    R0,??DataTable7_2
+   \   00000006   0x6800             LDR      R0,[R0, #+0]
+   \   00000008   0x0005             MOVS     R5,R0
+    207          	div = CLKPWR_GetPCLKSEL(ClkType);
+   \   0000000A   0x0020             MOVS     R0,R4
+   \   0000000C   0x.... 0x....      BL       CLKPWR_GetPCLKSEL
+   \   00000010   0x0006             MOVS     R6,R0
+    208          
+    209          	switch (div)
+   \   00000012   0x2E00             CMP      R6,#+0
+   \   00000014   0xD005             BEQ.N    ??CLKPWR_GetPCLK_0
+   \   00000016   0x2E02             CMP      R6,#+2
+   \   00000018   0xD009             BEQ.N    ??CLKPWR_GetPCLK_1
+   \   0000001A   0xD305             BCC.N    ??CLKPWR_GetPCLK_2
+   \   0000001C   0x2E03             CMP      R6,#+3
+   \   0000001E   0xD009             BEQ.N    ??CLKPWR_GetPCLK_3
+   \   00000020   0xE00A             B.N      ??CLKPWR_GetPCLK_4
+    210          	{
+    211          	case 0:
+    212          		div = 4;
+   \                     ??CLKPWR_GetPCLK_0: (+1)
+   \   00000022   0x2004             MOVS     R0,#+4
+   \   00000024   0x0006             MOVS     R6,R0
+    213          		break;
+   \   00000026   0xE007             B.N      ??CLKPWR_GetPCLK_4
+    214          
+    215          	case 1:
+    216          		div = 1;
+   \                     ??CLKPWR_GetPCLK_2: (+1)
+   \   00000028   0x2001             MOVS     R0,#+1
+   \   0000002A   0x0006             MOVS     R6,R0
+    217          		break;
+   \   0000002C   0xE004             B.N      ??CLKPWR_GetPCLK_4
+    218          
+    219          	case 2:
+    220          		div = 2;
+   \                     ??CLKPWR_GetPCLK_1: (+1)
+   \   0000002E   0x2002             MOVS     R0,#+2
+   \   00000030   0x0006             MOVS     R6,R0
+    221          		break;
+   \   00000032   0xE001             B.N      ??CLKPWR_GetPCLK_4
+    222          
+    223          	case 3:
+    224          		div = 8;
+   \                     ??CLKPWR_GetPCLK_3: (+1)
+   \   00000034   0x2008             MOVS     R0,#+8
+   \   00000036   0x0006             MOVS     R6,R0
+    225          		break;
+    226          	}
+    227          	retval /= div;
+   \                     ??CLKPWR_GetPCLK_4: (+1)
+   \   00000038   0xFBB5 0xF5F6      UDIV     R5,R5,R6
+    228          
+    229          	return retval;
+   \   0000003C   0x0028             MOVS     R0,R5
+   \   0000003E   0xBD70             POP      {R4-R6,PC}       ;; return
+    230          }
+    231          
+    232          
+    233          
+    234          /*********************************************************************//**
+    235           * @brief 		Configure power supply for each peripheral according to NewState
+    236           * @param[in]	PPType	Type of peripheral used to enable power,
+    237           *     					should be one of the following:
+    238           *     			-  CLKPWR_PCONP_PCTIM0 		: Timer 0
+    239          				-  CLKPWR_PCONP_PCTIM1 		: Timer 1
+    240          				-  CLKPWR_PCONP_PCUART0  	: UART 0
+    241          				-  CLKPWR_PCONP_PCUART1   	: UART 1
+    242          				-  CLKPWR_PCONP_PCPWM1 		: PWM 1
+    243          				-  CLKPWR_PCONP_PCI2C0 		: I2C 0
+    244          				-  CLKPWR_PCONP_PCSPI   	: SPI
+    245          				-  CLKPWR_PCONP_PCRTC   	: RTC
+    246          				-  CLKPWR_PCONP_PCSSP1 		: SSP 1
+    247          				-  CLKPWR_PCONP_PCAD   		: ADC
+    248          				-  CLKPWR_PCONP_PCAN1   	: CAN 1
+    249          				-  CLKPWR_PCONP_PCAN2   	: CAN 2
+    250          				-  CLKPWR_PCONP_PCGPIO 		: GPIO
+    251          				-  CLKPWR_PCONP_PCRIT 		: RIT
+    252          				-  CLKPWR_PCONP_PCMC 		: MC
+    253          				-  CLKPWR_PCONP_PCQEI 		: QEI
+    254          				-  CLKPWR_PCONP_PCI2C1   	: I2C 1
+    255          				-  CLKPWR_PCONP_PCSSP0 		: SSP 0
+    256          				-  CLKPWR_PCONP_PCTIM2 		: Timer 2
+    257          				-  CLKPWR_PCONP_PCTIM3 		: Timer 3
+    258          				-  CLKPWR_PCONP_PCUART2  	: UART 2
+    259          				-  CLKPWR_PCONP_PCUART3   	: UART 3
+    260          				-  CLKPWR_PCONP_PCI2C2 		: I2C 2
+    261          				-  CLKPWR_PCONP_PCI2S   	: I2S
+    262          				-  CLKPWR_PCONP_PCGPDMA   	: GPDMA
+    263          				-  CLKPWR_PCONP_PCENET 		: Ethernet
+    264          				-  CLKPWR_PCONP_PCUSB   	: USB
+    265           *
+    266           * @param[in]	NewState	New state of Peripheral Power, should be:
+    267           * 				- ENABLE	: Enable power for this peripheral
+    268           * 				- DISABLE	: Disable power for this peripheral
+    269           *
+    270           * @return none
+    271           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    272          void CLKPWR_ConfigPPWR (uint32_t PPType, FunctionalState NewState)
+    273          {
+    274          	if (NewState == ENABLE)
+   \                     CLKPWR_ConfigPPWR: (+1)
+   \   00000000   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000002   0x2901             CMP      R1,#+1
+   \   00000004   0xD107             BNE.N    ??CLKPWR_ConfigPPWR_0
+    275          	{
+    276          		LPC_SC->PCONP |= PPType & CLKPWR_PCONP_BITMASK;
+   \   00000006   0x....             LDR.N    R2,??DataTable7_3  ;; 0x400fc0c4
+   \   00000008   0x6812             LDR      R2,[R2, #+0]
+   \   0000000A   0x....             LDR.N    R3,??DataTable7_4  ;; 0xefeff7de
+   \   0000000C   0x4003             ANDS     R3,R3,R0
+   \   0000000E   0x431A             ORRS     R2,R3,R2
+   \   00000010   0x....             LDR.N    R3,??DataTable7_3  ;; 0x400fc0c4
+   \   00000012   0x601A             STR      R2,[R3, #+0]
+   \   00000014   0xE009             B.N      ??CLKPWR_ConfigPPWR_1
+    277          	}
+    278          	else if (NewState == DISABLE)
+   \                     ??CLKPWR_ConfigPPWR_0: (+1)
+   \   00000016   0xB2C9             UXTB     R1,R1            ;; ZeroExt  R1,R1,#+24,#+24
+   \   00000018   0x2900             CMP      R1,#+0
+   \   0000001A   0xD106             BNE.N    ??CLKPWR_ConfigPPWR_1
+    279          	{
+    280          		LPC_SC->PCONP &= (~PPType) & CLKPWR_PCONP_BITMASK;
+   \   0000001C   0x....             LDR.N    R2,??DataTable7_3  ;; 0x400fc0c4
+   \   0000001E   0x6812             LDR      R2,[R2, #+0]
+   \   00000020   0x....             LDR.N    R3,??DataTable7_4  ;; 0xefeff7de
+   \   00000022   0x4383             BICS     R3,R3,R0
+   \   00000024   0x401A             ANDS     R2,R3,R2
+   \   00000026   0x....             LDR.N    R3,??DataTable7_3  ;; 0x400fc0c4
+   \   00000028   0x601A             STR      R2,[R3, #+0]
+    281          	}
+    282          }
+   \                     ??CLKPWR_ConfigPPWR_1: (+1)
+   \   0000002A   0x4770             BX       LR               ;; return
+    283          
+    284          
+    285          /*********************************************************************//**
+    286           * @brief 		Enter Sleep mode with co-operated instruction by the Cortex-M3.
+    287           * @param[in]	None
+    288           * @return		None
+    289           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    290          void CLKPWR_Sleep(void)
+    291          {
+    292          	LPC_SC->PCON = 0x00;
+   \                     CLKPWR_Sleep: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x....             LDR.N    R1,??DataTable7_5  ;; 0x400fc0c0
+   \   00000004   0x6008             STR      R0,[R1, #+0]
+    293          	/* Sleep Mode*/
+    294          	__WFI();
+   \   00000006   0xBF30             WFI      
+    295          }
+   \   00000008   0x4770             BX       LR               ;; return
+    296          
+    297          
+    298          /*********************************************************************//**
+    299           * @brief 		Enter Deep Sleep mode with co-operated instruction by the Cortex-M3.
+    300           * @param[in]	None
+    301           * @return		None
+    302           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    303          void CLKPWR_DeepSleep(void)
+    304          {
+    305              /* Deep-Sleep Mode, set SLEEPDEEP bit */
+    306          	SCB->SCR = 0x4;
+   \                     CLKPWR_DeepSleep: (+1)
+   \   00000000   0x2004             MOVS     R0,#+4
+   \   00000002   0x....             LDR.N    R1,??DataTable7_6  ;; 0xe000ed10
+   \   00000004   0x6008             STR      R0,[R1, #+0]
+    307          	LPC_SC->PCON = 0x00;
+   \   00000006   0x2000             MOVS     R0,#+0
+   \   00000008   0x....             LDR.N    R1,??DataTable7_5  ;; 0x400fc0c0
+   \   0000000A   0x6008             STR      R0,[R1, #+0]
+    308          	/* Deep Sleep Mode*/
+    309          	__WFI();
+   \   0000000C   0xBF30             WFI      
+    310          }
+   \   0000000E   0x4770             BX       LR               ;; return
+    311          
+    312          
+    313          /*********************************************************************//**
+    314           * @brief 		Enter Power Down mode with co-operated instruction by the Cortex-M3.
+    315           * @param[in]	None
+    316           * @return		None
+    317           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    318          void CLKPWR_PowerDown(void)
+    319          {
+    320              /* Deep-Sleep Mode, set SLEEPDEEP bit */
+    321          	SCB->SCR = 0x4;
+   \                     CLKPWR_PowerDown: (+1)
+   \   00000000   0x2004             MOVS     R0,#+4
+   \   00000002   0x....             LDR.N    R1,??DataTable7_6  ;; 0xe000ed10
+   \   00000004   0x6008             STR      R0,[R1, #+0]
+    322          	LPC_SC->PCON = 0x01;
+   \   00000006   0x2001             MOVS     R0,#+1
+   \   00000008   0x....             LDR.N    R1,??DataTable7_5  ;; 0x400fc0c0
+   \   0000000A   0x6008             STR      R0,[R1, #+0]
+    323          	/* Power Down Mode*/
+    324          	__WFI();
+   \   0000000C   0xBF30             WFI      
+    325          }
+   \   0000000E   0x4770             BX       LR               ;; return
+    326          
+    327          
+    328          /*********************************************************************//**
+    329           * @brief 		Enter Deep Power Down mode with co-operated instruction by the Cortex-M3.
+    330           * @param[in]	None
+    331           * @return		None
+    332           **********************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    333          void CLKPWR_DeepPowerDown(void)
+    334          {
+    335              /* Deep-Sleep Mode, set SLEEPDEEP bit */
+    336          	SCB->SCR = 0x4;
+   \                     CLKPWR_DeepPowerDown: (+1)
+   \   00000000   0x2004             MOVS     R0,#+4
+   \   00000002   0x....             LDR.N    R1,??DataTable7_6  ;; 0xe000ed10
+   \   00000004   0x6008             STR      R0,[R1, #+0]
+    337          	LPC_SC->PCON = 0x03;
+   \   00000006   0x2003             MOVS     R0,#+3
+   \   00000008   0x....             LDR.N    R1,??DataTable7_5  ;; 0x400fc0c0
+   \   0000000A   0x6008             STR      R0,[R1, #+0]
+    338          	/* Deep Power Down Mode*/
+    339          	__WFI();
+   \   0000000C   0xBF30             WFI      
+    340          }
+   \   0000000E   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \   00000000   0x400FC1A8         DC32     0x400fc1a8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \   00000000   0x400FC1AC         DC32     0x400fc1ac
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \   00000000   0x........         DC32     SystemCoreClock
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \   00000000   0x400FC0C4         DC32     0x400fc0c4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \   00000000   0xEFEFF7DE         DC32     0xefeff7de
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \   00000000   0x400FC0C0         DC32     0x400fc0c0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \   00000000   0xE000ED10         DC32     0xe000ed10
+    341          
+    342          /**
+    343           * @}
+    344           */
+    345          
+    346          /**
+    347           * @}
+    348           */
+    349          
+    350          /* --------------------------------- End Of File ------------------------------ */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   CLKPWR_ConfigPPWR
+       0   CLKPWR_DeepPowerDown
+       0   CLKPWR_DeepSleep
+      16   CLKPWR_GetPCLK
+        16   -> CLKPWR_GetPCLKSEL
+       0   CLKPWR_GetPCLKSEL
+       0   CLKPWR_PowerDown
+       4   CLKPWR_SetPCLKDiv
+       0   CLKPWR_Sleep
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+      44  CLKPWR_ConfigPPWR
+      16  CLKPWR_DeepPowerDown
+      16  CLKPWR_DeepSleep
+      64  CLKPWR_GetPCLK
+      36  CLKPWR_GetPCLKSEL
+      16  CLKPWR_PowerDown
+      80  CLKPWR_SetPCLKDiv
+      10  CLKPWR_Sleep
+
+ 
+ 310 bytes in section .text
+ 
+ 310 bytes of CODE memory
+
+Errors: none
+Warnings: none

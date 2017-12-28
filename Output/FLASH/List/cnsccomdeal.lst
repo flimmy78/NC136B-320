@@ -1,0 +1,376 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V7.50.1.10123/W32 for ARM       28/Dec/2017  08:42:38
+# Copyright 1999-2015 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Application\Library\SlaveConTask\cnsccomdeal.c
+#    Command line =  
+#        "F:\iar\NC136B-320
+#        IC卡模块\Application\Library\SlaveConTask\cnsccomdeal.c" -D RELEASE
+#        -lCN "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\"
+#        --diag_suppress Pa050 -o "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M3 -e --fpu=None --dlib_config "C:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        7.3\arm\INC\c\DLib_Config_Normal.h" -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\" -I
+#        "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\BSP\OS\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\LPC1768\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CSP\MCU\NXP\LPC17xx\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\Generic\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Ports\ARM-Cortex-M3\CSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uCOS-III\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-LIB\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-CPU\ARM-Cortex-M3\IAR\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Source\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Cfg\Template\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\uC-MB\Os\uCOS-III\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\OS\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\OSAL\Ports\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Iap\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Protocol\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\Tasks\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\APP\AES\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\OS\OSAL\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\CSB\include\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\BSP\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\MX25L1602Drv\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\APP\OCM800600T80\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\User\BSP\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\CardOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\DataDeal\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Driver\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\EquipmentOperations\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\Global\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\MastConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SlaveConTask\"
+#        -I "F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Application\Library\SpeedTest\"
+#        -On --use_c++_inline
+#    List file    =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\List\cnsccomdeal.lst
+#    Object file  =  
+#        F:\iar\NC136B-320
+#        IC卡模块\Software\EvalBoards\NXP\LPC1768-SK\uCOS-III\IAR\..\..\..\..\..\..\Output\FLASH\Obj\cnsccomdeal.o
+#
+###############################################################################
+
+F:\iar\NC136B-320 IC卡模块\Application\Library\SlaveConTask\cnsccomdeal.c
+      1          #include <includes.h>
+      2          #include  "csnr_package_deal.h"
+      3          
+      4          
+
+   \                                 In section .bss, align 4
+      5          stcCsnrProtocolPara l_sendsprotocolpara;	
+   \                     l_sendsprotocolpara:
+   \   00000000                      DS8 12
+
+   \                                 In section .bss, align 4
+      6          stcCsnrProtocolPara l_recsprotocolpara;	
+   \                     l_recsprotocolpara:
+   \   00000000                      DS8 12
+      7          
+
+   \                                 In section .bss, align 1
+      8          uint8	l_gprsrecflg = 0;
+   \                     l_gprsrecflg:
+   \   00000000                      DS8 1
+
+   \                                 In section .text, align 2, keep-with-next
+      9          uint8	GetGprsRecFlg(void)
+     10          {
+     11          	return	l_gprsrecflg;
+   \                     GetGprsRecFlg: (+1)
+   \   00000000   0x....             LDR.N    R0,??DataTable3
+   \   00000002   0x7800             LDRB     R0,[R0, #+0]
+   \   00000004   0x4770             BX       LR               ;; return
+     12          }
+     13          
+
+   \                                 In section .text, align 2, keep-with-next
+     14          void	SetGprsRecFlg(void)
+     15          {
+     16          	l_gprsrecflg = 1;
+   \                     SetGprsRecFlg: (+1)
+   \   00000000   0x2001             MOVS     R0,#+1
+   \   00000002   0x....             LDR.N    R1,??DataTable3
+   \   00000004   0x7008             STRB     R0,[R1, #+0]
+     17          }
+   \   00000006   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 2, keep-with-next
+     18          void	ClearGprsRecFlg(void)
+     19          {
+     20          	l_gprsrecflg = 0;
+   \                     ClearGprsRecFlg: (+1)
+   \   00000000   0x2000             MOVS     R0,#+0
+   \   00000002   0x....             LDR.N    R1,??DataTable3
+   \   00000004   0x7008             STRB     R0,[R1, #+0]
+     21          }
+   \   00000006   0x4770             BX       LR               ;; return
+     22          
+     23          
+
+   \                                 In section .text, align 2, keep-with-next
+     24          void	 GprsRecOperate(stcCsnrProtocolPara   recsprotocolpara)
+     25          {
+   \                     GprsRecOperate: (+1)
+   \   00000000   0xB577             PUSH     {R0-R2,R4-R6,LR}
+   \   00000002   0xB081             SUB      SP,SP,#+4
+     26          //		printfcom0("\r\n接收内容：\r\n\r\n");
+     27          		
+     28          //		if(DataUnpack_CSNR((stcCsnrProtocolPara *)&l_recsprotocolpara,RecBuf,RecLen))	//接收数据
+     29          		{
+     30          				SetGprsRecFlg();
+   \   00000004   0x.... 0x....      BL       SetGprsRecFlg
+     31          				memcpy((uint8 *)&l_recsprotocolpara,(uint8 *)&recsprotocolpara,sizeof(stcCsnrProtocolPara));	
+   \   00000008   0x240C             MOVS     R4,#+12
+   \   0000000A   0xAD01             ADD      R5,SP,#+4
+   \   0000000C   0x....             LDR.N    R6,??DataTable3_1
+   \   0000000E   0x0022             MOVS     R2,R4
+   \   00000010   0x0029             MOVS     R1,R5
+   \   00000012   0x0030             MOVS     R0,R6
+   \   00000014   0x.... 0x....      BL       __aeabi_memcpy
+     32          		}
+     33          }
+   \   00000018   0xBD7F             POP      {R0-R6,PC}       ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \   00000000   0x........         DC32     l_gprsrecflg
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \   00000000   0x........         DC32     l_recsprotocolpara
+     34          
+     35          //
+     36          //
+     37          //void	Gprs_Send_Ctrl(void)
+     38          //{
+     39          //	static	uint32	time = 0;
+     40          //	static	uint32	framnum = 1;
+     41          //	uint32	currecnum;
+     42          //	uint32	gprsrecnum;
+     43          //	uint8		sendbuf[256];
+     44          //	uint8		sendlen;
+     45          //	uint8		sFlshRecbuf[128];	
+     46          //	uint32	i;
+     47          //	stcFlshRec	 sFlshRec;
+     48          //				
+     49          //	l_sendsprotocolpara.sourceaddr = 0x80;
+     50          //	l_sendsprotocolpara.destaddr   = 0xca;
+     51          //	l_sendsprotocolpara.framcode   = 0x00;
+     52          //	l_sendsprotocolpara.framnum    = framnum;
+     53          //
+     54          //	if(
+     55          //            GetSysTime() - time > 100*10 
+     56          //        || 	(GetGprsRecFlg()  && (GetSysTime() - time > 100))
+     57          //        )	
+     58          //	{
+     59          //		time = GetSysTime();
+     60          //		ClearGprsRecFlg();	
+     61          //		
+     62          //		currecnum 	= GetCurFlshRecNum();									//当前流水号
+     63          //		gprsrecnum 	= GetLstFlshRecNum_gprs();
+     64          //		
+     65          //		if(gprsrecnum > currecnum)												//出错处理
+     66          //		{
+     67          //				gprsrecnum = currecnum;
+     68          //				StoreLstRedFlshRecNum_gprs(gprsrecnum);
+     69          //		}
+     70          //	
+     71          //		if(gprsrecnum < currecnum)
+     72          //		{
+     73          //			ReadFlshRec((stcFlshRec *)&sFlshRec,gprsrecnum);
+     74          //			//ReadFileData(gprsrecnum*128,(uint8 *)&sFlshRec,128);
+     75          //
+     76          //			if(l_sendsprotocolpara.framnum == l_recsprotocolpara.framnum) //接收正确
+     77          //			{
+     78          //				framnum++;
+     79          //				gprsrecnum++;
+     80          //			}
+     81          //			
+     82          //			l_sendsprotocolpara.framnum    = framnum;
+     83          //			l_sendsprotocolpara.databuf    = (uint8 *)&sFlshRec;
+     84          //			l_sendsprotocolpara.datalen    = sizeof(sFlshRec);
+     85          //			
+     86          //			DataPackage_CSNR(l_sendsprotocolpara,sendbuf,&sendlen);
+     87          //			
+     88          //			//SendCom0(sendbuf,sendlen);	
+     89          //			//地址判断
+     90          //			if((l_sendsprotocolpara.destaddr & 0xA0) == 0xA0)
+     91          //			{
+     92          //				SendCOM1(sendbuf,sendlen) ;
+     93          //			}
+     94          //			else if((l_sendsprotocolpara.destaddr & 0xC0) == 0xC0)
+     95          //			{
+     96          ////				if(	GetPrintfFlg()== 0)
+     97          ////				{
+     98          ////					SendCOM2(sendbuf,sendlen) ; 
+     99          ////				}
+    100          //				SendCOM3(sendbuf,sendlen) ; 	
+    101          //			}
+    102          //			
+    103          //			printfcom0("\r\n\r\n GPRS发送\r\n\r\n");
+    104          //            
+    105          ////			printftextbox("\r\n发送数据：",framnum); 
+    106          ////			for(i=0;i<sendlen;i++)
+    107          ////				printftextbox("%02x ",sendbuf[i]);	
+    108          ////			
+    109          //			StoreLstRedFlshRecNum_gprs(gprsrecnum);
+    110          ////			printftextbox("\r\n数据发送：记录号：%d",framnum);  
+    111          //		}
+    112          //	}
+    113          //}
+    114          //
+    115          //
+    116          //void	Gprs_Send_liveinfo(void)
+    117          //{
+    118          //	static	uint32	time = 0;
+    119          //	uint8		buf[8];
+    120          //	uint16	locotype,loconum;
+    121          //	uint8		len;
+    122          //	uint8		sendbuf[256];
+    123          //	uint8		sendlen;	
+    124          //	stcCsnrProtocolPara sendsprotocolpara;	
+    125          //
+    126          //	if(GetSysTime() - time > 100*60)
+    127          //	{
+    128          //		time = GetSysTime();
+    129          //		
+    130          //		locotype = 	104;
+    131          //		loconum = 	234;
+    132          //	
+    133          ////		printftextbox("\r\n生命信号：");  
+    134          //		
+    135          //		sendsprotocolpara.sourceaddr = 0x80;
+    136          //		sendsprotocolpara.destaddr   = 0xca;
+    137          //		sendsprotocolpara.framcode   = 0x02;
+    138          //		sendsprotocolpara.framnum    = 0;	
+    139          //	
+    140          //		len = 0;
+    141          //		memcpy(&buf[len],(uint8 *)&locotype,sizeof(locotype));
+    142          //		len += sizeof(locotype);
+    143          //		memcpy(&buf[len],(uint8 *)&loconum,sizeof(loconum));
+    144          //		len += sizeof(loconum);
+    145          //		
+    146          //		sendsprotocolpara.databuf    = buf;
+    147          //		sendsprotocolpara.datalen    = sizeof(buf);	
+    148          //		
+    149          //		DataPackage_CSNR(sendsprotocolpara,sendbuf,&sendlen);
+    150          //		
+    151          ////		SendCom0(sendbuf,sendlen);	
+    152          //		if((sendsprotocolpara.destaddr & 0xA0) == 0xA0)
+    153          //		{
+    154          //			SendCOM1(sendbuf,sendlen) ;
+    155          //		}
+    156          //		else if((sendsprotocolpara.destaddr & 0xC0) == 0xC0)
+    157          //		{
+    158          //			if(	GetPrintfFlg()== 0)
+    159          //			{
+    160          //				SendCOM2(sendbuf,sendlen) ; 
+    161          //			}
+    162          //			SendCOM3(sendbuf,sendlen) ; 	
+    163          //		}
+    164          //	}
+    165          //}
+    166          
+    167          //void  GprsDataComDeal(void)
+    168          //{
+    169          ////	Gprs_Rec_Ctrl();
+    170          //	Gprs_Send_Ctrl();
+    171          ////	Gprs_Send_liveinfo();
+    172          //}
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   ClearGprsRecFlg
+       0   GetGprsRecFlg
+      32   GprsRecOperate
+        32   -> SetGprsRecFlg
+        32   -> __aeabi_memcpy
+       0   SetGprsRecFlg
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       8  ClearGprsRecFlg
+       6  GetGprsRecFlg
+      26  GprsRecOperate
+       8  SetGprsRecFlg
+       1  l_gprsrecflg
+      12  l_recsprotocolpara
+      12  l_sendsprotocolpara
+
+ 
+ 25 bytes in section .bss
+ 56 bytes in section .text
+ 
+ 56 bytes of CODE memory
+ 25 bytes of DATA memory
+
+Errors: none
+Warnings: none
